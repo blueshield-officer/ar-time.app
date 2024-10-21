@@ -1,0 +1,156 @@
+body {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/03/Archbishop_Ryan_High_School_-_Philadelphia_01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+p{
+    margin: 0;
+}
+
+.left-part, .right-part {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.right-box, .left-box {
+    display: grid;
+    margin: auto;
+    justify-items: center;
+    align-items: center;
+}
+
+.website-handler {
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+
+
+.main-box {
+    justify-content: center;
+    align-items: center;
+    color: white;
+    max-width: 300px;
+    align-content: center;
+    justify-content: center;
+    background-color: rgba(255, 0, 0, 60%);
+    backdrop-filter: blur(10px);
+}
+
+.main-box .icon {
+    height: 50px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 50%;
+}
+.main-box .icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-box .content {
+    font-size: 50px;
+}
+
+.main-box .content .text-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+.disclaimer-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 60%;
+
+    padding: 6px 6px 0 6px;
+    border-radius: 6px 6px 0 0;
+}
+
+.disclaimer-box .text {
+    color: white;
+}
+
+.website-logo {
+    height: 400px;
+}
+
+.website-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-family: "Bebas Neue";
+    font-size: 80px;
+    color: white;
+}
+
+.slogan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-family: "Bebas Neue";
+    font-size: 30px;
+}
+
+.author-box {
+    display: grid;
+    justify-content: center;
+}
+.author-box .author {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    padding: 3px 6px 3px 3px;
+    border-radius: 0 0 6px 6px;
+}
+.author-box .made-by-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+
+    height: 10px;
+}
+
+.author-box .account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.author-box .author .image {
+    height: 35px;
+}
+
+.author-box .author .name {
+    font: roboto;
+    margin-left: 3px;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.blur-background {
+    background-color: rgba(0, 0, 0, 0.61);
+    backdrop-filter: blur(10px);
+}

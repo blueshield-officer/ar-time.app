@@ -1,0 +1,137 @@
+.main-info-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+    min-height: 175px;
+
+    padding: 15px;
+
+    flex-direction: column;
+}
+
+.main-info-holder.info-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-info-holder .info-block .info-box {
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+
+    width: 200px;
+
+    margin: 5px 0 5px 0;
+
+    border-radius: 3px;
+}
+
+.main-info-holder  #countdown {
+    width: auto;
+}
+
+
+
+#countdown-time {
+    display: flex;
+    justify-content: center;
+
+    color: black;
+    font-size: 34px;
+    font-weight: bold;
+
+    background-color: white;
+    border-radius: 3px;
+}
+
+#countdown-progress-box {
+    padding-top: 10px;
+ }
+
+#countdown-progress {
+    display: flex;
+    height: 10px;
+
+    background-color: black;
+}
+#countdown-progress-bar {
+    height: 15px;
+    width: 100%;
+
+    background-color: white;
+
+    border-radius: 3px;
+}
+#countdown-progress-bar-filled {
+    position: relative;
+    display: block;
+    height: 100%;
+
+
+
+    border-radius: 3px;
+}
+#countdown-progress-info {
+    justify-content: space-between;
+}
+#countdown-progress-percentage {
+    font-weight: bold;
+}
+#countdown-progress-time {
+    font-weight: bold;
+    float: right;
+}
+
+.percentage-color {
+    background-color: red;
+}
+
+
+
+
+
+.main-info-holder .container .schedule {
+    order: 0;
+}
+.main-info-holder .container .countdown {
+    order: 1;
+}
+.main-info-holder .container .date {
+    order: 2;
+}
+
+@media screen and (max-width: 768px) {
+    .main-info-holder .container {
+        flex-wrap: wrap;
+    }
+
+    .main-info-holder .container .schedule {
+        order: 1;
+    }
+    .main-info-holder .container .countdown {
+        order: 0;
+        width: 100%;
+    }
+    .main-info-holder .container .date {
+        order: 2;
+    }
+}
+@media screen and (max-width: 575px) {
+
+
+    .main-info-holder .container .schedule {
+        order: 1;
+        width: 100%;
+    }
+    .main-info-holder .container .countdown {
+        order: 0;
+        width: 100%;
+    }
+    .main-info-holder .container .date {
+        order: 2;
+        width: 100%;
+    }
+}
