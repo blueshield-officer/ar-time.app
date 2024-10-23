@@ -49,12 +49,11 @@ class ManagerUNIX {
 class ClassStatus {
   constructor(data, position, period, status, unix) {
     this.bells = data.bells;
+    this.UNIX = unix;
     if (Array.isArray(data.bells)) {
-      this.data = data
       this.position = position;
       this.period = period;
       this.status = status;
-      this.UNIX = unix;
 
       this.tableRows = document.getElementsByClassName('table-row');
       if (this.status === 0) {
@@ -83,6 +82,8 @@ class ClassStatus {
       this.#labelUpdate()
     } else {
       document.getElementById('countdown-time').innerText = 'No Data'
+      // 2:20 updater
+      setInterval(this.#specialAutoUpdate, 1000)
     }
     this.#boxInfo()
     document.addEventListener("DOMContentLoaded", this.#alerts());
@@ -273,6 +274,14 @@ class ClassStatus {
         return '6, 123, 9';
     }
   }
+
+  #specialAutoUpdate ()  {
+    const updateTime = UNIX.day() + 51600
+    console.log(updateTime)
+    if (UNIX.now() >= updateTime) {
+      location.reload()
+    }
+}
   progressBarUpdate(percentage) {
     document.getElementById('countdown-progress-bar-filled').style.backgroundColor = 'hsl(' + 0.9 * percentage + ', 100%, 50%)'
   }
@@ -394,4 +403,3 @@ window.onload = function () {
 // particle accelerator
 //setInterval('counterUpdater(UNIX, classStatus)', 1)
 //setInterval('UNIX.particleAccelerator()', 1)
-UNIX.accelerator = 55500

@@ -9,17 +9,15 @@ $smarty->setCompileDir(__DIR__.'/cache/templates_c/');
 $smarty->setConfigDir(__DIR__.'/cache/configs/');
 $smarty->setCacheDir(__DIR__.'/cache/cache/');
 
-
+// status checker
 $query = 'SELECT `current_status` FROM `website` WHERE `id` = 1';
 $statement = $pdo->prepare($query);
 $statement->execute();
 $status = $statement->fetch()["current_status"];
-if ($status === 0){
-  $smarty->assign('title', 'testing');
-  $smarty->display('website-status.tpl');
-  exit();
+if ($status !== 0){
+    include __DIR__ . '/website-status.php';
+    exit();
 }
-
 
 $smarty->assign('navbar','universal/navbar.tpl');
 $smarty->assign('countdown','countdown-box.tpl');

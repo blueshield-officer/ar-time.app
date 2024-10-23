@@ -10,152 +10,132 @@ p{
     margin: 0;
 }
 
-.left-part, .right-part {
-    height: 100vh;
-    width: 100%;
+html,body {
+    height: 100%;
+}
+
+.container {
+    align-content: center;
+    height: 100%;
+}
+.message {
+    display: flex;
+    height: 100%!important;
+    align-content: center;
+    justify-content: center;
+}
+
+.block {
     display: flex;
     align-content: center;
     justify-content: center;
-
 }
-
-.right-box, .left-box {
+.box {
     display: grid;
-    margin: auto;
-    justify-items: center;
-    align-items: center;
+    text-align: center;
 }
 
-.website-handler {
+.info-block {
+    align-self: center;
+}
+
+
+
+
+
+.row .col-md-6 {
+    .message {
+        order: 0;
+    }
+    .website {
+        order: 1;
+    }
+}
+
+.info-box {
+    display: grid;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+
+    background-color: red;
+    padding: 20px;
     border-radius: 6px;
+
+    .icon {
+        justify-self: center;
+    }
+    .title {
+        text-align: center;
+    }
+    .text {
+        text-align: left;
+    }
 }
 
-
-
-.main-box {
-    justify-content: center;
-    align-items: center;
+.website-box {
     color: white;
-    max-width: 300px;
-    align-content: center;
-    justify-content: center;
-    background-color: rgba(255, 0, 0, 60%);
-    backdrop-filter: blur(10px);
-}
 
-.main-box .icon {
-    height: 50px;
-    background-color: white;
-    padding: 5px;
-    border-radius: 50%;
-}
-.main-box .icon-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.main-box .content {
-    font-size: 50px;
-}
-
-.main-box .content .text-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-
-
-
-
-.disclaimer-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 60%;
-
-    padding: 6px 6px 0 6px;
-    border-radius: 6px 6px 0 0;
-}
-
-.disclaimer-box .text {
-    color: white;
-}
-
-.website-logo {
-    height: 400px;
-}
-
-.website-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    font-family: "Bebas Neue";
-    font-size: 80px;
-    color: white;
-}
-
-.slogan {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    color: white;
-    font-family: "Bebas Neue";
-    font-size: 30px;
-}
-
-.author-box {
-    display: grid;
-    justify-content: center;
-}
-.author-box .author {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-
-    padding: 3px 6px 3px 3px;
-    border-radius: 0 0 6px 6px;
-}
-.author-box .made-by-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: grey;
-
-    height: 10px;
-}
-
-.author-box .account {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.author-box .author .image {
-    height: 35px;
-}
-
-.author-box .author .name {
-    font: roboto;
-    margin-left: 3px;
-    color: white;
-    font-size: 30px;
-    font-weight: 700;
+    .disclaimer-box {
+        padding: 5px;
+        border-radius: 6px 6px 0 0;
+        width: 320px;
+        .disclaimer {
+            font-size: 20px;
+            text-wrap: wrap;
+        }
+    }
+    .ar-time-box {
+        padding: 20px;
+        font-family: "Bebas Neue";
+        border-radius: 6px;
+        .image {
+            height: 450px;
+            justify-self: center;
+        }
+        .name {
+            font-weight: 500;
+            font-size: 90px;
+        }
+        .slogan {
+            font-weight: 500;
+            font-size: 40px;
+        }
+    }
+    .author-box {
+        padding: 0 10px 10px 10px;
+        border-radius: 0 0 6px 6px;
+        .grey-text{
+            color: gray;
+            font-size: 30px;
+        }
+        .DBR33 {
+            display: flex;
+            text-align: center;
+            align-content: center;
+            justify-content: center;
+            .avatar {
+                height: 70px;
+            }
+            .username {
+                font-weight: bold;
+                font-size: 45px;
+            }
+        }
+    }
 }
 
 
-.image-credit {
-    display: grid;
-    padding: 5px;
-    border-radius: 6px;
-}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -163,7 +143,30 @@ p{
     background-color: rgba(0, 0, 0, 0.61);
     backdrop-filter: blur(10px);
 }
+/*
+@media screen and (min-width: 1200px) {
+    .website-block {
+        height: 100vw;
+    }
+}
+ */
+@media screen and (max-width: 1200px) {
+    .container {
+        align-content: space-between;
+        height: 100%;
+    }
+    .message {
+        order: 1;
+    }
+    .website {
+        order: 0;
+    }
+    .row {
+        align-content: space-around;
+        flex-direction: column;
+        .col-md-6 {
+            width: 100vw;
 
-.row {
-    margin: 0;
+        }
+    }
 }

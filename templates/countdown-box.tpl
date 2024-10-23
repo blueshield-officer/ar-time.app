@@ -1,4 +1,4 @@
-<div  id="info-holder" class="main-info-holder">
+<div id="info-holder" class="main-info-holder">
     <div class="info-block countdown" id="countdown-holder" >
         <div class="info-box countdown-box box-shadow background-gradient" id="countdown">
             <p id="countdown-label"></p>
