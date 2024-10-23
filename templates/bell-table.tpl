@@ -1,5 +1,5 @@
 <div class="table-box">
-    <div class="table-frame">
+    <div class="table-frame box-shadow">
         <table class="content-table">
             <thead>
             <tr>

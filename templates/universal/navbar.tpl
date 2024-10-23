@@ -5,7 +5,7 @@
         <div class="content">
             <div class="title-box">
                 <img class="titleIcon" src="../../img/website-icons/ar-time-circle.png" alt="website_logo">
-                <p class="titleHeader">AR-TIME.COM</p>
+                <p class="titleHeader">AR-TIME.ORG</p>
             </div>
             <div class="watch-box">
                 <div class="watch" id="watch"></div>

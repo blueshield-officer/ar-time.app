@@ -150,7 +150,20 @@ p{
     font-weight: 700;
 }
 
+
+.image-credit {
+    display: grid;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+
+
 .blur-background {
     background-color: rgba(0, 0, 0, 0.61);
     backdrop-filter: blur(10px);
+}
+
+.row {
+    margin: 0;
 }

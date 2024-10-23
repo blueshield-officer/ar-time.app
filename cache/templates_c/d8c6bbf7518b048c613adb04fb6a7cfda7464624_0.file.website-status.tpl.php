@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.4, created on 2024-10-20 13:47:32
+/* Smarty version 4.5.4, created on 2024-10-22 22:26:44
   from 'D:\OSPanel\home\ar-time.loc\templates\website-status.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_6715423425a7b4_62400291',
+  'unifunc' => 'content_67185ee4268b69_27547609',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd8c6bbf7518b048c613adb04fb6a7cfda7464624' => 
     array (
       0 => 'D:\\OSPanel\\home\\ar-time.loc\\templates\\website-status.tpl',
-      1 => 1729446451,
+      1 => 1729650311,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6715423425a7b4_62400291 (Smarty_Internal_Template $_smarty_tpl) {
+function content_67185ee4268b69_27547609 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html>
 <head>
@@ -30,16 +30,16 @@ function content_6715423425a7b4_62400291 (Smarty_Internal_Template $_smarty_tpl)
 >
 
     <link rel="stylesheet" href="../css/website-status.css">
-    <link rel="stylesheet" href="../css/fonts.css"
-    <link rel="stylesheet" href="../css/normalize.css"
+    <link rel="stylesheet" href="../css/universal/fonts.css"
+    <link rel="stylesheet" href="../css/universal/normalize.css"
 
     <title></title>
     <link rel="icon" type="image/x-icon" href="../img/website-icons/ar-time-bar-icon.png">
 </head>
 
 <body>
-<div class="row gx-0">
-    <div class="col-sm-8 gx-0">
+<div class="row">
+    <div class="col-md-6">
         <div class="left-part">
             <div class="left-box">
                 <div class="website-handler main-box">
@@ -58,7 +58,7 @@ function content_6715423425a7b4_62400291 (Smarty_Internal_Template $_smarty_tpl)
             </div>
         </div>
     </div>
-    <div class="col-sm-4 gx-0">
+    <div class="col-md-6">
         <div class="right-part">
             <div class="right-box">
                 <div class="disclaimer-box blur-background">
@@ -66,7 +66,7 @@ function content_6715423425a7b4_62400291 (Smarty_Internal_Template $_smarty_tpl)
                 </div>
                 <div class="website-handler blur-background">
                     <img class="website-logo" src="../img/website-icons/ar-time-circle.png" alt="logo">
-                    <p class="website-title">AR-TIME.COM</p>
+                    <p class="website-title">AR-TIME.ORG</p>
                     <p class="slogan">USE &middot; ENJOY &middot; SHARE</p>
                 </div>
                 <div class="author-box ">
@@ -86,7 +86,10 @@ function content_6715423425a7b4_62400291 (Smarty_Internal_Template $_smarty_tpl)
         </div>
     </div>
 </div>
-<div class="position-absolute bottom-0 end-0"><a href="https://commons.wikimedia.org/wiki/File:Archbishop_Ryan_High_School_-_Philadelphia_01.jpg" target="_blank">Link to original background image.</a></div>
+<div class="image-credit position-absolute bottom-0 end-0 blur-background">
+    <a href="https://commons.wikimedia.org/wiki/User:Farragutful">Image owner.</a>
+    <a href="https://commons.wikimedia.org/wiki/File:Archbishop_Ryan_High_School_-_Philadelphia_01.jpg" target="_blank">Link to original background image.</a>
+</div>
 </body>
 
 </html>

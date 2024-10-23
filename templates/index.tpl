@@ -16,7 +16,7 @@
     <link rel="icon" type="image/x-icon" href="../img/website-icons/ar-time-bar-icon.png">
 
     <link rel="stylesheet" href="../css/index.css">
-    <title>ar-time.com</title>
+    <title>ar-time</title>
     <script>
       let data = JSON.parse('{$schedule_JSON}');
     </script>
@@ -25,14 +25,14 @@
 {include file="$navbar"}
 <div class="container">
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-5">
             {include file="$countdown"}
         </div>
-        <div class="col-md-8">
-            {if $table_data === 'Special'}
-                {include file="no-table.tpl"}
-            {else}
+        <div class="col-md-7">
+            {if is_array($table_data)}
                 {include file="bell-table.tpl" tableData = $table_data}
+            {else}
+                {include file="no-table.tpl"}
             {/if}
         </div>
     </div>

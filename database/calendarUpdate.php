@@ -146,7 +146,7 @@ class DateInfo
     switch ($alert) {
       case 'special schedule':
         $code = 'red';
-        $text = 'Unfortunately, we cannot access data for special schedules, so we are unable to provide table data or countdowns. Please refer to the schedule sent by the principal via Remind or Gmail for this day. Thank you for your understanding.';
+        $text = 'Unfortunately, we cannot access data for special schedules, so we are unable to provide table data or countdowns. Please refer to the schedule sent by the principal via Remind or Gmail for this day.';
         break;
       case 'pep rally':
         $code = 'yellow';
@@ -169,8 +169,8 @@ class DateInfo
         $text = 'test';
     }
     $this->special[] = [
-      "Code" => $code,
-      "Text" => $text
+      "code" => $code,
+      "text" => $text
     ];
   }
   private function additionalEvents()

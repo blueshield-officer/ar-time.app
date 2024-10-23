@@ -25,13 +25,15 @@ $smarty->assign('navbar','universal/navbar.tpl');
 $smarty->assign('countdown','countdown-box.tpl');
 require __DIR__.'/dataLoader.php';
 $schedule = new DataLoad($pdo);
-$data = $schedule->analysis();
-$smarty->assign('schedule_JSON', json_encode($data));
-$i = -1;
-foreach ($data['bells'] as $element){
-  $i += 1;
-  $data['bells'][$i]['name'] = ucwords($element['name']);
-}
-$smarty->assign('table_data', $data['bells']);
+  $data = $schedule->analysis();
+  $smarty->assign('schedule_JSON', json_encode($data));
+  $i = -1;
+  if (is_array($data['bells'])){
+    foreach ($data['bells'] as $element){
+      $i += 1;
+      $data['bells'][$i]['name'] = ucwords($element['name']);
+    }
+  }
+  $smarty->assign('table_data', $data['bells']);
 $smarty->display('index.tpl');
 exit();

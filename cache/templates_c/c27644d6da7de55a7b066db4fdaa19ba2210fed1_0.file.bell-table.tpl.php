@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.4, created on 2024-10-21 17:35:19
+/* Smarty version 4.5.4, created on 2024-10-22 18:01:53
   from 'D:\OSPanel\home\ar-time.loc\templates\bell-table.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_6716c9174e8519_50140776',
+  'unifunc' => 'content_671820d13f8125_75123053',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c27644d6da7de55a7b066db4fdaa19ba2210fed1' => 
     array (
       0 => 'D:\\OSPanel\\home\\ar-time.loc\\templates\\bell-table.tpl',
-      1 => 1729546518,
+      1 => 1729634512,
       2 => 'file',
     ),
   ),
@@ -20,9 +20,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6716c9174e8519_50140776 (Smarty_Internal_Template $_smarty_tpl) {
+function content_671820d13f8125_75123053 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="table-box">
-    <div class="table-frame">
+    <div class="table-frame box-shadow">
         <table class="content-table">
             <thead>
             <tr>

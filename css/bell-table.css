@@ -1,9 +1,9 @@
 .table-box {
     display: flex;
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
 
-    margin-bottom: 40px;
+    padding: 15px;
 }
 .table-box .table-frame {
     padding: 10px;
@@ -11,9 +11,9 @@
 
     border-radius: 0 0 5px 5px;
 }
-.content-table {
+.table-box .content-table {
     border-collapse: collapse;
-    font-size: 12px;
+    font-size: 16px;
     color: white;
 
     text-align: center;
@@ -21,29 +21,29 @@
 
     min-width: 250px;
 }
-.content-table thead tr {
+.table-box .content-table thead tr {
     padding: 5px;
     background-color: black;
 }
-.content-table th{
+.table-box .content-table th{
     padding: 5px;
 }
-.content-table td{
+.table-box .content-table td{
     padding: 8px;
 }
 
-.content-table tbody tr{
+.table-box .content-table tbody tr{
+    transition-duration: 0.4s;
     padding: 10px
 }
-.content-table tbody tr:nth-child(even) {
+.table-box .content-table tbody tr:nth-child(even) {
     background-color: #535353;
 }
-.content-table tbody tr:nth-child(odd) {
+.table-box .content-table tbody tr:nth-child(odd) {
     background-color: #353535;
 }
 
-.content-table tbody tr:hover {
-    background-color: var(--main-color);;
-    font-weight: 500;
-    color: black;
+.table-box .content-table tbody tr:hover {
+    background-color: white!important;
+    color: black!important;
 }

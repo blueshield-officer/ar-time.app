@@ -17,18 +17,22 @@ class ManagerUNIX {
     this.date = data.date
     this.accelerator = 0
   }
+
   particleAccelerator() {
     this.accelerator += 1
   }
-  day(){
+
+  day() {
     let tempDate = this.date.split('/')
-    let date = new Date(tempDate[2], tempDate[0]-1, tempDate[1])
+    let date = new Date(tempDate[2], tempDate[0] - 1, tempDate[1])
     date = new Date(date.getFullYear(), date.getMonth(), date.getDate())
-    return Math.floor(date.valueOf()/1000)
+    return Math.floor(date.valueOf() / 1000)
   }
-  now(){
-    return Math.floor(Date.now()/1000) + this.accelerator
+
+  now() {
+    return Math.floor(Date.now() / 1000) + this.accelerator
   }
+
   secondToTime(seconds) {
     const hours = Math.floor(seconds / 3600);
     const minutes = Math.floor((seconds % 3600) / 60);
@@ -45,37 +49,46 @@ class ManagerUNIX {
 class ClassStatus {
   constructor(data, position, period, status, unix) {
     this.bells = data.bells;
-    this.position = position;
-    this.period = period;
-    this.status = status;
-    this.UNIX = unix;
-    if (this.status === 0) {
-      this.lastUNIX = null
-      this.nextUNIX = this.bells[position].start_unix
-      this.statusText = 'starts in'
-    }
-    else {
-      this.lastUNIX = this.bells[position].start_unix
-      this.nextUNIX = this.bells[position].end_unix
-      this.statusText = 'ends in'
-    }
-    this.period = position === 1 && period === 'homeroom' ? 'school' : this.period;
-    this.lastUNIX = this.lastUNIX = null ? null : this.lastUNIX+=this.UNIX;
-    this.nextUNIX += this.UNIX
+    if (Array.isArray(data.bells)) {
+      this.data = data
+      this.position = position;
+      this.period = period;
+      this.status = status;
+      this.UNIX = unix;
 
-    this.countdownTime = document.getElementById('countdown-time');
-    this.countdownLabel = document.getElementById('countdown-label');
-    if (status === 1){
-      this.progressBar()
-      document.getElementById('countdown-progress-time').innerText = this.bells[this.position].end_time
-    }
+      this.tableRows = document.getElementsByClassName('table-row');
+      if (this.status === 0) {
+        this.lastUNIX = null
+        this.nextUNIX = this.bells[position].start_unix
+        this.statusText = 'starts in'
+      } else {
+        this.lastUNIX = this.bells[position].start_unix
+        this.nextUNIX = this.bells[position].end_unix
+        this.statusText = 'ends in'
+      }
+      // Changing homeroom to school
+      this.period = position === 1 && period === 'homeroom' ? 'school' : this.period;
+      this.lastUNIX = this.lastUNIX = null ? null : this.lastUNIX += this.UNIX;
+      this.nextUNIX += this.UNIX
 
-    // important function loaders
-    this.scheduleTable()
-    this.labelUpdate()
-    this.boxInfo()
+      this.countdownTime = document.getElementById('countdown-time');
+      this.countdownLabel = document.getElementById('countdown-label');
+
+      //height fixer
+      document.getElementById('countdown-holder').style.minHeight = '212px';
+
+        // important function loaders
+      this.#progressBar()
+      this.#scheduleTable()
+      this.#labelUpdate()
+    } else {
+      document.getElementById('countdown-time').innerText = 'No Data'
+    }
+    this.#boxInfo()
+    document.addEventListener("DOMContentLoaded", this.#alerts());
   }
-  console(){
+
+  #console() {
     return {
       position: this.position,
       period: this.period,
@@ -87,7 +100,7 @@ class ClassStatus {
     }
   }
 
-  progressBar() {
+  #progressBar() {
     if (this.status === 1) {
       let element = document.createElement('div');
       element.id = 'countdown-progress-box'
@@ -103,6 +116,7 @@ class ClassStatus {
       //
       element = document.createElement('span');
       element.id = 'countdown-progress-time'
+      element.textContent = this.bells[this.position].end_time
       document.getElementById('countdown-progress-info').appendChild(element);
       //
       element = document.createElement('div');
@@ -113,22 +127,23 @@ class ClassStatus {
       element.id = 'countdown-progress-bar-filled'
       element.className = 'percentage-color'
       document.getElementById('countdown-progress-bar').appendChild(element);
-      //
-    }
-    if (this.status === 0) {
-      document.getElementById('countdown-progress-box').remove();
+
+      document.getElementById('countdown-progress-time').innerText = this.bells[this.position].end_time
+    } else {
+      const element = document.getElementById('countdown-progress-box')
+      if (element !== null) {
+        element.remove();
+      }
     }
   }
-  labelUpdate(){
+
+  #labelUpdate() {
     this.period = this.period.charAt(0).toUpperCase() + this.period.slice(1)
     this.countdownLabel.innerHTML = '<strong>' + this.period + '</strong>' + ' ' + this.statusText + ':'
   }
 
-  progressBarUpdate (percentage) {
-    document.getElementById('countdown-progress-bar-filled').style.backgroundColor = 'hsl(' + 0.9 * percentage + ', 100%, 50%)'
-  }
 
-  boxInfo () {
+  #boxInfo() {
     // date box
     const date = new Date(data.date)
     const dateBoxID = document.getElementById('date-box')
@@ -146,41 +161,121 @@ class ClassStatus {
     // schedule box
     const scheduleBoxID = document.getElementById('schedule-box')
     let schedule
-    const numericSchedule = parseInt(data.schedule)
-    if (Number.isInteger(numericSchedule)) {
-      const scheduleName = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'P', 'R', 'T', 'V'];
-      schedule = scheduleName[numericSchedule - 1];
-      if (schedule === 'P') {
-        schedule = 'P (Pep Rally)'
+    if (Array.isArray(data.bells)) {
+      const numericSchedule = parseInt(data.schedule)
+      if (Number.isInteger(numericSchedule)) {
+        const scheduleName = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'P', 'R', 'T', 'V'];
+        schedule = scheduleName[numericSchedule - 1];
       }
+    } else {
+      schedule = data.schedule
     }
-    scheduleBoxID.innerHTML = '<strong>' + schedule + '</strong>' + ' ' + 'Schedule' + '<br>' + data.testDay + ' Day'
+    scheduleBoxID.innerHTML = '<p class="schedule">' + '<strong>' + schedule + '</strong>' + ' ' + 'Schedule' + '</p>' +
+      (data.description === null ? '' : '<p class="description">' + data.description + '</p>') +
+      (data.testDay === null ? '' : '<p class="day">' + '<strong>' + data.testDay + '</strong>' + ' Day' + '</p>');
   }
 
-  scheduleTable () {
-    /*
+  #scheduleTable() {
+    this.colorList = {
+      red: {
+        color: 'white',
+        backgroundColor: '#ed2024',
+      },
+      yellow: {
+        color: 'black',
+        backgroundColor: '#ffde21',
+      },
+      green: {
+        color: 'white',
+        backgroundColor: '#008000',
+      }
+    }
+
     const position = this.position - 1
     const status = this.status
     console.log(position, status)
     if (status === 0 && position === 0) {
 
     } else {
-      document.addEventListener('DOMContentLoaded', function () {
-        const tableRows = document.getElementsByClassName('table-row');
-        for (let i = 0; i <= position; i++) {
-          tableRows[i].style.backgroundColor = 'green';
-        }
-        if (status === 0) {
-          tableRows[this.period - 1].style.backgroundColor = 'yellow';
-        } else {
-          tableRows[this.period - 1].style.backgroundColor = 'red'
-        }
-      })
+      for (let i = 0; i <= position; i++) {
+        this.tableRows[i].style.backgroundColor = this.colorList.green.backgroundColor;
+        this.tableRows[i].style.color = this.colorList.green.color;
+      }
+      if (status === 0) {
+        this.tableRows[this.position].style.backgroundColor = this.colorList.yellow.backgroundColor;
+        this.tableRows[this.position].style.color = this.colorList.yellow.color;
+      } else {
+        this.tableRows[this.position].style.backgroundColor = this.colorList.red.backgroundColor;
+        this.tableRows[this.position].style.color = this.colorList.red.color;
+      }
     }
-     */
   }
 
+  #scheduleTableUpdate() {
+    if (this.status === 0) {
+      this.tableRows[this.position - 1].style.backgroundColor = this.colorList.green.backgroundColor;
+      this.tableRows[this.position - 1].style.color = this.colorList.green.color;
 
+      this.tableRows[this.position].style.backgroundColor = this.colorList.yellow.backgroundColor;
+      this.tableRows[this.position].style.color = this.colorList.yellow.color;
+    } else {
+      console.log(this.position)
+      console.log(this.period)
+      this.tableRows[this.position].style.backgroundColor = this.colorList.red.backgroundColor;
+      this.tableRows[this.position].style.color = this.colorList.red.color;
+    }
+  }
+
+  #alerts() {
+    const alerts = data.special
+    if (alerts === null) {
+    }
+    else {
+      const mainHolder = document.getElementById('info-holder')
+      alerts.forEach((alert) => {
+        console.log(alert)
+        //
+        let alertHolder = document.createElement('div')
+        alertHolder.className = 'alert-block'
+        //
+        let alertBox = document.createElement('div');
+        alertBox.className = 'alert-box'
+        alertBox.style.backgroundColor = 'rgba(' + this.#codeToColor(alert.code) + ', 0.65)'
+        alertBox.style.backdropFilter = 'blur(10px)';
+        //
+        let alertLine = document.createElement('div');
+        alertLine.className = 'alert-line'
+        alertLine.style.backgroundColor = 'rgb(' + this.#codeToColor(alert.code) + ')'
+        //
+        let text = document.createElement('p');
+        text.textContent = alert.text;
+        text.className = 'text'
+        //
+        mainHolder.appendChild(alertHolder);
+        alertHolder.appendChild(alertBox);
+        alertBox.appendChild(alertLine)
+        alertBox.appendChild(text)
+      })
+    }
+  }
+
+  #codeToColor (color){
+    switch(color){
+      case 'gamma':
+        return '174, 95, 121';
+      case 'red':
+        return '154, 33, 35';
+      case 'blue':
+        return '22, 106, 194';
+      case 'yellow':
+        return '194, 155, 30';
+      case 'green':
+        return '6, 123, 9';
+    }
+  }
+  progressBarUpdate(percentage) {
+    document.getElementById('countdown-progress-bar-filled').style.backgroundColor = 'hsl(' + 0.9 * percentage + ', 100%, 50%)'
+  }
   nextPeriod() {
     //  0 => 1, period started
     if (this.status === 0) {
@@ -192,40 +287,29 @@ class ClassStatus {
       this.nextUNIX = this.bells[this.position].end_unix
       this.status = 1
       this.statusText = 'ends in'
-      // check in order to skipp announcements
-      let tempPosition = this.position + 1
-      //creating progress
-      this.progressBar()
-      if (typeof this.bells[tempPosition] !== 'undefined' && this.bells[tempPosition].name === 'announcements') {
-        this.nextUNIX = this.bells[tempPosition].end_unix
-        document.getElementById('countdown-progress-time').innerText = this.bells[tempPosition].end_time
-      } else {
-        document.getElementById('countdown-progress-time').innerText = this.bells[this.position].end_time
-        document.getElementById('countdown-progress-time').innerText = this.bells[this.position].end_time
-      }
+
+      this.#progressBar()
+
     }
     // 1 => 0, period ended
     else {
       this.position += 1
-      console.log(typeof this.bells[this.position])
       if (typeof this.bells[this.position] === 'undefined') {
         location.reload()
-      }
-      if (this.bells[this.position].name === 'announcements') {
-        this.position += 1
       }
       this.status = 0
       this.statusText = 'starts in'
       this.lastUNIX = null
       this.nextUNIX = this.bells[this.position].start_unix
 
-      //deleting progress
-      this.progressBar()
+      this.#progressBar()
     }
     this.nextUNIX += this.UNIX
     this.lastUNIX = this.lastUNIX = null ? null : this.lastUNIX += this.UNIX;
     this.period = this.bells[this.position].name
-    this.labelUpdate()
+
+    this.#labelUpdate()
+    this.#scheduleTableUpdate()
     counterUpdater(UNIX, classStatus)
   }
 }
@@ -235,8 +319,8 @@ function counterUpdater(UNIX, classStatus) {
   let totalSeconds = classStatus.nextUNIX - UNIX.now();
   // progress update if status === 1
   if (classStatus.status === 1) {
-    let progressBar = document.getElementById('countdown-progress-bar-filled');
-    let progressPercentage = document.getElementById('countdown-progress-percentage');
+    const progressBar = document.getElementById('countdown-progress-bar-filled');
+    const progressPercentage = document.getElementById('countdown-progress-percentage');
     let percentage = 0
     if (totalSeconds <= 0) {
       percentage = 100
@@ -257,49 +341,52 @@ function counterUpdater(UNIX, classStatus) {
   }
   const convertedTime = UNIX.secondToTime(totalSeconds);
   let myArray = []
+
   if (convertedTime.hours > 0) {
-    if (convertedTime.hours < 10) {
-      convertedTime.hours = '0' + convertedTime.hours
-    }
     myArray.push(convertedTime.hours)
   }
   if (convertedTime.minutes > 0 || convertedTime.hours > 0) {
-    if (convertedTime.minutes < 10) {
+    if (convertedTime.minutes < 10 && convertedTime.hours > 0) {
       convertedTime.minutes = '0' + convertedTime.minutes
     }
     myArray.push(convertedTime.minutes)
   }
   if (convertedTime.seconds < 10) {
-    convertedTime.seconds = '0' + convertedTime.seconds
+    if (convertedTime.hours > 0 || convertedTime.minutes > 0) {
+      convertedTime.seconds = '0' + convertedTime.seconds
+    }
   }
   myArray.push(convertedTime.seconds)
   classStatus.countdownTime.innerHTML = myArray.join(':')
 }
 
 
-
 let UNIX = new ManagerUNIX(data)
 let classStatus
 window.onload = function () {
-  console.log(data)
-  data.bells.every(function (element) {
-    if (element.name === 'warning bell' && element.position === 1) {
-      return true
-    } else {
-      if (UNIX.now() < UNIX.day() + element.start_unix) {
-        //period starts in
-        classStatus = new ClassStatus(data, element.position - 1, element.name, 0, UNIX.day())
-        return false
-      } else if (UNIX.now() < UNIX.day() + element.end_unix) {
-        //period ends in
-        classStatus = new ClassStatus(data, element.position - 1, element.name, 1, UNIX.day())
-        return false
+  if (Array.isArray(data.bells)){
+    data.bells.every(function (element) {
+      if (element.name === 'warning bell' && element.position === 1) {
+        return true
+      } else {
+        if (UNIX.now() < UNIX.day() + element.start_unix) {
+          //period starts in
+          classStatus = new ClassStatus(data, element.position - 1, element.name, 0, UNIX.day())
+          return false
+        } else if (UNIX.now() < UNIX.day() + element.end_unix) {
+          //period ends in
+          classStatus = new ClassStatus(data, element.position - 1, element.name, 1, UNIX.day())
+          return false
+        }
+        return true
       }
-      return true
-    }
-  })
-  counterUpdater(UNIX, classStatus)
-  setInterval('counterUpdater(UNIX, classStatus)', 1000)
+    })
+    counterUpdater(UNIX, classStatus)
+    setInterval('counterUpdater(UNIX, classStatus)', 1000)
+  }
+  else {
+    classStatus = new ClassStatus(data, null, null, null, null)
+  }
 }
 
 //classStatus.nextPeriod()
@@ -307,4 +394,4 @@ window.onload = function () {
 // particle accelerator
 //setInterval('counterUpdater(UNIX, classStatus)', 1)
 //setInterval('UNIX.particleAccelerator()', 1)
-UNIX.accelerator = 57600
+UNIX.accelerator = 55500

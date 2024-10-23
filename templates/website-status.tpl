@@ -13,8 +13,8 @@
 </head>
 
 <body>
-<div class="row gx-0">
-    <div class="col-sm-8 gx-0">
+<div class="row">
+    <div class="col-md-6">
         <div class="left-part">
             <div class="left-box">
                 <div class="website-handler main-box">
@@ -33,7 +33,7 @@
             </div>
         </div>
     </div>
-    <div class="col-sm-4 gx-0">
+    <div class="col-md-6">
         <div class="right-part">
             <div class="right-box">
                 <div class="disclaimer-box blur-background">
@@ -41,7 +41,7 @@
                 </div>
                 <div class="website-handler blur-background">
                     <img class="website-logo" src="../img/website-icons/ar-time-circle.png" alt="logo">
-                    <p class="website-title">AR-TIME.COM</p>
+                    <p class="website-title">AR-TIME.ORG</p>
                     <p class="slogan">USE &middot; ENJOY &middot; SHARE</p>
                 </div>
                 <div class="author-box ">
@@ -61,7 +61,10 @@
         </div>
     </div>
 </div>
-<div class="position-absolute bottom-0 end-0"><a href="https://commons.wikimedia.org/wiki/File:Archbishop_Ryan_High_School_-_Philadelphia_01.jpg" target="_blank">Link to original background image.</a></div>
+<div class="image-credit position-absolute bottom-0 end-0 blur-background">
+    <a href="https://commons.wikimedia.org/wiki/User:Farragutful">Image owner.</a>
+    <a href="https://commons.wikimedia.org/wiki/File:Archbishop_Ryan_High_School_-_Philadelphia_01.jpg" target="_blank">Link to original background image.</a>
+</div>
 </body>
 
 </html>

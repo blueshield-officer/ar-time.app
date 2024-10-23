@@ -2,12 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
-
-    min-height: 175px;
 
     padding: 15px;
-
     flex-direction: column;
 }
 
@@ -19,10 +15,9 @@
 
 .main-info-holder .info-block .info-box {
     color: white;
-    font-size: 20px;
     padding: 10px;
 
-    width: 200px;
+    width: 256px;
 
     margin: 5px 0 5px 0;
 
@@ -30,34 +25,35 @@
 }
 
 .main-info-holder  #countdown {
-    width: auto;
+    width: 100%;
 }
 
 
 
-#countdown-time {
+.main-info-holder #countdown-time {
     display: flex;
-    justify-content: center;
-
     color: black;
-    font-size: 34px;
+    justify-content: center;
+    font-size: 56px;
     font-weight: bold;
+
+    padding: 0 5px 0 5px;
 
     background-color: white;
     border-radius: 3px;
 }
 
-#countdown-progress-box {
-    padding-top: 10px;
+.main-info-holder #countdown-progress-box {
+    padding-top: 5px;
  }
 
-#countdown-progress {
+.main-info-holder #countdown-progress {
     display: flex;
     height: 10px;
 
     background-color: black;
 }
-#countdown-progress-bar {
+.main-info-holder #countdown-progress-bar {
     height: 15px;
     width: 100%;
 
@@ -65,73 +61,106 @@
 
     border-radius: 3px;
 }
-#countdown-progress-bar-filled {
+.main-info-holder #countdown-progress-bar-filled {
     position: relative;
     display: block;
     height: 100%;
 
-
-
     border-radius: 3px;
 }
-#countdown-progress-info {
+.main-info-holder #countdown-progress-info {
     justify-content: space-between;
 }
-#countdown-progress-percentage {
+.main-info-holder #countdown-progress-percentage {
     font-weight: bold;
 }
-#countdown-progress-time {
+.main-info-holder #countdown-progress-time {
     font-weight: bold;
     float: right;
 }
 
-.percentage-color {
+.main-info-holder .percentage-color {
     background-color: red;
 }
 
 
 
+.main-info-holder .countdown {
+    min-width: 265px;
+    font-size: 26px;
 
-
-.main-info-holder .container .schedule {
-    order: 0;
-}
-.main-info-holder .container .countdown {
-    order: 1;
-}
-.main-info-holder .container .date {
-    order: 2;
+    margin-bottom: 5px;
 }
 
-@media screen and (max-width: 768px) {
+
+.main-info-holder .schedule {
+}
+.main-info-holder .schedule .schedule {
+    font-size: 24px;
+}
+
+.main-info-holder .schedule .description {
+    color: grey;
+}
+.main-info-holder .schedule .day {
+    font-size: 20px;
+}
+
+
+.main-info-holder .date #date-box {
+    font-size: 20px;
+}
+
+
+
+
+.main-info-holder .alert-block {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.main-info-holder .alert-box {
+    display: flex;
+    justify-content: left;
+    align-content: center;
+
+    margin: 5px 0 ;
+
+    text-wrap: wrap;
+    width: 256px;
+}
+.main-info-holder .alert-box .alert-line {
+    width: 3%;
+}
+.main-info-holder .alert-box .text {
+    width: 97%;
+    padding: 10px;
+    color: white;
+}
+
+/*@media screen and (max-width: 768px) {
     .main-info-holder .container {
         flex-wrap: wrap;
     }
 
     .main-info-holder .container .schedule {
-        order: 1;
     }
     .main-info-holder .container .countdown {
-        order: 0;
         width: 100%;
     }
     .main-info-holder .container .date {
-        order: 2;
     }
 }
 @media screen and (max-width: 575px) {
 
 
     .main-info-holder .container .schedule {
-        order: 1;
         width: 100%;
     }
     .main-info-holder .container .countdown {
-        order: 0;
         width: 100%;
     }
     .main-info-holder .container .date {
-        order: 2;
         width: 100%;
     }
 }
