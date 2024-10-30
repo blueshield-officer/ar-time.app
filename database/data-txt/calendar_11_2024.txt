@@ -135,8 +135,8 @@
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2024/11/4/16222051/?id=0"
-				aria-label="11/4/2024 - *A Schedule - Day ">
-				*A Schedule - Day 
+				aria-label="11/4/2024 - *C Schedule - Day 1">
+				*C Schedule - Day 1
 			</a>
 		</span>
 
@@ -185,8 +185,8 @@
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2024/11/5/16222053/?id=0"
-				aria-label="11/5/2024 - *A Schedule - Day ">
-				*A Schedule - Day 
+				aria-label="11/5/2024 - *A Schedule - Day 2">
+				*A Schedule - Day 2
 			</a>
 		</span>
 
@@ -235,8 +235,27 @@
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2024/11/6/16222054/?id=0"
-				aria-label="11/6/2024 - *A Schedule - Day ">
-				*A Schedule - Day 
+				aria-label="11/6/2024 - *A Schedule - Day 3">
+				*A Schedule - Day 3
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/11/6/17945924/?id=0"
+				aria-label="11/6/2024 - All Souls' Mass of Remebrance">
+				All Souls' Mass of Remebrance
 			</a>
 		</span>
 
@@ -307,8 +326,8 @@
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2024/11/7/16222055/?id=0"
-				aria-label="11/7/2024 - *A Schedule - Day ">
-				*A Schedule - Day 
+				aria-label="11/7/2024 - *A Schedule - Day 4">
+				*A Schedule - Day 4
 			</a>
 		</span>
 
@@ -354,8 +373,8 @@
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2024/11/8/16222056/?id=0"
-				aria-label="11/8/2024 - *A Schedule - Day ">
-				*A Schedule - Day 
+				aria-label="11/8/2024 - *A Schedule - Day 5">
+				*A Schedule - Day 5
 			</a>
 		</span>
 
@@ -495,6 +514,25 @@
 					<ul class="day-event-box">
 	<li class="day-event-info">
 		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/11/11/18139218/?id=0"
+				aria-label="11/11/2024 - *A Schedule- Day 6">
+				*A Schedule- Day 6
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2024/11/11/16222109/?id=0"
 				aria-label="11/11/2024 - Second Quarter Begins">
 				Second Quarter Begins
@@ -546,12 +584,34 @@
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2024/11/12/16222006/?id=0"
-				aria-label="11/12/2024 - *B Schedule - Day">
-				*B Schedule - Day
+				aria-label="11/12/2024 - *B Schedule - Day 1">
+				*B Schedule - Day 1
 			</a>
 		</span>
 
 		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/11/12/18286842/?id=0"
+				aria-label="11/12/2024 - CSC/CRS Thanksgiving Candy Gram Sale at Lunch Periods">
+				CSC/CRS Thanksgiving Candy Gram Sale at Lunch Periods
+			</a>
+		</span>
+
+		<span class="dateloc">
+				11/12/2024
+				<span class="ndash-range"> &ndash; </span>
+					11/14/2024
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-1 checked">
@@ -659,12 +719,34 @@
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2024/11/13/17644353/?id=0"
-				aria-label="11/13/2024 - *E Schedule - Day ">
-				*E Schedule - Day 
+				aria-label="11/13/2024 - *A Schedule - Day 2">
+				*A Schedule - Day 2
 			</a>
 		</span>
 
 		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/11/12/18286842/?id=0"
+				aria-label="11/12/2024 - CSC/CRS Thanksgiving Candy Gram Sale at Lunch Periods">
+				CSC/CRS Thanksgiving Candy Gram Sale at Lunch Periods
+			</a>
+		</span>
+
+		<span class="dateloc">
+				11/12/2024
+				<span class="ndash-range"> &ndash; </span>
+					11/14/2024
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-1 checked">
@@ -708,6 +790,47 @@
 					<ul class="day-event-box">
 	<li class="day-event-info">
 		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/11/14/18139225/?id=0"
+				aria-label="11/14/2024 - * A Schedule -Day 3">
+				* A Schedule -Day 3
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/11/12/18286842/?id=0"
+				aria-label="11/12/2024 - CSC/CRS Thanksgiving Candy Gram Sale at Lunch Periods">
+				CSC/CRS Thanksgiving Candy Gram Sale at Lunch Periods
+			</a>
+		</span>
+
+		<span class="dateloc">
+				11/12/2024
+				<span class="ndash-range"> &ndash; </span>
+					11/14/2024
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2024/11/14/16322144/?id=0"
 				aria-label="11/14/2024 - NHS General Membership Meeting">
 				NHS General Membership Meeting
@@ -737,6 +860,25 @@
 						<span class="day">Fri</span>
 					</div>
 					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/11/15/18139226/?id=0"
+				aria-label="11/15/2024 - *E Schedule-Day 4">
+				*E Schedule-Day 4
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2024/11/15/16800789/?id=0"
@@ -829,6 +971,25 @@
 					<ul class="day-event-box">
 	<li class="day-event-info">
 		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/11/18/18139228/?id=0"
+				aria-label="11/18/2024 - *A Schedule- Day 5">
+				*A Schedule- Day 5
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2024/11/18/16295736/?id=0"
 				aria-label="11/18/2024 - Varsity Mathletes Practice">
 				Varsity Mathletes Practice
@@ -860,6 +1021,25 @@
 					<ul class="day-event-box">
 	<li class="day-event-info">
 		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/11/19/18139234/?id=0"
+				aria-label="11/19/2024 - *A Schedule-Day 6">
+				*A Schedule-Day 6
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2024/11/19/17629689/?id=0"
 				aria-label="11/19/2024 - ACT Visit to AR">
 				ACT Visit to AR
@@ -886,6 +1066,25 @@
 						<span class="day">Wed</span>
 					</div>
 					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/11/20/18139244/?id=0"
+				aria-label="11/20/2024 - *E Schedule - Day 1">
+				*E Schedule - Day 1
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2024/11/20/16222007/?id=0"
@@ -938,6 +1137,25 @@
 					<ul class="day-event-box">
 	<li class="day-event-info">
 		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/11/21/18139559/?id=0"
+				aria-label="11/21/2024 - *A Schedule- Day 2">
+				*A Schedule- Day 2
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2024/11/21/16222032/?id=0"
 				aria-label="11/21/2024 - Thankful Thursday">
 				Thankful Thursday
@@ -964,6 +1182,25 @@
 						<span class="day">Fri</span>
 					</div>
 					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/11/22/18139248/?id=0"
+				aria-label="11/22/2024 - *E Schedule - Day 3">
+				*E Schedule - Day 3
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2024/11/22/16222041/?id=0"
@@ -1081,6 +1318,25 @@
 					<ul class="day-event-box">
 	<li class="day-event-info">
 		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/11/25/16222025/?id=0"
+				aria-label="11/25/2024 - *D Schedule - Day 4">
+				*D Schedule - Day 4
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2024/11/25/16295736/?id=0"
 				aria-label="11/25/2024 - Varsity Mathletes Practice">
 				Varsity Mathletes Practice
@@ -1112,9 +1368,9 @@
 					<ul class="day-event-box">
 	<li class="day-event-info">
 		<span class="event-title-wrap">
-			<a class="event-link" href="/apps/events/2024/11/26/16222025/?id=0"
-				aria-label="11/26/2024 - *D Schedule - Day ">
-				*D Schedule - Day 
+			<a class="event-link" href="/apps/events/2024/11/26/18139705/?id=0"
+				aria-label="11/26/2024 - *F Schedule- Day 5">
+				*F Schedule- Day 5
 			</a>
 		</span>
 

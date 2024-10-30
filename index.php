@@ -13,25 +13,35 @@ $smarty->setCacheDir(__DIR__.'/cache/cache/');
 $query = 'SELECT `current_status` FROM `website` WHERE `id` = 1';
 $statement = $pdo->prepare($query);
 $statement->execute();
-$status = $statement->fetch()["current_status"];
-if ($status !== 0){
+$status = $statement->fetch();
+if ($status !== false) {
+  if ($status["current_status"] !== 0){
     include __DIR__ . '/website-status.php';
     exit();
+  }
 }
 
-$smarty->assign('navbar','universal/navbar.tpl');
-$smarty->assign('countdown','countdown-box.tpl');
-require __DIR__.'/dataLoader.php';
-$schedule = new DataLoad($pdo);
-  $data = $schedule->analysis();
-  $smarty->assign('schedule_JSON', json_encode($data));
-  $i = -1;
-  if (is_array($data['bells'])){
-    foreach ($data['bells'] as $element){
-      $i += 1;
-      $data['bells'][$i]['name'] = ucwords($element['name']);
-    }
+require __DIR__ . '/database/sql_output/day-info.php';
+require __DIR__ . '/database/sql_output/absence.php';
+require __DIR__ . '/database/sql_output/event_bar.php';
+
+$day_info = new DataLoad($pdo);
+$day_info = $day_info->analysis();
+$smarty->assign('schedule_JSON', json_encode($day_info));
+
+$absence = new AbsenceLoad($pdo);
+$absence = $absence->analysis();
+$smarty->assign('absence', $absence);
+
+$i = -1;
+if (is_array($day_info['bells'])){
+  foreach ($day_info['bells'] as $element){
+    $i += 1;
+    $day_info['bells'][$i]['name'] = ucwords($element['name']);
   }
-  $smarty->assign('table_data', $data['bells']);
-$smarty->display('index.tpl');
+}
+$smarty->assign('navbar','universal/navbar.tpl');
+
+$smarty->assign('table_data', $day_info['bells']);
+$smarty->display('main-page/index.tpl');
 exit();

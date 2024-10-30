@@ -1,5 +1,3 @@
-
-
 <div class="top-bar">
     <div class="container">
         <div class="content">

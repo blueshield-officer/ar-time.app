@@ -1,5 +1,5 @@
 <?php
-require __DIR__ . '/../libs/simplehtmldom/simple_html_dom.php';
+require __DIR__ . '/../../libs/simplehtmldom/simple_html_dom.php';
 function loadData() {
   $url = "https://www.archbishopryan.com/apps/bell_schedules/printerfriendly.jsp";
   $ch = curl_init();
@@ -19,7 +19,7 @@ function loadData() {
 }
 
 function writeFile($websiteData){
-  $f = fopen(__DIR__ . "/data-txt/bell_schedules.txt", "w");
+  $f = fopen(__DIR__ . "/../data-txt/bell_schedules.txt", "w");
   fwrite($f, $websiteData);
   fclose($f);
 }
@@ -83,7 +83,7 @@ function unixCounter($timeString)
   return $hours * 60 * 60 + $minutes * 60;
 }
 
-$file = __DIR__ . '/data-txt/bell_schedules.txt';
+$file = __DIR__ . '/../data-txt/bell_schedules.txt';
 var_dump($file);
 $html = file_get_html($file);
 $tables = $html->find('table.bell-schedule');
@@ -112,6 +112,6 @@ function classesSQL($pdo, $bellsData)
 }
 
 if(defined('STDIN')){
-  require __DIR__ . '/../app/app.php';
+  require __DIR__ . '/../../app/app.php';
   classesSQL(App::getPDO(), $bellsData);
 }

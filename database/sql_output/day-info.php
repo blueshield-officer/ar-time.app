@@ -1,6 +1,4 @@
 <?php
-include_once __DIR__.'/app/app.php';
-$pdo = App::getPDO();
 
 class DataLoad {
   private $pdo;

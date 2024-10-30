@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.css">
     <script src="../libs/bootstrap/js/bootstrap.bundle.js"></script>
 
@@ -18,23 +20,23 @@
 </head>
 
 <body>
-<div class="container">
+<div class="container-fluid">
     <div class="row">
-        <div class="col-md-6 message">
+        <div class="col-12 col-md-6 message">
             <div class="info-block block">
-                <div class="info-box box">
-                    <img src="../img/svg/lock-fill.svg" alt="icon" class="icon">
-                    <div class="title">Title</div>
-                    <div class="text">Test</div>
+                <div id="info-box" class="info-box box">
+                    <img id="image" src="" alt="icon" class="icon">
+                    <div id="title" class="title"></div>
+                    <div id="description" class="description"></div>
                 </div>
             </div>
         </div>
-        <div class="col-md-6 website">
+        <div class="col-12 col-md-6 website">
             <div class="website-block block">
                 <div class="website-box box">
                     <div class="disclaimer-block block">
                         <div class="disclaimer-box blur-background">
-                            <p class="disclaimer"><strong>AR-TIME.ORG</strong> is <strong>NOT</strong> affiliated or owned by Archbishop Ryan High School</p>
+                            <p class="disclaimer"><strong>AR-TIME.ORG</strong> is <strong>NOT</strong> affiliated or owned by Archbishop Ryan High School.</p>
                         </div>
                     </div>
                     <div class="ar-time-block block">
@@ -59,9 +61,11 @@
     </div>
 </div>
 
-<div class="image-credit position-absolute bottom-0 end-0 blur-background">
-    <a href="https://commons.wikimedia.org/wiki/User:Farragutful">Image owner.</a>
-    <a href="https://commons.wikimedia.org/wiki/File:Archbishop_Ryan_High_School_-_Philadelphia_01.jpg" target="_blank">Link to original background image.</a>
+
+<div class="image-credit blur-background">
+    <a class="owner" href="https://commons.wikimedia.org/wiki/User:Farragutful">Image owner</a>
+    <p> | </p>
+    <a class="text" href="https://commons.wikimedia.org/wiki/File:Archbishop_Ryan_High_School_-_Philadelphia_01.jpg" target="_blank">Link to original background image.</a>
 </div>
 </body>
 

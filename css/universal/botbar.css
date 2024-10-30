@@ -1,0 +1,26 @@
+.bot-bar {
+    padding: 16px 0;
+    color: white;
+    background: #000;
+    .content {
+        .spoiler {
+            justify-content: center;
+            display: flex;
+            .fat-not {
+                font-weight: 400;
+            }
+        }
+        .links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            a {
+                margin: 0 10px;
+            }
+        }
+        .brand {
+            text-align: center;
+        }
+    }
+}

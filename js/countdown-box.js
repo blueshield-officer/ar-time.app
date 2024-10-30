@@ -66,7 +66,13 @@ class ClassStatus {
         this.statusText = 'ends in'
       }
       // Changing homeroom to school
-      this.period = position === 1 && period === 'homeroom' ? 'school' : this.period;
+      if (this.position === 0 && this.status === 0) {
+        this.period = 'school';
+      }
+      else if (this.position === 1 && this.status === 0 && this.period === 'homeroom') {
+        this.period = 'school';
+      }
+
       this.lastUNIX = this.lastUNIX = null ? null : this.lastUNIX += this.UNIX;
       this.nextUNIX += this.UNIX
 
@@ -189,15 +195,20 @@ class ClassStatus {
       green: {
         color: 'white',
         backgroundColor: '#008000',
+      },
+
+      orange: {
+        color: 'black',
+        backgroundColor: '#FFA500',
       }
     }
 
     const position = this.position - 1
     const status = this.status
-    console.log(position, status)
-    if (status === 0 && position === 0) {
+    if (status === 0 && position <= 0) {
 
-    } else {
+    }
+    else {
       for (let i = 0; i <= position; i++) {
         this.tableRows[i].style.backgroundColor = this.colorList.green.backgroundColor;
         this.tableRows[i].style.color = this.colorList.green.color;
@@ -205,9 +216,23 @@ class ClassStatus {
       if (status === 0) {
         this.tableRows[this.position].style.backgroundColor = this.colorList.yellow.backgroundColor;
         this.tableRows[this.position].style.color = this.colorList.yellow.color;
-      } else {
+      }
+      else {
         this.tableRows[this.position].style.backgroundColor = this.colorList.red.backgroundColor;
         this.tableRows[this.position].style.color = this.colorList.red.color;
+      }
+    }
+  }
+
+  scheduleWarningBell () {
+    if (this.tableRows[this.position - 1].style.backgroundColor !== 'rgb(255, 165, 0)') {
+      const timeUntilStart = UNIX.day() + this.bells[this.position].start_unix - UNIX.now()
+      if (timeUntilStart <= 300) {
+        const row = this.position - 1
+        this.tableRows[row].style.backgroundColor = this.colorList.orange.backgroundColor;
+        this.tableRows[row].style.color = this.colorList.orange.color;
+
+        console.log('done')
       }
     }
   }
@@ -220,8 +245,6 @@ class ClassStatus {
       this.tableRows[this.position].style.backgroundColor = this.colorList.yellow.backgroundColor;
       this.tableRows[this.position].style.color = this.colorList.yellow.color;
     } else {
-      console.log(this.position)
-      console.log(this.period)
       this.tableRows[this.position].style.backgroundColor = this.colorList.red.backgroundColor;
       this.tableRows[this.position].style.color = this.colorList.red.color;
     }
@@ -288,6 +311,14 @@ class ClassStatus {
   nextPeriod() {
     //  0 => 1, period started
     if (this.status === 0) {
+      // warning bell to green
+      const warningBellPosition = this.position - 1
+      const warningBell = this.bells[warningBellPosition]
+      if (warningBell !== undefined && warningBell.name === 'warning bell'){
+        this.tableRows[warningBellPosition].style.backgroundColor = this.colorList.green.backgroundColor;
+        this.tableRows[warningBellPosition].style.color = this.colorList.green.color;
+      }
+
       // check on -
       if (this.bells[this.position].end_unix === null) {
         location.reload()
@@ -325,6 +356,9 @@ class ClassStatus {
 
 
 function counterUpdater(UNIX, classStatus) {
+  if (classStatus.position === 1 && classStatus.status === 0 && classStatus.period === 'School'){
+    classStatus.scheduleWarningBell()
+  }
   let totalSeconds = classStatus.nextUNIX - UNIX.now();
   // progress update if status === 1
   if (classStatus.status === 1) {
@@ -376,8 +410,10 @@ window.onload = function () {
   if (Array.isArray(data.bells)){
     data.bells.every(function (element) {
       if (element.name === 'warning bell' && element.position === 1) {
+        // нужно как-то сделать заполнение той таблицы, где варнинг бел, фиг знает как
         return true
-      } else {
+      }
+      else {
         if (UNIX.now() < UNIX.day() + element.start_unix) {
           //period starts in
           classStatus = new ClassStatus(data, element.position - 1, element.name, 0, UNIX.day())
@@ -403,3 +439,4 @@ window.onload = function () {
 // particle accelerator
 //setInterval('counterUpdater(UNIX, classStatus)', 1)
 //setInterval('UNIX.particleAccelerator()', 1)
+//UNIX.accelerator = 47700

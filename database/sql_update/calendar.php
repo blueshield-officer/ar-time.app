@@ -16,10 +16,10 @@ function calendarHTML($month, $year)
   }
   curl_close($ch);
 
-  $f = fopen(__DIR__ . '/data-txt/calendar_' .$month.'_'.$year.'.txt', "w");
+  $f = fopen(__DIR__ . '/../data-txt/calendar_' .$month.'_'.$year.'.txt', "w");
   fwrite($f, $data);
   fclose($f);
-  return file_get_html(__DIR__ . '/data-txt/calendar_' .$month.'_'.$year.'.txt');
+  return file_get_html(__DIR__ . '/../data-txt/calendar_' .$month.'_'.$year.'.txt');
 }
 
 class DateInfo
@@ -135,7 +135,7 @@ class DateInfo
   }
 
   private function bell_schedulesTXT(){
-    return file_get_html(__DIR__ . '/data-txt/bell_schedules.txt');
+    return file_get_html(__DIR__ . '/../data-txt/bell_schedules.txt');
   }
 
   private function specialAdder($alert)
@@ -268,10 +268,12 @@ function classesSQL($pdo, $dateArray)
 if (isset($_GET['password']) && $_GET['password'] == '9999') {
 
 }
-require __DIR__ . "/../libs/simplehtmldom/simple_html_dom.php";
-require __DIR__ . '/../app/app.php';
 
-$day = (int)date('j');
+
+require __DIR__ . "/../../libs/simplehtmldom/simple_html_dom.php";
+require __DIR__ . '/../../app/app.php';
+
+$day = (int)date('d');
 $month = (int)date('m');
 $year = (int)date('Y');
 
