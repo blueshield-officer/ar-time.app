@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="../../css/bell-table.css">
     <link rel="stylesheet" href="../../css/partnerships.css">
     <link rel="stylesheet" href="../../css/absence.css">
-    <link rel="stylesheet" href="../../css/universal/botbar.css"
-
+    <link rel="stylesheet" href="../../css/universal/botbar.css">
+    <link rel="stylesheet" href="../../css/universal/eventbar.css">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,12 +30,13 @@
       console.log(absence)
 
       event_bar = '{$event_bar}'
+
     </script>
 </head>
 <body>
 {include file="$navbar"}
-{if $event_bar !== ''}
-    {include file="main-page/event-bar.tpl"}
+{if '$event_bar' !== ''}
+    {include file="universal/event-bar.tpl"}
 {/if}
 <div class="container">
     <div class="row">
@@ -62,5 +63,6 @@
 <script src="../../js/navbar.js"></script>
 <script src="../../js/absent.js"></script>
 <script src="../../js/botbar.js"></script>
+<script src="../../js/eventbar.js"></script>
 </body>
 </html>

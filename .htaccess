@@ -4,3 +4,10 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 AddDefaultCharset UTF-8
 RewriteRule . index.php [L]
+
+<Files ~ "\.(tpl)$">
+Order allow,deny
+Deny from all
+</Files>
+
+ErrorDocument 403 /404.html

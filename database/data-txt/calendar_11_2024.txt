@@ -253,25 +253,6 @@
 	</li>
 	<li class="day-event-info">
 		<span class="event-title-wrap">
-			<a class="event-link" href="/apps/events/2024/11/6/17945924/?id=0"
-				aria-label="11/6/2024 - All Souls' Mass of Remebrance">
-				All Souls' Mass of Remebrance
-			</a>
-		</span>
-
-		<span class="dateloc">
-			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
-								<span class="">Events</span>
-							</li>
-			</ul>
-		</span>
-
-		<div class="full-description" style="display: none;"></div>
-	</li>
-	<li class="day-event-info">
-		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2024/11/6/16221977/?id=0"
 				aria-label="11/6/2024 - Academic Board Meeting">
 				Academic Board Meeting

@@ -1,20 +1,20 @@
-console.log(data)
-addEventListener("DOMContentLoaded", function(){
-  const box = document.getElementById('info-box')
-  const title = document.getElementById('title')
-  const description = document.getElementById('description')
-  const image = document.getElementById('image')
+addEventListener("DOMContentLoaded", function () {
+    document.title = 'ar-time · ' + data.title;
+    const box = document.getElementById('info-box')
+    const title = document.getElementById('title')
+    const description = document.getElementById('description')
+    const image = document.getElementById('image')
 
 
-  box.style.backgroundColor = data.bgColor;
-  box.style.backdropFilter = 'blur(10px)';
-  box.style.border = '5px solid ' + data.borderColor;
-  box.style.color = data.color
+    box.style.backgroundColor = 'rgba(' + data.bg_color + ', 0.7)'
+    box.style.backdropFilter = 'blur(10px)';
+    box.style.border = '5px solid ' + 'rgb(' + data.bg_color + ')'
+    box.style.color = 'rgb(' + data.color + ')'
 
-  title.style.fontWeight = 'bold';
-  title.innerText = data.title;
+    title.style.fontWeight = 'bold'
+    title.innerText = data.title
 
-  description.innerText = data.description;
+    description.innerHTML = data.description
 
-  image.src = data.image;
+    image.src = '../img/svg/' + data.image + '.svg'
 });
