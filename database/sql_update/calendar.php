@@ -1,4 +1,7 @@
 <?php
+if ($_GET['au7hEfudnhUUy8'] !== '667a4af374347aaebc6d04d8572fbb85250cf8b51c773f3f8dc8b4be867a9a02'){
+    die();
+}
 function calendarHTML($month, $year)
 {
     $url = 'https://www.archbishopryan.com/apps/events/' . $year . '/' . $month . '/print/?id=0';
@@ -46,7 +49,7 @@ class DateInfo
         $this->thirdEvent = null;
         $this->schedule = null;
         $this->description = null;
-        $this->date = (DateTime::createFromFormat('Y-m-d', $year.'-'.$month.'-'.$day))->format('Ymd');
+        $this->date = (DateTime::createFromFormat('Y-m-d', $year.'-'.$month.'-'.$day))->format('Y-m-d');
         var_dump($this->date);
         $this->day = $day;
         $this->month = $month;
@@ -68,6 +71,8 @@ class DateInfo
         if (!str_starts_with($this->scheduleText, '*') || str_contains($this->scheduleText, 'school closed') || str_contains($this->scheduleText, 'no classes') && !str_contains($this->scheduleText, 'grade')) {
             return $this->noSchoolClass();
         }
+        // 12.11.2024
+        $this->scheduleText = trim(substr($this->scheduleText, 1));
         // retreats (special update + hard function end)
         if (str_contains($this->scheduleText, 'retreat')) {
             $this->specialAdder('special schedule');
@@ -84,7 +89,7 @@ class DateInfo
         // test day Checker
         for ($i = 1; $i <= 6; $i++) {
             if (str_contains($this->scheduleText, 'day ' . $i)) {
-                $this->testDay = $i;
+                $this->testDay = $i;;
                 break;
             }
         }
@@ -96,7 +101,7 @@ class DateInfo
             $this->schedule = 9;
             $this->specialAdder('pep rally');
         } else {
-            $this->schedule = match (substr($this->scheduleText, 1, 1)) {
+            $this->schedule = match (substr($this->scheduleText, 0, 1)) {
                 'a' => 1,
                 'b' => 2,
                 'c' => 3,
@@ -215,7 +220,7 @@ class DateInfo
         return [
             'schedule' => null,
             'description' => null,
-            'date' => (DateTime::createFromFormat('Y-m-d', $year.'-'.$month.'-'.$day))->format('Ymd'),
+            'date' => (DateTime::createFromFormat('Y-m-d', $year.'-'.$month.'-'.$day))->format('Y-m-d'),
             'testDay' => null,
             'special' => null,
             'school' => false,
@@ -257,7 +262,7 @@ function classesSQL($pdo, $dateArray)
         $statement = $pdo->prepare($query);
         $statement->execute();
         if (!$statement->fetch()) {
-            $query = 'INSERT INTO `calendar` (`schedule`,	`description`, `date`, `testDay`, `special`, `school`) VALUES (?, ?, ?, ?, ?, ?)';
+            $query = 'INSERT INTO `calendar` (`schedule`, `description`, `date`, `testDay`, `special`, `school`) VALUES (?, ?, ?, ?, ?, ?)';
             $statement = $pdo->prepare($query);
             if (!is_null($element['special'])) {
                 $element['special'] = json_encode($element['special']);
@@ -265,10 +270,6 @@ function classesSQL($pdo, $dateArray)
             $statement->execute([$element['schedule'], $element['description'], $element['date'], $element['testDay'], $element['special'], $element['school']]);
         }
     }
-}
-
-if (isset($_GET['password']) && $_GET['password'] == '9999') {
-
 }
 
 

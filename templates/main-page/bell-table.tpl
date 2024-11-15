@@ -1,5 +1,5 @@
-<div class="table-box">
-    <div class="table-frame box-shadow">
+<div class="table-box margin-20">
+    <div class="table-frame golden-6px box-shadow">
         <table class="content-table">
             <thead>
             <tr>

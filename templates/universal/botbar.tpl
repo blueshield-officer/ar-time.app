@@ -6,16 +6,16 @@
                 <div></div>
             </div>
             <div class="spoiler">
-                <p class="fat-not">Not</p><p>&#160;owned or affiliated by Archbishop Ryan High School.</p>
+                <p><strong>Not</strong> owned or affiliated by Archbishop Ryan High School.</p>
             </div>
             <div class="links">
-                <a>
+                <a target="_blank" href="/terms-of-service/">
                     Terms
                 </a>
-                <a>
+                <a target="_blank" href="/privacy-policy/">
                     Privacy
                 </a>
-                <a>
+                <a target="_blank" href="/about/">
                     About
                 </a>
             </div>

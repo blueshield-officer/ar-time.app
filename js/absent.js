@@ -46,7 +46,7 @@ class DataUpdate {
         element = document.createElement('div')
         element.id = job + '-block'
         element.className = 'absent-' + job + ' block absent-list'
-        document.getElementById('absence-box').appendChild(element)
+        document.getElementById('info-block').appendChild(element)
 
         element = document.createElement('p');
         element.className = 'title'
@@ -65,7 +65,7 @@ class DataUpdate {
         element = document.createElement('div')
         element.id = 'roomChanges-block'
         element.className = 'room-changes block'
-        document.getElementById('absence-box').appendChild(element)
+        document.getElementById('info-block').appendChild(element)
 
         element = document.createElement('p');
         element.className = 'title'
@@ -85,28 +85,30 @@ class DataUpdate {
         let object
         for (i = 1; i <= 8; i++) {
             object = dataPath[i]
-            let element
-            element = document.createElement('div')
-            element.id = 'period-' + i
-            element.className = 'period-box pointable'
-            document.getElementById('room-changes-list').appendChild(element)
+            if (object !== undefined) {
+                let element
+                element = document.createElement('div')
+                element.id = 'period-' + i
+                element.className = 'period-box pointable'
+                document.getElementById('room-changes-list').appendChild(element)
 
-            element = document.createElement('p')
-            element.className = 'period-number'
-            element.innerText = 'Period ' + i + ' '
-            document.getElementById('period-' + i).appendChild(element)
-
-            element = document.createElement('div')
-            element.className = 'directions-box'
-            element.id = 'directions-box-' + i
-            document.getElementById('period-' + i).appendChild(element)
-
-            object.forEach((direction) => {
                 element = document.createElement('p')
-                element.className = 'direction'
-                element.innerHTML = direction
-                document.getElementById('directions-box-' + i).appendChild(element)
-            })
+                element.className = 'period-number'
+                element.innerText = 'Period ' + i + ' '
+                document.getElementById('period-' + i).appendChild(element)
+
+                element = document.createElement('div')
+                element.className = 'directions-box'
+                element.id = 'directions-box-' + i
+                document.getElementById('period-' + i).appendChild(element)
+
+                object.forEach(function (direction) {
+                    element = document.createElement('p')
+                    element.className = 'direction'
+                    element.innerHTML = direction
+                    document.getElementById('directions-box-' + i).appendChild(element)
+                })
+            }
         }
 
     }
@@ -157,23 +159,16 @@ class DataUpdate {
 
     noData() {
         // CREATING NO DATA BOX
-
-        document.getElementById('box-title-header').innerText = ''
-
         let element
         element = document.createElement('div')
         element.id = 'no-data-block'
         element.className = 'no-data block'
-        document.getElementById('absence-box').appendChild(element)
+        document.getElementById('info-block').appendChild(element)
 
         element = document.createElement('p');
         element.innerText = 'No Data'
         element.className = 'title no-data'
         document.getElementById('no-data-block').appendChild(element)
-    }
-
-    headerUpdate() {
-        document.getElementById('box-title-header').innerText = this.data.header
     }
 
     timeVersionUpdate() {
@@ -187,11 +182,9 @@ class DataUpdate {
 const myAbsence = new DataUpdate()
 
 
-console.log(myAbsence.data)
 
 //first data load
 if (myAbsence.data !== null) {
-    myAbsence.headerUpdate()
     myAbsence.absentFill('teachers')
     myAbsence.absentFill('staff')
     myAbsence.roomChangesFill()
@@ -243,7 +236,6 @@ async function updateIfNeeded() {
                     }
                 })
             }
-            myAbsence.headerUpdate()
             //cleaning tables which are empty
             myAbsence.removeEmptyFields()
         } else {
@@ -258,4 +250,4 @@ async function updateIfNeeded() {
     }
 }
 
-setInterval('updateIfNeeded()', 30000)
+setInterval('updateIfNeeded()', 10000)

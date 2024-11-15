@@ -16,7 +16,7 @@ class DataLoad
     public function __construct($pdo)
     {
         $this->pdo = $pdo;
-        $this->dateObject = new DateTime('now');;
+        $this->dateObject = new DateTime('now');
         $this->currentUNIX = time();
         $this->description = null;
         $this->testDay = null;
@@ -60,7 +60,8 @@ class DataLoad
             $end_unix = $end_unix + $this->scheduleUNIX;
             if ($end_unix < $this->currentUNIX) {
                 return false;
-            } else {
+            }
+            else {
                 return $result;
             }
         } else {
@@ -76,26 +77,29 @@ class DataLoad
 
     private function calendarExtractor()
     {
-        for ($i = $this->dateObject; true; $i->modify('+1 day')) {
-            $query = 'SELECT * FROM `calendar` WHERE `date` =' . $this->dateObject->format('Ymd');
-            $statement = $this->pdo->prepare($query);
-            $statement->execute();
-            $result = $statement->fetch();
-            if ($result['school'] === 1) {
-                $this->schedule = $result['schedule'];
-                $this->scheduleUNIX = strtotime($result['date']);
-                $this->description = $result['description'];
-                $this->testDay = $result['testDay'];
-                if (!is_null($result['special'])) {
-                    $result['special'] = json_decode($result['special']);
-                }
-                $this->special = $result['special'];
-                $this->dateObject = $i;
-                break;
+        $query = 'SELECT * FROM `calendar` WHERE `date` >= ? AND `school` = 1 ORDER BY `date` ASC LIMIT 1';
+        $statement = $this->pdo->prepare($query);
+        $statement->execute([$this->dateObject->format('Y-m-d')]);
+        $result = $statement->fetch();
+        if ($result !== false) {
+            $this->schedule = $result['schedule'];
+            $this->scheduleUNIX = strtotime($result['date']);
+            $this->description = $result['description'];
+            $this->testDay = $result['testDay'];
+            if (!is_null($result['special'])) {
+                $result['special'] = json_decode($result['special']);
+            }
+            $this->special = $result['special'];
+
+            $scheduleDateObject = DateTime::createFromFormat('Y-m-d', $result['date']);
+            if ($this->dateObject->format('Y-m-d') !== $scheduleDateObject->format('Y-m-d')) {
+                $this->dateObject = $scheduleDateObject;
             }
         }
+        else {
+            exit();
+        }
     }
-
 }
 
 

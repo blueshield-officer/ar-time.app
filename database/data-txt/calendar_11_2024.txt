@@ -153,6 +153,28 @@
 	</li>
 	<li class="day-event-info">
 		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/11/4/18675868/?id=0"
+				aria-label="11/4/2024 - Theology Class Thanksgiving Food Drive">
+				Theology Class Thanksgiving Food Drive
+			</a>
+		</span>
+
+		<span class="dateloc">
+				11/4/2024
+				<span class="ndash-range"> &ndash; </span>
+					11/25/2024
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2024/11/4/16295743/?id=0"
 				aria-label="11/4/2024 - Varsity Mathletes Competition">
 				Varsity Mathletes Competition
@@ -203,6 +225,28 @@
 	</li>
 	<li class="day-event-info">
 		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/11/4/18675868/?id=0"
+				aria-label="11/4/2024 - Theology Class Thanksgiving Food Drive">
+				Theology Class Thanksgiving Food Drive
+			</a>
+		</span>
+
+		<span class="dateloc">
+				11/4/2024
+				<span class="ndash-range"> &ndash; </span>
+					11/25/2024
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2024/11/5/16322355/?id=0"
 				aria-label="11/5/2024 - RHO Kappa Officers Meeting">
 				RHO Kappa Officers Meeting
@@ -241,6 +285,28 @@
 		</span>
 
 		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/11/4/18675868/?id=0"
+				aria-label="11/4/2024 - Theology Class Thanksgiving Food Drive">
+				Theology Class Thanksgiving Food Drive
+			</a>
+		</span>
+
+		<span class="dateloc">
+				11/4/2024
+				<span class="ndash-range"> &ndash; </span>
+					11/25/2024
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-1 checked">
@@ -342,6 +408,28 @@
 
 		<div class="full-description" style="display: none;"></div>
 	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/11/4/18675868/?id=0"
+				aria-label="11/4/2024 - Theology Class Thanksgiving Food Drive">
+				Theology Class Thanksgiving Food Drive
+			</a>
+		</span>
+
+		<span class="dateloc">
+				11/4/2024
+				<span class="ndash-range"> &ndash; </span>
+					11/25/2024
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
 					</ul>
 				</li>
 				<li class="cf event-day  " id="day-8">
@@ -351,6 +439,25 @@
 						<span class="day">Fri</span>
 					</div>
 					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/11/8/18693561/?id=0"
+				aria-label="11/8/2024 - $3 Dress Down Day- to celebrate the end of the quarter!">
+				$3 Dress Down Day- to celebrate the end of the quarter!
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2024/11/8/16222056/?id=0"
@@ -410,6 +517,28 @@
 	</li>
 	<li class="day-event-info">
 		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/11/4/18675868/?id=0"
+				aria-label="11/4/2024 - Theology Class Thanksgiving Food Drive">
+				Theology Class Thanksgiving Food Drive
+			</a>
+		</span>
+
+		<span class="dateloc">
+				11/4/2024
+				<span class="ndash-range"> &ndash; </span>
+					11/25/2024
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2024/11/8/16653149/?id=0"
 				aria-label="11/8/2024 - Ryan Cheerleading Designer Bingo">
 				Ryan Cheerleading Designer Bingo
@@ -441,16 +570,16 @@
 					<ul class="day-event-box">
 	<li class="day-event-info">
 		<span class="event-title-wrap">
-			<a class="event-link" href="/apps/events/2024/11/9/16222016/?id=0"
-				aria-label="11/9/2024 - Ignite Retreat">
-				Ignite Retreat
+			<a class="event-link" href="/apps/events/2024/11/4/18675868/?id=0"
+				aria-label="11/4/2024 - Theology Class Thanksgiving Food Drive">
+				Theology Class Thanksgiving Food Drive
 			</a>
 		</span>
 
 		<span class="dateloc">
-				7:30 AM
+				11/4/2024
 				<span class="ndash-range"> &ndash; </span>
-					12 PM
+					11/25/2024
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-1 checked">
@@ -485,7 +614,37 @@
 	</li>
 					</ul>
 				</li>
-				<li class="event-day empty no-border " id="day-10">
+				<li class="cf event-day  " id="day-10">
+					<div class="day-date-box">
+						<span class="month">Nov</span>
+						<span class="date">10</span>
+						<span class="day">Sun</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/11/4/18675868/?id=0"
+				aria-label="11/4/2024 - Theology Class Thanksgiving Food Drive">
+				Theology Class Thanksgiving Food Drive
+			</a>
+		</span>
+
+		<span class="dateloc">
+				11/4/2024
+				<span class="ndash-range"> &ndash; </span>
+					11/25/2024
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
 				<li class="cf event-day  " id="day-11">
 					<div class="day-date-box">
 						<span class="month">Nov</span>
@@ -533,6 +692,28 @@
 	</li>
 	<li class="day-event-info">
 		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/11/4/18675868/?id=0"
+				aria-label="11/4/2024 - Theology Class Thanksgiving Food Drive">
+				Theology Class Thanksgiving Food Drive
+			</a>
+		</span>
+
+		<span class="dateloc">
+				11/4/2024
+				<span class="ndash-range"> &ndash; </span>
+					11/25/2024
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2024/11/11/16295736/?id=0"
 				aria-label="11/11/2024 - Varsity Mathletes Practice">
 				Varsity Mathletes Practice
@@ -555,7 +736,7 @@
 	</li>
 					</ul>
 				</li>
-				<li class="cf event-day  " id="day-12">
+				<li class="cf event-day  current-day " id="day-12">
 					<div class="day-date-box">
 						<span class="month">Nov</span>
 						<span class="date">12</span>
@@ -612,6 +793,28 @@
 		</span>
 
 		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/11/4/18675868/?id=0"
+				aria-label="11/4/2024 - Theology Class Thanksgiving Food Drive">
+				Theology Class Thanksgiving Food Drive
+			</a>
+		</span>
+
+		<span class="dateloc">
+				11/4/2024
+				<span class="ndash-range"> &ndash; </span>
+					11/25/2024
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-1 checked">
@@ -740,6 +943,28 @@
 	</li>
 	<li class="day-event-info">
 		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/11/4/18675868/?id=0"
+				aria-label="11/4/2024 - Theology Class Thanksgiving Food Drive">
+				Theology Class Thanksgiving Food Drive
+			</a>
+		</span>
+
+		<span class="dateloc">
+				11/4/2024
+				<span class="ndash-range"> &ndash; </span>
+					11/25/2024
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2024/11/13/16221979/?id=0"
 				aria-label="11/13/2024 - Department Meeting">
 				Department Meeting
@@ -800,6 +1025,28 @@
 				11/12/2024
 				<span class="ndash-range"> &ndash; </span>
 					11/14/2024
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/11/4/18675868/?id=0"
+				aria-label="11/4/2024 - Theology Class Thanksgiving Food Drive">
+				Theology Class Thanksgiving Food Drive
+			</a>
+		</span>
+
+		<span class="dateloc">
+				11/4/2024
+				<span class="ndash-range"> &ndash; </span>
+					11/25/2024
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-1 checked">
@@ -879,6 +1126,28 @@
 
 		<div class="full-description" style="display: none;"></div>
 	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/11/4/18675868/?id=0"
+				aria-label="11/4/2024 - Theology Class Thanksgiving Food Drive">
+				Theology Class Thanksgiving Food Drive
+			</a>
+		</span>
+
+		<span class="dateloc">
+				11/4/2024
+				<span class="ndash-range"> &ndash; </span>
+					11/25/2024
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
 					</ul>
 				</li>
 				<li class="cf event-day  " id="day-16">
@@ -888,6 +1157,28 @@
 						<span class="day">Sat</span>
 					</div>
 					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/11/4/18675868/?id=0"
+				aria-label="11/4/2024 - Theology Class Thanksgiving Food Drive">
+				Theology Class Thanksgiving Food Drive
+			</a>
+		</span>
+
+		<span class="dateloc">
+				11/4/2024
+				<span class="ndash-range"> &ndash; </span>
+					11/25/2024
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2024/11/16/16222030/?id=0"
@@ -919,6 +1210,28 @@
 						<span class="day">Sun</span>
 					</div>
 					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/11/4/18675868/?id=0"
+				aria-label="11/4/2024 - Theology Class Thanksgiving Food Drive">
+				Theology Class Thanksgiving Food Drive
+			</a>
+		</span>
+
+		<span class="dateloc">
+				11/4/2024
+				<span class="ndash-range"> &ndash; </span>
+					11/25/2024
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2024/11/17/17283990/?id=0"
@@ -959,6 +1272,28 @@
 		</span>
 
 		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/11/4/18675868/?id=0"
+				aria-label="11/4/2024 - Theology Class Thanksgiving Food Drive">
+				Theology Class Thanksgiving Food Drive
+			</a>
+		</span>
+
+		<span class="dateloc">
+				11/4/2024
+				<span class="ndash-range"> &ndash; </span>
+					11/25/2024
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-1 checked">
@@ -1038,6 +1373,28 @@
 
 		<div class="full-description" style="display: none;"></div>
 	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/11/4/18675868/?id=0"
+				aria-label="11/4/2024 - Theology Class Thanksgiving Food Drive">
+				Theology Class Thanksgiving Food Drive
+			</a>
+		</span>
+
+		<span class="dateloc">
+				11/4/2024
+				<span class="ndash-range"> &ndash; </span>
+					11/25/2024
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
 					</ul>
 				</li>
 				<li class="cf event-day  " id="day-20">
@@ -1075,6 +1432,28 @@
 		</span>
 
 		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/11/4/18675868/?id=0"
+				aria-label="11/4/2024 - Theology Class Thanksgiving Food Drive">
+				Theology Class Thanksgiving Food Drive
+			</a>
+		</span>
+
+		<span class="dateloc">
+				11/4/2024
+				<span class="ndash-range"> &ndash; </span>
+					11/25/2024
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-1 checked">
@@ -1154,6 +1533,28 @@
 
 		<div class="full-description" style="display: none;"></div>
 	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/11/4/18675868/?id=0"
+				aria-label="11/4/2024 - Theology Class Thanksgiving Food Drive">
+				Theology Class Thanksgiving Food Drive
+			</a>
+		</span>
+
+		<span class="dateloc">
+				11/4/2024
+				<span class="ndash-range"> &ndash; </span>
+					11/25/2024
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
 					</ul>
 				</li>
 				<li class="cf event-day  " id="day-22">
@@ -1172,6 +1573,28 @@
 		</span>
 
 		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/11/4/18675868/?id=0"
+				aria-label="11/4/2024 - Theology Class Thanksgiving Food Drive">
+				Theology Class Thanksgiving Food Drive
+			</a>
+		</span>
+
+		<span class="dateloc">
+				11/4/2024
+				<span class="ndash-range"> &ndash; </span>
+					11/25/2024
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-1 checked">
@@ -1237,6 +1660,28 @@
 					<ul class="day-event-box">
 	<li class="day-event-info">
 		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/11/4/18675868/?id=0"
+				aria-label="11/4/2024 - Theology Class Thanksgiving Food Drive">
+				Theology Class Thanksgiving Food Drive
+			</a>
+		</span>
+
+		<span class="dateloc">
+				11/4/2024
+				<span class="ndash-range"> &ndash; </span>
+					11/25/2024
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2024/11/23/16222012/?id=0"
 				aria-label="11/23/2024 - The Sound of Music">
 				The Sound of Music
@@ -1266,6 +1711,28 @@
 						<span class="day">Sun</span>
 					</div>
 					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/11/4/18675868/?id=0"
+				aria-label="11/4/2024 - Theology Class Thanksgiving Food Drive">
+				Theology Class Thanksgiving Food Drive
+			</a>
+		</span>
+
+		<span class="dateloc">
+				11/4/2024
+				<span class="ndash-range"> &ndash; </span>
+					11/25/2024
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2024/11/24/16222013/?id=0"
@@ -1306,6 +1773,50 @@
 		</span>
 
 		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/11/4/18675868/?id=0"
+				aria-label="11/4/2024 - Theology Class Thanksgiving Food Drive">
+				Theology Class Thanksgiving Food Drive
+			</a>
+		</span>
+
+		<span class="dateloc">
+				11/4/2024
+				<span class="ndash-range"> &ndash; </span>
+					11/25/2024
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/11/25/18693473/?id=0"
+				aria-label="11/25/2024 - ARTAPA Thanksgiving Pie Sale Pick-Up @ Mon Nov 25, 2024 2:30pm - 6:30pm (EST)">
+				ARTAPA Thanksgiving Pie Sale Pick-Up @ Mon Nov 25, 2024 2:30pm - 6:30pm (EST)
+			</a>
+		</span>
+
+		<span class="dateloc">
+				2:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					6:30 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-1 checked">

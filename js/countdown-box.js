@@ -10,8 +10,6 @@ let options = {
     formatter = new Intl.DateTimeFormat([], options);
 
 
-console.log(data)
-
 class ManagerUNIX {
     constructor(data) {
         this.date = data.date
@@ -50,6 +48,7 @@ class ClassStatus {
     constructor(data, position, period, status, unix) {
         this.bells = data.bells;
         this.UNIX = unix;
+        this.loadTimeOut = 700
         if (Array.isArray(data.bells)) {
             this.position = position;
             this.period = period;
@@ -60,10 +59,12 @@ class ClassStatus {
                 this.lastUNIX = null
                 this.nextUNIX = this.bells[position].start_unix
                 this.statusText = 'starts in'
+                this.nextRoomChanges = 1
             } else {
                 this.lastUNIX = this.bells[position].start_unix
                 this.nextUNIX = this.bells[position].end_unix
                 this.statusText = 'ends in'
+                this.nextRoomChanges = 0
             }
             // Changing homeroom to school
             if (this.position === 0 && this.status === 0) {
@@ -87,6 +88,7 @@ class ClassStatus {
             this.#progressBar()
             this.#scheduleTable()
             this.#labelUpdate()
+            this.colorRoomChanges(2)
         } else {
             document.getElementById('countdown-time').innerText = 'No Data'
             // 2:20 updater
@@ -107,7 +109,57 @@ class ClassStatus {
             UNIX: this.UNIX,
         }
     }
-
+    secondsToTime(seconds){
+        let myArray = []
+        const convertedTime = UNIX.secondToTime(seconds)
+        if (convertedTime.hours > 0) {
+            myArray.push(convertedTime.hours)
+        }
+        if (convertedTime.minutes > 0 || convertedTime.hours > 0) {
+            if (convertedTime.minutes < 10 && convertedTime.hours > 0) {
+                convertedTime.minutes = '0' + convertedTime.minutes
+            }
+            myArray.push(convertedTime.minutes)
+        }
+        if (convertedTime.seconds < 10) {
+            if (convertedTime.hours > 0 || convertedTime.minutes > 0) {
+                convertedTime.seconds = '0' + convertedTime.seconds
+            }
+        }
+        myArray.push(convertedTime.seconds)
+        return myArray.join(':')
+    }
+    colorRoomChanges (status){
+        let position = this.position
+        if (status === 1){
+            position += 1;
+            if (this.bells[position].name.toLowerCase() === 'announcements'){
+                position += 1;
+            }
+        }
+        const periodName = this.bells[position].name.toLowerCase();
+        if (periodName.includes('period')) {
+            const period = document.getElementById('period-' + periodName.slice(7, 8))
+            function changeColor (bg, color, border){
+                period.style.backgroundColor = bg;
+                period.style.color = color;
+                period.style.borderRightColor = border;
+                period.style.borderLeftColor = border;
+            }
+            if (period !== null) {
+                switch (status) {
+                    case 0:
+                        changeColor('', 'black', 'white')
+                        break;
+                    case 1:
+                        changeColor('#ffde21', 'black', 'black')
+                        break;
+                    case 2:
+                        changeColor('#ed2024', 'white', 'black')
+                }
+            }
+        }
+    }
     #progressBar() {
         if (this.status === 1) {
             let element = document.createElement('div');
@@ -183,7 +235,7 @@ class ClassStatus {
             (data.testDay === null ? '' : '<p class="day">' + '<strong>' + data.testDay + '</strong>' + ' Day' + '</p>');
     }
 
-    #scheduleTable() {
+    async #scheduleTable() {
         this.colorList = {
             red: {
                 color: 'white',
@@ -203,23 +255,32 @@ class ClassStatus {
                 backgroundColor: '#FFA500',
             }
         }
-
         const position = this.position - 1
         const status = this.status
         if (status === 0 && position <= 0) {
 
-        } else {
-            for (let i = 0; i <= position; i++) {
+        }
+        else {
+            let timeout = this.loadTimeOut/(position + 2)
+            let i = 0
+            let interval = setInterval(() => {
                 this.tableRows[i].style.backgroundColor = this.colorList.green.backgroundColor;
                 this.tableRows[i].style.color = this.colorList.green.color;
-            }
-            if (status === 0) {
-                this.tableRows[this.position].style.backgroundColor = this.colorList.yellow.backgroundColor;
-                this.tableRows[this.position].style.color = this.colorList.yellow.color;
-            } else {
-                this.tableRows[this.position].style.backgroundColor = this.colorList.red.backgroundColor;
-                this.tableRows[this.position].style.color = this.colorList.red.color;
-            }
+                i++
+                if (i > position) {
+                    setTimeout(() => {
+                        if (status === 0) {
+                            this.tableRows[this.position].style.backgroundColor = this.colorList.yellow.backgroundColor;
+                            this.tableRows[this.position].style.color = this.colorList.yellow.color;
+                        } else {
+                            this.tableRows[this.position].style.backgroundColor = this.colorList.red.backgroundColor;
+                            this.tableRows[this.position].style.color = this.colorList.red.color;
+                        }
+                    }, timeout)
+
+                    clearInterval(interval)
+                }
+            } , timeout)
         }
     }
 
@@ -230,8 +291,6 @@ class ClassStatus {
                 const row = this.position - 1
                 this.tableRows[row].style.backgroundColor = this.colorList.orange.backgroundColor;
                 this.tableRows[row].style.color = this.colorList.orange.color;
-
-                console.log('done')
             }
         }
     }
@@ -298,18 +357,59 @@ class ClassStatus {
 
     #specialAutoUpdate() {
         const updateTime = UNIX.day() + 51600
-        console.log(updateTime)
         if (UNIX.now() >= updateTime) {
             location.reload()
         }
     }
+    progressBarAndCounterFirstUpdate (){
+        // calculate data
+        const classLength = this.nextUNIX - this.lastUNIX
+        let totalSeconds = this.nextUNIX - UNIX.now();
 
+        let percentage
+        if (totalSeconds <= 0) {
+            percentage = 100
+        } else if (totalSeconds > this.nextUNIX - this.lastUNIX) {
+            percentage = 0
+        } else {
+            percentage = 100 - (totalSeconds / (this.nextUNIX - this.lastUNIX) * 100)
+        }
+        const times = 20
+        let intervalTime = (this.loadTimeOut / 20 )
+
+        const progressBarFilled = document.getElementById('countdown-progress-bar-filled')
+        const progressPercentage = document.getElementById('countdown-progress-percentage');
+
+        // on load
+        this.countdownTime.innerHTML = this.secondsToTime(classLength)
+        progressBarFilled.style.backgroundColor = 'hsl(' + 0.9 * 0 + ', 100%, 50%)'
+        progressBarFilled.style.width = 0 + '%'
+        progressPercentage.innerText = Math.floor(0) + '%'
+
+        // loop
+        let i = 0
+        let interval = setInterval(() => {
+            const tempPercants = (percentage / 100) * (i*5)
+            const leftSecond = Math.round(classLength - ((classLength * tempPercants) / 100))
+            console.log(leftSecond)
+            this.countdownTime.innerHTML = this.secondsToTime(leftSecond)
+            progressBarFilled.style.backgroundColor = 'hsl(' + 0.9 * tempPercants + ', 100%, 50%)'
+            progressBarFilled.style.width = tempPercants + '%'
+            progressPercentage.innerText = Math.floor(tempPercants) + '%'
+            i++
+            if (i >= times){
+                clearInterval(interval)
+                counterUpdater(UNIX, classStatus)
+            }
+        }, intervalTime)
+    }
     progressBarUpdate(percentage) {
         document.getElementById('countdown-progress-bar-filled').style.backgroundColor = 'hsl(' + 0.9 * percentage + ', 100%, 50%)'
     }
 
     nextPeriod() {
         //  0 => 1, period started
+        // Current Period
         if (this.status === 0) {
             // warning bell to green
             const warningBellPosition = this.position - 1
@@ -329,10 +429,11 @@ class ClassStatus {
             this.statusText = 'ends in'
 
             this.#progressBar()
-
         }
         // 1 => 0, period ended
+        // Next Period
         else {
+            this.colorRoomChanges(0)
             this.position += 1
             if (typeof this.bells[this.position] === 'undefined') {
                 location.reload()
@@ -343,10 +444,16 @@ class ClassStatus {
             this.nextUNIX = this.bells[this.position].start_unix
 
             this.#progressBar()
+            // room changes table
+            this.colorRoomChanges(2)
         }
         this.nextUNIX += this.UNIX
         this.lastUNIX = this.lastUNIX = null ? null : this.lastUNIX += this.UNIX;
         this.period = this.bells[this.position].name
+
+        if (this.period !== 'Announcements' && this.status === 1) {
+            this.nextRoomChanges = 0
+        }
         this.#labelUpdate()
         this.#scheduleTableUpdate()
         counterUpdater(UNIX, classStatus)
@@ -359,6 +466,11 @@ function counterUpdater(UNIX, classStatus) {
         classStatus.scheduleWarningBell()
     }
     let totalSeconds = classStatus.nextUNIX - UNIX.now();
+    // yellow room changes if less than 10 minutes
+    if (classStatus.nextRoomChanges !== 1 && totalSeconds <= 600){
+        classStatus.nextRoomChanges = 1
+        classStatus.colorRoomChanges(1)
+    }
     // progress update if status === 1
     if (classStatus.status === 1) {
         const progressBar = document.getElementById('countdown-progress-bar-filled');
@@ -375,31 +487,11 @@ function counterUpdater(UNIX, classStatus) {
         progressPercentage.innerText = Math.floor(percentage) + '%'
         classStatus.progressBarUpdate(percentage)
     }
-
-
     if (totalSeconds < 0) {
         classStatus.nextPeriod();
         totalSeconds = classStatus.nextUNIX - UNIX.now()
     }
-    const convertedTime = UNIX.secondToTime(totalSeconds);
-    let myArray = []
-
-    if (convertedTime.hours > 0) {
-        myArray.push(convertedTime.hours)
-    }
-    if (convertedTime.minutes > 0 || convertedTime.hours > 0) {
-        if (convertedTime.minutes < 10 && convertedTime.hours > 0) {
-            convertedTime.minutes = '0' + convertedTime.minutes
-        }
-        myArray.push(convertedTime.minutes)
-    }
-    if (convertedTime.seconds < 10) {
-        if (convertedTime.hours > 0 || convertedTime.minutes > 0) {
-            convertedTime.seconds = '0' + convertedTime.seconds
-        }
-    }
-    myArray.push(convertedTime.seconds)
-    classStatus.countdownTime.innerHTML = myArray.join(':')
+    classStatus.countdownTime.innerHTML = classStatus.secondsToTime(totalSeconds);
 }
 
 
@@ -423,7 +515,12 @@ window.onload = function () {
                 return true
             }
         })
-        counterUpdater(UNIX, classStatus)
+        if (classStatus.status === 1) {
+            classStatus.progressBarAndCounterFirstUpdate()
+        }
+        else {
+            counterUpdater(UNIX, classStatus)
+        }
         setInterval('counterUpdater(UNIX, classStatus)', 1000)
     } else {
         classStatus = new ClassStatus(data, null, null, null, null)
@@ -435,4 +532,4 @@ window.onload = function () {
 // particle accelerator
 //setInterval('counterUpdater(UNIX, classStatus)', 1)
 //setInterval('UNIX.particleAccelerator()', 1)
-//UNIX.accelerator =
+//UNIX.accelerator = 50000

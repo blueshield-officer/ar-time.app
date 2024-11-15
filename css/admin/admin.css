@@ -1,0 +1,7 @@
+.by-pass-box {
+    display: grid;
+    background-color: grey;
+}
+.form {
+    display: flex;
+}

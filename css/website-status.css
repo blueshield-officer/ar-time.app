@@ -1,5 +1,5 @@
 body {
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/03/Archbishop_Ryan_High_School_-_Philadelphia_01.jpg');
+    background-image: url("https://ar-time.org/img/backgrounds/status_page_bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -22,7 +22,6 @@ html,body {
     height: 100%;
 }
 .block {
-
 }
 .box {
     display: grid;
@@ -37,17 +36,15 @@ html,body {
 .row {
     .website {
         order: 1;
-        display: block;
     }
     .message {
         order: 0;
-        display: block;
     }
 }
 
-.info-block {
     .info-box {
-        padding: 10px;
+        margin: 5px;
+        padding: 5px;
         border-radius: 6px;
         .icon {
             justify-self: center;
@@ -58,19 +55,49 @@ html,body {
         .description {
             text-align: left;
         }
+        .bypass {
+            margin-top: 10px;
+            justify-self: center;
+            display: flex;
+            flex-direction: column;
+            background-color: #bdbdbd;
+            padding: 5px;
+            border-radius: 6px;
+            .title {
+                color: black;
+                font-weight: bold;
+            }
+            .form {
+                color: black;
+                display: flex;
+                flex: 100%;
+
+                input[type=number]::-webkit-outer-spin-button,
+                input[type=number]::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+
+                /* Hide arrows for Firefox */
+                input[type=number] {
+                    -moz-appearance: textfield;
+                }
+                .button {
+
+                }
+                .form-control {
+
+                }
+            }
+        }
     }
-}
-
-.website-block {
-    display: flex;
-    max-width: 400px;
-    color: white;
-
-    justify-self: center;
 
     .website-box {
         display: grid;
-        padding: 10px;
+        margin: 5px;
+        padding: 5px;
+        border-radius: 20px;
+        color: white;
 
         .disclaimer-box {
             justify-self: center;
@@ -143,7 +170,7 @@ html,body {
             padding: 5px;
             display: flex;
             align-items: center;
-            justify-content: space-around;
+            justify-content: space-evenly;
             .link {
                 color: white;
                 text-decoration: none;
@@ -153,22 +180,8 @@ html,body {
             }
         }
     }
-}
 
 
-
-
-
-.image-credit {
-    display: flex;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 3px;
-    border-radius: 6px 0 0 6px;
-
-    font-size: 5px;
-}
 
 
 
@@ -184,7 +197,7 @@ html,body {
             font-size: 21px;
         }
         .slogan {
-            font-size: 16px;
+            font-size: 10px;
         }
     }
 }
@@ -194,13 +207,11 @@ html,body {
             font-size: 30px;
         }
         .slogan {
-            font-size: 20px;
+            font-size: 14px;
         }
     }
 }
-@media screen and (max-width: 768px) {
-    .col-12{
-    }
+@media screen and (max-width: 769px) {
     .website {
         order: 0!important;
         .ar-time-box {
@@ -208,7 +219,7 @@ html,body {
                 font-size: 35px;
             }
             .slogan {
-                font-size: 23px;
+                font-size: 20px;
             }
             .author-box {
                 .grey-text{
@@ -224,7 +235,7 @@ html,body {
         order: 1!important;
     }
     .row {
-        align-content: space-evenly!important;
+
     }
 }
 @media screen and (max-width: 992px) {
@@ -233,7 +244,7 @@ html,body {
             font-size: 45px;
         }
         .slogan {
-            font-size: 30px;
+            font-size: 25px;
         }
     }
 }
@@ -243,13 +254,13 @@ html,body {
             font-size: 55px;
         }
         .slogan {
-            font-size: 35px;
+            font-size: 30px;
         }
     }
 }
 
 @media screen and (min-width: 1200px) {
-    .info-block {
+    .info-box {
         max-width: 570px;
     }
     .ar-time-box {
@@ -257,25 +268,17 @@ html,body {
             font-size: 65px;
         }
         .slogan {
-            font-size: 40px;
+            font-size: 35px;
         }
     }
 }
 
 @media screen and (min-width: 768px) {
-    .website-block {
+    .website-box {
         .ar-time-box {
             .image {
                 min-width: 215px;
             }
         }
-    }
-    .row {
-        align-content: space-evenly!important;
-    }
-    .col-12 {
-        justify-content: center!important;
-        align-content: center!important;
-        display: flex!important;
     }
 }

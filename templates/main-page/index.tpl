@@ -1,24 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../../libs/bootstrap/css/bootstrap.css">
-
-    <link rel="stylesheet" href="../../css/universal/normalize.css">
-    <link rel="stylesheet" href="../../css/universal/fonts.css">
-
-    <link rel="stylesheet" href="../../css/universal/navbar.css">
-    <link rel="stylesheet" href="../../css/countdown-box.css">
-    <link rel="stylesheet" href="../../css/bell-table.css">
-    <link rel="stylesheet" href="../../css/partnerships.css">
-    <link rel="stylesheet" href="../../css/absence.css">
-    <link rel="stylesheet" href="../../css/universal/botbar.css">
-    <link rel="stylesheet" href="../../css/universal/eventbar.css">
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="../../img/website-icons/ar-time-bar-icon.png">
-
-    <link rel="stylesheet" href="../../css/index.css">
+    {include file='constructor/header.tpl'}
+    {assign var='version' value='1.03'}
+    <link rel="stylesheet" href="/css/index.css?v={$version}">
     <title>ar-time</title>
     <script>
       let data = JSON.parse('{$schedule_JSON}');
@@ -27,15 +12,24 @@
         md5: '{$absence['absence_MD5']}',
         version_time: '{$absence['version_time']}'
       }
+      let news = ''
+      let partners = ''
+      let event_bar = ''
+      console.log('Schedule Data ↓')
+      console.log(data)
+      console.log('')
+      console.log('Absence Data ↓')
       console.log(absence)
-
-      event_bar = '{$event_bar}'
+      console.log('')
+      console.log('')
+      console.log('codice spaghetti')
 
     </script>
 </head>
 <body>
 {include file="$navbar"}
-{if '$event_bar' !== ''}
+{if $event_bar !== ''}
+    <script>event_bar = '{$event_bar}'</script>
     {include file="universal/event-bar.tpl"}
 {/if}
 <div class="container">
@@ -54,15 +48,32 @@
             {include file="main-page/absence.tpl"}
         </div>
     </div>
+    {if $news !== null}
+        <script>news = JSON.parse('{$news}')</script>
+        <div class="row">
+            <div class="col-12 justify-content-center">
+                {include file="main-page/news.tpl"}
+            </div>
+        </div>
+    {/if}
+    {if $partners !== null}
+        <script>partners = JSON.parse('{$partners}')</script>
+        <div class="row">
+            <div class="col-12 justify-content-center">
+                {include file="main-page/partners.tpl"}
+            </div>
+        </div>
+    {/if}
 </div>
 <!---->
 {include file="universal/botbar.tpl"}
 
-<script src="../../libs/bootstrap/js/bootstrap.bundle.js"></script>
-<script src="../../js/countdown-box.js"></script>
-<script src="../../js/navbar.js"></script>
-<script src="../../js/absent.js"></script>
-<script src="../../js/botbar.js"></script>
-<script src="../../js/eventbar.js"></script>
+<script src="/js/countdown-box.js?v={$version}"></script>
+<script src="/js/navbar.js?v={$version}"></script>
+<script src="/js/absent.js?v={$version}"></script>
+<script src="/js/botbar.js?v={$version}"></script>
+<script src="/js/eventbar.js?v={$version}"></script>
+<script src="/js/news.js?v={$version}"></script>
+<script src="/js/partners.js?v={$version}"></script>
 </body>
 </html>

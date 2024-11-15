@@ -1,5 +1,5 @@
 addEventListener("DOMContentLoaded", function () {
-    document.title = 'ar-time · ' + data.title;
+    document.title = 'ar-time | ' + data.title;
     const box = document.getElementById('info-box')
     const title = document.getElementById('title')
     const description = document.getElementById('description')
@@ -16,5 +16,5 @@ addEventListener("DOMContentLoaded", function () {
 
     description.innerHTML = data.description
 
-    image.src = '../img/svg/' + data.image + '.svg'
+    image.src = '/img/svg/' + data.image + '.svg'
 });

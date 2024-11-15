@@ -1,5 +1,10 @@
 <?php
+if ($_GET['au7hEfudnhUUy8'] !== '667a4af374347aaebc6d04d8572fbb85250cf8b51c773f3f8dc8b4be867a9a02'){
+    die();
+}
+
 require_once __DIR__ . '/../../libs/google/vendor/autoload.php';
+date_default_timezone_set('America/New_York');
 
 class Absences
 {
@@ -24,15 +29,15 @@ class Absences
         $this->text = $this->docExtractor();
         $this->dateChecker();
         $this->headerFinder();
-//    $this->index = 178;
+        //$this->index = 22;
         if (!is_null($this->data['header'])) {
             $this->absence('t');
             $this->absence('a');
             $this->roomChanges();
+            if (count($this->data['teachers']) === 0 && count($this->data['staff']) === 0 && count($this->data['roomChanges']) === 0) {
+                $this->data = null;
+            }
         } else {
-            $this->data = null;
-        }
-        if (count($this->data['teachers']) === 0 && count($this->data['staff']) === 0 && count($this->data['roomChanges']) === 0) {
             $this->data = null;
         }
         $this->SQLchecker();
@@ -143,9 +148,6 @@ class Absences
                     }
                     return true;
                 });
-                echo '<pre>';
-                var_dump($myArray);
-                echo '</pre>';
                 foreach ($myArray as $element) {
                     if (str_contains(strtolower($element), 'period')) {
                         $element = trim(substr($element, 8));
@@ -170,6 +172,7 @@ class Absences
         $service = new Google\Service\Docs($client);
         $id = '1KhmTALivDbAvLusQjZQOOQmPKDm-2Do-gVfvAdf_6WA';
         $doc = $service->documents->get($id);
+
         $allText = [];
         foreach ($doc->body->content as $structuralElement) {
             if ($structuralElement->paragraph) {
@@ -180,6 +183,9 @@ class Absences
                 }
             }
         }
+        echo '<pre>';
+        var_dump($allText);
+        echo '</pre>';
         return $allText;
     }
 
@@ -226,9 +232,9 @@ class Absences
     private function scheduleExtractor()
     {
         while (true) {
-            $query = 'SELECT * FROM `calendar` WHERE `date` =' . date_format($this->date, 'Ymd');
+            $query = 'SELECT * FROM `calendar` WHERE `date` = ?';
             $statement = $this->pdo->prepare($query);
-            $statement->execute();
+            $statement->execute([$this->date->format('Y-m-d')]);
             $result = $statement->fetch();
             if ($result['school'] === 1) {
                 $this->schedule = $result['schedule'];

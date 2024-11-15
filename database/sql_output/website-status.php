@@ -17,7 +17,7 @@ class WebsiteStatus
     }
 
     public function fetchSQL(){
-        $query = 'SELECT * FROM `website_status` WHERE `status` = 1';
+        $query = 'SELECT * FROM `website_status` WHERE `status` = 1 LIMIT 1';
         $statement = $this->pdo->prepare($query);
         $statement->execute();
         $result = $statement->fetch();
