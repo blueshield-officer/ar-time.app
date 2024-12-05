@@ -1,4 +1,4 @@
-<!-- Google Analytics
+<!-- Google Analytics -->
 {literal}
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-F0F4K1TJVH"></script>
     <script>
@@ -9,7 +9,7 @@
         gtag('config', 'G-F0F4K1TJVH');
     </script>
 {/literal}
--->
+
 
 <!-- Standard Meta -->
 <meta charset="UTF-8">
@@ -19,7 +19,7 @@
 
 
 <!-- header version -->
-{assign var="hVersion" value="1"}
+{assign var="hVersion" value="1.07"}
 <!-- Universal Stylesheets -->
 <link rel="stylesheet" href="/libs/bootstrap/css/bootstrap.css?v={$hVersion}">
 <link rel="stylesheet" href="/css/normalize.css?v={$hVersion}">

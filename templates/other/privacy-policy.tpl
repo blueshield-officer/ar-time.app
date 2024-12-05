@@ -79,6 +79,8 @@
                 </li>
             </ol>
 
+
+            <p>Email to contact: blueshield.officer.ss14@gmail.com (temp)</p>
             <p class="modification-date">Modification date: 11.05.2024</p>
         </div>
     </div>

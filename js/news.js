@@ -52,8 +52,12 @@ if (news){
         body.appendChild(dateBox)
 
         // time and date
-        const timestamp = new Date(element.date)
-        let hours = timestamp.getHours();
+        const dateObject = new Date(element.date)
+        const formatter = new Intl.DateTimeFormat('en-US', { day: '2-digit', month: '2-digit', year: 'numeric' });
+        const timestamp = (formatter.format(dateObject)).replace(/\//g, '.');
+        let minutes = dateObject.getMinutes()
+        minutes = add0toLess10(minutes)
+        let hours = dateObject.getHours();
         let dayPart
         if (hours === 0){
             hours = 12
@@ -73,16 +77,6 @@ if (news){
             dayPart = 'PM'
         }
 
-        let minutes = timestamp.getMinutes()
-        minutes = add0toLess10(minutes)
-
-        let day = timestamp.getDay()
-        day = add0toLess10(day)
-
-        let month = timestamp.getMonth()
-        month = add0toLess10(month)
-
-        const year = timestamp.getFullYear()
 
         const time = document.createElement("p");
         time.className = 'publication-time'
@@ -91,7 +85,7 @@ if (news){
 
         const date = document.createElement("p");
         date.className = 'publication-date'
-        date.innerText = month + '.' + day + '.' + year;
+        date.innerText = timestamp
         dateBox.appendChild(date)
 
 

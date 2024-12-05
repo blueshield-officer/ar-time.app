@@ -1,0 +1,3864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HCV41WEQLC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push();}
+    gtag('js', new Date());
+
+    gtag('config', 'G-HCV41WEQLC');
+  </script>
+  <!-- Ending Google tag (gtag.js) -->
+
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Archbishop Ryan High School Calendar of Events</title>
+<meta name="description" content="" />
+<link rel="shortcut icon" type="image/png" href="/bt-logo.png" />
+<link rel="icon" type="image/png" href="/bt-logo.png" />
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,800,900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- WHATFIX-->
+<script language='javascript' async='true' type='text/javascript' src='//cdn.whatfix.com/prod/e788eb00-c781-11ea-bc69-22a91d6e4464/embed/embed.nocache.js'></script>
+<!-- =============== VENDOR STYLES ===============-->
+<!-- MDB5 -->
+<link rel="stylesheet" href="/modules/cfui/pfs/vendor/mdb5/css/mdb.min.css" />
+<!-- Owl Carousel-->
+<link rel="stylesheet" href="/modules/cfui/pfs/vendor/owlCarousel/css/owl.carousel.min.css?v=2.3.4" />
+<link rel="stylesheet" href="/modules/cfui/pfs/vendor/owlCarousel/css/owl.theme.default.min.css?v=2.3.4" />
+<!-- SIMPLE LINE ICONS-->
+<link rel="stylesheet" href="/modules/cfui/pfs/vendor/simple-line-icons/css/simple-line-icons.css?v=2.4.1">
+<!-- ANIMATE.CSS-->
+<link rel="stylesheet" href="/modules/cfui/pfs/vendor/animate.css/animate.min.css?v=3.5.1">
+<!-- WHIRL (spinners)-->
+<link rel="stylesheet" href="/modules/cfui/pfs/vendor/whirl/dist/whirl.css?v=1.0.0">
+<!-- =============== BOOTSTRAP STYLES ===============-->
+<link rel="stylesheet" href="/modules/cfui/pfs/app/css/bootstrap.css?v=5.0.2" id="bscss">
+<!-- =============== APP STYLES ===============-->
+<link rel="stylesheet" href="/modules/cfui/pfs/app/css/app.css?v=2023.7.2" >
+<!-- =============== Custom STYLES ===============-->
+<link rel="stylesheet" href="/modules/cfui/pfs/app/css/custom.css?v=2023.7.2" >
+<!-- =============== Toastr STYLES ===============-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="/modules/cfui/pfs/vendor/bootstrap/dist/js/bootstrap.js?v=5.0.2"></script>
+<!-- =============== Utility Functions===============-->
+<script src="/modules/cfui/pfs/app/js/UtilityFunctions.js"></script>
+<style>
+.center{
+text-align:center;
+}
+</style>
+<div id="efancentralAlert" class="modal fade">
+<!-- Modal Dialog -->
+<div class="modal-dialog">
+<!-- Modal Content -->
+<div class="modal-content">
+<div class="modal-body">
+<div class="m-lg-5 center"><i class="fas fa-exclamation-triangle fa-5x text-danger"></i></div>
+<div class="bold center m-lg-5">
+<span id="fcAlertText" class="modalAlertText center"></span>
+</div>
+<div class="mb-xl center">
+<button type="button" id="fcOK" data-dismiss="modal" class="btn btn-Save-c w-25" onclick="fcAlertClose()">Close</button>
+</div>
+</div>
+</div>
+<!-- END Modal Content -->
+</div>
+<!-- END Modal Dialog -->
+</div>
+<!-- END Regular Modal -->
+<script>
+var okFunction = null;
+function fcAlert(strTxt, strCaption,okFunc) {
+if ((strCaption != undefined) && (strCaption != ""))
+$("#fcAlertDialogTitle").html(strCaption);
+else
+$("#fcAlertDialogTitle").html("Alert");
+okFunction = okFunc;
+$("#fcAlertText").html(strTxt);
+showThisModalPlease ("#efancentralAlert");
+}
+function fcAlertClose() {
+$("#efancentralAlert").modal('hide');
+}
+</script>
+<style>
+.center{
+text-align:center;
+}
+</style>
+<div id="efancentralInfoAlert" class="modal fade" tabindex="-1">
+<div class="modal-dialog" style="min-width:750px">
+<div class="modal-content">
+<div class="modal-header bg-appcolor text-light">
+<h5 class="modal-title text-bold" id="fcInfoAlertDialogTitle"></h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body" id="fcInfoAlertText">
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+function fcInfoAlert(strTxt, strCaption,okFunc) {
+if ((strCaption != undefined) && (strCaption != ""))
+$("#fcInfoAlertDialogTitle").html(strCaption);
+else
+$("#fcInfoAlertDialogTitle").html("Info Alert");
+$("#fcInfoAlertText").html(strTxt);
+showThisModalPlease ("#efancentralInfoAlert");
+}
+</script>
+<!-- =============== Theme PFS ===============-->
+<script src="/js/newadmin/UtilityFunctions.js"></script>
+<style>
+/* ========================================================================
+Component: buttons
+========================================================================== */
+.btn{
+text-transform: none !important;
+}
+.btn-Save-c {
+color: #fafafa;
+background-color: #129846;
+font-weight: bolder;
+font-size: 14px;
+align-content: center;
+}
+.btn-Save-c:focus,
+.btn-Save-c.focus {
+color: #fafafa;
+text-decoration: none;
+}
+.btn-Save-c:hover, .btn-Save-c:active {
+background-color: #0f7d3b !important;
+color: #fafafa !important;
+text-decoration: none;
+}
+.btn-Cancel-c {
+color: red;
+background-color: transparent;
+font-weight: bolder;
+font-size: 14px;
+align-content: center;
+border-color: red;
+}
+.btn-Cancel-c:focus,
+.btn-Cancel-c.focus {
+color: red;
+text-decoration: none;
+border-color: red;
+}
+.btn-Cancel-c:hover, .btn-Cancel-c:active {
+color: red !important;
+text-decoration: none;
+border-color: red !important;
+background-color: #ffe5e5 !important;
+}
+.b-width-sm-c {
+width: 85px;
+}
+.btn-w-100 {
+width: 100px !important;
+}
+.btn-mw-100 {
+min-width: 100px !important;
+}
+.btn-appcolor {
+color: #fafafa;
+background-color: #efb21e;
+font-weight: bolder;
+font-size: 14px;
+align-content: center;
+}
+.btn-appcolor.focus {
+color: #fafafa;
+text-decoration: none;
+}
+.btn-appcolor:hover, .btn-appcolor:active {
+background-color: #efb21e !important;
+color: #fafafa !important;
+text-decoration: none;
+}
+.btn-btgreen {
+color: #fafafa;
+background-color: #189B4B;
+font-weight: bolder;
+font-size: 14px;
+align-content: center;
+}
+.btn-btgreen:focus,
+.btn-btgreen.focus {
+color: #fafafa;
+background-color: #189B4B;
+text-decoration: none;
+}
+.btn-btgreen:hover {
+background-color: #0d893e;
+color: #fafafa;
+text-decoration: none;
+}
+.btn-white-app {
+color: #efb21e;
+background-color: #fafafa;
+font-weight: bolder;
+align-content: center;
+}
+.btn-white-app:focus,
+.btn-white-app.focus {
+color: #efb21e;
+text-decoration: none;
+}
+.btn-white-app:hover {
+background-color: #fafafa;
+color: #efb21e;
+text-decoration: none;
+}
+.text-appcolor {
+color: #efb21e;
+}
+.fill-appcolor {
+fill: #efb21e;
+}
+.text-appcolor:hover {
+color: #efb21e;
+}
+.text-btgreen{
+color:#189B4B;
+}
+.text-btgreen:hover{
+color:#189B4B;
+}
+.bg-appcolor {
+background-color: #efb21e;
+}
+.border-appcolor {
+border-color: #efb21e !important;
+}
+/* Hide The Component For Demo */
+body .hide_for_demo{
+display: none !important;
+}
+.teamNavActive {
+font-weight: 600
+}
+.teamNavActive i{
+color: #efb21e;
+}
+.teamNavItem:hover {
+background-color: #eee;
+}
+</style>
+<script>
+var appcolor = "#efb21e";
+var hoverTextColor = getHoverColor(appcolor);
+document.documentElement.style.setProperty('--hover-color', hoverTextColor);
+</script>
+<style>
+/* ========================================================================
+Component: DT
+========================================================================== */
+.dataTable:not(.disable_hover_color) tbody tr:hover {
+background-color: var(--hover-color) !important;
+}
+/* ========================================================================
+Hover shade for appColor
+========================================================================== */
+.text-appcolor-lightshade{
+color: var(--hover-color) !important;
+}
+.bg-appcolor-lightshade{
+background-color: var(--hover-color) !important;
+}
+/* ========================================================================
+Team Page Base Layout CSS
+========================================================================== */
+.subheader-nav__item {
+border-color: #efb21e !important;
+border-bottom: 0px !important;
+}
+/* ========================================================================
+ADA keybord accessibility
+========================================================================== */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+outline: none;
+box-shadow: 0 0 0 2px #007BFF;
+border-color: #007BFF;
+}
+</style>
+<!-- =============== CK editor 5 ===============-->
+<script src="https://cdn.ckeditor.com/ckeditor5/39.0.2/super-build/ckeditor.js"></script>
+<!-- =============== Bootsrap Select PFS ===============-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta2/dist/css/bootstrap-select.min.css">
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<!-- =============== PAGE VENDOR STYLES ===============-->
+<link rel="stylesheet" href="/public/libs/yamm/yamm.css?v=2023.7.2" />
+<link rel="stylesheet" href="/public/css/styles.css?v=2023.7.2" />
+<link rel="stylesheet" href="/public/css/ckeditor5.css?v=2023.7.2" />
+<link rel="stylesheet" href="/assets/scripts/vendor/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.css?v=2023.7.2" />
+<link rel="stylesheet" href="/assets/scripts/vendor/vertical-tabs/tabs.css?v=2023.7.2" />
+<link rel="stylesheet" href="/assets/scripts/vendor/bootstrap-fileinput-master/css/fileinput.min.css?v=2023.7.2" />
+<link rel="stylesheet" href="/assets/scripts/vendor/jCrop/css/jquery.Jcrop.min.css?v=2023.7.2" />
+<link rel="stylesheet" href="/public/css/ada.css?v=2023.7.2" />
+
+
+
+
+<style>
+.header-login {color: #efb21e;}
+.header-social__item:hover {background-color: #efb21e;}
+.header-login__item:hover {color: #efb21e;}
+.mobile-header__toggle-nav {background-color: #efb21e;}
+.mobile-header__toggle-nav:after {border-left: 34px solid #efb21e;/* PHONE */}
+@media screen and (min-width: 768px) {.mobile-header__toggle-nav:after {border-left: 48px solid #efb21e;/* TABLET */}}
+.nav-screen__account span {color: #efb21e;}
+.arrow--accent {border-color: #efb21e;}
+#primaryNav {border-top: 4px solid #efb21e;}
+.mainnav {border-top: 4px solid #efb21e;}
+.footer {border-top: 4px solid #efb21e;}
+.subheader-nav__item.is-active {border-color: #efb21e;}
+.modal-header {border-bottom: 3px solid #efb21e;}
+.calendar-panel__header{background-color: #efb21e;}
+.gradientBg {
+	background: #e2c31e;
+	background: -webkit-linear-gradient(#e2c31e, white);
+	background: -o-linear-gradient(#e2c31e, white);
+	background: -moz-linear-gradient(#e2c31e, white);
+	background: linear-gradient(#e2c31e, white);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.imageBg {
+	background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.75)), url('//s3.amazonaws.com/schoolassets/background/1681/background_AllSports.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+.imageBgNoColor {
+	background-image: url('//s3.amazonaws.com/schoolassets/background/1681/background_AllSports.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+.paddingLeft2 {padding-left:2px;}
+.paddingLeft20 {padding-left:20px;}
+.subscribeDiv {display:inline-block; padding-top:7px; padding-left:45px;}
+.noGradientBg {background: #F2F2F2; background-repeat: ''; background-attachment: ''; background-position: ''; background-size: ''; background-image: '';}
+.inputNoBorder {width:95%; border:none; outline:none; overflow:auto; background-color:#f5f5f5; resize:none; padding-left:10px;}
+.paddingBottom10 {padding-bottom:10px;}
+.paddingBottom15 {padding-bottom:15px;}
+.marginBottom5 {margin-bottom:5px;}
+
+</style>
+
+
+	<!-- Google Tag Manager - Custom Dimensions -->
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	window.dataLayer.push({
+		'School ID': '1681',
+		'School Name': 'Archbishop Ryan High School',
+		'Scheduler': 'SSAPI',
+		'Auth': 'anonymous',
+	});
+	</script>
+	
+	<!-- End Google Tag Manager - Custom Dimensions -->
+
+
+	
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-NLSG7CZ');</script>
+		<!-- End Google Tag Manager -->
+		
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+	
+	
+	
+	
+	<script>
+		function loadScript(tagSrc) {
+			var scriptTag = document.createElement('script'),
+			placeTag = document.getElementsByTagName("script")[0];
+			scriptTag.type = 'text/javascript';
+			scriptTag.async = true;
+			scriptTag.src = tagSrc;
+			placeTag.parentNode.insertBefore(scriptTag, placeTag);
+
+		}
+
+		window.mnjs = window.mnjs || {
+			customerId: '8CU4NXI69',
+			domain: window.location.hostname,
+			failSafeTimeout: 3e3,
+			version: 1.0,
+			isAdServerLoaded: false
+		};
+
+		var mnjsEndpoint = 'https://warp.media.net/js/tags/clientag.js?' +
+			'cid=' + window.mnjs.customerId +
+			'&dn=' + window.mnjs.domain +
+			'&version=' + window.mnjs.version;
+
+		loadScript(mnjsEndpoint);
+
+		window.mnjs.loadAdServer = setTimeout(function() {
+			if (!window.mnjs.isAdServerLoaded) {
+				loadScript("https://securepubads.g.doubleclick.net/tag/js/gpt.js");
+				window.mnjs.isAdServerLoaded = true;
+
+			}
+
+		}, window.mnjs.failSafeTimeout);
+
+		var googletag = googletag || {};
+		googletag.cmd = googletag.cmd || [];
+	</script>
+	<script async src="https://cdn.confiant-integrations.net/n8Q5L9SsYd4csVeHS1oRAwZOjHs/gpt_and_prebid/config.js"></script>
+
+	<script>
+		var gptAdSlots = [];
+		if(typeof googletag !== "undefined" && typeof googletag.cmd !== "undefined"){
+			googletag.cmd.push(function() {
+				var mapping = googletag.sizeMapping()
+					.addSize([768, 200], [728, 90])
+					.addSize([480, 200], [468, 60])
+					.addSize([320, 200], [320, 50])
+				.build();
+				var mapping1 = googletag.sizeMapping()
+					.addSize([768, 200], [717, 157])
+					.addSize([480, 200], [475, 230])
+					.addSize([320, 200], [320, 245])
+				.build();
+				if($('#div-gpt-ad-4').children('[id^=advNews_]').length <= 0){
+					gptAdSlots[5] = googletag.defineSlot("/317673431/BigTeams_Leaderboard_Slideshow", [300, 250], "div-gpt-ad-4").defineSizeMapping(mapping).addService(googletag.pubads());
+				}
+				if($('#div-gpt-ad-3').children('[id^=adv_]').length <= 0){
+					gptAdSlots[6] =	googletag.defineSlot("/317673431/BigTeams_Leaderboard_ATF", [728, 90], "div-gpt-ad-3").defineSizeMapping(mapping).addService(googletag.pubads());
+				}
+				if($('#div-gpt-ad-6').children('[id^=advFrontRightTop_]').length <= 0){
+					gptAdSlots[7] =	googletag.defineSlot("/317673431/BigTeams_300x250_RR_Pos1", [300, 250], "div-gpt-ad-6").addService(googletag.pubads());
+				}
+				if($('#div-gpt-ad-7').children('[id^=advFrontRightBottom_]').length <= 0){
+					gptAdSlots[8] =	googletag.defineSlot("/317673431/BigTeams_300x250_RR_Pos2", [300, 250], "div-gpt-ad-7").addService(googletag.pubads());
+				}
+				if($('#div-gpt-ad-2').children('[id^=advFrontRightBottom_]').length <= 0){
+					gptAdSlots[9] =	googletag.defineSlot("/317673431/BigTeams_300x600_RR", [300, 600], "div-gpt-ad-2").addService(googletag.pubads());
+				}
+				if($('#div-gpt-ad-5').children('[id^=adv_]').length <= 0){
+					if(window.innerWidth >= 768 ) {
+						gptAdSlots[11] = googletag.defineSlot("/317673431/BigTeams_Leaderboard_BTF", [728, 90], "div-gpt-ad-5").defineSizeMapping(mapping).addService(googletag.pubads());
+					}
+				} 
+
+				gptAdSlots[10] = googletag.defineSlot("/317673431/BigTeams_320x50_Adhesion", [320, 50], "div-gpt-ad-8").addService(googletag.pubads());
+				gptAdSlots[12] = googletag.defineSlot("/317673431/BigTeams_300x250_MobilePos1", [300, 250], "div-gpt-ad-9").addService(googletag.pubads());
+				gptAdSlots[13] = googletag.defineSlot("/317673431/BigTeams_300x250_MobilePos2", [300, 250], "div-gpt-ad-10").addService(googletag.pubads());
+				gptAdSlots[16] = googletag.defineSlot('/317673431/BigTeams_Advertorial_1', [320, 200], 'div-gpt-ad-1525274121790-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+				gptAdSlots[17] = googletag.defineSlot('/317673431/BigTeams_350x150_RR', [350, 150], 'div-gpt-ad-1525274121790-6').addService(googletag.pubads());
+				googletag.pubads().enableSingleRequest();
+				googletag.pubads().collapseEmptyDivs(); 
+				googletag.pubads().setTargeting("state", "PA").setTargeting("schoolid", "PA191544021");
+				googletag.enableServices();
+			});
+		}
+	</script>
+	
+
+
+
+<script type="text/javascript" id="general-retargeting-pixel">
+	var ssaUrl = 'https://' + 'pixel.sitescout.com/iap/f2f7d0f93e3c1c04';
+	new Image().src = ssaUrl; (function(d) {
+		var syncUrl = 'https://' + 'pixel.sitescout.com/dmp/asyncPixelSync';
+		var iframe = d.createElement('iframe');
+		(iframe.frameElement || iframe).style.cssText = "width: 0; height: 0; border: 0; display: none;";
+		iframe.src = "javascript:false";
+		d.body.appendChild(iframe);
+		var doc = iframe.contentWindow.document;
+		doc.open().write('<body onload="window.location.href=\''+syncUrl+'\'">');
+		doc.close();
+	})(document);
+</script>
+<script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.9/index.global.min.js'></script><link rel='stylesheet' href='/assets/scripts/vendor/calendar/fullcalendar.css'></head>
+<body class="layout-h"  unselectable="on" onselectstart="return false;">
+<style>
+.screen-reader-text
+{position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;}
+
+a.skiptomain {
+    left:-999px;
+    position:absolute;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    z-index:-999;
+}
+a.skiptomain:focus, a.skiptomain:active {
+    color: #fff;
+    background-color:#000;
+    left: auto;
+    top: auto;
+    width: 10%;
+    height: auto;
+    overflow:auto;
+    margin: 10px 35%;
+    padding:2px;
+    text-align:center;
+	text-decoration: underline;
+    font-size:1.0em;
+    z-index:999;
+}
+</style>
+
+
+
+
+
+
+	
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NLSG7CZ"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+		
+
+
+
+
+
+	
+	
+
+
+
+<style>
+        /* Hide skip links off-screen but make them visible when focused */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background-color: #000;
+            color: #fff;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 100;
+        }
+
+        .skip-link:focus {
+            top: 10px;
+        }
+</style>
+
+<a href="#header" class="skip-link">Skip to Header</a>
+<a href="#mainContent" class="skip-link">Skip to Main Content</a>
+<a href="#footer" class="skip-link">Skip to Footer</a>
+
+<div class="wrapper" id="gradientDiv">
+	
+		
+
+
+<script>
+
+  // see desktopHeader and mobileHeader for the elements related to these functions
+ function isNavVisible(elm) {
+    if(`${elm.classList}`.includes("slide-in")){
+      return true;
+    }
+    return false;
+  }
+
+  // see desktopHeader and mobileHeader for the elements related to these functions
+  function navCloseOnClickOutside(){
+      if(isNavVisible(document.getElementById('navMenu'))){
+        document.getElementById("desktopHeaderToggleB").focus();
+        document.getElementById("desktopHeaderToggleB").click();
+      }else if(isNavVisible(document.getElementById('mobileNavMenu'))){
+        document.getElementById("mobileHeaderToggleB").focus();
+        document.getElementById("mobileHeaderToggleB").click();
+      }
+  }
+
+  // see desktopHeader and mobileHeader for the elements related to these functions
+  $("#gradientDiv").click(function(e) {
+        const navMenu = document.getElementById("navMenu")
+        const mobileNavMenu = document.getElementById("mobileNavMenu")
+        const clickedElement = e.target
+        if(!navMenu.contains(clickedElement) && !mobileNavMenu.contains(clickedElement)){
+          navCloseOnClickOutside();
+        }
+    });
+</script>
+
+
+
+        <div id="header">
+        
+        <div class="d-none d-md-block d-print-none">
+
+
+
+
+
+
+
+<script>
+    var hoverTextColor = getHoverColor("#efb21e");
+     document.documentElement.style.setProperty('--hover-color', hoverTextColor);
+</script>
+
+<style>
+	#btnOnlineRgstr:focus-visible {
+		color: white;
+		background-color: red;
+		border: 2px solid red;
+	}
+	#btnOnlineRgstr:focus {
+			border-color: #007BFF;
+	}
+</style>
+
+
+	
+	
+        
+
+        
+            
+                
+                    
+                    
+						
+							
+						
+                        
+                
+	
+        
+
+        
+            
+                
+                    
+                    
+						
+							
+						
+                        
+                
+	
+        
+
+        
+            
+                
+                    
+                    
+						
+							
+						
+                        
+                
+
+	<div class="bg-appcolor">
+		<div class="row">
+			<div class="col-md-1 header-menubtn" style="position: relative;">
+
+                        <ul class="hf-ul" style="position: absolute;top: 5px;left: 20px;overflow: visible;white-space: nowrap;">
+                            
+
+                                    <li class="footer-li-item">
+                                        
+                                            <a class="mr-lg text-decoration-none" href="https://twitter.com/AR_Athletics" target="_blank" title="Opens X (Twitter) in new window">
+												                        <span class="b-txt-hidden">Twitter</span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="25" width="20" viewBox="0 0 512 512" style = "margin-top: -5px;fill: #FFFFFF;" class="transition" role="none"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path></svg>
+                                            </a>
+                                        
+                                        
+                                            <a class="mr-lg" href="https://www.facebook.com/ArchbishopRyan/" target="_blank" title="Opens Facebook in new window"><i class="transition fa h-socials fa-brands fa-facebook" style="color: #FFFFFF;"></i></a>
+                                        
+                                        
+                                            <a href="https://www.instagram.com/archbishop_ryan/" target="_blank" title="Opens Instagram in new window"><i class="transition fa h-socials fa-brands fa-instagram"  style="color: #FFFFFF;" ></i></a>
+                                        
+                                        
+                                    </li>
+
+                            
+                        </ul>
+
+				<a class="js-toggle-nav cv menueventcheck" tabindex="0" id="desktopHeaderToggleA" name="desktopHeaderToggleA" href="javascript:void(0);"  alt="Nav Menu Toggle" aria-label="Nav Menu Toggle" title="Nav Menu Toggle" role="button"><span><i class="fa fa-lg fa-bars fa-solid text-white menueventcheck" role="button" ></i></a>
+				<div class="pfs-nav mobile-nav js-mobile-nav p-0" id="navMenu">
+					<div class ="ml-lg mr-lg mt-2 row" style="max-height: 200px;">
+						<div class = "col-md-10" style="max-height: 200px;">
+							
+								
+								<img class="img-fluid object-fit-contain" src="//bigteams-public-prod.s3.amazonaws.com/library/images/demo1018.bigteamsdemo_com_1681/logos/1681/1681.png" alt="Nav Logo for demo1018.bigteamsdemo_com_1681" style="height: 120px;" />
+							
+							
+								<h4 class="fm-Poppins fs-5 text-dark mt-1 mb-3">AR ATHLETICS</h4>
+							
+						</div>
+
+						<div class = "col-md-2 mt-3 text-end" style="max-height: 200px;">
+							<div>
+								<a class="js-toggle-nav cv" tabindex="0" id="desktopHeaderToggleB" name="desktopHeaderToggleB" href="javascript:void(0);" alt="Close Nav Menu" title="Close Nav Menu" aria-label="Close Nav Menu" role="button"><img class="img-fluid transition" src="/assets/images/close-dark-icon'.png" alt="x icon" style="height: 24px;"/></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="container" style="margin-left: 15px;">
+						
+							<a class="mr-lg text-decoration-none" href="https://twitter.com/AR_Athletics" target="_blank" title="X (Formerly Twitter)">
+								<span class="b-txt-hidden">Twitter</span>
+								<svg xmlns="http://www.w3.org/2000/svg" style="position:relative;top: -4px;" height="30" width="28" viewBox="0 0 512 512" class="fill-appcolor transition" role="none"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path></svg>
+							</a>
+						
+						
+							<a class="mr-lg"  href="https://www.facebook.com/ArchbishopRyan/" target="_blank" title="Facebook"><i class="fa fa-brands fa-lg fa-facebook h-socials text-appcolor transition mb-4"></i></a>
+						
+						
+							<a class="mr-lg"  href="https://www.instagram.com/archbishop_ryan/" target="_blank" title="Instagram"><i class="fa fa-brands fa-lg fa-instagram h-socials text-appcolor transition mb-4" ></i></a>
+						
+						
+					</div>
+
+					<hr class="footer-hr text-appcolor mb-1" style="width: 96%;margin: auto;margin-top: -15px;">
+
+					<div class="mobile-nav__screens  cf">
+						<div class="fm-Poppins js-mobile-nav-screen nav-screen pl-xl" data-screen="0">
+							<div id="js-screen-content" class="js-screen-content">
+                    
+                    
+                    
+                    
+					<a class="pfs-nav-item" href="/">Home</a>
+                    <a class="pfs-nav-item" data-bs-toggle="collapse" data-bs-target="#allsports_leftNav" href="#" role="button" >Sports & Activities <i class="fa fa-arrow-down" style="color:#efb21e"></i> </a>
+                    <div class="side-nav-allsports collapse mb-3 ml-lg mt-3" id="allsports_leftNav">
+                        
+                            
+                            
+                            
+                            <div class="b-bottom d-flex pb-1 pr-lg row">
+                                <span class="col-md-5 col-5 fm-Poppins js-mobile-nav-item pfs-nav-item-no-click text-bold">Basketball</span>
+                                <div class="col-md-7 col-7">
+                                    
+                                    
+                                    
+                                        
+                                        
+                                        
+
+                                        
+
+                                        
+                                        
+                                    
+                                        
+                                        
+                                        
+
+                                        
+                                            
+                                            
+                                            
+                                        
+                                        
+                                        
+
+                                        
+
+                                        
+                                        
+                                    
+                                        
+                                        
+                                        
+
+                                        
+                                            
+                                            
+                                            
+                                        
+                                        
+                                        
+
+                                        
+                                            
+                                            
+                                            
+
+                                    
+                                        
+                                        
+                                        
+                                        <a class="fm-Poppins mr-lg" href="/main/team/id/3801142/sportid/2/gender/2" alt="Girls Basketball">Girls</a>
+                                    
+                                        
+                                        
+                                        
+                                        <a class="fm-Poppins mr-lg" href="/main/team/id/3801004/sportid/2/gender/1" alt="Boys Basketball">Boys</a>
+                                    
+                                </div>
+                            </div>
+                        
+                            
+                            
+                            
+                            <div class="b-bottom d-flex pb-1 pr-lg row">
+                                <span class="col-md-5 col-5 fm-Poppins js-mobile-nav-item pfs-nav-item-no-click text-bold">Cross Country</span>
+                                <div class="col-md-7 col-7">
+                                    
+                                    
+                                    
+                                        
+                                        
+                                        
+
+                                        
+
+                                        
+                                        
+                                    
+
+                                    
+                                        
+                                        
+                                        
+                                        <a class="fm-Poppins mr-lg" href="/main/team/id/3801229/sportid/13/gender/1" alt="Boys Cross Country">Boys</a>
+                                    
+                                </div>
+                            </div>
+                        
+                            
+                            
+                            
+                            <div class="b-bottom d-flex pb-1 pr-lg row">
+                                <span class="col-md-5 col-5 fm-Poppins js-mobile-nav-item pfs-nav-item-no-click text-bold">Field Hockey</span>
+                                <div class="col-md-7 col-7">
+                                    
+                                    
+                                    
+                                        
+                                        
+                                        
+
+                                        
+
+                                        
+                                        
+                                    
+
+                                    
+                                        
+                                        
+                                        
+                                        <a class="fm-Poppins mr-lg" href="/main/team/id/3801235/sportid/16/gender/2" alt="Girls Field Hockey">Girls</a>
+                                    
+                                </div>
+                            </div>
+                        
+                            
+                            
+                            
+                            <div class="b-bottom d-flex pb-1 pr-lg row">
+                                <span class="col-md-5 col-5 fm-Poppins js-mobile-nav-item pfs-nav-item-no-click text-bold">Football</span>
+                                <div class="col-md-7 col-7">
+                                    
+                                    
+                                    
+                                        
+                                        
+                                        
+
+                                        
+
+                                        
+                                        
+                                    
+                                        
+                                        
+                                        
+
+                                        
+                                            
+                                            
+                                            
+
+                                    
+                                        
+                                        
+                                        
+                                        <a class="fm-Poppins mr-lg" href="/main/team/id/3800739/sportid/1/gender/1" alt="Boys Football">Boys</a>
+                                    
+                                </div>
+                            </div>
+                        
+                            
+                            
+                            
+                            <div class="b-bottom d-flex pb-1 pr-lg row">
+                                <span class="col-md-5 col-5 fm-Poppins js-mobile-nav-item pfs-nav-item-no-click text-bold">Ice Hockey</span>
+                                <div class="col-md-7 col-7">
+                                    
+                                    
+                                    
+                                        
+                                        
+                                        
+
+                                        
+
+                                        
+                                        
+                                    
+
+                                    
+                                        
+                                        
+                                        
+                                        <a class="fm-Poppins mr-lg" href="/main/team/id/3801198/sportid/108/gender/1" alt="Boys Ice Hockey">Boys</a>
+                                    
+                                </div>
+                            </div>
+                        
+                            
+                            
+                            
+                            <div class="b-bottom d-flex pb-1 pr-lg row">
+                                <span class="col-md-5 col-5 fm-Poppins js-mobile-nav-item pfs-nav-item-no-click text-bold">Soccer</span>
+                                <div class="col-md-7 col-7">
+                                    
+                                    
+                                    
+                                        
+                                        
+                                        
+
+                                        
+
+                                        
+                                        
+                                    
+                                        
+                                        
+                                        
+
+                                        
+                                            
+                                            
+                                            
+                                        
+                                        
+                                        
+
+                                        
+
+                                        
+                                        
+                                    
+
+                                    
+                                        
+                                        
+                                        
+                                        <a class="fm-Poppins mr-lg" href="/main/team/id/3801233/sportid/9/gender/2" alt="Girls Soccer">Girls</a>
+                                    
+                                        
+                                        
+                                        
+                                        <a class="fm-Poppins mr-lg" href="/main/team/id/3801232/sportid/9/gender/1" alt="Boys Soccer">Boys</a>
+                                    
+                                </div>
+                            </div>
+                        
+                            
+                            
+                            
+                            <div class="b-bottom d-flex pb-1 pr-lg row">
+                                <span class="col-md-5 col-5 fm-Poppins js-mobile-nav-item pfs-nav-item-no-click text-bold">Tennis</span>
+                                <div class="col-md-7 col-7">
+                                    
+                                    
+                                    
+                                        
+                                        
+                                        
+
+                                        
+
+                                        
+                                        
+                                    
+
+                                    
+                                        
+                                        
+                                        
+                                        <a class="fm-Poppins mr-lg" href="/main/team/id/3801226/sportid/4/gender/2" alt="Girls Tennis">Girls</a>
+                                    
+                                </div>
+                            </div>
+                        
+                            
+                            
+                            
+                            <div class="b-bottom d-flex pb-1 pr-lg row">
+                                <span class="col-md-5 col-5 fm-Poppins js-mobile-nav-item pfs-nav-item-no-click text-bold">Volleyball</span>
+                                <div class="col-md-7 col-7">
+                                    
+                                    
+                                    
+                                        
+                                        
+                                        
+
+                                        
+
+                                        
+                                        
+                                    
+
+                                    
+                                        
+                                        
+                                        
+                                        <a class="fm-Poppins mr-lg" href="/main/team/id/3801224/sportid/17/gender/2" alt="Girls Volleyball">Girls</a>
+                                    
+                                </div>
+                            </div>
+                        
+                            
+                            
+                            
+                            <div class="b-bottom d-flex pb-1 pr-lg row">
+                                <span class="col-md-5 col-5 fm-Poppins js-mobile-nav-item pfs-nav-item-no-click text-bold">Wrestling</span>
+                                <div class="col-md-7 col-7">
+                                    
+                                    
+                                    
+                                        
+                                        
+                                        
+
+                                        
+
+                                        
+                                        
+                                    
+                                        
+                                        
+                                        
+
+                                        
+
+                                        
+                                        
+                                    
+
+                                    
+                                        
+                                        
+                                        
+                                        <a class="fm-Poppins mr-lg" href="/main/team/id/3819095/sportid/8/gender/2" alt="Girls Wrestling">Girls</a>
+                                    
+                                        
+                                        
+                                        
+                                        <a class="fm-Poppins mr-lg" href="/main/team/id/3801138/sportid/8/gender/1" alt="Boys Wrestling">Boys</a>
+                                    
+                                </div>
+                            </div>
+                        
+                    </div>
+                    
+                        
+						
+							
+								
+								
+								
+									<a class="pfs-nav-item" href="/main/calendar?">Calendar</a>
+								
+							
+						
+							
+						
+							
+								
+								
+									
+								
+								
+									<a class="pfs-nav-item" href="#" onclick="javascript:window.open('https://www.familyid.com/organizations/archbishop-ryan-high-school-athletics');">Family ID(Physical forms)</a>
+								
+							
+						
+							
+								
+								
+								
+									<a class="pfs-nav-item" href="/main/filesLinks?">PIAA Forms and Links</a>
+								
+							
+						
+							
+								
+								
+								
+									<a class="pfs-nav-item" href="/main/adnews?">Announcements</a>
+								
+							
+						
+							
+								
+								
+								
+									<a class="pfs-nav-item" href="/main/eventPhotos?">Photos</a>
+								
+							
+						
+							
+								
+								
+									
+								
+								
+									<a class="pfs-nav-item" href="/main/fanDashboard?defaultTab=tabs%2DFavorites">Get Alerts</a>
+								
+							
+						
+							
+                                <a class="pfs-nav-item" data-content="nav-13" data-bs-toggle="collapse" data-bs-target="#nav-13"  href="#" >More <i class="fa fa-arrow-down" style="color:#efb21e"></i></a>
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                        <div id="nav-13" class="collapse mb-3 ml-lg mt-3" data-content="nav-13">
+                                            
+                                            
+                                                
+                                                    
+                                                    
+                                                    
+                                                        <a class="pfs-nav-item py-1 b-bottom" href='/main/enterstore/'>Team Apparel</a>
+                                                    
+                                                
+                                            
+                                                
+                                                    
+                                                    
+                                                    
+                                                        <a class="pfs-nav-item py-1 b-bottom" href='/main/fields/'>Directions</a>
+                                                    
+                                                
+                                            
+                                        </div>
+                                    
+                                
+                                    
+                                
+                                    
+                                
+							
+						
+							
+								
+								
+								
+									<a class="pfs-nav-item" href="/main/contact?">Contact</a>
+								
+							
+						
+							
+						
+					
+				</div><!-- /.nav-screen__content -->
+				
+			
+						</div><!-- /.nav-screen [data-screen=0] -->
+					</div><!-- /.mobile-nav__screens -->
+				</div><!-- /.mobile-nav -->
+
+			</div>
+
+			<div class="col-md-2 col-sm-12 text--center bg-light skew-30">
+				<div class="unskew-30">
+					<div class="logo mt-3">
+						
+							
+							<a href="/">
+								<img class="img-fluid transition object-fit-contain" src="//bigteams-public-prod.s3.amazonaws.com/library/images/demo1018.bigteamsdemo_com_1681/logos/1681/1681.png" alt="Logo for AR Athletics" style="max-height: 150px;width: 70%;" />
+							</a>
+						
+					</div>
+
+
+				</div>
+			</div>
+
+			<div class="col-md-8 ml-xl ">
+				<div class="">
+					<div class="header-toprow align-items-center bg-light d-flex justify-content-between py-3 skew-30" style="padding-top: 0px !important">
+						<div id="sitenametaglineDivDesktop" class="text--center unskew-30" style="width: calc(100% - 150px);padding-left: 30px;">
+							
+
+                
+                
+                <h1 class="d-none d-xxl-block  text-appcolor text-capitalize text-uppercase fm-Poppins text-truncate" style="font-size:5em;">AR ATHLETICS</h1>
+                <h1 class="d-none d-xl-block d-xxl-none text-appcolor text-capitalize text-uppercase fm-Poppins text-truncate" style="font-size:4em;">AR ATHLETICS</h1>
+                <h1 class="d-block d-xl-none text-appcolor text-capitalize text-uppercase fm-Poppins text-truncate" style="font-size:3em;">AR ATHLETICS</h1>
+                
+							
+
+
+              <h2 class="d-none d-xxl-block  fm-Poppins bt-multiline-ellipsis" >Archbishop Ryan High School</h2>
+              <h3 class="d-none d-xl-block d-xxl-none fm-Poppins bt-multiline-ellipsis" >Archbishop Ryan High School</h3>
+              <h4 class="d-block d-xl-none fm-Poppins bt-multiline-ellipsis" >Archbishop Ryan High School</h4>
+
+
+              
+								  <div id="google_translate_element_desktop" class="tagLineInline translateDivRight"></div>
+							
+						</div>
+
+
+
+<div class="text--left unskew-30 align-top" style="position: relative; width: 100px;left: -60px;">
+
+
+
+                			
+
+							</div>
+
+
+					</div>
+
+					<div class="align-items-center d-flex fm-Poppins justify-content-between" style="width: 107%;">
+						<div style="width: calc(100% - 130px);">
+							<nav class="bg-transparent navbar navbar-inverse yamm shadow-0" id="primaryNav" style="display: flex; justify-content: space-between;">
+								<div class="container">
+									<!-- Brand and toggle get grouped for better mobile display -->
+									<div class="navbar-header">
+										<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#primaryNav-collapse" aria-expanded="false">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										</button>
+									</div>
+									
+									
+        
+
+        
+            
+                
+                    
+                    
+
+                    
+						
+							
+						
+                        
+                
+									<div class="collapse navbar-collapse" id="primaryNav-collapse">
+                        <style>
+                            .default-links-color li a {
+                                color: var(--bs-primary) !important;
+                            }
+                            .default-links-color li a:hover {
+                                color: #0a58ca !important;
+                            }
+                        </style>
+                        <ul class="nav navbar-nav" role="menu">
+                            <li role="presentation" class="nav-item-level1 nav-item" title="Home"><a href="/" role="menuitem"><i class="fa fa-home fa-2x"></i> <span class="sr-only">Home</span></a></li>
+                            <li role="presentation" class="nav-item-level1 nav-item" title="Calendar"><a href="/main/calendar" role="menuitem"><i class="fa fa-calendar fa-2x"></i> <span class="sr-only">Calendar</span></a></li>
+                            <li role="presentation" class="nav-item-level1 nav-item" title="Sports and Activities"><li role="button" class="nav-item-level1 nav-item"><a id = "allsports" class="dropdown-toggle nav-label text-decoration-none" href="#" tabindex="0" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="sportsMenu">Sports & Activities&nbsp;<i class="fa fa-caret-down"></i></a><ul id="sportsMenu" class="dropdown-menu ul_teams" role="menu" style="width:50%;overflow: hidden;white-space: nowrap;"><li role="menuitem"><div class="yamm-content default-links-color"><div class="row d-flex"><div class="col-md-6 nav-level2 column1"><ul class="list-unstyled p-3 teamList"><li class="d-flex justify-content-lg-between b-bottom"><span data-toggle="collapse" role="button" style="cursor:default;" class="text-bold" href="#nav_team_2_"><span class="nav-triangle pull-right"></span>Basketball</span><div class=""><a class="mr-lg" href="/main/team/id/3801142/sportid/2/gender/2" alt="Girls Basketball" >Girls</a><a class="mr-lg" href="/main/team/id/3801004/sportid/2/gender/1" alt="Boys Basketball" >Boys</a></div></li><li class="d-flex justify-content-lg-between b-bottom"><span data-toggle="collapse" role="button" style="cursor:default;" class="text-bold" href="#nav_team_13_"><span class="nav-triangle pull-right"></span>Cross Country</span><div class=""><a class="mr-lg" href="/main/team/id/3801229/sportid/13/gender/1" alt="Boys Cross Country" >Boys</a></div></li><li class="d-flex justify-content-lg-between b-bottom"><span data-toggle="collapse" role="button" style="cursor:default;" class="text-bold" href="#nav_team_16_"><span class="nav-triangle pull-right"></span>Field Hockey</span><div class=""><a class="mr-lg" href="/main/team/id/3801235/sportid/16/gender/2" alt="Girls Field Hockey" >Girls</a></div></li><li class="d-flex justify-content-lg-between b-bottom"><span data-toggle="collapse" role="button" style="cursor:default;" class="text-bold" href="#nav_team_1_"><span class="nav-triangle pull-right"></span>Football</span><div class=""><a class="mr-lg" href="/main/team/id/3800739/sportid/1/gender/1" alt="Boys Football" >Boys</a></div></li><li class="d-flex justify-content-lg-between b-bottom"><span data-toggle="collapse" role="button" style="cursor:default;" class="text-bold" href="#nav_team_108_"><span class="nav-triangle pull-right"></span>Ice Hockey</span><div class=""><a class="mr-lg" href="/main/team/id/3801198/sportid/108/gender/1" alt="Boys Ice Hockey" >Boys</a></div></li><li class="d-flex justify-content-lg-between b-bottom"><span data-toggle="collapse" role="button" style="cursor:default;" class="text-bold" href="#nav_team_9_"><span class="nav-triangle pull-right"></span>Soccer</span><div class=""><a class="mr-lg" href="/main/team/id/3801233/sportid/9/gender/2" alt="Girls Soccer" >Girls</a><a class="mr-lg" href="/main/team/id/3801232/sportid/9/gender/1" alt="Boys Soccer" >Boys</a></div></li><li class="d-flex justify-content-lg-between b-bottom"><span data-toggle="collapse" role="button" style="cursor:default;" class="text-bold" href="#nav_team_4_"><span class="nav-triangle pull-right"></span>Tennis</span><div class=""><a class="mr-lg" href="/main/team/id/3801226/sportid/4/gender/2" alt="Girls Tennis" >Girls</a></div></li><li class="d-flex justify-content-lg-between b-bottom"><span data-toggle="collapse" role="button" style="cursor:default;" class="text-bold" href="#nav_team_17_"><span class="nav-triangle pull-right"></span>Volleyball</span><div class=""><a class="mr-lg" href="/main/team/id/3801224/sportid/17/gender/2" alt="Girls Volleyball" >Girls</a></div></li><li class="d-flex justify-content-lg-between b-bottom"><span data-toggle="collapse" role="button" style="cursor:default;" class="text-bold" href="#nav_team_8_"><span class="nav-triangle pull-right"></span>Wrestling</span><div class=""><a class="mr-lg" href="/main/team/id/3819095/sportid/8/gender/2" alt="Girls Wrestling" >Girls</a><a class="mr-lg" href="/main/team/id/3801138/sportid/8/gender/1" alt="Boys Wrestling" >Boys</a></div></li></ul></div><!-- /.col --></div><!-- /.row --></div><!-- /.yamm-content --></li></ul></li></li>
+                            <li role="presentation" class="nav-item-level1 nav-item" data-is-link="false" data-entity-type="content" data-entity-id="1"><a role="menuitem" style="text-decoration: none;" class="nav-label" href="/main/calendar?">Calendar</a></li><li role="presentation" class="nav-item-level1 nav-item" data-is-link="true" data-entity-type="content" data-entity-id="254908"><a role="menuitem" style="text-decoration: none;" class="nav-label" href="#" onclick="javascript:window.open('https://www.familyid.com/organizations/archbishop-ryan-high-school-athletics');">Family ID(Physical forms)</a></li><li role="presentation" class="nav-item-level1 nav-item" data-is-link="false" data-entity-type="content" data-entity-id="254909"><a role="menuitem" style="text-decoration: none;" class="nav-label" href="/main/filesLinks?">PIAA Forms and Links</a></li><li role="presentation" class="nav-item-level1 nav-item" data-is-link="false" data-entity-type="content" data-entity-id="7"><a role="menuitem" style="text-decoration: none;" class="nav-label" href="/main/adnews?">Announcements</a></li><li role="presentation" class="nav-item-level1 nav-item" data-is-link="false" data-entity-type="content" data-entity-id="2"><a role="menuitem" style="text-decoration: none;" class="nav-label" href="/main/eventPhotos?">Photos</a></li><li role="presentation" class="nav-item-level1 nav-item" data-is-link="false" data-entity-type="content" data-entity-id="4"><a role="menuitem" style="text-decoration: none;" class="nav-label" href="/main/fanDashboard?defaultTab=tabs-Favorites">Get Alerts</a></li><li role="navigation" class="nav-item-level1 nav-item dropdown" data-is-link="false" data-entity-type="content" data-entity-id="13"><a class="dropdown-toggle nav-label" data-bs-toggle="dropdown" role="menuitem" aria-haspopup="true" aria-expanded="false" href="#">More <i class="fa fa-caret-down"></i></a><ul class="dropdown-menu dropdown-menu-left" role="menu" style="min-height:auto; width:auto;"><li role="presentation" class="nav-item-level2 dropdown-item"  data-is-link="false"><a class="text-black nav-label" style="text-decoration: none;" role="menuitem" href="/main/enterstore?"><span class="nav-triangle pull-right"></span>Team Apparel</a></li><li role="presentation" class="nav-item-level2 dropdown-item"  data-is-link="false"><a class="text-black nav-label" style="text-decoration: none;" role="menuitem" href="/main/fields?"><span class="nav-triangle pull-right"></span>Directions</a></li></ul></li><li role="presentation" class="nav-item-level1 nav-item" data-is-link="false" data-entity-type="content" data-entity-id="12"><a role="menuitem" style="text-decoration: none;" class="nav-label" href="/main/contact?">Contact</a></li>
+                        </ul>
+                    </div>
+                
+            
+								</div><!-- /.container-fluid -->
+							</nav>
+						</div>
+						<div class="text--right" style="width: 150px;position: absolute;right: 20px;">
+							
+								<a type="button" class="text-white auth-items" href="/auth/login" title="Login">
+									<i class="fa fa-sign-in fa-2x" ></i>
+                  <span style="position: relative;bottom: 5px;">Login</span>
+								</a>
+                <span class="text-white">/</span>
+                <a type="button" class="text-white auth-items" href="/auth/new"  title="Create Fan Account To Receive Alerts For Your Favorite Team!"><i class="fa fa-user-plus fa-2x"></i> <span class="sr-only">Create Fan Account To Receive Alerts For Your Favorite Team!</span></a>
+							
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="col-md-1">
+			</div>
+
+		</div>
+	</div>
+
+<script>
+
+	$(document).ready(function() {
+		// Initially set the tabindex of all navigation items inside the menu to -1
+		$('#navMenu a').attr('tabindex', '-1');
+	});
+
+	//close nav menu when user presses esc key
+	$(document).keyup(function(e) {
+		if (e.key === "Escape" && $("#navMenu").hasClass("slide-in")) {
+			const toggleButton = document.getElementById("desktopHeaderToggleB");
+			toggleButton.focus();
+			toggleButton.click();
+			toggleButton.blur();
+		}
+	});
+
+
+	function toggleMenu(isOpen) {
+		const sideMenu = document.getElementById('navMenu');
+		const firstMenuItem = sideMenu.querySelector('a');
+		const toggleButton = document.getElementById('desktopHeaderToggleA');
+
+		sideMenu.setAttribute('aria-hidden', !isOpen);
+		toggleButton.setAttribute('aria-expanded', isOpen);
+
+		if (isOpen) {
+			// Make the menu items focusable
+			sideMenu.querySelectorAll('a').forEach(item => {
+				item.setAttribute('tabindex', '0');
+			});
+			// Move focus to the first menu item
+			firstMenuItem.focus();
+
+			var navContainer = document.getElementById('js-screen-content');
+			var focusableElements = navContainer.querySelectorAll('a[href], button');
+			var lastFocusableElement = focusableElements[focusableElements.length - 1];
+
+			$(lastFocusableElement).on('focusout', function() {
+				setTimeout(function() {
+					if (!sideMenu.contains(document.activeElement)) {
+						closeNav();
+					}
+				}, 0);
+			});
+
+		} else {
+			// Remove focus from menu items
+			sideMenu.querySelectorAll('a').forEach(item => {
+				item.setAttribute('tabindex', '-1');
+			});
+			// Move focus back to the toggle button
+			toggleButton.focus();
+		}
+	}
+
+	$("#desktopHeaderToggleA").click(function(e) {
+		e.preventDefault();
+		toggleMenu(true);
+		e.stopPropagation();
+	});
+
+	$("#desktopHeaderToggleB").click(function(e) {
+		e.preventDefault();
+		toggleMenu(false);
+		e.stopPropagation();
+	});
+
+	function closeNav() {
+		document.getElementById("desktopHeaderToggleB").click();
+	}
+
+
+	function menucloseonleave() {
+		document.getElementById("desktopHeaderToggleB").focus();
+		document.getElementById("desktopHeaderToggleB").click();
+    document.getElementById("desktopHeaderToggleB").blur();
+	}
+</script>
+
+
+	<script type="text/javascript">
+		function googleTranslateDesktopInit() {
+			new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element_desktop');
+		}
+	</script>
+	<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateDesktopInit"></script>
+
+
+
+</div>
+        <div class="d-block d-md-none d-print-none">
+
+
+
+
+
+<script>
+    var hoverTextColor = getHoverColor("#efb21e");
+     document.documentElement.style.setProperty('--hover-color', hoverTextColor);
+</script>
+
+<div class="hidden-print">
+	<div class="bg-appcolor">
+		<div class="row">
+			<div class="col-2 col-sm-2 header-menubtn">
+				<a class="js-toggle-nav cv" tabindex="0" id="mobileHeaderToggleA" name="mobileHeaderToggleA" href="javascript:void(0);" alt="Menu Toggle" title="Menu Toggle"><span><i class="fa fa-bars fa-lg fa-solid text-white" ></i></span></a>
+			</div>
+
+			<div class="bg-light col-3 col-sm-3 skew-30 text--center">
+				<div class="unskew-30">
+					<div class="py-5">
+						
+							
+								
+							
+							<a href="/">
+								<img class="img-fluid transition" src="//bigteams-public-prod.s3.amazonaws.com/library/images/demo1018.bigteamsdemo_com_1681/logos/1681/1681.png" alt="Logo for demo1018.bigteamsdemo_com_1681" style="width: 70%;object-fit: cover;max-width: 100px;max-height: 100px;min-width: 60px;min-height: 60px;" />
+							</a>
+						
+					</div>
+				</div>
+			</div>
+
+			<div class="col-7 col-sm-7">
+				<div class="ml-lg">
+					<div class="align-items-center px-1 py-3">
+						<div id="sitenametaglineDivMobile" class="text--center">
+							
+								<h3 class="fs-6 text-white fm-Poppins">AR ATHLETICS</h3>
+							
+							
+								<p class="text-white" style="font-size: 12px;">Archbishop Ryan High School
+									<div id="google_translate_element_mobile" class="tagLineInline translateDivRight"></div>
+								</p>
+							
+						</div>
+
+						
+
+						<div class="mt-2 text--center">
+              <a type="button" href="/"  ><i class="fa fa-home fa-lg text-white"></i> <span class="sr-only">Home</span></a>
+              <a  type="button" href="/main/calendar" style="margin-right: 40px;position: relative;left: 5px;" ><i class="fa fa-calendar fa-lg text-white"></i> <span class="sr-only">Calendar</span></a>
+
+							
+                <a type="button" class="text-white auth-items" href="/auth/login" style="position: relative;left: 20px;">
+									<i class="mr-sm fa fa-lg fa-sign-in" ></i>Login
+								</a>
+                <span class="text-white" style="position: relative;left: 20px;">/</span>
+                <a type="button" class="text-white auth-items" href="/auth/new" style="position: relative;left: 20px;"  title="Create Fan Account To Receive Alerts For Your Favorite Team!"><i class="fa fa-lg fa-user-plus"></i> <span class="sr-only">Create Fan Account To Receive Alerts For Your Favorite Team!</span></a>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	
+	
+        
+
+        
+            
+                
+                    
+                    
+						
+							
+						
+                        
+                
+	
+        
+
+        
+            
+                
+                    
+                    
+						
+							
+						
+                        
+                
+	
+        
+
+        
+            
+                
+                    
+                    
+						
+							
+						
+                        
+                
+
+
+	<div class="pfs-nav mobile-nav js-mobile-nav fs-6 p-0" tabindex="-1" id="mobileNavMenu">
+		<div class ="mt-4 row">
+
+			<div class = "col-2 px-0 mt-3 text--center">
+					<div>
+							
+              <ul class="hf-ul list-unstyled">
+					    <li class="footer-li-item">
+										
+											<a class="d-block footer-a-icon mb-3"  style="text-decoration: none;" href="https://twitter.com/AR_Athletics" target="_blank" title="X (Formerly Twitter)">
+												<span class="b-txt-hidden">Twitter</span>
+												<svg xmlns="http://www.w3.org/2000/svg" height="25" width="20" viewBox="0 0 512 512" class = "fill-appcolor mb-4 transition" role="none"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path></svg>
+											</a>
+										
+										
+											<a class="footer-a-icon d-block mb-3" href="https://www.facebook.com/ArchbishopRyan/" target="_blank" title="Facebook"><i class="fa fa-brands fa-facebook h-socials text-appcolor transition mb-4"></i></a>
+										
+										
+											<a class="footer-a-icon d-block mb-3" href="https://www.instagram.com/archbishop_ryan/" target="_blank" title="Instagram"><i class="fa fa-brands fa-instagram h-socials text-appcolor transition mb-4" ></i></a>
+										
+										
+							</li>
+              </ul>
+						
+					</div>
+			</div>
+			<div class = "col-6 px-0 mx-0">
+					
+						
+							
+						
+						<a target="_blank" href="//bigteams-public-prod.s3.amazonaws.com/library/images/demo1018.bigteamsdemo_com_1681/logos/1681/1681.png">
+							<img class="img-fluid" src="//bigteams-public-prod.s3.amazonaws.com/library/images/demo1018.bigteamsdemo_com_1681/logos/1681/1681.png" alt="Nav Logo for demo1018.bigteamsdemo_com_1681" style="width: 100%;object-fit: contain;object-position: center;" />
+						</a>
+					
+					
+						<h4 class="fm-Poppins mt-3 text-dark">AR ATHLETICS</h4>
+					
+			</div>
+			<div class="col-2 mt-3 text-center px-0">
+					<div>
+						<a class="js-toggle-nav cv" tabindex="0" id="mobileHeaderToggleB" name="mobileHeaderToggleB" href="javascript:void(0);" alt="Close Menu" title="Close Menu"><img class="img-fluid transition" src="/assets/images/close-dark-icon'.png" alt="logo x" style="height: 50%; width: 40%;"/></a>
+					</div>
+				</div>
+				<hr class="footer-hr text-appcolor">
+			</div>
+
+			<div class="mobile-nav__screens  cf">
+				<div class="fm-Poppins js-mobile-nav-screen nav-screen pl-xl" data-screen="0">
+					<div id="js-screen-content" class="js-screen-content">
+                    
+                    
+                    
+                    
+					<a class="pfs-nav-item" href="/">Home</a>
+                    <a class="pfs-nav-item" data-bs-toggle="collapse" data-bs-target="#allsports_leftNav" href="#" role="button" >Sports & Activities <i class="fa fa-arrow-down" style="color:#efb21e"></i> </a>
+                    <div class="side-nav-allsports collapse mb-3 ml-lg mt-3" id="allsports_leftNav">
+                        
+                            
+                            
+                            
+                            <div class="b-bottom d-flex pb-1 pr-lg row">
+                                <span class="col-md-5 col-5 fm-Poppins js-mobile-nav-item pfs-nav-item-no-click text-bold">Basketball</span>
+                                <div class="col-md-7 col-7">
+                                    
+                                    
+                                    
+                                        
+                                        
+                                        
+
+                                        
+
+                                        
+                                        
+                                    
+                                        
+                                        
+                                        
+
+                                        
+                                            
+                                            
+                                            
+                                        
+                                        
+                                        
+
+                                        
+
+                                        
+                                        
+                                    
+                                        
+                                        
+                                        
+
+                                        
+                                            
+                                            
+                                            
+                                        
+                                        
+                                        
+
+                                        
+                                            
+                                            
+                                            
+
+                                    
+                                        
+                                        
+                                        
+                                        <a class="fm-Poppins mr-lg" href="/main/team/id/3801142/sportid/2/gender/2" alt="Girls Basketball">Girls</a>
+                                    
+                                        
+                                        
+                                        
+                                        <a class="fm-Poppins mr-lg" href="/main/team/id/3801004/sportid/2/gender/1" alt="Boys Basketball">Boys</a>
+                                    
+                                </div>
+                            </div>
+                        
+                            
+                            
+                            
+                            <div class="b-bottom d-flex pb-1 pr-lg row">
+                                <span class="col-md-5 col-5 fm-Poppins js-mobile-nav-item pfs-nav-item-no-click text-bold">Cross Country</span>
+                                <div class="col-md-7 col-7">
+                                    
+                                    
+                                    
+                                        
+                                        
+                                        
+
+                                        
+
+                                        
+                                        
+                                    
+
+                                    
+                                        
+                                        
+                                        
+                                        <a class="fm-Poppins mr-lg" href="/main/team/id/3801229/sportid/13/gender/1" alt="Boys Cross Country">Boys</a>
+                                    
+                                </div>
+                            </div>
+                        
+                            
+                            
+                            
+                            <div class="b-bottom d-flex pb-1 pr-lg row">
+                                <span class="col-md-5 col-5 fm-Poppins js-mobile-nav-item pfs-nav-item-no-click text-bold">Field Hockey</span>
+                                <div class="col-md-7 col-7">
+                                    
+                                    
+                                    
+                                        
+                                        
+                                        
+
+                                        
+
+                                        
+                                        
+                                    
+
+                                    
+                                        
+                                        
+                                        
+                                        <a class="fm-Poppins mr-lg" href="/main/team/id/3801235/sportid/16/gender/2" alt="Girls Field Hockey">Girls</a>
+                                    
+                                </div>
+                            </div>
+                        
+                            
+                            
+                            
+                            <div class="b-bottom d-flex pb-1 pr-lg row">
+                                <span class="col-md-5 col-5 fm-Poppins js-mobile-nav-item pfs-nav-item-no-click text-bold">Football</span>
+                                <div class="col-md-7 col-7">
+                                    
+                                    
+                                    
+                                        
+                                        
+                                        
+
+                                        
+
+                                        
+                                        
+                                    
+                                        
+                                        
+                                        
+
+                                        
+                                            
+                                            
+                                            
+
+                                    
+                                        
+                                        
+                                        
+                                        <a class="fm-Poppins mr-lg" href="/main/team/id/3800739/sportid/1/gender/1" alt="Boys Football">Boys</a>
+                                    
+                                </div>
+                            </div>
+                        
+                            
+                            
+                            
+                            <div class="b-bottom d-flex pb-1 pr-lg row">
+                                <span class="col-md-5 col-5 fm-Poppins js-mobile-nav-item pfs-nav-item-no-click text-bold">Ice Hockey</span>
+                                <div class="col-md-7 col-7">
+                                    
+                                    
+                                    
+                                        
+                                        
+                                        
+
+                                        
+
+                                        
+                                        
+                                    
+
+                                    
+                                        
+                                        
+                                        
+                                        <a class="fm-Poppins mr-lg" href="/main/team/id/3801198/sportid/108/gender/1" alt="Boys Ice Hockey">Boys</a>
+                                    
+                                </div>
+                            </div>
+                        
+                            
+                            
+                            
+                            <div class="b-bottom d-flex pb-1 pr-lg row">
+                                <span class="col-md-5 col-5 fm-Poppins js-mobile-nav-item pfs-nav-item-no-click text-bold">Soccer</span>
+                                <div class="col-md-7 col-7">
+                                    
+                                    
+                                    
+                                        
+                                        
+                                        
+
+                                        
+
+                                        
+                                        
+                                    
+                                        
+                                        
+                                        
+
+                                        
+                                            
+                                            
+                                            
+                                        
+                                        
+                                        
+
+                                        
+
+                                        
+                                        
+                                    
+
+                                    
+                                        
+                                        
+                                        
+                                        <a class="fm-Poppins mr-lg" href="/main/team/id/3801233/sportid/9/gender/2" alt="Girls Soccer">Girls</a>
+                                    
+                                        
+                                        
+                                        
+                                        <a class="fm-Poppins mr-lg" href="/main/team/id/3801232/sportid/9/gender/1" alt="Boys Soccer">Boys</a>
+                                    
+                                </div>
+                            </div>
+                        
+                            
+                            
+                            
+                            <div class="b-bottom d-flex pb-1 pr-lg row">
+                                <span class="col-md-5 col-5 fm-Poppins js-mobile-nav-item pfs-nav-item-no-click text-bold">Tennis</span>
+                                <div class="col-md-7 col-7">
+                                    
+                                    
+                                    
+                                        
+                                        
+                                        
+
+                                        
+
+                                        
+                                        
+                                    
+
+                                    
+                                        
+                                        
+                                        
+                                        <a class="fm-Poppins mr-lg" href="/main/team/id/3801226/sportid/4/gender/2" alt="Girls Tennis">Girls</a>
+                                    
+                                </div>
+                            </div>
+                        
+                            
+                            
+                            
+                            <div class="b-bottom d-flex pb-1 pr-lg row">
+                                <span class="col-md-5 col-5 fm-Poppins js-mobile-nav-item pfs-nav-item-no-click text-bold">Volleyball</span>
+                                <div class="col-md-7 col-7">
+                                    
+                                    
+                                    
+                                        
+                                        
+                                        
+
+                                        
+
+                                        
+                                        
+                                    
+
+                                    
+                                        
+                                        
+                                        
+                                        <a class="fm-Poppins mr-lg" href="/main/team/id/3801224/sportid/17/gender/2" alt="Girls Volleyball">Girls</a>
+                                    
+                                </div>
+                            </div>
+                        
+                            
+                            
+                            
+                            <div class="b-bottom d-flex pb-1 pr-lg row">
+                                <span class="col-md-5 col-5 fm-Poppins js-mobile-nav-item pfs-nav-item-no-click text-bold">Wrestling</span>
+                                <div class="col-md-7 col-7">
+                                    
+                                    
+                                    
+                                        
+                                        
+                                        
+
+                                        
+
+                                        
+                                        
+                                    
+                                        
+                                        
+                                        
+
+                                        
+
+                                        
+                                        
+                                    
+
+                                    
+                                        
+                                        
+                                        
+                                        <a class="fm-Poppins mr-lg" href="/main/team/id/3819095/sportid/8/gender/2" alt="Girls Wrestling">Girls</a>
+                                    
+                                        
+                                        
+                                        
+                                        <a class="fm-Poppins mr-lg" href="/main/team/id/3801138/sportid/8/gender/1" alt="Boys Wrestling">Boys</a>
+                                    
+                                </div>
+                            </div>
+                        
+                    </div>
+                    
+                        
+						
+							
+								
+								
+								
+									<a class="pfs-nav-item" href="/main/calendar?">Calendar</a>
+								
+							
+						
+							
+						
+							
+								
+								
+									
+								
+								
+									<a class="pfs-nav-item" href="#" onclick="javascript:window.open('https://www.familyid.com/organizations/archbishop-ryan-high-school-athletics');">Family ID(Physical forms)</a>
+								
+							
+						
+							
+								
+								
+								
+									<a class="pfs-nav-item" href="/main/filesLinks?">PIAA Forms and Links</a>
+								
+							
+						
+							
+								
+								
+								
+									<a class="pfs-nav-item" href="/main/adnews?">Announcements</a>
+								
+							
+						
+							
+								
+								
+								
+									<a class="pfs-nav-item" href="/main/eventPhotos?">Photos</a>
+								
+							
+						
+							
+								
+								
+									
+								
+								
+									<a class="pfs-nav-item" href="/main/fanDashboard?defaultTab=tabs%2DFavorites">Get Alerts</a>
+								
+							
+						
+							
+                                <a class="pfs-nav-item" data-content="nav-13" data-bs-toggle="collapse" data-bs-target="#nav-13"  href="#" >More <i class="fa fa-arrow-down" style="color:#efb21e"></i></a>
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                        <div id="nav-13" class="collapse mb-3 ml-lg mt-3" data-content="nav-13">
+                                            
+                                            
+                                                
+                                                    
+                                                    
+                                                    
+                                                        <a class="pfs-nav-item py-1 b-bottom" href='/main/enterstore/'>Team Apparel</a>
+                                                    
+                                                
+                                            
+                                                
+                                                    
+                                                    
+                                                    
+                                                        <a class="pfs-nav-item py-1 b-bottom" href='/main/fields/'>Directions</a>
+                                                    
+                                                
+                                            
+                                        </div>
+                                    
+                                
+                                    
+                                
+                                    
+                                
+							
+						
+							
+								
+								
+								
+									<a class="pfs-nav-item" href="/main/contact?">Contact</a>
+								
+							
+						
+							
+						
+					
+				</div><!-- /.nav-screen__content -->
+				
+			
+				</div><!-- /.nav-screen [data-screen=0] -->
+				<div class="nav-screen  js-mobile-nav-screen" data-screen="1">
+					
+            
+			
+            
+				</div><!-- /.nav-screen [data-screen=1] -->
+
+				<div class="nav-screen  js-mobile-nav-screen" data-screen="2">
+					
+				</div><!-- /.nav-screen [data-screen=2] -->
+
+ 				<span id="endMobileNav_mbl" tabindex="0" title="End of mobile menu" class="endofmobilenav" onfocus="menucloseonleave()"></span>
+
+			</div><!-- /.mobile-nav__screens -->
+	</div><!-- /.mobile-nav -->
+
+</div>
+<script>
+
+   $("#mobileHeaderToggleA").click(function(e) {
+      e.stopPropagation();
+  });
+
+</script>
+
+
+
+	<script type="text/javascript">
+		function googleTranslateMobileInit() {
+			new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element_mobile');
+		}
+	</script>
+	<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateMobileInit"></script>
+
+
+
+
+</div>
+        </div>
+
+
+	
+	<main id="maincontent" name="maincontent" tabindex="-10" style="margin-bottom: 120px;" >
+	<style>
+@media screen and (max-width:767px) { .fc-toolbar.fc-header-toolbar {font-size: 60%}}
+
+
+@media print {
+	.fc-dayGridMonth-view table div *{
+		max-width:100% !important;
+	}
+
+	.fc-dayGridMonth-view table td{
+		border-left:1px solid gray !important;
+	}
+
+	.fc-scrollgrid-sync-table *{
+		border: 0px !important;
+		margin: 0px !important;
+		max-width: 100%;
+	}
+	.fc-scrollgrid-sync-table td{
+		/* border: 1px solid red !important; */
+	}
+
+	.fc-scrollgrid-sync-table td div.fc-daygrid-day-frame{
+		border-left: 1px solid gray !important;
+		border-bottom: 1px solid gray !important;
+	}
+
+	.fc-scrollgrid-sync-table td.fc-day-sat div.fc-daygrid-day-frame{
+		border-right: 2px solid gray !important;
+	}
+
+
+}
+
+</style>
+
+<script>
+
+  const hideElement = (elt) => {
+      if(`${elt.parentElement.nodeName}`.toUpperCase()!=="SPAN"){//Need to skip the icons in the legend
+        if(`${elt.parentElement.nodeName}`.toUpperCase()==="A"){//Month View Elements
+          elt.parentElement.parentElement.parentElement.parentElement.style.display="none";
+        }else if(`${elt.parentElement.nodeName}`.toUpperCase()==="DIV"){//Day and Week View Elements
+          elt.parentElement.parentElement.parentElement.parentElement.parentElement.style.display="none";
+        }
+      }
+  }
+
+  const showElement = (elt) => {
+      if(`${elt.parentElement.nodeName}`.toUpperCase()!=="SPAN"){//Need to skip the icons in the legend
+        if(`${elt.parentElement.nodeName}`.toUpperCase()==="A"){//Month View Elements
+          elt.parentElement.parentElement.parentElement.parentElement.style.display="";
+        }else if(`${elt.parentElement.nodeName}`.toUpperCase()==="DIV"){//Day and Week View Elements
+          elt.parentElement.parentElement.parentElement.parentElement.parentElement.style.display="";
+        }
+      }
+  }
+
+	const hidePast = () => {
+		Array.from(document.getElementsByClassName("fa-check")).forEach((elt)=>{
+      hideElement(elt);
+      });
+	}
+
+	const showPast = () => {
+		Array.from(document.getElementsByClassName("fa-check")).forEach((elt)=>{
+      showElement(elt);
+      });
+	}
+
+	const hideNonGames = () => {
+    const nonGameClasses = ["fa-clock","fa-graduation-cap","fa-circle-o","fa-star"]
+    nonGameClasses.forEach((className)=>{
+      Array.from(document.getElementsByClassName(className)).forEach((elt)=>{
+        hideElement(elt);
+        }
+        );
+    })
+	}
+
+	const showNonGames = () => {
+		const nonGameClasses = ["fa-clock","fa-graduation-cap","fa-circle-o","fa-star"];
+    nonGameClasses.forEach((className)=>{
+      Array.from(document.getElementsByClassName(className)).forEach((elt)=>{
+        showElement(elt);
+        }
+        );
+    })
+	}
+
+	const hideHomeGames = () => {
+		Array.from(document.getElementsByClassName("fa-home")).forEach((elt)=>{
+      hideElement(elt);
+      });
+	}
+
+	const showHomeGames = () => {
+    Array.from(document.getElementsByClassName("fa-home")).forEach((elt)=>{
+      showElement(elt);
+      });
+	}
+
+	const hideAwayGames = () => {
+		Array.from(document.getElementsByClassName("fa-bus-alt")).forEach((elt)=>{
+      hideElement(elt);
+      });
+	}
+
+	const showAwayGames = () => {
+		Array.from(document.getElementsByClassName("fa-bus-alt")).forEach((elt)=>{
+      showElement(elt);
+      });
+	}
+
+  function handlePastEventsChange(switchElement) {
+    const isChecked = switchElement.checked;
+    if(isChecked){
+      showPast();
+    }else{
+      hidePast();
+    }
+
+  }
+
+  function handleEventTypeChange(selectElement) {
+    const selectedValue = selectElement.value;
+
+        showNonGames();
+        showHomeGames();
+        showAwayGames();
+
+    switch(selectedValue) {
+      case "g":
+        // show games only
+        hideNonGames();
+        break;
+      case "h":
+        // show home games only
+        hideNonGames();
+        hideAwayGames();
+        break;
+      case "a":
+        // show away games only
+        hideNonGames();
+        hideHomeGames();
+        break;
+      default:
+        // show all types - already done above
+    }
+
+    handlePastEventsChange(document.getElementById("pastEventsSwitch"));
+  }
+
+  const showAllSports = () => {
+
+    const allMonthViewEvents = document.querySelectorAll('.fc-event-main');
+    allMonthViewEvents.forEach((element)=>{
+      element.style.display="";
+    });
+
+    const allDayWeekViewEvents = document.querySelectorAll('.shadow.rounded');
+    allDayWeekViewEvents.forEach((element)=>{
+      element.style.display="";
+    });
+  }
+
+
+  const showOnlyThisSport = (sportTitle) => {
+
+    const allMonthViewEvents = document.querySelectorAll('.fc-event-main');
+    allMonthViewEvents.forEach((element)=>{
+      const eventText = element.querySelector('a.btn').textContent.trim();
+      if(eventText.includes(sportTitle)){
+        element.style.display="";
+      }else{
+        element.style.display="none";
+      }
+    });
+
+
+    const podTypes = ["pastPod",
+			"ppdPod",
+			"cncPod",
+			"scrimmagePod",
+			"practicePod",
+			"schoolPod",
+			"otherPod",
+			"tryoutsPod",
+			"homePod",
+			"awayPod"];
+
+
+    podTypes.forEach((podType)=>{
+      const allDayWeekViewEvents = document.querySelectorAll('.shadow.rounded.'+podType);
+      allDayWeekViewEvents.forEach((element)=>{
+        const eventTitleElement = element.querySelector('.container-fluid:nth-of-type(2) .col:first-of-type');
+        let eventText="";
+        if(eventTitleElement){
+          eventText = eventTitleElement.textContent.trim();
+          //console.log("!*!*!* "+eventText.includes(sportTitle)+" >>>>>>>>> "+eventText);
+          if(eventText.includes(sportTitle)){
+            element.style.display="";
+          }else{
+            element.style.display="none";
+          }
+        }
+      });
+    });
+  }
+
+
+const handleSportChange = (selectElement) => {
+    const selectedValue = selectElement.value;
+
+    if(selectedValue==="all"){
+      showAllSports();
+    }else{
+      showOnlyThisSport(selectedValue);
+    }
+
+    handleEventTypeChange(document.getElementById("eventTypeSelect"));
+}
+
+const updateSportFilter = (evtList) =>{
+
+  const sportSet = new Set();
+  evtList.forEach((evt)=>{
+    sportSet.add(evt.extendedProps.theTitle);
+  });
+
+  const orderedSports = [...sportSet].sort((a, b) => a.localeCompare(b));
+
+    const sportSelectElement = document.getElementById("sportSelect");
+
+    // Clear all existing options
+    sportSelectElement.innerHTML = '';
+
+    // Rebuild options from the array
+    const allOption = document.createElement('option');
+        allOption.value = "all";
+        allOption.textContent = "Show All Sports";
+        allOption.selected=true;
+        sportSelectElement.appendChild(allOption);
+        orderedSports.forEach(optionText => {
+            const newOption = document.createElement('option');
+            newOption.value = optionText;
+            newOption.textContent = optionText;
+            sportSelectElement.appendChild(newOption);
+        });
+
+}
+
+	const RGBToHSL = (colorHex) => {
+		//console.log(colorHex);
+		if (colorHex.includes("rgb")) {
+			colorHex = rgbToHex(colorHex);
+		}
+
+		// console.log(colorHex);
+		let r = parseInt(colorHex.substr(0, 2), 16);
+		let g = parseInt(colorHex.substr(2, 2), 16);
+		let b = parseInt(colorHex.substr(4, 2), 16);
+		r /= 255;
+		g /= 255;
+		b /= 255;
+		const l = Math.max(r, g, b);
+		const s = l - Math.min(r, g, b);
+		const h = s
+			? l === r
+				? (g - b) / s
+				: l === g
+					? 2 + (b - r) / s
+					: 4 + (r - g) / s
+			: 0;
+		return {
+			h: 60 * h < 0 ? 60 * h + 360 : 60 * h,
+			s: 100 * (s ? (l <= 0.5 ? s / (2 * l - s) : s / (2 - (2 * l - s))) : 0),
+			l: (100 * (2 * l - s)) / 2,
+		};
+	};
+
+	const rgbToHex = (rgb) => {
+		//pull out the rgb values
+		var rgbValues = rgb.split("(")[1].split(")")[0];
+
+		// split it into separate numbers:
+
+		rgbValues = rgbValues.split(",");
+		// Convert the single numbers to hex
+
+		var convertedToHex = rgbValues.map(function (x) {             //For each array element
+		x = parseInt(x).toString(16);      //Convert to a base16 string
+		return (x.length == 1) ? "0" + x : x;  //Add zero if we get only one character
+		})
+		//And glue it back together:
+
+		convertedToHex = convertedToHex.join("");
+		return convertedToHex;
+    }
+
+	function getHsl(colorHex) {
+		if (colorHex.includes("#")) {
+			colorHex = colorHex.substr(1, 6);
+		}
+		const hsl = RGBToHSL(colorHex);
+		return hsl;
+	}
+
+	const baseColor = '#efb21e'; // primary theme color
+	// console.log(baseColor);
+    const hsl = getHsl(baseColor);
+    const hue = hsl.h;
+
+	let lighterLight = (hsl.l + 15);
+	let darkerLight = (hsl.l - 5);
+
+	if (lighterLight > 100) { lighterLight = 100; }
+	if (lighterLight < 0) { lighterLight = 0; }
+	if (darkerLight > 100) { darkerLight = 100; }
+	if (darkerLight < 0) { darkerLight = 0; }
+
+	const hoverColor = `hsl(${hue},${hsl.s}%,${lighterLight}%)`;
+	const activeColor = `hsl(${hue},${hsl.s}%,${darkerLight}%)`;
+
+	// console.log(hoverColor);
+	// console.log(activeColor);
+
+	let eventList = [];
+	let renderDates = {};
+	let lastMonthLoad = {};
+
+	const legend = `
+		<style>
+			:root {
+			--fc-button-text-color: #fff;
+			--fc-button-bg-color: ${baseColor}; //base
+			--fc-button-border-color: #DEDEDE;
+			--fc-button-hover-bg-color: ${hoverColor}; //hover
+			--fc-button-hover-border-color: #CCCCCC;
+			--fc-button-active-bg-color: ${activeColor}; //active
+			--fc-button-active-border-color: #AAAAAA;
+		}
+		</style>
+
+	<fieldset class="reset" style="border-radius: 8px;">
+	<legend class="reset">Legend</legend>
+	<div class="accordion accordion-flush" id="accordionLegend">
+		<div class="accordion-item">
+			<h2 class="accordion-header" id="headingOne">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+					data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="padding-top: 0px;padding-bottom: 3px;">
+					<div class="container-fluid text-left">
+						<div class="row">
+							<div class="col colPadding5">
+								<span class="legendPill" data-bs-toggle="tooltip"
+									data-bs-placement="bottom" data-bs-title="Home Game">
+									<i class='fa fa-home homeEventText'></i><span class="legendFont11">&nbsp;Home</span>
+								</span>
+							</div>
+							<div class="col colPadding5">
+								<span class="legendPill" data-bs-toggle="tooltip"
+									data-bs-placement="bottom" data-bs-title="Away Game">
+									<i class='fa fa-bus-alt awayEventText'></i><span class="legendFont11">&nbsp;Away</span>
+								</span>
+							</div>
+							<div class="col colPadding5">
+								<span class="legendPill" data-bs-toggle="tooltip"
+									data-bs-placement="bottom" data-bs-title="Practice">
+									<i class='fa fa-clock practiceEventText'></i><span class="legendFont11">&nbsp;Practice</span>
+								</span>
+							</div>
+							<div class="col colPadding5">
+								<span class="legendPill" data-bs-toggle="tooltip"
+									data-bs-placement="bottom" data-bs-title="School Event">
+									<i class='fa fa-graduation-cap schoolEventText'></i><span class="legendFont11">&nbsp;School</span>
+								</span>
+							</div>
+							<div class="col colPadding5">
+								<span class="legendPill" data-bs-toggle="tooltip"
+									data-bs-placement="bottom" data-bs-title="Other Event">
+									<i class='fa fa-circle-o otherEventText'></i><span class="legendFont11">&nbsp;Other</span>
+								</span>
+							</div>
+							<div class="col colPadding5 white-space:nowrap;">
+								<span class="legendPill" data-bs-toggle="tooltip"
+									data-bs-placement="bottom" data-bs-title="Scrimmage">
+									<i class='fa fa-star scrimmageEventText'></i><span class="legendFont11">&nbsp;Scrimmage</span>
+								</span>
+							</div>
+							<div class="col colPadding5">
+								<span class="legendPill" data-bs-toggle="tooltip"
+									data-bs-placement="bottom" data-bs-title="Postponed">
+									<i class='fa fa-history ppdEventText'></i><span class="legendFont11">&nbsp;Postponed</span>
+								</span>
+							</div>
+							<div class="col colPadding5">
+								<span class="legendPill" data-bs-toggle="tooltip"
+									data-bs-placement="bottom" data-bs-title="Cancelled">
+									<i class='fa fa-exclamation-triangle cncEventText'></i><span class="legendFont11">&nbsp;Cancelled</span>
+								</span>
+							</div>
+							<div class="col colPadding5">
+								<span class="legendPill" data-bs-toggle="tooltip"
+									data-bs-placement="bottom" data-bs-title="Past Event">
+									<i class='fa fa-check pastEventText'></i><span class="legendFont11">&nbsp;Past</span>
+								</span>
+							</div>
+						</div>
+					</div>
+				</button>
+			</h2>
+			<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+				data-bs-parent="#accordionLegend">
+					<div class="accordion-body padTB08">
+						<div class="container-fluid text-left">
+							
+							<hr class="hrmb11" />
+							<div class="row">
+								<div class="col colPadding0">Other Overriding Status: (These will override event colors)</div>
+							</div>
+							<div class="row">
+								<div class="col colPadding56">
+									<span class="legendPill" data-bs-toggle="tooltip"
+										data-bs-placement="bottom" data-bs-title="Postponed">
+										<i class='fa fa-history ppdEventText'></i><span class="legendFont11">&nbsp;Postponed</span>
+									</span>
+								</div>
+								<div class="col colPadding56">
+									<span class="legendPill" data-bs-toggle="tooltip"
+										data-bs-placement="bottom" data-bs-title="Cancelled">
+										<i class='fa fa-exclamation-triangle cncEventText'></i><span class="legendFont11">&nbsp;Cancelled</span>
+									</span>
+								</div>
+								<div class="col colPadding56">
+									<span class="legendPill" data-bs-toggle="tooltip"
+										data-bs-placement="bottom" data-bs-title="Past Event">
+										<i class='fa fa-check pastEventText'></i><span class="legendFont11">&nbsp;Past</span>
+									</span>
+								</div>
+								<div class="col">&nbsp;</div>
+								<div class="col">&nbsp;</div>
+								<div class="col">&nbsp;</div>
+								<div class="col">&nbsp;</div>
+								<div class="col">&nbsp;</div>
+								<div class="col">&nbsp;</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</fieldset>
+	<div style="margin-top: 10px;margin-bottom: 10px;background-color: #DEDEDE;border-radius: 6px;padding: 10px;">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-2 fs-5" style="text-align: right;font-weight: bold;">Filters:</div>
+      <div class="col-3"><div class="form-check form-switch" style="position: relative;top: 5px;">
+  <input class="form-check-input" type="checkbox" id="pastEventsSwitch" onchange="handlePastEventsChange(this);">
+  <label class="form-check-label" for="pastEventsSwitch">
+  <span class="d-none d-md-inline">Show Past Events</span>
+  <span class="d-inline d-md-none">Past</span>
+  </label>
+</div></div>
+      <div class="col-3">
+      <select class="form-select" id="eventTypeSelect" aria-label="Select Event Types To Show In Calendar" onchange="handleEventTypeChange(this)">
+  <option value="all" selected>Show All Event Types</option>
+  <option value="g">Show Games Only</option>
+  <option value="h">Show Home Games Only</option>
+  <option value="a">Show Away Games Only</option>
+</select>
+</div>
+      <div class="col-4">
+<select class="form-select" id="sportSelect" aria-label="Select Sport"  onchange="handleSportChange(this)">
+  <option value="all" selected>Show All Sports</option>
+</select>
+
+      </div>
+    </div>
+  </div>
+  </div>`;
+
+	const homeColor = "#005ea6";
+	const awayColor = "#f38300";
+	const practiceColor = "#060";
+	const scrimmageColor = "#5ab7cc";
+	const tryoutsColor = "#000000";
+	const schoolColor = "#7d0707";
+	//const ppdColor = "#d8c21c";
+  const ppdColor = "#f80000";
+	const cncColor = "#f80000";
+	const pastColor = "#AAAAAA";
+	const otherColor = "#660066";
+
+	let currentView = "dayGridMonth";
+	let calendarEl = null;
+	let calendar = null;
+
+	let tomorrow = new Date();
+	tomorrow.setDate(tomorrow.getDate() + 1);
+	tomorrow.setHours(12);
+	tomorrow.setHours(30);
+
+	let tomorrowEnd = new Date();
+	tomorrowEnd.setDate(tomorrowEnd.getDate() + 1);
+	tomorrowEnd.setHours(17);
+	tomorrowEnd.setHours(30);
+
+	let daysAgo2 = new Date();
+	daysAgo2.setDate(daysAgo2.getDate() - 2);
+
+	const HOME_EVT = "home";
+	const AWAY_EVT = "away";
+	const PRACTICE_EVT = "practice";
+	const SCHOOL_EVT = "school";
+	const SCRIM_EVT = "scrimmage";
+	const TRYOUT_EVT = "try outs";
+	const PAST_EVT = "past";
+	const PPD_EVT = "postponed";
+	const CNC_EVT = "cancelled";
+	const OTH_EVT = "other";
+
+	const getPodClassName = (types) => {
+		let podClass = "";
+		let getSecondaryIcon = false;
+		if (types.includes(PAST_EVT)) {
+			podClass = "pastPod";
+		} else if (types.includes(PPD_EVT)) {
+			podClass = "ppdPod";
+		} else if (types.includes(CNC_EVT)) {
+			podClass = "cncPod";
+		} else if (types.includes(SCRIM_EVT)) {
+			podClass = "scrimmagePod";
+		} else if (types.includes(PRACTICE_EVT)) {
+			podClass = "practicePod";
+		} else if (types.includes(SCHOOL_EVT)) {
+			podClass = "schoolPod";
+		} else if (types.includes(OTH_EVT)) {
+			podClass = "otherPod";
+		} else if (types.includes(TRYOUT_EVT)) {
+			podClass = "tryoutsPod";
+		} else if (types.includes(HOME_EVT)) {
+			podClass = "homePod";
+		} else if (types.includes(AWAY_EVT)) {
+			podClass = "awayPod";
+		}
+		return podClass;
+	}
+
+	const getIconHtml = (types, withColor) => {
+		let iconHTML = "";
+		let getSecondaryIcon = false;
+		let colorVal = "";
+		let iconVal = "";
+		let tooltipText = "";
+
+		if (types.includes(PAST_EVT)) {
+			colorVal = pastColor;
+			tooltipText = "Past Event";
+			iconVal = "fa fa-check";
+			getSecondaryIcon = true;
+		} else if (types.includes(PPD_EVT)) {
+			colorVal = ppdColor;
+			tooltipText = "Postponed Event";
+			iconVal = "fa-solid fa-clock-rotate-left";
+			getSecondaryIcon = true;
+		} else if (types.includes(CNC_EVT)) {
+			colorVal = cncColor;
+			tooltipText = "Cancelled Event";
+			iconVal = "fa-solid fa-triangle-exclamation";
+			getSecondaryIcon = true;
+		} else if (types.includes(SCRIM_EVT)) {
+			colorVal = scrimmageColor;
+			tooltipText = "Scrimmage";
+			iconVal = "fa fa-star";
+		} else if (types.includes(PRACTICE_EVT)) {
+			colorVal = practiceColor;
+			tooltipText = "Practice";
+			iconVal = "fa fa-clock";
+		} else if (types.includes(SCHOOL_EVT)) {
+			colorVal = schoolColor;
+			tooltipText = "School Event";
+			iconVal = "fa fa-graduation-cap";
+		} else if (types.includes(OTH_EVT)) {
+			colorVal = otherColor;
+			tooltipText = "Other Event";
+			iconVal = "fa fa-circle-o";
+		} else if (types.includes(TRYOUT_EVT)) {
+			colorVal = tryoutsColor;
+			tooltipText = "Tryouts";
+			iconVal = "fa fa-bullhorn";
+		} else if (types.includes(HOME_EVT)) {
+			colorVal = homeColor;
+			tooltipText = "Home Game";
+			iconVal = "fa fa-home";
+		} else if (types.includes(AWAY_EVT)) {
+			colorVal = awayColor;
+			tooltipText = "Away Game";
+			iconVal = "fa fa-bus-alt";
+		}
+
+		iconHTML = withColor ? `<i class='${iconVal}' style='color: ${colorVal};' data-bs-toggle='tooltip' data-bs-placement='bottom' data-bs-title='${tooltipText}'></i>` : `<i class='${iconVal}' data-bs-toggle='tooltip' data-bs-placement='bottom' data-bs-title='${tooltipText}'></i>`;
+
+		if (getSecondaryIcon) {
+			return iconHTML + "&nbsp;" + getSecondaryIconHtml(types, withColor);
+		} else {
+			return iconHTML;
+		}
+	}
+
+	const getSecondaryIconHtml = (types, withColor) => {
+		let iconHTML = "";
+		let colorVal = "";
+		let iconVal = "";
+		let tooltipText = "";
+
+		if (types.includes(SCRIM_EVT)) {
+			colorVal = scrimmageColor;
+			tooltipText = "Scrimmage";
+			iconVal = "fa fa-star";
+		} else if (types.includes(PRACTICE_EVT)) {
+			colorVal = practiceColor;
+			tooltipText = "Practice";
+			iconVal = "fa fa-clock";
+		} else if (types.includes(SCHOOL_EVT)) {
+			colorVal = schoolColor;
+			tooltipText = "School Event";
+			iconVal = "fa fa-graduation-cap";
+		} else if (types.includes(OTH_EVT)) {
+			colorVal = otherColor;
+			tooltipText = "Other Event";
+			iconVal = "fa fa-circle-o";
+		} else if (types.includes(TRYOUT_EVT)) {
+			colorVal = tryoutsColor;
+			tooltipText = "Tryouts";
+			iconVal = "fa fa-bullhorn";
+		} else if (types.includes(HOME_EVT)) {
+			colorVal = homeColor;
+			tooltipText = "Home Game";
+			iconVal = "fa fa-home";
+		} else if (types.includes(AWAY_EVT)) {
+			colorVal = awayColor;
+			tooltipText = "Away Game";
+			iconVal = "fa fa-bus-alt";
+		}
+
+		iconHTML = withColor ? `<i class='${iconVal}' style='color: ${colorVal};' data-bs-toggle='tooltip' data-bs-placement='bottom' data-bs-title='${tooltipText}'></i>` : `<i class='${iconVal}' data-bs-toggle='tooltip' data-bs-placement='bottom' data-bs-title='${tooltipText}'></i>`;
+
+		return iconHTML;
+	}
+
+	const getLeadingZeroIfNecessary = (value) => {
+		if (value >= 10) {
+			return `${value}`;
+		} else {
+			return `0${value}`;
+		}
+	}
+
+	const getFormattedDateForAllDayEvent = (theDate) => {
+		return `${theDate.getFullYear()}-${getLeadingZeroIfNecessary(theDate.getMonth() + 1)}-${getLeadingZeroIfNecessary(theDate.getDate())} ${getLeadingZeroIfNecessary(theDate.getHours())}:${getLeadingZeroIfNecessary(theDate.getMinutes())}:00`
+	}
+
+	const getFormattedDateTimeForEvent = (theDate) => {
+		return `${theDate.getFullYear()}-${getLeadingZeroIfNecessary(theDate.getMonth() + 1)}-${getLeadingZeroIfNecessary(theDate.getDate())} ${getLeadingZeroIfNecessary(theDate.getHours())}:${getLeadingZeroIfNecessary(theDate.getMinutes())}:00`
+	}
+
+	const showBtCustomListDayView = () => {
+		document.getElementById("listViewDayDiv").style.display = "";
+		document.getElementById("listViewWeekDiv").style.display = "none";
+		Array.from(document.getElementsByClassName("fc-view-harness"))[0].style.display = "none";
+	}
+
+	const showBtCustomListWeekView = () => {
+		document.getElementById("listViewDayDiv").style.display = "none";
+		document.getElementById("listViewWeekDiv").style.display = "";
+		Array.from(document.getElementsByClassName("fc-view-harness"))[0].style.display = "none";
+	}
+
+	const showBuiltInCalendarView = () => {
+		document.getElementById("listViewDayDiv").style.display = "none";
+		document.getElementById("listViewWeekDiv").style.display = "none";
+		Array.from(document.getElementsByClassName("fc-view-harness"))[0].style.display = "";
+	}
+
+	const addCustomViewBase = () => {
+		const listViewDayDiv = document.createElement("div");
+		listViewDayDiv.id = "listViewDayDiv";
+		listViewDayDiv.style.height = "100%";
+		listViewDayDiv.style.display = "none";
+		calendarEl.appendChild(listViewDayDiv);
+		const listViewWeekDiv = document.createElement("div");
+		listViewWeekDiv.id = "listViewWeekDiv";
+		listViewWeekDiv.style.height = "100%";
+		listViewWeekDiv.style.display = "none";
+		calendarEl.appendChild(listViewWeekDiv);
+	}
+
+	const getFormattedEventTime = (theDate) => {
+		return new Intl.DateTimeFormat("en-US", {
+			hour: "2-digit",
+			minute: "2-digit",
+			hour12: true,
+		}).format(theDate);
+	}
+
+	const getFormattedEventDateTime = (theDate) => {
+		return new Intl.DateTimeFormat("en-US", {
+			year: "numeric",
+			month: "2-digit",
+			day: "2-digit",
+			hour: "2-digit",
+			minute: "2-digit",
+			hour12: true,
+		}).format(theDate);
+	}
+
+	const getFormattedEventDate = (theDate) => {
+		return new Intl.DateTimeFormat("en-US", {
+			year: "numeric",
+			month: "2-digit",
+			day: "2-digit",
+		}).format(theDate);
+	}
+
+	const getWeekDayTileText = (theDate) => {
+		return new Intl.DateTimeFormat("en-US", {
+			month: "short",
+			day: "2-digit",
+		}).format(theDate);
+	}
+
+	const getPopoverContent = (event) => {
+		const title = event.title;
+		const startTime = event.startTime;
+		const endTime = event.endTime;
+		const props = event.extendedProps;
+		return `<div class="container-fluid small-text" >
+			<div class="row">
+				<div class="col-4 popover-lbl" >Team: </div>
+				<div class="col">${props.homeAway} ${props.theTitle} ${props.homeAway.includes("H") ? " vs" : " at"}</div>
+			</div>
+			<div class="row">
+				<div class="col-4 popover-lbl">Opponent(s):</div>
+				<div class="col">${props.theOpponentString}</div>
+			</div>
+			<div class="row">
+				<div class="col-4 popover-lbl" >Date: </div>
+				<div class="col">${getFormattedEventDate(new Date(event.start))}</div>
+			</div>
+			<div class="row">
+				<div class="col-4 popover-lbl" >Time: </div>
+				<div class="col">${props.theTime}</div>
+			</div>
+			<div class="row">
+				<div class="col-4 popover-lbl">Location:</div>
+				<div class="col">${props.thePlace}</div>
+			</div>
+			<div class="row">
+				<div class="col-4 popover-lbl">Details:</div>
+				<div class="col"><a href="${props.theEventUrl}" target="_blank"><strong style="color: blue !important;">Click for more info</strong></a></div>
+			</div>
+			${props.eventType.includes(PAST_EVT) ? `<div class="row">
+				<div class="col-4 popover-lbl">Score:</div>
+				<div class="col">Can we show Result/Score for past games?</div>
+			</div>`: ""}
+		</div>`;
+	}
+
+	const getEventPod = (event) => {
+		const title = event.title;
+		const startTime = event.startTime;
+		const endTime = event.endTime;
+		const props = event.extendedProps;
+		const podClassName = getPodClassName(props.eventTypes);
+
+		return `<div class="col popover-lbl">
+			<div class="shadow rounded ${podClassName}"
+				style="position: relative;text-align: left;padding: 5px;min-Width: 300px;margin-right: 10px;">
+
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col">
+							<strong>${props.theEventTitle}</strong>
+						</div>
+						<div class="col" style="text-align: right;">
+								${getIconHtml(props.eventTypes, true)}
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid">
+                    <div class="row">
+                        <div class="col">
+                            ${props.homeAway} ${props.homeAway.includes("H") ? props.theTitle + " vs " + props.theOpponentString : props.theTitle + " at " + props.theOpponentString}
+                        </div>
+						<div class="col">
+							<span style="position: absolute;right: 10px;">${props.thePlace}</span>
+						</div>
+                    </div>
+                </div>
+				<div class="container-fluid">
+                    <div class="row">
+                        <div class="col">
+                            ${props.theTime}
+                        </div>
+                        <div class="col">
+                            <span style="position: absolute;right: 10px;"><a href="${props.theEventUrl}" target="_blank" style="all: reset;color: reset;">details</a></span>
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>`;
+	}
+
+	const getEventPodsForDay = (filteredEvents, dayStart) => {
+		//events are already filtered by day
+		const dayEnd = new Date(dayStart.getTime());
+		dayEnd.setDate(dayStart.getDate() + 1);
+		const theDaysEvents = filteredEvents.filter(eventItem => {
+            return (new Date(`${eventItem.start} 00:00:00`) >= dayStart) && (new Date(`${eventItem.start} 00:00:00`) < dayEnd);
+        });
+		if (theDaysEvents && theDaysEvents.length > 0) {
+			let eventHtml = "";
+			theDaysEvents.forEach((event) => {
+				eventHtml += getEventPod(event);
+			})
+			return eventHtml;
+		} else {
+			return "";
+		}
+	}
+
+	const getEventPodsForHours = (filteredEvents, hours) => {
+		//events are already filtered by week
+		// if the time is present we need to account for it
+		// time add 12 to pm, except for noon
+		const theHoursEvents = filteredEvents.filter(eventItem => hours.includes(parseInt(eventItem.twentyfourTime)));
+		if (theHoursEvents && theHoursEvents.length > 0) {
+			let eventHtml = "";
+			theHoursEvents.forEach((event) => {
+				eventHtml += getEventPod(event);
+			})
+			return eventHtml;
+		} else {
+			return "";
+		}
+	}
+
+	const renderBtCustomListDayView = (info) => {
+		addCustomViewBase();
+		const filteredEventsForThisDay = eventList.filter(eventItem => new Date(`${eventItem.start} 00:00:00`) >= info.start && new Date(`${eventItem.start} 00:00:00`) < info.end);
+		const viewHtml = `<div >
+		<table class="table" style="width: 98%;">
+			<thead>
+				<tr style="text-align: center;">
+					<th scope="col" style="width: 60px;">Time</th>
+					<th scope="col">
+						Events
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="leftRail">
+						<div class="shadow p-2 bg-body rounded text-center">Earlier</div>
+					</td>
+					<td class="align-middle">
+						<div class="container-fluid small-text" style="margin: 3px;">
+							<div class="row g-2">
+								${getEventPodsForHours(filteredEventsForThisDay, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11])}
+							</div>
+						</div>
+					</td>
+				</tr>
+				
+				<tr>
+					<td class="leftRail">
+						<div class="shadow p-2 bg-body rounded text-center">12pm</div>
+					</td>
+					<td class="align-middle">
+						<div class="container-fluid small-text" style="margin: 3px;">
+							<div class="row g-2">
+								${getEventPodsForHours(filteredEventsForThisDay, [12])}
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="leftRail">
+						<div class="shadow p-2 bg-body rounded text-center">1pm</div>
+					</td>
+					<td class="align-middle">
+						<div class="container-fluid small-text" style="margin: 3px;">
+							<div class="row g-2">
+								${getEventPodsForHours(filteredEventsForThisDay, [13])}
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="leftRail">
+						<div class="shadow p-2 bg-body rounded text-center">2pm</div>
+					</td>
+					<td class="align-middle">
+						<div class="container-fluid small-text" style="margin: 3px;">
+							<div class="row g-2">
+								${getEventPodsForHours(filteredEventsForThisDay, [14])}
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="leftRail">
+						<div class="shadow p-2 bg-body rounded text-center">3pm</div>
+					</td>
+					<td class="align-middle">
+						<div class="container-fluid small-text" style="margin: 3px;">
+							<div class="row g-2">
+								${getEventPodsForHours(filteredEventsForThisDay, [15])}
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="leftRail">
+						<div class="shadow p-2 bg-body rounded text-center">4pm</div>
+					</td>
+					<td class="align-middle">
+						<div class="container-fluid small-text" style="margin: 3px;">
+							<div class="row g-2">
+								${getEventPodsForHours(filteredEventsForThisDay, [16])}
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="leftRail">
+						<div class="shadow p-2 bg-body rounded text-center">5pm</div>
+					</td>
+					<td class="align-middle">
+						<div class="container-fluid small-text" style="margin: 3px;">
+							<div class="row g-2">
+								${getEventPodsForHours(filteredEventsForThisDay, [17])}
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="leftRail">
+						<div class="shadow p-2 bg-body rounded text-center">6pm</div>
+					</td>
+					<td class="align-middle">
+						<div class="container-fluid small-text" style="margin: 3px;">
+							<div class="row g-2">
+								${getEventPodsForHours(filteredEventsForThisDay, [18])}
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="leftRail">
+						<div class="shadow p-2 bg-body rounded text-center">7pm</div>
+					</td>
+					<td class="align-middle">
+						<div class="container-fluid small-text" style="margin: 3px;">
+							<div class="row g-2">
+								${getEventPodsForHours(filteredEventsForThisDay, [19])}
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="leftRail">
+						<div class="shadow p-2 bg-body rounded text-center">8pm</div>
+					</td>
+					<td class="align-middle">
+						<div class="container-fluid small-text" style="margin: 3px;">
+							<div class="row g-2">
+								${getEventPodsForHours(filteredEventsForThisDay, [20])}
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="leftRail">
+						<div class="shadow p-2 bg-body rounded text-center">Later</div>
+					</td>
+					<td class="align-middle">
+						<div class="container-fluid small-text" style="margin: 3px;">
+							<div class="row g-2">
+								${getEventPodsForHours(filteredEventsForThisDay, [21, 22, 23])}
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		</div>`;
+
+		document.getElementById("listViewDayDiv").innerHTML = viewHtml;
+	}
+
+	const renderBtCustomListWeekView = (info) => {
+		addCustomViewBase();
+		const filteredEventsForThisWeek = eventList.filter(eventItem => new Date(`${eventItem.start} 00:00:00`) > info.start && new Date(`${eventItem.start} 00:00:00`) < info.end);
+		const sunday = new Date(info.start);
+		const monday = new Date(info.start);
+		monday.setDate(sunday.getDate() + 1);
+		const tuesday = new Date(info.start);
+		tuesday.setDate(sunday.getDate() + 2);
+		const wednesday = new Date(info.start);
+		wednesday.setDate(sunday.getDate() + 3);
+		const thursday = new Date(info.start);
+		thursday.setDate(sunday.getDate() + 4);
+		const friday = new Date(info.start);
+		friday.setDate(sunday.getDate() + 5);
+		const saturday = new Date(info.start);
+		saturday.setDate(sunday.getDate() + 6);
+		const viewHtml = `<div >
+			<table class="table" style="width: 98%;">
+				<thead>
+					<tr style="text-align: center;">
+						<th scope="col" style="width: 60px;">Day</th>
+						<th scope="col">
+							Events
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="leftRail">
+							<div class="shadow p-2 bg-body rounded text-center">Sunday<br />${getWeekDayTileText(sunday)}</div>
+						</td>
+						<td class="align-middle">
+							<div class="container-fluid small-text" style="margin: 3px;">
+								<div class="row g-2">
+									${getEventPodsForDay(filteredEventsForThisWeek, sunday)}
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="leftRail">
+							<div class="shadow p-2 bg-body rounded text-center">Monday<br />${getWeekDayTileText(monday)}</div>
+						</td>
+						<td class="align-middle">
+							<div class="container-fluid small-text" style="margin: 3px;">
+								<div class="row g-2">
+									${getEventPodsForDay(filteredEventsForThisWeek, monday)}
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="leftRail">
+							<div class="shadow p-2 bg-body rounded text-center">Tuesday<br />${getWeekDayTileText(tuesday)}</div>
+						</td>
+						<td class="align-middle">
+							<div class="container-fluid small-text" style="margin: 3px;">
+								<div class="row g-2">
+									${getEventPodsForDay(filteredEventsForThisWeek, tuesday)}
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="leftRail">
+							<div class="shadow p-2 bg-body rounded text-center">Wednesday<br />${getWeekDayTileText(wednesday)}</div>
+						</td>
+						<td class="align-middle">
+							<div class="container-fluid small-text" style="margin: 3px;">
+								<div class="row g-2">
+									${getEventPodsForDay(filteredEventsForThisWeek, wednesday)}
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="leftRail">
+							<div class="shadow p-2 bg-body rounded text-center">Thursday<br />${getWeekDayTileText(thursday)}</div>
+						</td>
+						<td class="align-middle">
+							<div class="container-fluid small-text" style="margin: 3px;">
+								<div class="row g-2">
+									${getEventPodsForDay(filteredEventsForThisWeek, thursday)}
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="leftRail">
+							<div class="shadow p-2 bg-body rounded text-center">Friday<br />${getWeekDayTileText(friday)}</div>
+						</td>
+						<td class="align-middle">
+							<div class="container-fluid small-text" style="margin: 3px;">
+								<div class="row g-2">
+									${getEventPodsForDay(filteredEventsForThisWeek, friday)}
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="leftRail">
+							<div class="shadow p-2 bg-body rounded text-center">Saturday<br />${getWeekDayTileText(saturday)}</div>
+						</td>
+						<td class="align-middle">
+							<div class="container-fluid small-text" style="margin: 3px;">
+								<div class="row g-2">
+									${getEventPodsForDay(filteredEventsForThisWeek, saturday)}
+								</div>
+							</div>
+						</td>
+					</tr>
+
+				</tbody>
+			</table>
+		</div>`;
+
+		document.getElementById("listViewWeekDiv").innerHTML = viewHtml;
+	}
+
+	const doPostRenderUpdates = () => {
+		if (calendarEl && calendar) {
+			const eventsFromCal = calendar.getEvents();
+
+			eventsFromCal.forEach(item => {
+				const element = Array.from(document.getElementsByClassName("btEvent-" + item.id))[0];
+				if (element) {
+					const popover = new bootstrap.Popover(element, {
+						title: item.title,
+						trigger: 'focus',
+						container: '#calendar',
+						content: getPopoverContent(item),
+						placement: "top",
+						html: true,
+					})
+				}
+			})
+
+			const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+			const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+		}
+    handleSportChange(document.getElementById("sportSelect"));
+	}
+
+	const takeFocus = (evt) => {
+		evt.preventDefault();
+		evt.stopPropagation();
+		if (evt.target === document.activeElement) {
+			//target already has focus so clear it
+			evt.target.blur();
+		} else {
+			evt.target.focus();
+		}
+	}
+
+	document.addEventListener('DOMContentLoaded', function () {
+		calendarEl = document.getElementById('calendar');
+
+		calendar = new FullCalendar.Calendar(calendarEl, {
+			//plugins: [multiMonthPlugin],
+			slotMinTime: "6:00",
+			slotMaxTime: "22:00",
+			businessHours: {
+				// days of week. an array of zero-based day of week integers (0=Sunday)
+				daysOfWeek: [1, 2, 3, 4, 5], // Monday - Thursday
+				startTime: '6:00', // a start time (6am in this example)
+				endTime: '22:00', // an end time (10pm in this example)
+			},
+			height: 'auto',
+			themeSystem: 'bootstrap5',
+			// events: eventList,
+			events: {
+				url: '/main/calendarMonthAjax',
+				method: 'POST',
+				extraParams: {
+					viewType: 'currentView'
+				},
+				failure: function(x) {
+					// console.log('fail');
+				},
+				success: function(data) {
+					if(data){
+            eventList = data;
+          }else{
+            console.warn("!*!*!*!*!* No DATA returned from event fetch!")
+            eventList=[];
+          }
+            updateSportFilter(eventList);
+            if(currentView === 'listWeek'){
+              renderBtCustomListWeekView(renderDates);
+              showBtCustomListWeekView();
+              renderDates = {};
+            }else if(currentView ==='listDay'){
+              renderBtCustomListDayView(renderDates);
+              showBtCustomListDayView();
+              renderDates = {};
+            }
+
+            setTimeout(doPostRenderUpdates, 250);
+
+				}
+			},
+			eventContent: function (info) {
+				return { html: `<a href="#" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align: left;background-color: ${info.backgroundColor};color: #FFFFFF;width: 100%;border-radius: 3px;" id="${info.event.id}" tabindex="0" class="btn btn-sm" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" onclick="takeFocus(event)" >${info.event.title}</a>` }
+			},
+			eventClick: function (info) {
+				// we need this so we can just show a popover on event click
+				info.jsEvent.preventDefault(); // don't let the browser navigate
+			},
+			eventOrder: "startObj,sortTime",
+			customButtons: {
+				listDay: {
+					text: 'day',
+					click: function () {
+						currentView = 'listDay';
+						calendar.changeView('listDay');
+            handleSportChange(document.getElementById("sportSelect"));
+					}
+				},
+				listWeek: {
+					text: 'week',
+					click: function () {
+						currentView = 'listWeek';
+						calendar.changeView('listWeek');
+            handleSportChange(document.getElementById("sportSelect"));
+					}
+				},
+				dayGridMonth: {
+                    text: 'month',
+                    click: function() {
+                        currentView = 'dayGridMonth';
+                        calendar.changeView('dayGridMonth');
+                        handleSportChange(document.getElementById("sportSelect"));
+                    }
+                }
+			},
+			headerToolbar: {
+				left: 'prevYear,prev,today,next,nextYear',
+				center: 'title',
+				//right: 'dayGridMonth,dayGridWeek,dayGridDay,timeGridWeek,timeGridDay,listDay,listWeek,listMonth,multiMonthYear'
+				right: 'dayGridMonth,listDay,listWeek'
+			},
+			initialView: currentView,
+			datesSet: (info) => {
+				// console.log(JSON.stringify(info));
+				// currentView = info.view.type;
+				// console.log('Dates Set');
+				// console.log(currentView);
+				// This gets called whenever a view changes - we will use it to change back from custom lists
+				renderDates.start = info.start;
+				renderDates.end = info.end;
+				if (currentView === 'listDay') {
+					renderBtCustomListDayView(info);
+					showBtCustomListDayView();
+				} else if (currentView === 'listWeek') {
+					renderBtCustomListWeekView(info);
+					showBtCustomListWeekView();
+				} else {
+					addCustomViewBase();
+					showBuiltInCalendarView();
+				}
+
+        handleSportChange(document.getElementById("sportSelect"));
+
+				//setTimeout(doPostRenderUpdates, 500);
+			},
+		});
+
+		calendar.render();
+		doPostRenderUpdates();
+	});
+</script>
+
+<div class="content-wrapper">
+	<div class="row">
+		<div class="col-xl-12">
+			
+			<div style="width:100%;margin-bottom:10px;">
+				<h2>Calendar of Events</h2>
+			</div>
+			<div id='calendar' style="margin: 20px;font-family: Roboto;" tabindex="0" onclick="this.focus();"></div>
+		</div>
+	</div>
+</div>
+
+<script defer>
+	const legendDiv = document.createElement("div");
+	legendDiv.innerHTML = legend;
+	document.getElementById("calendar").before(legendDiv)
+</script>
+  </main>
+  
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer id="footer" class="bg-appcolor-lightshade fm-Poppins hidden-print z-0" style="height: 95px;font-size: .7em;margin-top: auto;padding-top: 10px;padding-bottom: 10px;">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-8 col-md-6 text-truncate" >
+                
+                    
+                        
+                    
+                        
+                        <img class="img-fluid transition d-none d-md-inline" src="//bigteams-public-prod.s3.amazonaws.com/library/images/demo1018.bigteamsdemo_com_1681/logos/1681/1681.png" alt="Logo for AR Athletics" style="height: 40px; max-width: 40px;object-fit: cover;margin-right: 10px;padding-bottom: 5px;" />
+                        
+                        <img class="img-fluid transition d-inline d-md-none" src="//bigteams-public-prod.s3.amazonaws.com/library/images/demo1018.bigteamsdemo_com_1681/logos/1681/1681.png" alt="Logo for AR Athletics" style="height: 30px; max-width: 30px;object-fit: cover;margin-right: 5px;padding-bottom: 5px;" />
+                
+                
+                <span class="d-none d-md-inline fs-4" title="AR ATHLETICS" style="position: relative;top: 5px;" >AR ATHLETICS</span>
+                
+                <span class="d-inline d-md-none fs-6" title="AR ATHLETICS" style="position: relative;top: 2px; font-size: 13px;" >AR ATHLETICS</span>
+            </div>
+            <div class="col-4 col-md-6" style="padding-top: 7px;text-align: right;">
+            
+            <div class="d-none d-md-inline" >
+                        <a  style="text-decoration: none;margin-right: 10px;cursor: pointer;" href="#" role="button"><i class="transition fa fa-3x fa-link text-appcolor"
+                aria-hidden="true" onclick="setFooterModalContent('links');" title="Links" data-bs-toggle="modal" data-bs-target="#footerModal"></i></a>
+                    <a  style="text-decoration: none;margin-right: 10px;cursor: pointer;" href="#" role="button"><i
+                class="transition fa fa-3x fa-info-circle text-appcolor" aria-hidden="true" onclick="setFooterModalContent('school');" title="School Info" data-bs-toggle="modal" data-bs-target="#footerModal"></i></a>
+                    <a  style="text-decoration: none;margin-right: 10px;cursor: pointer;" href="#" role="button"><i
+                class="transition fa fa-3x fa-question-circle text-appcolor" aria-hidden="true" onclick="setFooterModalContent('help');" title="Help" data-bs-toggle="modal" data-bs-target="#footerModal"></i></a>
+            </div>
+            
+            <div class="d-inline d-md-none" >
+                <a  style="text-decoration: none;margin-right: 10px;cursor: pointer;" href="#" role="button"><i class="transition fa fa-3x fa-link text-appcolor"
+                aria-hidden="true" onclick="setFooterModalContent('links');" title="Links" data-bs-toggle="modal" data-bs-target="#footerModal"></i></a>
+                    <a  style="text-decoration: none;margin-right: 10px;cursor: pointer;" href="#" role="button"><i
+                class="transition fa fa-3x fa-info-circle text-appcolor" aria-hidden="true" onclick="setFooterModalContent('school');" title="School Info" data-bs-toggle="modal" data-bs-target="#footerModal"></i></a>
+                    <a  style="text-decoration: none;margin-right: 10px;cursor: pointer;" href="#" role="button"><i
+                class="transition fa fa-3x fa-question-circle text-appcolor" aria-hidden="true" onclick="setFooterModalContent('help');"  title="Help" data-bs-toggle="modal" data-bs-target="#footerModal"></i></a>
+            </div>
+        </div>
+    </div>
+    <hr class="footer-hr text-appcolor" style="margin: 1px;">
+    <div class="row d-flex justify-content-center align-items-center d-md-none">
+        <div class="col-2 pe-0 text-truncate">
+            <!-- Privacy Policy -->
+            <a class="footer-bottom-a text-appcolor" href="https://www.bigteams.com/big-teams-privacy-policy/" target="_blank">
+                <span class="text-appcolor transition" style="font-size:12px;font-weight: bold;">Privacy Policy</span>
+            </a>
+        </div>
+        <div class="col-7 px-0 text-truncate text-center" style="padding-top: 5px;  font-size:7px;">
+            <!-- Powered By -->
+            Powered By
+            <img src="https://www.bigteams.com/wp-content/uploads/2019/12/Bt-Logo-Base_512.png" style="height: 30px;"  title="This Site Is Powered By BigTeams" alt="This Site Is Powered By BigTeams" />
+            BigTeams LLC
+            <i class="transition fas fa-solid fa-copyright" aria-hidden="true"></i> 2024 All Rights Reserved
+        </div>
+        <div class="col-3 pe-0 text-truncate" style="text-align: right;position: relative;right: 10px;" >
+            <!-- End User Agreement -->
+            <a class="footer-bottom-a text-appcolor"  href="https://www.bigteams.com/end-user-agreement/" target="_blank">
+                <span class="text-appcolor transition" style="font-size:12px;font-weight: bold;">End User Agreement</span>
+            </a>
+        </div>
+    </div>
+    <div class="row d-none d-md-flex">
+        <div class="col-6  text-truncate" style="padding-top: 5px;">
+            Powered By <img src="https://www.bigteams.com/wp-content/uploads/2019/12/Bt-Logo-Base_512.png"
+                style="height: 30px;" title="This Site Is Powered By BigTeams" alt="This Site Is Powered By BigTeams"/> BigTeams
+            LLC
+            <i class="transition fas fa-solid fa-copyright" aria-hidden="true"></i> 2024 All Rights Reserved
+        </div>
+        <div class="col-6 text-truncate" style="padding-top: 10px;text-align: right;">
+        <a class="footer-bottom-a text-appcolor" href="https://www.bigteams.com/big-teams-privacy-policy/" target="_blank" title="Opens BigTeams Privacy policy In New Tab"> <span class="text-appcolor transition" style="font-size:12px;font-weight: bold;"> Privacy Policy </span></a>
+        <a class="footer-bottom-a ml-lg text-appcolor" href="https://www.bigteams.com/end-user-agreement/" target="_blank" title="Opens BigTeams End User Agreement In New Tab"> <span class="text-appcolor transition" style="font-size:12px;font-weight: bold;"> End user Agreement </span></a>
+        </div>
+</div>
+    
+    <script src="//cdn.iframe.ly/embed.js?api_key=4574ed510b3224c05744c8" ></script>
+    
+    <script>
+        document.querySelectorAll( 'oembed[url]' ).forEach( element => {
+            iframely.load( element, element.attributes.url.value );
+        } );
+    </script>
+    
+    <script>
+        document.querySelectorAll( 'div[data-oembed-url]' ).forEach( element => {
+            // Discard the static media preview from the database (empty the <div data-oembed-url="...">).
+            while ( element.firstChild ) {
+                element.removeChild( element.firstChild );
+            }
+
+            // Generate the media preview using Iframely.
+            iframely.load( element, element.dataset.oembedUrl ) ;
+        } );
+    </script>
+
+    <!-- Modal -->
+    <script>
+    const setFooterModalContent = (type) => {
+
+      
+      if(type === 'links'){
+        document.getElementById("footerModalLabel").innerHTML="Links";
+        document.getElementById("footerModalBody").innerHTML=`<ul class="hf-ul">
+                                <li class="footer-li-item"><a class="footer-a" href="/">Home</a></li>
+                                <li class="footer-li-item"><a class="footer-a" href="https://archbishopryan.bigteams.com/admin" target="_blank" >Admin Login</a></li>
+                                <li class="footer-li-item"><a class="footer-a" href="https://www.bigteams.com/advertise-to-reach-high-school-athletes-athletic-directors/" target="_blank">Advertise</a></li>
+                                <li class="footer-li-item"><a class="footer-a" href="/fans/favoritesForm" target="_blank">Sign up for Alerts</a></li>
+
+                                
+
+                            </ul>`;
+      }else if(type === 'school'){
+        document.getElementById("footerModalLabel").innerHTML="School Info";
+        document.getElementById("footerModalBody").innerHTML=`<ul class="hf-ul">
+                                <li class="footer-li-item">
+                                    <i class="transition fa fa-solid fa-location-circle text-appcolor"></i>&nbsp;&nbsp;School Name And Address:
+                                    <div>
+                                        <a class="footer-a" href="/">
+                                            
+                                                Archbishop Ryan High School
+                                            
+                                        </a><br>
+                                        <a target="_blank" href="http://maps.google.com/?q=11201 Academy Road Philadelphia PA 19154" class="footer-a">
+                                            11201 Academy Road<br/>
+                                            Philadelphia, PA 19154<br/>
+                                        </a>
+                                    </div>
+                                </li>
+                                
+                                    <li class="footer-li-item"><i class="transition fa fa-solid fa-pen-square text-appcolor"></i>&nbsp;&nbsp;<a class="footer-a">Contact School</a></li>
+                                    <li class="footer-li-item"><i class="transition fa fa-solid fa-phone text-appcolor"></i>&nbsp;&nbsp;<a class="footer-a">(215) 637-1800</a></li>
+                                 
+                            </ul>`;
+      }else if(type === 'help'){
+        document.getElementById("footerModalLabel").innerHTML="Support";
+        document.getElementById("footerModalBody").innerHTML=`<ul class="hf-ul">
+                                <li class="footer-li-item"><a class="footer-a" href="https://bigteams.my.site.com/support/s/" target="_blank">Help Center</a></li>
+                                <li class="footer-li-item"><a class="footer-a" href="https://bigteams.my.site.com/support/s/topic/0TO5A000000x8mgWAA/getting-started" target="_blank">FAQ</a></li>
+                            </ul>`;
+      }
+
+    }
+    </script>
+</footer>
+<div class="visible-print-block">https://archbishopryan.bigteams.com</div>
+
+
+
+	
+</div><!-- /.wrapper -->
+
+
+	
+
+	
+
+
+
+
+
+
+<div class="modal fade" id="lgModal" tabindex="-1" role="dialog"  aria-label="lgModal">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			
+			<div class="modal-body">
+
+
+
+
+
+
+
+
+
+			</div><!-- /.modal-body -->
+			
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+
+	
+
+
+
+
+
+
+<div class="modal fade" id="mdModal" tabindex="-1" role="dialog"  aria-label="mdModal">
+	<div class="modal-dialog modal-md" role="document">
+		<div class="modal-content">
+			
+			<div class="modal-body">
+
+
+
+
+
+
+
+
+
+			</div><!-- /.modal-body -->
+			
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+	
+
+
+	
+
+
+	
+
+
+	
+
+
+	
+	
+
+
+	
+
+
+	
+
+
+	
+
+
+	
+
+
+	
+	
+
+
+	
+	
+	
+	
+	
+	
+
+
+
+
+<!-- =============== VENDOR SCRIPTS ===============-->
+<!-- MODERNIZR-->
+<script src="/modules/cfui/pfs/vendor/modernizr/modernizr.custom.js?v=3.5.0"></script>
+<!-- MATCHMEDIA POLYFILL-->
+<script src="/modules/cfui/pfs/vendor/matchMedia/matchMedia.js?v=0.2.0"></script>
+<!-- JQUERY-->
+<script src="/modules/cfui/pfs/vendor/jquery/dist/jquery.js?v=2.2.4"></script>
+<!-- BOOTSTRAP-->
+<!-- STORAGE API-->
+<script src="/modules/cfui/pfs/vendor/jQuery-Storage-API/jquery.storageapi.js?v=1.9.4"></script>
+<!-- JQUERY EASING-->
+<script src="/modules/cfui/pfs/vendor/jquery.easing/js/jquery.easing.js?v=1.3"></script>
+<!-- ANIMO-->
+<script src="/modules/cfui/pfs/vendor/animo.js/animo.js?v=1.0.2"></script>
+<!-- SLIMSCROLL-->
+<script src="/modules/cfui/pfs/vendor/slimScroll/jquery.slimscroll.min.js?v=1.3.8"></script>
+<!-- SCREENFULL-->
+<script src="/modules/cfui/pfs/vendor/screenfull/dist/screenfull.js?v=3.0.2"></script>
+<!-- LOCALIZE-->
+<script src="/modules/cfui/pfs/vendor/jquery-localize-i18n/dist/jquery.localize.js?v=2023.7.2"></script>
+<!-- PARSLEY-->
+<script src="/modules/cfui/pfs/vendor/parsleyjs/dist/parsley.min.js?v=2.7.0"></script>
+<!-- Owl Carousel-->
+<script src="/modules/cfui/pfs/vendor/owlCarousel/owl.carousel.min.js?v=2.3.4"></script>
+<!-- MDB5 -->
+<script src="/modules/cfui/pfs/vendor/mdb5/js/mdb.umd.min.js"></script>
+<!-- =============== APP SCRIPTS ===============-->
+<script src="/modules/cfui/pfs/app/js/app.js?v=2023.7.2"></script>
+<!-- =============== Custom SCRIPTS ===============-->
+<script src="/modules/cfui/pfs/app/js/custom.js?v=2023.7.2"></script>
+<!-- =============== Fontawesome 5 =============== -->
+<script src="https://kit.fontawesome.com/a8b9806075.js" crossorigin="anonymous"></script>
+<!-- =============== Boostrap Select PFS =============== -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta2/dist/js/bootstrap-select.min.js"></script>
+<!-- Include Toastr JavaScript from Cloudflare CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js"></script>
+<script>
+$('.modal').click(function (event)
+{
+$('li').click(function(){
+$('li').removeClass('active');
+$(this).addClass('active');
+})
+});
+</script>
+<!-- =============== PAGE VENDOR SCRIPTS ===============-->
+<script src="https://www.google.com/jsapi"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js" integrity="sha256-UOSXsAgYN43P/oVrmU+JlHtiDGYWN2iHnJuKY9WD+Jg=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/additional-methods.min.js" integrity="sha256-ixVUAy0s+/DoWFGN9kYLK0M2viz7HxiN/REIo65Qsug=" crossorigin="anonymous"></script>
+<script src="/modules/cfui/vendor/moment/min/moment-with-locales.min.js?v=2023.7.2"></script>
+<script src="/assets/scripts/pfs/fastclick.js?v=2023.7.2"></script>
+<script src="/assets/scripts/pfs/ContentSlider.js?v=2023.7.2"></script>
+<script src="/assets/scripts/pfs/DesktopNav.js?v=2023.7.2"></script>
+<script src="/assets/scripts/pfs/MobileNav.js?v=2023.7.2"></script>
+<script src="/assets/scripts/pfs/Schedule.js?v=2023.7.2"></script>
+<script src="/assets/scripts/pfs/Share.js?v=2023.7.2"></script>
+<script src="/assets/scripts/pfs/MyPhotos.js?v=2023.7.2"></script>
+<script src="/assets/scripts/pfs/MyForms.js?v=2023.7.2"></script>
+<script src="/assets/scripts/pfs/MyTeams.js?v=2023.7.2"></script>
+<script src="https://cdn.datatables.net/t/dt/dt-1.10.11/datatables.min.js"></script>
+<script src="/assets/scripts/pfs/App.js?v=2023.7.2"></script>
+
+
+
+
+
+	
+	<!-- Begin comScore Tag -->
+<script>
+  var _comscore = _comscore || [];
+  _comscore.push({ c1: "2", c2: "10037191" });
+  (function() {
+    var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+    s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+    el.parentNode.insertBefore(s, el);
+  })();
+</script><noscript>
+  <img src="//b.scorecardresearch.com/p?c1=2&c2=10037191&cv=2.0&cj=1" alt="Scorecard Search" />
+</noscript>
+<!-- End comScore Tag -->
+<!-- Quantcast Tag -->
+
+
+<script>
+	/*
+<![CDATA[ */
+	var google_conversion_id = 990903267;
+	var google_conversion_label = "HFo0CNWTvgQQ4_e_2AM";
+	var google_custom_params = window.google_tag_params;
+	var google_remarketing_only = true;
+	/* ]]>
+*/ </script>
+<script src="//www.googleadservices.com/pagead/conversion.js"></script>
+
+<noscript>
+	<div style="display:inline;">
+		<img height="1" width="1" style="border-style:none;" alt="Google Ads" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/990903267/?value=0&amp;label=HFo0CNWTvgQQ4_e_2AM&amp;guid=ON&amp;script=0"/>
+	</div>
+</noscript>
+
+<style>
+	.at-share-btn:focus-visible {
+		outline: 2px solid blue !important;
+	}
+</style>
+<script type="text/javascript">
+var addthis_config =
+{
+	ui_tabindex: "0"
+}
+</script>
+<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57f3eeb4e4f90bec"></script>
+
+	<script type="text/javascript">
+		function googleTranslateElementInit() {
+			new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+		}
+	</script>
+	<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+	
+	
+
+	
+
+	
+
+
+	<script defer src="/public/js/ads.js"></script>
+
+
+
+
+
+<div class="modal fade" id="footerModal" tabindex="-1" aria-labelledby="footerModalLabel" >
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="footerModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="footerModalBody">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+

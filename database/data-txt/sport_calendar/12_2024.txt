@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <title>Events</title>
+	<link rel="stylesheet" href="/apps/js/events/events.css" type="text/css">
+	<!--[if lt IE 9]>
+		<script src="/apps/js/common/html5shiv-printshiv.js"></script>
+	<![endif]-->
+</head>
+<body class="pff pff-column">
+
+<header id="events_pff_title">
+	<h1><span class="current-month-display">December</span> <span class="current-year-display">2024</span></h1>
+	<ul class="category-list">
+			
+			<li>Athletic Calendar</li>
+			
+	</ul>
+</header>
+
+<div id="calendar_wrapper">
+	<div id="calendar_lower">
+		<div id="events_list">
+
+<ul id="events_list_partial">
+				<li class="event-day empty no-border " id="day-1">
+				<li class="cf event-day  current-day no-border" id="day-2">
+					<div class="day-date-box">
+						<span class="month">Dec</span>
+						<span class="date">2</span>
+						<span class="day">Mon</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/2/18689121/?id=1"
+				aria-label="12/2/2024 - Archbishop Ryan High School IH B V Home Upper Moreland High School (Tennent/U Moreland@AR/CEC)">
+				Archbishop Ryan High School IH B V Home Upper Moreland High School (Tennent/U Moreland@AR/CEC)
+			</a>
+		</span>
+
+		<span class="dateloc">
+				8:10 PM
+				<span class="ndash-range"> &ndash; </span>
+					10:10 PM
+			(10990 Decatur Rd Philadelphia, PA 19154)
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-3">
+					<div class="day-date-box">
+						<span class="month">Dec</span>
+						<span class="date">3</span>
+						<span class="day">Tue</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/3/18000445/?id=1"
+				aria-label="12/3/2024 - CANCELLED: Archbishop Ryan High School BKB B FR Home Archbishop Wood High School">
+				CANCELLED: Archbishop Ryan High School BKB B FR Home Archbishop Wood High School
+			</a>
+		</span>
+
+		<span class="dateloc">
+				3 PM
+				<span class="ndash-range"> &ndash; </span>
+					5 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/3/18000444/?id=1"
+				aria-label="12/3/2024 - Archbishop Ryan High School BKB B JV Home Archbishop Wood High School">
+				Archbishop Ryan High School BKB B JV Home Archbishop Wood High School
+			</a>
+		</span>
+
+		<span class="dateloc">
+				4:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					6:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/3/17730594/?id=1"
+				aria-label="12/3/2024 - Archbishop Ryan High School BKB B V Home Friends Select School">
+				Archbishop Ryan High School BKB B V Home Friends Select School
+			</a>
+		</span>
+
+		<span class="dateloc">
+				6 PM
+				<span class="ndash-range"> &ndash; </span>
+					8 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/3/18000457/?id=1"
+				aria-label="12/3/2024 - Archbishop Ryan High School BKB G V Away Garnet Valley High School">
+				Archbishop Ryan High School BKB G V Away Garnet Valley High School
+			</a>
+		</span>
+
+		<span class="dateloc">
+				7 PM
+				<span class="ndash-range"> &ndash; </span>
+					9 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="event-day empty no-border " id="day-4">
+				<li class="cf event-day  " id="day-5">
+					<div class="day-date-box">
+						<span class="month">Dec</span>
+						<span class="date">5</span>
+						<span class="day">Thu</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/5/18000431/?id=1"
+				aria-label="12/5/2024 - Archbishop Ryan High School BKB B FR Home William Penn Charter School">
+				Archbishop Ryan High School BKB B FR Home William Penn Charter School
+			</a>
+		</span>
+
+		<span class="dateloc">
+				3:45 PM
+				<span class="ndash-range"> &ndash; </span>
+					5:45 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/5/18000432/?id=1"
+				aria-label="12/5/2024 - Archbishop Ryan High School BKB B JV Home William Penn Charter School">
+				Archbishop Ryan High School BKB B JV Home William Penn Charter School
+			</a>
+		</span>
+
+		<span class="dateloc">
+				5 PM
+				<span class="ndash-range"> &ndash; </span>
+					7 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-6">
+					<div class="day-date-box">
+						<span class="month">Dec</span>
+						<span class="date">6</span>
+						<span class="day">Fri</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/6/19294563/?id=1"
+				aria-label="12/6/2024 - Time: TBA -Archbishop Ryan High School WRS B V Away OPEN (@Pottstown Invitational)">
+				Time: TBA -Archbishop Ryan High School WRS B V Away OPEN (@Pottstown Invitational)
+			</a>
+		</span>
+
+		<span class="dateloc">
+				12 AM
+				<span class="ndash-range"> &ndash; </span>
+					2 AM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/6/18000459/?id=1"
+				aria-label="12/6/2024 - Archbishop Ryan High School BKB G V Home Frankford">
+				Archbishop Ryan High School BKB G V Home Frankford
+			</a>
+		</span>
+
+		<span class="dateloc">
+				7 PM
+				<span class="ndash-range"> &ndash; </span>
+					9 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-7">
+					<div class="day-date-box">
+						<span class="month">Dec</span>
+						<span class="date">7</span>
+						<span class="day">Sat</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/7/19294564/?id=1"
+				aria-label="12/7/2024 - Time: TBA -Archbishop Ryan High School WRS B V Away OPEN (@Pottstown Invitational)">
+				Time: TBA -Archbishop Ryan High School WRS B V Away OPEN (@Pottstown Invitational)
+			</a>
+		</span>
+
+		<span class="dateloc">
+				12 AM
+				<span class="ndash-range"> &ndash; </span>
+					2 AM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/7/18000458/?id=1"
+				aria-label="12/7/2024 - Archbishop Ryan High School BKB G V Away West Chester East">
+				Archbishop Ryan High School BKB G V Away West Chester East
+			</a>
+		</span>
+
+		<span class="dateloc">
+				6:45 PM
+				<span class="ndash-range"> &ndash; </span>
+					8:45 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/7/17730595/?id=1"
+				aria-label="12/7/2024 - Archbishop Ryan High School BKB B V Away George School (@ 6th Man Center)">
+				Archbishop Ryan High School BKB B V Away George School (@ 6th Man Center)
+			</a>
+		</span>
+
+		<span class="dateloc">
+				8 PM
+				<span class="ndash-range"> &ndash; </span>
+					10 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-8">
+					<div class="day-date-box">
+						<span class="month">Dec</span>
+						<span class="date">8</span>
+						<span class="day">Sun</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/8/17730596/?id=1"
+				aria-label="12/8/2024 - Archbishop Ryan High School BKB B V Home Central Dauphin High School (@ Scholastic Play by Play- 6th man center)">
+				Archbishop Ryan High School BKB B V Home Central Dauphin High School (@ Scholastic Play by Play- 6th man center)
+			</a>
+		</span>
+
+		<span class="dateloc">
+				8 PM
+				<span class="ndash-range"> &ndash; </span>
+					10 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-9">
+					<div class="day-date-box">
+						<span class="month">Dec</span>
+						<span class="date">9</span>
+						<span class="day">Mon</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/9/18000419/?id=1"
+				aria-label="12/9/2024 - Archbishop Ryan High School BKB G JV Away Hatboro-Horsham Senior High School">
+				Archbishop Ryan High School BKB G JV Away Hatboro-Horsham Senior High School
+			</a>
+		</span>
+
+		<span class="dateloc">
+				5:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					7:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/9/18000420/?id=1"
+				aria-label="12/9/2024 - Archbishop Ryan High School BKB G V Away Hatboro-Horsham Senior High School">
+				Archbishop Ryan High School BKB G V Away Hatboro-Horsham Senior High School
+			</a>
+		</span>
+
+		<span class="dateloc">
+				7 PM
+				<span class="ndash-range"> &ndash; </span>
+					9 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-10">
+					<div class="day-date-box">
+						<span class="month">Dec</span>
+						<span class="date">10</span>
+						<span class="day">Tue</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/10/18000468/?id=1"
+				aria-label="12/10/2024 - Time: TBA -Archbishop Ryan High School bow B V Away Archbishop John Carroll High School (vs. Ryan)">
+				Time: TBA -Archbishop Ryan High School bow B V Away Archbishop John Carroll High School (vs. Ryan)
+			</a>
+		</span>
+
+		<span class="dateloc">
+				12 AM
+				<span class="ndash-range"> &ndash; </span>
+					2 AM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-11">
+					<div class="day-date-box">
+						<span class="month">Dec</span>
+						<span class="date">11</span>
+						<span class="day">Wed</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/11/17911921/?id=1"
+				aria-label="12/11/2024 - Archbishop Ryan High School BKB B FR Home Bensalem Township High School">
+				Archbishop Ryan High School BKB B FR Home Bensalem Township High School
+			</a>
+		</span>
+
+		<span class="dateloc">
+				3:45 PM
+				<span class="ndash-range"> &ndash; </span>
+					5:45 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/11/18000428/?id=1"
+				aria-label="12/11/2024 - Archbishop Ryan High School BKB B JV Home Bensalem Township High School">
+				Archbishop Ryan High School BKB B JV Home Bensalem Township High School
+			</a>
+		</span>
+
+		<span class="dateloc">
+				5:15 PM
+				<span class="ndash-range"> &ndash; </span>
+					7:15 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-12">
+					<div class="day-date-box">
+						<span class="month">Dec</span>
+						<span class="date">12</span>
+						<span class="day">Thu</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/12/17800109/?id=1"
+				aria-label="12/12/2024 - Time: TBA -Archbishop Ryan High School WRS B V Home Conwell Egan Catholic High School">
+				Time: TBA -Archbishop Ryan High School WRS B V Home Conwell Egan Catholic High School
+			</a>
+		</span>
+
+		<span class="dateloc">
+				12 AM
+				<span class="ndash-range"> &ndash; </span>
+					2 AM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/12/18000423/?id=1"
+				aria-label="12/12/2024 - Archbishop Ryan High School bow B V Home Conwell Egan Catholic High School">
+				Archbishop Ryan High School bow B V Home Conwell Egan Catholic High School
+			</a>
+		</span>
+
+		<span class="dateloc">
+				3 PM
+				<span class="ndash-range"> &ndash; </span>
+					5 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/12/18000446/?id=1"
+				aria-label="12/12/2024 - Archbishop Ryan High School bow G V Home Conwell Egan Catholic High School">
+				Archbishop Ryan High School bow G V Home Conwell Egan Catholic High School
+			</a>
+		</span>
+
+		<span class="dateloc">
+				3 PM
+				<span class="ndash-range"> &ndash; </span>
+					5 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/12/18000460/?id=1"
+				aria-label="12/12/2024 - Archbishop Ryan High School BKB G V Away Mount St. Joseph Academy">
+				Archbishop Ryan High School BKB G V Away Mount St. Joseph Academy
+			</a>
+		</span>
+
+		<span class="dateloc">
+				5:15 PM
+				<span class="ndash-range"> &ndash; </span>
+					7:15 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-13">
+					<div class="day-date-box">
+						<span class="month">Dec</span>
+						<span class="date">13</span>
+						<span class="day">Fri</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/13/17730597/?id=1"
+				aria-label="12/13/2024 - Archbishop Ryan High School BKB B V Home OPEN (vs Mt Zion Prep)">
+				Archbishop Ryan High School BKB B V Home OPEN (vs Mt Zion Prep)
+			</a>
+		</span>
+
+		<span class="dateloc">
+				7:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					9:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/13/19331162/?id=1"
+				aria-label="12/13/2024 - Archbishop Ryan High School IH B V Away Archbishop Wood High School (@ Hatfield Blue)">
+				Archbishop Ryan High School IH B V Away Archbishop Wood High School (@ Hatfield Blue)
+			</a>
+		</span>
+
+		<span class="dateloc">
+				9:10 PM
+				<span class="ndash-range"> &ndash; </span>
+					11:10 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-14">
+					<div class="day-date-box">
+						<span class="month">Dec</span>
+						<span class="date">14</span>
+						<span class="day">Sat</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/14/18407540/?id=1"
+				aria-label="12/14/2024 - Archbishop Ryan High School BKB B JV Home Imhotep Charter School">
+				Archbishop Ryan High School BKB B JV Home Imhotep Charter School
+			</a>
+		</span>
+
+		<span class="dateloc">
+				1 PM
+				<span class="ndash-range"> &ndash; </span>
+					3 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="event-day empty no-border " id="day-15">
+				<li class="cf event-day  " id="day-16">
+					<div class="day-date-box">
+						<span class="month">Dec</span>
+						<span class="date">16</span>
+						<span class="day">Mon</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/16/18000450/?id=1"
+				aria-label="12/16/2024 - Archbishop Ryan High School BKB B FR Home Roman Catholic High School">
+				Archbishop Ryan High School BKB B FR Home Roman Catholic High School
+			</a>
+		</span>
+
+		<span class="dateloc">
+				4 PM
+				<span class="ndash-range"> &ndash; </span>
+					6 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/16/17911923/?id=1"
+				aria-label="12/16/2024 - Archbishop Ryan High School BKB G JV Home Council Rock South">
+				Archbishop Ryan High School BKB G JV Home Council Rock South
+			</a>
+		</span>
+
+		<span class="dateloc">
+				5:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					7:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/16/18000433/?id=1"
+				aria-label="12/16/2024 - Archbishop Ryan High School BKB G V Home Council Rock South">
+				Archbishop Ryan High School BKB G V Home Council Rock South
+			</a>
+		</span>
+
+		<span class="dateloc">
+				7 PM
+				<span class="ndash-range"> &ndash; </span>
+					9 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-17">
+					<div class="day-date-box">
+						<span class="month">Dec</span>
+						<span class="date">17</span>
+						<span class="day">Tue</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/17/19331153/?id=1"
+				aria-label="12/17/2024 - Archbishop Ryan High School SW B V Home Devon Preparatory School">
+				Archbishop Ryan High School SW B V Home Devon Preparatory School
+			</a>
+		</span>
+
+		<span class="dateloc">
+				2:45 PM
+				<span class="ndash-range"> &ndash; </span>
+					4:45 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/17/19331161/?id=1"
+				aria-label="12/17/2024 - Archbishop Ryan High School SW G V Home Archbishop John Carroll High School (vs Ryan @ TBD)">
+				Archbishop Ryan High School SW G V Home Archbishop John Carroll High School (vs Ryan @ TBD)
+			</a>
+		</span>
+
+		<span class="dateloc">
+				2:45 PM
+				<span class="ndash-range"> &ndash; </span>
+					4:45 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/17/19331160/?id=1"
+				aria-label="12/17/2024 - Archbishop Ryan High School SW B V Home Archbishop John Carroll High School (vs Ryan @ TBD)">
+				Archbishop Ryan High School SW B V Home Archbishop John Carroll High School (vs Ryan @ TBD)
+			</a>
+		</span>
+
+		<span class="dateloc">
+				2:55 PM
+				<span class="ndash-range"> &ndash; </span>
+					4:55 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/17/19331167/?id=1"
+				aria-label="12/17/2024 - Archbishop Ryan High School BKB B JV Home Roman Catholic High School">
+				Archbishop Ryan High School BKB B JV Home Roman Catholic High School
+			</a>
+		</span>
+
+		<span class="dateloc">
+				5:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					7:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-18">
+					<div class="day-date-box">
+						<span class="month">Dec</span>
+						<span class="date">18</span>
+						<span class="day">Wed</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/18/18000430/?id=1"
+				aria-label="12/18/2024 - Time: TBA -Archbishop Ryan High School bow B V Away Father Judge">
+				Time: TBA -Archbishop Ryan High School bow B V Away Father Judge
+			</a>
+		</span>
+
+		<span class="dateloc">
+				12 AM
+				<span class="ndash-range"> &ndash; </span>
+					2 AM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/18/19331165/?id=1"
+				aria-label="12/18/2024 - Archbishop Ryan High School BKB B FR Home Roman Catholic High School">
+				Archbishop Ryan High School BKB B FR Home Roman Catholic High School
+			</a>
+		</span>
+
+		<span class="dateloc">
+				4 PM
+				<span class="ndash-range"> &ndash; </span>
+					6 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/18/18439937/?id=1"
+				aria-label="12/18/2024 - Archbishop Ryan High School BKB G JV Away OPEN (@MCSHS)">
+				Archbishop Ryan High School BKB G JV Away OPEN (@MCSHS)
+			</a>
+		</span>
+
+		<span class="dateloc">
+				4 PM
+				<span class="ndash-range"> &ndash; </span>
+					6 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/18/19294565/?id=1"
+				aria-label="12/18/2024 - Archbishop Ryan High School WRS B V Home Father Judge">
+				Archbishop Ryan High School WRS B V Home Father Judge
+			</a>
+		</span>
+
+		<span class="dateloc">
+				6 PM
+				<span class="ndash-range"> &ndash; </span>
+					8 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-19">
+					<div class="day-date-box">
+						<span class="month">Dec</span>
+						<span class="date">19</span>
+						<span class="day">Thu</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/19/20022859/?id=1"
+				aria-label="12/19/2024 - Archbishop Ryan High School bow G V Away Archbishop John Carroll High School (vs Ryan)">
+				Archbishop Ryan High School bow G V Away Archbishop John Carroll High School (vs Ryan)
+			</a>
+		</span>
+
+		<span class="dateloc">
+				3 PM
+				<span class="ndash-range"> &ndash; </span>
+					5 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-20">
+					<div class="day-date-box">
+						<span class="month">Dec</span>
+						<span class="date">20</span>
+						<span class="day">Fri</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/20/19294566/?id=1"
+				aria-label="12/20/2024 - Archbishop Ryan High School WRS B V Away Northeast HS">
+				Archbishop Ryan High School WRS B V Away Northeast HS
+			</a>
+		</span>
+
+		<span class="dateloc">
+				6 PM
+				<span class="ndash-range"> &ndash; </span>
+					8 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/20/19331156/?id=1"
+				aria-label="12/20/2024 - Archbishop Ryan High School IH B V Away Roman Catholic High School">
+				Archbishop Ryan High School IH B V Away Roman Catholic High School
+			</a>
+		</span>
+
+		<span class="dateloc">
+				6:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					8:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-21">
+					<div class="day-date-box">
+						<span class="month">Dec</span>
+						<span class="date">21</span>
+						<span class="day">Sat</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/21/17911925/?id=1"
+				aria-label="12/21/2024 - Time: TBA -Archbishop Ryan High School BKB B V Away Woodbury High School (Difference Makers EVent)">
+				Time: TBA -Archbishop Ryan High School BKB B V Away Woodbury High School (Difference Makers EVent)
+			</a>
+		</span>
+
+		<span class="dateloc">
+				12 AM
+				<span class="ndash-range"> &ndash; </span>
+					2 AM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="event-day empty no-border " id="day-22">
+				<li class="cf event-day  " id="day-23">
+					<div class="day-date-box">
+						<span class="month">Dec</span>
+						<span class="date">23</span>
+						<span class="day">Mon</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/23/17800082/?id=1"
+				aria-label="12/23/2024 - Archbishop Ryan High School BKB G JV Home Villa Joseph Marie High School">
+				Archbishop Ryan High School BKB G JV Home Villa Joseph Marie High School
+			</a>
+		</span>
+
+		<span class="dateloc">
+				5:25 PM
+				<span class="ndash-range"> &ndash; </span>
+					7:25 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/23/17800083/?id=1"
+				aria-label="12/23/2024 - Archbishop Ryan High School BKB G V Home Villa Joseph Marie High School">
+				Archbishop Ryan High School BKB G V Home Villa Joseph Marie High School
+			</a>
+		</span>
+
+		<span class="dateloc">
+				7 PM
+				<span class="ndash-range"> &ndash; </span>
+					9 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="event-day empty no-border " id="day-24">
+				<li class="event-day empty no-border " id="day-25">
+				<li class="event-day empty no-border " id="day-26">
+				<li class="cf event-day  " id="day-27">
+					<div class="day-date-box">
+						<span class="month">Dec</span>
+						<span class="date">27</span>
+						<span class="day">Fri</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/27/19294567/?id=1"
+				aria-label="12/27/2024 - Time: TBA -Archbishop Ryan High School WRS B V Away OPEN (@ Jim Thorpe EVent)">
+				Time: TBA -Archbishop Ryan High School WRS B V Away OPEN (@ Jim Thorpe EVent)
+			</a>
+		</span>
+
+		<span class="dateloc">
+				12 AM
+				<span class="ndash-range"> &ndash; </span>
+					2 AM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/27/19034016/?id=1"
+				aria-label="12/27/2024 - Archbishop Ryan High School BKB B FR Home Executive Education Academy Charter School">
+				Archbishop Ryan High School BKB B FR Home Executive Education Academy Charter School
+			</a>
+		</span>
+
+		<span class="dateloc">
+				4 PM
+				<span class="ndash-range"> &ndash; </span>
+					6 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/27/18000437/?id=1"
+				aria-label="12/27/2024 - Archbishop Ryan High School BKB G JV Home Archbishop Wood High School">
+				Archbishop Ryan High School BKB G JV Home Archbishop Wood High School
+			</a>
+		</span>
+
+		<span class="dateloc">
+				5:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					7:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/27/18000436/?id=1"
+				aria-label="12/27/2024 - Archbishop Ryan High School BKB G V Home Archbishop Wood High School">
+				Archbishop Ryan High School BKB G V Home Archbishop Wood High School
+			</a>
+		</span>
+
+		<span class="dateloc">
+				6 PM
+				<span class="ndash-range"> &ndash; </span>
+					8 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/27/17730598/?id=1"
+				aria-label="12/27/2024 - Archbishop Ryan High School BKB B V Away Benedictine Military School (Coca-Cola St Pius Christmas Classic)">
+				Archbishop Ryan High School BKB B V Away Benedictine Military School (Coca-Cola St Pius Christmas Classic)
+			</a>
+		</span>
+
+		<span class="dateloc">
+				7:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					9:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-28">
+					<div class="day-date-box">
+						<span class="month">Dec</span>
+						<span class="date">28</span>
+						<span class="day">Sat</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/28/17730599/?id=1"
+				aria-label="12/28/2024 - Time: TBA -Archbishop Ryan High School BKB B V Away OPEN (Coca-Cola St Pius Christmas Classic)">
+				Time: TBA -Archbishop Ryan High School BKB B V Away OPEN (Coca-Cola St Pius Christmas Classic)
+			</a>
+		</span>
+
+		<span class="dateloc">
+				12 AM
+				<span class="ndash-range"> &ndash; </span>
+					2 AM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/28/19294568/?id=1"
+				aria-label="12/28/2024 - Time: TBA -Archbishop Ryan High School WRS B V Away OPEN (@ JIm Thorpe Event)">
+				Time: TBA -Archbishop Ryan High School WRS B V Away OPEN (@ JIm Thorpe Event)
+			</a>
+		</span>
+
+		<span class="dateloc">
+				12 AM
+				<span class="ndash-range"> &ndash; </span>
+					2 AM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="event-day empty no-border " id="day-29">
+				<li class="cf event-day  " id="day-30">
+					<div class="day-date-box">
+						<span class="month">Dec</span>
+						<span class="date">30</span>
+						<span class="day">Mon</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/12/30/17730600/?id=1"
+				aria-label="12/30/2024 - Time: TBA -Archbishop Ryan High School BKB B V Away OPEN (Coca-Cola St Pius Christmas Classic)">
+				Time: TBA -Archbishop Ryan High School BKB B V Away OPEN (Coca-Cola St Pius Christmas Classic)
+			</a>
+		</span>
+
+		<span class="dateloc">
+				12 AM
+				<span class="ndash-range"> &ndash; </span>
+					2 AM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="event-day empty no-border " id="day-31">
+</ul>
+
+
+		</div>
+	</div> 
+</div>
+
+<footer id="events_pff_footer" class="pff">
+	<p><strong>http://www.archbishopryan.com</strong></p>
+
+	<p>
+		Archbishop Ryan High School
+		<br>
+		11201 Academy Road,&nbsp;Philadelphia,&nbsp;PA&nbsp;19154
+		<br>
+		Phone: (215) 637-1800 | Fax: (215) 637-8833
+	</p>
+</footer>
+
+</body>

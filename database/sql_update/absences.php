@@ -29,7 +29,8 @@ class Absences
         $this->text = $this->docExtractor();
         $this->dateChecker();
         $this->headerFinder();
-        //$this->index = 22;
+//        $this->index = 728;
+        $this->data = null;
         if (!is_null($this->data['header'])) {
             $this->absence('t');
             $this->absence('a');

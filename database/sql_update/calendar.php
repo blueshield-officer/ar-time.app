@@ -50,7 +50,6 @@ class DateInfo
         $this->schedule = null;
         $this->description = null;
         $this->date = (DateTime::createFromFormat('Y-m-d', $year.'-'.$month.'-'.$day))->format('Y-m-d');
-        var_dump($this->date);
         $this->day = $day;
         $this->month = $month;
         $this->year = $year;
@@ -231,7 +230,7 @@ class DateInfo
 function starterFunction($calendarHTML, $day, $month, $year)
 {
     $dateArray = [];
-    for ($i = 1; $i <= 5; $i++) {
+    for ($i = 1; $i <= 9; $i++) {
         if (checkdate($month, $day, $year)) {
             $dateBox = $calendarHTML->find('#day-' . $day, 0);
             if (!$dateBox->hasClass('empty')) {
@@ -258,10 +257,11 @@ function starterFunction($calendarHTML, $day, $month, $year)
 function classesSQL($pdo, $dateArray)
 {
     foreach ($dateArray as $element) {
-        $query = 'SELECT * FROM `calendar` WHERE date = '.$element['date'];
+        var_dump($element['date']);
+        $query = 'SELECT * FROM `calendar` WHERE date = ?';
         $statement = $pdo->prepare($query);
-        $statement->execute();
-        if (!$statement->fetch()) {
+        $statement->execute([$element['date']]);
+        if ($statement->fetch() === false) {
             $query = 'INSERT INTO `calendar` (`schedule`, `description`, `date`, `testDay`, `special`, `school`) VALUES (?, ?, ?, ?, ?, ?)';
             $statement = $pdo->prepare($query);
             if (!is_null($element['special'])) {

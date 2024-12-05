@@ -736,7 +736,7 @@
 	</li>
 					</ul>
 				</li>
-				<li class="cf event-day  current-day " id="day-12">
+				<li class="cf event-day  " id="day-12">
 					<div class="day-date-box">
 						<span class="month">Nov</span>
 						<span class="date">12</span>
@@ -1555,6 +1555,28 @@
 
 		<div class="full-description" style="display: none;"></div>
 	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/11/21/19034516/?id=0"
+				aria-label="11/21/2024 - ARHS Parent Association Interest Meeting ">
+				ARHS Parent Association Interest Meeting 
+			</a>
+		</span>
+
+		<span class="dateloc">
+				7 PM
+				<span class="ndash-range"> &ndash; </span>
+					7:30 PM
+			(Zoom)
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
 					</ul>
 				</li>
 				<li class="cf event-day  " id="day-22">
@@ -1785,6 +1807,25 @@
 	</li>
 	<li class="day-event-info">
 		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/11/25/16222026/?id=0"
+				aria-label="11/25/2024 - Thanksgiving Prayer Service">
+				Thanksgiving Prayer Service
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2024/11/4/18675868/?id=0"
 				aria-label="11/4/2024 - Theology Class Thanksgiving Food Drive">
 				Theology Class Thanksgiving Food Drive
@@ -1901,25 +1942,6 @@
 			<a class="event-link" href="/apps/events/2024/11/26/16231670/?id=0"
 				aria-label="11/26/2024 - Renaissance Window #1 Closes">
 				Renaissance Window #1 Closes
-			</a>
-		</span>
-
-		<span class="dateloc">
-			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
-								<span class="">Events</span>
-							</li>
-			</ul>
-		</span>
-
-		<div class="full-description" style="display: none;"></div>
-	</li>
-	<li class="day-event-info">
-		<span class="event-title-wrap">
-			<a class="event-link" href="/apps/events/2024/11/26/16222026/?id=0"
-				aria-label="11/26/2024 - Thanksgiving Prayer Service">
-				Thanksgiving Prayer Service
 			</a>
 		</span>
 
@@ -2077,7 +2099,7 @@
 	</li>
 					</ul>
 				</li>
-				<li class="cf event-day  " id="day-30">
+				<li class="cf event-day  current-day " id="day-30">
 					<div class="day-date-box">
 						<span class="month">Nov</span>
 						<span class="date">30</span>

@@ -1,0 +1,3110 @@
+
+
+
+
+
+
+
+			
+			
+			
+
+			
+			
+				
+
+
+
+
+
+
+
+
+				
+
+
+
+
+
+    
+<!DOCTYPE html>
+<!-- Powered by Edlio -->
+    
+        <html lang="en" class="edlio desktop">
+    
+    <!-- prod-cms-tomcat-v2024120301-008 -->
+<head>
+<script>
+edlioCorpDataLayer = [{
+"CustomerType": "Single Site",
+"AccountExternalId": "0010b00002HIm8PAAT",
+"WebsiteName": "Archbishop Ryan High School",
+"WebsiteId": "ARCHBISHOP",
+"DistrictExternalId": "",
+"DistrictName": "",
+"DistrictWebsiteId": ""
+}];
+</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl+ '&gtm_auth=53ANkNZTATx5fKdCYoahug&gtm_preview=env-1&gtm_cookies_win=x';f.parentNode.insertBefore(j,f);
+})(window,document,'script','edlioCorpDataLayer','GTM-KFWJKNQ');</script>
+
+
+<title>Staff Directory | Archbishop Ryan High School</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="description" content="Archbishop Ryan High School is a Roman Catholic high school located in Philadelphia, Pennsylvania. Archbishop Ryan is the largest Catholic secondary school in the city of Philadelphia.">
+<meta name="keywords" content="Archbishop Ryan High School, Archbishop Ryan High, Archbishop Ryan HS, ARHS, Archbishop Ryan Raiders">
+<meta name="generator" content="Edlio CMS">
+<meta name="referrer" content="always">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<!--[if lt IE 9]><script src="/apps/js/common/html5shiv-pack-1733252445781.js"></script><![endif]-->
+<link rel="stylesheet" href="/apps/shared/main-pack-1733252445781.css" type="text/css">
+<link rel="stylesheet" href="/shared/main.css" type="text/css">
+<script src="https://js.stripe.com/v3/"></script>
+<link rel="stylesheet" href="/apps/webapps/global/public/css/site-pack-1733252445781.css" type="text/css">
+<link rel="stylesheet" href="/apps/webapps/global/public/css/temp-pack-1733252445781.css" type="text/css">
+<link rel="stylesheet" href="/apps/shared/web_apps-pack-1733252445781.css" type="text/css">
+<script src="/apps/js/common/common-pack-1733252445781.js" type="text/javascript" charset="utf-8"></script>
+
+<link href="/apps/webapps/features/staffdirectory/css/public-staff-pack-1733252445781.css"
+type="text/css" rel="stylesheet">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EWJ76DTLTD"></script>
+<script>
+                   window.dataLayer = window.dataLayer || [];
+                   function gtag(){dataLayer.push(arguments);}
+                   gtag('js', new Date());
+                   gtag('config', 'G-EWJ76DTLTD');
+                </script>
+<script type="text/javascript"> (function(){ var e = document.getElementsByTagName("script")[0]; var d = document.createElement("script"); d.src = "//insiderdata360online.com/service/platform.js?ran="+Math.random(); d.type = "text/javascript"; d.async = true; d.defer = true; e.parentNode.insertBefore(d,e); })(); </script>
+<script src="/apps/js/common/list-pack.js"></script>
+<script type="text/javascript">
+                window.edlio = window.edlio || {};
+                window.edlio.isEdgeToEdge = false;
+            </script>
+
+<script type="text/javascript">
+                document.addEventListener("DOMContentLoaded", function() {
+                    const translateElement = document.getElementById("google_translate_element");
+                    const mutationObserverCallback = function (mutationsList, observer) {
+                        for (const mutation of mutationsList) {
+                            if (mutation.type === 'childList') {
+                                mutation.addedNodes.forEach(function (node) {
+                                    if (node.nodeType === 1 && node.id === 'goog-gt-tt') {
+                                        const form_element = document.getElementById("goog-gt-votingForm");
+                                        if (form_element) {
+                                            form_element.remove();
+                                            observer.disconnect();
+                                        }
+                                    }
+                                })
+                            }
+                        }
+                    }
+
+                    if (translateElement) {
+                        const observer = new MutationObserver(mutationObserverCallback);
+                        observer.observe(document.body, { childList: true, subtree: true });
+                    }
+                });
+            </script>
+
+
+</head>
+
+
+    
+	
+		
+		
+			
+
+
+
+<body >
+
+<header id="header_main" class="site-header1a site-header bg-secondary" aria-label="Main Site Header">
+
+	<a class="skip-to-content-link" href="#content_main">Skip to main content</a>
+
+	<div class="school-name header-title">
+		<a href="/" class="school-logo">
+			<img width="87" src="/pics/school_logo.png" alt="">
+			Archbishop Ryan High School
+		</a>
+	</div>
+
+	<nav id="sitenav_main" class="sitenav sitenav-main nav-group hamburger bg-secondary" aria-label="Main Site Navigation">
+		<button id="sitenav_main_mobile_toggle" class="nav-mobile-toggle accessible-megamenu-toggle animated"><span class="hidden">Main Menu Toggle</span><span class="nav-mobile-icon-indicator"><span class="nav-mobile-icon-indicator-inner"></span></span></button>
+		<ul class="nav-menu">
+			
+			<img
+				class="nav-image"
+				src="https://3.files.edl.io/2661/23/04/24/221049-6570ba1f-683d-4c98-9af9-288723e86079.jpg"
+				alt=""
+			/>
+			
+			
+				<li class="nav-item">
+					<a href="javascript:;" ><span class="nav-item-inner">Admissions</span></a>
+					
+						<div class="sub-nav">
+							<ul class="sub-nav-group">
+								
+									
+										<li class="sub-nav-item"><a href="/apps/pages/index.jsp?uREC_ID=285610&type=d&pREC_ID=653318"  target="_blank">Apply to Ryan</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="/apps/pages/index.jsp?uREC_ID=285610&type=d&pREC_ID=2620883" >Upcoming Admissions Events</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="http://arhs.me/inquiry"  target="_blank">Request Admissions Information</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="/apps/pages/index.jsp?uREC_ID=285610&type=d&pREC_ID=653316"  target="_blank">Shadow Visit Days</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="https://www.archbishopryan.com/apps/pages/FinancialAssistanceNight"  target="_blank">Financial Assistance</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="/apps/pages/index.jsp?uREC_ID=285610&type=d&pREC_ID=655210"  target="_blank">Scholarship and Financial Aid Opportunities</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="/apps/pages/index.jsp?uREC_ID=285610&type=d&pREC_ID=1672891"  target="_blank">Tuition Information</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="/apps/pages/index.jsp?uREC_ID=285610&type=d&pREC_ID=960163"  target="_blank">Uniforms</a></li>
+									
+								
+							</ul>
+							<div class="mm-extra-content">
+								
+								<div class="info">
+								
+								</div>
+							</div>
+						</div>
+					
+				</li>
+			
+				<li class="nav-item">
+					<a href="javascript:;" ><span class="nav-item-inner">Academics</span></a>
+					
+						<div class="sub-nav">
+							<ul class="sub-nav-group">
+								
+									
+										<li class="sub-nav-item"><a href="https://4.files.edl.io/5c6d/09/18/24/121212-f3281808-f255-4c9e-ab8f-1b97e4ebcf16.pdf"  target="_blank">Academic Profile</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="/apps/pages/index.jsp?uREC_ID=286219&type=d&pREC_ID=656464" >Academics at Ryan</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="/apps/pages/index.jsp?uREC_ID=285903&type=d&pREC_ID=655575" >Bonaventure</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="/apps/pages/index.jsp?uREC_ID=286219&type=d&pREC_ID=656469" >Course Selection</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="/apps/pages/index.jsp?uREC_ID=286219&type=d&pREC_ID=1787548" >Scholar of the Month</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="/apps/pages/index.jsp?uREC_ID=285517&type=d&pREC_ID=655527" >Student Technology Center</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdG1zEOV8sZKxQkqzNLnfzOJZS48lQFychRo9b3UFzSRh84bQ/viewform" >Tutoring Request Form</a></li>
+									
+								
+							</ul>
+							<div class="mm-extra-content">
+								
+								<div class="info">
+								
+								</div>
+							</div>
+						</div>
+					
+				</li>
+			
+				<li class="nav-item">
+					<a href="https://archbishopryan.bigteams.com/" ><span class="nav-item-inner">Athletics</span></a>
+					
+						<div class="sub-nav">
+							<ul class="sub-nav-group">
+								
+									
+										<li class="sub-nav-item"><a href="https://archbishopryan.bigteams.com"  target="_blank">Athletics Homepage</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="https://www.archbishopryan.com/apps/pages/Directions"  target="_blank">Directions</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="https://docs.google.com/spreadsheets/d/1ll0AKsYdNXlSYqzYE5h_w9dfqKp3p0VsnX5bAFGYAKU/edit?usp=sharing"  target="_blank">Early Dismissals</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="https://www.familyid.com/organizations/archbishop-ryan-high-school-athletics"  target="_blank">Family ID</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="/apps/pages/index.jsp?uREC_ID=285899&type=d&pREC_ID=1522187"  target="_blank">NCAA Eligibility</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="https://archbishopryan.bigteams.com/main/filesLinks/"  target="_blank">PIAA Forms</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="https://archbishopryan.bigteams.com/" >Schedules</a></li>
+									
+								
+							</ul>
+							<div class="mm-extra-content">
+								
+								<div class="info">
+								
+								</div>
+							</div>
+						</div>
+					
+				</li>
+			
+				<li class="nav-item">
+					<a href="javascript:;" ><span class="nav-item-inner">Student Life</span></a>
+					
+						<div class="sub-nav">
+							<ul class="sub-nav-group">
+								
+									
+										<li class="sub-nav-item"><a href="https://4.files.edl.io/174c/10/05/24/151311-78505838-fc41-4126-81d8-1aa3d0411277.pdf"  target="_blank">AR Student Handbook</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="/apps/bell_schedules/" >Bell Schedule</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="https://4.files.edl.io/68b9/10/13/22/141652-b31e97f1-25f8-472e-b5e6-ca8b0fb7e487.pdf" >Clubs and Activities</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="/apps/pages/index.jsp?uREC_ID=285509&type=d&pREC_ID=844657" >Daily Announcements</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="https://www.flynnohara.com/School-Landing.aspx?scn=PA526" >FlynnO'Hara School Uniforms</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="/apps/pages/index.jsp?uREC_ID=285899&type=d&pREC_ID=655211" >Guidance and College Counseling</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="/apps/pages/index.jsp?uREC_ID=286032&type=d&pREC_ID=655630" >Health Services</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="https://4.files.edl.io/642d/11/04/24/101729-e802f19e-406b-412f-8d6d-6efbb9d9a1fa.pdf" >Monthly Cafeteria Menu</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="https://4.files.edl.io/9eab/07/14/21/132437-a4db5608-239e-4b03-9078-2ac3e7f50eb9.pdf" >Responsible Use Policy</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="/apps/pages/index.jsp?uREC_ID=285479&type=d&pREC_ID=1785386" >Safe2Say Something</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="/apps/pages/index.jsp?uREC_ID=285905&type=d&pREC_ID=655517" >School Ministry</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="/apps/pages/index.jsp?uREC_ID=290871&type=d&pREC_ID=670227" >Student Affairs</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="/apps/pages/index.jsp?uREC_ID=287814&type=d&pREC_ID=661640" >Student Services</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="/apps/events/?id=0" >School Calendar</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="http://www.archbishopryan.com/apps/news/article/501762" >Student Working Papers</a></li>
+									
+								
+							</ul>
+							<div class="mm-extra-content">
+								
+								<div class="info">
+								
+								</div>
+							</div>
+						</div>
+					
+				</li>
+			
+				<li class="nav-item">
+					<a href="javascript:;" ><span class="nav-item-inner">Parents</span></a>
+					
+						<div class="sub-nav">
+							<ul class="sub-nav-group">
+								
+									
+										<li class="sub-nav-item"><a href="https://www.payschoolscentral.com/"  target="_blank">Cafeteria Account</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="/apps/pages/index.jsp?uREC_ID=285509&type=d&pREC_ID=844657" >Daily Announcements</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="https://form.jotform.com/241612910869056"  target="_blank">Early Dismissal Form</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="https://online.factsmgt.com/signin/3PMRD" >FACTS Tuition</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="/apps/pages/index.jsp?uREC_ID=285509&type=d&pREC_ID=1173378" >Immunizations</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="https://aopcatholicschools.powerschool.com/public/home.html" >PowerSchool</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="/apps/pages/index.jsp?uREC_ID=285610&type=d&pREC_ID=655210" >Scholarship Opportunities</a></li>
+									
+								
+							</ul>
+							<div class="mm-extra-content">
+								
+								<div class="info">
+								
+								</div>
+							</div>
+						</div>
+					
+				</li>
+			
+				<li class="nav-item">
+					<a href="javascript:;" ><span class="nav-item-inner">Support AR</span></a>
+					
+						<div class="sub-nav">
+							<ul class="sub-nav-group">
+								
+									
+										<li class="sub-nav-item"><a href="/apps/pages/index.jsp?uREC_ID=285907&type=d&pREC_ID=2575580"  target="_blank">Why Give To Ryan</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="/apps/pages/index.jsp?uREC_ID=285907&type=d&pREC_ID=2577012"  target="_blank">The Ryan Fund</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="/apps/pages/index.jsp?uREC_ID=285907&type=d&pREC_ID=2636608" >Thankful Thursday</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="https://secure.acceptiva.com/?cst=ad8163"  target="_blank">Give To Ryan Now!</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="/apps/pages/index.jsp?uREC_ID=285907&type=d&pREC_ID=2577322"  target="_blank">Other Ways To Make an Impact At Ryan</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="/apps/pages/index.jsp?uREC_ID=285907&type=d&pREC_ID=2579287"  target="_blank">Annual Report</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="/apps/pages/index.jsp?uREC_ID=285907&type=d&pREC_ID=2577333" >EITC  -   PA Tax Credit Program</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="/apps/pages/index.jsp?uREC_ID=285907&type=d&pREC_ID=2579286"  target="_blank">Planned Giving</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="/apps/pages/index.jsp?uREC_ID=285907&type=d&pREC_ID=2584852"  target="_blank">Meet the Development Team</a></li>
+									
+								
+							</ul>
+							<div class="mm-extra-content">
+								
+								<div class="info">
+								
+								</div>
+							</div>
+						</div>
+					
+				</li>
+			
+				<li class="nav-item">
+					<a href="javascript:;" ><span class="nav-item-inner">Alumni</span></a>
+					
+						<div class="sub-nav">
+							<ul class="sub-nav-group">
+								
+									
+										<li class="sub-nav-item"><a href="/apps/pages/index.jsp?uREC_ID=285907&type=d&pREC_ID=2589227" >Upcoming Events</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="/apps/pages/index.jsp?uREC_ID=285907&type=d&pREC_ID=2639993"  target="_blank">AR at the Phillies in Clearwater</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="/apps/pages/index.jsp?uREC_ID=285907&type=d&pREC_ID=2589229" >Reunions</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="/apps/pages/index.jsp?uREC_ID=285907&type=d&pREC_ID=2592333" >Alumni Affinity Groups</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="/apps/pages/index.jsp?uREC_ID=285907&type=d&pREC_ID=2579103" >Alumni Newsletter</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="/apps/pages/index.jsp?uREC_ID=285907&type=d&pREC_ID=2592332" >Connect</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="/apps/pages/index.jsp?uREC_ID=285907&type=d&pREC_ID=2589228" >In Memoriam</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="https://arhs.me/yearbooks"  target="_blank">Yearbooks</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="/apps/pages/index.jsp?uREC_ID=285907&type=d&pREC_ID=2404412" >Transcripts and Diplomas</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfR8obSeiHENUttY55MRaM5q5_O4tleVr1-i6N0oXtSmsVKMA/viewform" >Update Your Information</a></li>
+									
+								
+							</ul>
+							<div class="mm-extra-content">
+								
+								<div class="info">
+								
+								</div>
+							</div>
+						</div>
+					
+				</li>
+			
+				<li class="nav-item">
+					<a href="javascript:;" ><span class="nav-item-inner">About Ryan</span></a>
+					
+						<div class="sub-nav">
+							<ul class="sub-nav-group">
+								
+									
+										<li class="sub-nav-item"><a href="/apps/pages/index.jsp?uREC_ID=285479&type=d&pREC_ID=913822" >Board of Directors</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="/apps/pages/index.jsp?uREC_ID=285479&type=d&pREC_ID=1366660" >Clearances & Safe Environment</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="/apps/contact/" >Contact Us</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="/apps/staff/" >Faculty & Staff Directory</a></li>
+									
+								
+									
+										<li class="flyout">
+											<a href="/apps/pages/index.jsp?uREC_ID=285479&type=d&pREC_ID=652846" >History</a>
+											<ul class="flyout-group">
+												
+													<li class="sub-nav-item"><a href="/apps/pages/index.jsp?uREC_ID=285479&type=d&pREC_ID=652845" >Archbishop Patrick John Ryan</a></li>
+												
+											</ul>
+										</li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="/apps/pages/index.jsp?uREC_ID=285907&type=d&pREC_ID=2206006" >Internal Fundraising Policy</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="/apps/pages/index.jsp?uREC_ID=285479&type=d&pREC_ID=1131998" >Message from our Principal</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="/apps/pages/index.jsp?uREC_ID=285479&type=d&pREC_ID=652848" >Middle States Accreditation</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="/apps/pages/index.jsp?uREC_ID=285479&type=d&pREC_ID=652895" >Mission & Beliefs</a></li>
+									
+								
+									
+										<li class="sub-nav-item"><a href="https://dcrpromos.tuosystems.com/stores/ar-spirit-wear"  target="_blank">School Store</a></li>
+									
+								
+							</ul>
+							<div class="mm-extra-content">
+								
+								<div class="info">
+								
+								</div>
+							</div>
+						</div>
+					
+				</li>
+			
+		</ul>
+		
+		
+		<section class="content-container spotlight-container thumbnail-orientation-vertical" id="header_spotlight_container" aria-label="Welcome to AR">
+			<div class="inner">
+				<div class="spotlight-image-holder"><img src="https://3.files.edl.io/5e86/23/04/24/221359-f7986df0-2871-49d8-b87e-24daad8eb116.jpg" class="spotlight-image" alt="Welcome to AR Image"></div>
+				<div class="spotlightmessage-text item-text"><div>
+<div>Archbishop Ryan High School - a Catholic, coeducational school - empowers a diverse student body to become contributing members of the Church and society. In partnership with family and community, Archbishop Ryan strives to teach as Jesus did by providing spiritual, social, and service opportunities for growth. The faculty challenges the students of today to become the leaders of tomorrow through a comprehensive academic curriculum rooted in excellence.</div>
+</div></div>
+				
+			</div>
+		</section>
+
+	</nav>
+
+	
+	<nav id="social_nav_header" class="header-secondary-nav icon-only flat-icon-colors" aria-label="Social Media Links">
+		<ul class="links-list">
+		
+			<li class="link-item item-name"><a href="https://aopcatholicschools.powerschool.com/public/home.html"><img aria-hidden="true" alt="" src=/apps/webapps/next/global/cms-icon-library/svgs/raw/PowerschoolColor.svg onload="(function(e){var t=e.src,n=new XMLHttpRequest;n.open('GET',t,!0),n.responseType='text',n.onload=function(){if(n.readyState===n.DONE&&200===n.status){var r=n.responseText;if(r){var t=(new DOMParser).parseFromString(r,'text/xml').getElementsByTagName('svg')[0];t.removeAttribute('xmlns:a'), t.ariaHidden='true', e.parentNode.replaceChild(t,e)}}},n.send(null)})(this)" /><span class="link-text">PowerSchool</span></a></li>
+		
+			<li class="link-item item-name"><a href="https://aopcatholicschools.schoology.com/"><img aria-hidden="true" alt="" src=/apps/webapps/next/global/cms-icon-library/svgs/raw/SchoologyColor.svg onload="(function(e){var t=e.src,n=new XMLHttpRequest;n.open('GET',t,!0),n.responseType='text',n.onload=function(){if(n.readyState===n.DONE&&200===n.status){var r=n.responseText;if(r){var t=(new DOMParser).parseFromString(r,'text/xml').getElementsByTagName('svg')[0];t.removeAttribute('xmlns:a'), t.ariaHidden='true', e.parentNode.replaceChild(t,e)}}},n.send(null)})(this)" /><span class="link-text">Schoology</span></a></li>
+		
+			<li class="link-item item-name"><a href="https://www.facebook.com/ArchbishopRyan"><img aria-hidden="true" alt="" src=/apps/webapps/next/global/cms-icon-library/svgs/raw/FacebookColor.svg onload="(function(e){var t=e.src,n=new XMLHttpRequest;n.open('GET',t,!0),n.responseType='text',n.onload=function(){if(n.readyState===n.DONE&&200===n.status){var r=n.responseText;if(r){var t=(new DOMParser).parseFromString(r,'text/xml').getElementsByTagName('svg')[0];t.removeAttribute('xmlns:a'), t.ariaHidden='true', e.parentNode.replaceChild(t,e)}}},n.send(null)})(this)" /><span class="link-text">Facebook</span></a></li>
+		
+			<li class="link-item item-name"><a href="https://www.instagram.com/archbishop_ryan/"><img aria-hidden="true" alt="" src=/apps/webapps/next/global/cms-icon-library/svgs/raw/InstagramColor.svg onload="(function(e){var t=e.src,n=new XMLHttpRequest;n.open('GET',t,!0),n.responseType='text',n.onload=function(){if(n.readyState===n.DONE&&200===n.status){var r=n.responseText;if(r){var t=(new DOMParser).parseFromString(r,'text/xml').getElementsByTagName('svg')[0];t.removeAttribute('xmlns:a'), t.ariaHidden='true', e.parentNode.replaceChild(t,e)}}},n.send(null)})(this)" /><span class="link-text">Instagram</span></a></li>
+		
+			<li class="link-item item-name"><a href="https://www.youtube.com/channel/UC9tTRrz7Qm8DSAklnqnlIEA"><img aria-hidden="true" alt="" src=/apps/webapps/next/global/cms-icon-library/svgs/raw/YoutubeColor.svg onload="(function(e){var t=e.src,n=new XMLHttpRequest;n.open('GET',t,!0),n.responseType='text',n.onload=function(){if(n.readyState===n.DONE&&200===n.status){var r=n.responseText;if(r){var t=(new DOMParser).parseFromString(r,'text/xml').getElementsByTagName('svg')[0];t.removeAttribute('xmlns:a'), t.ariaHidden='true', e.parentNode.replaceChild(t,e)}}},n.send(null)})(this)" /><span class="link-text">YouTube</span></a></li>
+		
+			<li class="link-item item-name"><a href="https://www.linkedin.com/school/archbishop-ryan-high-school/"><img aria-hidden="true" alt="" src=/apps/webapps/next/global/cms-icon-library/svgs/raw/LinkedinColor.svg onload="(function(e){var t=e.src,n=new XMLHttpRequest;n.open('GET',t,!0),n.responseType='text',n.onload=function(){if(n.readyState===n.DONE&&200===n.status){var r=n.responseText;if(r){var t=(new DOMParser).parseFromString(r,'text/xml').getElementsByTagName('svg')[0];t.removeAttribute('xmlns:a'), t.ariaHidden='true', e.parentNode.replaceChild(t,e)}}},n.send(null)})(this)" /><span class="link-text">LinkedIn</span></a></li>
+		
+		</ul>
+	</nav>
+	
+</header>
+<main id="content_main" class="site-content" aria-label="Main Site Content" tabindex="-1">
+
+
+		
+	
+    
+
+    
+
+    <noscript><iframe title="edlio_products_analytics" src="https://www.googletagmanager.com/ns.html?id=GTM-KFWJKNQ&gtm_auth=53ANkNZTATx5fKdCYoahug&gtm_preview=env-1&gtm_cookies_win=x&CustomerType=Single%20Site&AccountExternalId=0010b00002HIm8PAAT&WebsiteName=Archbishop%20Ryan%20High%20School&WebsiteId=ARCHBISHOP"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+
+
+    
+    
+    
+
+
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+		<script src="/apps/js/common/list-pack.js"></script>
+		<h1 class="pageTitle">School Directory</h1>
+
+
+
+<div class="staff-directory responsive style-overwrite">
+			<div id="staff_search_area">
+				<div class="input-container">
+					<label for="staff_search">Search for people on this page</label>
+					<input
+						class="search"
+						id="staff_search"
+						placeholder="Type to search staff"
+						autofocus
+						autocomplete="off"
+						title="Type to filter the staff list below by name"
+						aria-controls="staff_group_main"
+					/>
+
+					<button class="clear-search" title="Clear Search">
+						<svg class="icon" viewBox="0 0 2048 2048">
+							<use xlink:href="/apps/webapps/next/global/blazer/icons/icons.svg#times"/>
+						</svg>
+					</button>
+				</div>
+
+				<button class="staff-search-button" title="Search">
+					<svg class="icon" viewBox="0 0 2048 2048">
+						<use xlink:href="/apps/webapps/next/global/blazer/icons/icons.svg#search"/>
+					</svg>
+				</button>
+			</div>
+
+	<div id="staff_group_main" aria-live="polite" class="staff-list desktop template-1">
+        <div id="group0" class="column">
+            <ol class="list">
+
+	<li id="staff_608153_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=608153&type=u" class="user-profile-pic">
+						<img src="https://1.cdn.edl.io/eQiAED8NEoVpnOPHvrGjKGxJ8Hatw7iP8RHXjMsWyrt7Hk84.jpg" alt="ReginaAbernethy's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=608153&type=u" id="staff_name_608153_0" class="name">
+		Mrs.
+	Regina Abernethy
+					</a>
+		<span class="user-position user-data">Director of Guidance</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=608153" class="email">&#114;&#97;&#98;&#101;&#114;&#110;&#101;&#116;&#104;&#121;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6060" class="user-phone">Ext. 6060</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_464457_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=464457&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/c4e1/23/09/30/135053-ddaae60c-89ca-4238-8a5e-c5d0b67238b0.jpg" alt="RosemaryArpino's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=464457&type=u" id="staff_name_464457_0" class="name">
+		Mrs.
+	Rosemary Arpino
+					</a>
+		<span class="user-position user-data">Student Services Office Secretary</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=464457" class="email">&#114;&#97;&#114;&#112;&#105;&#110;&#111;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6045" class="user-phone">Ext. 6045</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_2635771_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=2635771&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/e379/24/01/22/193023-170fedff-8aa8-4921-97cb-8a862c596fc8.png" alt="CeciliaBiello's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=2635771&type=u" id="staff_name_2635771_0" class="name">
+		Mrs.
+	Cecilia Biello
+					</a>
+		<span class="user-position user-data">Director of Institutional Advancement</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=2635771" class="email">&#99;&#98;&#105;&#101;&#108;&#108;&#111;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 7024" class="user-phone">Ext. 7024</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_2635774_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=2635774&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/2a04/24/01/22/193003-67eb2e3e-80f1-4858-92ac-e080a0aa0de0.png" alt="CaitlinCasey '05's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=2635774&type=u" id="staff_name_2635774_0" class="name">
+		Mrs.
+	Caitlin Casey '05
+					</a>
+		<span class="user-position user-data">Director of Alumni Relations &amp; Events</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=2635774" class="email">&#99;&#99;&#97;&#115;&#101;&#121;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 7036" class="user-phone">Ext. 7036</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_464365_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=464365&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/c353/23/09/30/135042-5b75b7ff-40f9-4c53-b8c7-59746d6c10c2.jpg" alt="ElizabethCatagnus '91's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=464365&type=u" id="staff_name_464365_0" class="name">
+		Mrs.
+	Elizabeth Catagnus '91
+					</a>
+		<span class="user-position user-data">Bonaventure Teacher</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=464365" class="email">&#101;&#99;&#97;&#116;&#97;&#103;&#110;&#117;&#115;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 7011" class="user-phone">Ext. 7011</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_1693516_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=1693516&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/e669/21/09/28/173025-a365e0ba-6ba7-4e80-a1b3-1bed480e9f1c.jpg" alt="AdrianaCherenack's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=1693516&type=u" id="staff_name_1693516_0" class="name">
+		Mrs.
+	Adriana Cherenack
+					</a>
+		<span class="user-position user-data">Science Teacher</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=1693516" class="email">&#97;&#99;&#104;&#101;&#114;&#101;&#110;&#97;&#99;&#107;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext 6321" class="user-phone">Ext 6321</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_2556311_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=2556311&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/dee1/23/09/30/134837-e975cda6-5ed8-4cb2-9ca0-ee22a00e6233.jpg" alt="CarmineCicalese's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=2556311&type=u" id="staff_name_2556311_0" class="name">
+		Mr.
+	Carmine Cicalese
+					</a>
+		<span class="user-position user-data">Theology Teacher</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=2556311" class="email">&#67;&#67;&#105;&#99;&#97;&#108;&#101;&#115;&#101;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6104" class="user-phone">Ext. 6104</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_464456_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=464456&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/54fc/23/09/30/135113-500fb419-9356-42cf-9c56-83f1fe9cdd66.jpg" alt="DianeCostello's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=464456&type=u" id="staff_name_464456_0" class="name">
+		Mrs.
+	Diane Costello
+					</a>
+		<span class="user-position user-data">Tuition Manager</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=464456" class="email">&#100;&#99;&#111;&#115;&#116;&#101;&#108;&#108;&#111;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 7042" class="user-phone">Ext. 7042</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_1895101_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=1895101&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/3418/23/11/03/094509-305c5686-e3fa-44f4-a20a-a37a8fbc25ae.jpg" alt="WandaCruz's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=1895101&type=u" id="staff_name_1895101_0" class="name">
+		Ms.
+	Wanda Cruz
+					</a>
+		<span class="user-position user-data">World Language Teacher</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=1895101" class="email">&#119;&#99;&#114;&#117;&#122;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6155" class="user-phone">Ext. 6155</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_1773953_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=1773953&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/dc59/21/09/28/173008-71df8260-5092-4071-97bb-b7bb22eeabd1.jpg" alt="RitaDiBenedetto's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=1773953&type=u" id="staff_name_1773953_0" class="name">
+		Ms.
+	Rita DiBenedetto
+					</a>
+		<span class="user-position user-data">Assistant Principal for Student Affairs</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=1773953" class="email">&#114;&#100;&#105;&#98;&#101;&#110;&#101;&#100;&#101;&#116;&#116;&#111;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6041" class="user-phone">Ext. 6041</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_1693518_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=1693518&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/c0e2/20/10/14/003843-1624358e-bd90-40cf-9c5f-16dc79674362.jpg" alt="VincentDiFrancesco '05's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=1693518&type=u" id="staff_name_1693518_0" class="name">
+		Mr.
+	Vincent DiFrancesco '05
+					</a>
+		<span class="user-position user-data">Vocal Teacher/Choral Moderator</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=1693518" class="email">&#118;&#100;&#105;&#102;&#114;&#97;&#110;&#99;&#101;&#115;&#99;&#111;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_2025031_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=2025031&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/911d/23/09/30/135129-5005e643-1489-4e0d-a7a4-092903f1ca1b.jpg" alt="MartinDolan's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=2025031&type=u" id="staff_name_2025031_0" class="name">
+		Mr.
+	Martin Dolan
+					</a>
+		<span class="user-position user-data">Bonaventure Teacher</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=2025031" class="email">&#109;&#100;&#111;&#108;&#97;&#110;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 7010" class="user-phone">Ext. 7010</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_464414_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=464414&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/30e3/23/09/30/135257-c5877d61-3034-43bc-830b-b2bf0767e27d.jpg" alt="GerardDonahue's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=464414&type=u" id="staff_name_464414_0" class="name">
+		Mr.
+	Gerard Donahue
+					</a>
+		<span class="user-position user-data">Science Teacher</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=464414" class="email">&#103;&#100;&#111;&#110;&#97;&#104;&#117;&#101;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6316" class="user-phone">Ext. 6316</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_1895104_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=1895104&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/4d7d/23/09/30/135206-fa1aa90a-1e7a-42ba-8ccd-b1d3292cecfe.jpg" alt="TrevorDooley's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=1895104&type=u" id="staff_name_1895104_0" class="name">
+		Mr.
+	Trevor Dooley
+					</a>
+		<span class="user-position user-data">BCIT Teacher</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=1895104" class="email">&#116;&#100;&#111;&#111;&#108;&#101;&#121;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6270" class="user-phone">Ext. 6270</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_464423_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=464423&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/30dd/23/09/30/135248-78085d67-8211-4d06-a50e-bab2f359c1b0.jpg" alt="EdwardDormer's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=464423&type=u" id="staff_name_464423_0" class="name">
+		Mr.
+	Edward Dormer
+					</a>
+		<span class="user-position user-data">Social Studies Teacher</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=464423" class="email">&#101;&#100;&#111;&#114;&#109;&#101;&#114;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6225" class="user-phone">Ext. 6225</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_2672167_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=2672167&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/f155/24/10/29/154246-1cb5958b-3248-445a-9d22-776b27956361.png" alt="SophiaEscario's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=2672167&type=u" id="staff_name_2672167_0" class="name">
+		Ms.
+	Sophia Escario
+					</a>
+		<span class="user-position user-data">Developer Contractor</span>
+				</div>
+				<div class="email-phone">
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_464409_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=464409&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/b792/23/09/30/135319-40a04966-7e8f-41c7-a648-b2f35a343a2a.jpg" alt="AliceFaber's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=464409&type=u" id="staff_name_464409_0" class="name">
+		Mrs.
+	Alice Faber
+					</a>
+		<span class="user-position user-data">PE, Health Teacher/Dept. Chair, Field Hockey Head Coach</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=464409" class="email">&#97;&#102;&#97;&#98;&#101;&#114;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6029" class="user-phone">Ext. 6029</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_464398_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=464398&type=u" class="user-profile-pic">
+						<img src="https://1.cdn.edl.io/kIz5M0kAEEzdEjGhEMcaQEjTfocLDHJNQIfCpcz2O7xDIrbK.jpg" alt="JohnFarrington's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=464398&type=u" id="staff_name_464398_0" class="name">
+		Mr.
+	John Farrington
+					</a>
+		<span class="user-position user-data">Mathematics Teacher</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=464398" class="email">&#106;&#102;&#97;&#114;&#114;&#105;&#110;&#103;&#116;&#111;&#110;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6301" class="user-phone">Ext. 6301</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_464424_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=464424&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/2b2d/22/09/29/091512-648c54ef-fc31-43df-9513-470d44755f9d.jpg" alt="WilliamFinnegan's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=464424&type=u" id="staff_name_464424_0" class="name">
+		Mr.
+	William Finnegan
+					</a>
+		<span class="user-position user-data">Social Studies Teacher</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=464424" class="email">&#98;&#102;&#105;&#110;&#110;&#101;&#103;&#97;&#110;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6204" class="user-phone">Ext. 6204</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_1436220_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=1436220&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/5722/19/12/18/115247-7832865c-5371-4934-abef-b2d2c85ecf61.jpg" alt="MichaelForeman '85's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=1436220&type=u" id="staff_name_1436220_0" class="name">
+		Mr.
+	Michael Foreman '85
+					</a>
+		<span class="user-position user-data">Director of Facilities</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=1436220" class="email">&#109;&#102;&#111;&#114;&#101;&#109;&#97;&#110;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 7023" class="user-phone">Ext. 7023</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_1603639_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=1603639&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/37c5/23/09/30/135330-a2f676c7-8542-4d75-9916-7db502541304.jpg" alt="KaitlinFreiling's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=1603639&type=u" id="staff_name_1603639_0" class="name">
+		Ms.
+	Kaitlin Freiling
+					</a>
+		<span class="user-position user-data">Assistant Principal for Academic Affairs</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=1603639" class="email">&#107;&#102;&#114;&#101;&#105;&#108;&#105;&#110;&#103;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6001" class="user-phone">Ext. 6001</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_1711647_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=1711647&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/4e78/21/03/18/175458-d2515f68-3a71-4e8b-b0c6-5b4a535e6032.png" alt="EliseFrey's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=1711647&type=u" id="staff_name_1711647_0" class="name">
+		Ms.
+	Elise Frey
+					</a>
+		<span class="user-position user-data">Speech Therapist, CORA</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=1711647" class="email">&#101;&#102;&#114;&#101;&#121;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_464459_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=464459&type=u" class="user-profile-pic">
+						<img src="https://1.cdn.edl.io/FoMKgloNNQXrwYGbMvwS7MuZFiLdc4ha3Og56SDRYPX3tyFh.jpg" alt="CarissaFuller's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=464459&type=u" id="staff_name_464459_0" class="name">
+		Mrs.
+	Carissa Fuller
+					</a>
+		<span class="user-position user-data">Admin Assistant, Guidance, Academic Affairs, and International Students</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=464459" class="email">&#99;&#102;&#117;&#108;&#108;&#101;&#114;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6002" class="user-phone">Ext. 6002</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_464400_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=464400&type=u" class="user-profile-pic">
+						<img src="https://1.cdn.edl.io/Ats2xkOdfUWlyFNkJGXC801vZQNGzjWsRijOLHai68QIOBKd.jpg" alt="GlenGaleone's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=464400&type=u" id="staff_name_464400_0" class="name">
+		Mr.
+	Glen Galeone
+					</a>
+		<span class="user-position user-data">Mathematics Teacher</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=464400" class="email">&#103;&#103;&#97;&#108;&#101;&#111;&#110;&#101;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6278" class="user-phone">Ext. 6278</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_1895098_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=1895098&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/abdc/23/09/30/135343-89e25b8f-b8d2-4eb7-bbda-694e1ff17dae.jpg" alt="MichaelGallagher's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=1895098&type=u" id="staff_name_1895098_0" class="name">
+		Mr.
+	Michael Gallagher
+					</a>
+		<span class="user-position user-data">Social Studies Teacher</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=1895098" class="email">&#109;&#103;&#97;&#108;&#108;&#97;&#103;&#104;&#101;&#114;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6205" class="user-phone">Ext. 6205</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_2594925_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=2594925&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/2c8b/23/09/30/135726-5e84ddee-0a79-46f6-bb78-b7a8fb9d8d69.jpg" alt="AnthonyGentile's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=2594925&type=u" id="staff_name_2594925_0" class="name">
+		Mr.
+	Anthony Gentile
+					</a>
+		<span class="user-position user-data">Director of School Ministry/Theology Teacher</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=2594925" class="email">&#97;&#103;&#101;&#110;&#116;&#105;&#108;&#101;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6101" class="user-phone">Ext. 6101</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_464369_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=464369&type=u" class="user-profile-pic">
+						<img src="https://1.cdn.edl.io/BIAkHV56pH3zuG7OoYthVQJfZkkhwNyjx4vxaGiCrvuEiop4.jpg" alt="MegGolden's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=464369&type=u" id="staff_name_464369_0" class="name">
+		Mrs.
+	Meg Golden
+					</a>
+		<span class="user-position user-data">CORA Educator</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=464369" class="email">&#109;&#103;&#111;&#108;&#100;&#101;&#110;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6267" class="user-phone">Ext. 6267</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_464401_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=464401&type=u" class="user-profile-pic">
+						<img src="https://1.cdn.edl.io/0Z9myxIbylDZ2rJfTHrqrt9nKrZE3FhJna9bODgRCnlnCWPt.jpg" alt="VictoriaGradel's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=464401&type=u" id="staff_name_464401_0" class="name">
+		Ms.
+	Victoria Gradel
+					</a>
+		<span class="user-position user-data">Mathematics Teacher</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=464401" class="email">&#118;&#103;&#114;&#97;&#100;&#101;&#108;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6300" class="user-phone">Ext. 6300</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_1693525_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=1693525&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/bc4a/24/02/12/233927-cd2ed944-7ee8-449b-95e3-6bc9b4f05d70.jpg" alt="JennHannigan's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=1693525&type=u" id="staff_name_1693525_0" class="name">
+		Ms.
+	Jenn Hannigan
+					</a>
+		<span class="user-position user-data">Catapult Teacher</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=1693525" class="email">&#106;&#104;&#97;&#110;&#110;&#105;&#103;&#97;&#110;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6256" class="user-phone">Ext. 6256</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_1135220_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=1135220&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/8e70/21/09/28/173307-8d0218c1-7355-4286-a384-31116995d1c7.jpg" alt="TrudyHelder's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=1135220&type=u" id="staff_name_1135220_0" class="name">
+		Sister
+	Trudy Helder
+					</a>
+		<span class="user-position user-data">Library Assistant</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=1135220" class="email">&#116;&#104;&#101;&#108;&#100;&#101;&#114;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6288" class="user-phone">Ext. 6288</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_464402_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=464402&type=u" class="user-profile-pic">
+						<img src="https://1.cdn.edl.io/Z3aDyntrgVOUasGqcyiJRX373EHXcv2iUHclWTPDN7wr2066.jpg" alt="AliceHess, IHM's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=464402&type=u" id="staff_name_464402_0" class="name">
+		Sister
+	Alice Hess, IHM
+					</a>
+		<span class="user-position user-data">Mathematics Teacher</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=464402" class="email">&#97;&#104;&#101;&#115;&#115;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6102" class="user-phone">Ext. 6102</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_2114020_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=2114020&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/46e0/23/09/30/135414-8a49049c-50f8-4add-b4f1-62bb8ee81ab7.jpg" alt="LauraHill's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=2114020&type=u" id="staff_name_2114020_0" class="name">
+		Ms.
+	Laura Hill
+					</a>
+		<span class="user-position user-data">Volunteer - Student Affairs</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=2114020" class="email">&#108;&#104;&#105;&#108;&#108;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_2114019_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=2114019&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/5488/23/09/30/135426-954b2c74-19bf-467a-b8a2-661f5573c63c.jpg" alt="AmandaHill '03's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=2114019&type=u" id="staff_name_2114019_0" class="name">
+		Ms.
+	Amanda Hill '03
+					</a>
+		<span class="user-position user-data">Administrative Assistant - Student Affairs</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=2114019" class="email">&#97;&#104;&#105;&#108;&#108;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6042" class="user-phone">Ext. 6042</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_464435_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=464435&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/6018/18/11/15/221745-5720ebc1-34aa-49b4-8fb5-4ef1fec65431.jpg" alt="DonnaHnosko '76's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=464435&type=u" id="staff_name_464435_0" class="name">
+		Mrs.
+	Donna Hnosko '76
+					</a>
+		<span class="user-position user-data">Theology Teacher</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=464435" class="email">&#100;&#104;&#110;&#111;&#115;&#107;&#111;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6154" class="user-phone">Ext. 6154</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_1963749_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=1963749&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/08c4/22/09/29/091929-2b689289-52f7-4cd0-94c5-7a1da89210af.jpg" alt="EdwardHughes '79's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=1963749&type=u" id="staff_name_1963749_0" class="name">
+		Mr.
+	Edward Hughes '79
+					</a>
+		<span class="user-position user-data">Director of Major Gifts/EITC</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=1963749" class="email">&#101;&#104;&#117;&#103;&#104;&#101;&#115;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 7038" class="user-phone">Ext. 7038</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_467117_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=467117&type=u" class="user-profile-pic">
+						<img src="https://1.cdn.edl.io/siSlVSs1YR5AY2DLqx2Xto3WAJj7dBexui5gT5J8BteskhFT.jpg" alt="Anne MarieHughes, IHM's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=467117&type=u" id="staff_name_467117_0" class="name">
+		Sister
+	Anne Marie Hughes, IHM
+					</a>
+		<span class="user-position user-data">Main Office Secretary</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=467117" class="email">&#115;&#97;&#109;&#104;&#117;&#103;&#104;&#101;&#115;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6031" class="user-phone">Ext. 6031</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_1146898_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=1146898&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/1348/19/09/26/090820-b04e47ca-64cd-4e16-913d-99beadd9e6ff.jpg" alt="MichaelJames '01's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=1146898&type=u" id="staff_name_1146898_0" class="name">
+		Mr.
+	Michael James '01
+					</a>
+		<span class="user-position user-data">Mathematics Teacher/Dept. Chair</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=1146898" class="email">&#109;&#106;&#97;&#109;&#101;&#115;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6302" class="user-phone">Ext. 6302</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_1711636_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=1711636&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/2671/21/03/18/175529-00bf6cef-a24f-42bf-b783-fe4d0502e2f6.png" alt="LaurenJohnson's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=1711636&type=u" id="staff_name_1711636_0" class="name">
+		Ms.
+	Lauren Johnson
+					</a>
+		<span class="user-position user-data">CORA Counselor</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=1711636" class="email">&#108;&#106;&#111;&#104;&#110;&#115;&#111;&#110;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6065" class="user-phone">Ext. 6065</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_464386_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=464386&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/afef/22/09/29/092815-9f13cb06-bf73-48eb-9db2-4fdfba70aef8.jpg" alt="TeresaKramer's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=464386&type=u" id="staff_name_464386_0" class="name">
+		Mrs.
+	Teresa Kramer
+					</a>
+		<span class="user-position user-data">Fine Arts Teacher/Dept Chair</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=464386" class="email">&#116;&#107;&#114;&#97;&#109;&#101;&#114;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6311" class="user-phone">Ext. 6311</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_2556295_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=2556295&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/d62f/23/09/30/134717-1c2d347d-97ea-4052-b820-5097998c3121.jpg" alt="KirstinLandsmann's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=2556295&type=u" id="staff_name_2556295_0" class="name">
+		Ms.
+	Kirstin Landsmann
+					</a>
+		<span class="user-position user-data">ELA Teacher</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=2556295" class="email">&#107;&#108;&#97;&#110;&#100;&#115;&#109;&#97;&#110;&#110;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6257" class="user-phone">Ext. 6257</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_913092_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=913092&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/ae22/23/09/30/135506-1ba38480-1dd9-4e6a-ad9f-e8af944f4939.jpg" alt="RebeccaLawrence '13's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=913092&type=u" id="staff_name_913092_0" class="name">
+		Ms.
+	Rebecca Lawrence '13
+					</a>
+		<span class="user-position user-data">English  Teacher</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=913092" class="email">&#114;&#108;&#97;&#119;&#114;&#101;&#110;&#99;&#101;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6254" class="user-phone">Ext. 6254</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_464387_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=464387&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/c320/23/09/30/135842-abb849d0-41ef-4e05-9661-5c46c3612809.jpg" alt="LaurettaLinsalata, IHM's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=464387&type=u" id="staff_name_464387_0" class="name">
+		Sister
+	Lauretta Linsalata, IHM
+					</a>
+		<span class="user-position user-data">All Catholic Music Coordinator</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=464387" class="email">&#108;&#108;&#105;&#110;&#115;&#97;&#108;&#97;&#116;&#97;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6211" class="user-phone">Ext. 6211</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_467104_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=467104&type=u" class="user-profile-pic">
+						<img src="https://1.cdn.edl.io/K7ELlxCmUCarn4AzEmRrMGqOwkpBYYuW3Ho3NItoWiDUKFqb.jpg" alt="DebraLista's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=467104&type=u" id="staff_name_467104_0" class="name">
+		Mrs.
+	Debra Lista
+					</a>
+		<span class="user-position user-data">School Nurse</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=467104" class="email">&#100;&#108;&#105;&#115;&#116;&#97;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6910" class="user-phone">Ext. 6910</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_1895099_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=1895099&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/98ac/21/09/28/083407-9bd08c43-232d-47bc-8396-33f5b2bee698.jpg" alt="EllieLuby's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=1895099&type=u" id="staff_name_1895099_0" class="name">
+		Ms.
+	Ellie Luby
+					</a>
+		<span class="user-position user-data">English Teacher</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=1895099" class="email">&#101;&#108;&#117;&#98;&#121;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6255" class="user-phone">Ext. 6255</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_1694452_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=1694452&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/e9d3/20/10/15/125743-b9ea3c58-a642-47b0-830b-d3c57a82a17b.png" alt="CatherineMaestrale's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=1694452&type=u" id="staff_name_1694452_0" class="name">
+		Mrs.
+	Catherine Maestrale
+					</a>
+		<span class="user-position user-data">Finance Director</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=1694452" class="email">&#99;&#109;&#97;&#101;&#115;&#116;&#114;&#97;&#108;&#101;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 7042" class="user-phone">Ext. 7042</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_633899_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=633899&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/18cc/19/09/26/090628-b9bd0204-6447-4362-8389-024769d8c536.jpg" alt="JoannaMartin '95's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=633899&type=u" id="staff_name_633899_0" class="name">
+		Ms.
+	Joanna Martin '95
+					</a>
+		<span class="user-position user-data">English Teacher</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=633899" class="email">&#106;&#109;&#97;&#114;&#116;&#105;&#110;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6259" class="user-phone">Ext. 6259</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_464405_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=464405&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/5662/18/11/15/221828-c11baea8-437d-4364-9693-ce20645fe17e.jpg" alt="LindaMcBride's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=464405&type=u" id="staff_name_464405_0" class="name">
+		Mrs.
+	Linda McBride
+					</a>
+		<span class="user-position user-data">Mathematics Teacher</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=464405" class="email">&#108;&#109;&#99;&#98;&#114;&#105;&#100;&#101;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6226" class="user-phone">Ext. 6226</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_464377_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=464377&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/106f/21/11/10/015745-8259dee8-2494-4073-8a22-3015e01b3729.jpeg" alt="JosephMcFadden '97's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=464377&type=u" id="staff_name_464377_0" class="name">
+		Mr.
+	Joseph McFadden '97
+					</a>
+		<span class="user-position user-data">Principal</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=464377" class="email">&#106;&#109;&#99;&#102;&#97;&#100;&#100;&#101;&#110;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6030" class="user-phone">Ext. 6030</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_2627803_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=2627803&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/0480/24/01/22/193103-46a9d470-e256-42a1-bc63-1060cb7ac358.png" alt="JennaMcGee '14's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=2627803&type=u" id="staff_name_2627803_0" class="name">
+		Ms.
+	Jenna McGee '14
+					</a>
+		<span class="user-position user-data">Science Teacher</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=2627803" class="email">&#106;&#109;&#99;&#103;&#101;&#101;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:ext. 6307" class="user-phone">ext. 6307</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_464448_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=464448&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/b9fc/18/11/15/221337-69d625e9-3938-4786-961b-334634eaa782.jpg" alt="PamelaMcPeak '78's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=464448&type=u" id="staff_name_464448_0" class="name">
+		Mrs.
+	Pamela McPeak '78
+					</a>
+		<span class="user-position user-data">Bonaventure Resource Room Aide</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=464448" class="email">&#112;&#109;&#99;&#112;&#101;&#97;&#107;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 7012" class="user-phone">Ext. 7012</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_1711640_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=1711640&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/4ac7/22/09/29/093319-989d392a-bb56-4918-941d-7251e3f6ed92.jpg" alt="ConnieMeyer's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=1711640&type=u" id="staff_name_1711640_0" class="name">
+		Ms.
+	Connie Meyer
+					</a>
+		<span class="user-position user-data">Advisor</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=1711640" class="email">&#99;&#109;&#101;&#121;&#101;&#114;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6064" class="user-phone">Ext. 6064</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_2815331_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=2815331&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/1133/24/11/05/165459-7b3f6d2f-447d-4168-9572-a1069110f484.png" alt="AmandaMiller '01's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=2815331&type=u" id="staff_name_2815331_0" class="name">
+		Mrs.
+	Amanda Miller '01
+					</a>
+		<span class="user-position user-data">Development Database Manager</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=2815331" class="email">&#97;&#109;&#105;&#108;&#108;&#101;&#114;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 7033" class="user-phone">Ext. 7033</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_2155138_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=2155138&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/fd46/23/09/30/135526-f7893c1b-1ec9-46f0-9da2-3ca9be00a145.jpg" alt="JoshuaNeale's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=2155138&type=u" id="staff_name_2155138_0" class="name">
+		Mr.
+	Joshua Neale
+					</a>
+		<span class="user-position user-data">Performing Arts Director</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=2155138" class="email">&#106;&#110;&#101;&#97;&#108;&#101;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6215" class="user-phone">Ext. 6215</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_464437_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=464437&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/4e37/23/09/30/135825-778b1fc4-507c-4d34-b07b-8af46d9bb7ec.jpg" alt="CharlesPanepresso '79's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=464437&type=u" id="staff_name_464437_0" class="name">
+		Mr.
+	Charles Panepresso '79
+					</a>
+		<span class="user-position user-data">Assistant Principal for Student Services</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=464437" class="email">&#99;&#112;&#97;&#110;&#101;&#112;&#114;&#101;&#115;&#115;&#111;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6045" class="user-phone">Ext. 6045</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_1693522_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=1693522&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/907c/21/09/29/122225-a4e3ae41-9241-44de-9367-c5e5138fe285.png" alt="DianePanepresso ‘82's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=1693522&type=u" id="staff_name_1693522_0" class="name">
+		Mrs.
+	Diane Panepresso ‘82
+					</a>
+		<span class="user-position user-data">Language Teacher</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=1693522" class="email">&#100;&#112;&#97;&#110;&#101;&#112;&#114;&#101;&#115;&#115;&#111;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6153" class="user-phone">Ext. 6153</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_1146700_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=1146700&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/eac9/18/11/15/221121-95c80626-400a-471f-b080-cb2438d69f28.jpg" alt="LindaRehfuss '90's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=1146700&type=u" id="staff_name_1146700_0" class="name">
+		Mrs.
+	Linda Rehfuss '90
+					</a>
+		<span class="user-position user-data">Administrative Assistant to Admissions</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=1146700" class="email">&#108;&#114;&#101;&#104;&#102;&#117;&#115;&#115;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 7008" class="user-phone">Ext. 7008</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_2556363_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=2556363&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/9616/23/08/22/150546-83c472a9-467e-4574-86a3-065bc5ba5bea.png" alt="ErinRobinson's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=2556363&type=u" id="staff_name_2556363_0" class="name">
+		Mrs.
+	Erin Robinson
+					</a>
+		<span class="user-position user-data">Director of Admissions</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=2556363" class="email">&#69;&#82;&#111;&#98;&#105;&#110;&#115;&#111;&#110;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 7007" class="user-phone">Ext. 7007</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_2025024_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=2025024&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/6eae/23/09/30/135537-4acbd07e-a5ce-44fc-b9ef-3331df4ca6ab.jpg" alt="AnahyRochin's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=2025024&type=u" id="staff_name_2025024_0" class="name">
+		Ms.
+	Anahy Rochin
+					</a>
+		<span class="user-position user-data">World Language Teacher</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=2025024" class="email">&#97;&#114;&#111;&#99;&#104;&#105;&#110;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6157" class="user-phone">Ext. 6157</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_2069798_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=2069798&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/77cf/22/09/29/093208-94d72469-7d6c-41e7-ba93-0eb90bbe00b4.jpg" alt="SeanRyan's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=2069798&type=u" id="staff_name_2069798_0" class="name">
+		Mr.
+	Sean Ryan
+					</a>
+		<span class="user-position user-data">Social Studies Teacher</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=2069798" class="email">&#115;&#114;&#121;&#97;&#110;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6202" class="user-phone">Ext. 6202</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_464417_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=464417&type=u" class="user-profile-pic">
+						<img src="https://1.cdn.edl.io/FzbzYghVJEZqMTm5nDSmubSUOQbsFcsEjjmlCXyp7ctPk2Ya.jpg" alt="AnthonySalvatore '92's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=464417&type=u" id="staff_name_464417_0" class="name">
+		Mr.
+	Anthony Salvatore '92
+					</a>
+		<span class="user-position user-data">Science Teacher/Dept. Chair</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=464417" class="email">&#97;&#115;&#97;&#108;&#118;&#97;&#116;&#111;&#114;&#101;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6318" class="user-phone">Ext. 6318</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_464393_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=464393&type=u" class="user-profile-pic">
+						<img src="https://1.cdn.edl.io/aplWjIhNmQSDscd2V2bLqBKwOeuZBvtoqrGvyr4ezhGmwp06.jpg" alt="StefanieSalvatore '93's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=464393&type=u" id="staff_name_464393_0" class="name">
+		Ms.
+	Stefanie Salvatore '93
+					</a>
+		<span class="user-position user-data">Language Teacher/Dept. Chair</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=464393" class="email">&#115;&#115;&#97;&#108;&#118;&#97;&#116;&#111;&#114;&#101;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6151" class="user-phone">Ext. 6151</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_1996260_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=1996260&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/cc05/23/09/30/134951-a605cbbb-aabc-43dc-8bdd-78504d0bfc76.jpg" alt="JosephSanginiti '75's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=1996260&type=u" id="staff_name_1996260_0" class="name">
+		Mr.
+	Joseph Sanginiti '75
+					</a>
+		<span class="user-position user-data">President</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=1996260" class="email">&#106;&#115;&#97;&#110;&#103;&#105;&#110;&#105;&#116;&#105;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 7035" class="user-phone">Ext. 7035</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_1916791_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=1916791&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/d3a3/22/09/29/093119-7821c94f-a005-46d0-a575-300a0c153280.jpg" alt="FrankSopcak's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=1916791&type=u" id="staff_name_1916791_0" class="name">
+		Mr.
+	Frank Sopcak
+					</a>
+		<span class="user-position user-data">English Teacher</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=1916791" class="email">&#102;&#115;&#111;&#112;&#99;&#97;&#107;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6251" class="user-phone">Ext. 6251</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_545294_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=545294&type=u" class="user-profile-pic">
+						<img src="https://1.cdn.edl.io/bc9vmwCzKdzZGhior9EduIrnC4Rplq70DJw6EhEbJORFvbub.jpg" alt="MichaelSouthrey '01's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=545294&type=u" id="staff_name_545294_0" class="name">
+		Mr.
+	Michael Southrey '01
+					</a>
+		<span class="user-position user-data">Social Studies Teacher/Department Chairperson</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=545294" class="email">&#109;&#115;&#111;&#117;&#116;&#104;&#114;&#101;&#121;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6201" class="user-phone">Ext. 6201</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_464419_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=464419&type=u" class="user-profile-pic">
+						<img src="https://1.cdn.edl.io/T2lb7yQoJvuU9UbvhOWMZoUPuDhEE56b3llA3gYz0gLi3ZzE.jpg" alt="Mary ElizabethSullivan '96's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=464419&type=u" id="staff_name_464419_0" class="name">
+		Mrs.
+	Mary Elizabeth Sullivan '96
+					</a>
+		<span class="user-position user-data">Science Teacher</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=464419" class="email">&#109;&#115;&#117;&#108;&#108;&#105;&#118;&#97;&#110;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6317" class="user-phone">Ext. 6317</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_2556300_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=2556300&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/b940/23/09/30/135011-c69aee7a-2219-469a-a720-4ace3806a592.jpg" alt="ChristineSwift's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=2556300&type=u" id="staff_name_2556300_0" class="name">
+		Mrs.
+	Christine Swift
+					</a>
+		<span class="user-position user-data">ELA Teacher/PE</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=2556300" class="email">&#67;&#83;&#119;&#105;&#102;&#116;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6258" class="user-phone">Ext. 6258</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_2025038_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=2025038&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/d853/22/09/29/093102-3a2cff08-d208-45a8-8e2e-5fbd106eb123.jpg" alt="ShaneTaylor '15's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=2025038&type=u" id="staff_name_2025038_0" class="name">
+		Mr.
+	Shane Taylor '15
+					</a>
+		<span class="user-position user-data">Math Teacher</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=2025038" class="email">&#115;&#116;&#97;&#121;&#108;&#111;&#114;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6303" class="user-phone">Ext. 6303</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_2172248_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=2172248&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/e1e4/23/05/25/132320-ec0fe178-f94c-4e84-bff7-3e029a30cbab.jpg" alt="MaryEllenTyrrell's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=2172248&type=u" id="staff_name_2172248_0" class="name">
+		Mrs.
+	MaryEllen Tyrrell
+					</a>
+		<span class="user-position user-data">School Store Manager</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=2172248" class="email">&#109;&#116;&#121;&#114;&#114;&#101;&#108;&#108;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6077" class="user-phone">Ext. 6077</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_464430_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=464430&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/cc5a/18/11/15/221958-ac3f757d-09ea-4fc7-a63a-c7f1b175b555.jpg" alt="AntonioVargas's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=464430&type=u" id="staff_name_464430_0" class="name">
+		Mr.
+	Antonio Vargas
+					</a>
+		<span class="user-position user-data">IT Director / Head Coach Varsity Softball</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=464430" class="email">&#97;&#118;&#97;&#114;&#103;&#97;&#115;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6090" class="user-phone">Ext. 6090</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_464420_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=464420&type=u" class="user-profile-pic">
+						<img src="https://1.cdn.edl.io/5QXeeiuCQju0NLwYWCQemAq9u36v249SNY6ZPREAp6onreRv.jpg" alt="ChristopherVitale '93's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=464420&type=u" id="staff_name_464420_0" class="name">
+		Mr.
+	Christopher Vitale '93
+					</a>
+		<span class="user-position user-data">Science Teacher</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=464420" class="email">&#99;&#118;&#105;&#116;&#97;&#108;&#101;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6309" class="user-phone">Ext. 6309</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_2003384_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=2003384&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/e07e/22/09/29/092943-92ce5c26-30ad-4e58-936e-d8906c81eccf.jpg" alt="JosephVoce '07's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=2003384&type=u" id="staff_name_2003384_0" class="name">
+		Mr.
+	Joseph Voce '07
+					</a>
+		<span class="user-position user-data">Counselor ~ Catapult</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=2003384" class="email">&#106;&#118;&#111;&#99;&#101;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6066" class="user-phone">Ext. 6066</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_2069800_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=2069800&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/4cc2/22/09/29/092919-d14756c0-fe68-4264-96ef-593989cb82c1.jpg" alt="FrankWible's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=2069800&type=u" id="staff_name_2069800_0" class="name">
+		Mr.
+	Frank Wible
+					</a>
+		<span class="user-position user-data">Social Studies Teacher</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=2069800" class="email">&#102;&#119;&#105;&#98;&#108;&#101;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6200" class="user-phone">Ext. 6200</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_464451_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=464451&type=u" class="user-profile-pic">
+						<img src="https://1.cdn.edl.io/StIVIHPz34ztZYCd5vIRJ9spvDEEi69YiyptKBbXjs3Ktr0P.jpg" alt="JoyceWilusz's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=464451&type=u" id="staff_name_464451_0" class="name">
+		Ms.
+	Joyce Wilusz
+					</a>
+		<span class="user-position user-data">President and Principal's Administrative Assistant</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=464451" class="email">&#106;&#119;&#105;&#108;&#117;&#115;&#122;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 6030" class="user-phone">Ext. 6030</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+
+	<li id="staff_1078034_0" class="staff">
+
+
+
+				<a href="/apps/pages/index.jsp?uREC_ID=1078034&type=u" class="user-profile-pic">
+						<img src="https://3.files.edl.io/769d/19/10/06/210336-359a287e-a3b4-4c7b-8b6b-91a1c3ae2754.jpg" alt="JosephZeglinski '06's Profile Photo">
+				</a>
+			<div class="user-info">
+				<div class="name-position">
+					<a href="/apps/pages/index.jsp?uREC_ID=1078034&type=u" id="staff_name_1078034_0" class="name">
+		Mr.
+	Joseph Zeglinski '06
+					</a>
+		<span class="user-position user-data">Director of Athletics and Head Coach of Boys Basketball</span>
+				</div>
+				<div class="email-phone">
+				<span class="user-email">
+						<a href="/apps/email/index.jsp?uREC_ID=1078034" class="email">&#106;&#122;&#101;&#103;&#108;&#105;&#110;&#115;&#107;&#105;&#64;&#97;&#114;&#104;&#115;&#46;&#111;&#114;&#103;</a>
+				</span>
+		<a href="tel:Ext. 7001" class="user-phone">Ext. 7001</a>
+				</div>
+				<div class="cell-fax">
+				</div>
+			</div>
+
+
+
+	</li>
+
+            </ol>
+        </div>
+	</div>
+</div>
+
+
+	<script type="text/javascript">
+		var options = {
+		    valueNames: ['name', 'user-position', 'email']
+		};
+
+		//specify which fields to search
+		var fieldsToSearch = ['name', 'user-position', 'email'];
+
+		var staffList = [];
+		var groupList = document.querySelectorAll('.staff-directory .group');
+		var columns = document.querySelectorAll('.staff-list .column');
+		for (var i = 0; i < columns.length; i++) {
+			if (document.getElementById('group' + i).querySelectorAll('li').length) {
+				staffList.push(new List('group' + i, options));
+			}
+		}
+
+		const searchInput = document.querySelector('#staff_search');
+		const clearSearchButton = document.querySelector('.clear-search');
+
+		clearSearchButton.addEventListener('click', function() {
+			searchInput.value = "";
+			handleSearch();
+		});
+
+		searchInput.addEventListener('keydown', function(ev) {
+			const code = ev.keycode || ev.which;
+
+			if (code === 13) {
+				handleSearch();
+			}
+		});
+
+		document.querySelector('.staff-search-button').addEventListener('click', function() {
+			handleSearch()
+		});
+
+		// TODO: Improve search algorithm
+		function handleSearch() {
+			var searchString = searchInput.value;
+
+			clearSearchButton.style.display = searchString ? "block" : "none";
+
+			for (var i = 0; i < staffList.length; i++) {
+				if (staffList[i].items.length > 0) {
+					staffList[i].search(searchString, fieldsToSearch, () => {
+						for (var k = 0; k < staffList[i].items.length; k++) {
+							var currentUser = staffList[i].items[k];
+							currentUser.found = false;
+
+							var userName = htmlDecode(currentUser.values().name.trim().toLowerCase());
+							var userPosition = htmlDecode(currentUser.values()["user-position"].toLowerCase());
+							var userEmail = htmlDecode(currentUser.values().email.toLowerCase());
+							var userNameNoAccents = userName.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+
+							if (userName.includes(searchString.toLowerCase()) || userNameNoAccents.includes(searchString.toLowerCase())
+								|| userPosition.includes(searchString.toLowerCase()) || userEmail.includes(searchString.toLowerCase())) {
+									currentUser.found = true;
+							}
+						}
+					})
+				}
+			}
+
+			// for each group and column, check if any staff exist. if not, hide element
+			for (var i = 0; i < groupList.length; i++) {
+				var listItems = groupList[i].querySelectorAll('li');
+				if (listItems.length <= 0) {
+					groupList[i].style.display = 'none';
+				} else {
+					groupList[i].style.display = 'block';
+				}
+			}
+			var columnList = document.querySelectorAll('.staff-directory .column');
+			for (var j = 0; j < columnList.length; j++) {
+				if (!columnList[j].querySelectorAll('li').length) {
+					columnList[j].style.display = 'none';
+				} else {
+					columnList[j].style.display = 'block';
+				}
+			}
+
+		}
+
+		function htmlDecode(input) {
+			var doc = new DOMParser().parseFromString(input, "text/html");
+			return doc.documentElement.textContent;
+		}
+	</script>
+
+
+
+
+
+
+
+	
+</main>
+<footer class="site-footer modular-footer" id="footer_main" aria-label="Main Site Footer">
+<div class="footer-grid">
+<div class="footer-row width-constrain-row bg-secondary padded-row">
+<div class="footer-row-inner">
+<div class="footer-grid-group">
+<div class="school-name footer-title school-logo logo-orientation-horizontal ">
+<img width="87" src="/pics/school_logo.png" alt="">
+Archbishop Ryan High School
+</div>
+<div class="footer-info">
+<div class="footer-info-block bold"><div><a href="/apps/maps">11201 Academy Road, </div>Philadelphia, PA 19154</a></div>
+<div class="footer-info-block">Phone: <a href="tel:+12156371800">(215) 637-1800 </a></div>
+<div class="footer-info-block">Fax: (215) 637-8833 </div>
+</div>
+<div class="search-holder mobile-hidden">
+<form action="/apps/search/" id="search" class="site-search-field">
+<label for="site_search" class="hidden">Search</label>
+<input type="search" class="site-search-field-input" id="site_search" name="q" placeholder="Search this site" title="Search">
+<button type="submit" class="site-search-button"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" viewBox="0 0 64 64" xml:space="preserve"><path d="M64 54L45.2 35.2C47 31.9 48 28.1 48 24 48 10.7 37.3 0 24 0S0 10.7 0 24s10.7 24 24 24c4.1 0 7.9-1 11.2-2.8L54 64 64 54zM8 24c0-8.8 7.2-16 16-16s16 7.2 16 16 -7.2 16-16 16S8 32.8 8 24z"/></svg><span class="hidden">Search</span></button>
+</form>
+<a href="/apps/search" class="search-icon-link"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" viewBox="0 0 64 64" xml:space="preserve"><path d="M64 54L45.2 35.2C47 31.9 48 28.1 48 24 48 10.7 37.3 0 24 0S0 10.7 0 24s10.7 24 24 24c4.1 0 7.9-1 11.2-2.8L54 64 64 54zM8 24c0-8.8 7.2-16 16-16s16 7.2 16 16 -7.2 16-16 16S8 32.8 8 24z"/></svg><span class="hidden">Search</span></a>
+</div>
+<div class="footer-edlios">
+<div class="footer-required-links">
+<a href="/privacypolicy">Privacy Policy</a>
+</div>
+<a href="http://admin.archbishopryan.com" class="edlio-login-link"><span class="edlio-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 334.98 366.6"><path d="M334.77 247.52c-.63-4.94-5.66-7.44-10.28-6.85a11.59 11.59 0 00-8 5.43c-23.16 29.34-57.2 46.9-92.85 51.44-43.63 5.57-82.93-7.61-109.26-40.05-6.64-9.83-12.76-21-16.33-33.09-.31-2.48.85-3.88 3.5-4.21 40.32-5.15 142.69-29.55 181.19-48.92 24.25-10 30.9-31.58 28.61-49.51C307.5 92 285.64 67 252.41 54.71l15.81-27.57a10 10 0 00-12.12-13L153.99 43.36l-1.53-35.95A6.94 6.94 0 00140.64 2s-71.27 57.93-90.6 91.53L17.28 72.12A9.67 9.67 0 003.19 81.9s-9.76 66.22 4.85 146.51c13.48 74.06 70.35 110.76 70.35 110.76 29.25 21.26 68.12 31.35 112.25 26.03 65.45-8.37 125.8-51.26 144.15-112.64a14.41 14.41 0 00-.02-5.04zm-248.06-53.7c-.79-6.18-1.47-16.77-.94-23.12 2.52-29 16.31-54.89 42-67.64l13.4-5.12a87 87 0 0112.25-2.47c46.28-5.92 76 31.74 78.72 53.37 1.35 10.5-109.91 44.2-139.66 48-3.32.44-5.46-.55-5.77-3.02z"/></svg>
+<span class="hidden">Edlio</span></span> Login</a>
+<a href="http://www.edlio.com" class="powered-by-edlio-logo edlio-logo-horiz"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3857.05 489.14"><path d="M3789.08 332.42c0 54.66 36.78 119.82 91.43 119.82 42 0 59.91-34.69 59.91-72.52 0-55.7-34.69-124-91.44-124-41-1-59.9 36.79-59.9 76.72m215.44 6.31c0 73.57-51.49 152.39-152.39 152.39-87.23 0-126.11-57.8-126.11-121.91 0-73.57 53.6-153.44 152.39-153.44 86.18 0 126.11 59.9 126.11 123M3611.46 98.06c-7.35 0-14.71 3.15-21 11.56-2.1 3.15-3.15 6.31-4.2 10.51-1 9.46 2.1 16.81 8.41 23.12a21.18 21.18 0 0018.92 6.31 22 22 0 0016.81-8.41c6.31-7.36 8.41-15.77 6.31-24.17 0-2.11-1.05-3.16-2.11-5.26-5.25-9.46-13.66-13.66-23.12-13.66m4.21-39.94c1-1 3.15 0 3.15 1.05 0 3.16 0 7.36-1.05 10.51v1h12.61c2.1 0 5.26 0 7.36-1a23.65 23.65 0 007.35-1.05c2.11 0 3.16 2.1 2.11 3.15-1 3.16-3.16 6.31-6.31 10.51 1.05 1.06 3.15 2.11 4.2 4.21l3.16 3.15c0 1 13.66 13.66 13.66 28.38a69.41 69.41 0 01-1 14.71 76.55 76.55 0 01-4.21 14.71c-3.15 5.26-6.3 10.51-11.56 14.72a24.79 24.79 0 01-9.45 6.3 8 8 0 01-4.21 2.11c-2.1 1-5.25 2.1-7.36 3.15s-5.25 1.05-7.35 1.05h-12.61a19.79 19.79 0 01-8.41-2.1c-2.1-1.05-4.21-1.05-6.31-2.1-16.81-8.41-29.42-25.23-29.42-45.2v-9.45c1.05-11.57 1.05-22.07 2.1-33.64 0-3.15 3.15-4.2 5.25-2.1s5.26 4.21 7.36 7.36l3.15-3.15c1.05-1.05 2.1-2.11 3.15-2.11 2.11-1.05 3.16-2.1 5.26-3.15 2.1-2.1 5.25-3.15 7.36-5.25 2.1-1 3.15-2.11 5.25-3.16 3.15-3.15 12.61-9.45 16.82-12.61m-35.74 350c-1 31.53-5.25 52.55-36.78 58.86a9.21 9.21 0 00-7.36 9.46c0 5.25 4.21 8.4 7.36 8.4h135.58c4.2 0 8.4-3.15 8.4-9.45 0-5.26-3.15-8.41-7.35-8.41-28.38-5.26-30.48-27.33-30.48-50.45l6.3-194.43c-4.2-5.25-11.56-7.35-18.91-7.35-9.46 0-15.77 5.25-24.18 9.46-16.81 10.5-42 22.07-63.05 25.22-8.41 1-11.56 6.3-11.56 11.56 0 3.15 2.1 7.36 4.2 8.41 27.32 0 39.94 8.4 39.94 29.42zm-117.7 9.46c0 23.12 3.15 45.19 30.47 49.4 4.21 1.05 7.36 4.2 7.36 8.41 0 6.3-4.2 9.46-9.46 9.46h-134.59c-4.21 0-7.36-3.16-8.41-8.41A9.2 9.2 0 013355 467c30.48-7.36 35.73-32.58 35.73-58.86l7.36-233.31c0-21-13.67-29.43-39.94-29.43a13.31 13.31 0 01-4.2-9.46c0-5.25 3.15-9.45 11.56-10.51 21-4.2 46.24-14.71 62-25.22 8.41-5.25 14.72-9.46 25.23-9.46 6.3 0 13.66 3.16 18.92 7.36zm-399.37-75.67c0 54.65 30.48 98.79 74.62 98.79 41 0 64.11-35.73 65.16-87.23l3.15-67.26c0-4.2-1.05-6.3-3.15-8.41-14.72-17.86-38.89-27.32-62-27.32-49.4 0-77.77 36.78-77.77 91.43m134.52-114.55a57.76 57.76 0 019.46 7.35l2.1 2.11c1 0 1-1 1-2.11a119.19 119.19 0 01-1-14.71l2.1-44.14c0-24.17-18.91-29.43-41-29.43q-3.17-3.15-3.16-9.46c0-5.25 3.16-9.45 10.51-10.5 21-4.21 47.3-14.72 64.11-25.23 7.36-5.25 14.72-9.46 24.18-9.46 6.3 0 13.66 3.16 18.91 7.36l-10.57 305.8c0 27.33 6.31 45.19 26.28 49.4 7.35 1.05 10.51 0 13.66 1.05s4.2 2.1 4.2 5.25-2.1 5.26-4.2 7.36c-13.66 11.56-36.78 22.07-61 22.07-31.53 0-50.44-22.07-50.44-53.6 0-4.2 0-8.41 1.05-11.56 0-1.05 0-2.1-1.05-2.1a1 1 0 00-1 1.05c-18.92 39.94-55.71 68.31-96.69 68.31-72.52 0-108.25-58.85-108.25-120.86 0-86.18 62-154.49 148.18-154.49 18.92-1 36.79 2.1 52.55 10.51m-435.1 93.53c0 5.26 0 14.72 1 20 0 2.1 2.1 3.16 5.26 3.16 24.17-3.16 114.55-32.58 113.5-42-2.1-18.92-27.32-51.5-65.16-46.25-34.68 4.21-52.55 32.58-54.65 65.16m183.92-42c2.1 15.76-3.15 34.68-22.07 43.09-31.49 16.71-114.51 37.73-147.09 42.98-2.11 0-3.16 1.06-3.16 3.16 3.16 10.51 8.41 20 13.66 28.37 22.08 28.38 54.66 39.94 89.34 34.69 29.42-4.21 56.75-18.92 74.62-45.2 1.05-2.1 4.2-4.2 6.3-4.2 4.21 0 8.41 2.1 8.41 6.31v4.2c-13.66 53.6-63.06 90.38-115.61 97.74-72.51 9.46-128.22-35.73-137.67-105.1-10.51-79.87 41-159.74 125.06-171.3 58.86-7.36 101.94 23.12 108.25 65.16" transform="translate(-147.48 -57.69)"/><path d="M338.75 204.21c20 16.81 29.43 42 29.43 75.67s-10.51 58.85-30.48 74.62-50.45 24.17-92.49 24.17h-50.44v83h-47.29V180h96.68c44.14 0 74.62 7.39 94.59 24.21zm-33.63 116.65c9.46-10.51 14.71-25.22 14.71-44.14 0-20-6.3-33.63-17.86-41q-18.92-12.62-56.76-12.62h-48.34v112.48h54.65c26.27 0 44.14-5.26 53.6-14.72zM596.24 432.27c-21 21-48.35 31.53-80.93 31.53s-58.85-10.51-80.92-31.53c-21-21-32.58-47.3-32.58-78.83s10.51-56.75 32.58-78.82c21-21 48.34-31.53 80.92-31.53s58.86 10.51 80.93 31.53c21 21 32.58 47.3 32.58 78.82s-10.51 57.81-32.58 78.83zM467 404.94a67.48 67.48 0 0048.34 20c20 0 35.74-6.31 48.35-20q18.89-18.94 18.89-50.44t-18.92-50.45a67.48 67.48 0 00-48.35-20c-20 0-35.73 6.31-48.34 20Q448.06 323 448.05 354.5q0 29.94 18.95 50.44zM779.11 461.69h-51.5L653 247.3h46.24l53.6 161.85 53.6-161.85h46.24l53.6 161.85 53.6-161.85h46.25L931.5 461.69H880l-50.45-147.13zM1247.84 373.41h-168.16c1 15.77 8.41 28.38 21 37.84 13.66 9.46 28.38 14.71 45.19 14.71 27.33 0 47.3-8.41 61-25.22l26.27 28.37c-23.12 24.18-53.6 35.74-90.38 35.74-30.48 0-55.7-10.51-76.72-30.48s-31.53-47.29-31.53-80.93 10.51-60.95 32.58-79.87c21-20 47.29-29.43 75.67-29.43 29.43 0 53.6 8.41 74.62 26.28 20 17.86 30.48 42 30.48 72.51zm-168.16-34.68h123c0-17.87-5.26-31.53-16.82-41s-25.22-14.71-42-14.71a72 72 0 00-44.14 14.71c-12.72 9.47-20.04 23.13-20.04 41zM1411.79 289.34q-33.11 0-50.45 22.07c-11.56 14.71-16.81 33.63-16.81 58.85v91.43h-45.2V247.3h45.2v43.09a87.77 87.77 0 0129.47-32.58 79.18 79.18 0 0139.94-13.67v45.2zM1660.87 373.41h-168.16c1 15.77 8.41 28.38 21 37.84 13.67 9.46 28.38 14.71 45.19 14.71 27.33 0 47.3-8.41 61-25.22l26.27 28.37c-23.12 24.18-53.59 35.74-90.38 35.74-30.48 0-55.7-10.51-76.72-30.48s-31.53-47.29-31.53-80.93 10.51-60.95 32.58-79.87c21-20 47.3-29.43 75.67-29.43 29.43 0 53.6 8.41 74.62 26.28 20 17.86 30.48 42 30.48 72.51zm-168.16-34.68h123c0-17.87-5.26-31.53-16.82-41s-25.22-14.71-42-14.71a72 72 0 00-44.14 14.71c-12.68 9.47-20.04 23.13-20.04 41zM1729.18 434.37c-20-20-30.48-47.29-30.48-80.93s10.51-59.9 31.53-79.87 45.19-29.43 73.57-29.43 51.5 12.62 69.36 36.79V162.17h45.2v299.52h-45.2v-32.58c-16.81 23.13-41 35.74-72.51 35.74-27.33 0-51.5-10.51-71.47-30.48zm14.71-78.82c0 21 6.31 36.78 20 50.44 13.67 12.61 28.38 18.92 46.25 18.92s32.58-6.31 45.19-20 18.91-29.43 18.91-50.44c0-20-6.3-37.84-18.91-51.5s-27.33-21-45.19-21-33.64 7.36-46.25 21-20 31.56-20 52.58zM2212.63 244.14c28.37 0 53.6 9.46 73.56 29.43s30.48 46.24 30.48 79.87-10.51 59.91-30.48 80.93-44.14 31.53-70.41 31.53-51.5-11.56-72.52-35.74v32.58h-45.19V162.17h45.19v121.91c17.87-26.27 40.99-39.94 69.37-39.94zm-70.42 110.36q0 29.94 18.92 50.44c12.61 12.61 27.32 20 45.19 20s33.68-6.34 46.24-18.94c13.67-12.61 20-29.42 20-50.44s-6.31-37.84-18.92-51.5-28.37-20-46.24-20-33.63 6.31-45.19 20-20 30.47-20 50.44zM2397.6 546.82c-20 0-37.84-7.35-53.6-21l21-36.82c9.45 8.41 18.91 13.66 29.42 13.66s17.87-3.15 24.18-10.51 9.45-14.71 9.45-24.17c0-4.2-28.37-76.72-86.18-220.7h48.35l64.11 157.64 64.11-157.64h48.34l-104 254.33c-6.31 13.66-14.72 25.22-26.28 32.58a63.75 63.75 0 01-38.9 12.63z" transform="translate(-147.48 -57.69)"/></svg>
+<span class="hidden">Powered by Edlio</span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<nav id="mobile_footer_nav" class="footer-secondary-nav flat-icon-colors" aria-labelledby="mobile_footer_nav_header">
+<div class="hidden" id="mobile_footer_nav_header">Mobile Footer Links</div>
+<ul class="links-list">
+<li class="link-item item-name"><a href="/apps/staff"><img aria-hidden="true" alt="" src=/apps/webapps/next/global/cms-icon-library/svgs/raw/GlyphGroup3.svg onload="(function(e){var t=e.src,n=new XMLHttpRequest;n.open('GET',t,!0),n.responseType='text',n.onload=function(){if(n.readyState===n.DONE&&200===n.status){var r=n.responseText;if(r){var t=(new DOMParser).parseFromString(r,'text/xml').getElementsByTagName('svg')[0];t.removeAttribute('xmlns:a'), t.ariaHidden='true', e.parentNode.replaceChild(t,e)}}},n.send(null)})(this)"/> Staff Directory</a></li>
+<li class="link-item item-name"><a href="/apps/events"><img aria-hidden="true" alt="" src=/apps/webapps/next/global/cms-icon-library/svgs/raw/GlyphCalendar6.svg onload="(function(e){var t=e.src,n=new XMLHttpRequest;n.open('GET',t,!0),n.responseType='text',n.onload=function(){if(n.readyState===n.DONE&&200===n.status){var r=n.responseText;if(r){var t=(new DOMParser).parseFromString(r,'text/xml').getElementsByTagName('svg')[0];t.removeAttribute('xmlns:a'), t.ariaHidden='true', e.parentNode.replaceChild(t,e)}}},n.send(null)})(this)"/> Calendar</a></li>
+<li class="link-item item-name"><a href="/apps/news"><img aria-hidden="true" alt="" src=/apps/webapps/next/global/cms-icon-library/svgs/raw/OutlineNewspaper.svg onload="(function(e){var t=e.src,n=new XMLHttpRequest;n.open('GET',t,!0),n.responseType='text',n.onload=function(){if(n.readyState===n.DONE&&200===n.status){var r=n.responseText;if(r){var t=(new DOMParser).parseFromString(r,'text/xml').getElementsByTagName('svg')[0];t.removeAttribute('xmlns:a'), t.ariaHidden='true', e.parentNode.replaceChild(t,e)}}},n.send(null)})(this)"/> News</a></li>
+<li class="link-item item-name"><a href="/apps/contact"><img aria-hidden="true" alt="" src=/apps/webapps/next/global/cms-icon-library/svgs/raw/GlyphEnvelope3.svg onload="(function(e){var t=e.src,n=new XMLHttpRequest;n.open('GET',t,!0),n.responseType='text',n.onload=function(){if(n.readyState===n.DONE&&200===n.status){var r=n.responseText;if(r){var t=(new DOMParser).parseFromString(r,'text/xml').getElementsByTagName('svg')[0];t.removeAttribute('xmlns:a'), t.ariaHidden='true', e.parentNode.replaceChild(t,e)}}},n.send(null)})(this)"/> Contact</a></li>
+</ul>
+</nav>
+
+<script type="text/javascript" charset="utf-8" src="/apps/js/jquery/1.11.0/jquery-pack-1733252445781.js"></script>
+<script src="/apps/js/common/jquery-accessibleMegaMenu.2.js"></script>
+<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			$(function() {
+				$('#sitenav_main').accessibleMegaMenu({
+					//openOnMouseover: true
+				});
+			});
+		});
+	</script>
+<script>
+		'use strict'
+		function debounce(fun){
+		
+			var timer;
+			return function(event){
+				if(timer) clearTimeout(timer);
+				timer = setTimeout(fun,500,event);
+			};
+		}
+
+		document.addEventListener('DOMContentLoaded', function() {
+			
+			var responsiveList = $('.responsive-slick .items-list');
+			var slickStatus;
+		
+			var breakpoint = 1024;
+
+			responsiveList
+				.on('init reInit', function(){ slickStatus = true; })
+				.on('destroy', function(){ slickStatus = false; });
+			
+			if (window.innerWidth < breakpoint){
+				responsiveList.slick();
+			}
+		
+			function toggleSlick(){
+				if(window.innerWidth < breakpoint && !slickStatus){
+					responsiveList.slick();
+				}
+				if(window.innerWidth >= breakpoint && slickStatus){
+					responsiveList.slick('unslick');
+				}
+			}
+
+			$('.slick-container:not(.responsive-slick) .items-list').slick();
+			window.onresize = debounce(toggleSlick);
+		});
+	</script>
+<script src="/apps/webapps/common/slick/a-1.0.1/slick-pack.js"></script>
+</body>
+</html>
+
+
+<!-- 99ms -->

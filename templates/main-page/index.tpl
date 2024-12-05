@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     {include file='constructor/header.tpl'}
-    {assign var='version' value='1.03'}
+    {assign var='version' value='1.21'}
     <link rel="stylesheet" href="/css/index.css?v={$version}">
     <title>ar-time</title>
     <script>

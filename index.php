@@ -86,9 +86,6 @@ else {
 }
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-
 $smarty->assign('navbar', 'universal/navbar.tpl');
-
-
 
 $smarty->display('main-page/index.tpl');
