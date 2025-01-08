@@ -1,8 +1,8 @@
 php_value date.timezone 'America/New_York'
-AddDefaultCharset UTF-8
+
 RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
+AddDefaultCharset UTF-8
 RewriteRule . index.php [L]
 
 <Files ~ "\.(tpl)$">

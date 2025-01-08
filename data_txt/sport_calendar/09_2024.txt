@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <title>Events</title>
+	<link rel="stylesheet" href="/apps/js/events/events.css" type="text/css">
+	<!--[if lt IE 9]>
+		<script src="/apps/js/common/html5shiv-printshiv.js"></script>
+	<![endif]-->
+</head>
+<body class="pff pff-column">
+
+<header id="events_pff_title">
+	<h1><span class="current-month-display">September</span> <span class="current-year-display">2024</span></h1>
+	<ul class="category-list">
+			
+			<li>Athletic Calendar</li>
+			
+	</ul>
+</header>
+
+<div id="calendar_wrapper">
+	<div id="calendar_lower">
+		<div id="events_list">
+
+<ul id="events_list_partial">
+				<li class="event-day empty no-border " id="day-1">
+				<li class="cf event-day  no-border" id="day-2">
+					<div class="day-date-box">
+						<span class="month">Sep</span>
+						<span class="date">2</span>
+						<span class="day">Mon</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/2/17124866/?id=1"
+				aria-label="9/2/2024 - Archbishop Ryan High School FB B JV Home Bonner-Prendergast">
+				Archbishop Ryan High School FB B JV Home Bonner-Prendergast
+			</a>
+		</span>
+
+		<span class="dateloc">
+				3:45 PM
+				<span class="ndash-range"> &ndash; </span>
+					4:45 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="event-day empty no-border " id="day-3">
+				<li class="event-day empty no-border " id="day-4">
+				<li class="cf event-day  " id="day-5">
+					<div class="day-date-box">
+						<span class="month">Sep</span>
+						<span class="date">5</span>
+						<span class="day">Thu</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/5/16735131/?id=1"
+				aria-label="9/5/2024 - Archbishop Ryan High School SOC G V Home Germantown Academy">
+				Archbishop Ryan High School SOC G V Home Germantown Academy
+			</a>
+		</span>
+
+		<span class="dateloc">
+				7 PM
+				<span class="ndash-range"> &ndash; </span>
+					8 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="event-day empty no-border " id="day-6">
+				<li class="event-day empty no-border " id="day-7">
+				<li class="event-day empty no-border " id="day-8">
+				<li class="cf event-day  " id="day-9">
+					<div class="day-date-box">
+						<span class="month">Sep</span>
+						<span class="date">9</span>
+						<span class="day">Mon</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/9/16651284/?id=1"
+				aria-label="9/9/2024 - Archbishop Ryan High School FH G V Home Northeast High School">
+				Archbishop Ryan High School FH G V Home Northeast High School
+			</a>
+		</span>
+
+		<span class="dateloc">
+				3:45 PM
+				<span class="ndash-range"> &ndash; </span>
+					4:45 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/9/17124867/?id=1"
+				aria-label="9/9/2024 - Archbishop Ryan High School FB B JV Away Cardinal O'Hara">
+				Archbishop Ryan High School FB B JV Away Cardinal O'Hara
+			</a>
+		</span>
+
+		<span class="dateloc">
+				7 PM
+				<span class="ndash-range"> &ndash; </span>
+					8 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/9/16735132/?id=1"
+				aria-label="9/9/2024 - Archbishop Ryan High School SOC G V Home Nazareth Academy HS">
+				Archbishop Ryan High School SOC G V Home Nazareth Academy HS
+			</a>
+		</span>
+
+		<span class="dateloc">
+				7 PM
+				<span class="ndash-range"> &ndash; </span>
+					8 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="event-day empty no-border " id="day-10">
+				<li class="cf event-day  " id="day-11">
+					<div class="day-date-box">
+						<span class="month">Sep</span>
+						<span class="date">11</span>
+						<span class="day">Wed</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/11/16809511/?id=1"
+				aria-label="9/11/2024 - Archbishop Ryan High School XC B V Away PCL #1">
+				Archbishop Ryan High School XC B V Away PCL #1
+			</a>
+		</span>
+
+		<span class="dateloc">
+				3 PM
+				<span class="ndash-range"> &ndash; </span>
+					4 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="event-day empty no-border " id="day-12">
+				<li class="event-day empty no-border " id="day-13">
+				<li class="cf event-day  " id="day-14">
+					<div class="day-date-box">
+						<span class="month">Sep</span>
+						<span class="date">14</span>
+						<span class="day">Sat</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/14/16651303/?id=1"
+				aria-label="9/14/2024 - Archbishop Ryan High School FB B V Away West Catholic Prep High School (South Philly SuperSite )">
+				Archbishop Ryan High School FB B V Away West Catholic Prep High School (South Philly SuperSite )
+			</a>
+		</span>
+
+		<span class="dateloc">
+				1 PM
+				<span class="ndash-range"> &ndash; </span>
+					2 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/14/16651274/?id=1"
+				aria-label="9/14/2024 - Archbishop Ryan High School SOC B V Away St. Joe's Prep (@RAMP )">
+				Archbishop Ryan High School SOC B V Away St. Joe's Prep (@RAMP )
+			</a>
+		</span>
+
+		<span class="dateloc">
+				1 PM
+				<span class="ndash-range"> &ndash; </span>
+					2 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="event-day empty no-border " id="day-15">
+				<li class="event-day empty no-border " id="day-16">
+				<li class="event-day empty no-border " id="day-17">
+				<li class="cf event-day  " id="day-18">
+					<div class="day-date-box">
+						<span class="month">Sep</span>
+						<span class="date">18</span>
+						<span class="day">Wed</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/18/16809512/?id=1"
+				aria-label="9/18/2024 - Archbishop Ryan High School XC B V Away OPEN (PCL #2)">
+				Archbishop Ryan High School XC B V Away OPEN (PCL #2)
+			</a>
+		</span>
+
+		<span class="dateloc">
+				3 PM
+				<span class="ndash-range"> &ndash; </span>
+					4 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/18/16651287/?id=1"
+				aria-label="9/18/2024 - Archbishop Ryan High School FH G V Home Conwell Egan Catholic High School">
+				Archbishop Ryan High School FH G V Home Conwell Egan Catholic High School
+			</a>
+		</span>
+
+		<span class="dateloc">
+				3:45 PM
+				<span class="ndash-range"> &ndash; </span>
+					4:45 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-19">
+					<div class="day-date-box">
+						<span class="month">Sep</span>
+						<span class="date">19</span>
+						<span class="day">Thu</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/19/16809521/?id=1"
+				aria-label="9/19/2024 - Archbishop Ryan High School TN G V Away Cardinal O'Hara">
+				Archbishop Ryan High School TN G V Away Cardinal O'Hara
+			</a>
+		</span>
+
+		<span class="dateloc">
+				3:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					4:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/19/16651253/?id=1"
+				aria-label="9/19/2024 - Archbishop Ryan High School VB G V Away Cardinal O'Hara">
+				Archbishop Ryan High School VB G V Away Cardinal O'Hara
+			</a>
+		</span>
+
+		<span class="dateloc">
+				5:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					6:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/19/16735136/?id=1"
+				aria-label="9/19/2024 - Archbishop Ryan High School SOC G V Home Conwell Egan Catholic High School">
+				Archbishop Ryan High School SOC G V Home Conwell Egan Catholic High School
+			</a>
+		</span>
+
+		<span class="dateloc">
+				7 PM
+				<span class="ndash-range"> &ndash; </span>
+					8 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="event-day empty no-border " id="day-20">
+				<li class="cf event-day  " id="day-21">
+					<div class="day-date-box">
+						<span class="month">Sep</span>
+						<span class="date">21</span>
+						<span class="day">Sat</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/21/16651297/?id=1"
+				aria-label="9/21/2024 - Archbishop Ryan High School FB B V Home Archbishop John Carroll High School">
+				Archbishop Ryan High School FB B V Home Archbishop John Carroll High School
+			</a>
+		</span>
+
+		<span class="dateloc">
+				6 PM
+				<span class="ndash-range"> &ndash; </span>
+					7 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="event-day empty no-border " id="day-22">
+				<li class="cf event-day  " id="day-23">
+					<div class="day-date-box">
+						<span class="month">Sep</span>
+						<span class="date">23</span>
+						<span class="day">Mon</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/23/17124869/?id=1"
+				aria-label="9/23/2024 - Archbishop Ryan High School FB B JV Away Archbishop John Carroll High School">
+				Archbishop Ryan High School FB B JV Away Archbishop John Carroll High School
+			</a>
+		</span>
+
+		<span class="dateloc">
+				3:45 PM
+				<span class="ndash-range"> &ndash; </span>
+					4:45 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/23/16735137/?id=1"
+				aria-label="9/23/2024 - Archbishop Ryan High School SOC G V Away Cardinal O'Hara">
+				Archbishop Ryan High School SOC G V Away Cardinal O'Hara
+			</a>
+		</span>
+
+		<span class="dateloc">
+				3:45 PM
+				<span class="ndash-range"> &ndash; </span>
+					4:45 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/23/16651288/?id=1"
+				aria-label="9/23/2024 - Archbishop Ryan High School FH G V Home Cardinal O'Hara">
+				Archbishop Ryan High School FH G V Home Cardinal O'Hara
+			</a>
+		</span>
+
+		<span class="dateloc">
+				5 PM
+				<span class="ndash-range"> &ndash; </span>
+					6 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-24">
+					<div class="day-date-box">
+						<span class="month">Sep</span>
+						<span class="date">24</span>
+						<span class="day">Tue</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/24/16809522/?id=1"
+				aria-label="9/24/2024 - Archbishop Ryan High School TN G V Home Bonner-Prendergast">
+				Archbishop Ryan High School TN G V Home Bonner-Prendergast
+			</a>
+		</span>
+
+		<span class="dateloc">
+				3:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					4:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/24/16651254/?id=1"
+				aria-label="9/24/2024 - Archbishop Ryan High School VB G V Home Archbishop Wood High School">
+				Archbishop Ryan High School VB G V Home Archbishop Wood High School
+			</a>
+		</span>
+
+		<span class="dateloc">
+				5:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					6:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/24/17622734/?id=1"
+				aria-label="9/24/2024 - Archbishop Ryan High School SOC B V Home William Penn Charter School">
+				Archbishop Ryan High School SOC B V Home William Penn Charter School
+			</a>
+		</span>
+
+		<span class="dateloc">
+				7 PM
+				<span class="ndash-range"> &ndash; </span>
+					8 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="event-day empty no-border " id="day-25">
+				<li class="cf event-day  " id="day-26">
+					<div class="day-date-box">
+						<span class="month">Sep</span>
+						<span class="date">26</span>
+						<span class="day">Thu</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/26/16809523/?id=1"
+				aria-label="9/26/2024 - Archbishop Ryan High School TN G V Away Nazareth Academy HS">
+				Archbishop Ryan High School TN G V Away Nazareth Academy HS
+			</a>
+		</span>
+
+		<span class="dateloc">
+				3:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					4:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/26/16651255/?id=1"
+				aria-label="9/26/2024 - Archbishop Ryan High School VB G V Home Bonner-Prendergast">
+				Archbishop Ryan High School VB G V Home Bonner-Prendergast
+			</a>
+		</span>
+
+		<span class="dateloc">
+				5 PM
+				<span class="ndash-range"> &ndash; </span>
+					6 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-27">
+					<div class="day-date-box">
+						<span class="month">Sep</span>
+						<span class="date">27</span>
+						<span class="day">Fri</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/27/16651277/?id=1"
+				aria-label="9/27/2024 - Archbishop Ryan High School SOC B V Away Roman Catholic High School">
+				Archbishop Ryan High School SOC B V Away Roman Catholic High School
+			</a>
+		</span>
+
+		<span class="dateloc">
+				7 PM
+				<span class="ndash-range"> &ndash; </span>
+					8 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/27/16735138/?id=1"
+				aria-label="9/27/2024 - Archbishop Ryan High School SOC G V Away Archbishop Wood High School (@UKIES )">
+				Archbishop Ryan High School SOC G V Away Archbishop Wood High School (@UKIES )
+			</a>
+		</span>
+
+		<span class="dateloc">
+				7 PM
+				<span class="ndash-range"> &ndash; </span>
+					8 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-28">
+					<div class="day-date-box">
+						<span class="month">Sep</span>
+						<span class="date">28</span>
+						<span class="day">Sat</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/28/16651301/?id=1"
+				aria-label="9/28/2024 - Archbishop Ryan High School FB B V Away Conwell Egan Catholic High School">
+				Archbishop Ryan High School FB B V Away Conwell Egan Catholic High School
+			</a>
+		</span>
+
+		<span class="dateloc">
+				2 PM
+				<span class="ndash-range"> &ndash; </span>
+					3 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="event-day empty no-border " id="day-29">
+				<li class="event-day empty no-border " id="day-30">
+</ul>
+
+
+		</div>
+	</div> 
+</div>
+
+<footer id="events_pff_footer" class="pff">
+	<p><strong>http://www.archbishopryan.com</strong></p>
+
+	<p>
+		Archbishop Ryan High School
+		<br>
+		11201 Academy Road,&nbsp;Philadelphia,&nbsp;PA&nbsp;19154
+		<br>
+		Phone: (215) 637-1800 | Fax: (215) 637-8833
+	</p>
+</footer>
+
+</body>

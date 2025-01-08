@@ -27,7 +27,7 @@
 <script src="/libs/bootstrap/js/bootstrap.bundle.js?v={$hVersion}"></script>
 
 <!-- MONSTER -->
-<link rel="stylesheet" href="/css/monster.css?v={$hVersion}">
+<link rel="stylesheet" href="/legacy/css/monster.css?v={$hVersion}">
 
 <!-- Bar Icon -->
 <link rel="icon" type="image/x-icon" href="/img/website-icons/ar-time-bar-icon.png?v={$hVersion}">

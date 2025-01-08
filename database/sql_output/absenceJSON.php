@@ -1,8 +1,10 @@
 <?php
 // OLD
+use App\Services\DBConnection;
+
 date_default_timezone_set('America/New_York');
 include_once __DIR__ . '/../../app/app.php';
-$pdo = App::getPDO();
+$pdo = DBConnection::getPDO();
 $query = 'SELECT `doc_json`, `doc_md5`, `doc_time_version` FROM `absence`';
 $statement = $pdo->prepare($query);
 $statement->execute();

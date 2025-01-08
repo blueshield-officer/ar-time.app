@@ -1,4 +1,7 @@
 <?php
+
+use App\Services\DBConnection;
+
 if ($_GET['au7hEfudnhUUy8'] !== '667a4af374347aaebc6d04d8572fbb85250cf8b51c773f3f8dc8b4be867a9a02'){
     die();
 }
@@ -11,7 +14,7 @@ class Absences
     public function __construct()
     {
         include __DIR__ . '/../../app/app.php';
-        $this->pdo = App::getPDO();
+        $this->pdo = DBConnection::getPDO();
 
 
         $this->data = [

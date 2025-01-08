@@ -1,0 +1,1775 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <title>Events</title>
+	<link rel="stylesheet" href="/apps/js/events/events.css" type="text/css">
+	<!--[if lt IE 9]>
+		<script src="/apps/js/common/html5shiv-printshiv.js"></script>
+	<![endif]-->
+</head>
+<body class="pff pff-column">
+
+<header id="events_pff_title">
+	<h1><span class="current-month-display">October</span> <span class="current-year-display">2024</span></h1>
+	<ul class="category-list">
+			<li>Events</li>
+			
+			
+	</ul>
+</header>
+
+<div id="calendar_wrapper">
+	<div id="calendar_lower">
+		<div id="events_list">
+
+<ul id="events_list_partial">
+				<li class="cf event-day  no-border" id="day-1">
+					<div class="day-date-box">
+						<span class="month">Oct</span>
+						<span class="date">1</span>
+						<span class="day">Tue</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/1/17242906/?id=0"
+				aria-label="10/1/2024 - *A Schedule - Day 5">
+				*A Schedule - Day 5
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/1/16221867/?id=0"
+				aria-label="10/1/2024 - Ambassador Installation">
+				Ambassador Installation
+			</a>
+		</span>
+
+		<span class="dateloc">
+				6 PM
+				<span class="ndash-range"> &ndash; </span>
+					6:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-2">
+					<div class="day-date-box">
+						<span class="month">Oct</span>
+						<span class="date">2</span>
+						<span class="day">Wed</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/2/17242910/?id=0"
+				aria-label="10/2/2024 - *A Schedule - Day 6">
+				*A Schedule - Day 6
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/2/17588231/?id=0"
+				aria-label="10/2/2024 - Minute Clinic with Anthony Dunn">
+				Minute Clinic with Anthony Dunn
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/2/16221955/?id=0"
+				aria-label="10/2/2024 - Academic Board Meeting">
+				Academic Board Meeting
+			</a>
+		</span>
+
+		<span class="dateloc">
+				2:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					3 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/2/16411312/?id=0"
+				aria-label="10/2/2024 - OCE New Teacher Orientation (Elementary)">
+				OCE New Teacher Orientation (Elementary)
+			</a>
+		</span>
+
+		<span class="dateloc">
+				4 PM
+				<span class="ndash-range"> &ndash; </span>
+					7 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-3">
+					<div class="day-date-box">
+						<span class="month">Oct</span>
+						<span class="date">3</span>
+						<span class="day">Thu</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/3/17645451/?id=0"
+				aria-label="10/3/2024 - *A Schedule - Day 1">
+				*A Schedule - Day 1
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/3/16221871/?id=0"
+				aria-label="10/3/2024 - Donor Appreciation Night">
+				Donor Appreciation Night
+			</a>
+		</span>
+
+		<span class="dateloc">
+				6 PM
+				<span class="ndash-range"> &ndash; </span>
+					6:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-4">
+					<div class="day-date-box">
+						<span class="month">Oct</span>
+						<span class="date">4</span>
+						<span class="day">Fri</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/4/16221874/?id=0"
+				aria-label="10/4/2024 - *Special Schedule - Day 2">
+				*Special Schedule - Day 2
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/4/16221873/?id=0"
+				aria-label="10/4/2024 - Patron's Day ">
+				Patron's Day 
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/4/16221890/?id=0"
+				aria-label="10/4/2024 - Class of 1994 Reunion">
+				Class of 1994 Reunion
+			</a>
+		</span>
+
+		<span class="dateloc">
+				7 PM
+				<span class="ndash-range"> &ndash; </span>
+					7:30 PM
+			(Philadelphia Quartett Club, 1075 Southampton Rd, Philadelphia, PA 19116, USA)
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-5">
+					<div class="day-date-box">
+						<span class="month">Oct</span>
+						<span class="date">5</span>
+						<span class="day">Sat</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/5/16221884/?id=0"
+				aria-label="10/5/2024 - SAT Digital Testing">
+				SAT Digital Testing
+			</a>
+		</span>
+
+		<span class="dateloc">
+				7:30 AM
+				<span class="ndash-range"> &ndash; </span>
+					11 AM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-6">
+					<div class="day-date-box">
+						<span class="month">Oct</span>
+						<span class="date">6</span>
+						<span class="day">Sun</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/6/16221877/?id=0"
+				aria-label="10/6/2024 - High School Placement Scholarship Test">
+				High School Placement Scholarship Test
+			</a>
+		</span>
+
+		<span class="dateloc">
+				12:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					1 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/6/16221879/?id=0"
+				aria-label="10/6/2024 - FACTS Financial Aid Parent Presentation">
+				FACTS Financial Aid Parent Presentation
+			</a>
+		</span>
+
+		<span class="dateloc">
+				1 PM
+				<span class="ndash-range"> &ndash; </span>
+					1:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-7">
+					<div class="day-date-box">
+						<span class="month">Oct</span>
+						<span class="date">7</span>
+						<span class="day">Mon</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/7/17652180/?id=0"
+				aria-label="10/7/2024 - *A Schedule - Day 2">
+				*A Schedule - Day 2
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/7/16295739/?id=0"
+				aria-label="10/7/2024 - Varsity Mathletes Competition">
+				Varsity Mathletes Competition
+			</a>
+		</span>
+
+		<span class="dateloc">
+				2:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					4 PM
+			(N102)
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-8">
+					<div class="day-date-box">
+						<span class="month">Oct</span>
+						<span class="date">8</span>
+						<span class="day">Tue</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/8/17652183/?id=0"
+				aria-label="10/8/2024 - *A Schedule - Day 3">
+				*A Schedule - Day 3
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/8/16221969/?id=0"
+				aria-label="10/8/2024 - Red Cross Blood Drive">
+				Red Cross Blood Drive
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/8/16221960/?id=0"
+				aria-label="10/8/2024 - Progress Reports Due">
+				Progress Reports Due
+			</a>
+		</span>
+
+		<span class="dateloc">
+				8 AM
+				<span class="ndash-range"> &ndash; </span>
+					8:30 AM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/8/16322354/?id=0"
+				aria-label="10/8/2024 - RHO Kappa Officers Meeting">
+				RHO Kappa Officers Meeting
+			</a>
+		</span>
+
+		<span class="dateloc">
+				2:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					3:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-9">
+					<div class="day-date-box">
+						<span class="month">Oct</span>
+						<span class="date">9</span>
+						<span class="day">Wed</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/9/17652187/?id=0"
+				aria-label="10/9/2024 - *A Schedule - Day 4">
+				*A Schedule - Day 4
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/9/16221956/?id=0"
+				aria-label="10/9/2024 - Department Meeting">
+				Department Meeting
+			</a>
+		</span>
+
+		<span class="dateloc">
+				2:40 PM
+				<span class="ndash-range"> &ndash; </span>
+					3:10 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-10">
+					<div class="day-date-box">
+						<span class="month">Oct</span>
+						<span class="date">10</span>
+						<span class="day">Thu</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/10/17652197/?id=0"
+				aria-label="10/10/2024 - *A Schedule - Day 5">
+				*A Schedule - Day 5
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/10/16221888/?id=0"
+				aria-label="10/10/2024 - HSPT Scholarship Test">
+				HSPT Scholarship Test
+			</a>
+		</span>
+
+		<span class="dateloc">
+				4 PM
+				<span class="ndash-range"> &ndash; </span>
+					4:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-11">
+					<div class="day-date-box">
+						<span class="month">Oct</span>
+						<span class="date">11</span>
+						<span class="day">Fri</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/11/17652202/?id=0"
+				aria-label="10/11/2024 - *Pep Rally Schedule - Day 6">
+				*Pep Rally Schedule - Day 6
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/11/16222178/?id=0"
+				aria-label="10/11/2024 - Fall Pep Rally">
+				Fall Pep Rally
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/11/17318500/?id=0"
+				aria-label="10/11/2024 - Youth Cheer Clinic">
+				Youth Cheer Clinic
+			</a>
+		</span>
+
+		<span class="dateloc">
+				5 PM
+				<span class="ndash-range"> &ndash; </span>
+					10 PM
+			(South Cafeteria)
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-12">
+					<div class="day-date-box">
+						<span class="month">Oct</span>
+						<span class="date">12</span>
+						<span class="day">Sat</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/12/16221962/?id=0"
+				aria-label="10/12/2024 - Volleyball Ryan Rumble">
+				Volleyball Ryan Rumble
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/12/16221965/?id=0"
+				aria-label="10/12/2024 - Business Academy BINGO">
+				Business Academy BINGO
+			</a>
+		</span>
+
+		<span class="dateloc">
+				6:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					11 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="event-day empty no-border " id="day-13">
+				<li class="cf event-day  " id="day-14">
+					<div class="day-date-box">
+						<span class="month">Oct</span>
+						<span class="date">14</span>
+						<span class="day">Mon</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/14/17725746/?id=0"
+				aria-label="10/14/2024 - *A Schedule - Day 1">
+				*A Schedule - Day 1
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/14/16231677/?id=0"
+				aria-label="10/14/2024 - Digital Citizenship Week">
+				Digital Citizenship Week
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/14/16295736/?id=0"
+				aria-label="10/14/2024 - Varsity Mathletes Practice">
+				Varsity Mathletes Practice
+			</a>
+		</span>
+
+		<span class="dateloc">
+				2:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					4 PM
+			(N102)
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/14/16740099/?id=0"
+				aria-label="10/14/2024 - AHA Bake Sale">
+				AHA Bake Sale
+			</a>
+		</span>
+
+		<span class="dateloc">
+				3:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					4:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-15">
+					<div class="day-date-box">
+						<span class="month">Oct</span>
+						<span class="date">15</span>
+						<span class="day">Tue</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/15/17725749/?id=0"
+				aria-label="10/15/2024 - *A Schedule - Day 2">
+				*A Schedule - Day 2
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/15/16231677/?id=0"
+				aria-label="10/15/2024 - Digital Citizenship Week">
+				Digital Citizenship Week
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/15/16322395/?id=0"
+				aria-label="10/15/2024 - RHO Kappa General Membership Meeting">
+				RHO Kappa General Membership Meeting
+			</a>
+		</span>
+
+		<span class="dateloc">
+				2:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					3:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/15/16415073/?id=0"
+				aria-label="10/15/2024 - Tri-M Meeting">
+				Tri-M Meeting
+			</a>
+		</span>
+
+		<span class="dateloc">
+				2:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					3:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/15/16740099/?id=0"
+				aria-label="10/15/2024 - AHA Bake Sale">
+				AHA Bake Sale
+			</a>
+		</span>
+
+		<span class="dateloc">
+				3:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					4:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-16">
+					<div class="day-date-box">
+						<span class="month">Oct</span>
+						<span class="date">16</span>
+						<span class="day">Wed</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/16/16221958/?id=0"
+				aria-label="10/16/2024 - *E Schedule - Day 3">
+				*E Schedule - Day 3
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/16/16231677/?id=0"
+				aria-label="10/16/2024 - Digital Citizenship Week">
+				Digital Citizenship Week
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/16/16221957/?id=0"
+				aria-label="10/16/2024 - Faculty Meeting">
+				Faculty Meeting
+			</a>
+		</span>
+
+		<span class="dateloc">
+				1:45 PM
+				<span class="ndash-range"> &ndash; </span>
+					2:15 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/16/16740099/?id=0"
+				aria-label="10/16/2024 - AHA Bake Sale">
+				AHA Bake Sale
+			</a>
+		</span>
+
+		<span class="dateloc">
+				3:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					4:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/16/16221967/?id=0"
+				aria-label="10/16/2024 - Regional College Fair">
+				Regional College Fair
+			</a>
+		</span>
+
+		<span class="dateloc">
+				6 PM
+				<span class="ndash-range"> &ndash; </span>
+					6:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-17">
+					<div class="day-date-box">
+						<span class="month">Oct</span>
+						<span class="date">17</span>
+						<span class="day">Thu</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/17/17725750/?id=0"
+				aria-label="10/17/2024 - *A Schedule - Day 4">
+				*A Schedule - Day 4
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/17/16231677/?id=0"
+				aria-label="10/17/2024 - Digital Citizenship Week">
+				Digital Citizenship Week
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/17/16322122/?id=0"
+				aria-label="10/17/2024 - NHS General Membership Meeting">
+				NHS General Membership Meeting
+			</a>
+		</span>
+
+		<span class="dateloc">
+				2:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					3:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/17/16740099/?id=0"
+				aria-label="10/17/2024 - AHA Bake Sale">
+				AHA Bake Sale
+			</a>
+		</span>
+
+		<span class="dateloc">
+				3:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					4:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-18">
+					<div class="day-date-box">
+						<span class="month">Oct</span>
+						<span class="date">18</span>
+						<span class="day">Fri</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/18/17725752/?id=0"
+				aria-label="10/18/2024 - *H Schedule - Day 5">
+				*H Schedule - Day 5
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/18/16231677/?id=0"
+				aria-label="10/18/2024 - Digital Citizenship Week">
+				Digital Citizenship Week
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/18/16740099/?id=0"
+				aria-label="10/18/2024 - AHA Bake Sale">
+				AHA Bake Sale
+			</a>
+		</span>
+
+		<span class="dateloc">
+				3:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					4:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="event-day empty no-border " id="day-19">
+				<li class="event-day empty no-border " id="day-20">
+				<li class="cf event-day  " id="day-21">
+					<div class="day-date-box">
+						<span class="month">Oct</span>
+						<span class="date">21</span>
+						<span class="day">Mon</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/21/17725753/?id=0"
+				aria-label="10/21/2024 - *A Schedule - Day 6">
+				*A Schedule - Day 6
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/21/16221896/?id=0"
+				aria-label="10/21/2024 - AR EITC Golf Outing ">
+				AR EITC Golf Outing 
+			</a>
+		</span>
+
+		<span class="dateloc">
+			(The Union League Golf Club at Torresdale, 3801 Grant Ave, Philadelphia, PA 19114, USA)
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/21/16295736/?id=0"
+				aria-label="10/21/2024 - Varsity Mathletes Practice">
+				Varsity Mathletes Practice
+			</a>
+		</span>
+
+		<span class="dateloc">
+				2:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					4 PM
+			(N102)
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-22">
+					<div class="day-date-box">
+						<span class="month">Oct</span>
+						<span class="date">22</span>
+						<span class="day">Tue</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/22/17727572/?id=0"
+				aria-label="10/22/2024 - *E Schedule - Day 1">
+				*E Schedule - Day 1
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/22/16221933/?id=0"
+				aria-label="10/22/2024 - Fall Open House">
+				Fall Open House
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/22/16221949/?id=0"
+				aria-label="10/22/2024 - No Practices After 4:00 PM">
+				No Practices After 4:00 PM
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-23">
+					<div class="day-date-box">
+						<span class="month">Oct</span>
+						<span class="date">23</span>
+						<span class="day">Wed</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/23/16221924/?id=0"
+				aria-label="10/23/2024 - *PSAT Testing - Special Schedule">
+				*PSAT Testing - Special Schedule
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/23/16221925/?id=0"
+				aria-label="10/23/2024 - No Classes - Grade 12">
+				No Classes - Grade 12
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/23/15929973/?id=0"
+				aria-label="10/23/2024 - Senior Portrait Pose Due">
+				Senior Portrait Pose Due
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-24">
+					<div class="day-date-box">
+						<span class="month">Oct</span>
+						<span class="date">24</span>
+						<span class="day">Thu</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/24/17727550/?id=0"
+				aria-label="10/24/2024 - *A Schedule - Day 2">
+				*A Schedule - Day 2
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/24/16322131/?id=0"
+				aria-label="10/24/2024 - NHS Bake Sale">
+				NHS Bake Sale
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/24/17378448/?id=0"
+				aria-label="10/24/2024 - Shop Rite Flu Clinic">
+				Shop Rite Flu Clinic
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/24/17497010/?id=0"
+				aria-label="10/24/2024 - Underclassmen Retakes">
+				Underclassmen Retakes
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-25">
+					<div class="day-date-box">
+						<span class="month">Oct</span>
+						<span class="date">25</span>
+						<span class="day">Fri</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/25/17727551/?id=0"
+				aria-label="10/25/2024 - *A Schedule - Day 3">
+				*A Schedule - Day 3
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/25/16322131/?id=0"
+				aria-label="10/25/2024 - NHS Bake Sale">
+				NHS Bake Sale
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="event-day empty no-border " id="day-26">
+				<li class="event-day empty no-border " id="day-27">
+				<li class="cf event-day  " id="day-28">
+					<div class="day-date-box">
+						<span class="month">Oct</span>
+						<span class="date">28</span>
+						<span class="day">Mon</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/28/16222061/?id=0"
+				aria-label="10/28/2024 - *A Schedule - Day 4">
+				*A Schedule - Day 4
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/28/16322131/?id=0"
+				aria-label="10/28/2024 - NHS Bake Sale">
+				NHS Bake Sale
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/28/16295736/?id=0"
+				aria-label="10/28/2024 - Varsity Mathletes Practice">
+				Varsity Mathletes Practice
+			</a>
+		</span>
+
+		<span class="dateloc">
+				2:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					4 PM
+			(N102)
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-29">
+					<div class="day-date-box">
+						<span class="month">Oct</span>
+						<span class="date">29</span>
+						<span class="day">Tue</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/29/16222059/?id=0"
+				aria-label="10/29/2024 - *A Schedule - Day 5">
+				*A Schedule - Day 5
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/29/16322131/?id=0"
+				aria-label="10/29/2024 - NHS Bake Sale">
+				NHS Bake Sale
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-30">
+					<div class="day-date-box">
+						<span class="month">Oct</span>
+						<span class="date">30</span>
+						<span class="day">Wed</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/30/16222058/?id=0"
+				aria-label="10/30/2024 - *A Schedule - Day 6">
+				*A Schedule - Day 6
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/30/16322131/?id=0"
+				aria-label="10/30/2024 - NHS Bake Sale">
+				NHS Bake Sale
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-31">
+					<div class="day-date-box">
+						<span class="month">Oct</span>
+						<span class="date">31</span>
+						<span class="day">Thu</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/31/16222057/?id=0"
+				aria-label="10/31/2024 - *Special Schedule - Day 1">
+				*Special Schedule - Day 1
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/10/31/16221939/?id=0"
+				aria-label="10/31/2024 - Halloween Costume Contest">
+				Halloween Costume Contest
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+</ul>
+
+
+		</div>
+	</div> 
+</div>
+
+<footer id="events_pff_footer" class="pff">
+	<p><strong>http://www.archbishopryan.com</strong></p>
+
+	<p>
+		Archbishop Ryan High School
+		<br>
+		11201 Academy Road,&nbsp;Philadelphia,&nbsp;PA&nbsp;19154
+		<br>
+		Phone: (215) 637-1800 | Fax: (215) 637-8833
+	</p>
+</footer>
+
+</body>

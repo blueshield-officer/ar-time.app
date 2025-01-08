@@ -1,4 +1,7 @@
 <?php
+
+use App\Services\DBConnection;
+
 require __DIR__ . '/../../libs/simplehtmldom/simple_html_dom.php';
 function loadData()
 {
@@ -116,5 +119,5 @@ function classesSQL($pdo, $bellsData)
 
 if (defined('STDIN')) {
     require __DIR__ . '/../../app/app.php';
-    classesSQL(App::getPDO(), $bellsData);
+    classesSQL(DBConnection::getPDO(), $bellsData);
 }

@@ -1,4 +1,7 @@
 <?php
+
+use App\Services\DBConnection;
+
 if ($_GET['au7hEfudnhUUy8'] !== '667a4af374347aaebc6d04d8572fbb85250cf8b51c773f3f8dc8b4be867a9a02'){
     die();
 }
@@ -282,4 +285,4 @@ $year = (int)date('Y');
 
 $dateArray = starterFunction(calendarHTML($month, $year), $day, $month, $year);
 
-classesSQL(App::getPDO(), $dateArray);
+classesSQL(DBConnection::getPDO(), $dateArray);

@@ -1,0 +1,1462 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <title>Events</title>
+	<link rel="stylesheet" href="/apps/js/events/events.css" type="text/css">
+	<!--[if lt IE 9]>
+		<script src="/apps/js/common/html5shiv-printshiv.js"></script>
+	<![endif]-->
+</head>
+<body class="pff pff-column">
+
+<header id="events_pff_title">
+	<h1><span class="current-month-display">September</span> <span class="current-year-display">2024</span></h1>
+	<ul class="category-list">
+			<li>Events</li>
+			
+			
+	</ul>
+</header>
+
+<div id="calendar_wrapper">
+	<div id="calendar_lower">
+		<div id="events_list">
+
+<ul id="events_list_partial">
+				<li class="event-day empty no-border " id="day-1">
+				<li class="cf event-day  no-border" id="day-2">
+					<div class="day-date-box">
+						<span class="month">Sep</span>
+						<span class="date">2</span>
+						<span class="day">Mon</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/2/15648072/?id=0"
+				aria-label="9/2/2024 - Labor Day">
+				Labor Day
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-3">
+					<div class="day-date-box">
+						<span class="month">Sep</span>
+						<span class="date">3</span>
+						<span class="day">Tue</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/3/16221826/?id=0"
+				aria-label="9/3/2024 - Faculty Organization Day">
+				Faculty Organization Day
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/3/16221795/?id=0"
+				aria-label="9/3/2024 - Freshman Orientation">
+				Freshman Orientation
+			</a>
+		</span>
+
+		<span class="dateloc">
+				5 PM
+				<span class="ndash-range"> &ndash; </span>
+					7:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-4">
+					<div class="day-date-box">
+						<span class="month">Sep</span>
+						<span class="date">4</span>
+						<span class="day">Wed</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/4/16574233/?id=0"
+				aria-label="9/4/2024 - *Special Schedule - Day 1">
+				*Special Schedule - Day 1
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/4/16221828/?id=0"
+				aria-label="9/4/2024 - Grade 9 Reports">
+				Grade 9 Reports
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-5">
+					<div class="day-date-box">
+						<span class="month">Sep</span>
+						<span class="date">5</span>
+						<span class="day">Thu</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/5/16574234/?id=0"
+				aria-label="9/5/2024 - *Special Schedule - Day 1">
+				*Special Schedule - Day 1
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/5/16221830/?id=0"
+				aria-label="9/5/2024 - Grades 10 and 11 Reports">
+				Grades 10 and 11 Reports
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-6">
+					<div class="day-date-box">
+						<span class="month">Sep</span>
+						<span class="date">6</span>
+						<span class="day">Fri</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/6/16574235/?id=0"
+				aria-label="9/6/2024 - *Special Schedule - Day 1">
+				*Special Schedule - Day 1
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/6/16221831/?id=0"
+				aria-label="9/6/2024 - Grade 12 Reports">
+				Grade 12 Reports
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/6/16221832/?id=0"
+				aria-label="9/6/2024 - Senior Sunrise">
+				Senior Sunrise
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="event-day empty no-border " id="day-7">
+				<li class="event-day empty no-border " id="day-8">
+				<li class="cf event-day  " id="day-9">
+					<div class="day-date-box">
+						<span class="month">Sep</span>
+						<span class="date">9</span>
+						<span class="day">Mon</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/9/16221835/?id=0"
+				aria-label="9/9/2024 - *A Schedule - Day 1">
+				*A Schedule - Day 1
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/9/16221836/?id=0"
+				aria-label="9/9/2024 - All Grades Report">
+				All Grades Report
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/9/16231669/?id=0"
+				aria-label="9/9/2024 - Renaissance Window #1 Opens">
+				Renaissance Window #1 Opens
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/9/15929967/?id=0"
+				aria-label="9/9/2024 - Senior Portraits ">
+				Senior Portraits 
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/9/16295736/?id=0"
+				aria-label="9/9/2024 - Varsity Mathletes Practice">
+				Varsity Mathletes Practice
+			</a>
+		</span>
+
+		<span class="dateloc">
+				2:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					4 PM
+			(N102)
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-10">
+					<div class="day-date-box">
+						<span class="month">Sep</span>
+						<span class="date">10</span>
+						<span class="day">Tue</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/10/17242277/?id=0"
+				aria-label="9/10/2024 - *A Schedule - Day 2">
+				*A Schedule - Day 2
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/10/16221851/?id=0"
+				aria-label="9/10/2024 - Confessions">
+				Confessions
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/10/15929968/?id=0"
+				aria-label="9/10/2024 - Senior Portraits ">
+				Senior Portraits 
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/10/16322115/?id=0"
+				aria-label="9/10/2024 - Old NHS Members Meeting">
+				Old NHS Members Meeting
+			</a>
+		</span>
+
+		<span class="dateloc">
+				2:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					3:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/10/16322350/?id=0"
+				aria-label="9/10/2024 - RHO Kappa Officers Meeting">
+				RHO Kappa Officers Meeting
+			</a>
+		</span>
+
+		<span class="dateloc">
+				2:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					3:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-11">
+					<div class="day-date-box">
+						<span class="month">Sep</span>
+						<span class="date">11</span>
+						<span class="day">Wed</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/11/17242280/?id=0"
+				aria-label="9/11/2024 - *A Schedule - Day 3">
+				*A Schedule - Day 3
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/11/15929969/?id=0"
+				aria-label="9/11/2024 - Senior Portraits ">
+				Senior Portraits 
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-12">
+					<div class="day-date-box">
+						<span class="month">Sep</span>
+						<span class="date">12</span>
+						<span class="day">Thu</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/12/16221850/?id=0"
+				aria-label="9/12/2024 - *C Schedule - Day 4">
+				*C Schedule - Day 4
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/12/16221840/?id=0"
+				aria-label="9/12/2024 - Back to School Night at 6:00 PM">
+				Back to School Night at 6:00 PM
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/12/16221849/?id=0"
+				aria-label="9/12/2024 - Mass of the Holy Spirit">
+				Mass of the Holy Spirit
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/12/15929971/?id=0"
+				aria-label="9/12/2024 - Senior Portraits ">
+				Senior Portraits 
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/12/16322117/?id=0"
+				aria-label="9/12/2024 - New NHS Members Meeting">
+				New NHS Members Meeting
+			</a>
+		</span>
+
+		<span class="dateloc">
+				2:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					3:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-13">
+					<div class="day-date-box">
+						<span class="month">Sep</span>
+						<span class="date">13</span>
+						<span class="day">Fri</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/13/17242281/?id=0"
+				aria-label="9/13/2024 - *A Schedule - Day 5">
+				*A Schedule - Day 5
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/13/16221838/?id=0"
+				aria-label="9/13/2024 - AR Dress Down Day">
+				AR Dress Down Day
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/13/16221837/?id=0"
+				aria-label="9/13/2024 - School Picnic">
+				School Picnic
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/13/15929972/?id=0"
+				aria-label="9/13/2024 - Senior Portraits ">
+				Senior Portraits 
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/13/16573374/?id=0"
+				aria-label="9/13/2024 - AR Football Team Quizzo">
+				AR Football Team Quizzo
+			</a>
+		</span>
+
+		<span class="dateloc">
+				6 PM
+				<span class="ndash-range"> &ndash; </span>
+					11 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-14">
+					<div class="day-date-box">
+						<span class="month">Sep</span>
+						<span class="date">14</span>
+						<span class="day">Sat</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/14/16625889/?id=0"
+				aria-label="9/14/2024 - Councilman Dillon Shredding Event ">
+				Councilman Dillon Shredding Event 
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="event-day empty no-border " id="day-15">
+				<li class="cf event-day  " id="day-16">
+					<div class="day-date-box">
+						<span class="month">Sep</span>
+						<span class="date">16</span>
+						<span class="day">Mon</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/16/17242283/?id=0"
+				aria-label="9/16/2024 - *H Schedule - Day 6">
+				*H Schedule - Day 6
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/16/17496536/?id=0"
+				aria-label="9/16/2024 - Underclassmen Photos">
+				Underclassmen Photos
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/16/16295736/?id=0"
+				aria-label="9/16/2024 - Varsity Mathletes Practice">
+				Varsity Mathletes Practice
+			</a>
+		</span>
+
+		<span class="dateloc">
+				2:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					4 PM
+			(N102)
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-17">
+					<div class="day-date-box">
+						<span class="month">Sep</span>
+						<span class="date">17</span>
+						<span class="day">Tue</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/17/17242284/?id=0"
+				aria-label="9/17/2024 - *A Schedule - Day 1">
+				*A Schedule - Day 1
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/17/17496541/?id=0"
+				aria-label="9/17/2024 - Underclassmen Photos">
+				Underclassmen Photos
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/17/16322387/?id=0"
+				aria-label="9/17/2024 - RHO Kappa General Membership Meeting">
+				RHO Kappa General Membership Meeting
+			</a>
+		</span>
+
+		<span class="dateloc">
+				2:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					3:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/17/17380673/?id=0"
+				aria-label="9/17/2024 - The Sound of Music Auditions">
+				The Sound of Music Auditions
+			</a>
+		</span>
+
+		<span class="dateloc">
+				3:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					4:30 PM
+			(Auditorium)
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-18">
+					<div class="day-date-box">
+						<span class="month">Sep</span>
+						<span class="date">18</span>
+						<span class="day">Wed</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/18/17242295/?id=0"
+				aria-label="9/18/2024 - *A Schedule - Day 2">
+				*A Schedule - Day 2
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/18/16561902/?id=0"
+				aria-label="9/18/2024 - Homecoming Dance Permission Forms Due">
+				Homecoming Dance Permission Forms Due
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-19">
+					<div class="day-date-box">
+						<span class="month">Sep</span>
+						<span class="date">19</span>
+						<span class="day">Thu</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/19/17242298/?id=0"
+				aria-label="9/19/2024 - *A Schedule - Day 3">
+				*A Schedule - Day 3
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/19/16221853/?id=0"
+				aria-label="9/19/2024 - FACTS Financial Aid Night">
+				FACTS Financial Aid Night
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/19/16322118/?id=0"
+				aria-label="9/19/2024 - NHS General Membership Meeting">
+				NHS General Membership Meeting
+			</a>
+		</span>
+
+		<span class="dateloc">
+				2:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					3:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-20">
+					<div class="day-date-box">
+						<span class="month">Sep</span>
+						<span class="date">20</span>
+						<span class="day">Fri</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/20/17242300/?id=0"
+				aria-label="9/20/2024 - *E Schedule - Day 4">
+				*E Schedule - Day 4
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/20/16221845/?id=0"
+				aria-label="9/20/2024 - Homecoming Dance">
+				Homecoming Dance
+			</a>
+		</span>
+
+		<span class="dateloc">
+				7 PM
+				<span class="ndash-range"> &ndash; </span>
+					7:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="event-day empty no-border " id="day-21">
+				<li class="event-day empty no-border " id="day-22">
+				<li class="cf event-day  " id="day-23">
+					<div class="day-date-box">
+						<span class="month">Sep</span>
+						<span class="date">23</span>
+						<span class="day">Mon</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/23/17242311/?id=0"
+				aria-label="9/23/2024 - *H Schedule - Day 5">
+				*H Schedule - Day 5
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/23/16295736/?id=0"
+				aria-label="9/23/2024 - Varsity Mathletes Practice">
+				Varsity Mathletes Practice
+			</a>
+		</span>
+
+		<span class="dateloc">
+				2:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					4 PM
+			(N102)
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/23/16221847/?id=0"
+				aria-label="9/23/2024 - Ring Mass">
+				Ring Mass
+			</a>
+		</span>
+
+		<span class="dateloc">
+				7 PM
+				<span class="ndash-range"> &ndash; </span>
+					7:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-24">
+					<div class="day-date-box">
+						<span class="month">Sep</span>
+						<span class="date">24</span>
+						<span class="day">Tue</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/24/17242313/?id=0"
+				aria-label="9/24/2024 - *A Schedule - Day 6">
+				*A Schedule - Day 6
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-25">
+					<div class="day-date-box">
+						<span class="month">Sep</span>
+						<span class="date">25</span>
+						<span class="day">Wed</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/25/17242329/?id=0"
+				aria-label="9/25/2024 - *A Schedule - Day 1">
+				*A Schedule - Day 1
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/25/17580692/?id=0"
+				aria-label="9/25/2024 - Medicare Meeting for Alumni">
+				Medicare Meeting for Alumni
+			</a>
+		</span>
+
+		<span class="dateloc">
+				5 PM
+				<span class="ndash-range"> &ndash; </span>
+					7 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-26">
+					<div class="day-date-box">
+						<span class="month">Sep</span>
+						<span class="date">26</span>
+						<span class="day">Thu</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/26/17242341/?id=0"
+				aria-label="9/26/2024 - *A Schedule - Day 2">
+				*A Schedule - Day 2
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/26/15929957/?id=0"
+				aria-label="9/26/2024 - Senior Parent Financial Aid Night">
+				Senior Parent Financial Aid Night
+			</a>
+		</span>
+
+		<span class="dateloc">
+				6:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					7:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-27">
+					<div class="day-date-box">
+						<span class="month">Sep</span>
+						<span class="date">27</span>
+						<span class="day">Fri</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/27/17242901/?id=0"
+				aria-label="9/27/2024 - *A Schedule - Day 3">
+				*A Schedule - Day 3
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/27/17709430/?id=0"
+				aria-label="9/27/2024 - Dress Down Day - $3 Must wear an AR shirt">
+				Dress Down Day - $3 Must wear an AR shirt
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/27/16221858/?id=0"
+				aria-label="9/27/2024 - Team Trevor BINGO">
+				Team Trevor BINGO
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="event-day empty no-border " id="day-28">
+				<li class="event-day empty no-border " id="day-29">
+				<li class="cf event-day  " id="day-30">
+					<div class="day-date-box">
+						<span class="month">Sep</span>
+						<span class="date">30</span>
+						<span class="day">Mon</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/30/17242904/?id=0"
+				aria-label="9/30/2024 - *A Schedule - Day 4">
+				*A Schedule - Day 4
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/30/17694207/?id=0"
+				aria-label="9/30/2024 - Senior Ring Adjustments">
+				Senior Ring Adjustments
+			</a>
+		</span>
+
+		<span class="dateloc">
+				8 AM
+				<span class="ndash-range"> &ndash; </span>
+					9 AM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2024/9/30/16295736/?id=0"
+				aria-label="9/30/2024 - Varsity Mathletes Practice">
+				Varsity Mathletes Practice
+			</a>
+		</span>
+
+		<span class="dateloc">
+				2:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					4 PM
+			(N102)
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+</ul>
+
+
+		</div>
+	</div> 
+</div>
+
+<footer id="events_pff_footer" class="pff">
+	<p><strong>http://www.archbishopryan.com</strong></p>
+
+	<p>
+		Archbishop Ryan High School
+		<br>
+		11201 Academy Road,&nbsp;Philadelphia,&nbsp;PA&nbsp;19154
+		<br>
+		Phone: (215) 637-1800 | Fax: (215) 637-8833
+	</p>
+</footer>
+
+</body>

@@ -1,4 +1,7 @@
 <?php
+
+use App\Services\DBConnection;
+
 if ($_GET['au7hEfudnhUUy8'] !== '667a4af374347aaebc6d04d8572fbb85250cf8b51c773f3f8dc8b4be867a9a02'){
     die();
 }
@@ -7,7 +10,7 @@ require_once __DIR__ . '/../../libs/google/vendor/autoload.php';
 date_default_timezone_set('America/New_York');
 
 include __DIR__ . '/../../app/app.php';
-$pdo = App::getPDO();
+$pdo = DBConnection::getPDO();
 
 class Absences
 {

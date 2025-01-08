@@ -1,4 +1,7 @@
 <?php
+
+use App\Services\DBConnection;
+
 if ($_GET['au7hEfudnhUUy8'] !== '667a4af374347aaebc6d04d8572fbb85250cf8b51c773f3f8dc8b4be867a9a02'){
     die();
 }
@@ -18,5 +21,5 @@ class UpdateBypassCode
     }
 }
 
-$byPassCode = new UpdateBypassCode(App::getPDO());
+$byPassCode = new UpdateBypassCode(DBConnection::getPDO());
 $byPassCode->updateBypassCode();
