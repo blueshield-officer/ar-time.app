@@ -2,14 +2,14 @@
 
 namespace App\Services\Data_Extraction\SQL\Calendar;
 
-use App\Services\DB_Connection;
+use App\Services\DBC;
 
 class Loader
 {
     static function load(){
         $data = [];
 
-        $pdo = DB_Connection::getPDO();
+        $pdo = DBC::getPDO();
 
         $information_array = [
             [

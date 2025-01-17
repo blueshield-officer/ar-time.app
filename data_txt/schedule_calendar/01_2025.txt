@@ -129,7 +129,7 @@
 				</li>
 				<li class="event-day empty no-border " id="day-4">
 				<li class="event-day empty no-border " id="day-5">
-				<li class="cf event-day  current-day " id="day-6">
+				<li class="cf event-day  " id="day-6">
 					<div class="day-date-box">
 						<span class="month">Jan</span>
 						<span class="date">6</span>
@@ -434,28 +434,6 @@
 
 		<div class="full-description" style="display: none;"></div>
 	</li>
-	<li class="day-event-info">
-		<span class="event-title-wrap">
-			<a class="event-link" href="/apps/events/2025/1/10/19294692/?id=0"
-				aria-label="1/10/2025 - Young Alumni Event">
-				Young Alumni Event
-			</a>
-		</span>
-
-		<span class="dateloc">
-				6 PM
-				<span class="ndash-range"> &ndash; </span>
-					9 PM
-			(South Cafeteria at AR)
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
-								<span class="">Events</span>
-							</li>
-			</ul>
-		</span>
-
-		<div class="full-description" style="display: none;"></div>
-	</li>
 					</ul>
 				</li>
 				<li class="cf event-day  " id="day-11">
@@ -659,7 +637,7 @@
 	</li>
 					</ul>
 				</li>
-				<li class="cf event-day  " id="day-16">
+				<li class="cf event-day  current-day " id="day-16">
 					<div class="day-date-box">
 						<span class="month">Jan</span>
 						<span class="date">16</span>
@@ -671,25 +649,6 @@
 			<a class="event-link" href="/apps/events/2025/1/16/20871696/?id=0"
 				aria-label="1/16/2025 - *A Schedule-Day 2">
 				*A Schedule-Day 2
-			</a>
-		</span>
-
-		<span class="dateloc">
-			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
-								<span class="">Events</span>
-							</li>
-			</ul>
-		</span>
-
-		<div class="full-description" style="display: none;"></div>
-	</li>
-	<li class="day-event-info">
-		<span class="event-title-wrap">
-			<a class="event-link" href="/apps/events/2025/1/16/16222175/?id=0"
-				aria-label="1/16/2025 - Visual and Performing Arts Closer Look">
-				Visual and Performing Arts Closer Look
 			</a>
 		</span>
 
@@ -798,8 +757,8 @@
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/1/17/16373513/?id=0"
-				aria-label="1/17/2025 - Track Quizzo">
-				Track Quizzo
+				aria-label="1/17/2025 - Track Quizzo- South Cafe">
+				Track Quizzo- South Cafe
 			</a>
 		</span>
 
@@ -1259,7 +1218,37 @@
 	</li>
 					</ul>
 				</li>
-				<li class="event-day empty no-border " id="day-26">
+				<li class="cf event-day  " id="day-26">
+					<div class="day-date-box">
+						<span class="month">Jan</span>
+						<span class="date">26</span>
+						<span class="day">Sun</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/1/26/21488604/?id=0"
+				aria-label="1/26/2025 - AHA Painting with a Twist">
+				AHA Painting with a Twist
+			</a>
+		</span>
+
+		<span class="dateloc">
+				12 PM
+				<span class="ndash-range"> &ndash; </span>
+					3 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
 				<li class="cf event-day  " id="day-27">
 					<div class="day-date-box">
 						<span class="month">Jan</span>
@@ -1472,6 +1461,28 @@
 
 		<div class="full-description" style="display: none;"></div>
 	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/1/28/21506150/?id=0"
+				aria-label="1/28/2025 - Spring Musical Auditions- Auditorium ">
+				Spring Musical Auditions- Auditorium 
+			</a>
+		</span>
+
+		<span class="dateloc">
+				2:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					5 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
 					</ul>
 				</li>
 				<li class="cf event-day  " id="day-29">
@@ -1541,6 +1552,28 @@
 
 		<div class="full-description" style="display: none;"></div>
 	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/1/29/21506158/?id=0"
+				aria-label="1/29/2025 - Spring Musical Call Backs- Auditorium ">
+				Spring Musical Call Backs- Auditorium 
+			</a>
+		</span>
+
+		<span class="dateloc">
+				2:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					5 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
 					</ul>
 				</li>
 				<li class="cf event-day  " id="day-30">
@@ -1574,25 +1607,6 @@
 			<a class="event-link" href="/apps/events/2025/1/30/16222164/?id=0"
 				aria-label="1/30/2025 - Catholic Schools Week">
 				Catholic Schools Week
-			</a>
-		</span>
-
-		<span class="dateloc">
-			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
-								<span class="">Events</span>
-							</li>
-			</ul>
-		</span>
-
-		<div class="full-description" style="display: none;"></div>
-	</li>
-	<li class="day-event-info">
-		<span class="event-title-wrap">
-			<a class="event-link" href="/apps/events/2025/1/30/16222308/?id=0"
-				aria-label="1/30/2025 - Class of 2029 Scholarship Reception">
-				Class of 2029 Scholarship Reception
 			</a>
 		</span>
 

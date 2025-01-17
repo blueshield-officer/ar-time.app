@@ -121,11 +121,14 @@ class Detectors
 
     }
     static function findSpecial($str){
-        $special = ['special', 'pep rally'];
+        $special = ['special', 'pep rally', 'fid'];
         foreach ($special as $element){
             if (str_contains($str, $element)){
                 if ($element === 'pep rally'){
                     return 'p';
+                }
+                else if ($element === 'fid'){
+                    return 'fid';
                 }
                 return $element;
             }
@@ -204,6 +207,40 @@ class Detectors
             else {
                 return array_diff([9, 10, 11, 12], $gradeArray);
             }
+        }
+        return false;
+    }
+    static function isQuarter($str)
+    {
+        if (str_contains($str, 'quarter')){
+            // getting status
+            if (str_contains($str, 'begins')){
+                $status = 1;
+            }
+            else if (str_contains($str, 'ends')){
+                $status = 0;
+            }
+            else {
+                return false;
+            }
+            // getting number
+            $quarter = (int)preg_replace('/[^0-9]/', '', $str);
+            if ($quarter === 0){
+                $quarter = match (true) {
+                    str_contains($str, 'first') => 1,
+                    str_contains($str, 'second') => 2,
+                    str_contains($str, 'third') => 3,
+                    str_contains($str, 'fourth') => 4,
+                    default => null,
+                };
+                if (is_null($quarter)){
+                    return false;
+                }
+            }
+            return [
+                'quarter' => $quarter,
+                'status' => $status
+            ];
         }
         return false;
     }

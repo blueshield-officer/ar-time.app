@@ -4,14 +4,14 @@ namespace App\Services\ARHS_Data_Extractor\Absents;
 
 class Absences
 {
-    private $pdo;
+    private $DBC;
     private $date;
     private $people = null;
     private $roomChanges = null;
 
-    public function __construct($pdo, $date)
+    public function __construct($DBC, $date)
     {
-        $this->pdo = $pdo;
+        $this->pdo = $DBC;
         $this->date = $date;
     }
     function setPeople($array)

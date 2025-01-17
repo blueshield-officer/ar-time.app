@@ -17,7 +17,10 @@ class Router
 
     public static function enable(){
         session_start();
-        $query = $_SERVER['REQUEST_URI'];
+        $query = preg_replace('/\/+/', '/', $_SERVER['REQUEST_URI']);
+        if ($query !== '/'){
+            $query = rtrim($query, '/');
+        }
         foreach (self::$list as $route) {
             // check is in array
             if (is_array($route['uri'])){

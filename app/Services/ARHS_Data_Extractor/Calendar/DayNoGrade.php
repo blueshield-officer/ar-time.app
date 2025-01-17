@@ -6,17 +6,26 @@ class DayNoGrade {
     private $date;
     private $grade;
 
-    function __construct($date, $grade){
+    public function __construct($date, $grade){
         $this->date = $date;
         $this->grade = $grade;
     }
-    function getDate(){
+    public function numberInArray($array, $number){
+        if(in_array($number, $array)){
+            return 1;
+        }
+        return 0;
+    }
+    public function getDate(){
         return $this->date;
     }
-    function getInfo(){
+    public function getInfo(){
         return [
             'date' => $this->date,
-            'grade' => join(', ', $this->grade)
+            '9' => $this->numberInArray($this->grade, '9'),
+            '10' => $this->numberInArray($this->grade, '10'),
+            '11' => $this->numberInArray($this->grade, '11'),
+            '12' => $this->numberInArray($this->grade, '12'),
         ];
     }
 }

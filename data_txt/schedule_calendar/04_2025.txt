@@ -805,6 +805,25 @@
 					<ul class="day-event-box">
 	<li class="day-event-info">
 		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/4/22/21506552/?id=0"
+				aria-label="4/22/2025 - School Mass">
+				School Mass
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/4/22/16575337/?id=0"
 				aria-label="4/22/2025 - Senior Prom Ticket Sales End">
 				Senior Prom Ticket Sales End

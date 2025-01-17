@@ -2,14 +2,40 @@
 
 namespace App\Services\ARHS_Data_Extractor\Calendar;
 
-use App\Services\DB_Connection;
+use App\Services\DBC;
+use App\Services\PageDownloader;
 
 class Loader
 {
+    static private function tableUpdate($DBC, $table, $data, $date, $difficult): void
+    {
+        $date = $date->format('Y-m-d');
+        $oldData = Database_Requests::getOldData($DBC, $table, $date, $difficult);
+        $newData = Database_Formatters::newData($data, $oldData);
+        echo '<pre>';
+        print_r($newData);
+        echo '</pre>';
+        if (count($newData) > 0) {
+            $datesToDelete = Database_Formatters::getDays($newData, $difficult);
+            Database_Requests::deleteOldData($DBC, $table, $datesToDelete);
+            Database_Requests::insertNewData($DBC, $table, $newData);
+        }
+    }
+    static private function dayInfoRecord(&$dayInfoArray, $dayInfo, &$dataRecorded)
+    {
+        if ($dayInfo->keep_update() === true){
+            $dayInfoArray[$dayInfo->getDate()] = $dayInfo->getInfo();
+        }
+        $dataRecorded = true;
+    }
+    static private function daySpecialRecord(&$daySpecialArray, $daySpecial, &$md5key, $event, &$dataRecorded)
+    {
+        $daySpecialArray[$daySpecial->getDate()][] = $daySpecial->getInfo();
+        $md5key[] = join('', $event);
+        $dataRecorded = true;
+    }
     static public function load(){
-        require_once __DIR__ . "/../../../../libs/simplehtmldom/simple_html_dom.php";
-
-        $pdo = DB_Connection::getPDO();
+        $DBC = DBC::getInstance();
         $date_today = new \DateTime('2024-09-01');
         $date = clone $date_today;
 //        $date_today = new \DateTime('now');
@@ -18,11 +44,13 @@ class Loader
         $month = null;
         $year = null;
 
-        $calendar = new GetCalendar_HTML($date, 'schedule');
+        $pageDownloader = new PageDownloader();
+        $calendar = new AnalyzerHTML($date, 'schedule', $pageDownloader);
         $calendar->loadCalendarHTML(12);
 
 
         // finding HTML object and adding them to array
+
         $dateListHTML = new DateList_HTML();
         for ($i = 0; $i < $calendar->getAvailableDays(); $i++) {
             $newMonth = $date->format('m');
@@ -50,30 +78,16 @@ class Loader
         $daySpecialArray = [];
         $gradeOffArray = [];
         $daySportArray = [];
+        $quarterArray = [];
         // DayInfo record function
-        function dayInfoRecord(&$dayInfoArray, $dayInfo, &$dataRecorded)
-        {
-            if ($dayInfo->keep_update() === true){
-                $dayInfoArray[$dayInfo->getDate()] = $dayInfo->getInfo();
-            }
-            $dataRecorded = true;
-        }
-
-        function daySpecialRecord(&$daySpecialArray, $daySpecial, &$md5key, $event, &$dataRecorded)
-        {
-            $daySpecialArray[$daySpecial->getDate()][] = $daySpecial->getInfo();
-            $md5key[] = join('', $event);
-            $dataRecorded = true;
-        }
 
         // MOST IMPORTANT ARRAY
         // TODO FID day
         foreach ($dateListHTML->getList() as $date => $htmlElement) {
             $dayInfo = new DayInfo($date);
             // check "keep_update"
-            if (Database_Requests::keep_update($pdo, $date) === false) {
+            if (Database_Requests::keep_update($DBC, $date) === false) {
                 $dayInfo->setNoUpdate();
-                echo 'no';
             }
             $md5key = [];
             // DOES OBJECT HAVE ELEMENTS CHECK
@@ -91,15 +105,14 @@ class Loader
                     $dayInfo->setTestDay(Detectors::findTestDay($str));
                     $dayInfo->setSchool();
 
-                    if ($special === 'p') {
-                        $daySpecial = new DaySpecial($date, $strOriginal, 'Please notice that Pep Rally often is a bit different from an actual schedule.', 'yellow');
-                    } else if ($special === 'special') {
-                        $daySpecial = new DaySpecial($date, 'Special Schedule', 'We are unable to provide data for Special Schedule', 'red');
-                    } else {
-                        $daySpecial = new DaySpecial($date, 'Error', 'Error', 'gamma');
-                    }
-                    daySpecialRecord($daySpecialArray, $daySpecial, $md5key, $event, $dataRecorded);
-                    dayInfoRecord($dayInfoArray, $dayInfo, $dataRecorded);
+                    $daySpecial = match ($special){
+                        'p' => new DaySpecial($date, $strOriginal, 'Please notice that Pep Rally often is a bit different from an actual schedule.', 'yellow'),
+                        'fid' => new DaySpecial($date, 'Flexible Instruction Day', 'No school for today, but dont forget about some schoology assignments.', 'green'),
+                        'special' => new DaySpecial($date, 'Special Schedule', 'We are unable to provide data for Special Schedule', 'red'),
+                        default => new DaySpecial($date, 'Error', 'Error', 'gamma')
+                    };
+                    self::daySpecialRecord($daySpecialArray, $daySpecial, $md5key, $event, $dataRecorded);
+                    self::dayInfoRecord($dayInfoArray, $dayInfo, $dataRecorded);
                 }
                 // SCHEDULE CHECK
                 if (Detectors::checkIfHasSchedule($str) && !$dataRecorded) {
@@ -107,13 +120,12 @@ class Loader
                     $dayInfo->setTestDay(Detectors::findTestDay($str));
                     $dayInfo->setSchool();
 
-                    dayInfoRecord($dayInfoArray, $dayInfo, $dataRecorded);
+                    self::dayInfoRecord($dayInfoArray, $dayInfo, $dataRecorded);
                 }
                 // CHECK IS IT SCHOOL DAY
                 if (Detectors::isSchoolClosed($str) && !$dataRecorded) {
-                    dayInfoRecord($dayInfoArray, $dayInfo, $dataRecorded);
+                    self::dayInfoRecord($dayInfoArray, $dayInfo, $dataRecorded);
                 }
-
                 // RETREATS CHECK
                 $retreat = Detectors::isRetreat($str);
                 if ($retreat !== false && !$dataRecorded) {
@@ -122,35 +134,42 @@ class Loader
                     if (str_contains($str, 'retreat')) {
                         // starts with small letter for some reason
                         $daySpecial = new DaySpecial($date, $strOriginal, $description, 'red');
-                        daySpecialRecord($daySpecialArray, $daySpecial, $md5key, $event, $dataRecorded);
+                        self::daySpecialRecord($daySpecialArray, $daySpecial, $md5key, $event, $dataRecorded);
                         $dayInfo->setSchedule('special');
                         $dayInfo->setSchool();
                     }
-                    dayInfoRecord($dayInfoArray, $dayInfo, $dataRecorded);
+                    self::dayInfoRecord($dayInfoArray, $dayInfo, $dataRecorded);
+                }
+                // QUARTER WRITER
+                $quarter = Detectors::isQuarter($str);
+                if ($quarter !== false && !$dataRecorded) {
+                    $dayQuarter = new DayEducation($date, $quarter['quarter'], $quarter['status']);
+                    $quarterArray[$dayQuarter->getDate()] = $dayQuarter->getInfo();
+                    self::dayInfoRecord($dayInfoArray, $dayInfo, $dataRecorded);
                 }
                 // NO SCHOOL FOR GRADE (REPORT INCLUDED) CHECK
                 $gradeOff = Detectors::isGradeOff($str);
                 if ($gradeOff !== false && !$dataRecorded) {
                     $dayNoGrade = new DayNoGrade($date, $gradeOff);
                     $gradeOffArray[$dayNoGrade->getDate()] = $dayNoGrade->getInfo();
-                    dayInfoRecord($dayInfoArray, $dayInfo, $dataRecorded);
+                    self::dayInfoRecord($dayInfoArray, $dayInfo, $dataRecorded);
                 }
                 // DRESS DOWN DAY CHECK
                 if (Detectors::isDressDown($str) && !$dataRecorded) {
                     $daySpecial = new DaySpecial($date, $strOriginal, $description, 'green');
-                    daySpecialRecord($daySpecialArray, $daySpecial, $md5key, $event, $dataRecorded);
-                    dayInfoRecord($dayInfoArray, $dayInfo, $dataRecorded);
+                    self::daySpecialRecord($daySpecialArray, $daySpecial, $md5key, $event, $dataRecorded);
+                    self::dayInfoRecord($dayInfoArray, $dayInfo, $dataRecorded);
                 }
                 // RECORD TO SPECIAL IF THERE ARE NO POSITIVE CHECK
                 if (!$dataRecorded) {
                     $daySpecial = new DaySpecial($date, $strOriginal, $description);
-                    daySpecialRecord($daySpecialArray, $daySpecial, $md5key, $event, $dataRecorded);
-                    dayInfoRecord($dayInfoArray, $dayInfo, $dataRecorded);
+                    self::daySpecialRecord($daySpecialArray, $daySpecial, $md5key, $event, $dataRecorded);
+                    self::dayInfoRecord($dayInfoArray, $dayInfo, $dataRecorded);
                 }
             }
             else {
                 $dayInfo->noData();
-                dayInfoRecord($dayInfoArray, $dayInfo, $dataRecorded);
+                self::dayInfoRecord($dayInfoArray, $dayInfo, $dataRecorded);
             }
             $md5key = md5(join('', $md5key));
             if (isset($daySpecialArray[$date])) {
@@ -167,10 +186,10 @@ class Loader
         $year = null;
 
         // getting HTML
-        $calendar = new GetCalendar_HTML($date, 'sport');
+        $calendar = new AnalyzerHTML($date, 'sport', $pageDownloader);
         $calendar->loadCalendarHTML(12);
 
-// finding HTML object and adding them to array
+        // finding HTML object and adding them to array
         $dateListHTML = new DateList_HTML();
         for ($i = 0; $i < $calendar->getAvailableDays(); $i++) {
             $newMonth = $date->format('m');
@@ -212,51 +231,44 @@ class Loader
         }
 
 
-// MAKE IT A FUNCTIONS
-// DATABASE schedule_calendar_test
-        function databaseUpdate($pdo, $database, $data, $date, $difficult): void
-        {
-            $date = $date->format('Y-m-d');
-            $oldData = Database_Requests::getOldData($pdo, $database, $date, $difficult);
-            $newData = Database_Formatters::newData($data, $oldData);
-            echo '<pre>';
-            print_r($newData);
-            echo '</pre>';
-            if (count($newData) > 0) {
-                $datesToDelete = Database_Formatters::getDays($newData, $difficult);
-                Database_Requests::deleteOldData($pdo, $database, $datesToDelete);
-                Database_Requests::insertNewData($pdo, $database, $newData);
-            }
-        }
+        // MAKE IT A FUNCTIONS
+        // DATABASE schedule_calendar_test
+
 
         $info = [
             [
-                'database' => 'schedule_calendar_test',
+                'database' => 'calendar_schedules',
                 'data' => $dayInfoArray,
                 'date' => $date_today,
                 'difficult' => false
             ],
             [
-                'database' => 'event_calendar_test',
-                'data' => $daySpecialArray,
-                'date' => $date_today,
-                'difficult' => true
-            ],
-            [
-                'database' => 'grade_off_test',
+                'database' => 'calendar_grade_off',
                 'data' => $gradeOffArray,
                 'date' => $date_today,
                 'difficult' => false
             ],
             [
-                'database' => 'sport_calendar_test',
+                'database' => 'calendar_education',
+                'data' => $quarterArray,
+                'date' => $date_today,
+                'difficult' => false
+            ],
+            [
+                'database' => 'calendar_sports',
                 'data' => $daySportArray,
                 'date' => $date_today,
                 'difficult' => true
-            ]
+            ],
+            [
+                'database' => 'calendar_events',
+                'data' => $daySpecialArray,
+                'date' => $date_today,
+                'difficult' => true
+            ],
         ];
         foreach ($info as $element) {
-            databaseUpdate($pdo, $element['database'], $element['data'], $element['date'], $element['difficult']);
+            self::tableUpdate($DBC, $element['database'], $element['data'], $element['date'], $element['difficult']);
         }
     }
 }

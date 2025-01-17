@@ -2,12 +2,13 @@
 
 namespace App\Services\Data_Extraction\SQL\Schedule_Rarity;
 
-use App\Services\DB_Connection;
+use App\Services\DBC;
 
 class Loader
 {
     static public function load(){
-        $pdo = DB_Connection::getPDO();
+        // TODO хуйня переделать, по новым стандартам и уже подогнать когда будет немного фронта
+        $pdo = DBC::getPDO();
 
         // creating schedule array OBJECTS
         $schedule_data = [

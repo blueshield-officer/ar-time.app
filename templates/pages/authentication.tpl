@@ -1,5 +1,5 @@
 <h1>{$method}</h1>
-<form method="post" action="https://ar-time.loc/app/Services/auth/authentication.php">
+<form method="post" action="https://ar-time.loc/services/auth">
     <!-- Info -->
     <input type="text" name="email" placeholder="Email">
     <input type="password" name="password" placeholder="Password">

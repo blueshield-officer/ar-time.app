@@ -14,7 +14,7 @@ class Room_Changes
             'location' => $object['location']
         ];
     }
-    public function retreat(){
+    public function getInfo(){
         return $this->room_changes;
     }
 }

@@ -110,7 +110,37 @@
 	</li>
 					</ul>
 				</li>
-				<li class="event-day empty no-border " id="day-5">
+				<li class="cf event-day  " id="day-5">
+					<div class="day-date-box">
+						<span class="month">Feb</span>
+						<span class="date">5</span>
+						<span class="day">Wed</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/2/5/21506124/?id=0"
+				aria-label="2/5/2025 - Boys &amp; Girls Wrestling Senior Night ">
+				Boys &amp; Girls Wrestling Senior Night 
+			</a>
+		</span>
+
+		<span class="dateloc">
+				6 PM
+				<span class="ndash-range"> &ndash; </span>
+					9 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
 				<li class="cf event-day  " id="day-6">
 					<div class="day-date-box">
 						<span class="month">Feb</span>
@@ -775,19 +805,10 @@
 
 		<div class="full-description" style="display: none;"></div>
 	</li>
-					</ul>
-				</li>
-				<li class="cf event-day  " id="day-22">
-					<div class="day-date-box">
-						<span class="month">Feb</span>
-						<span class="date">22</span>
-						<span class="day">Sat</span>
-					</div>
-					<ul class="day-event-box">
 	<li class="day-event-info">
 		<span class="event-title-wrap">
-			<a class="event-link" href="/apps/events/2025/2/22/16222212/?id=0"
-				aria-label="2/22/2025 - Freshmen and Sophomore Dance ">
+			<a class="event-link" href="/apps/events/2025/2/21/16222212/?id=0"
+				aria-label="2/21/2025 - Freshmen and Sophomore Dance ">
 				Freshmen and Sophomore Dance 
 			</a>
 		</span>
@@ -795,7 +816,7 @@
 		<span class="dateloc">
 				7 PM
 				<span class="ndash-range"> &ndash; </span>
-					7:30 PM
+					10 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-1 checked">
@@ -808,6 +829,7 @@
 	</li>
 					</ul>
 				</li>
+				<li class="event-day empty no-border " id="day-22">
 				<li class="event-day empty no-border " id="day-23">
 				<li class="cf event-day  " id="day-24">
 					<div class="day-date-box">
@@ -840,7 +862,37 @@
 	</li>
 					</ul>
 				</li>
-				<li class="event-day empty no-border " id="day-25">
+				<li class="cf event-day  " id="day-25">
+					<div class="day-date-box">
+						<span class="month">Feb</span>
+						<span class="date">25</span>
+						<span class="day">Tue</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/2/25/21494520/?id=0"
+				aria-label="2/25/2025 - Progress Reports Due">
+				Progress Reports Due
+			</a>
+		</span>
+
+		<span class="dateloc">
+				8 AM
+				<span class="ndash-range"> &ndash; </span>
+					9 AM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
 				<li class="cf event-day  " id="day-26">
 					<div class="day-date-box">
 						<span class="month">Feb</span>

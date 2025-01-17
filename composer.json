@@ -6,6 +6,7 @@
   },
   "require": {
     "google/apiclient": "2.15.0",
-    "predis/predis": "^2.3"
+    "predis/predis": "^2.3",
+    "minishlink/web-push": "v6.0.7"
   }
 }
