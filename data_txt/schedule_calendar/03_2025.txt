@@ -370,28 +370,6 @@
 
 		<div class="full-description" style="display: none;"></div>
 	</li>
-	<li class="day-event-info">
-		<span class="event-title-wrap">
-			<a class="event-link" href="/apps/events/2025/3/8/18133757/?id=0"
-				aria-label="3/8/2025 - Softball Bingo">
-				Softball Bingo
-			</a>
-		</span>
-
-		<span class="dateloc">
-				6 PM
-				<span class="ndash-range"> &ndash; </span>
-					9 PM
-			(North Cafe)
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
-								<span class="">Events</span>
-							</li>
-			</ul>
-		</span>
-
-		<div class="full-description" style="display: none;"></div>
-	</li>
 					</ul>
 				</li>
 				<li class="cf event-day  " id="day-9">

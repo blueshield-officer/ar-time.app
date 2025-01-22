@@ -4,104 +4,6 @@ namespace App\Services\ARHS_Data_Extractor\Calendar;
 
 class Detectors
 {
-    static function eventsToArray($html){
-        $tempArray = [];
-        $eventArray = $html->find('.day-event-info');
-        foreach ($eventArray as $element){
-            $event = FormattingType::analyzable($element->find('.event-title-wrap .event-link', 0)->plaintext);
-            $description = trim(str_replace('events', '', FormattingType::analyzable($element->find('.dateloc', 0)->plaintext)));
-            if ($description === ''){
-                $description = null;
-            }
-            $tempArray[] = [
-                'event' => ucwords($event),
-                'description' => $description
-            ];
-        }
-        return $tempArray;
-    }
-    static function sportEventsToArray($html): array
-    {
-        $tempArray = [];
-        $md5key = [];
-        $eventArray = $html->find('.day-event-info');
-        foreach ($eventArray as $element){
-            // creating key
-            $md5key[] = $element;
-
-            // getting string and removing TBA
-            $event = trim($element->find('.event-title-wrap .event-link', 0)->plaintext);
-            $event = str_replace('Time: TBA -', '', $event);
-
-            // extracting SPECIAL if it exists
-            $patternForSpecial = '/(^\w+(?=:))/';
-            preg_match($patternForSpecial, $event, $matches);
-            if (!empty($matches)){
-                $special = $matches[0];
-            }
-            else {
-                $special = null;
-            }
-            // formatting page to normal format without trash
-            $event = explode('Archbishop Ryan High School', $event)[1];
-
-            // extraction data from string
-            $patternsForData = '/(\w{2,3})\s+([BG])\s+(\w{1,2})\s+(Home|Away)\s+([\w.\s-]+)(?:\((.+?)\))?/';
-            if (preg_match($patternsForData, $event, $matches)){
-                $sport = $matches[1];
-                $gender = $matches[2];
-                $varsity = $matches[3];
-                $side = $matches[4];
-                $opponent = trim($matches[5]);
-                $description = $matches[6] ?? null;;
-            }
-            else {
-                $tempArray[] = 'Error in parsing data from string';
-                continue;
-            }
-            $tempDescription = explode('(', trim(preg_replace('/\s+/', ' ', str_replace('Athletic Calendar', '', $element->find('.dateloc', 0)->plaintext))));
-            $time = $tempDescription[0];
-            if (isset($tempDescription[1])){
-                $location = str_replace(')', '', $tempDescription[1]);
-            }
-            else {
-                $location = null;
-            }
-            $tempArray[] = [
-                'sport' => $sport,
-                'gender' => $gender,
-                'side' => $side,
-                'varsity' => $varsity,
-                'opponent' => $opponent,
-                'description' => $description,
-                'time' => $time,
-                'location' => $location,
-                'special' => $special
-            ];
-        }
-        $md5key = md5(join('', $md5key));
-        foreach ($tempArray as $key => $element){
-            $tempArray[$key]['md5_key'] = $md5key;
-        }
-        return $tempArray;
-    }
-
-    static function exist($html)
-    {
-        if ($html->hasClass('empty')){
-            return false;
-        }
-        return true;
-    }
-
-    static function isMonthEmpty($html){
-        if (is_null($html->find('#events_list_partial .no-events', 0))){
-            return false;
-        }
-        return true;
-    }
-
-
     static function isSchoolClosed($str)
     {
         if (str_contains($str, 'school closed')){
@@ -247,6 +149,13 @@ class Detectors
     static function isDressDown($str)
     {
         if (str_contains($str, 'dress down')){
+            return true;
+        }
+        return false;
+    }
+    static function isDance($str)
+    {
+        if (str_contains($str, 'dance') && !str_contains($str, 'permission forms')){
             return true;
         }
         return false;

@@ -637,7 +637,7 @@
 	</li>
 					</ul>
 				</li>
-				<li class="cf event-day  current-day " id="day-16">
+				<li class="cf event-day  " id="day-16">
 					<div class="day-date-box">
 						<span class="month">Jan</span>
 						<span class="date">16</span>
@@ -709,7 +709,7 @@
 	</li>
 					</ul>
 				</li>
-				<li class="cf event-day  " id="day-17">
+				<li class="cf event-day  current-day " id="day-17">
 					<div class="day-date-box">
 						<span class="month">Jan</span>
 						<span class="date">17</span>

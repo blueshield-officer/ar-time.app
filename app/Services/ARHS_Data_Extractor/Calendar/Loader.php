@@ -7,18 +7,188 @@ use App\Services\PageDownloader;
 
 class Loader
 {
+    private static $tableData = [
+        'calendar_schedules' => ['date', 'schedule', 'description', 'testDay', 'school'],
+        'calendar_events' => ['date', 'title', 'description', 'code', 'type', 'important', 'md5_key'],
+        'calendar_grade_off' => ['date', '9', '10', '11', '12'],
+        'calendar_sports' => ['date', 'sport', 'gender', 'side', 'varsity', 'opponent', 'description', 'time', 'location', 'special', 'md5_key'],
+        'calendar_education' => ['date', 'quarter', 'status'],
+    ];
+    private static function html_isMonthEmpty($html){
+        if (is_null($html->find('#events_list_partial .no-events', 0))){
+            return false;
+        }
+        return true;
+    }
+    private static function html_exist($html)
+    {
+        if ($html->hasClass('empty')){
+            return false;
+        }
+        return true;
+    }
+    private static function html_eventsToArray($html){
+        $tempArray = [];
+        $eventArray = $html->find('.day-event-info');
+        foreach ($eventArray as $element){
+            $event = FormattingType::analyzable($element->find('.event-title-wrap .event-link', 0)->plaintext);
+            $description = trim(str_replace('events', '', FormattingType::analyzable($element->find('.dateloc', 0)->plaintext)));
+            if ($description === ''){
+                $description = null;
+            }
+            $tempArray[] = [
+                'event' => ucwords($event),
+                'description' => $description
+            ];
+        }
+        return $tempArray;
+    }
+    private static function html_sportEventsToArray($html): array
+    {
+        // TODO КЭФТЕМЕ, чёт слишком сложно или что, надо подумать крч
+        $tempArray = [];
+        $md5key = [];
+        $eventArray = $html->find('.day-event-info');
+        foreach ($eventArray as $element){
+            // creating key
+            $md5key[] = $element;
+
+            // getting string and removing TBA
+            $event = trim($element->find('.event-title-wrap .event-link', 0)->plaintext);
+            $event = str_replace('Time: TBA -', '', $event);
+
+            // extracting SPECIAL if it exists
+            $patternForSpecial = '/(^\w+(?=:))/';
+            preg_match($patternForSpecial, $event, $matches);
+            if (!empty($matches)){
+                $special = $matches[0];
+            }
+            else {
+                $special = null;
+            }
+            // formatting page to normal format without trash
+            $event = explode('Archbishop Ryan High School', $event)[1];
+
+            // extraction data from string
+            $patternsForData = '/(\w{2,3})\s+([BG])\s+(\w{1,2})\s+(Home|Away)\s+([\w.\s-]+)(?:\((.+?)\))?/';
+            if (preg_match($patternsForData, $event, $matches)){
+                $sport = $matches[1];
+                $gender = $matches[2];
+                $varsity = $matches[3];
+                $side = $matches[4];
+                $opponent = trim($matches[5]);
+                $description = $matches[6] ?? null;;
+            }
+            else {
+                $tempArray[] = 'Error in parsing data from string';
+                continue;
+            }
+            $tempDescription = explode('(', trim(preg_replace('/\s+/', ' ', str_replace('Athletic Calendar', '', $element->find('.dateloc', 0)->plaintext))));
+            $time = $tempDescription[0];
+            if (isset($tempDescription[1])){
+                $location = str_replace(')', '', $tempDescription[1]);
+            }
+            else {
+                $location = null;
+            }
+            $tempArray[] = [
+                'sport' => $sport,
+                'gender' => $gender,
+                'side' => $side,
+                'varsity' => $varsity,
+                'opponent' => $opponent,
+                'description' => $description,
+                'time' => $time,
+                'location' => $location,
+                'special' => $special
+            ];
+        }
+        $md5key = md5(join('', $md5key));
+        foreach ($tempArray as $key => $element){
+            $tempArray[$key]['md5_key'] = $md5key;
+        }
+        return $tempArray;
+    }
+    static private function nestedArray(array $array): bool {
+        foreach ($array as $element) {
+            if (is_array($element)) {
+                return true;
+            }
+        }
+        return false; // No arrays found
+    }
+    private static function keep_update($DBC, $date)
+    {
+        $result = $DBC->fetch($DBC->query('SELECT `keep_update` FROM `calendar_schedules` WHERE `date` = ?', [$date]));
+        if ($result !== false){
+            $result = $result['keep_update'];
+            if ($result === 1){
+                return true;
+            }
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
     static private function tableUpdate($DBC, $table, $data, $date, $difficult): void
     {
         $date = $date->format('Y-m-d');
-        $oldData = Database_Requests::getOldData($DBC, $table, $date, $difficult);
-        $newData = Database_Formatters::newData($data, $oldData);
+        // old data
+        $fields = join(', ', array_map(fn($element) => '`' . $element . '`', self::$tableData[$table]));
+        $query = 'SELECT ' . $fields . ' FROM ' . $table . ' WHERE date >= ?';
+        $oldSchedule = $DBC->fetchAll($DBC->query($query, [$date]));
+        $oldData = [];
+        if ($difficult === true){
+            foreach ($oldSchedule as $item) {
+                $oldData[$item['date']][] = $item;
+            }
+        }
+        else {
+            foreach ($oldSchedule as $item) {
+                $oldData[$item['date']] = $item;
+            }
+        }
+        // finding new data
+        $newData = [];
+        foreach ($data as $index => $element){
+            if (isset($oldData[$index])){
+                if ($oldData[$index] !== $element){
+                    $newData[] = $element;
+                }
+            }
+            else {
+                $newData[] = $element;
+            }
+        }
         echo '<pre>';
         print_r($newData);
         echo '</pre>';
         if (count($newData) > 0) {
-            $datesToDelete = Database_Formatters::getDays($newData, $difficult);
-            Database_Requests::deleteOldData($DBC, $table, $datesToDelete);
-            Database_Requests::insertNewData($DBC, $table, $newData);
+            // finding dates to delete
+            $datesToDelete = array_map(function ($element) use ($difficult) {
+                return $difficult ? reset($element)['date'] : $element['date'];
+            }, $newData);;
+            // deleting data
+            $placeholders = join(', ', array_fill(0, count($datesToDelete), '?'));
+            $query = 'DELETE FROM ' . $table . ' WHERE `date` IN ('.$placeholders.')';
+            $DBC->query($query, array_values($datesToDelete));
+            // writing down new data
+            $params = self::$tableData[$table];
+            $fields = array_map(fn($element) => '`' . $element . '`', $params);
+            $query = 'INSERT INTO ' . $table . ' (' . join(', ', $fields) . ') VALUES ('. join(', ', array_fill(0, count($fields), '?')) .')';
+            foreach ($newData as $element){
+                if (self::nestedArray($element)){
+                    foreach ($element as $item){
+                        $values = array_map(fn($field) => $item[$field] ?? null, $params);
+                        $DBC->query($query, array_values($values));
+                    }
+                }
+                else {
+                    $values = array_map(fn($field) => $element[$field] ?? null, $params);
+                    $DBC->query($query, array_values($values));
+                }
+            }
         }
     }
     static private function dayInfoRecord(&$dayInfoArray, $dayInfo, &$dataRecorded)
@@ -60,7 +230,7 @@ class Loader
                 $month = $newMonth;
                 $year = $newYear;
             }
-            if (Detectors::isMonthEmpty($monthHTML)){
+            if (self::html_isMonthEmpty($monthHTML)){
                 $calendar->skipMonth($date);
                 continue;
             }
@@ -78,7 +248,6 @@ class Loader
         $daySpecialArray = [];
         $gradeOffArray = [];
         $daySportArray = [];
-        $quarterArray = [];
         // DayInfo record function
 
         // MOST IMPORTANT ARRAY
@@ -86,17 +255,16 @@ class Loader
         foreach ($dateListHTML->getList() as $date => $htmlElement) {
             $dayInfo = new DayInfo($date);
             // check "keep_update"
-            if (Database_Requests::keep_update($DBC, $date) === false) {
+            if (self::keep_update($DBC, $date) === false) {
                 $dayInfo->setNoUpdate();
             }
             $md5key = [];
             // DOES OBJECT HAVE ELEMENTS CHECK
-            if (Detectors::exist($htmlElement)) foreach (Detectors::eventsToArray($htmlElement) as $event) {
+            if (self::html_exist($htmlElement)) foreach (self::html_eventsToArray($htmlElement) as $event) {
                 $dataRecorded = false;
                 $strOriginal = trim($event['event']);
                 $str = FormattingType::analyzable($event['event']);
                 $description = $event['description'];
-
 
                 // Special Check
                 $special = Detectors::findSpecial($str);
@@ -126,6 +294,12 @@ class Loader
                 if (Detectors::isSchoolClosed($str) && !$dataRecorded) {
                     self::dayInfoRecord($dayInfoArray, $dayInfo, $dataRecorded);
                 }
+                // CHECK IS IT DANCE
+                if (Detectors::isDance($str)){
+                    $daySpecial = new DaySpecial($date, $strOriginal, $description, 'green', 'dance');
+                    self::daySpecialRecord($daySpecialArray, $daySpecial, $md5key, $event, $dataRecorded);
+                    self::dayInfoRecord($dayInfoArray, $dayInfo, $dataRecorded);
+                }
                 // RETREATS CHECK
                 $retreat = Detectors::isRetreat($str);
                 if ($retreat !== false && !$dataRecorded) {
@@ -133,18 +307,18 @@ class Loader
                     $gradeOffArray[$dayNoGrade->getDate()] = $dayNoGrade->getInfo();
                     if (str_contains($str, 'retreat')) {
                         // starts with small letter for some reason
-                        $daySpecial = new DaySpecial($date, $strOriginal, $description, 'red');
+                        $daySpecial = new DaySpecial($date, $strOriginal, $description, 'red', 'retreat');
                         self::daySpecialRecord($daySpecialArray, $daySpecial, $md5key, $event, $dataRecorded);
                         $dayInfo->setSchedule('special');
                         $dayInfo->setSchool();
                     }
                     self::dayInfoRecord($dayInfoArray, $dayInfo, $dataRecorded);
                 }
-                // QUARTER WRITER
+                // QUARTER CHECK
                 $quarter = Detectors::isQuarter($str);
                 if ($quarter !== false && !$dataRecorded) {
-                    $dayQuarter = new DayEducation($date, $quarter['quarter'], $quarter['status']);
-                    $quarterArray[$dayQuarter->getDate()] = $dayQuarter->getInfo();
+                    $daySpecial = new DaySpecial($date, $strOriginal, $description, 'yellow', 'quarter');
+                    self::daySpecialRecord($daySpecialArray, $daySpecial, $md5key, $event, $dataRecorded);
                     self::dayInfoRecord($dayInfoArray, $dayInfo, $dataRecorded);
                 }
                 // NO SCHOOL FOR GRADE (REPORT INCLUDED) CHECK
@@ -156,7 +330,7 @@ class Loader
                 }
                 // DRESS DOWN DAY CHECK
                 if (Detectors::isDressDown($str) && !$dataRecorded) {
-                    $daySpecial = new DaySpecial($date, $strOriginal, $description, 'green');
+                    $daySpecial = new DaySpecial($date, $strOriginal, $description, 'green', 'dressdown');
                     self::daySpecialRecord($daySpecialArray, $daySpecial, $md5key, $event, $dataRecorded);
                     self::dayInfoRecord($dayInfoArray, $dayInfo, $dataRecorded);
                 }
@@ -198,7 +372,7 @@ class Loader
                 $monthHTML = $calendar->getMonthHTML($newYear, $newMonth);
                 $month = $newMonth;
                 $year = $newYear;
-                if (Detectors::isMonthEmpty($monthHTML)){
+                if (self::html_isMonthEmpty($monthHTML)){
                     $calendar->skipMonth($date);
                     continue;
                 }
@@ -210,8 +384,8 @@ class Loader
 
 
         foreach ($dateListHTML->getList() as $index => $html) {
-            if (Detectors::exist($html)) {
-                $dataObject = Detectors::sportEventsToArray($html);
+            if (self::html_exist($html)) {
+                $dataObject = self::html_sportEventsToArray($html);
                 foreach ($dataObject as $element) {
                     $sportObject = new DaySports(
                         $index,
@@ -230,11 +404,8 @@ class Loader
             }
         }
 
-
         // MAKE IT A FUNCTIONS
         // DATABASE schedule_calendar_test
-
-
         $info = [
             [
                 'database' => 'calendar_schedules',
@@ -245,12 +416,6 @@ class Loader
             [
                 'database' => 'calendar_grade_off',
                 'data' => $gradeOffArray,
-                'date' => $date_today,
-                'difficult' => false
-            ],
-            [
-                'database' => 'calendar_education',
-                'data' => $quarterArray,
                 'date' => $date_today,
                 'difficult' => false
             ],

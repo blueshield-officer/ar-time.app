@@ -10,12 +10,13 @@ class DaySpecial
     private $code;
     private $important = 0;
 
-    function __construct($date, $title, $description, $code = null){
+    function __construct($date, $title, $description, $code = null, $type = null){
         $this->date =  $date;
         $this->title = $title;
         $this->description = $description;
         $this->code = $code;
-        if ($code !== null){
+        $this->type = $type;
+        if ($code !== null || $type !== null){
             $this->important = 1;
         }
     }
@@ -30,6 +31,7 @@ class DaySpecial
             'title' => $this->title,
             'description' => $this->description,
             'code' => $this->code,
+            'type' => $this->type,
             'important' => $this->important
         ];
     }
