@@ -111,15 +111,7 @@ class Loader
         $indexToKeep = [];
         $arrayToAdd = [];
         foreach ($newData as $index => $element){
-            if (isset($oldData[$index])){
-                if ($oldData[$index] === $element){
-                    $indexToKeep[] = $index;
-                }
-                else {
-                    $arrayToAdd[] = $element;
-                }
-            }
-            else {
+            if (!isset($oldData[$index])){
                 $arrayToAdd[] = $element;
             }
         }
@@ -130,11 +122,12 @@ class Loader
     }
     static public function load()
     {
+        require_once $_SERVER['DOCUMENT_ROOT'] . '/libs/simplehtmldom/simple_html_dom.php';
+
         $DBC = DBC::getInstance();
         $DatabaseRequests = new DatabaseRequests($DBC);
 
-        $pageDownloader = new PageDownloader();
-        $pageHTML = $pageDownloader->downloadPage('https://www.archbishopryan.com/apps/staff/', 'data_txt/', 'staff.txt');
+        $pageHTML = PageDownloader::downloadPage('https://www.archbishopryan.com/apps/staff/', 'data_txt/', 'staff', 'txt');
 
         $newPeople = self::addIndex(self::extractInfo($pageHTML->find('#staff_group_main .list li')));
         $oldPeople = self::addIndex($DBC->fetchAll($DBC->query('SELECT `honorific`, `first_name`, `last_name`, `short_name`, `email`, `room`, `position`, `position_full` FROM `school_staff_list`')));

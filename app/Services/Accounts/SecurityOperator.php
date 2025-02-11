@@ -21,6 +21,7 @@ class SecurityOperator
         return password_verify($salt . $password . $salt, $hash);
     }
 
+    // sigmaBoyBoy12!
     static function createToken(){
         return bin2hex(random_bytes(16));
     }

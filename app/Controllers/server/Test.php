@@ -11,10 +11,12 @@ use App\Services\SQL;
 use App\Services\WebhookDiscord;
 use Minishlink\WebPush\VAPID;
 use Redis;
+use thiagoalessio\TesseractOCR\TesseractOCR;
 
 class Test extends Controller
 {
-    public function execute(){
+    public function execute()
+    {
 //        $this->view('debug.tpl', [
 //            'name' => 'test',
 //            'spent_time' => null,
@@ -96,6 +98,39 @@ class Test extends Controller
 //        echo '<br>';
 //        var_dump(json_encode($dbArray));
 
-        $DBC = DBC::getInstance();
+//
+//        $notificator = new Notificator();
+//        for ($i = 0; $i < 800; $i++) {
+//            $notificator->send_notification('You teacher is absent!', 'Yours teacher, Mr. Sigma is absent for today!', '/assets/img/school_staff_pictures/S.SIGMOVICH.png', '/', '{"endpoint":"https://fcm.googleapis.com/fcm/send/f_k-5G3w0jc:APA91bF17naEFLcyZtexjNzUHaZv1rM5lhUIErQ6DKmlTYFHtx95pz9K7E_LQJcTgp2of-nrwXK8l7IYvaF1KeNL_7ONFjZjL8iewopXgeEm9gomH0S9gI2-uMGMwPOuOuTQeiQG3qhd","expirationTime":null,"keys":{"p256dh":"BI3v3t_iZdDUCvWpW-axNSfMIkQ6E6zvEWLiu-teDOMYVsD3FrBerKt995bdKOjqQBJCSiW09IXdGivddbvxbyg","auth":"pgYUWIhjFv8_MGi1hAp2lQ"}}');
+//        }
+
+
+        // Display the output (raw text from the table)
+        //var_dump($lines);// Use nl2br to keep line breaks for easier reading
+
+        function test($hours)
+        {
+            $maxGoodHours = 168;
+            $percentagePerHour = 10 / $maxGoodHours;
+            $badPercentagePerHourMultiplyer = 0.01;
+
+            // if > 90%
+            if ($hours <= $maxGoodHours) {
+                $result = 100 - ($percentagePerHour * $hours);
+            }
+            else {
+                $result = 100 - ($percentagePerHour * $maxGoodHours);
+                $hours -= $maxGoodHours;
+                for ($i = 1; $i <= $hours; $i++) {
+                    $percentagePerHour += $badPercentagePerHourMultiplyer;
+                    $result -=  $percentagePerHour;
+                    if ($result <= 0) {
+                        $result = 0.01;
+                    }
+                }
+            }
+            return $result;
+        }
+        echo test(290) . '%';
     }
 }

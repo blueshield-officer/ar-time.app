@@ -212,6 +212,28 @@
 					<ul class="day-event-box">
 	<li class="day-event-info">
 		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/6/16322407/?id=0"
+				aria-label="5/6/2025 - RHO Kappa General Membership Meeting">
+				RHO Kappa General Membership Meeting
+			</a>
+		</span>
+
+		<span class="dateloc">
+				2:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					3:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/5/6/16322373/?id=0"
 				aria-label="5/6/2025 - RHO Kappa Officers Meeting">
 				RHO Kappa Officers Meeting
@@ -768,6 +790,28 @@
 		</span>
 
 		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/20/16322407/?id=0"
+				aria-label="5/20/2025 - RHO Kappa General Membership Meeting">
+				RHO Kappa General Membership Meeting
+			</a>
+		</span>
+
+		<span class="dateloc">
+				2:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					3:30 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-1 checked">

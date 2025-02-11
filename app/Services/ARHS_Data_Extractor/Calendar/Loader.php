@@ -8,9 +8,9 @@ use App\Services\PageDownloader;
 class Loader
 {
     private static $tableData = [
-        'calendar_schedules' => ['date', 'schedule', 'description', 'testDay', 'school'],
+        'calendar_schedules' => ['date', 'schedule', 'description', 'testDay'],
         'calendar_events' => ['date', 'title', 'description', 'code', 'type', 'important', 'md5_key'],
-        'calendar_grade_off' => ['date', '9', '10', '11', '12'],
+        'calendar_day_off' => ['date', 'percentage', 'type', '9', '10', '11', '12'],
         'calendar_sports' => ['date', 'sport', 'gender', 'side', 'varsity', 'opponent', 'description', 'time', 'location', 'special', 'md5_key'],
         'calendar_education' => ['date', 'quarter', 'status'],
     ];
@@ -117,9 +117,9 @@ class Loader
         }
         return false; // No arrays found
     }
-    private static function keep_update($DBC, $date)
+    private static function keep_update($DBC, $date, $table)
     {
-        $result = $DBC->fetch($DBC->query('SELECT `keep_update` FROM `calendar_schedules` WHERE `date` = ?', [$date]));
+        $result = $DBC->fetch($DBC->query('SELECT `keep_update` FROM `' . $table . '` WHERE `date` = ?', [$date]));
         if ($result !== false){
             $result = $result['keep_update'];
             if ($result === 1){
@@ -133,9 +133,16 @@ class Loader
     }
     static private function tableUpdate($DBC, $table, $data, $date, $difficult): void
     {
+        // TODO make something up with keep_update
         $date = $date->format('Y-m-d');
         // old data
-        $fields = join(', ', array_map(fn($element) => '`' . $element . '`', self::$tableData[$table]));
+        $fields = self::$tableData[$table];
+        // update check
+        if (in_array($table, ['calendar_schedules', 'calendar_day_off'])){
+            $fields[] = 'keep_update';
+        }
+        $fields = join(', ', array_map(fn($element) => '`' . $element . '`', $fields));
+
         $query = 'SELECT ' . $fields . ' FROM ' . $table . ' WHERE date >= ?';
         $oldSchedule = $DBC->fetchAll($DBC->query($query, [$date]));
         $oldData = [];
@@ -146,14 +153,30 @@ class Loader
         }
         else {
             foreach ($oldSchedule as $item) {
-                $oldData[$item['date']] = $item;
+                // no update check
+                if (isset($item['keep_update'])){
+                    if ($item['keep_update'] === 1){
+                        unset($item['keep_update']);
+                        $oldData[$item['date']] = $item;
+                    }
+                    else {
+                        $oldData[$item['date']] = 'no update';
+                    }
+                }
+                else {
+                    $oldData[$item['date']] = $item;
+                }
             }
         }
+
         // finding new data
         $newData = [];
         foreach ($data as $index => $element){
             if (isset($oldData[$index])){
                 if ($oldData[$index] !== $element){
+                    if ($oldData[$index] === 'no update'){
+                        continue;
+                    }
                     $newData[] = $element;
                 }
             }
@@ -193,9 +216,10 @@ class Loader
     }
     static private function dayInfoRecord(&$dayInfoArray, $dayInfo, &$dataRecorded)
     {
-        if ($dayInfo->keep_update() === true){
-            $dayInfoArray[$dayInfo->getDate()] = $dayInfo->getInfo();
-        }
+//        if ($dayInfo->keep_update() === true){
+//            $dayInfoArray[$dayInfo->getDate()] = $dayInfo->getInfo();
+//        }
+        $dayInfoArray[$dayInfo->getDate()] = $dayInfo->getInfo();
         $dataRecorded = true;
     }
     static private function daySpecialRecord(&$daySpecialArray, $daySpecial, &$md5key, $event, &$dataRecorded)
@@ -204,11 +228,58 @@ class Loader
         $md5key[] = join('', $event);
         $dataRecorded = true;
     }
+    static private function dayOffRecord(&$dayOffArray, $date, $grades, $percentage, $type)
+    {
+        $dayOff = new DayOff($date, $grades, $percentage, $type);
+        $dayOffArray[$dayOff->getDate()] = $dayOff->getInfo();
+    }
+    static private function hoursToPercentage($hours)
+    {
+        $maxGoodHours = 168;
+        $percentagePerHour = 10 / $maxGoodHours;
+        $badPercentagePerHourMultiplyer = 0.01;
+
+        // if > 90%
+        if ($hours <= $maxGoodHours) {
+            $result = 100 - ($percentagePerHour * $hours);
+        }
+        else {
+            $result = 100 - ($percentagePerHour * $maxGoodHours);
+            $hours -= $maxGoodHours;
+            for ($i = 1; $i <= $hours; $i++) {
+                $percentagePerHour += $badPercentagePerHourMultiplyer;
+                $result -=  $percentagePerHour;
+                if ($result <= 0) {
+                    $result = 0.01;
+                }
+            }
+        }
+        return round($result, 2);
+    }
+    static private function specialSwitch($DBC, $date, $special, $strOriginal, $dayOffArray): DaySpecial
+    {
+         switch ($special){
+             case 'p':
+                 return new DaySpecial($date, $strOriginal, 'Please notice that Pep Rally often is a bit different from an actual schedule.', 'yellow');
+
+                 case 'fid':
+                     self::dayOffRecord($dayOffArray, $date, 'all', 100, 'p');
+                     return new DaySpecial($date, 'Flexible Instruction Day', 'No school for today, but dont forget about some schoology assignments.', 'green');
+
+                     case 'special':
+                         return new DaySpecial($date, 'Special Schedule', 'We are unable to provide data for Special Schedule', 'red');
+
+                         default:
+                             return new DaySpecial($date, 'Error', 'Error', 'gamma');
+                    }
+    }
     static public function load(){
+        require_once $_SERVER['DOCUMENT_ROOT'] . '/libs/simplehtmldom/simple_html_dom.php';
+
         $DBC = DBC::getInstance();
-        $date_today = new \DateTime('2024-09-01');
-        $date = clone $date_today;
-//        $date_today = new \DateTime('now');
+        $dateToday = new \DateTime('2024-09-01');
+//        $dateToday = new \DateTime('now');
+        $date = clone $dateToday;
 
         // creating date + month and year control
         $month = null;
@@ -246,18 +317,17 @@ class Loader
         // MOST IMPORTANT ARRAY
         $dayInfoArray = [];
         $daySpecialArray = [];
-        $gradeOffArray = [];
+        $dayOffArray = [];
         $daySportArray = [];
         // DayInfo record function
 
         // MOST IMPORTANT ARRAY
-        // TODO FID day
         foreach ($dateListHTML->getList() as $date => $htmlElement) {
             $dayInfo = new DayInfo($date);
             // check "keep_update"
-            if (self::keep_update($DBC, $date) === false) {
-                $dayInfo->setNoUpdate();
-            }
+//            if (self::keep_update($DBC, $date, 'calendar_schedules') === false) {
+//                $dayInfo->setNoUpdate();
+//            }
             $md5key = [];
             // DOES OBJECT HAVE ELEMENTS CHECK
             if (self::html_exist($htmlElement)) foreach (self::html_eventsToArray($htmlElement) as $event) {
@@ -273,12 +343,14 @@ class Loader
                     $dayInfo->setTestDay(Detectors::findTestDay($str));
                     $dayInfo->setSchool();
 
-                    $daySpecial = match ($special){
-                        'p' => new DaySpecial($date, $strOriginal, 'Please notice that Pep Rally often is a bit different from an actual schedule.', 'yellow'),
-                        'fid' => new DaySpecial($date, 'Flexible Instruction Day', 'No school for today, but dont forget about some schoology assignments.', 'green'),
-                        'special' => new DaySpecial($date, 'Special Schedule', 'We are unable to provide data for Special Schedule', 'red'),
-                        default => new DaySpecial($date, 'Error', 'Error', 'gamma')
-                    };
+                    $daySpecial = self::specialSwitch($DBC, $date, $special, $strOriginal, $dayOffArray);
+
+//                    $daySpecial = match ($special){
+//                        'p' => new DaySpecial($date, $strOriginal, 'Please notice that Pep Rally often is a bit different from an actual schedule.', 'yellow'),
+//                        'fid' => new DaySpecial($date, 'Flexible Instruction Day', 'No school for today, but dont forget about some schoology assignments.', 'green'),
+//                        'special' => new DaySpecial($date, 'Special Schedule', 'We are unable to provide data for Special Schedule', 'red'),
+//                        default => new DaySpecial($date, 'Error', 'Error', 'gamma')
+//                    };
                     self::daySpecialRecord($daySpecialArray, $daySpecial, $md5key, $event, $dataRecorded);
                     self::dayInfoRecord($dayInfoArray, $dayInfo, $dataRecorded);
                 }
@@ -293,6 +365,7 @@ class Loader
                 // CHECK IS IT SCHOOL DAY
                 if (Detectors::isSchoolClosed($str) && !$dataRecorded) {
                     self::dayInfoRecord($dayInfoArray, $dayInfo, $dataRecorded);
+                    self::dayOffRecord($dayOffArray, $date, 'all', 100, 'f');
                 }
                 // CHECK IS IT DANCE
                 if (Detectors::isDance($str)){
@@ -303,8 +376,7 @@ class Loader
                 // RETREATS CHECK
                 $retreat = Detectors::isRetreat($str);
                 if ($retreat !== false && !$dataRecorded) {
-                    $dayNoGrade = new DayNoGrade($date, $retreat);
-                    $gradeOffArray[$dayNoGrade->getDate()] = $dayNoGrade->getInfo();
+                    self::dayOffRecord($dayOffArray, $date, $retreat, 100, 'f');
                     if (str_contains($str, 'retreat')) {
                         // starts with small letter for some reason
                         $daySpecial = new DaySpecial($date, $strOriginal, $description, 'red', 'retreat');
@@ -324,8 +396,8 @@ class Loader
                 // NO SCHOOL FOR GRADE (REPORT INCLUDED) CHECK
                 $gradeOff = Detectors::isGradeOff($str);
                 if ($gradeOff !== false && !$dataRecorded) {
-                    $dayNoGrade = new DayNoGrade($date, $gradeOff);
-                    $gradeOffArray[$dayNoGrade->getDate()] = $dayNoGrade->getInfo();
+                    $dayOff = new DayOff($date, $gradeOff, 100, 'f');
+                    $dayOffArray[$dayOff->getDate()] = $dayOff->getInfo();
                     self::dayInfoRecord($dayInfoArray, $dayInfo, $dataRecorded);
                 }
                 // DRESS DOWN DAY CHECK
@@ -345,6 +417,23 @@ class Loader
                 $dayInfo->noData();
                 self::dayInfoRecord($dayInfoArray, $dayInfo, $dataRecorded);
             }
+            // ADDING UNCONFIRMED DAY OFF ( 1% - 99% )
+            $dateFuture = new \DateTime($dayInfo->getDate());
+            if($dateToday->getTimestamp() < $dateFuture->getTimestamp()) {
+                $weekDay = (int)date('w', strtotime($dayInfo->getDate()));
+                if ($weekDay !== 0 && $weekDay !== 6) {
+                    if ($dayInfo->isSchool() === false){
+                        if (!isset($dayOffArray[$dayInfo->getDate()])){
+                            $timeInterval = $dateToday->diff($dateFuture);
+                            $hours = $timeInterval->days * 24 + $timeInterval->h;
+                            $percentage = self::hoursToPercentage($hours);
+                            if ($percentage > 0.01) {
+                                self::dayOffRecord($dayOffArray, $date, 'all', $percentage, 'f');
+                            }
+                        }
+                    }
+                }
+            }
             $md5key = md5(join('', $md5key));
             if (isset($daySpecialArray[$date])) {
                 foreach ($daySpecialArray[$date] as $key => $element) {
@@ -354,8 +443,8 @@ class Loader
         }
 
 
-// SPORT CALENDAR
-        $date = clone $date_today;
+        // SPORT CALENDAR
+        $date = clone $dateToday;
         $month = null;
         $year = null;
 
@@ -404,31 +493,30 @@ class Loader
             }
         }
 
-        // MAKE IT A FUNCTIONS
-        // DATABASE schedule_calendar_test
+
         $info = [
             [
                 'database' => 'calendar_schedules',
                 'data' => $dayInfoArray,
-                'date' => $date_today,
+                'date' => $dateToday,
                 'difficult' => false
             ],
             [
-                'database' => 'calendar_grade_off',
-                'data' => $gradeOffArray,
-                'date' => $date_today,
+                'database' => 'calendar_day_off',
+                'data' => $dayOffArray,
+                'date' => $dateToday,
                 'difficult' => false
             ],
             [
                 'database' => 'calendar_sports',
                 'data' => $daySportArray,
-                'date' => $date_today,
+                'date' => $dateToday,
                 'difficult' => true
             ],
             [
                 'database' => 'calendar_events',
                 'data' => $daySpecialArray,
-                'date' => $date_today,
+                'date' => $dateToday,
                 'difficult' => true
             ],
         ];

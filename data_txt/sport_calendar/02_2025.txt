@@ -44,7 +44,7 @@
 		<span class="dateloc">
 				4 PM
 				<span class="ndash-range"> &ndash; </span>
-					6 PM
+					5 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -66,7 +66,7 @@
 		<span class="dateloc">
 				4:30 PM
 				<span class="ndash-range"> &ndash; </span>
-					6:30 PM
+					5:30 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -88,7 +88,7 @@
 		<span class="dateloc">
 				7 PM
 				<span class="ndash-range"> &ndash; </span>
-					9 PM
+					8 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -119,7 +119,7 @@
 		<span class="dateloc">
 				3 PM
 				<span class="ndash-range"> &ndash; </span>
-					5 PM
+					4 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -141,7 +141,7 @@
 		<span class="dateloc">
 				3 PM
 				<span class="ndash-range"> &ndash; </span>
-					5 PM
+					4 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -163,7 +163,7 @@
 		<span class="dateloc">
 				5:30 PM
 				<span class="ndash-range"> &ndash; </span>
-					7:30 PM
+					6:30 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -195,7 +195,7 @@
 		<span class="dateloc">
 				12 AM
 				<span class="ndash-range"> &ndash; </span>
-					2 AM
+					1 AM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -217,7 +217,7 @@
 		<span class="dateloc">
 				3 PM
 				<span class="ndash-range"> &ndash; </span>
-					5 PM
+					4 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -248,7 +248,7 @@
 		<span class="dateloc">
 				3:45 PM
 				<span class="ndash-range"> &ndash; </span>
-					5:45 PM
+					4:45 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -270,7 +270,7 @@
 		<span class="dateloc">
 				5:30 PM
 				<span class="ndash-range"> &ndash; </span>
-					7:30 PM
+					6:30 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -292,7 +292,7 @@
 		<span class="dateloc">
 				7 PM
 				<span class="ndash-range"> &ndash; </span>
-					9 PM
+					8 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -324,7 +324,7 @@
 		<span class="dateloc">
 				12 AM
 				<span class="ndash-range"> &ndash; </span>
-					2 AM
+					1 AM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -346,7 +346,7 @@
 		<span class="dateloc">
 				12 AM
 				<span class="ndash-range"> &ndash; </span>
-					2 AM
+					1 AM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -359,7 +359,7 @@
 	</li>
 					</ul>
 				</li>
-				<li class="cf event-day  " id="day-10">
+				<li class="cf event-day  current-day " id="day-10">
 					<div class="day-date-box">
 						<span class="month">Feb</span>
 						<span class="date">10</span>
@@ -377,7 +377,7 @@
 		<span class="dateloc">
 				3:45 PM
 				<span class="ndash-range"> &ndash; </span>
-					5:45 PM
+					4:45 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -399,7 +399,7 @@
 		<span class="dateloc">
 				8:10 PM
 				<span class="ndash-range"> &ndash; </span>
-					10:10 PM
+					9:10 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -430,7 +430,7 @@
 		<span class="dateloc">
 				4 PM
 				<span class="ndash-range"> &ndash; </span>
-					6 PM
+					5 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -463,7 +463,7 @@
 		<span class="dateloc">
 				7 PM
 				<span class="ndash-range"> &ndash; </span>
-					9 PM
+					8 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -498,7 +498,7 @@
 		<span class="dateloc">
 				12 AM
 				<span class="ndash-range"> &ndash; </span>
-					2 AM
+					1 AM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -532,7 +532,7 @@
 		<span class="dateloc">
 				12 AM
 				<span class="ndash-range"> &ndash; </span>
-					2 AM
+					1 AM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">

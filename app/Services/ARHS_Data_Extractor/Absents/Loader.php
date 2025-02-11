@@ -130,9 +130,12 @@ class Loader
         }
         return $new_data;
     }
-    static private function roomChangesToArray($array)
+    static private function roomChangesAndAdditionalToArray($array)
     {
-        $roomChangesArray = [];
+        $data = [
+            'roomChanges' => null,
+            'additional' => null
+        ];
         $period = 0;
         foreach ($array as $str){
             $str = trim(strtolower($str));
@@ -143,21 +146,23 @@ class Loader
                     continue;
                 }
             }
-            $directionArray = explode('-', $str);
-            foreach ($directionArray as $element){
-                $tempArray = explode('To', ucwords($element));
-                $teachers = Formatters::fix_name($tempArray[0]);
-                $location = trim($tempArray[1]);
-                foreach ($teachers as $teacher){
-                    $roomChangesArray[$period][$teacher]['name'] = $teacher;
-                    $roomChangesArray[$period][$teacher]['location'] = $location;
+            if ($period !== 0){
+                $directionArray = explode('-', $str);
+                foreach ($directionArray as $element){
+                    $tempArray = explode('To', ucwords($element));
+                    $teachers = Formatters::fix_name($tempArray[0]);
+                    $location = trim($tempArray[1]);
+                    foreach ($teachers as $teacher){
+                        $data['roomChanges'][$period][$teacher]['name'] = $teacher;
+                        $data['roomChanges'][$period][$teacher]['location'] = $location;
+                    }
                 }
             }
+            else {
+                $data['additional'][] = ucwords($str);
+            }
         }
-        if (count($roomChangesArray) === 0){
-            return null;
-        }
-        return $roomChangesArray;
+        return $data;
     }
     static private function peopleToArray($teachers, $staff){
         $typeArray = [
@@ -228,28 +233,6 @@ class Loader
         }
         return $absent_people_array;
     }
-    static private function docExtractor()
-    {
-        $client = new Client();
-        $client->setAuthConfig(__DIR__ . '/../../../../../credentials.json');
-        $client->setScopes([Docs::DOCUMENTS]);
-        $client->setAccessType('offline');
-        $service = new Docs($client);
-        $id = '1KhmTALivDbAvLusQjZQOOQmPKDm-2Do-gVfvAdf_6WA';
-        $doc = $service->documents->get($id);
-
-        $allText = [];
-        foreach ($doc->body->content as $structuralElement) {
-            if ($structuralElement->paragraph) {
-                foreach ($structuralElement->paragraph->elements as $paragraphElement) {
-                    if ($paragraphElement->textRun && strlen(trim($paragraphElement->textRun->content)) > 0) {
-                        $allText[] = trim($paragraphElement->textRun->content);
-                    }
-                }
-            }
-        }
-        return $allText;
-    }
     static private function fetchDayData($DBC, $date)
     {
         return $DBC->fetch($DBC->query('SELECT * FROM `calendar_schedules` WHERE `date` >= ? AND `school` = 1 ORDER BY `date` ASC LIMIT 1', [$date->format('Y-m-d')]));
@@ -257,7 +240,7 @@ class Loader
     static private function isDay($DBC, $date, $schedule)
     {
         if ((int)$schedule !== 0) {
-            $result = $DBC->fetchAll($DBC->query('SELECT * FROM `bells` WHERE `schedule_id` = ? ORDER BY `position` ASC', [$schedule]));
+            $result = $DBC->fetchAll($DBC->query('SELECT * FROM `schedule_default` WHERE `schedule_id` = ? ORDER BY `position` ASC', [$schedule]));
             $end_unix = $result[count($result) - 1]['end_unix'];
             if (is_null($end_unix)) {
                 $end_unix = $result[count($result) - 1]['start_unix'];
@@ -308,7 +291,7 @@ class Loader
             $date = $dayData['date'];
         }
         // DEBUG
-        $date = \DateTime::createFromFormat('Y-m-d', '2025-01-17');
+        $date = \DateTime::createFromFormat('Y-m-d', '2025-01-31');
 
 
         // Actuall work
@@ -352,50 +335,63 @@ class Loader
                 }
             }
             // adders
+            $roomChangesAndAdditional = self::roomChangesAndAdditionalToArray($absenceData['roomChanges']);
             $absences->setPeople(self::peopleToArray($absenceData['teachers'], $absenceData['staff']));
-            $absences->setRoomChanges(self::roomChangesToArray($absenceData['roomChanges']));
+            $absences->setRoomChanges($roomChangesAndAdditional['roomChanges']);
+            $absences->setAdditional($roomChangesAndAdditional['additional']);
 
             // PEOPLE
             $absentPeople = new People();
-            if ($absences->getPeople() !== null) {
-                // Work with SQL
-                $people_old_temp = $DBC->fetchAll($DBC->query('SELECT `period`, `name`, `type` FROM `absent_people` WHERE `date` = ?', [$date->format('Y-m-d')]));
-                $people_old = [];
-                $people_new = $absences->getPeople();
+            // Work with SQL
+            $people_old_temp = $DBC->fetchAll($DBC->query('SELECT `period`, `name`, `type` FROM `absent_people` WHERE `date` = ?', [$date->format('Y-m-d')]));
+            $people_old = [];
+            $people_new = $absences->getPeople();
 
-                foreach ($people_old_temp as $element) {
-                    $people_old[$element['period']][$element['name']] = [
-                        'name' => $element['name'],
-                        'type' => $element['type']
-                    ];
-                }
-
-                if ($people_new !== $people_old) {
-                    self::record_data(self::find_diference($people_new, $people_old), $absentPeople);
-                }
+            foreach ($people_old_temp as $element) {
+                $people_old[$element['period']][$element['name']] = [
+                    'name' => $element['name'],
+                    'type' => $element['type']
+                ];
+            }
+            if ($people_new !== $people_old) {
+                self::record_data(self::find_diference($people_new, $people_old), $absentPeople);
             }
 
             // ROOM CHANGES
             $room_changes = new Room_Changes();
-            if ($absences->getRoomChanges() !== null) {
-                // Working with SQL
-                $result = $DBC->fetchAll($DBC->query('SELECT `period`, `name`, `location` FROM `absent_room_changes` WHERE `date` = ?', [$date->format('Y-m-d')]));
+            // Working with SQL
+            $result = $DBC->fetchAll($DBC->query('SELECT `period`, `name`, `location` FROM `absent_room_changes` WHERE `date` = ?', [$date->format('Y-m-d')]));
 
-                $room_changes_old = [];
-                $room_changes_new = $absences->getRoomChanges();
-                if (!empty($result)) {
-                    foreach ($result as $object) {
-                        $room_changes_old[$object['period']][$object['name']] = [
-                            'name' => $object['name'],
-                            'location' => $object['location']
-                        ];
-                    }
-                } else {
-                    $room_changes_old = null;
+            $room_changes_old = [];
+            $room_changes_new = $absences->getRoomChanges();
+            if (!empty($result)) {
+                foreach ($result as $object) {
+                    $room_changes_old[$object['period']][$object['name']] = [
+                        'name' => $object['name'],
+                        'location' => $object['location']
+                    ];
                 }
-                // find new data
-                self::record_data(self::find_diference($room_changes_new, $room_changes_old), $room_changes);
-                $absentPeople->update_locations($DBC);
+            } else {
+                $room_changes_old = null;
+            }
+            // find new data
+            self::record_data(self::find_diference($room_changes_new, $room_changes_old), $room_changes);
+            $absentPeople->update_locations($DBC);
+
+            // Additional
+            $result = $DBC->fetchAll($DBC->query('SELECT `text` FROM `absent_additional` WHERE `date` = ?', [$date->format('Y-m-d')]));
+            $additional_new = $absences->getAdditional();
+            $additional_old = [];
+            if (!empty($result)) {
+                foreach ($result as $object) {
+                    $additional_old[] = $object['text'];
+                }
+            }
+            if ($additional_new !== $additional_old) {
+                $DBC->query('DELETE FROM `absent_additional` WHERE `date` = ?', [$date->format('Y-m-d')]);
+                foreach ($additional_new as $str) {
+                    $DBC->query('INSERT INTO `absent_additional` (`date`, `text`)  VALUES (?, ?)', [$date->format('Y-m-d'), $str]);
+                }
             }
 
             // Redis
@@ -407,6 +403,7 @@ class Loader
             // check is md5 the same
             if (md5($absent_json) !== $redis->get('absents:md5')) {
                 $redis->add('absents:data', $absent_json);
+                $redis->add('absents:additional', $additional_new);
                 $redis->add('absents:md5', md5($absent_json));
                 $redis->add('absents:date', (new \DateTime('now'))->format('j F, h:i A'));
             }

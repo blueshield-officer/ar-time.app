@@ -7,7 +7,7 @@ class DayInfo {
     private $schedule = null;
     private $description = null;
     private $testDay = null;
-    private $school = 0;
+    private $school = false;
     private $keep_update = true;
 
     function __construct($date){
@@ -51,13 +51,13 @@ class DayInfo {
     }
     function setSchool()
     {
-        $this->school = 1;
+        $this->school = true;
     }
     function setNoUpdate(){
         $this->keep_update = false;
     }
-    function keep_update(){
-        return $this->keep_update;
+    function isSchool(){
+        return $this->school;
     }
 
     function getInfo()
@@ -67,7 +67,6 @@ class DayInfo {
             'schedule' => $this->schedule,
             'description' => $this->description,
             'testDay' => $this->testDay,
-            'school' => $this->school
         ];
     }
     function noData()
@@ -75,7 +74,6 @@ class DayInfo {
         $this->schedule = null;
         $this->description = null;
         $this->testDay = null;
-        $this->school = 0;
     }
     function getDate()
     {

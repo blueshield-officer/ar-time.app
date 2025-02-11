@@ -94,6 +94,9 @@ class Detectors
     }
     static function isGradeOff($str)
     {
+        if (str_contains($str, 'all') && str_contains($str, 'grades')){
+            return false;
+        }
         $regularGradeOff = str_contains($str, 'no classes') && str_contains($str, 'grade');
         $reportGradeOff = str_contains($str, 'report') && str_contains($str, 'grade');
         if ($regularGradeOff || $reportGradeOff){

@@ -253,6 +253,28 @@
 					<ul class="day-event-box">
 	<li class="day-event-info">
 		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/4/8/16322407/?id=0"
+				aria-label="4/8/2025 - RHO Kappa General Membership Meeting">
+				RHO Kappa General Membership Meeting
+			</a>
+		</span>
+
+		<span class="dateloc">
+				2:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					3:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/4/8/16322413/?id=0"
 				aria-label="4/8/2025 - RHO Kappa General Membership Meeting">
 				RHO Kappa General Membership Meeting
@@ -603,7 +625,34 @@
 	</li>
 					</ul>
 				</li>
-				<li class="event-day empty no-border " id="day-16">
+				<li class="cf event-day  " id="day-16">
+					<div class="day-date-box">
+						<span class="month">Apr</span>
+						<span class="date">16</span>
+						<span class="day">Wed</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/4/16/16222246/?id=0"
+				aria-label="4/16/2025 - *Senior Retreat">
+				*Senior Retreat
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
 				<li class="cf event-day  " id="day-17">
 					<div class="day-date-box">
 						<span class="month">Apr</span>
@@ -841,6 +890,28 @@
 
 		<div class="full-description" style="display: none;"></div>
 	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/4/22/16322407/?id=0"
+				aria-label="4/22/2025 - RHO Kappa General Membership Meeting">
+				RHO Kappa General Membership Meeting
+			</a>
+		</span>
+
+		<span class="dateloc">
+				2:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					3:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
 					</ul>
 				</li>
 				<li class="cf event-day  " id="day-23">
@@ -906,8 +977,8 @@
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/4/24/16222274/?id=0"
-				aria-label="4/24/2025 - OCE School Visit">
-				OCE School Visit
+				aria-label="4/24/2025 - *Junior Retreat">
+				*Junior Retreat
 			</a>
 		</span>
 

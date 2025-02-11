@@ -5,7 +5,7 @@ namespace App\Controllers\server;
 use App\Services\Controller;
 use App\Services\ARHS_Data_Extractor\Absents\Loader;
 
-class Absences_Update extends Controller
+class AbsencesUpdate extends Controller
 {
     public function execute()
     {

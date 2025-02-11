@@ -8,6 +8,7 @@ class Absences
     private $date;
     private $people = null;
     private $roomChanges = null;
+    private $additional = null;
 
     public function __construct($DBC, $date)
     {
@@ -21,6 +22,11 @@ class Absences
     function setRoomChanges($array)
     {
         $this->roomChanges = $array;
+    }
+
+    function setAdditional($str)
+    {
+        $this->additional = $str;
     }
     function getPeople()
     {
@@ -36,5 +42,8 @@ class Absences
             return null;
         }
         return $this->roomChanges;
+    }
+    function getAdditional(){
+        return $this->additional;
     }
 }

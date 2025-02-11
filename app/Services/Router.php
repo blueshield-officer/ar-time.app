@@ -16,7 +16,8 @@ class Router
     }
 
     public static function enable(){
-        session_start();
+        new Session();
+
         $query = preg_replace('/\/+/', '/', $_SERVER['REQUEST_URI']);
         if ($query !== '/'){
             $query = rtrim($query, '/');

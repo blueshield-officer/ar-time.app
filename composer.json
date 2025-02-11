@@ -7,6 +7,8 @@
   "require": {
     "google/apiclient": "2.15.0",
     "predis/predis": "^2.3",
-    "minishlink/web-push": "v6.0.7"
+    "minishlink/web-push": "v6.0.7",
+    "thiagoalessio/tesseract_ocr": "^2.13",
+    "ext-gd": "*"
   }
 }

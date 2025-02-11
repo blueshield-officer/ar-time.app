@@ -388,7 +388,7 @@
 		</span>
 
 		<span class="dateloc">
-			
+			(Auditorium and Cafe)
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-1 checked">
 								<span class="">Events</span>
@@ -457,6 +457,28 @@
 						<span class="day">Tue</span>
 					</div>
 					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/3/11/16322407/?id=0"
+				aria-label="3/11/2025 - RHO Kappa General Membership Meeting">
+				RHO Kappa General Membership Meeting
+			</a>
+		</span>
+
+		<span class="dateloc">
+				2:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					3:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/3/11/16322409/?id=0"
@@ -714,34 +736,7 @@
 	</li>
 					</ul>
 				</li>
-				<li class="cf event-day  " id="day-19">
-					<div class="day-date-box">
-						<span class="month">Mar</span>
-						<span class="date">19</span>
-						<span class="day">Wed</span>
-					</div>
-					<ul class="day-event-box">
-	<li class="day-event-info">
-		<span class="event-title-wrap">
-			<a class="event-link" href="/apps/events/2025/3/19/16561957/?id=0"
-				aria-label="3/19/2025 - Freshman and Sophomore Dance Permission Forms Due">
-				Freshman and Sophomore Dance Permission Forms Due
-			</a>
-		</span>
-
-		<span class="dateloc">
-			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
-								<span class="">Events</span>
-							</li>
-			</ul>
-		</span>
-
-		<div class="full-description" style="display: none;"></div>
-	</li>
-					</ul>
-				</li>
+				<li class="event-day empty no-border " id="day-19">
 				<li class="cf event-day  " id="day-20">
 					<div class="day-date-box">
 						<span class="month">Mar</span>
@@ -779,28 +774,9 @@
 					<ul class="day-event-box">
 	<li class="day-event-info">
 		<span class="event-title-wrap">
-			<a class="event-link" href="/apps/events/2025/3/21/16222246/?id=0"
-				aria-label="3/21/2025 - *Senior Retreat">
-				*Senior Retreat
-			</a>
-		</span>
-
-		<span class="dateloc">
-			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
-								<span class="">Events</span>
-							</li>
-			</ul>
-		</span>
-
-		<div class="full-description" style="display: none;"></div>
-	</li>
-	<li class="day-event-info">
-		<span class="event-title-wrap">
-			<a class="event-link" href="/apps/events/2025/3/21/16222247/?id=0"
-				aria-label="3/21/2025 - No Classes Grades 9-10-11">
-				No Classes Grades 9-10-11
+			<a class="event-link" href="/apps/events/2025/3/21/21595149/?id=0"
+				aria-label="3/21/2025 - *A Schedule - Day ">
+				*A Schedule - Day 
 			</a>
 		</span>
 
@@ -817,34 +793,7 @@
 	</li>
 					</ul>
 				</li>
-				<li class="cf event-day  " id="day-22">
-					<div class="day-date-box">
-						<span class="month">Mar</span>
-						<span class="date">22</span>
-						<span class="day">Sat</span>
-					</div>
-					<ul class="day-event-box">
-	<li class="day-event-info">
-		<span class="event-title-wrap">
-			<a class="event-link" href="/apps/events/2025/3/22/16222226/?id=0"
-				aria-label="3/22/2025 - OLC 3 on 3 Basketball Tournament">
-				OLC 3 on 3 Basketball Tournament
-			</a>
-		</span>
-
-		<span class="dateloc">
-			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
-								<span class="">Events</span>
-							</li>
-			</ul>
-		</span>
-
-		<div class="full-description" style="display: none;"></div>
-	</li>
-					</ul>
-				</li>
+				<li class="event-day empty no-border " id="day-22">
 				<li class="event-day empty no-border " id="day-23">
 				<li class="cf event-day  " id="day-24">
 					<div class="day-date-box">
@@ -922,6 +871,28 @@
 
 		<div class="full-description" style="display: none;"></div>
 	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/3/25/16322407/?id=0"
+				aria-label="3/25/2025 - RHO Kappa General Membership Meeting">
+				RHO Kappa General Membership Meeting
+			</a>
+		</span>
+
+		<span class="dateloc">
+				2:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					3:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
 					</ul>
 				</li>
 				<li class="cf event-day  " id="day-26">
@@ -969,6 +940,28 @@
 
 		<span class="dateloc">
 			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/3/27/21656671/?id=0"
+				aria-label="3/27/2025 - Junior Parent Meeting- Auditorium">
+				Junior Parent Meeting- Auditorium
+			</a>
+		</span>
+
+		<span class="dateloc">
+				6:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					8:30 PM
+			(Auditorium)
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-1 checked">
 								<span class="">Events</span>

@@ -6,10 +6,6 @@ use App\Services\DBC;
 
 class Checks
 {
-    static private function connection()
-    {
-        return DBC::getPDO();
-    }
     static public function password_valid($email, $password, $method){
         $password = trim($password);
         $email = strtolower(trim($email));
@@ -86,32 +82,6 @@ class Checks
             return 'Password is incorrect.';
         }
         return true;
-    }
-
-    static function check_account_status($DBC){
-        // session check
-        session_start();
-        if (isset($_SESSION['user_id']) && isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
-            echo 'You are logged in. SESSION';
-        }
-        // login first time by cookies
-        $user_id = $_COOKIE['user_id'] ?? '';
-        $token = $_COOKIE['keep_me_login'] ?? '';
-        if ($user_id !== '' && $token !== ''){
-            $result =$DBC->fetch($DBC->query('SELECT * FROM users_sessions WHERE user_id = ? AND token = ?', [$user_id, $token]));
-            if ($result !== false){
-                Actions::session_login($user_id);
-                echo 'You are logged in. COOKIES';
-            }
-            else {
-                // destroy broken cookies
-                Actions::destroy_cookies();
-            }
-        }
-        else {
-            // destroy broken cookies
-            Actions::destroy_cookies();
-        }
     }
 
     // TODO email check

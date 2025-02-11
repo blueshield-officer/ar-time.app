@@ -20,7 +20,7 @@
 
 
 <!-- header version -->
-{assign var="hVersion" value="1.07"}
+{assign var="hVersion" value="1.00"}
 <!-- Universal Stylesheets -->
 <link rel="stylesheet" href="assets/node_modules/bootstrap/dist/css/bootstrap.css?v={$hVersion}">
 <link rel="stylesheet" href="assets/css/normalize.css?v={$hVersion}">

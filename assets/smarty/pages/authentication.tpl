@@ -5,8 +5,6 @@
     <input type="password" name="password" placeholder="Password">
     {if $method === 'register'}
         <input type="password" name="password_repeat" placeholder="Repeat Password">
-    {else}
-        <input type="checkbox" name="keep_me_login" placeholder="Keep Me Login">
     {/if}
 
     <!-- Hidden -->

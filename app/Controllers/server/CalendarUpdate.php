@@ -4,7 +4,7 @@ namespace App\Controllers\server;
 
 use App\Services\Controller;
 use App\Services\ARHS_Data_Extractor\Calendar;
-class Calendar_Update extends Controller
+class CalendarUpdate extends Controller
 {
     public function execute()
     {

@@ -4,12 +4,7 @@ namespace App\Services;
 
 class PageDownloader
 {
-    public function __construct()
-    {
-        require_once $_SERVER['DOCUMENT_ROOT'] . '/libs/simplehtmldom/simple_html_dom.php';
-    }
-
-    public function downloadPage($url, $location, $filename){
+    static public function downloadPage($url, $location, $filename, $extension){
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (Windows NT 6.2; WOW64; rv:17.0) Gecko/20100101 Firefox/17.0');
@@ -24,7 +19,7 @@ class PageDownloader
         }
         curl_close($ch);
 
-        $directory = $_SERVER['DOCUMENT_ROOT'] . '/' . $location . $filename;
+        $directory = $_SERVER['DOCUMENT_ROOT'] . '/' . $location . $filename . '.' . $extension;
 
         try {
             $f = fopen($directory, "w");
@@ -37,6 +32,6 @@ class PageDownloader
         catch (\Exception $e) {
             var_dump($e->getMessage());
         }
-        return file_get_html($directory);
+        return $directory;
     }
 }

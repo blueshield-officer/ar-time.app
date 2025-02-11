@@ -8,7 +8,7 @@ class Controller
     public function __construct()
     {
         $this->view = new \Smarty();
-        $this->view->setTemplateDir($_SERVER['DOCUMENT_ROOT'] . '/templates/');
+        $this->view->setTemplateDir($_SERVER['DOCUMENT_ROOT'] . '/assets/smarty/');
         $this->view->setCompileDir($_SERVER['DOCUMENT_ROOT'] . '/cache/templates_c/');
         $this->view->setConfigDir($_SERVER['DOCUMENT_ROOT'] . '/cache/configs/');
         $this->view->setCacheDir($_SERVER['DOCUMENT_ROOT'] . '/cache/cache/');

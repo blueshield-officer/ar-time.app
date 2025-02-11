@@ -3,6 +3,7 @@
 namespace App\Services\Accounts;
 
 use App\Services\DBC;
+use App\Services\Session;
 
 class Actions
 {
@@ -19,7 +20,7 @@ class Actions
         // creating user id until it going to be uniqe
         $result = true;
         while ($result !== false){
-            $user_id = rand(100000, 999999);
+            $user_id = rand(1000000000, 9999999999);
             $result = $DBC->fetch($DBC->query('SELECT * FROM users_accounts WHERE user_id = ?', [$user_id]));
         }
         Actions::send_code($email);
@@ -29,22 +30,19 @@ class Actions
         $DBC->query('INSERT INTO users_accounts (user_id, email, password, first_name, last_name, type) VALUES (?, ?, ?, ?, ?, ?)', [$user_id, $email, $password, $first_name, $last_name, $type]);
         $DBC->query('INSERT INTO users_teachers (user_id) VALUES (?)', [$user_id]);
     }
-    static public function login($DBC, $email, $keep_me_login)
+    static public function login($DBC, $email)
     {
         $result = $DBC->fetch($DBC->query('SELECT user_id FROM users_accounts WHERE email = ?', [$email]));
 
         $user_id = $result['user_id'];
-        self::session_login($user_id);
 
-        if ($keep_me_login){
-            $user_agent = $_SERVER['HTTP_USER_AGENT'];
-            $token = base64_encode(random_bytes(256));
+        $user_agent = $_SERVER['HTTP_USER_AGENT'];
+        $token = base64_encode(random_bytes(256));
 
-            $DBC->query('INSERT INTO users_sessions (user_id, user_agent, token_cookie) VALUES (?, ?, ?)', [$user_id, $user_agent, $token]);
-            $time =  time() + 60 * 60 * 24 * 30;
-            setcookie('keep_me_login', $token, $time, '/');
-            setcookie('user_id', $user_id, $time, '/');
-        }
+        $DBC->query('INSERT INTO users_sessions (user_id, user_agent, token_cookie) VALUES (?, ?, ?)', [$user_id, $user_agent, $token]);
+        $time =  time() + 60 * 60 * 24 * 30;
+        setcookie('user_id', $user_id, $time, '/');
+        setcookie('keep_me_login', $token, $time, '/');
     }
     static public function send_code($email){
         $code = rand(100000, 999999);
@@ -58,14 +56,6 @@ class Actions
         );
 
         mail($to, $subject, $message, $headers);
-    }
-    static public function session_login($user_id){
-        $_SESSION['user_id'] = $user_id;
-        $_SESSION['logged_in'] = true;
-    }
-    static public function destroy_cookies(){
-        setcookie('user_id', '', time(), '/');
-        setcookie('keep_me_login', '', time(), '/');
     }
     static public function set_notification_token(){
         

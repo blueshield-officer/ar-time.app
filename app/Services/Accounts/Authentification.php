@@ -24,7 +24,6 @@ class Authentification
             // DATA RECORD
             $email = $_POST['email'] ?? '';
             $password = $_POST['password'] ?? '';
-            $keep_me_login = $_POST['keep_me_login'] ?? '';
 
             // PASSWORD CHECK !!!!!!
             $password_valid = Checks::password_valid($email, $password, $method);
@@ -60,7 +59,7 @@ class Authentification
                     echo $check_login;
                     die();
                 }
-                Actions::login($DBC, $email, $keep_me_login);
+                Actions::login($DBC, $email);
                 echo 'You are logged in!';
                 die();
             }

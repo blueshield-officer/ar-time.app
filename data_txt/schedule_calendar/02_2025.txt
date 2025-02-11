@@ -35,6 +35,25 @@
 					<ul class="day-event-box">
 	<li class="day-event-info">
 		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/2/3/21572065/?id=0"
+				aria-label="2/3/2025 - *A Schedule - Day 6">
+				*A Schedule - Day 6
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/2/3/16295736/?id=0"
 				aria-label="2/3/2025 - Varsity Mathletes Practice">
 				Varsity Mathletes Practice
@@ -88,6 +107,25 @@
 					<ul class="day-event-box">
 	<li class="day-event-info">
 		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/2/4/21572069/?id=0"
+				aria-label="2/4/2025 - *A Schedule - Day 1">
+				*A Schedule - Day 1
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/2/4/16322367/?id=0"
 				aria-label="2/4/2025 - RHO Kappa Officers Meeting">
 				RHO Kappa Officers Meeting
@@ -117,6 +155,44 @@
 						<span class="day">Wed</span>
 					</div>
 					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/2/5/21572066/?id=0"
+				aria-label="2/5/2025 - *H Schedule - Day 2">
+				*H Schedule - Day 2
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/2/5/21572082/?id=0"
+				aria-label="2/5/2025 - Freshmen Class Meeting">
+				Freshmen Class Meeting
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/2/5/21506124/?id=0"
@@ -150,6 +226,25 @@
 					<ul class="day-event-box">
 	<li class="day-event-info">
 		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/2/6/21632401/?id=0"
+				aria-label="2/6/2025 - *FID Day #2 - School Closed">
+				*FID Day #2 - School Closed
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/2/6/16222181/?id=0"
 				aria-label="2/6/2025 - Business Communications Information Technology Closer Look">
 				Business Communications Information Technology Closer Look
@@ -176,6 +271,47 @@
 		</span>
 
 		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/2/6/21572080/?id=0"
+				aria-label="2/6/2025 - Sophomore Class Meeting">
+				Sophomore Class Meeting
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/2/6/21623527/?id=0"
+				aria-label="2/6/2025 - Girls Bowling Senior Day at Thunderbird Lanes">
+				Girls Bowling Senior Day at Thunderbird Lanes
+			</a>
+		</span>
+
+		<span class="dateloc">
+				7:30 AM
+				<span class="ndash-range"> &ndash; </span>
+					8:30 AM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-1 checked">
@@ -217,6 +353,25 @@
 						<span class="day">Fri</span>
 					</div>
 					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/2/7/21572067/?id=0"
+				aria-label="2/7/2025 - *H Schedule - Day 3">
+				*H Schedule - Day 3
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/2/7/16322232/?id=0"
@@ -267,12 +422,15 @@
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/2/8/17716985/?id=0"
-				aria-label="2/8/2025 - Baseball Coach Bag Bingo">
-				Baseball Coach Bag Bingo
+				aria-label="2/8/2025 - Baseball Coach Bag Bingo- SOUTH CAFE ">
+				Baseball Coach Bag Bingo- SOUTH CAFE 
 			</a>
 		</span>
 
 		<span class="dateloc">
+				6 PM
+				<span class="ndash-range"> &ndash; </span>
+					10 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-1 checked">
@@ -286,7 +444,7 @@
 					</ul>
 				</li>
 				<li class="event-day empty no-border " id="day-9">
-				<li class="cf event-day  " id="day-10">
+				<li class="cf event-day  current-day " id="day-10">
 					<div class="day-date-box">
 						<span class="month">Feb</span>
 						<span class="date">10</span>
@@ -296,8 +454,8 @@
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/2/10/16222184/?id=0"
-				aria-label="2/10/2025 - *T Schedule - Day">
-				*T Schedule - Day
+				aria-label="2/10/2025 - *T Schedule - Day 4">
+				*T Schedule - Day 4
 			</a>
 		</span>
 
@@ -365,8 +523,27 @@
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/2/11/17503881/?id=0"
-				aria-label="2/11/2025 - *C Schedule - ">
-				*C Schedule - 
+				aria-label="2/11/2025 - *C Schedule - Day 5">
+				*C Schedule - Day 5
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/2/11/21572075/?id=0"
+				aria-label="2/11/2025 - Junior Class Meeting">
+				Junior Class Meeting
 			</a>
 		</span>
 
@@ -409,6 +586,47 @@
 		</span>
 
 		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/2/11/21572070/?id=0"
+				aria-label="2/11/2025 - Senior Class Meeting">
+				Senior Class Meeting
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/2/11/21594506/?id=0"
+				aria-label="2/11/2025 - Newspaper Meeting">
+				Newspaper Meeting
+			</a>
+		</span>
+
+		<span class="dateloc">
+				2:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					3:30 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-1 checked">
@@ -472,6 +690,25 @@
 						<span class="day">Wed</span>
 					</div>
 					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/2/12/21599906/?id=0"
+				aria-label="2/12/2025 - * H Schedule- Day 6">
+				* H Schedule- Day 6
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/2/12/16322232/?id=0"
@@ -546,28 +783,9 @@
 					<ul class="day-event-box">
 	<li class="day-event-info">
 		<span class="event-title-wrap">
-			<a class="event-link" href="/apps/events/2025/2/13/16222194/?id=0"
-				aria-label="2/13/2025 - *Junior Retreat">
-				*Junior Retreat
-			</a>
-		</span>
-
-		<span class="dateloc">
-			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
-								<span class="">Events</span>
-							</li>
-			</ul>
-		</span>
-
-		<div class="full-description" style="display: none;"></div>
-	</li>
-	<li class="day-event-info">
-		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/2/13/16222195/?id=0"
-				aria-label="2/13/2025 - *No Classes 9-10-12">
-				*No Classes 9-10-12
+				aria-label="2/13/2025 - *A Schedule - Day 1">
+				*A Schedule - Day 1
 			</a>
 		</span>
 
@@ -584,7 +802,75 @@
 	</li>
 					</ul>
 				</li>
-				<li class="event-day empty no-border " id="day-14">
+				<li class="cf event-day  " id="day-14">
+					<div class="day-date-box">
+						<span class="month">Feb</span>
+						<span class="date">14</span>
+						<span class="day">Fri</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/2/14/21575162/?id=0"
+				aria-label="2/14/2025 - *No school for students-Teacher Professional Development">
+				*No school for students-Teacher Professional Development
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/2/14/21593293/?id=0"
+				aria-label="2/14/2025 - Recommendations/Middle States Meeting">
+				Recommendations/Middle States Meeting
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/2/14/21621804/?id=0"
+				aria-label="2/14/2025 - Hockey Senior Night- Skate Zone">
+				Hockey Senior Night- Skate Zone
+			</a>
+		</span>
+
+		<span class="dateloc">
+				6:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					8:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
 				<li class="cf event-day  " id="day-15">
 					<div class="day-date-box">
 						<span class="month">Feb</span>
@@ -716,7 +1002,34 @@
 	</li>
 					</ul>
 				</li>
-				<li class="event-day empty no-border " id="day-18">
+				<li class="cf event-day  " id="day-18">
+					<div class="day-date-box">
+						<span class="month">Feb</span>
+						<span class="date">18</span>
+						<span class="day">Tue</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/2/18/21599912/?id=0"
+				aria-label="2/18/2025 - *A Schedule- Day 2">
+				*A Schedule- Day 2
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
 				<li class="cf event-day  " id="day-19">
 					<div class="day-date-box">
 						<span class="month">Feb</span>
@@ -724,6 +1037,47 @@
 						<span class="day">Wed</span>
 					</div>
 					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/2/19/21599915/?id=0"
+				aria-label="2/19/2025 - * E Schedule- Day 3">
+				* E Schedule- Day 3
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/2/19/21628178/?id=0"
+				aria-label="2/19/2025 - Black Student Union hosts a Guest Speaker- Mr. Tarawalley">
+				Black Student Union hosts a Guest Speaker- Mr. Tarawalley
+			</a>
+		</span>
+
+		<span class="dateloc">
+				2:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					3:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/2/19/16222199/?id=0"
@@ -757,6 +1111,25 @@
 					<ul class="day-event-box">
 	<li class="day-event-info">
 		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/2/20/21599921/?id=0"
+				aria-label="2/20/2025 - * A Schedule- Day 4">
+				* A Schedule- Day 4
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/2/20/16415080/?id=0"
 				aria-label="2/20/2025 - NHS General Membership Meeting">
 				NHS General Membership Meeting
@@ -788,9 +1161,9 @@
 					<ul class="day-event-box">
 	<li class="day-event-info">
 		<span class="event-title-wrap">
-			<a class="event-link" href="/apps/events/2025/2/21/16222185/?id=0"
-				aria-label="2/21/2025 - Senior - 100 Days to Graduation">
-				Senior - 100 Days to Graduation
+			<a class="event-link" href="/apps/events/2025/2/21/21599922/?id=0"
+				aria-label="2/21/2025 - *H Schedule -Day 5">
+				*H Schedule -Day 5
 			</a>
 		</span>
 
@@ -807,16 +1180,13 @@
 	</li>
 	<li class="day-event-info">
 		<span class="event-title-wrap">
-			<a class="event-link" href="/apps/events/2025/2/21/16222212/?id=0"
-				aria-label="2/21/2025 - Freshmen and Sophomore Dance ">
-				Freshmen and Sophomore Dance 
+			<a class="event-link" href="/apps/events/2025/2/21/16222185/?id=0"
+				aria-label="2/21/2025 - Senior - 100 Days to Graduation">
+				Senior - 100 Days to Graduation
 			</a>
 		</span>
 
 		<span class="dateloc">
-				7 PM
-				<span class="ndash-range"> &ndash; </span>
-					10 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-1 checked">
@@ -838,6 +1208,25 @@
 						<span class="day">Mon</span>
 					</div>
 					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/2/24/21599924/?id=0"
+				aria-label="2/24/2025 - *A Schedule- Day 6">
+				*A Schedule- Day 6
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/2/24/16295736/?id=0"
@@ -871,6 +1260,25 @@
 					<ul class="day-event-box">
 	<li class="day-event-info">
 		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/2/25/21599926/?id=0"
+				aria-label="2/25/2025 - *A Schedule- Day 1">
+				*A Schedule- Day 1
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/2/25/21494520/?id=0"
 				aria-label="2/25/2025 - Progress Reports Due">
 				Progress Reports Due
@@ -891,6 +1299,28 @@
 
 		<div class="full-description" style="display: none;"></div>
 	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/2/25/16322407/?id=0"
+				aria-label="2/25/2025 - RHO Kappa General Membership Meeting">
+				RHO Kappa General Membership Meeting
+			</a>
+		</span>
+
+		<span class="dateloc">
+				2:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					3:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
 					</ul>
 				</li>
 				<li class="cf event-day  " id="day-26">
@@ -900,6 +1330,25 @@
 						<span class="day">Wed</span>
 					</div>
 					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/2/26/21599928/?id=0"
+				aria-label="2/26/2025 - *E Schedule- Day 2">
+				*E Schedule- Day 2
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/2/26/16222200/?id=0"
@@ -924,7 +1373,56 @@
 	</li>
 					</ul>
 				</li>
-				<li class="event-day empty no-border " id="day-27">
+				<li class="cf event-day  " id="day-27">
+					<div class="day-date-box">
+						<span class="month">Feb</span>
+						<span class="date">27</span>
+						<span class="day">Thu</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/2/27/21599929/?id=0"
+				aria-label="2/27/2025 - *A Schedule- Day 3">
+				*A Schedule- Day 3
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/2/27/21628270/?id=0"
+				aria-label="2/27/2025 - BSU and Rho Kappa- International Food Day After School- North Gym">
+				BSU and Rho Kappa- International Food Day After School- North Gym
+			</a>
+		</span>
+
+		<span class="dateloc">
+				2:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					3:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
 				<li class="cf event-day  " id="day-28">
 					<div class="day-date-box">
 						<span class="month">Feb</span>
@@ -932,6 +1430,25 @@
 						<span class="day">Fri</span>
 					</div>
 					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/2/28/21599931/?id=0"
+				aria-label="2/28/2025 - *Special Schedule ">
+				*Special Schedule 
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/2/28/16222183/?id=0"

@@ -709,7 +709,7 @@
 	</li>
 					</ul>
 				</li>
-				<li class="cf event-day  current-day " id="day-17">
+				<li class="cf event-day  " id="day-17">
 					<div class="day-date-box">
 						<span class="month">Jan</span>
 						<span class="date">17</span>
@@ -905,8 +905,8 @@
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/1/21/20590191/?id=0"
-				aria-label="1/21/2025 - *Quarter Exam Schedule">
-				*Quarter Exam Schedule
+				aria-label="1/21/2025 - *Quarter Exam Schedule: Math, BCIT">
+				*Quarter Exam Schedule: Math, BCIT
 			</a>
 		</span>
 
@@ -932,7 +932,7 @@
 		<span class="dateloc">
 				1/21/2025
 				<span class="ndash-range"> &ndash; </span>
-					1/23/2025
+					1/24/2025
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-1 checked">
@@ -993,8 +993,8 @@
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/1/22/20590195/?id=0"
-				aria-label="1/22/2025 - *Quarter Exam Schedule">
-				*Quarter Exam Schedule
+				aria-label="1/22/2025 - *Quarter Exam Schedule: ELA, World Language">
+				*Quarter Exam Schedule: ELA, World Language
 			</a>
 		</span>
 
@@ -1020,7 +1020,7 @@
 		<span class="dateloc">
 				1/21/2025
 				<span class="ndash-range"> &ndash; </span>
-					1/23/2025
+					1/24/2025
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-1 checked">
@@ -1062,8 +1062,8 @@
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/1/23/20590196/?id=0"
-				aria-label="1/23/2025 - *Quarter Exam Schedule">
-				*Quarter Exam Schedule
+				aria-label="1/23/2025 - *Quarter Exam Schedule: Theology, Social Studies">
+				*Quarter Exam Schedule: Theology, Social Studies
 			</a>
 		</span>
 
@@ -1089,7 +1089,7 @@
 		<span class="dateloc">
 				1/21/2025
 				<span class="ndash-range"> &ndash; </span>
-					1/23/2025
+					1/24/2025
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-1 checked">
@@ -1118,6 +1118,66 @@
 		</span>
 
 		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/1/24/21571722/?id=0"
+				aria-label="1/24/2025 - *Eagles Top Dress Down - $1">
+				*Eagles Top Dress Down - $1
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/1/24/21549889/?id=0"
+				aria-label="1/24/2025 - *Quarter Exam Schedule: Fine Arts, Science">
+				*Quarter Exam Schedule: Fine Arts, Science
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/1/21/20871702/?id=0"
+				aria-label="1/21/2025 - DECA Bake Sale During Lunch Periods">
+				DECA Bake Sale During Lunch Periods
+			</a>
+		</span>
+
+		<span class="dateloc">
+				1/21/2025
+				<span class="ndash-range"> &ndash; </span>
+					1/24/2025
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-1 checked">
@@ -1299,6 +1359,25 @@
 			<a class="event-link" href="/apps/events/2025/1/27/16222172/?id=0"
 				aria-label="1/27/2025 - Catholic Schools Week Mass">
 				Catholic Schools Week Mass
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/1/27/21583875/?id=0"
+				aria-label="1/27/2025 - NEHS Committee Meeting ">
+				NEHS Committee Meeting 
 			</a>
 		</span>
 
