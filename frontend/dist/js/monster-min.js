@@ -1,0 +1,1 @@
+addEventListener("DOMContentLoaded",e=>{document.getElementById("account-box")});

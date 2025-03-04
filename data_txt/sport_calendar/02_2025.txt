@@ -359,7 +359,7 @@
 	</li>
 					</ul>
 				</li>
-				<li class="cf event-day  current-day " id="day-10">
+				<li class="cf event-day  " id="day-10">
 					<div class="day-date-box">
 						<span class="month">Feb</span>
 						<span class="date">10</span>
@@ -480,60 +480,32 @@
 				<li class="event-day empty no-border " id="day-16">
 				<li class="event-day empty no-border " id="day-17">
 				<li class="event-day empty no-border " id="day-18">
-				<li class="cf event-day  " id="day-19">
-					<div class="day-date-box">
-						<span class="month">Feb</span>
-						<span class="date">19</span>
-						<span class="day">Wed</span>
-					</div>
-					<ul class="day-event-box">
-	<li class="day-event-info">
-		<span class="event-title-wrap">
-			<a class="event-link" href="/apps/events/2025/2/19/17730615/?id=1"
-				aria-label="2/19/2025 - Time: TBA -Archbishop Ryan High School BKB B V Away OPEN (Semifinal @ Palestra)">
-				Time: TBA -Archbishop Ryan High School BKB B V Away OPEN (Semifinal @ Palestra)
-			</a>
-		</span>
-
-		<span class="dateloc">
-				12 AM
-				<span class="ndash-range"> &ndash; </span>
-					1 AM
-			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
-								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
-		</span>
-
-		<div class="full-description" style="display: none;"></div>
-	</li>
-					</ul>
-				</li>
+				<li class="event-day empty no-border " id="day-19">
 				<li class="event-day empty no-border " id="day-20">
 				<li class="event-day empty no-border " id="day-21">
 				<li class="event-day empty no-border " id="day-22">
-				<li class="cf event-day  " id="day-23">
+				<li class="event-day empty no-border " id="day-23">
+				<li class="event-day empty no-border " id="day-24">
+				<li class="cf event-day  " id="day-25">
 					<div class="day-date-box">
 						<span class="month">Feb</span>
-						<span class="date">23</span>
-						<span class="day">Sun</span>
+						<span class="date">25</span>
+						<span class="day">Tue</span>
 					</div>
 					<ul class="day-event-box">
 	<li class="day-event-info">
 		<span class="event-title-wrap">
-			<a class="event-link" href="/apps/events/2025/2/23/17730616/?id=1"
-				aria-label="2/23/2025 - Time: TBA -Archbishop Ryan High School BKB B V Home OPEN (PCL Championship @ Palestra)">
-				Time: TBA -Archbishop Ryan High School BKB B V Home OPEN (PCL Championship @ Palestra)
+			<a class="event-link" href="/apps/events/2025/2/25/21976873/?id=1"
+				aria-label="2/25/2025 - Archbishop Ryan High School BKB G V Away Dobbins (3rd Place District Game)">
+				Archbishop Ryan High School BKB G V Away Dobbins (3rd Place District Game)
 			</a>
 		</span>
 
 		<span class="dateloc">
-				12 AM
+				4:30 PM
 				<span class="ndash-range"> &ndash; </span>
-					1 AM
-			
+					5:30 PM
+			(2150 W Lehigh Ave. Philadelphia, PA 19132-0000)
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
 								<span class="">Athletic Calendar</span>
@@ -545,8 +517,6 @@
 	</li>
 					</ul>
 				</li>
-				<li class="event-day empty no-border " id="day-24">
-				<li class="event-day empty no-border " id="day-25">
 				<li class="event-day empty no-border " id="day-26">
 				<li class="event-day empty no-border " id="day-27">
 				<li class="event-day empty no-border " id="day-28">

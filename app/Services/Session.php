@@ -30,6 +30,10 @@ class Session
             }
             $this->setLogin(false);
         }
+        // setting last date
+        if (is_null($_SESSION['date'])){
+            $_SESSION['date'] = (new \DateTime('now'))->format('Y-m-d');
+        }
     }
     private function destroyCookies(){
         setcookie('user_id', '', time(), '/');

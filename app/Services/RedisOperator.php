@@ -27,11 +27,16 @@ class RedisOperator
         }
         return self::$instance;
     }
-    public function add($key, $value){
-        $this->redis->set($key, $value);
+    public function set($key, $value, $lifetime = null){
+        if ($lifetime === null) {
+            $this->redis->set($key, $value);
+        }
+        else {
+            $this->redis->setex($key, $lifetime, $value);
+        }
     }
 
-    public function add_object($key, $value, $objectName, $lifetime = null)
+    public function set_object($key, $value, $objectName, $lifetime = null)
     {
         $this->redis->hset($objectName . ':test', $key, $value);
 
@@ -44,7 +49,7 @@ class RedisOperator
             return $this->redis->get($key);
         }
         else {
-            return $this->redis->get($objectName . $key);
+            return $this->redis->get($objectName . ':' . $key);
         }
     }
     public function delete($key){

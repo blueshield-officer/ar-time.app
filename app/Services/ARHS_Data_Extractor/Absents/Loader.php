@@ -2,14 +2,12 @@
 
 namespace App\Services\ARHS_Data_Extractor\Absents;
 
+use App\Services\CacheOperator;
 use App\Services\DatabaseRequests;
 use App\Services\DBC;
 use App\Services\GoogleDocumentExtractor;
 use App\Services\RedisOperator;
-use Google\Client;
-use Google\Service\Docs;
-use App\Services\ARHS_Data_Extractor\Formatters;
-use Redis;
+use App\Services\Formatters;
 
 class Loader
 {
@@ -47,7 +45,7 @@ class Loader
         $targets = [
             't' => 'the following teachers is/are absent today',
             's' => 'the following staff is/are absent today',
-            'r' => 'please note the following room changes',
+            'r' => '________________________________________',
             'end' => '_______________________________________________________________'
         ];
         $class = $targets[$target];
@@ -56,18 +54,9 @@ class Loader
             $str = strtolower($document[$index]);
             // 2025-12-06, никогда не забудем
             if ($target == 'r' || $target == 'end'){
-                if (str_contains($str, 'students must check')){
-                    if ($target == 'r'){
-                        return $index - 1;
-                    }
-                    return null;
-                }
                 foreach ($months as $month){
                     if (str_contains($str, $month)){
-                        if ($target == 'r'){
-                            return $index - 1;
-                        }
-                        return null;
+                        return $index;
                     }
                 }
             }
@@ -75,10 +64,10 @@ class Loader
                 return $index;
             }
             else if (str_contains($str, '_______________________________________________________________')){
-                return null;
+                return $index - 1;
             }
         }
-        return null;
+        return $index - 1;
     }
     static private function document_findDateIndex($date, $document, $maxRepeat)
     {
@@ -150,7 +139,7 @@ class Loader
                 $directionArray = explode('-', $str);
                 foreach ($directionArray as $element){
                     $tempArray = explode('To', ucwords($element));
-                    $teachers = Formatters::fix_name($tempArray[0]);
+                    $teachers = self::fix_name($tempArray[0]);
                     $location = trim($tempArray[1]);
                     foreach ($teachers as $teacher){
                         $data['roomChanges'][$period][$teacher]['name'] = $teacher;
@@ -159,7 +148,9 @@ class Loader
                 }
             }
             else {
-                $data['additional'][] = ucwords($str);
+                if (!str_contains($str, 'room changes')){
+                    $data['additional'][] = ucwords($str);
+                }
             }
         }
         return $data;
@@ -235,7 +226,7 @@ class Loader
     }
     static private function fetchDayData($DBC, $date)
     {
-        return $DBC->fetch($DBC->query('SELECT * FROM `calendar_schedules` WHERE `date` >= ? AND `school` = 1 ORDER BY `date` ASC LIMIT 1', [$date->format('Y-m-d')]));
+        return $DBC->fetch($DBC->query('SELECT * FROM `calendar_schedules` WHERE `date` >= ? ORDER BY `date` ASC LIMIT 1', [$date->format('Y-m-d')]));
     }
     static private function isDay($DBC, $date, $schedule)
     {
@@ -262,7 +253,9 @@ class Loader
     }
     static private function record_data($data_array, $class)
     {
+        var_dump($data_array);
         foreach ($data_array as $method => $object) {
+            var_dump($object);
             foreach ($object as $period => $period_array) {
                 foreach ($period_array as $info) {
                     $class->add($period, $info, $method);
@@ -270,11 +263,27 @@ class Loader
             }
         }
     }
+    static private function fix_name($str){
+        $array = explode(',', $str);
+        $newArray = [];
+        foreach ($array as $item){
+            $corrected_name = preg_replace('/(\.)([A-Za-z0-9])/', '$1 $2', $item);
+            $newArray[] = ucwords(self::analyzable(trim($corrected_name)));
+        }
+        return $newArray;
+    }
+    static private function analyzable($str){
+        return strtolower(trim(preg_replace('/\s+/', ' ', $str)));
+    }
     static public function load()
     {
         $execution_time_start = microtime(true);
 
         $DBC = DBC::getInstance();
+
+        $redis = RedisOperator::getInstance();
+
+        $cacheOperator = new CacheOperator($DBC, $redis);
 
         $DatabaseRequests = new DatabaseRequests($DBC);
 
@@ -291,13 +300,14 @@ class Loader
             $date = $dayData['date'];
         }
         // DEBUG
-        $date = \DateTime::createFromFormat('Y-m-d', '2025-01-31');
+        $date = \DateTime::createFromFormat('Y-m-d', '2025-03-03');
 
 
         // Actuall work
         $absences = new Absences($DBC, $date);
         $googleDocumentExtractor = new GoogleDocumentExtractor($_SERVER['DOCUMENT_ROOT'] . '/../credentials.json');
         $document = $googleDocumentExtractor->extract('1KhmTALivDbAvLusQjZQOOQmPKDm-2Do-gVfvAdf_6WA');
+
 
         $documentStartIndex = self::document_findDateIndex($date, $document, 1000);
 
@@ -334,6 +344,8 @@ class Loader
                     $absenceData[$type] = $output = preg_replace('!\s+!', ' ', trim(join(' ', $stringArray)));
                 }
             }
+
+
             // adders
             $roomChangesAndAdditional = self::roomChangesAndAdditionalToArray($absenceData['roomChanges']);
             $absences->setPeople(self::peopleToArray($absenceData['teachers'], $absenceData['staff']));
@@ -375,8 +387,11 @@ class Loader
                 $room_changes_old = null;
             }
             // find new data
-            self::record_data(self::find_diference($room_changes_new, $room_changes_old), $room_changes);
-            $absentPeople->update_locations($DBC);
+            if ($room_changes_new !== $room_changes_old) {
+                self::record_data(self::find_diference($room_changes_new, $room_changes_old), $room_changes);
+                $absentPeople->update_locations($DBC);
+            }
+
 
             // Additional
             $result = $DBC->fetchAll($DBC->query('SELECT `text` FROM `absent_additional` WHERE `date` = ?', [$date->format('Y-m-d')]));
@@ -388,30 +403,30 @@ class Loader
                 }
             }
             if ($additional_new !== $additional_old) {
+                // add new data to SQL about additional
                 $DBC->query('DELETE FROM `absent_additional` WHERE `date` = ?', [$date->format('Y-m-d')]);
-                foreach ($additional_new as $str) {
-                    $DBC->query('INSERT INTO `absent_additional` (`date`, `text`)  VALUES (?, ?)', [$date->format('Y-m-d'), $str]);
+                if (!is_null($additional_new)) {
+                    foreach ($additional_new as $str) {
+                        $DBC->query('INSERT INTO `absent_additional` (`date`, `text`)  VALUES (?, ?)', [$date->format('Y-m-d'), $str]);
+                    }
                 }
+                // Redis
+                $cacheOperator->updateAbsents('absent_additional', $date->format('Y-m-d'));
             }
 
-            // Redis
-            $redis = RedisOperator::getInstance();
-            $absent_json = json_encode([
-                'absent_people' => $people_new,
-                'room_changes' => $room_changes_new ?? null,
-            ]);
+
+            $absent_md5 = md5(json_encode([$people_new, $room_changes_new ?? null]));
             // check is md5 the same
-            if (md5($absent_json) !== $redis->get('absents:md5')) {
-                $redis->add('absents:data', $absent_json);
-                $redis->add('absents:additional', $additional_new);
-                $redis->add('absents:md5', md5($absent_json));
-                $redis->add('absents:date', (new \DateTime('now'))->format('j F, h:i A'));
+            if ($absent_md5 !== $redis->get('temp:absents:md5')) {
+                $redis->set('temp:absents:md5', $absent_md5);
+                $redis->set('temp:absents:last-update-date', (new \DateTime('now'))->format('j F, h:i A'));
             }
             // SQL absents
-            foreach ([
-                         'people' => $absentPeople->getInfo(),
-                         'room_changes' => $room_changes->getInfo()
-                     ] as $class => $change_array) {
+            $newData = [
+                'people' => $absentPeople->getInfo(),
+                'room_changes' => $room_changes->getInfo()
+            ];
+            foreach ($newData as $class => $change_array) {
                 foreach ($change_array as $method => $periods) {
                     foreach ($periods as $period => $person_object) {
                         foreach ($person_object as $person) {
@@ -420,16 +435,34 @@ class Loader
                     }
                 }
             }
-            // SQL school staff
-            foreach ($absentPeople->peopleToRecordAtDB() as $name => $personObject) {
-                $result = $DBC->fetchAll($DBC->query('SELECT * FROM `school_staff_list` WHERE `short_name` = ?', [$name]));
-                if (empty($result)) {
-                    $DatabaseRequests->schoolStaffInsertPerson($personObject);
-                }
+            // redis save
+            if (!empty($newData['people'])) {
+                $cacheOperator->updateAbsents('absent_people', $date->format('Y-m-d'));
+            }
+            if (!empty($newData['room_changes'])) {
+                $cacheOperator->updateAbsents('absent_room_changes', $date->format('Y-m-d'));
             }
 
+            // SQL school staff + redis if updated
+            $peopleToRecordAtDBArray = $absentPeople->peopleToRecordAtDB();
+            if (!empty($peopleToRecordAtDBArray)) {
+                foreach ($peopleToRecordAtDBArray as $name => $personObject) {
+                    // TODO закончить наконец-то с гендарами на которые я забил раньше : )
+                    $textForGender = join(array_slice($document, $documentStartIndex, 50));
+                    $result = $DBC->fetchAll($DBC->query('SELECT * FROM school_staff_list WHERE `short_name` = ?', [$name]));
+                    if (empty($result)) {
+                        $DatabaseRequests->schoolStaffInsertPerson($personObject);
+                    }
+                }
+            }
+            
             $execution_time_end = microtime(true);
             $function_time = round($execution_time_end - $execution_time_start, 2);
+
+
+//            echo '<pre>';
+//            var_dump(json_decode($redis->get('data:absent_people:2025-02-27'), true));
+//            echo '<pre>';
 
             // DEBUG
             return [

@@ -16,6 +16,11 @@ class Detectors
     }
     static function checkIfHasSchedule($str)
     {
+        // banned phrases
+        if (str_contains($str, 'quarter exam schedule')){
+            return false;
+        }
+        // ==========
         if (str_contains($str, 'schedule')){
             return true;
         }

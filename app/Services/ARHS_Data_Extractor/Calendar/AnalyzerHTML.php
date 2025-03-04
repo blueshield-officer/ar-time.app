@@ -49,7 +49,8 @@ class AnalyzerHTML
         $this->pageDownloader->downloadPage(
             'https://www.archbishopryan.com/apps/events/' . $year . '/' . $month . '/print/?id=' . $this->id,
             'data_txt/' . $this->path . '/',
-            $month . '_' . $year . '.txt', "w"
+            $month . '_' . $year,
+            'txt'
         );
     }
     private function countAvailableDays($i)

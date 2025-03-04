@@ -40,9 +40,9 @@
 		</span>
 
 		<span class="dateloc">
-				3:45 PM
+				6:30 PM
 				<span class="ndash-range"> &ndash; </span>
-					4:45 PM
+					7:30 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -102,9 +102,9 @@
 		</span>
 
 		<span class="dateloc">
-				3:45 PM
+				6:30 PM
 				<span class="ndash-range"> &ndash; </span>
-					4:45 PM
+					7:30 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -151,16 +151,38 @@
 	</li>
 	<li class="day-event-info">
 		<span class="event-title-wrap">
-			<a class="event-link" href="/apps/events/2025/4/7/21589480/?id=1"
-				aria-label="4/7/2025 - Time: TBA -Archbishop Ryan High School SB G V Home OPEN">
-				Time: TBA -Archbishop Ryan High School SB G V Home OPEN
+			<a class="event-link" href="/apps/events/2025/4/7/21983815/?id=1"
+				aria-label="4/7/2025 - Archbishop Ryan High School SB G V Away Bensalem Township High School">
+				Archbishop Ryan High School SB G V Away Bensalem Township High School
 			</a>
 		</span>
 
 		<span class="dateloc">
-				12 AM
+				3:30 PM
 				<span class="ndash-range"> &ndash; </span>
-					1 AM
+					4:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/4/7/21589480/?id=1"
+				aria-label="4/7/2025 - Archbishop Ryan High School SB G V Away Bensalem Township High School">
+				Archbishop Ryan High School SB G V Away Bensalem Township High School
+			</a>
+		</span>
+
+		<span class="dateloc">
+				3:45 PM
+				<span class="ndash-range"> &ndash; </span>
+					4:45 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -249,6 +271,28 @@
 	</li>
 	<li class="day-event-info">
 		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/4/9/21983814/?id=1"
+				aria-label="4/9/2025 - Archbishop Ryan High School BB B JV Away Bonner-Prendergast">
+				Archbishop Ryan High School BB B JV Away Bonner-Prendergast
+			</a>
+		</span>
+
+		<span class="dateloc">
+				3:45 PM
+				<span class="ndash-range"> &ndash; </span>
+					4:45 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/4/9/21560698/?id=1"
 				aria-label="4/9/2025 - Archbishop Ryan High School SB G V Away Gwynedd Mercy Academy">
 				Archbishop Ryan High School SB G V Away Gwynedd Mercy Academy
@@ -259,6 +303,28 @@
 				3:45 PM
 				<span class="ndash-range"> &ndash; </span>
 					4:45 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/4/9/21892314/?id=1"
+				aria-label="4/9/2025 - Archbishop Ryan High School BB B V Home Bonner-Prendergast">
+				Archbishop Ryan High School BB B V Home Bonner-Prendergast
+			</a>
+		</span>
+
+		<span class="dateloc">
+				4 PM
+				<span class="ndash-range"> &ndash; </span>
+					5 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -435,7 +501,81 @@
 					</ul>
 				</li>
 				<li class="event-day empty no-border " id="day-11">
-				<li class="event-day empty no-border " id="day-12">
+				<li class="cf event-day  " id="day-12">
+					<div class="day-date-box">
+						<span class="month">Apr</span>
+						<span class="date">12</span>
+						<span class="day">Sat</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/4/12/21983818/?id=1"
+				aria-label="4/12/2025 - Archbishop Ryan High School LAX B V Home Quakertown HS">
+				Archbishop Ryan High School LAX B V Home Quakertown HS
+			</a>
+		</span>
+
+		<span class="dateloc">
+				12:30 AM
+				<span class="ndash-range"> &ndash; </span>
+					1:30 AM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/4/12/21892321/?id=1"
+				aria-label="4/12/2025 - Archbishop Ryan High School BB B V Away Springside Chestnut Hill Academy">
+				Archbishop Ryan High School BB B V Away Springside Chestnut Hill Academy
+			</a>
+		</span>
+
+		<span class="dateloc">
+				12 PM
+				<span class="ndash-range"> &ndash; </span>
+					1 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/4/12/21983819/?id=1"
+				aria-label="4/12/2025 - Archbishop Ryan High School LAX B JV Home Quakertown HS">
+				Archbishop Ryan High School LAX B JV Home Quakertown HS
+			</a>
+		</span>
+
+		<span class="dateloc">
+				5 PM
+				<span class="ndash-range"> &ndash; </span>
+					6 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
 				<li class="event-day empty no-border " id="day-13">
 				<li class="cf event-day  " id="day-14">
 					<div class="day-date-box">
@@ -774,6 +914,28 @@
 	</li>
 	<li class="day-event-info">
 		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/4/24/21892312/?id=1"
+				aria-label="4/24/2025 - Archbishop Ryan High School BB B V Home Father Judge">
+				Archbishop Ryan High School BB B V Home Father Judge
+			</a>
+		</span>
+
+		<span class="dateloc">
+				4 PM
+				<span class="ndash-range"> &ndash; </span>
+					5 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/4/24/21560706/?id=1"
 				aria-label="4/24/2025 - Archbishop Ryan High School SB G JV Away Archbishop Wood High School">
 				Archbishop Ryan High School SB G JV Away Archbishop Wood High School
@@ -803,6 +965,28 @@
 						<span class="day">Fri</span>
 					</div>
 					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/4/25/21892313/?id=1"
+				aria-label="4/25/2025 - Archbishop Ryan High School BB B V Away Neshaminy HS">
+				Archbishop Ryan High School BB B V Away Neshaminy HS
+			</a>
+		</span>
+
+		<span class="dateloc">
+				3:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					4:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/4/25/21589482/?id=1"
@@ -858,27 +1042,18 @@
 
 		<div class="full-description" style="display: none;"></div>
 	</li>
-					</ul>
-				</li>
-				<li class="cf event-day  " id="day-29">
-					<div class="day-date-box">
-						<span class="month">Apr</span>
-						<span class="date">29</span>
-						<span class="day">Tue</span>
-					</div>
-					<ul class="day-event-box">
 	<li class="day-event-info">
 		<span class="event-title-wrap">
-			<a class="event-link" href="/apps/events/2025/4/29/17800100/?id=1"
-				aria-label="4/29/2025 - Archbishop Ryan High School SB G V Home Cardinal O'Hara">
-				Archbishop Ryan High School SB G V Home Cardinal O'Hara
+			<a class="event-link" href="/apps/events/2025/4/28/21892309/?id=1"
+				aria-label="4/28/2025 - Archbishop Ryan High School BB B V Away Devon Preparatory School">
+				Archbishop Ryan High School BB B V Away Devon Preparatory School
 			</a>
 		</span>
 
 		<span class="dateloc">
-				3:30 PM
+				4 PM
 				<span class="ndash-range"> &ndash; </span>
-					4:30 PM
+					5 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -889,6 +1064,15 @@
 
 		<div class="full-description" style="display: none;"></div>
 	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-29">
+					<div class="day-date-box">
+						<span class="month">Apr</span>
+						<span class="date">29</span>
+						<span class="day">Tue</span>
+					</div>
+					<ul class="day-event-box">
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/4/29/17800101/?id=1"
@@ -913,7 +1097,59 @@
 	</li>
 					</ul>
 				</li>
-				<li class="event-day empty no-border " id="day-30">
+				<li class="cf event-day  " id="day-30">
+					<div class="day-date-box">
+						<span class="month">Apr</span>
+						<span class="date">30</span>
+						<span class="day">Wed</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/4/30/21892322/?id=1"
+				aria-label="4/30/2025 - Archbishop Ryan High School BB B V Home Neumann Goretti">
+				Archbishop Ryan High School BB B V Home Neumann Goretti
+			</a>
+		</span>
+
+		<span class="dateloc">
+				4 PM
+				<span class="ndash-range"> &ndash; </span>
+					5 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/4/30/17800100/?id=1"
+				aria-label="4/30/2025 - Archbishop Ryan High School SB G V Home Cardinal O'Hara">
+				Archbishop Ryan High School SB G V Home Cardinal O'Hara
+			</a>
+		</span>
+
+		<span class="dateloc">
+				6:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					7:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
 </ul>
 
 

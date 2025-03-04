@@ -77,28 +77,6 @@
 	</li>
 	<li class="day-event-info">
 		<span class="event-title-wrap">
-			<a class="event-link" href="/apps/events/2025/5/1/19331168/?id=1"
-				aria-label="5/1/2025 - Archbishop Ryan High School SB G V Home Bonner-Prendergast">
-				Archbishop Ryan High School SB G V Home Bonner-Prendergast
-			</a>
-		</span>
-
-		<span class="dateloc">
-				4 PM
-				<span class="ndash-range"> &ndash; </span>
-					5 PM
-			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
-								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
-		</span>
-
-		<div class="full-description" style="display: none;"></div>
-	</li>
-	<li class="day-event-info">
-		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/5/1/21560702/?id=1"
 				aria-label="5/1/2025 - Archbishop Ryan High School VB B JV Home Archbishop Wood High School">
 				Archbishop Ryan High School VB B JV Home Archbishop Wood High School
@@ -143,6 +121,28 @@
 	</li>
 	<li class="day-event-info">
 		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/1/19331168/?id=1"
+				aria-label="5/1/2025 - Archbishop Ryan High School SB G V Home Bonner-Prendergast">
+				Archbishop Ryan High School SB G V Home Bonner-Prendergast
+			</a>
+		</span>
+
+		<span class="dateloc">
+				6:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					7:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/5/1/21560701/?id=1"
 				aria-label="5/1/2025 - Archbishop Ryan High School VB B V Home Archbishop Wood High School">
 				Archbishop Ryan High School VB B V Home Archbishop Wood High School
@@ -166,7 +166,37 @@
 					</ul>
 				</li>
 				<li class="event-day empty no-border " id="day-2">
-				<li class="event-day empty no-border " id="day-3">
+				<li class="cf event-day  " id="day-3">
+					<div class="day-date-box">
+						<span class="month">May</span>
+						<span class="date">3</span>
+						<span class="day">Sat</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/3/21892324/?id=1"
+				aria-label="5/3/2025 - Archbishop Ryan High School BB B V Home Germantown Academy">
+				Archbishop Ryan High School BB B V Home Germantown Academy
+			</a>
+		</span>
+
+		<span class="dateloc">
+				12 PM
+				<span class="ndash-range"> &ndash; </span>
+					1 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
 				<li class="event-day empty no-border " id="day-4">
 				<li class="cf event-day  " id="day-5">
 					<div class="day-date-box">
@@ -281,6 +311,28 @@
 						<span class="day">Wed</span>
 					</div>
 					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/7/21892310/?id=1"
+				aria-label="5/7/2025 - Archbishop Ryan High School BB B V Away Conwell Egan Catholic High School">
+				Archbishop Ryan High School BB B V Away Conwell Egan Catholic High School
+			</a>
+		</span>
+
+		<span class="dateloc">
+				4 PM
+				<span class="ndash-range"> &ndash; </span>
+					5 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/5/7/17800113/?id=1"

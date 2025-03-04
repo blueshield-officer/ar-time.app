@@ -3,11 +3,16 @@
 namespace App\Services;
 
 use PDO;
+use phpseclib3\Math\BigInteger\Engines\GMP\DefaultEngine;
 
 class DBC
 {
     private static $instance = null;
     private $pdo;
+    private $ignoreColumns = [
+        'default' => ['id'],
+        'public' => ['id', 'keep_update', 'md5_key']
+    ];
 
     private function __construct()
     {
@@ -25,6 +30,26 @@ class DBC
         catch (PDOException $e) {
             throw new \PDOException($e->getMessage(), (int)$e->getCode());
         }
+    }
+    public function getTableParams($tableName, $type = 'default')
+    {
+        $result = $this->fetchAll(
+            $this->query('SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = ?', [$tableName])
+        );
+        $tableColumns = [];
+        foreach ($result as $columnHash) {
+            $columnName = $columnHash['COLUMN_NAME'];
+            if (!in_array($columnName, $this->ignoreColumns[$type])) {
+                $tableColumns[] = $columnName;
+            }
+        }
+        return [
+            'columnsArray' => $tableColumns,
+            'columns' => join(', ', array_map(function ($column) {
+                return '`' . $column . '`';
+            }, $tableColumns)),
+            'placeholders' => $type === 'default' ? join(', ', array_fill(0, count($tableColumns), '?')) : null,
+        ];
     }
     public static function getInstance()
     {

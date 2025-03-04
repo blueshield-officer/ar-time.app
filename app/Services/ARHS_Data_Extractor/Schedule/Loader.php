@@ -25,10 +25,11 @@ class Loader
         $html = file_get_html($file);
 
         $html_dives = $html->find('.bell-schedule');
-        $data = [];
+        $scheduleData = [];
+        $scheduleDescriptions = [];
         foreach ($html_dives as $div) {
             $schedule_id = strtolower(explode(' ', trim($div->find('.dark a', 0)->plaintext))[1]);
-            $description = trim($div->find('thead tr td', 0)->plaintext);
+            $scheduleDescriptions[$schedule_id] = trim($div->find('thead tr td', 0)->plaintext);
             $table_rows = $div->find('tbody tr');
 
             $table = [];
@@ -61,17 +62,38 @@ class Loader
             }
 
 
-            $data[$schedule_id] = [
+            $scheduleData[$schedule_id] = [
                 'schedule_id' => $schedule_id,
-                'description' => $description,
                 'table' => $table
             ];
         }
 
-        // SQL
-        $DBC->query('TRUNCATE `schedule_default`');
 
-        foreach ($data as $schedule_id => $schedule) {
+        // Find NEW `schedule_default_descriptions` Data
+        $sqlScheduleData = [];
+        $result = $DBC->fetchAll($DBC->query('SELECT `schedule`, `description` FROM `schedule_default_descriptions`'));
+        foreach ($result as $row) {
+            $sqlScheduleData[$row['schedule']] = $row['description'];
+        }
+        $newDataScheduleDescription = array_diff($scheduleDescriptions, $sqlScheduleData);
+        var_dump($newDataScheduleDescription);
+        if (!empty($newDataScheduleDescription)) {
+            foreach ($newDataScheduleDescription as $scheduleId => $description) {
+                $DBC->query('DELETE FROM `schedule_default_descriptions` WHERE `schedule` = ?', [$scheduleId]);
+                $DBC->query('INSERT INTO `schedule_default_descriptions` (`schedule`, `description`) VALUES (?, ?)', [$scheduleId, $description]);
+            }
+        }
+        die();
+
+
+
+
+
+        // SQL
+        $DBC->query('TRUNCATE `schedule_default_descriptions`');
+
+        foreach ($scheduleData as $schedule_id => $schedule) {
+            $DBC->query('INSERT INTO `schedule_default_descriptions` (`schedule`, `description`) VALUES (?, ?)', [$schedule_id, $schedule['description']]);
             foreach ($schedule['table'] as $period) {
                 $DBC->query('INSERT INTO `schedule_default` (`position`, `name`, `start_time`, `end_time`, `length`, `start_unix`, `end_unix`, `schedule_id`) VALUES (?, ?, ?, ?, ?, ?, ?, ?)', [
                     $period['position'],
@@ -87,7 +109,7 @@ class Loader
         }
 
         echo '<pre>';
-        var_dump($data);
+        var_dump($scheduleData);
         echo '</pre>';
     }
 }

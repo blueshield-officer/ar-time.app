@@ -33,6 +33,25 @@
 					<ul class="day-event-box">
 	<li class="day-event-info">
 		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/4/1/22094405/?id=0"
+				aria-label="4/1/2025 - * A Schedule- Day">
+				* A Schedule- Day
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/4/1/16231665/?id=0"
 				aria-label="4/1/2025 - Renaissance Testing Window #3 Opens">
 				Renaissance Testing Window #3 Opens
@@ -105,6 +124,25 @@
 					<ul class="day-event-box">
 	<li class="day-event-info">
 		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/4/2/22094406/?id=0"
+				aria-label="4/2/2025 - *E Schedule- Day ">
+				*E Schedule- Day 
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/4/2/16222233/?id=0"
 				aria-label="4/2/2025 - Faculty Meeting">
 				Faculty Meeting
@@ -134,6 +172,44 @@
 						<span class="day">Thu</span>
 					</div>
 					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/4/3/22094413/?id=0"
+				aria-label="4/3/2025 - *A Schedule- Day">
+				*A Schedule- Day
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/4/3/22094409/?id=0"
+				aria-label="4/3/2025 - Spring Open House">
+				Spring Open House
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/4/3/16222238/?id=0"
@@ -180,7 +256,53 @@
 	</li>
 					</ul>
 				</li>
-				<li class="event-day empty no-border " id="day-4">
+				<li class="cf event-day  " id="day-4">
+					<div class="day-date-box">
+						<span class="month">Apr</span>
+						<span class="date">4</span>
+						<span class="day">Fri</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/4/4/22094410/?id=0"
+				aria-label="4/4/2025 - *E Schedule- Day ">
+				*E Schedule- Day 
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/4/4/16222294/?id=0"
+				aria-label="4/4/2025 - Service Hours Due">
+				Service Hours Due
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
 				<li class="cf event-day  " id="day-5">
 					<div class="day-date-box">
 						<span class="month">Apr</span>
@@ -222,6 +344,25 @@
 					<ul class="day-event-box">
 	<li class="day-event-info">
 		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/4/7/22094415/?id=0"
+				aria-label="4/7/2025 - *A Schedule- Day">
+				*A Schedule- Day
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/4/7/16295752/?id=0"
 				aria-label="4/7/2025 - Varsity Mathletes Championship">
 				Varsity Mathletes Championship
@@ -251,6 +392,25 @@
 						<span class="day">Tue</span>
 					</div>
 					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/4/8/22094418/?id=0"
+				aria-label="4/8/2025 - *A Schedule- Day">
+				*A Schedule- Day
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/4/8/16322407/?id=0"
@@ -306,6 +466,25 @@
 					<ul class="day-event-box">
 	<li class="day-event-info">
 		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/4/9/22094419/?id=0"
+				aria-label="4/9/2025 - *A Schedule-Day">
+				*A Schedule-Day
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/4/9/16222282/?id=0"
 				aria-label="4/9/2025 - Grade School Performance">
 				Grade School Performance
@@ -356,6 +535,25 @@
 					<ul class="day-event-box">
 	<li class="day-event-info">
 		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/4/10/22094420/?id=0"
+				aria-label="4/10/2025 - *A Schedule- Day">
+				*A Schedule- Day
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/4/10/16322249/?id=0"
 				aria-label="4/10/2025 - NHS General Membership Meeting">
 				NHS General Membership Meeting
@@ -385,6 +583,25 @@
 						<span class="day">Fri</span>
 					</div>
 					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/4/11/22094423/?id=0"
+				aria-label="4/11/2025 - *A Schedule-Day">
+				*A Schedule-Day
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/4/11/16415070/?id=0"
@@ -535,6 +752,25 @@
 						<span class="day">Mon</span>
 					</div>
 					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/4/14/22094425/?id=0"
+				aria-label="4/14/2025 - *A Schedule-Day">
+				*A Schedule-Day
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/4/14/16295736/?id=0"
@@ -1115,8 +1351,8 @@
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/4/26/18133757/?id=0"
-				aria-label="4/26/2025 - Softball Bingo">
-				Softball Bingo
+				aria-label="4/26/2025 - Softball Quizzo">
+				Softball Quizzo
 			</a>
 		</span>
 

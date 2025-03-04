@@ -283,25 +283,6 @@
 	</li>
 	<li class="day-event-info">
 		<span class="event-title-wrap">
-			<a class="event-link" href="/apps/events/2025/2/6/21572080/?id=0"
-				aria-label="2/6/2025 - Sophomore Class Meeting">
-				Sophomore Class Meeting
-			</a>
-		</span>
-
-		<span class="dateloc">
-			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
-								<span class="">Events</span>
-							</li>
-			</ul>
-		</span>
-
-		<div class="full-description" style="display: none;"></div>
-	</li>
-	<li class="day-event-info">
-		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/2/6/21623527/?id=0"
 				aria-label="2/6/2025 - Girls Bowling Senior Day at Thunderbird Lanes">
 				Girls Bowling Senior Day at Thunderbird Lanes
@@ -444,7 +425,7 @@
 					</ul>
 				</li>
 				<li class="event-day empty no-border " id="day-9">
-				<li class="cf event-day  current-day " id="day-10">
+				<li class="cf event-day  " id="day-10">
 					<div class="day-date-box">
 						<span class="month">Feb</span>
 						<span class="date">10</span>
@@ -693,8 +674,8 @@
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/2/12/21599906/?id=0"
-				aria-label="2/12/2025 - * H Schedule- Day 6">
-				* H Schedule- Day 6
+				aria-label="2/12/2025 - * T Schedule- Day 6">
+				* T Schedule- Day 6
 			</a>
 		</span>
 
@@ -718,28 +699,6 @@
 		</span>
 
 		<span class="dateloc">
-			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
-								<span class="">Events</span>
-							</li>
-			</ul>
-		</span>
-
-		<div class="full-description" style="display: none;"></div>
-	</li>
-	<li class="day-event-info">
-		<span class="event-title-wrap">
-			<a class="event-link" href="/apps/events/2025/2/12/16234871/?id=0"
-				aria-label="2/12/2025 - AOP Theology Bee">
-				AOP Theology Bee
-			</a>
-		</span>
-
-		<span class="dateloc">
-				8:30 AM
-				<span class="ndash-range"> &ndash; </span>
-					9 AM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-1 checked">
@@ -784,12 +743,53 @@
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/2/13/16222195/?id=0"
-				aria-label="2/13/2025 - *A Schedule - Day 1">
-				*A Schedule - Day 1
+				aria-label="2/13/2025 - *H Schedule - Day 1">
+				*H Schedule - Day 1
 			</a>
 		</span>
 
 		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/2/13/21572080/?id=0"
+				aria-label="2/13/2025 - Sophomore Class Meeting">
+				Sophomore Class Meeting
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/2/13/16234871/?id=0"
+				aria-label="2/13/2025 - AOP Theology Bee">
+				AOP Theology Bee
+			</a>
+		</span>
+
+		<span class="dateloc">
+				1 PM
+				<span class="ndash-range"> &ndash; </span>
+					1:30 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-1 checked">
@@ -812,27 +812,8 @@
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/2/14/21575162/?id=0"
-				aria-label="2/14/2025 - *No school for students-Teacher Professional Development">
-				*No school for students-Teacher Professional Development
-			</a>
-		</span>
-
-		<span class="dateloc">
-			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
-								<span class="">Events</span>
-							</li>
-			</ul>
-		</span>
-
-		<div class="full-description" style="display: none;"></div>
-	</li>
-	<li class="day-event-info">
-		<span class="event-title-wrap">
-			<a class="event-link" href="/apps/events/2025/2/14/21593293/?id=0"
-				aria-label="2/14/2025 - Recommendations/Middle States Meeting">
-				Recommendations/Middle States Meeting
+				aria-label="2/14/2025 - *School Closed - Eagles Parade">
+				*School Closed - Eagles Parade
 			</a>
 		</span>
 
@@ -978,28 +959,6 @@
 
 		<div class="full-description" style="display: none;"></div>
 	</li>
-	<li class="day-event-info">
-		<span class="event-title-wrap">
-			<a class="event-link" href="/apps/events/2025/2/17/16295736/?id=0"
-				aria-label="2/17/2025 - Varsity Mathletes Practice">
-				Varsity Mathletes Practice
-			</a>
-		</span>
-
-		<span class="dateloc">
-				2:30 PM
-				<span class="ndash-range"> &ndash; </span>
-					4 PM
-			(N102)
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
-								<span class="">Events</span>
-							</li>
-			</ul>
-		</span>
-
-		<div class="full-description" style="display: none;"></div>
-	</li>
 					</ul>
 				</li>
 				<li class="cf event-day  " id="day-18">
@@ -1058,28 +1017,6 @@
 	</li>
 	<li class="day-event-info">
 		<span class="event-title-wrap">
-			<a class="event-link" href="/apps/events/2025/2/19/21628178/?id=0"
-				aria-label="2/19/2025 - Black Student Union hosts a Guest Speaker- Mr. Tarawalley">
-				Black Student Union hosts a Guest Speaker- Mr. Tarawalley
-			</a>
-		</span>
-
-		<span class="dateloc">
-				2:30 PM
-				<span class="ndash-range"> &ndash; </span>
-					3:30 PM
-			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
-								<span class="">Events</span>
-							</li>
-			</ul>
-		</span>
-
-		<div class="full-description" style="display: none;"></div>
-	</li>
-	<li class="day-event-info">
-		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/2/19/16222199/?id=0"
 				aria-label="2/19/2025 - Department Meeting">
 				Department Meeting
@@ -1087,7 +1024,7 @@
 		</span>
 
 		<span class="dateloc">
-				2:30 PM
+				1:30 PM
 				<span class="ndash-range"> &ndash; </span>
 					3 PM
 			
@@ -1118,6 +1055,28 @@
 		</span>
 
 		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/2/20/21628178/?id=0"
+				aria-label="2/20/2025 - Black Student Union hosts a Guest Speaker- Mr. Tarawalley">
+				Black Student Union hosts a Guest Speaker- Mr. Tarawalley
+			</a>
+		</span>
+
+		<span class="dateloc">
+				2:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					3:30 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-1 checked">
@@ -1352,8 +1311,8 @@
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/2/26/16222200/?id=0"
-				aria-label="2/26/2025 - Faculty Meeting">
-				Faculty Meeting
+				aria-label="2/26/2025 - Department Meeting">
+				Department Meeting
 			</a>
 		</span>
 
@@ -1402,8 +1361,8 @@
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/2/27/21628270/?id=0"
-				aria-label="2/27/2025 - BSU and Rho Kappa- International Food Day After School- North Gym">
-				BSU and Rho Kappa- International Food Day After School- North Gym
+				aria-label="2/27/2025 - BSU, Rho Kappa, and ASA- Culture Cookout School- North Gym">
+				BSU, Rho Kappa, and ASA- Culture Cookout School- North Gym
 			</a>
 		</span>
 
@@ -1459,25 +1418,6 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
-								<span class="">Events</span>
-							</li>
-			</ul>
-		</span>
-
-		<div class="full-description" style="display: none;"></div>
-	</li>
-	<li class="day-event-info">
-		<span class="event-title-wrap">
-			<a class="event-link" href="/apps/events/2025/2/28/16222224/?id=0"
-				aria-label="2/28/2025 - Kairos LXVII">
-				Kairos LXVII
-			</a>
-		</span>
-
-		<span class="dateloc">
-			(St Mary Of Providence Center, 227 Isabella Rd, Elverson, PA 19520, USA)
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-1 checked">
 								<span class="">Events</span>

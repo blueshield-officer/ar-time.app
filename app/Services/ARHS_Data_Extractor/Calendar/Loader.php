@@ -1,9 +1,23 @@
 <?php
-
 namespace App\Services\ARHS_Data_Extractor\Calendar;
 
+use App\Services\CacheOperator;
 use App\Services\DBC;
 use App\Services\PageDownloader;
+use App\Services\RedisOperator;
+use App\Services\Formatters;
+
+
+//                          IMPORTANT
+//
+//     REDIS LOGIC
+//     Redis is written as data:TABLE_NAME:date = json
+//     IF it is difficult array, it would be just FAT json, with few object in it,
+//     in common it is just one, for non-difficult one
+//
+
+
+
 
 class Loader
 {
@@ -109,6 +123,17 @@ class Loader
         }
         return $tempArray;
     }
+    static private function findScheduleDefaultDescription($DBC, $schedule)
+    {
+        if (is_null($schedule)) {
+            return null;
+        }
+        $result = $DBC->fetch($DBC->query('SELECT `description` FROM `schedule_default_descriptions` WHERE `schedule` = ?', [$schedule]));
+        if ($result === false) {
+            return null;
+        }
+        return reset($result);
+    }
     static private function nestedArray(array $array): bool {
         foreach ($array as $element) {
             if (is_array($element)) {
@@ -131,7 +156,7 @@ class Loader
             return true;
         }
     }
-    static private function tableUpdate($DBC, $table, $data, $date, $difficult): void
+    static private function tableUpdate($DBC, $table, $data, $date, $difficult)
     {
         // TODO make something up with keep_update
         $date = $date->format('Y-m-d');
@@ -143,6 +168,7 @@ class Loader
         }
         $fields = join(', ', array_map(fn($element) => '`' . $element . '`', $fields));
 
+        $queryAllTable = 'SELECT ' . $fields . ' FROM ' . $table;
         $query = 'SELECT ' . $fields . ' FROM ' . $table . ' WHERE date >= ?';
         $oldSchedule = $DBC->fetchAll($DBC->query($query, [$date]));
         $oldData = [];
@@ -212,13 +238,11 @@ class Loader
                     $DBC->query($query, array_values($values));
                 }
             }
+            return true;
         }
     }
     static private function dayInfoRecord(&$dayInfoArray, $dayInfo, &$dataRecorded)
     {
-//        if ($dayInfo->keep_update() === true){
-//            $dayInfoArray[$dayInfo->getDate()] = $dayInfo->getInfo();
-//        }
         $dayInfoArray[$dayInfo->getDate()] = $dayInfo->getInfo();
         $dataRecorded = true;
     }
@@ -228,10 +252,16 @@ class Loader
         $md5key[] = join('', $event);
         $dataRecorded = true;
     }
-    static private function dayOffRecord(&$dayOffArray, $date, $grades, $percentage, $type)
+    static private function dayOffRecord(&$dayOffArray, $dayOff, &$dataRecorded)
     {
-        $dayOff = new DayOff($date, $grades, $percentage, $type);
         $dayOffArray[$dayOff->getDate()] = $dayOff->getInfo();
+        $dataRecorded = true;
+    }
+    static private function removeOddInfo($array)
+    {
+        unset($array['date']);
+        unset($array['keep_update']);
+        return $array;
     }
     static private function hoursToPercentage($hours)
     {
@@ -256,27 +286,11 @@ class Loader
         }
         return round($result, 2);
     }
-    static private function specialSwitch($DBC, $date, $special, $strOriginal, $dayOffArray): DaySpecial
-    {
-         switch ($special){
-             case 'p':
-                 return new DaySpecial($date, $strOriginal, 'Please notice that Pep Rally often is a bit different from an actual schedule.', 'yellow');
-
-                 case 'fid':
-                     self::dayOffRecord($dayOffArray, $date, 'all', 100, 'p');
-                     return new DaySpecial($date, 'Flexible Instruction Day', 'No school for today, but dont forget about some schoology assignments.', 'green');
-
-                     case 'special':
-                         return new DaySpecial($date, 'Special Schedule', 'We are unable to provide data for Special Schedule', 'red');
-
-                         default:
-                             return new DaySpecial($date, 'Error', 'Error', 'gamma');
-                    }
-    }
     static public function load(){
         require_once $_SERVER['DOCUMENT_ROOT'] . '/libs/simplehtmldom/simple_html_dom.php';
 
         $DBC = DBC::getInstance();
+
         $dateToday = new \DateTime('2024-09-01');
 //        $dateToday = new \DateTime('now');
         $date = clone $dateToday;
@@ -323,11 +337,6 @@ class Loader
 
         // MOST IMPORTANT ARRAY
         foreach ($dateListHTML->getList() as $date => $htmlElement) {
-            $dayInfo = new DayInfo($date);
-            // check "keep_update"
-//            if (self::keep_update($DBC, $date, 'calendar_schedules') === false) {
-//                $dayInfo->setNoUpdate();
-//            }
             $md5key = [];
             // DOES OBJECT HAVE ELEMENTS CHECK
             if (self::html_exist($htmlElement)) foreach (self::html_eventsToArray($htmlElement) as $event) {
@@ -339,96 +348,87 @@ class Loader
                 // Special Check
                 $special = Detectors::findSpecial($str);
                 if ($special !== false && !$dataRecorded) {
-                    $dayInfo->setSchedule($special);
-                    $dayInfo->setTestDay(Detectors::findTestDay($str));
-                    $dayInfo->setSchool();
-
-                    $daySpecial = self::specialSwitch($DBC, $date, $special, $strOriginal, $dayOffArray);
-
-//                    $daySpecial = match ($special){
-//                        'p' => new DaySpecial($date, $strOriginal, 'Please notice that Pep Rally often is a bit different from an actual schedule.', 'yellow'),
-//                        'fid' => new DaySpecial($date, 'Flexible Instruction Day', 'No school for today, but dont forget about some schoology assignments.', 'green'),
-//                        'special' => new DaySpecial($date, 'Special Schedule', 'We are unable to provide data for Special Schedule', 'red'),
-//                        default => new DaySpecial($date, 'Error', 'Error', 'gamma')
-//                    };
+                    // make it day off on FID day, maybe more in future
+                    if ($special === 'fid') {
+                        $dayOff = new DayOff($date, 'all', 100, 'p');
+                    }
+                    $daySpecial = match ($special) {
+                        'p' => new DaySpecial($date, $strOriginal, 'Please notice that Pep Rally often is a bit different from an actual schedule.', 'yellow'),
+                        'fid' => new DaySpecial($date, 'Flexible Instruction Day', 'No school for today, but dont forget about some schoology assignments.', 'green'),
+                        'special' => new DaySpecial($date, 'Special Schedule', 'We are unable to provide data for Special Schedule', 'red'),
+                        default => new DaySpecial($date, 'Error', 'Error', 'gamma'),
+                    };
+                    $dayInfo = new DayInfo($date, $special, self::findScheduleDefaultDescription($DBC, $special), Detectors::findTestDay($str));
+                    self::dayInfoRecord($dayInfoArray, $dayInfo, $dataRecorded);
                     self::daySpecialRecord($daySpecialArray, $daySpecial, $md5key, $event, $dataRecorded);
-                    self::dayInfoRecord($dayInfoArray, $dayInfo, $dataRecorded);
-                }
-                // SCHEDULE CHECK
-                if (Detectors::checkIfHasSchedule($str) && !$dataRecorded) {
-                    $dayInfo->setSchedule(Detectors::findSchedule($str));
-                    $dayInfo->setTestDay(Detectors::findTestDay($str));
-                    $dayInfo->setSchool();
+                    self::dayOffRecord($dayOffArray, $dayOff, $dataRecorded);
 
+                }
+                // Check SCHEDULE
+                if (Detectors::checkIfHasSchedule($str) && !$dataRecorded) {
+                    $schedule = Detectors::findSchedule($str);
+                    $dayInfo = new DayInfo($date, $schedule, self::findScheduleDefaultDescription($DBC, $schedule), Detectors::findTestDay($str));
                     self::dayInfoRecord($dayInfoArray, $dayInfo, $dataRecorded);
                 }
-                // CHECK IS IT SCHOOL DAY
+                // Check is it SCHOOL DAY
                 if (Detectors::isSchoolClosed($str) && !$dataRecorded) {
-                    self::dayInfoRecord($dayInfoArray, $dayInfo, $dataRecorded);
-                    self::dayOffRecord($dayOffArray, $date, 'all', 100, 'f');
+                    $dataRecorded = false;
+                    $dayOff = new DayOff($date, 'all', 100, 'f');
+                    self::dayOffRecord($dayOffArray, $dayOff, $dataRecorded);
                 }
-                // CHECK IS IT DANCE
+                // Check is it DANCE
                 if (Detectors::isDance($str)){
                     $daySpecial = new DaySpecial($date, $strOriginal, $description, 'green', 'dance');
-                    self::daySpecialRecord($daySpecialArray, $daySpecial, $md5key, $event, $dataRecorded);
                     self::dayInfoRecord($dayInfoArray, $dayInfo, $dataRecorded);
+                    self::daySpecialRecord($daySpecialArray, $daySpecial, $md5key, $event, $dataRecorded);
                 }
-                // RETREATS CHECK
+                // Check is it RETREAT
                 $retreat = Detectors::isRetreat($str);
                 if ($retreat !== false && !$dataRecorded) {
-                    self::dayOffRecord($dayOffArray, $date, $retreat, 100, 'f');
-                    if (str_contains($str, 'retreat')) {
-                        // starts with small letter for some reason
-                        $daySpecial = new DaySpecial($date, $strOriginal, $description, 'red', 'retreat');
-                        self::daySpecialRecord($daySpecialArray, $daySpecial, $md5key, $event, $dataRecorded);
-                        $dayInfo->setSchedule('special');
-                        $dayInfo->setSchool();
-                    }
+                    $dayInfo = new DayInfo($date, 'special', null, null);
+                    $dayOff = new DayOff($date, $retreat, 100, 'f');
+                    $daySpecial = new DaySpecial($date, $strOriginal, $description, 'red', 'retreat');
                     self::dayInfoRecord($dayInfoArray, $dayInfo, $dataRecorded);
+                    self::daySpecialRecord($daySpecialArray, $daySpecial, $md5key, $event, $dataRecorded);
+                    self::dayOffRecord($dayOffArray, $dayOff, $dataRecorded);
                 }
-                // QUARTER CHECK
+                // Check is it QUARTER
                 $quarter = Detectors::isQuarter($str);
                 if ($quarter !== false && !$dataRecorded) {
                     $daySpecial = new DaySpecial($date, $strOriginal, $description, 'yellow', 'quarter');
                     self::daySpecialRecord($daySpecialArray, $daySpecial, $md5key, $event, $dataRecorded);
-                    self::dayInfoRecord($dayInfoArray, $dayInfo, $dataRecorded);
                 }
-                // NO SCHOOL FOR GRADE (REPORT INCLUDED) CHECK
+                // Check is it NO SCHOOL FOR GRADE (REPORT INCLUDED)
                 $gradeOff = Detectors::isGradeOff($str);
                 if ($gradeOff !== false && !$dataRecorded) {
                     $dayOff = new DayOff($date, $gradeOff, 100, 'f');
                     $dayOffArray[$dayOff->getDate()] = $dayOff->getInfo();
-                    self::dayInfoRecord($dayInfoArray, $dayInfo, $dataRecorded);
+                    self::dayOffRecord($dayOffArray, $dayOff, $dataRecorded);
                 }
-                // DRESS DOWN DAY CHECK
+                // Check is it DRESS DOWN DAY
                 if (Detectors::isDressDown($str) && !$dataRecorded) {
                     $daySpecial = new DaySpecial($date, $strOriginal, $description, 'green', 'dressdown');
                     self::daySpecialRecord($daySpecialArray, $daySpecial, $md5key, $event, $dataRecorded);
-                    self::dayInfoRecord($dayInfoArray, $dayInfo, $dataRecorded);
                 }
                 // RECORD TO SPECIAL IF THERE ARE NO POSITIVE CHECK
                 if (!$dataRecorded) {
                     $daySpecial = new DaySpecial($date, $strOriginal, $description);
                     self::daySpecialRecord($daySpecialArray, $daySpecial, $md5key, $event, $dataRecorded);
-                    self::dayInfoRecord($dayInfoArray, $dayInfo, $dataRecorded);
                 }
             }
-            else {
-                $dayInfo->noData();
-                self::dayInfoRecord($dayInfoArray, $dayInfo, $dataRecorded);
-            }
             // ADDING UNCONFIRMED DAY OFF ( 1% - 99% )
-            $dateFuture = new \DateTime($dayInfo->getDate());
-            if($dateToday->getTimestamp() < $dateFuture->getTimestamp()) {
-                $weekDay = (int)date('w', strtotime($dayInfo->getDate()));
-                if ($weekDay !== 0 && $weekDay !== 6) {
-                    if ($dayInfo->isSchool() === false){
-                        if (!isset($dayOffArray[$dayInfo->getDate()])){
+            if (!isset($dayInfo)){
+                $dateFuture = new \DateTime($date);
+                if($dateToday->getTimestamp() < $dateFuture->getTimestamp()) {
+                    $weekDay = (int)date('w', strtotime($date));
+                    if ($weekDay !== 0 && $weekDay !== 6) {
+                        if (!isset($dayOffArray[$date])){
                             $timeInterval = $dateToday->diff($dateFuture);
                             $hours = $timeInterval->days * 24 + $timeInterval->h;
                             $percentage = self::hoursToPercentage($hours);
                             if ($percentage > 0.01) {
-                                self::dayOffRecord($dayOffArray, $date, 'all', $percentage, 'f');
+                                $dayOff = new DayOff($date, 'all', $percentage, 'f');
+                                self::dayOffRecord($dayOffArray, $dayOff, $dataRecorded);
                             }
                         }
                     }
@@ -520,7 +520,9 @@ class Loader
                 'difficult' => true
             ],
         ];
+        // SQL update
         foreach ($info as $element) {
+            // writing down new Data to SQL
             self::tableUpdate($DBC, $element['database'], $element['data'], $element['date'], $element['difficult']);
         }
     }
