@@ -1,0 +1,80 @@
+/* PAGE STUFF */
+.page-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.object {
+    margin: 16px 0;
+}
+
+/* SCREEN */
+
+
+
+
+.wrapper-logo:hover {
+    filter: invert(0.1);
+    border-radius: 10px!important;
+}
+
+.block {
+    border-radius: 10px;
+}
+
+.content {
+    padding: 10px;
+}
+
+.title-1 {
+    padding: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.title-2 {
+    padding: 3px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.description {
+    text-wrap: wrap;
+}
+
+.clickForMore {
+    user-select: none;
+}
+
+
+/* TEXT */
+.highlighted-text {
+    font-weight: 500;
+}
+.alarm-text {
+    font-size: 28px;
+    font-weight: 800;
+    color: red;
+}
+.important-text {
+    font-size: 24px;
+    font-weight: 600;
+}
+.text-link {
+    color: cornflowerblue;
+    :hover {
+        text-decoration: underline;
+    }
+}
+
+
+/* TABLES */
+.table-object {
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+.table-title {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    justify-items: center;
+}

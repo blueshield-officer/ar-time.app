@@ -26,7 +26,9 @@ class CacheOperator
 
         'schoolStaffList' => ['school_staff_list'],
 
-        'fullTable' => ['schedule_descriptions', 'info_testdays_classes', 'info_roadmap', 'calendar_countdowns', 'calendar_holidays']
+        'formatInfoRoadmap' => ['info_roadmap'],
+
+        'fullTable' => ['schedule_descriptions', 'info_testdays_classes', 'calendar_countdowns', 'calendar_holidays']
     ];
 
     public function __construct($DBC, $redis)
@@ -111,6 +113,46 @@ class CacheOperator
         }
         return $newArray;
     }
+    private function formatInfoRoadmap($array){
+        function formatDate($str)
+        {
+            if (is_null($str)) {
+                return $str;
+            }
+            $dateTime = \DateTime::createFromFormat('Y-m-d', $str);
+            return $dateTime->format('F j, Y');
+        }
+        usort($array, function ($a, $b) {
+            return $a["status"] <=> $b["status"];
+        });
+
+        $newArray = [];
+        foreach ($array as $row) {
+            $year = explode('-', $row['date_finish_planned'])[0];
+            $row['color'] = match ($row['status']) {
+                -1 => '#cb4335',
+                0 => '#f1c40f',
+                1 => '#2e86c1',
+                2 => '#28b463',
+            };
+            $row['status'] = match ($row['status']){
+                -1 => 'Planned',
+                0 => 'In Progress',
+                1 => 'Partially Ready',
+                2 => 'Ready',
+            };
+            $row['date_finish_planned'] = formatDate($row['date_finish_planned']);
+            $row['date_finish'] = formatDate($row['date_finish']);
+            $newArray[$year][] = $row;
+        }
+        ksort($newArray);
+        return $newArray;
+    }
+
+
+
+
+
     public function fetch($tableName, $dataIndex = null)
     {
         $cacheData = $this->redis->get('cacheSQL:' . $tableName . ($dataIndex ? (':' . $dataIndex) : ''));
@@ -130,6 +172,7 @@ class CacheOperator
                     'absentRoomChanges' => self::formatAbsentRoomChanges($dataSQL),
                     'scheduleTable' => self::formatSchedules($dataSQL),
                     'schoolStaffList' => self::formatSchoolStaffList($dataSQL),
+                    'formatInfoRoadmap' => self::formatInfoRoadmap($dataSQL),
                     default => $dataSQL,
                 };
                 $dataSQL = json_encode($dataSQL);
@@ -157,3 +200,5 @@ class CacheOperator
         var_dump(json_decode($dataSQL, true));
     }
 }
+
+// TODO add cache redis and check

@@ -1,7 +1,19 @@
+@use 'vars';
+
+$wrapper-background: #eee;
+$default-border-color: #9f9f9f;
+
 body {
     background-color: #fff !important;
     color: black;
 }
+
+.background-theme {
+    background-color: #eee;
+}
+
+
+
 .secondary-text {
     color: #9f9f9f;
 }
@@ -9,16 +21,52 @@ body {
     background-color: #eee;
 }
 .wrapper-background:hover {
-    background-color: #eee;
+    background-color: $wrapper-background;
 }
 .wrapper-border {
-    border-color: #9f9f9f!important;
+    border-color: $default-border-color!important;
 }
+.wrapper-no-border {
+    border-color: #eee!important;
+}
+
 .wrapper-logo {
+    transition-duration: 0.3s;
     background-color: #d9d9d9;
 }
 .wrapper-divider {
     background-color: #BCBCBC;
 }
 .wrapper-page-icon {
+}
+#screen .loader {
+    color: #757575;
+}
+
+
+
+
+.simple-border {
+    border-color: #dddddd !important;
+}
+
+.primary-background {
+    background-color: #f3f3f3;
+}
+.secondary-background {
+    background-color: #e6e6e6;
+}
+
+/* topbar accounts */
+.account-button-signup {
+    border-color: darken(vars.$ar-color, 10%)!important;
+}
+.account-button-signup:hover {
+    filter: invert(0.2);
+}
+.account-button-login {
+
+}
+.account-button-login:hover {
+    background-color: #dfdfdf;
 }

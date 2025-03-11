@@ -1,0 +1,13 @@
+#schedules {
+    .table-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-evenly;
+        .table-object {
+            font-size: 14px;
+            width: 49%;
+            margin-bottom: 25px;
+        }
+    }
+}

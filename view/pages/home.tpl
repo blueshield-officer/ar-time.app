@@ -1,7 +1,7 @@
 <html>
 <head>
-    {include 'elements/header.tpl'}
     <title>Home</title>
+    {include 'elements/header.tpl'}
 </head>
 <body>
 <script>
@@ -21,6 +21,9 @@
     console.log(calendar_events)
     console.log(calendar_day_off)
 </script>
+{assign var=currentPage value="Home"}
 {include 'elements/wrapper.tpl'}
+<div id="screen">
+</div>
 </body>
 </html>

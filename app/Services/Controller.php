@@ -2,6 +2,7 @@
 
 namespace App\Services;
 
+
 class Controller
 {
     protected $view;
@@ -12,6 +13,17 @@ class Controller
         $this->view->setCompileDir($_SERVER['DOCUMENT_ROOT'] . '/cache/templates_c/');
         $this->view->setConfigDir($_SERVER['DOCUMENT_ROOT'] . '/cache/configs/');
         $this->view->setCacheDir($_SERVER['DOCUMENT_ROOT'] . '/cache/cache/');
+
+        // plugins
+        $this->view->registerPlugin("function", "uniqueId", function () {
+            return md5(uniqid(rand(), true));
+        });
+        $this->view->registerPlugin('function', 'capitalize', function ($array){
+            return ucwords($array['str']);
+        });
+        $this->view->registerPlugin('function', 'format', function ($array){
+            return preg_replace('/\s+/', '', $array['str']);
+        });
     }
     protected function view($template, $data = [])
     {

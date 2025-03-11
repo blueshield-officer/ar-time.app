@@ -1,0 +1,54 @@
+#roadmap {
+    .year-list {
+        display: flex;
+        align-content: start;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+        .yearBlock {
+            .year {
+                border-bottom: 1px solid;
+            }
+            .plan-list {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-content: center;
+                padding: 10px;
+                .plan {
+                    margin: 10px 0;
+                    display: flex;
+                    width: 400px;
+                    .planContent {
+                        display: flex;
+                        flex-direction: column;
+                        flex-grow: 1;
+                        .planTitle {
+                            text-wrap: wrap;
+                            font-size: 16px;
+                            font-weight: bold;
+                            margin-bottom: 5px;
+                        }
+                        .planInfo {
+
+                        }
+                        .planDescription {
+                            font-style: italic;
+                        }
+                    }
+                    .status {
+                        display: flex;
+                        .statusText {
+                            margin-right: 10px;
+                            margin-top: 5px;
+                            text-wrap: nowrap;
+                        }
+                        .statusBar {
+                            min-width: 5px;
+                            width: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

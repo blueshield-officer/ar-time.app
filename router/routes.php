@@ -4,8 +4,10 @@ use App\Controllers\admin\Admin;
 use App\Controllers\admin\CustomScheduleLoader;
 use App\Controllers\Authentication;
 use App\Controllers\Calendar;
-use App\Controllers\HomePage;
+use App\Controllers\Home;
 use App\Controllers\Legacy;
+use App\Controllers\Roadmap;
+use App\Controllers\Schedules;
 use App\Controllers\server\AbsencesUpdate;
 use App\Controllers\server\CalendarUpdate;
 use App\Controllers\server\RedisUpdate;
@@ -19,12 +21,14 @@ use App\Services\Router;
 
 
 // public
-Router::page('/', [HomePage::class]);
+Router::page('/', [Home::class]);
 Router::page('/legacy', [Legacy::class]);
 Router::page('/login', [Authentication::class, 'login']);
+Router::page('/signup', [Authentication::class, 'signup']);
 Router::page('/login/google', [Authentication::class, 'login_google']);
-Router::page('/register', [Authentication::class, 'register']);
 Router::page('/calendar', [Calendar::class]);
+Router::page('/roadmap', [Roadmap::class]);
+Router::page('/schedules', [Schedules::class]);
 
 // admin
 Router::page('/admin', [Admin::class]);

@@ -30,9 +30,10 @@
 <!--
 <link rel="stylesheet" href="frontend/dist/css/theme-dark.min.css?v={$hVersion}">
 -->
-<link rel="stylesheet" href="frontend/dist/css/theme-light.min.css?v={$hVersion}">
+<link id="theme" rel="stylesheet"
+      type="text/css" href="frontend/dist/css/theme-light.min.css?v={$hVersion}"/>
 
-<script src="frontend/dist/js/bootstrap.min.js?v={$hVersion}"></script>
+<script src="frontend/dist/js/bootstrap.bundle.min.js?v={$hVersion}"></script>
 <script src="frontend/dist/js/monster-min.js?v={$hVersion}"></script>
 <script src="frontend/dist/js/overlayscrollbars.browser.es5.min.js?v={$hVersion}"></script>
 
@@ -43,7 +44,6 @@
 
 <script>
     function analyzeSQLdata(str) {
-        console.log(str)
         if (str === ''){
             return str
         }

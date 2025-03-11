@@ -1,5 +1,12 @@
 $ar-color: #ed2024;
+$ar-color-optimized: darken($ar-color, 5%);
 $secondary-color: rgba(159, 159, 159, 1);
 $line-separator-color: rgba(159, 159, 159, 1);
 $border-params: 1px solid;
 $background-color-fill: rgba(238, 238, 238, 1);
+
+$top-bar-height: 70px;
+$top-bar-logo-height: 60px;
+
+$hover-filter: invert(10%);
+

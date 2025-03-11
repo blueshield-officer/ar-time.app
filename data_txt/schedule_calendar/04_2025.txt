@@ -395,12 +395,34 @@
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/4/8/22094418/?id=0"
-				aria-label="4/8/2025 - *A Schedule- Day">
-				*A Schedule- Day
+				aria-label="4/8/2025 - *B Schedule- Day">
+				*B Schedule- Day
 			</a>
 		</span>
 
 		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/4/8/16528692/?id=0"
+				aria-label="4/8/2025 - Honors Societies Induction">
+				Honors Societies Induction
+			</a>
+		</span>
+
+		<span class="dateloc">
+				8 AM
+				<span class="ndash-range"> &ndash; </span>
+					9 AM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-1 checked">
@@ -1091,8 +1113,8 @@
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/4/22/21506552/?id=0"
-				aria-label="4/22/2025 - School Mass">
-				School Mass
+				aria-label="4/22/2025 - *B Schedule- School Mass">
+				*B Schedule- School Mass
 			</a>
 		</span>
 

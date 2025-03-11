@@ -12,19 +12,16 @@ class Checks
         $passwordLower = strtolower($password);
 
         $responses = [
-            'register' => [
+            'signup' => [
                 'too_short' => 'Password must be at least 8 characters long.',
                 'too_long' => 'Password must not exceed 64 characters.',
                 'no_spaces' => 'Password cannot contain spaces.',
-                'no_upper' => 'Password must include at least one uppercase letter.',
-                'no_lower' => 'Password must include at least one lowercase letter.',
-                'no_number' => 'Password must include at least one number.',
-                'no_special' => 'Password must include at least one special character.',
+//                'no_number' => 'Password must include at least one number.',
                 'email_in_password' => 'Password should not contain your email.',
             ],
             'login' => array_fill_keys(
-                ['too_short', 'too_long', 'no_spaces', 'no_upper', 'no_lower', 'no_number', 'no_special', 'email_in_password'],
-                'Password is incorrect.'
+                ['too_short', 'too_long', 'no_spaces', 'email_in_password'],
+                'Password or email is incorrect.'
             ),
         ];
 
@@ -37,10 +34,7 @@ class Checks
             preg_match('/\s/', $password) => $responses[$method]['no_spaces'],
 
             // Complexity validation
-            !preg_match('/[A-Z]/', $password) => $responses[$method]['no_upper'],
-            !preg_match('/[a-z]/', $password) => $responses[$method]['no_lower'],
-            !preg_match('/\d/', $password) => $responses[$method]['no_number'],
-            !preg_match('/[\W]/', $password) => $responses[$method]['no_special'],
+//            !preg_match('/\d/', $password) => $responses[$method]['no_number'],
 
             // Email check
             strpos($passwordLower, $email) !== false => $responses[$method]['email_in_password'],
@@ -61,12 +55,12 @@ class Checks
         return true;
     }
     static public function email_usable($DBC, $email, $method){
-        $result = $DBC->fetch($DBC->query('SELECT * FROM users_accounts WHERE email = ?', [$email]));
-
-        if ($method === 'login' && $result === false){
+        $result = $DBC->fetchAll($DBC->query('SELECT * FROM users_accounts WHERE email = ?', [$email]));
+        var_dump($result);
+        if ($method === 'login' && empty($result)){
             return 'Email does not register.';
         }
-        if ($method === 'register' && $result !== false){
+        if ($method === 'signup' && !empty($result)){
             return 'Email already registered.';
         }
         return true;
@@ -75,11 +69,11 @@ class Checks
     static function check_login($DBC, $email, $password){
         $result = $DBC->fetch($DBC->query('SELECT password FROM users_accounts WHERE email = ?', [$email]));
         if ($result === false){
-            return 'Email does not register.';
+            return 'Password or email is incorrect.';
         }
         $password_legit = SecurityOperator::password_verify($password, $result['password']);
         if ($password_legit === false){
-            return 'Password is incorrect.';
+            return 'Password or email is incorrect.';
         }
         return true;
     }

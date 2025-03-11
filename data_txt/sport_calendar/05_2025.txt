@@ -33,6 +33,28 @@
 					<ul class="day-event-box">
 	<li class="day-event-info">
 		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/1/21892323/?id=1"
+				aria-label="5/1/2025 - Archbishop Ryan High School BB B V Home Franklin Towne CHS">
+				Archbishop Ryan High School BB B V Home Franklin Towne CHS
+			</a>
+		</span>
+
+		<span class="dateloc">
+				3:45 PM
+				<span class="ndash-range"> &ndash; </span>
+					4:45 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/5/1/19331169/?id=1"
 				aria-label="5/1/2025 - Archbishop Ryan High School SB G JV Home Bonner-Prendergast">
 				Archbishop Ryan High School SB G JV Home Bonner-Prendergast
@@ -178,6 +200,28 @@
 			<a class="event-link" href="/apps/events/2025/5/3/21892324/?id=1"
 				aria-label="5/3/2025 - Archbishop Ryan High School BB B V Home Germantown Academy">
 				Archbishop Ryan High School BB B V Home Germantown Academy
+			</a>
+		</span>
+
+		<span class="dateloc">
+				12 PM
+				<span class="ndash-range"> &ndash; </span>
+					1 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/3/22424986/?id=1"
+				aria-label="5/3/2025 - Archbishop Ryan High School FFB G V Away West Catholic Prep High School">
+				Archbishop Ryan High School FFB G V Away West Catholic Prep High School
 			</a>
 		</span>
 

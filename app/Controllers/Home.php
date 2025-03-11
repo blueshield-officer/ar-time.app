@@ -10,7 +10,7 @@ use App\Services\RedisOperator;
 use App\Services\Session;
 use Predis\Client;
 
-class HomePage extends Controller
+class Home extends Controller
 {
     public function execute()
     {

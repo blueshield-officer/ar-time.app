@@ -26,12 +26,12 @@
 <ul id="events_list_partial">
 				<li class="event-day empty no-border " id="day-1">
 				<li class="event-day empty no-border " id="day-2">
-				<li class="event-day empty no-border current-day" id="day-3">
+				<li class="event-day empty no-border " id="day-3">
 				<li class="event-day empty no-border " id="day-4">
 				<li class="event-day empty no-border " id="day-5">
 				<li class="event-day empty no-border " id="day-6">
 				<li class="event-day empty no-border " id="day-7">
-				<li class="event-day empty no-border " id="day-8">
+				<li class="event-day empty no-border current-day" id="day-8">
 				<li class="event-day empty no-border " id="day-9">
 				<li class="cf event-day  no-border" id="day-10">
 					<div class="day-date-box">
@@ -74,50 +74,6 @@
 				3:45 PM
 				<span class="ndash-range"> &ndash; </span>
 					4:45 PM
-			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
-								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
-		</span>
-
-		<div class="full-description" style="display: none;"></div>
-	</li>
-	<li class="day-event-info">
-		<span class="event-title-wrap">
-			<a class="event-link" href="/apps/events/2025/3/10/21892323/?id=1"
-				aria-label="3/10/2025 - Archbishop Ryan High School BB B V Home Franklin Towne CHS">
-				Archbishop Ryan High School BB B V Home Franklin Towne CHS
-			</a>
-		</span>
-
-		<span class="dateloc">
-				3:45 PM
-				<span class="ndash-range"> &ndash; </span>
-					4:45 PM
-			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
-								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
-		</span>
-
-		<div class="full-description" style="display: none;"></div>
-	</li>
-	<li class="day-event-info">
-		<span class="event-title-wrap">
-			<a class="event-link" href="/apps/events/2025/3/10/21892320/?id=1"
-				aria-label="3/10/2025 - Archbishop Ryan High School BB B V Away St. Joe's Prep">
-				Archbishop Ryan High School BB B V Away St. Joe's Prep
-			</a>
-		</span>
-
-		<span class="dateloc">
-				4 PM
-				<span class="ndash-range"> &ndash; </span>
-					5 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -503,7 +459,37 @@
 	</li>
 					</ul>
 				</li>
-				<li class="event-day empty no-border " id="day-26">
+				<li class="cf event-day  " id="day-26">
+					<div class="day-date-box">
+						<span class="month">Mar</span>
+						<span class="date">26</span>
+						<span class="day">Wed</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/3/26/22424978/?id=1"
+				aria-label="3/26/2025 - Archbishop Ryan High School FFB G V Home Lansdale Catholic High School">
+				Archbishop Ryan High School FFB G V Home Lansdale Catholic High School
+			</a>
+		</span>
+
+		<span class="dateloc">
+				3:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					4:30 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
 				<li class="cf event-day  " id="day-27">
 					<div class="day-date-box">
 						<span class="month">Mar</span>

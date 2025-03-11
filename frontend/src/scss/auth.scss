@@ -1,0 +1,113 @@
+@import 'vars';
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.auth-header-text{
+    margin-top: 32px;
+    margin-left: 56px;
+    font-size: 32px;
+    font-weight: 800;
+}
+.auth-main {
+    justify-content: center;
+    align-content: center;
+    flex-grow: 1;
+}
+
+#auth-card {
+    display: block;
+    width: 352px;
+
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+
+    margin: 0 auto;
+    padding: 24px;
+
+    .auth-title {
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .auth-other {
+        display: flex;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid grey;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+        .out-other-icon {
+            margin-right: 10px;
+            height: 24px;
+        }
+        .out-other-text {
+            text-align: center;
+        }
+
+    }
+    .auth-other:hover {
+        background-color: #e6e6e6;
+    }
+    .or-block {
+        display: flex;
+        align-items: center;
+        padding: 0 4px;
+        margin: 12px 0;
+        .or-text {
+            color: rgb(216, 216, 216);
+            font-weight: 400;
+            margin-left: 12px;
+            margin-right: 12px;
+            margin-bottom: 5px;
+        }
+        .or-separator {
+            display: flex;
+            flex-grow: 1;
+            background-color: rgb(216, 216, 216);
+            min-height: 1px;
+            height: 1px;
+        }
+    }
+    .auth-form {
+        display: grid;
+        .auth-error {
+            color: #dc3545;
+            margin-bottom: 16px;
+        }
+        .forgot-password-button {
+            width: fit-content;
+        }
+        .submit-button {
+            background-color: #FFC107;
+            color: #000000; // Black for contrast
+            border: none;
+            display: inline-flex; /* or display: flex */
+            justify-content: center;
+            align-items: center;
+            margin-top: 16px;
+            height: 52px;
+            flex: 1;
+            padding: 0 24px;
+            font-weight: 600;
+            border-radius: 28px;
+            text-align: center;
+            vertical-align: center;
+            transition: 0.3s;
+        }
+        .submit-button:hover {
+            filter: $hover-filter;
+        }
+    }
+}
+.text-join-now {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.auth-footer{
+    height: 70px;
+}

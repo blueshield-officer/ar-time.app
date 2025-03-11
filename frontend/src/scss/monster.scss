@@ -1,2 +1,12 @@
 @use 'fonts';
-@use "wrapper";
+@use 'wrapper';
+@use 'global';
+@use 'theme';
+@use 'roadmap';
+@use 'fire';
+@use 'schedules';
+@use 'auth';
+
+body {
+    font-family: Inter, serif;
+}

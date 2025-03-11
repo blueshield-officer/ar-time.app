@@ -19,7 +19,7 @@ export const path = {
         files: `${srcFolder}/files/**/*.*`,
         normalize: `${srcFolder}/css/normalize.css`,
         bootstrap_css: `${srcFolder}/../node_modules/bootstrap/dist/css/bootstrap.min.css`,
-        bootstrap_js: `${srcFolder}/../node_modules/bootstrap/dist/js/bootstrap.min.js`,
+        bootstrap_js: `${srcFolder}/../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js`,
         overlayscrollbars_css: `${srcFolder}/../node_modules/overlayscrollbars/styles/overlayscrollbars.min.css`,
         overlayscrollbars_js: `${srcFolder}/../node_modules/overlayscrollbars/browser/overlayscrollbars.browser.es5.min.js`,
     },

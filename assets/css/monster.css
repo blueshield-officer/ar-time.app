@@ -96,7 +96,7 @@ html, body {
   font-size: 14px;
   font-weight: bold;
 }
-.side-bar .footer {
+.side-bar .collapse {
   display: flex;
   align-items: center;
   border-top: 1px solid rgb(159, 159, 159);

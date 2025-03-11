@@ -1,37 +1,53 @@
 @import 'vars';
+body {
+
+}
 
 .top-bar {
+    z-index: 1;
+    position: fixed;
     display: flex;
-    align-items: center;
-    height: 70px;
-    border-bottom: $border-params;
+    width: 100%;
+    height: $top-bar-height;
 
     .logo-section {
+        width: 210px;
         font-weight: bold;
         padding: 5px;
         border-right: $border-params;
+        border-bottom: $border-params;
 
         .logo {
             display: flex;
             align-items: center;
             justify-content: space-evenly;
             border-radius: 10px;
-            width: 200px;
-            height: 60px;
+            height: $top-bar-logo-height;
 
             .icon-holder {
-                margin: 0 12px 0 12px;
+                height: $top-bar-logo-height;
+                border-radius: 10px 0 0 10px ;
+                padding: 0 12px;
+                align-content: center;
                 .icon {
                     height: 40px;
                 }
             }
-            .divider {
-                height: 50px;
-                width: 1px;
+            .divider-holder {
+                display: flex;
+                height: $top-bar-logo-height;
+                align-items: center;
+                .divider {
+                    height: 50px;
+                    width: 1px;
+                }
             }
-            .title {
+            .logoTitle {
+                height: $top-bar-logo-height;
                 text-align: center;
-                margin: 0 10px 0 10px;
+                padding: 0 10px;
+                border-radius: 0 10px 10px 0;
+                min-width: 134px;
                 .website {
                     font-size: 20px;
                 }
@@ -43,69 +59,179 @@
         }
     }
     .top-section {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
         display: flex;
-        margin: 10px 15px;
         flex-grow: 1;
+        align-content: center;
         justify-content: space-between;
+        border-bottom: $border-params;
         .countdown-block {
 
         }
         .account-block {
-            .account {
-
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .account-button {
+                margin-right: 10px;
+                padding: 10px;
+                border-radius: 10px;
+                transition: 0.3s;
+            }
+            .account-button-signup {
+                border: 1px solid;
+            }
+            .account-button:last-child {
+                margin-right: 0;
+            }
+            .account-box {
+                .email {
+                    font-size: 12px;
+                }
             }
         }
     }
-
 }
-
 .side-bar {
+    top: 70px;
+    position: fixed;
+    user-select: none;
     display: flex;
+    overflow: hidden;
     height: calc(100vh - 70px);
     justify-content: space-between;
     flex-direction: column;
-    flex-grow: 1;
-    width: 211px;
+    width: 210px;
     border-right: $border-params;
 
     .icon {
-        margin-right: 10px;
         height: 20px;
     }
+
+    .size18 {
+        height: 20px;
+        padding: 2px;
+    }
+
     .scroll-bar {
         overflow: hidden;
-        max-height: calc(100% - 45px);
+        max-height: calc(100% - 40px);
+
         .pages {
-            width: 210px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 60px;
+
             .page {
                 display: flex;
                 cursor: pointer;
                 align-items: center;
                 justify-content: flex-start;
-                height: 45px;
-                width: 210px;
-                padding: 10px 20px;
-                border-bottom: $border-params;
-                .title {
+                height: 42px;
+                padding: 10px 27px;
+
+                .pageTitle {
+                    margin-left: 10px;
                     font-size: 14px;
                     font-weight: bold;
                 }
             }
-            .chosen {
-                border-left: 3px solid $ar-color;
-                padding-left: calc(20px-3px);
-                box-shadow: 1px 5px 5px 1px rgba(0,0,0,0.25)!important;
-                -moz-box-shadow: 1px 5px 5px 1px rgba(0,0,0,0.25)!important;
+
+            .page:not(:last-child) {
+                border-bottom: $border-params;
+            }
+
+            .current {
+                padding-left: 0;
+                box-shadow: 1px 5px 5px 1px rgba(0, 0, 0, 0.25) !important;
+                -moz-box-shadow: 1px 5px 5px 1px rgba(0, 0, 0, 0.25) !important;
+
+                .currentBar {
+                    height: 42px;
+                    min-width: 4px;
+                    width: 4px;
+                    background-color: $ar-color;
+                    margin-right: calc(27px - 4px);
+                }
             }
         }
     }
-
-
-    .footer {
+    .collapse {
         display: flex;
+        height: 42px;
         align-items: center;
         border-top: $border-params;
-        padding: 10px 20px;
+        padding: 10px 27px;
+        cursor: pointer;
+        text-wrap: nowrap;
+        p {
+            line-height: 20px;
+            margin-left: 10px;
+        }
     }
 }
 
+
+#screen {
+    position: relative;
+    top: $top-bar-height;
+    left: 210px;
+    width: calc(100% - 210px);
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+    padding: 32px 0;
+    margin-bottom: 32px;
+}
+
+
+
+#countdown-div {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+
+    width: 200px;
+
+    border-radius: 10px;
+
+    #countdown-bar {
+        z-index: 0;
+        position: absolute;
+        left: 0;
+        background-color: red;
+        margin: 2px;
+
+        width: calc(50px - 4px);
+        height: calc(100% - 4px);
+
+        border-radius:  10px 0 0 10px;
+    }
+    #countdown-time {
+        z-index: 1;
+        font-size: 26px;
+        font-weight: bold;
+        user-select: none;
+
+        transition: 0.3s;
+    }
+}
+#countdown-div:hover {
+    cursor: pointer;
+}
+
+#countdown-mask {
+    display: none;
+
+    height: 100vh;
+    width: 100vw;
+
+    z-index: 10;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

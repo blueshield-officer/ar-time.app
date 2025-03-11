@@ -33,6 +33,28 @@
 					<ul class="day-event-box">
 	<li class="day-event-info">
 		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/7/1/22425719/?id=0"
+				aria-label="7/1/2025 - Summer Bridge ">
+				Summer Bridge 
+			</a>
+		</span>
+
+		<span class="dateloc">
+				9 AM
+				<span class="ndash-range"> &ndash; </span>
+					12 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/7/1/16322407/?id=0"
 				aria-label="7/1/2025 - RHO Kappa General Membership Meeting">
 				RHO Kappa General Membership Meeting
@@ -55,19 +77,199 @@
 	</li>
 					</ul>
 				</li>
-				<li class="event-day empty no-border " id="day-2">
+				<li class="cf event-day  " id="day-2">
+					<div class="day-date-box">
+						<span class="month">Jul</span>
+						<span class="date">2</span>
+						<span class="day">Wed</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/7/2/22425720/?id=0"
+				aria-label="7/2/2025 - Summer Bridge ">
+				Summer Bridge 
+			</a>
+		</span>
+
+		<span class="dateloc">
+				9 AM
+				<span class="ndash-range"> &ndash; </span>
+					12 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
 				<li class="event-day empty no-border " id="day-3">
 				<li class="event-day empty no-border " id="day-4">
 				<li class="event-day empty no-border " id="day-5">
 				<li class="event-day empty no-border " id="day-6">
-				<li class="event-day empty no-border " id="day-7">
-				<li class="event-day empty no-border " id="day-8">
-				<li class="event-day empty no-border " id="day-9">
-				<li class="event-day empty no-border " id="day-10">
+				<li class="cf event-day  " id="day-7">
+					<div class="day-date-box">
+						<span class="month">Jul</span>
+						<span class="date">7</span>
+						<span class="day">Mon</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/7/7/22425724/?id=0"
+				aria-label="7/7/2025 - Summer Bridge ">
+				Summer Bridge 
+			</a>
+		</span>
+
+		<span class="dateloc">
+				9 AM
+				<span class="ndash-range"> &ndash; </span>
+					12 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-8">
+					<div class="day-date-box">
+						<span class="month">Jul</span>
+						<span class="date">8</span>
+						<span class="day">Tue</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/7/8/22425727/?id=0"
+				aria-label="7/8/2025 - Summer Bridge ">
+				Summer Bridge 
+			</a>
+		</span>
+
+		<span class="dateloc">
+				9 AM
+				<span class="ndash-range"> &ndash; </span>
+					12 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-9">
+					<div class="day-date-box">
+						<span class="month">Jul</span>
+						<span class="date">9</span>
+						<span class="day">Wed</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/7/9/22425728/?id=0"
+				aria-label="7/9/2025 - Summer Bridge ">
+				Summer Bridge 
+			</a>
+		</span>
+
+		<span class="dateloc">
+				9 AM
+				<span class="ndash-range"> &ndash; </span>
+					12 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-10">
+					<div class="day-date-box">
+						<span class="month">Jul</span>
+						<span class="date">10</span>
+						<span class="day">Thu</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/7/10/22425721/?id=0"
+				aria-label="7/10/2025 - Summer Bridge ">
+				Summer Bridge 
+			</a>
+		</span>
+
+		<span class="dateloc">
+				9 AM
+				<span class="ndash-range"> &ndash; </span>
+					12 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
 				<li class="event-day empty no-border " id="day-11">
 				<li class="event-day empty no-border " id="day-12">
 				<li class="event-day empty no-border " id="day-13">
-				<li class="event-day empty no-border " id="day-14">
+				<li class="cf event-day  " id="day-14">
+					<div class="day-date-box">
+						<span class="month">Jul</span>
+						<span class="date">14</span>
+						<span class="day">Mon</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/7/14/22425730/?id=0"
+				aria-label="7/14/2025 - Summer Bridge ">
+				Summer Bridge 
+			</a>
+		</span>
+
+		<span class="dateloc">
+				9 AM
+				<span class="ndash-range"> &ndash; </span>
+					12 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
 				<li class="cf event-day  " id="day-15">
 					<div class="day-date-box">
 						<span class="month">Jul</span>
@@ -75,6 +277,28 @@
 						<span class="day">Tue</span>
 					</div>
 					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/7/15/22425733/?id=0"
+				aria-label="7/15/2025 - Summer Bridge ">
+				Summer Bridge 
+			</a>
+		</span>
+
+		<span class="dateloc">
+				9 AM
+				<span class="ndash-range"> &ndash; </span>
+					12 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/7/15/16322407/?id=0"
@@ -99,15 +323,195 @@
 	</li>
 					</ul>
 				</li>
-				<li class="event-day empty no-border " id="day-16">
-				<li class="event-day empty no-border " id="day-17">
+				<li class="cf event-day  " id="day-16">
+					<div class="day-date-box">
+						<span class="month">Jul</span>
+						<span class="date">16</span>
+						<span class="day">Wed</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/7/16/22425734/?id=0"
+				aria-label="7/16/2025 - Summer Bridge ">
+				Summer Bridge 
+			</a>
+		</span>
+
+		<span class="dateloc">
+				9 AM
+				<span class="ndash-range"> &ndash; </span>
+					12 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-17">
+					<div class="day-date-box">
+						<span class="month">Jul</span>
+						<span class="date">17</span>
+						<span class="day">Thu</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/7/17/22425735/?id=0"
+				aria-label="7/17/2025 - Summer Bridge ">
+				Summer Bridge 
+			</a>
+		</span>
+
+		<span class="dateloc">
+				9 AM
+				<span class="ndash-range"> &ndash; </span>
+					12 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
 				<li class="event-day empty no-border " id="day-18">
 				<li class="event-day empty no-border " id="day-19">
 				<li class="event-day empty no-border " id="day-20">
-				<li class="event-day empty no-border " id="day-21">
-				<li class="event-day empty no-border " id="day-22">
-				<li class="event-day empty no-border " id="day-23">
-				<li class="event-day empty no-border " id="day-24">
+				<li class="cf event-day  " id="day-21">
+					<div class="day-date-box">
+						<span class="month">Jul</span>
+						<span class="date">21</span>
+						<span class="day">Mon</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/7/21/22425737/?id=0"
+				aria-label="7/21/2025 - Summer Bridge ">
+				Summer Bridge 
+			</a>
+		</span>
+
+		<span class="dateloc">
+				9 AM
+				<span class="ndash-range"> &ndash; </span>
+					12 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-22">
+					<div class="day-date-box">
+						<span class="month">Jul</span>
+						<span class="date">22</span>
+						<span class="day">Tue</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/7/22/22425740/?id=0"
+				aria-label="7/22/2025 - Summer Bridge ">
+				Summer Bridge 
+			</a>
+		</span>
+
+		<span class="dateloc">
+				9 AM
+				<span class="ndash-range"> &ndash; </span>
+					12 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-23">
+					<div class="day-date-box">
+						<span class="month">Jul</span>
+						<span class="date">23</span>
+						<span class="day">Wed</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/7/23/22425741/?id=0"
+				aria-label="7/23/2025 - Summer Bridge ">
+				Summer Bridge 
+			</a>
+		</span>
+
+		<span class="dateloc">
+				9 AM
+				<span class="ndash-range"> &ndash; </span>
+					12 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="cf event-day  " id="day-24">
+					<div class="day-date-box">
+						<span class="month">Jul</span>
+						<span class="date">24</span>
+						<span class="day">Thu</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/7/24/22425743/?id=0"
+				aria-label="7/24/2025 - Summer Bridge ">
+				Summer Bridge 
+			</a>
+		</span>
+
+		<span class="dateloc">
+				9 AM
+				<span class="ndash-range"> &ndash; </span>
+					12 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
 				<li class="event-day empty no-border " id="day-25">
 				<li class="event-day empty no-border " id="day-26">
 				<li class="event-day empty no-border " id="day-27">
