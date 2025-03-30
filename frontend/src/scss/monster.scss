@@ -6,6 +6,11 @@
 @use 'fire';
 @use 'schedules';
 @use 'auth';
+@use 'home';
+@use 'date-bar';
+@use 'countdowns';
+@use 'info-button';
+@use 'settings';
 
 body {
     font-family: Inter, serif;

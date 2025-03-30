@@ -4,13 +4,18 @@ namespace App\Controllers;
 
 use App\Services\Controller;
 use App\Services\Data_Extraction\SQL\Schedule_Rarity\Loader;
+use App\Services\SmartyVars;
 
 class Calendar extends Controller
 {
-    public function execute()
+    public function execute($date = null)
     {
-        echo '<pre>';
-        var_dump(Loader::load());
-        echo '</pre>';
+        $smartyVars = new SmartyVars($date, 'MY');
+        $smartyVars->loadBase();
+
+        $this->view('pages/calendar.tpl',
+            [
+
+            ] + $smartyVars->getVarsArray());
     }
 }

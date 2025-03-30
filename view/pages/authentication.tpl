@@ -1,6 +1,6 @@
 <html>
 <head>
-    {include 'elements/header.tpl'}
+    {include 'elements/head.tpl'}
     <title>{$method}</title>
 </head>
 <body>
@@ -56,7 +56,7 @@
             </div>
             </div>
             {/if}
-            <a href="" class="forgot-password-button text-link">Forgot password?</a>
+            <a href="" class="forgot-password-button blue-text-link">Forgot password?</a>
             <!-- Hidden -->
             <input id="method_input" type="hidden" name="method" value="{format str=$method}">
             <button class="submit-button" type="button" onclick="checkAuthFields()">{capitalize str=$method}</button>
@@ -67,9 +67,9 @@
     </div>
     <p class="text-join-now">
     {if $method === 'login'}
-        Not registered yet? <a class="text-link" href="/signup">Join now</a>
+        Not registered yet? <a class="blue-text-link" href="/signup">Join now</a>
     {else}
-        Already got an account? <a class="text-link" href="/login">Login here</a>
+        Already got an account? <a class="blue-text-link" href="/login">Login here</a>
     {/if}
     </p>
 </div>

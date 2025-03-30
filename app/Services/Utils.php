@@ -2,7 +2,7 @@
 
 namespace App\Services;
 
-class Formatters
+class Utils
 {
     static function symbols($str){
         return preg_replace('/[^\p{L}\p{N}\s]/u', '', $str);
@@ -46,6 +46,66 @@ class Formatters
                     unlink($tempImagePath);
                 }
             }
+        }
+    }
+    static function usDateToYmd($date){
+        $dateObject = explode('-', $date);
+        foreach ($dateObject as $key => $value) {
+            if ($key !== 2){
+                if (strlen($value) < 2){
+                    $dateObject[$key] = 0 . $value;
+                }
+            }
+        }
+        return $dateObject[2] . '-' . $dateObject[0] . '-' . $dateObject[1];
+    }
+    static public function isJson($data): bool {
+        if (gettype($data) === 'string') {
+            json_decode($data);
+            return json_last_error() === JSON_ERROR_NONE;
+        }
+        return false;
+    }
+    static private function formatTimeParams($value, $type)
+    {
+        if ($value === 0) {
+            return null;
+        }
+        $string = $value . ' ';
+        if ($type === 's') {
+            $string .= $value === 1 ? 'second' : 'seconds';
+        }
+        elseif ($type === 'm') {
+            $string .= $value === 1 ? 'minute' : 'minutes';
+        }
+        elseif ($type === 'h') {
+            $string .= $value === 1 ? 'hour' : 'hours';
+        }
+        else {
+            return null;
+        }
+        return $string;
+    }
+    static public function secondsToTime($seconds, $type = 'string', $accurate = true)
+    {
+        // max is hours
+        $hours = (int)floor($seconds / 3600);
+        $minutes = (int)floor($seconds / 60) % 60;
+        $seconds = $seconds % 60;
+        if ($type === 'string') {
+            return (($accurate === false) ? '≈ ' : '' )
+                . (self::formatTimeParams($hours, 'h') ?? '')
+                . (($hours !== 0) ? ', ' : '' )
+                . (self::formatTimeParams($minutes, 'm') ?? '')
+                . (($minutes !== 0 && $seconds !== 0) ? ', ' : '' )
+                . (self::formatTimeParams($seconds, 's') ?? '');
+        }
+        else {
+            return [
+                'hours' => $hours,
+                'minutes' => $minutes,
+                'seconds' => $seconds,
+            ];
         }
     }
 }

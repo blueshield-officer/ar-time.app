@@ -7,13 +7,16 @@ class CacheOperator
     private $redis;
     private $DBC;
     private $config = [
-        'absent_additional' => [
+        'regular' => [
             'school' => 1000,
             'non_school' => 1000,
         ],
-
+        'static' => 3600
     ];
     private $formatterTypes = [
+
+        'oneStr' => ['bell_schedules_descriptions'],
+
         'oneElement' => ['calendar_schedules', 'calendar_day_off'],
 
         'multipleElements' => ['absent_additional', 'calendar_events', 'calendar_sports'],
@@ -22,19 +25,91 @@ class CacheOperator
 
         'absentRoomChanges' => ['absent_room_changes'],
 
-        'scheduleTable' => ['schedule_custom', 'schedule_default'],
+        'scheduleTable' => ['bell_schedules'],
 
         'schoolStaffList' => ['school_staff_list'],
 
         'formatInfoRoadmap' => ['info_roadmap'],
 
-        'fullTable' => ['schedule_descriptions', 'info_testdays_classes', 'calendar_countdowns', 'calendar_holidays']
+        'fullTable' => ['bell_schedules_descriptions', 'info_testdays_classes', 'calendar_countdowns', 'calendar_holidays']
+
     ];
 
     public function __construct($DBC, $redis)
     {
         $this->DBC = $DBC;
         $this->redis = $redis;
+    }
+    public function fetch($tableName, $dataIndex = null, $json = true)
+    {
+        if (!is_null($dataIndex) && !str_starts_with($dataIndex, 'next')){
+            $dateObject = explode('-', $dataIndex);
+            if (count($dateObject) === 2) {
+                $monthDays = cal_days_in_month(CAL_GREGORIAN, $dateObject[1], $dateObject[0]);
+                if (is_int($monthDays)) {
+                    return $this->fetchMonth($tableName, $dataIndex, $monthDays);
+                }
+            }
+        }
+        return $this->fetchSimple($tableName, $dataIndex, $json);
+    }
+    private function fetchSimple($tableName, $dataIndex = null, $json = true)
+    {
+        $cacheData = $this->redis->get('cacheSQL:' . $tableName . ($dataIndex ? (':' . $dataIndex) : ''));
+        if ($cacheData === '') {
+            return null;
+        }
+        if (is_null($cacheData)) {
+            // get data form SQL
+            $dataSQL = $this->fetchDataSQL($tableName, $dataIndex);
+            // formatting it for Redis
+            if (empty($dataSQL)) {
+                $dataSQL = null;
+            }
+            else {
+                $formatType = $this->findFormatType($tableName);
+                $dataSQL = match ($formatType) {
+                    'oneStr' => $this->formatOneStr($dataSQL),
+                    'multipleElements' => $this->formatMultipleElements($dataSQL),
+                    'oneElement' => $this->formatOneElement($dataSQL),
+                    'absentPeople' => self::formatAbsentPeople($dataSQL),
+                    'absentRoomChanges' => self::formatAbsentRoomChanges($dataSQL),
+                    'scheduleTable' => self::formatSchedules($dataSQL),
+                    'schoolStaffList' => self::formatSchoolStaffList($dataSQL),
+                    'formatInfoRoadmap' => self::formatInfoRoadmap($dataSQL),
+                    default => $dataSQL,
+                };
+                if ($json) {
+                    $dataSQL = json_encode($dataSQL);
+                }
+            }
+            if ($dataSQL)
+            $cacheData = $dataSQL;
+
+            // ================= record redis data =====================
+            if (is_null($cacheData)) {
+                $dataToRecord = '';
+            }
+            else {
+                $dataToRecord = $cacheData;
+                if (Utils::isJson($dataToRecord) === false){
+                    $dataToRecord = json_encode($dataToRecord);
+                }
+            }
+            $this->updateCache($tableName, $dataIndex, $dataToRecord);
+            // ========================================================
+        }
+        // TODO Когда будет проверка редис если '' то ретурнит null
+        return $cacheData;
+    }
+    private function fetchMonth($tableName, $dataIndex, $monthDays)
+    {
+        $newArray = [];
+        for ($i = 1; $i <= $monthDays; $i++) {
+            $index = $dataIndex . '-' . (($i < 10) ? '0' . $i : $i);
+            $newArray[$index] = $this->fetchSimple($tableName, $index, false);
+        }
+        return $newArray;
     }
     private function findFormatType($table)
     {
@@ -46,27 +121,67 @@ class CacheOperator
     }
     private function fetchDataSQL($tableName, $dataIndex)
     {
+        // analyzing data SQL
+        if ($tableName === 'early_dismissal_schedules') {
+            return $this->findEarlyDismissalSchedules();
+        }
+        // getting data from SQL
         $tableParams = $this->DBC->getTableParams($tableName, 'public');
         if ($dataIndex === null) {
-            $dataSQL = $this->DBC->fetchAll(
-                $this->DBC->query(
-                    'SELECT ' . $tableParams['columns'] .' FROM '. $tableName
-                )
-            );
+            $query = [
+                'filters' => '',
+                'arguments' => []
+            ];
+        }
+        else if (str_starts_with($dataIndex, 'next') ) {
+            $query = [
+                'filters' => ' WHERE `date` > ?',
+                'arguments' => [date('Y-m-d')]
+            ];
+            if (count(explode(':', $dataIndex)) > 1){
+                $query['filters'] .= ' AND (';
+                $dataIndex = str_replace('next:', '', $dataIndex);
+                preg_match_all('/(.*?)(AND|OR|$)/', $dataIndex, $queryBlocks);
+
+                foreach ($queryBlocks[1] as $index => $queryBlockGroupOne) {
+                    if (empty($queryBlockGroupOne)) {
+                        continue;
+                    }
+
+                    $queryConnector = $queryBlocks[2][$index];
+
+                    preg_match('/(.*?)(!?[=><])(.*)/', $queryBlockGroupOne, $operators);
+                    $column = $operators[1];
+                    $operator = $operators[2];
+                    $value = $operators[3];
+
+                    $query['filters'] .= '`' . $column . '` ' . $operator . ' ?' . (($queryConnector !== '') ? ' ' . $queryConnector . ' ' : ')');
+                    $query['arguments'][] = $value;
+                }
+            }
+            $query['filters'] .= ' LIMIT 1';
         }
         else {
-            $dataSQL = $this->DBC->fetchAll(
-                $this->DBC->query(
-                    'SELECT ' . $tableParams['columns'] .' FROM '. $tableName . ' WHERE ' . $tableParams['columnsArray'][array_key_first($tableParams['columnsArray'])] . ' = ?', [$dataIndex]
-                )
-            );
+            $query = [
+                'filters' => ' WHERE ' . $tableParams['columnsArray'][array_key_first($tableParams['columnsArray'])] . ' = ?',
+                'arguments' => [$dataIndex]
+            ];
         }
+        $dataSQL = $this->DBC->fetchAll(
+            $this->DBC->query(
+                'SELECT ' . $tableParams['columns'] .' FROM '. $tableName . $query['filters'], $query['arguments']
+            )
+        );
         return $dataSQL;
+    }
+    private function formatOneStr($array){
+        $array = $array[0];
+        unset($array[array_key_first($array)]);
+        return $array[array_key_first($array)];
     }
     private function formatOneElement($array)
     {
         $array = $array[0];
-        unset($array[array_key_first($array)]);
         return $array;
     }
     private function formatMultipleElements($array)
@@ -93,7 +208,8 @@ class CacheOperator
             $arrayToAdd = $schedule;
             unset($arrayToAdd['schedule_id']);
             unset($arrayToAdd['position']);
-            $newArray[$schedule['schedule_id']][$schedule['position']] = $arrayToAdd;
+            unset($arrayToAdd['official']);
+            $newArray[$schedule['official']][$schedule['schedule_id']][$schedule['position']] = $arrayToAdd;
         }
         return $newArray;
     }
@@ -148,38 +264,63 @@ class CacheOperator
         ksort($newArray);
         return $newArray;
     }
-
-
-
-
-
-    public function fetch($tableName, $dataIndex = null)
+    private function formatByIndex($array)
     {
-        $cacheData = $this->redis->get('cacheSQL:' . $tableName . ($dataIndex ? (':' . $dataIndex) : ''));
-        if (is_null($cacheData)) {
-            // get data form SQL
-            $dataSQL = $this->fetchDataSQL($tableName,$dataIndex);
-            // formatting it for Redis
-            if (empty($dataSQL)) {
-                $dataSQL = '';
+        // TODO решить пиздец с форматировами
+    }
+
+
+    private function findEarlyDismissalSchedules()
+    {
+        $minimum = 2400;
+//        'SELECT `start_unix`, `end_unix` FROM `bell_schedules` WHERE `schedule_id` = 'a' ORDER BY position DESC;'
+        //'SELECT DISTINCT `schedule_id` FROM `bell_schedules`'
+        $schedules = $this->DBC->fetchAll(
+            $this->DBC->query(
+                'SELECT DISTINCT `schedule_id` FROM `bell_schedules`'
+            )
+        );
+        $schedules = array_map(function ($schedule) {
+            return $schedule['schedule_id'];
+        }, $schedules);
+
+        $earlyDismissalSchedules = [];
+        foreach ($schedules as $schedule) {
+            $endTime = $this->DBC->fetchAll(
+                $this->DBC->query(
+                    'SELECT `start_unix`, `end_unix`, `start_time`, `end_time` FROM `bell_schedules` WHERE `schedule_id` = ? ORDER BY position DESC LIMIT 1;', [$schedule]
+                )
+            )[0];
+
+            if ($endTime['end_unix'] === null) {
+                $secondsEnd = $endTime['start_unix'] + 3600;
+                $stringEnd = '≈ ' . date('h:i a', strtotime('+ 60 minutes', strToTime($endTime['start_time'])));
+                $accuracy = false;
             }
             else {
-                $formatType = $this->findFormatType($tableName);
-                $dataSQL = match ($formatType) {
-                    'multipleElements' => $this->formatMultipleElements($dataSQL),
-                    'oneElement' => $this->formatOneElement($dataSQL),
-                    'absentPeople' => self::formatAbsentPeople($dataSQL),
-                    'absentRoomChanges' => self::formatAbsentRoomChanges($dataSQL),
-                    'scheduleTable' => self::formatSchedules($dataSQL),
-                    'schoolStaffList' => self::formatSchoolStaffList($dataSQL),
-                    'formatInfoRoadmap' => self::formatInfoRoadmap($dataSQL),
-                    default => $dataSQL,
-                };
-                $dataSQL = json_encode($dataSQL);
+                $stringEnd = $endTime['end_time'];
+                $secondsEnd = $endTime['end_unix'];
+                $accuracy = true;
             }
-            $cacheData = $dataSQL;
+            if ($secondsEnd + $minimum < 51600) {
+                $earlyDismissalSchedules[$schedule] = [
+                    'end_unix' => Utils::secondsToTime(51600 - $secondsEnd, 'string', $accuracy),
+                    'end_time' => $stringEnd,
+                ];
+            }
         }
-        return $cacheData;
+        if (empty($earlyDismissalSchedules)) {
+            return null;
+        }
+        return $earlyDismissalSchedules;
+    }
+
+
+
+    private function updateCache($tableName, $dataIndex, $str)
+    {
+        // TODO add cache redis and check <-- ????
+        // some stuff here
     }
     public function updateAbsents($tableName, $dataIndex)
     {
@@ -197,8 +338,6 @@ class CacheOperator
             $dataSQL = json_encode($dataSQL);
         }
         //return $dataSQL;
-        var_dump(json_decode($dataSQL, true));
+//        var_dump(json_decode($dataSQL, true));
     }
 }
-
-// TODO add cache redis and check

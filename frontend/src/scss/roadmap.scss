@@ -18,6 +18,11 @@
                     margin: 10px 0;
                     display: flex;
                     width: 400px;
+                    border-top: 1px solid;
+                    border-left: 1px solid;
+                    border-bottom: 1px solid;
+                    border-top-left-radius: 5px;
+                    border-bottom-left-radius: 5px;
                     .planContent {
                         display: flex;
                         flex-direction: column;
@@ -43,6 +48,8 @@
                             text-wrap: nowrap;
                         }
                         .statusBar {
+                            margin-top: -1px;
+                            height: calc(100% + 2px);
                             min-width: 5px;
                             width: 5px;
                         }

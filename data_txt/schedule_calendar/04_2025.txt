@@ -34,8 +34,8 @@
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/4/1/22094405/?id=0"
-				aria-label="4/1/2025 - * A Schedule- Day">
-				* A Schedule- Day
+				aria-label="4/1/2025 - * A Schedule- Day 3">
+				* A Schedule- Day 3
 			</a>
 		</span>
 
@@ -125,8 +125,8 @@
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/4/2/22094406/?id=0"
-				aria-label="4/2/2025 - *E Schedule- Day ">
-				*E Schedule- Day 
+				aria-label="4/2/2025 - *E Schedule- Day 4">
+				*E Schedule- Day 4
 			</a>
 		</span>
 
@@ -175,8 +175,8 @@
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/4/3/22094413/?id=0"
-				aria-label="4/3/2025 - *A Schedule- Day">
-				*A Schedule- Day
+				aria-label="4/3/2025 - *A Schedule- Day 5">
+				*A Schedule- Day 5
 			</a>
 		</span>
 
@@ -221,7 +221,7 @@
 		<span class="dateloc">
 				5:30 PM
 				<span class="ndash-range"> &ndash; </span>
-					6 PM
+					7:30 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-1 checked">
@@ -266,8 +266,8 @@
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/4/4/22094410/?id=0"
-				aria-label="4/4/2025 - *E Schedule- Day ">
-				*E Schedule- Day 
+				aria-label="4/4/2025 - *B Schedule- Day 6">
+				*B Schedule- Day 6
 			</a>
 		</span>
 
@@ -345,8 +345,8 @@
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/4/7/22094415/?id=0"
-				aria-label="4/7/2025 - *A Schedule- Day">
-				*A Schedule- Day
+				aria-label="4/7/2025 - *A Schedule- Day 1">
+				*A Schedule- Day 1
 			</a>
 		</span>
 
@@ -395,8 +395,8 @@
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/4/8/22094418/?id=0"
-				aria-label="4/8/2025 - *B Schedule- Day">
-				*B Schedule- Day
+				aria-label="4/8/2025 - *B Schedule- Day 2">
+				*B Schedule- Day 2
 			</a>
 		</span>
 
@@ -489,8 +489,8 @@
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/4/9/22094419/?id=0"
-				aria-label="4/9/2025 - *A Schedule-Day">
-				*A Schedule-Day
+				aria-label="4/9/2025 - *A Schedule-Day 3">
+				*A Schedule-Day 3
 			</a>
 		</span>
 
@@ -546,6 +546,28 @@
 
 		<div class="full-description" style="display: none;"></div>
 	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/4/9/22668869/?id=0"
+				aria-label="4/9/2025 - Medicare Presentation for AR Alumni">
+				Medicare Presentation for AR Alumni
+			</a>
+		</span>
+
+		<span class="dateloc">
+				6 PM
+				<span class="ndash-range"> &ndash; </span>
+					8 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
 					</ul>
 				</li>
 				<li class="cf event-day  " id="day-10">
@@ -558,8 +580,8 @@
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/4/10/22094420/?id=0"
-				aria-label="4/10/2025 - *A Schedule- Day">
-				*A Schedule- Day
+				aria-label="4/10/2025 - *A Schedule- Day 4">
+				*A Schedule- Day 4
 			</a>
 		</span>
 
@@ -608,8 +630,8 @@
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/4/11/22094423/?id=0"
-				aria-label="4/11/2025 - *A Schedule-Day">
-				*A Schedule-Day
+				aria-label="4/11/2025 - *A Schedule-Day 5">
+				*A Schedule-Day 5
 			</a>
 		</span>
 
@@ -777,8 +799,8 @@
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/4/14/22094425/?id=0"
-				aria-label="4/14/2025 - *A Schedule-Day">
-				*A Schedule-Day
+				aria-label="4/14/2025 - *A Schedule-Day 6">
+				*A Schedule-Day 6
 			</a>
 		</span>
 
@@ -827,8 +849,8 @@
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/4/15/16222261/?id=0"
-				aria-label="4/15/2025 - *C Schedule - Day ">
-				*C Schedule - Day 
+				aria-label="4/15/2025 - *C Schedule - Day 1">
+				*C Schedule - Day 1
 			</a>
 		</span>
 
@@ -1113,8 +1135,8 @@
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/4/22/21506552/?id=0"
-				aria-label="4/22/2025 - *B Schedule- School Mass">
-				*B Schedule- School Mass
+				aria-label="4/22/2025 - *B Schedule- School Mass Day 2">
+				*B Schedule- School Mass Day 2
 			</a>
 		</span>
 
@@ -1179,6 +1201,25 @@
 						<span class="day">Wed</span>
 					</div>
 					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/4/23/22912857/?id=0"
+				aria-label="4/23/2025 - *A Schedule- Day 3">
+				*A Schedule- Day 3
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/4/23/16222296/?id=0"
@@ -1260,6 +1301,25 @@
 						<span class="day">Fri</span>
 					</div>
 					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/4/25/22912861/?id=0"
+				aria-label="4/25/2025 - *A Schedule-Day 4">
+				*A Schedule-Day 4
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/4/25/16575359/?id=0"
@@ -1434,6 +1494,25 @@
 					<ul class="day-event-box">
 	<li class="day-event-info">
 		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/4/28/22912863/?id=0"
+				aria-label="4/28/2025 - *A Schedule-Day 5">
+				*A Schedule-Day 5
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/4/28/16295736/?id=0"
 				aria-label="4/28/2025 - Varsity Mathletes Practice">
 				Varsity Mathletes Practice
@@ -1465,6 +1544,25 @@
 					<ul class="day-event-box">
 	<li class="day-event-info">
 		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/4/29/22912865/?id=0"
+				aria-label="4/29/2025 - * C Schedule-Day 6">
+				* C Schedule-Day 6
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/4/29/16222330/?id=0"
 				aria-label="4/29/2025 - Progress Reports Due">
 				Progress Reports Due
@@ -1494,6 +1592,25 @@
 						<span class="day">Wed</span>
 					</div>
 					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/4/30/22912866/?id=0"
+				aria-label="4/30/2025 - *A Schedule Day 1">
+				*A Schedule Day 1
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/4/30/16231672/?id=0"

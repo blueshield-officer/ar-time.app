@@ -7,7 +7,7 @@ use App\Services\DatabaseRequests;
 use App\Services\DBC;
 use App\Services\GoogleDocumentExtractor;
 use App\Services\RedisOperator;
-use App\Services\Formatters;
+use App\Services\Utils;
 
 class Loader
 {

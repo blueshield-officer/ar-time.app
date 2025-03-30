@@ -107,5 +107,8 @@ class Session
         }
     }
 
-
+    static public function setLocaleDate($date)
+    {
+        $_SESSION['date'] = $date;
+    }
 }

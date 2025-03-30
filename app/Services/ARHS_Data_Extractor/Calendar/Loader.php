@@ -5,7 +5,7 @@ use App\Services\CacheOperator;
 use App\Services\DBC;
 use App\Services\PageDownloader;
 use App\Services\RedisOperator;
-use App\Services\Formatters;
+use App\Services\Utils;
 
 
 //                          IMPORTANT
@@ -22,10 +22,10 @@ use App\Services\Formatters;
 class Loader
 {
     private static $tableData = [
-        'calendar_schedules' => ['date', 'schedule', 'description', 'testDay'],
-        'calendar_events' => ['date', 'title', 'description', 'code', 'type', 'important', 'md5_key'],
+        'calendar_schedules' => ['date', 'schedule', 'testDay'],
+        'calendar_events' => ['date', 'title', 'description', 'time_start', 'time_end', 'location', 'code', 'type', 'important', 'md5_key'],
         'calendar_day_off' => ['date', 'percentage', 'type', '9', '10', '11', '12'],
-        'calendar_sports' => ['date', 'sport', 'gender', 'side', 'varsity', 'opponent', 'description', 'time', 'location', 'special', 'md5_key'],
+        'calendar_sports' => ['date', 'sport', 'gender', 'side', 'varsity', 'opponent', 'description', 'time_start', 'time_end', 'location', 'special', 'md5_key'],
         'calendar_education' => ['date', 'quarter', 'status'],
     ];
     private static function html_isMonthEmpty($html){
@@ -358,7 +358,7 @@ class Loader
                         'special' => new DaySpecial($date, 'Special Schedule', 'We are unable to provide data for Special Schedule', 'red'),
                         default => new DaySpecial($date, 'Error', 'Error', 'gamma'),
                     };
-                    $dayInfo = new DayInfo($date, $special, self::findScheduleDefaultDescription($DBC, $special), Detectors::findTestDay($str));
+                    $dayInfo = new DayInfo($date, $special, Detectors::findTestDay($str));
                     self::dayInfoRecord($dayInfoArray, $dayInfo, $dataRecorded);
                     self::daySpecialRecord($daySpecialArray, $daySpecial, $md5key, $event, $dataRecorded);
                     self::dayOffRecord($dayOffArray, $dayOff, $dataRecorded);
@@ -367,7 +367,7 @@ class Loader
                 // Check SCHEDULE
                 if (Detectors::checkIfHasSchedule($str) && !$dataRecorded) {
                     $schedule = Detectors::findSchedule($str);
-                    $dayInfo = new DayInfo($date, $schedule, self::findScheduleDefaultDescription($DBC, $schedule), Detectors::findTestDay($str));
+                    $dayInfo = new DayInfo($date, $schedule, Detectors::findTestDay($str));
                     self::dayInfoRecord($dayInfoArray, $dayInfo, $dataRecorded);
                 }
                 // Check is it SCHOOL DAY
@@ -385,7 +385,7 @@ class Loader
                 // Check is it RETREAT
                 $retreat = Detectors::isRetreat($str);
                 if ($retreat !== false && !$dataRecorded) {
-                    $dayInfo = new DayInfo($date, 'special', null, null);
+                    $dayInfo = new DayInfo($date, 'special', null);
                     $dayOff = new DayOff($date, $retreat, 100, 'f');
                     $daySpecial = new DaySpecial($date, $strOriginal, $description, 'red', 'retreat');
                     self::dayInfoRecord($dayInfoArray, $dayInfo, $dataRecorded);

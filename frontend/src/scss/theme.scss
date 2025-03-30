@@ -1,13 +1,31 @@
+@import "vars";
+
 /* PAGE STUFF */
-.page-description {
+.page-description-h1 {
     font-size: 16px;
     margin-bottom: 20px;
+}
+.page-description-h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
 }
 .object {
     margin: 16px 0;
 }
+.base-transition {
+    transition: $base-transition-time;
+}
 
 /* SCREEN */
+.img-stretch {
+    height: 100%;
+}
+.padding-32 {
+    padding: 32px 0;
+}
+.padding-16 {
+    padding: 16px 0;
+}
 
 
 
@@ -40,10 +58,6 @@
     text-wrap: wrap;
 }
 
-.clickForMore {
-    user-select: none;
-}
-
 
 /* TEXT */
 .highlighted-text {
@@ -58,11 +72,24 @@
     font-size: 24px;
     font-weight: 600;
 }
-.text-link {
+.blue-text-link {
     color: cornflowerblue;
     :hover {
         text-decoration: underline;
     }
+}
+.time {
+    font-variant-numeric: tabular-nums
+}
+.text-link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.spoiler {
+    font-size: 8px;
+}
+.make-text-more-visible {
+    font-weight: 600;
 }
 
 
@@ -77,4 +104,47 @@
     font-weight: 600;
     text-align: center;
     justify-items: center;
+}
+
+
+/* INTERACTION */
+.selectable {
+    transition: 0.3s;
+    cursor: pointer;
+}
+.selectable:hover {
+    filter: brightness(95%);
+}
+.no-copy {
+    user-select: none;
+}
+/* SHADOWS */
+.light-shadow {
+    box-shadow: 0 3px 2px -2px gray;
+}
+
+/* BORDERS */
+.default-border {
+    border: $border-params;
+}
+.golden-5 {
+    border-radius: 5px;
+}
+
+
+/* SPIRIT */
+.freshman {
+    background-color: $freshman;
+}
+.sophomore {
+    background-color: $sophomore;
+    color: white;
+}
+.junior {
+    background-color: $junior;
+    color: white;
+}
+.senior {
+    background-color: $senior;
+    color: white;
 }

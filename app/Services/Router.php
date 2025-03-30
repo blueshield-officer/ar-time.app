@@ -18,12 +18,68 @@ class Router
     public static function enable(){
         new Session();
 
+        if (!isset($_COOKIE['sideBar'])){
+            $_COOKIE['sideBar'] = 1;
+        }
+        $_COOKIE['sideBar'] = (int)$_COOKIE['sideBar'];
+
         $query = preg_replace('/\/+/', '/', $_SERVER['REQUEST_URI']);
         if ($query !== '/'){
             $query = rtrim($query, '/');
         }
         foreach (self::$list as $route) {
-            // check is in array
+            // =======================
+            // Flexible routing (dates)
+            // =======================
+
+            if (preg_match('/\{(date(MDY|MY))\}/', $route['uri'], $matchesDateType) === 1) {
+                $dateType = "date" . $matchesDateType[2];
+                $patterns = [
+                    '{dateMDY}' => '(\d{1,2}-\d{1,2}-\d{4})',
+                    '{dateMY}'  => '(\d{1,2}-\d{4})'
+                ];
+                $regex = str_replace(array_keys($patterns), array_values($patterns), $route['uri']);
+
+                if (preg_match("#^$regex$#", $query, $matches)) {
+                    $controller_name = $route['page_class'][0];
+                    $date = $matches[1];
+
+                    $dateObject = explode('-', $date);
+                    if ($dateType === 'dateMDY') {
+                        if (!checkdate($dateObject[0], $dateObject[1], $dateObject[2])){
+                            self::error_page(400);
+                            die();
+                        }
+                    }
+                    else {
+                        if (!checkdate($dateObject[0], 1, $dateObject[1])){
+                            self::error_page(400);
+                            die();
+                        }
+                    }
+
+                    if (!file_exists($_SERVER['DOCUMENT_ROOT'] . '/' . $controller_name . '.php')) {
+                        self::error_page(400);
+                        die();
+                    }
+
+                    $controller = new $controller_name();
+                    if (isset($route['page_class'][1])) {
+                        $action_name = $route['page_class'][1];
+                        if (!method_exists($controller_name, $action_name)) {
+                            throw new \Exception('Action not found');
+                        }
+                        $controller->$action_name($date);
+                    } else {
+                        $controller->execute($date);
+                    }
+                    die();
+                }
+            }
+
+            // =======================
+            // Standard routing
+            // =======================
             if (is_array($route['uri'])){
                 if (!in_array($query, $route['uri'])){
                     continue;
@@ -62,6 +118,7 @@ class Router
     }
     private static function error_page($code)
     {
+        http_response_code($code);
         $controller = new Error();
         $controller->execute($code);
     }

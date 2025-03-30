@@ -1,0 +1,42 @@
+#date-bar {
+    position: relative;
+    height: 30px;
+    text-align: center;
+    user-select: none;
+    .date-bar {
+        display: flex;
+        height: 100%;
+        align-content: center;
+        justify-content: center;
+        .chevron {
+            margin: 2px;
+            padding: 3px;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+        }
+        .chevron:hover {
+            background-color: #d5d5d5;
+            cursor: pointer;
+        }
+        .date {
+            display: flex;
+            justify-content: space-around;
+            width: 350px;
+            align-self: center;
+            font-weight: 400;
+            font-size: 16px;
+            margin: 0 15px;
+        }
+    }
+    .date-away {
+        position: relative;
+        padding: 0 5px 5px 5px;
+        border-radius: 0 0 10px 10px;
+        line-height: 15px;
+        font-weight: bold;
+    }
+    .today {
+        font-weight: 700;
+        color: #bf0000;
+    }
+}

@@ -41,8 +41,6 @@
 
 		<span class="dateloc">
 				3:45 PM
-				<span class="ndash-range"> &ndash; </span>
-					4:45 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -63,8 +61,6 @@
 
 		<span class="dateloc">
 				3:45 PM
-				<span class="ndash-range"> &ndash; </span>
-					4:45 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -85,8 +81,6 @@
 
 		<span class="dateloc">
 				4 PM
-				<span class="ndash-range"> &ndash; </span>
-					5 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -107,8 +101,6 @@
 
 		<span class="dateloc">
 				5 PM
-				<span class="ndash-range"> &ndash; </span>
-					6 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -129,8 +121,6 @@
 
 		<span class="dateloc">
 				5:15 PM
-				<span class="ndash-range"> &ndash; </span>
-					6:15 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -151,8 +141,6 @@
 
 		<span class="dateloc">
 				6:30 PM
-				<span class="ndash-range"> &ndash; </span>
-					7:30 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -173,8 +161,6 @@
 
 		<span class="dateloc">
 				6:30 PM
-				<span class="ndash-range"> &ndash; </span>
-					7:30 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -205,8 +191,6 @@
 
 		<span class="dateloc">
 				12 PM
-				<span class="ndash-range"> &ndash; </span>
-					1 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -227,8 +211,6 @@
 
 		<span class="dateloc">
 				12 PM
-				<span class="ndash-range"> &ndash; </span>
-					1 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -259,8 +241,6 @@
 
 		<span class="dateloc">
 				3:45 PM
-				<span class="ndash-range"> &ndash; </span>
-					4:45 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -281,8 +261,26 @@
 
 		<span class="dateloc">
 				3:45 PM
-				<span class="ndash-range"> &ndash; </span>
-					4:45 PM
+			
+			<ul class="event-tag-list">
+							<li class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</li>
+			</ul>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/5/22734530/?id=1"
+				aria-label="5/5/2025 - Archbishop Ryan High School VB B V Away Roman Catholic High School">
+				Archbishop Ryan High School VB B V Away Roman Catholic High School
+			</a>
+		</span>
+
+		<span class="dateloc">
+				3:45 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -303,8 +301,6 @@
 
 		<span class="dateloc">
 				4 PM
-				<span class="ndash-range"> &ndash; </span>
-					5 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -334,8 +330,6 @@
 
 		<span class="dateloc">
 				6:30 PM
-				<span class="ndash-range"> &ndash; </span>
-					7:30 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -365,8 +359,6 @@
 
 		<span class="dateloc">
 				4 PM
-				<span class="ndash-range"> &ndash; </span>
-					5 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -387,8 +379,6 @@
 
 		<span class="dateloc">
 				5:30 PM
-				<span class="ndash-range"> &ndash; </span>
-					6:30 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -418,8 +408,6 @@
 
 		<span class="dateloc">
 				3:45 PM
-				<span class="ndash-range"> &ndash; </span>
-					4:45 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -440,8 +428,6 @@
 
 		<span class="dateloc">
 				5:15 PM
-				<span class="ndash-range"> &ndash; </span>
-					6:15 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -462,8 +448,6 @@
 
 		<span class="dateloc">
 				5:45 PM
-				<span class="ndash-range"> &ndash; </span>
-					6:45 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">

@@ -1,5 +1,11 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
+/* Bootstrap
+   ========================================================================== */
+.content {
+    padding: 12px !important;
+}
+
 /* Document
    ========================================================================== */
 
@@ -51,7 +57,7 @@ h1 {
 }
 h3 {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 8px;
 }
 

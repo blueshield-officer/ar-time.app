@@ -247,8 +247,6 @@
 
 		<span class="dateloc">
 				3:45 PM
-				<span class="ndash-range"> &ndash; </span>
-					4:45 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -269,8 +267,6 @@
 
 		<span class="dateloc">
 				5:30 PM
-				<span class="ndash-range"> &ndash; </span>
-					6:30 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -291,8 +287,6 @@
 
 		<span class="dateloc">
 				7 PM
-				<span class="ndash-range"> &ndash; </span>
-					8 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -323,8 +317,6 @@
 
 		<span class="dateloc">
 				12 AM
-				<span class="ndash-range"> &ndash; </span>
-					1 AM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -345,8 +337,6 @@
 
 		<span class="dateloc">
 				12 AM
-				<span class="ndash-range"> &ndash; </span>
-					1 AM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -376,8 +366,6 @@
 
 		<span class="dateloc">
 				3:45 PM
-				<span class="ndash-range"> &ndash; </span>
-					4:45 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -398,8 +386,6 @@
 
 		<span class="dateloc">
 				8:10 PM
-				<span class="ndash-range"> &ndash; </span>
-					9:10 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -429,8 +415,6 @@
 
 		<span class="dateloc">
 				4 PM
-				<span class="ndash-range"> &ndash; </span>
-					5 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -462,8 +446,6 @@
 
 		<span class="dateloc">
 				7 PM
-				<span class="ndash-range"> &ndash; </span>
-					8 PM
 			
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">
@@ -503,8 +485,6 @@
 
 		<span class="dateloc">
 				4:30 PM
-				<span class="ndash-range"> &ndash; </span>
-					5:30 PM
 			(2150 W Lehigh Ave. Philadelphia, PA 19132-0000)
 			<ul class="event-tag-list">
 							<li class="event-tag event-color-2 checked">

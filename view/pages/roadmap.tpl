@@ -1,24 +1,20 @@
-<html>
-<head>
-    {include 'elements/header.tpl'}
-    <title>Roadmap</title>
-</head>
-<body>
+{extends 'elements/wrapper.tpl'}
 
-{assign var=currentPage value="Roadmap"}
-{include 'elements/wrapper.tpl'}
-<div id="screen">
-    <div id="roadmap" class="container">
+{block name=page}Roadmap{/block}
+
+{block name=content}
+<div id="roadmap" class="padding-32">
+    <div class="container">
         <h1 class="page-title">Website Roadmap</h1>
-        <p class="page-description">Here you can see all that we have done, doing or planning.</p>
+        <p class="page-description-h1">Here you can see all that we have done, doing or planning.</p>
         <div class="year-list block primary-background">
-            {foreach $info_roadmap as $year => $plansArray}
-                <div class="yearBlock">
-                    <p class="title-1 year simple-border">{$year}</p>
+            {foreach $roadmap as $year => $plansArray}
+                <div class="yearBlock ">
+                    <p class="title-1 year border-color-theme">{$year}</p>
                     <div class="plan-list">
                         {foreach $plansArray as $plan}
                             {assign var=tempUniqueId value="{uniqueId}"}
-                            <div class="plan secondary-background">
+                            <div class="plan secondary-background border-color-theme">
                                 <div class="planContent content">
                                     <p class="planTitle">{$plan['name']}</p>
                                     <div class="planInfo">
@@ -39,7 +35,7 @@
                                         {/if}
 
                                     </div>
-                                    <p class="clickForMore secondary-text" type="button" data-bs-toggle="collapse" data-bs-target="#{$tempUniqueId}" aria-expanded="false" aria-controls="{$tempUniqueId}">
+                                    <p class="clickForMore secondary-text no-copy" type="button" data-bs-toggle="collapse" data-bs-target="#{$tempUniqueId}" aria-expanded="false" aria-controls="{$tempUniqueId}">
                                         Click for details
                                     </p>
                                     <p class="collapse planDescription" id="{$tempUniqueId}">
@@ -66,5 +62,4 @@
         </div>
     </div>
 </div>
-</body>
-</html>
+{/block}

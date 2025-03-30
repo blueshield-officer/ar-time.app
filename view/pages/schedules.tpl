@@ -1,21 +1,19 @@
-<html>
-<head class="data-overlayscrollbars-initialize">
-    {include 'elements/header.tpl'}
-    <title>Roadmap</title>
-</head>
-<body class="data-overlayscrollbars-initialize">
-{assign var=currentPage value="Schedules"}
-{include 'elements/wrapper.tpl'}
-<div id="screen">
+{extends 'elements/wrapper.tpl'}
+
+{block name=page}Schedules{/block}
+
+{block name=content}
+<div id="screen" class="padding-32">
     <div id="schedules" class="container">
         <h1 class="page-title">Schedules</h1>
-        <p class="page-description">List of all official and non-official (special) schedules.</p>
+        <p class="page-description-h1">List of all official and non-official (special) schedules.</p>
 
+    {foreach $bells as $official => $bellsList}
         <div class="object">
-            <h3>Official schedule:</h3>
+            <h3>{if $official === 1}Official schedules:{else}Non-official schedules:{/if}</h3>
             <div class="table-list">
-                {foreach $schedules_official as $scheduleName => $schedule}
-                    <div class="table-object simple-border">
+                {foreach $bellsList as $scheduleName => $schedule}
+                    <div class="table-object default-border golden-5 border-color-theme">
                         <div class="table-title">Schedule {capitalize str=$scheduleName}</div>
                         <table class="table">
                             <thead>
@@ -41,38 +39,6 @@
                 {/foreach}
             </div>
         </div>
-
-        <div class="object">
-            <h3>Non-official schedule:</h3>
-            <div class="table-list">
-                {foreach $schedules_nonofficial as $scheduleName => $schedule}
-                    <div class="table-object simple-border">
-                        <div class="table-title">Schedule {capitalize str=$scheduleName}</div>
-                        <table class="table">
-                            <thead>
-                            <tr>
-                                <th>Description / Period</th>
-                                <th>Start Time</th>
-                                <th>End Time</th>
-                                <th>Length</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            {foreach $schedule as $position => $data}
-                                <tr>
-                                    <td>{$data['name']}</td>
-                                    <td>{$data['start_time']}</td>
-                                    <td>{$data['end_time']}</td>
-                                    <td>{$data['length']}</td>
-                                </tr>
-                            {/foreach}
-                            </tbody>
-                        </table>
-                    </div>
-                {/foreach}
-            </div>
-        </div>
-    </div>
+    {/foreach}
 </div>
-</body>
-</html>
+{/block}

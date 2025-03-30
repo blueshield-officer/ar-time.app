@@ -10,7 +10,8 @@ class DaySports {
     private $varsity;
     private $opponent;
     private $description;
-    private $time;
+    private $time_start = null;
+    private $time_end = null;
     private $location;
     private $special;
     private $md5key;
@@ -22,11 +23,12 @@ class DaySports {
         $this->side = $side;
         $this->varsity = $varsity;
         $this->opponent = $opponent;
-        $this->description = $description;
-        $this->time = $time;
+        $this->description = $description;;
         $this->location = $location;
         $this->special = $special;
         $this->md5key = $md5key;
+
+        $this->analyzeTime($time);
     }
     private function sportUncode($sport)
     {
@@ -42,6 +44,22 @@ class DaySports {
             default => ucwords($sport)
         };
     }
+    private function analyzeTime($str){
+        if (is_null($str)){
+            return;
+        }
+        $str = html_entity_decode($str);
+        $timeArray = explode('–', $str);
+        if (empty($timeArray)){
+            return;
+        }
+        if (count($timeArray) > 0){
+            $this->time_start = (new \DateTime($timeArray[0]))->format('Y-m-d H:i:s');
+        }
+        if (count($timeArray) === 2){
+            $this->time_end = (new \DateTime($timeArray[1]))->format('Y-m-d H:i:s');
+        }
+    }
     function getDate()
     {
         return $this->date;
@@ -56,7 +74,8 @@ class DaySports {
             'varsity' => $this->varsity,
             'opponent' => $this->opponent,
             'description' => $this->description,
-            'time' => $this->time,
+            'time_start' => $this->time_start,
+            'time_end' => $this->time_end,
             'location' => $this->location,
             'special' => $this->special,
             'md5_key' => $this->md5key

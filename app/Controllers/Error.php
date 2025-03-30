@@ -8,6 +8,6 @@ class Error extends Controller
 {
     public function execute($code)
     {
-        $this->view('error.tpl', ['ERROR' => $code]);
+        $this->view('pages/error.tpl', ['ERROR' => $code]);
     }
 }

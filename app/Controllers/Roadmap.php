@@ -6,23 +6,21 @@ use App\Services\CacheOperator;
 use App\Services\Controller;
 use App\Services\DBC;
 use App\Services\RedisOperator;
+use App\Services\SmartyVars;
+
 
 class Roadmap extends Controller
 {
     public function execute()
     {
-        $DBC = DBC::getInstance();
-        $redis = RedisOperator::getInstance();
-        $cacheOperator = new CacheOperator($DBC, $redis);
+        $smartyVars = new SmartyVars();
+        $smartyVars->loadBase();
 
-        $infoRoadmap = $cacheOperator->fetch('info_roadmap');
-        if ($infoRoadmap !== '') {
-            $infoRoadmap = json_decode($infoRoadmap, true);
-        }
+        $smartyVars->loadRoadMap();
 
         // data
-        $this->view('pages/roadmap.tpl', [
-            'info_roadmap' => $infoRoadmap,
-        ]);
+        $this->view('pages/roadmap.tpl', []
+            + $smartyVars->getVarsArray()
+        );
     }
 }

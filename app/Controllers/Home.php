@@ -6,28 +6,43 @@ use App\Services\CacheOperator;
 use App\Services\Controller;
 use App\Services\Data_Extraction\SQL\Calendar\Loader;
 use App\Services\DBC;
+use App\Services\Utils;
 use App\Services\RedisOperator;
 use App\Services\Session;
+use App\Services\SmartyVars;
 use Predis\Client;
+use Redis;
+use Smarty;
 
 class Home extends Controller
 {
-    public function execute()
+    public function execute($date = null)
     {
-        //
-        $DBC = DBC::getInstance();
-        $redis = RedisOperator::getInstance();
-        $cacheOperator = new CacheOperator($DBC, $redis);
+//        $DBC = DBC::getInstance();
+//        $redis = RedisOperator::getInstance();
+//        $test = new CacheOperator($DBC, $redis);
+//        echo '<pre>';
+//        var_dump($test->fetch('calendar_schedules', '2025-12', false));
+//        echo '</pre>';
+//        die();
+
+        $smartyVars = new SmartyVars($date);
+        $smartyVars->loadBase();
+
+        $smartyVars->loadDayInfo();
+        $smartyVars->loadEvents();
+        $smartyVars->loadSports();
+        $smartyVars->loadDayOff();
+
+        $smartyVars->loadAbsentAdditional();
+        $smartyVars->loadAbsentPeople();
+        $smartyVars->loadRoomChanges();
 
 
-        // data
-        $this->view('pages/home.tpl', [
-            'calendar_schedules' => $cacheOperator->fetch('calendar_schedules', $_SESSION['date']),
-            'calendar_sports' => $cacheOperator->fetch('calendar_sports', $_SESSION['date']),
-            'calendar_events' => $cacheOperator->fetch('calendar_events', $_SESSION['date']),
-            'calendar_day_off' => $cacheOperator->fetch('calendar_day_off', $_SESSION['date']),
-        ]);
+        $this->view('pages/home.tpl',
+            [
 
+            ] + $smartyVars->getVarsArray());
 
 //        echo 'Logged In: ' . Session::isLogedIn();
 //        echo '<br>';

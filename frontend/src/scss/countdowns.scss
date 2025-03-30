@@ -1,0 +1,52 @@
+@import "vars";
+#countdowns {
+    .grade-title {
+        border-radius: 5px 5px 0 0;
+    }
+    .cards-group {
+        display: flex;
+        gap: 15px;
+        justify-items: center;
+        .info-card {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            max-width: 350px;
+            .card-title {
+                display: flex;
+                font-weight: 800;
+                border-radius: 4px 4px 0 0;
+                justify-items: center;
+                border-bottom: 1px solid;
+                padding: 8px;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            .date-until {
+            }
+            .info-box {
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+                padding: 8px;
+                .card-description {
+                    text-wrap: wrap;
+                    margin: 5px 0;
+                    flex-grow: 1;
+                    .end-time {
+                        color: #b56200;
+                    }
+                    .saved-time {
+                        color: green;
+                    }
+                }
+                .link-nextDate {
+                    justify-content: flex-end;
+                    margin-top: 5px;
+                }
+            }
+
+        }
+    }
+}

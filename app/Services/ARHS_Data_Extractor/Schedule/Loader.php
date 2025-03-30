@@ -69,9 +69,9 @@ class Loader
         }
 
 
-        // Find NEW `schedule_default_descriptions` Data
+        // Find NEW `bell_schedules_descriptions` Data
         $sqlScheduleData = [];
-        $result = $DBC->fetchAll($DBC->query('SELECT `schedule`, `description` FROM `schedule_default_descriptions`'));
+        $result = $DBC->fetchAll($DBC->query('SELECT `schedule`, `description` FROM `bell_schedules_descriptions`'));
         foreach ($result as $row) {
             $sqlScheduleData[$row['schedule']] = $row['description'];
         }
@@ -79,23 +79,22 @@ class Loader
         var_dump($newDataScheduleDescription);
         if (!empty($newDataScheduleDescription)) {
             foreach ($newDataScheduleDescription as $scheduleId => $description) {
-                $DBC->query('DELETE FROM `schedule_default_descriptions` WHERE `schedule` = ?', [$scheduleId]);
-                $DBC->query('INSERT INTO `schedule_default_descriptions` (`schedule`, `description`) VALUES (?, ?)', [$scheduleId, $description]);
+                $DBC->query('DELETE FROM `bell_schedules_descriptions` WHERE `schedule` = ?', [$scheduleId]);
+                $DBC->query('INSERT INTO `bell_schedules_descriptions` (`schedule`, `description`) VALUES (?, ?)', [$scheduleId, $description]);
             }
         }
-        die();
+
 
 
 
 
 
         // SQL
-        $DBC->query('TRUNCATE `schedule_default_descriptions`');
-
         foreach ($scheduleData as $schedule_id => $schedule) {
-            $DBC->query('INSERT INTO `schedule_default_descriptions` (`schedule`, `description`) VALUES (?, ?)', [$schedule_id, $schedule['description']]);
+//            $DBC->query('INSERT INTO `schedule_default_descriptions` (`schedule`, `description`) VALUES (?, ?)', [$schedule_id, $schedule['description']]);
             foreach ($schedule['table'] as $period) {
-                $DBC->query('INSERT INTO `schedule_default` (`position`, `name`, `start_time`, `end_time`, `length`, `start_unix`, `end_unix`, `schedule_id`) VALUES (?, ?, ?, ?, ?, ?, ?, ?)', [
+                $DBC->query('INSERT INTO `bell_schedules` (`schedule_id`, `position`, `name`, `start_time`, `end_time`, `length`, `start_unix`, `end_unix`, `official`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)', [
+                    $schedule_id,
                     $period['position'],
                     $period['name'],
                     $period['start_time'],
@@ -103,7 +102,7 @@ class Loader
                     $period['length'],
                     $period['start_unix'],
                     $period['end_unix'],
-                    $schedule_id
+                    1
                 ]);
             }
         }

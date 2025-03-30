@@ -1,0 +1,90 @@
+@import "vars";
+
+#home {
+    .row {
+        margin: 0;
+    }
+    .column-home {
+        border-right: 1px solid;
+        height: calc(100vh - $top-bar-height - $date-bar) !important;
+        .day-info {
+            position: relative;
+        }
+    }
+    .column-home:last-child {
+        border-right: 0;
+    }
+
+
+
+
+    #bells-block {
+        position: relative;
+        .timestamp-block {
+            display: grid;
+            flex-direction: column;
+            gap: 20px;
+
+            .time-line {
+                display: flex;
+                align-items: center;
+                .time-block {
+                    display: flex;
+                    width: 37px;
+                    margin-right: 5px;
+                    justify-content: space-between;
+                    align-items: end;
+                    z-index: 1;
+                    .date-time {
+                        font-size: 12px;
+                        color: #9c9c9c;
+                    }
+                    user-select: none;
+                }
+                .line {
+                    flex-grow: 1;
+                    height: 1px;
+                    background-color: #9c9c9c;
+                }
+            }
+        }
+        .period-box {
+            display: flex;
+            flex-grow: 1;
+
+            margin-left: 55px;
+            margin-right: 7px;
+            width: calc(100% - 55px - 7px);
+
+            padding: 0 10px;
+
+            position: absolute;
+            background-color: #ececec;
+            align-items: center;
+            justify-content: space-between;
+
+            border-radius: 5px;
+            z-index: 1;
+        }
+        #current-time-runner {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            #time-runner-circle {
+                height: 5px;
+                width: 5px;
+                display: flex;
+                background-color: #ff0000;
+                border-radius: 5px;
+            }
+            #time-runner-line {
+                flex-grow: 1;
+                height: 1px;
+                background-color: #ff0000;
+            }
+            position: absolute;
+            left: -12;
+            top: 0;
+        }
+    }
+}

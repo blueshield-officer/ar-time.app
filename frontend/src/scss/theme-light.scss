@@ -1,72 +1,23 @@
 @use 'vars';
 
-$wrapper-background: #eee;
-$default-border-color: #9f9f9f;
-
-body {
-    background-color: #fff !important;
-    color: black;
-}
-
 .background-theme {
-    background-color: #eee;
+    background-color: white;
+}
+.background-theme-darker {
+    background-color: #efefef;
 }
 
+.select-theme {
 
+}
 
 .secondary-text {
     color: #9f9f9f;
 }
-.wrapper-background {
-    background-color: #eee;
-}
-.wrapper-background:hover {
-    background-color: $wrapper-background;
-}
-.wrapper-border {
-    border-color: $default-border-color!important;
-}
-.wrapper-no-border {
-    border-color: #eee!important;
-}
 
-.wrapper-logo {
-    transition-duration: 0.3s;
-    background-color: #d9d9d9;
+.border-color-theme {
+    border-color: vars.$default-border-color!important;
 }
-.wrapper-divider {
-    background-color: #BCBCBC;
-}
-.wrapper-page-icon {
-}
-#screen .loader {
-    color: #757575;
-}
-
-
-
-
-.simple-border {
-    border-color: #dddddd !important;
-}
-
-.primary-background {
-    background-color: #f3f3f3;
-}
-.secondary-background {
-    background-color: #e6e6e6;
-}
-
-/* topbar accounts */
-.account-button-signup {
-    border-color: darken(vars.$ar-color, 10%)!important;
-}
-.account-button-signup:hover {
-    filter: invert(0.2);
-}
-.account-button-login {
-
-}
-.account-button-login:hover {
-    background-color: #dfdfdf;
+.divider-color-theme {
+    background-color: vars.$default-border-color;
 }
