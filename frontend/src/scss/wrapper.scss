@@ -115,7 +115,6 @@ body {
 
                 .current {
                     padding-left: 0;
-                    background-color: #f6f6f6;
                     .currentBar {
                         border-radius: 5px 0 0 5px;
                         height: 42px;
@@ -181,8 +180,12 @@ body {
             margin-right: 0;
         }
         .account-box {
-            .email {
-                font-size: 12px;
+            user-select: none;
+            .account-details {
+                padding: 5px;
+                .email {
+                    font-size: 12px;
+                }
             }
         }
     }

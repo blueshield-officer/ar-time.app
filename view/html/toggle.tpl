@@ -1,0 +1,83 @@
+<div class="toggle-switch">
+    <input {if isset($onchange)}onchange={$onchange}{/if} type="checkbox" id="toggle-{$id}" class="toggle-input" {if isset($checked) === true && $checked === 'true'}checked='true'{/if}/>
+    <label id="label-{$id}" for="toggle-{$id}" class="toggle-label"></label>
+</div>
+<style>
+    /* Genel stil */
+    .toggle-switch {
+        position: relative;
+        display: inline-block;
+        width: 40px;
+        height: 24px;
+        margin: 10px;
+
+        user-select: none;
+    }
+
+    /* Giriş stil */
+    .toggle-switch .toggle-input {
+        display: none;
+    }
+
+    /* Anahtarın stilinin etrafındaki etiketin stil */
+    .toggle-switch .toggle-label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40px;
+        height: 24px;
+        background-color: red;
+        border-radius: 34px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Anahtarın yuvarlak kısmının stil */
+    .toggle-switch .toggle-label::before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        top: 2px;
+        left: 2px;
+        background-color: #fff;
+        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s;
+    }
+
+    /* Anahtarın etkin hale gelmesindeki stil değişiklikleri */
+    .toggle-switch .toggle-input:checked + .toggle-label {
+        background-color: #4caf50;
+    }
+
+    .toggle-switch .toggle-input:checked + .toggle-label::before {
+        transform: translateX(16px);
+    }
+
+    /* Light tema */
+    .toggle-switch.light .toggle-label {
+        background-color: #bebebe;
+    }
+
+    .toggle-switch.light .toggle-input:checked + .toggle-label {
+        background-color: #9b9b9b;
+    }
+
+    .toggle-switch.light .toggle-input:checked + .toggle-label::before {
+        transform: translateX(6px);
+    }
+
+    /* Dark tema */
+    .toggle-switch.dark .toggle-label {
+        background-color: #4b4b4b;
+    }
+
+    .toggle-switch.dark .toggle-input:checked + .toggle-label {
+        background-color: #717171;
+    }
+
+    .toggle-switch.dark .toggle-input:checked + .toggle-label::before {
+        transform: translateX(16px);
+    }
+</style>

@@ -9,7 +9,7 @@ use App\Services\DBC;
 use App\Services\Notificator;
 use App\Services\RedisOperator;
 use App\Services\SQL;
-use App\Services\WebhookDiscord;
+
 use Minishlink\WebPush\VAPID;
 use Redis;
 use thiagoalessio\TesseractOCR\TesseractOCR;
@@ -137,11 +137,11 @@ class Test extends Controller
         //$notificator->send_notification('🟢 A. Finnegan is out!', 'Yours teacher, Mr. Sigma present in school, but he will not teach you, how lucky!', '/assets/img/school_staff_pictures/Unknown.png', '/', '{"endpoint":"https://fcm.googleapis.com/fcm/send/f_k-5G3w0jc:APA91bF17naEFLcyZtexjNzUHaZv1rM5lhUIErQ6DKmlTYFHtx95pz9K7E_LQJcTgp2of-nrwXK8l7IYvaF1KeNL_7ONFjZjL8iewopXgeEm9gomH0S9gI2-uMGMwPOuOuTQeiQG3qhd","expirationTime":null,"keys":{"p256dh":"BI3v3t_iZdDUCvWpW-axNSfMIkQ6E6zvEWLiu-teDOMYVsD3FrBerKt995bdKOjqQBJCSiW09IXdGivddbvxbyg","auth":"pgYUWIhjFv8_MGi1hAp2lQ"}}');
 
         // ===============================
-        $DBC = DBC::getInstance();
-        $redis = RedisOperator::getInstance();
-        $cacheOperator = new CacheOperator($DBC, $redis);
-        echo '<pre>';
-        var_dump(json_decode($cacheOperator->updateAbsents('absent_additional', '2025-02-27'), true));
-        echo '</pre>';
+//        $DBC = DBC::getInstance();
+//        $redis = RedisOperator::getInstance();
+//        $cacheOperator = new CacheOperator($DBC, $redis);
+//        echo '<pre>';
+//        var_dump(json_decode($cacheOperator->updateAbsents('absent_additional', '2025-02-27'), true));
+//        echo '</pre>';
     }
 }

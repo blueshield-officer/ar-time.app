@@ -14,6 +14,7 @@ class Schedules extends Controller
     {
         $smartyVars = new SmartyVars();
         $smartyVars->loadBase();
+        $smartyVars->loadPages();
         $smartyVars->loadSchedules();
 
         // data

@@ -8,6 +8,7 @@ use App\Services\Accounts\google\Redirect;
 use App\Services\Controller;
 use App\Services\DBC;
 use App\Services\Session;
+use App\Services\SmartyVars;
 
 class Authentication extends Controller
 {
@@ -26,6 +27,7 @@ class Authentication extends Controller
 
     public function login()
     {
+        $smartyVars = new SmartyVars();
         if ($this->getMethod() === 'GET'){
             $authError = Session::getAuthError();
             $this->includer();
@@ -34,7 +36,7 @@ class Authentication extends Controller
                 'emailError' => $authError['email'],
                 'passwordError' => $authError['password'],
                 'password2Error' => $authError['password2'],
-            ]);
+            ] + $smartyVars->getVarsArray());
             Session::clearAuthError();
         }
         else {
@@ -45,6 +47,7 @@ class Authentication extends Controller
 
     public function signup()
     {
+        $smartyVars = new SmartyVars();
         if ($this->getMethod() === 'GET'){
             $authError = Session::getAuthError();
             $this->includer();
@@ -53,7 +56,7 @@ class Authentication extends Controller
                 'emailError' => $authError['email'],
                 'passwordError' => $authError['password'],
                 'password2Error' => $authError['password2'],
-            ]);
+            ] + $smartyVars->getVarsArray());
             Session::clearAuthError();
         }
         else {

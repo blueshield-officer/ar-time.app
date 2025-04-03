@@ -500,7 +500,7 @@
 					</ul>
 				</li>
 				<li class="event-day empty no-border " id="day-28">
-				<li class="cf event-day  current-day " id="day-29">
+				<li class="cf event-day  " id="day-29">
 					<div class="day-date-box">
 						<span class="month">Mar</span>
 						<span class="date">29</span>
@@ -549,7 +549,7 @@
 	</li>
 					</ul>
 				</li>
-				<li class="event-day empty no-border " id="day-30">
+				<li class="event-day empty no-border current-day" id="day-30">
 				<li class="cf event-day  " id="day-31">
 					<div class="day-date-box">
 						<span class="month">Mar</span>

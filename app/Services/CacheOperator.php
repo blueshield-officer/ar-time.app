@@ -2,6 +2,8 @@
 
 namespace App\Services;
 
+use DateTime;
+
 class CacheOperator
 {
     private $redis;
@@ -40,7 +42,7 @@ class CacheOperator
         $this->DBC = $DBC;
         $this->redis = $redis;
     }
-    public function fetch($tableName, $dataIndex = null, $json = true)
+    public function fetch($tableName, $dataIndex = null, $json = true, $cacheable = true)
     {
         if (!is_null($dataIndex) && !str_starts_with($dataIndex, 'next')){
             $dateObject = explode('-', $dataIndex);
@@ -51,15 +53,17 @@ class CacheOperator
                 }
             }
         }
-        return $this->fetchSimple($tableName, $dataIndex, $json);
+        return $this->fetchSimple($tableName, $dataIndex, $json, $cacheable);
     }
-    private function fetchSimple($tableName, $dataIndex = null, $json = true)
+    private function fetchSimple($tableName, $dataIndex = null, $json = true, $cacheable = true)
     {
-        $cacheData = $this->redis->get('cacheSQL:' . $tableName . ($dataIndex ? (':' . $dataIndex) : ''));
-        if ($cacheData === '') {
-            return null;
+        if ($cacheable === true){
+            $cacheData = $this->redis->get('cacheSQL:' . $tableName . ($dataIndex ? (':' . $dataIndex) : ''));
+            if ($cacheData === '') {
+                return null;
+            }
         }
-        if (is_null($cacheData)) {
+        if ($cacheable === false || is_null($cacheData) ) {
             // get data form SQL
             $dataSQL = $this->fetchDataSQL($tableName, $dataIndex);
             // formatting it for Redis
@@ -87,16 +91,18 @@ class CacheOperator
             $cacheData = $dataSQL;
 
             // ================= record redis data =====================
-            if (is_null($cacheData)) {
-                $dataToRecord = '';
-            }
-            else {
-                $dataToRecord = $cacheData;
-                if (Utils::isJson($dataToRecord) === false){
-                    $dataToRecord = json_encode($dataToRecord);
+            if ($cacheable === true) {
+                if (is_null($cacheData)) {
+                    $dataToRecord = '';
                 }
+                else {
+                    $dataToRecord = $cacheData;
+                    if (Utils::isJson($dataToRecord) === false){
+                        $dataToRecord = json_encode($dataToRecord);
+                    }
+                }
+                $this->updateCache($tableName, $dataIndex, $dataToRecord);
             }
-            $this->updateCache($tableName, $dataIndex, $dataToRecord);
             // ========================================================
         }
         // TODO Когда будет проверка редис если '' то ретурнит null
@@ -125,6 +131,12 @@ class CacheOperator
         if ($tableName === 'early_dismissal_schedules') {
             return $this->findEarlyDismissalSchedules();
         }
+        if ($tableName === 'calendar_holidays'){
+            return $this->analyzeHolidays();
+        }
+        if ($tableName === 'calendar_academics'){
+            return $this->analyzeAcademics();
+        }
         // getting data from SQL
         $tableParams = $this->DBC->getTableParams($tableName, 'public');
         if ($dataIndex === null) {
@@ -135,7 +147,7 @@ class CacheOperator
         }
         else if (str_starts_with($dataIndex, 'next') ) {
             $query = [
-                'filters' => ' WHERE `date` > ?',
+                'filters' => ' WHERE `date` >= ? ',
                 'arguments' => [date('Y-m-d')]
             ];
             if (count(explode(':', $dataIndex)) > 1){
@@ -159,7 +171,7 @@ class CacheOperator
                     $query['arguments'][] = $value;
                 }
             }
-            $query['filters'] .= ' LIMIT 1';
+            $query['filters'] .= ' ORDER BY `date` ASC; LIMIT 1';
         }
         else {
             $query = [
@@ -313,6 +325,64 @@ class CacheOperator
             return null;
         }
         return $earlyDismissalSchedules;
+    }
+    private function analyzeHolidays()
+    {
+        $result = $this->DBC->fetchAll(
+            $this->DBC->query(
+                'SELECT ' . $this->DBC->getTableParams('calendar_holidays')['columns'] . ' FROM `calendar_holidays`'
+            )
+        );
+        $holidaysArray = [];
+        foreach ($result as $row){
+          if (count(explode('-', $row['date'])) === 3){
+
+          }
+          else if (count(explode('-', $row['date'])) === 2){
+              $date = new DateTime(date('Y') . '-' . $row['date']);
+              if ($date < new DateTime('now')) {
+                  $date->modify('+1 year');
+              }
+              $row['date'] = $date->format('Y-m-d');
+          }
+          else if($row['date'] === 'easter_date()'){
+              $row['date'] = date('Y-m-d', easter_date());
+          }
+          else {
+              $date = new DateTime($row['date'] . ' ' . date('Y'));
+              if ($date < new DateTime('now')) {
+                  $date = new DateTime($row['date'] . ' ' . ((int)date('Y') + 1));
+              }
+              $row['date'] = $date->format('Y-m-d');
+          }
+          $holidaysArray[Utils::assimilate($row['name'])] = [
+              'date' => $row['date'],
+              'name' => $row['name'],
+          ];
+        };
+        usort($holidaysArray, function($a, $b) {
+            return strtotime($a['date']) - strtotime($b['date']);
+        });
+        return $holidaysArray;
+    }
+    private function analyzeAcademics(){
+        $result = $this->DBC->fetchAll(
+            $this->DBC->query(
+                'SELECT ' . $this->DBC->getTableParams('calendar_academics')['columns'] . ' FROM `calendar_academics`'
+            )
+        );
+        $academicsArray = [];
+        foreach ($result as $row){
+            if (!isset($academicsArray[Utils::assimilate($row['name'])]['name'])){
+                $academicsArray[Utils::assimilate($row['name'])]['name'] = $row['name'];
+            }
+            $academicsArray[Utils::assimilate($row['name'])][$row['status']] = $row['date'];
+        }
+//        echo '<pre>';
+//        var_dump($academicsArray);
+//        echo '</pre>';
+//        die();
+        return $academicsArray;
     }
 
 

@@ -64,12 +64,12 @@ class Authentification
                     Session::setAuthError('password', $check_login);
                     header('Location: /' . $this->method);                }
                 Actions::login($this->DBC, $this->email);
-                echo 'You are logged in!';
-                die();
+                $this->redirect();
             }
             else {
                 // here must go register actions
-                Actions::register($this->DBC, $this->email, SecurityOperator::password_hash($this->password));
+                $accountDetails = Actions::analyzeEmail($this->email);
+                Actions::register($this->DBC, $this->email, SecurityOperator::password_hash($this->password), $accountDetails['firstName'], $accountDetails['lastName'], $accountDetails['gradYear'], $accountDetails['mortal']);
                 echo 'you are registered, now please login!';
                 die();
             }

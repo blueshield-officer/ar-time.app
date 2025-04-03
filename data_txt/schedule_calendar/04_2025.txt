@@ -266,8 +266,8 @@
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/4/4/22094410/?id=0"
-				aria-label="4/4/2025 - *B Schedule- Day 6">
-				*B Schedule- Day 6
+				aria-label="4/4/2025 - *Special E Schedule- Day 6">
+				*Special E Schedule- Day 6
 			</a>
 		</span>
 

@@ -22,22 +22,29 @@
 <!-- header version -->
 {assign var="hVersion" value="1.05"}
 
+
 <link rel="stylesheet" href="/frontend/dist/css/bootstrap.min.css?v={$hVersion}">
 <link rel="stylesheet" href="/frontend/dist/css/normalize.min.css?v={$hVersion}">
 <link rel="stylesheet" href="/frontend/dist/css/monster.min.css?v={$hVersion}">
 <link rel="stylesheet" href="/frontend/dist/css/overlayscrollbars.min.css?v={$hVersion}">
 
-<!--
-<link rel="stylesheet" href="frontend/dist/css/theme-dark.min.css?v={$hVersion}">
--->
-<link id="theme" rel="stylesheet"
-      type="text/css" href="/frontend/dist/css/theme-light.min.css?v={$hVersion}"/>
+
+<link id="theme" rel="stylesheet" type="text/css" href="{if $theme !== 'system'}/frontend/dist/css/theme-{$theme}.min.css?v={$hVersion}{/if}"/>
+<script>
+
+    if ('{$theme}' === 'system') {
+        let theme
+        const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (prefersDarkMode) {
+            theme = "dark";
+        } else {
+            theme = "light";
+        }
+        document.getElementById('theme').href = '/frontend/dist/css/theme-' + theme + '.min.css?v={$hVersion}';
+    }
+</script>
+
 
 <script src="/frontend/dist/js/bootstrap.bundle.min.js?v={$hVersion}"></script>
 <script src="/frontend/dist/js/monster-min.js?v={$hVersion}"></script>
 <script src="/frontend/dist/js/overlayscrollbars.browser.es5.min.js?v={$hVersion}"></script>
-
-<link rel="stylesheet" href="/assets/css/fonts.css">
-
-
-{include 'elements/script.tpl'}

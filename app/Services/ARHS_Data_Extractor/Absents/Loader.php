@@ -300,7 +300,7 @@ class Loader
             $date = $dayData['date'];
         }
         // DEBUG
-        $date = \DateTime::createFromFormat('Y-m-d', '2025-03-03');
+        $date = \DateTime::createFromFormat('Y-m-d', $date);
 
 
         // Actuall work

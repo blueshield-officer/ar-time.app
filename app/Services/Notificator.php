@@ -14,8 +14,8 @@ class Notificator
         $auth = [
             'VAPID' => [
                 'subject' => 'mailto:admin@ar-time.org', // Use a valid email address
-                'publicKey' => 'BFl0KXWYVr8dPCxMz2hNhP-qObaXFlmE-dTk08xgafS3vwQZVJbxzpVlKEw2bIMXM27vQu0adHgx517m3XsUliw',
-                'privateKey' => 'GMDrk1S9pgNausPrAW_416-G27IFW_kpPgFHqiJqErk',
+                'publicKey' => 'BPmY3aRTv3WMzUk87saQ_ecjhzlhKq8FtdX9j-_dJuwCnePGRgXSBRlhgEnmgNTUvgKF6Xoo5zqcd5ZSPXD3Bt8',
+                'privateKey' => 'SqwO8nCnTi3qKhfNiO7L_YnFs6JboXyxVOQYw2TMw3E',
             ],
         ];
         $this->webPush = new WebPush($auth);

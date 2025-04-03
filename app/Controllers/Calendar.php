@@ -12,6 +12,7 @@ class Calendar extends Controller
     {
         $smartyVars = new SmartyVars($date, 'MY');
         $smartyVars->loadBase();
+        $smartyVars->loadPages();
 
         $this->view('pages/calendar.tpl',
             [

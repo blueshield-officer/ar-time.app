@@ -7,12 +7,14 @@ const srcFolder = `./src`;
 
 export const path = {
     build: {
+        root: '/',
         js: `${buildFolder}/js/`,
         css: `${buildFolder}/css/`,
         files: `${buildFolder}/files/`,
     },
     src: {
         js: `${srcFolder}/js/**/*.js`,
+        js_sw: `${srcFolder}/js/modules/sw.js`,
         scss: `${srcFolder}/scss/**/monster.scss`,
         d_scss: `${srcFolder}/scss/**/theme-dark.scss`,
         l_scss: `${srcFolder}/scss/**/theme-light.scss`,
@@ -25,6 +27,7 @@ export const path = {
     },
     watch: {
         js: `${srcFolder}/js/**/*.js`,
+        js_modules: `${srcFolder}/modules/js/**/*.js`,
         scss: `${srcFolder}/scss/**/*.scss`,
         files: `${srcFolder}/files/**/*.*`,
         d_scss: `${srcFolder}/scss/**/theme-dark.scss`,

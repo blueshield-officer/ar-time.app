@@ -6,10 +6,10 @@
         else {
             try {
                 const result = JSON.parse(str);
+                return result;
             } catch (e) {
                 return str;
             }
-            return result;
         }
     }
     async function getData(url) {

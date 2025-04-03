@@ -29,9 +29,20 @@ class SmartyVars
         else {
             $this->localDate = (\DateTime::createFromFormat('m-' . (($type === 'MDY') ? 'd-' : '') . 'Y', $date))->format($dateArray[$type]);
         }
+
         $this->varsArray = [];
+
+        $this->loadDependencies();
     }
 
+    public function loadDependencies()
+    {
+        $this->varsArray['userAgent'] = $_SERVER['HTTP_USER_AGENT'];
+        $this->varsArray['theme'] = $_COOKIE['theme'];
+        $this->varsArray['loggedIn'] = Session::isLogedIn();
+        $this->varsArray['userName'] = $_SESSION['userName'];
+        $this->varsArray['userEmail'] = $_SESSION['userEmail'];
+    }
     public function loadBase(){
         $tableObject = null;
         $currentDayInfo = $this->cacheOperator->fetch('calendar_schedules', date('Y-m-d'), false);
@@ -49,7 +60,23 @@ class SmartyVars
         $this->varsArray['localDate'] = $this->localDate;
         $this->varsArray['currentTable'] = $tableObject;
     }
-
+    public function loadPages()
+    {
+        $pages = [
+            'Home' =>       ['/', 'house-fill.svg', 20, false],
+            'Calendar' =>   ['/calendar', 'calendar-fill.svg', 18, false],
+            'Absences' =>   ['/absences', 'person-fill.svg', 20, true],
+            'Schedules' =>  ['/schedules', 'table-solid.svg', 19, false],
+            'Countdowns' => ['/countdowns', 'hourglass-start-solid.svg', 15, true],
+            'Roadmap' =>    ['/roadmap', 'tools.svg', 20, true],
+            'Notifications' => ['/notifications', 'bell-fill.svg', 19, false],
+            'Settings' =>   ['/settings', 'gear-fill.svg', 20, true]
+        ];
+        if (!Session::isLogedIn()) {
+            unset($pages['Notifications']);
+        }
+        $this->varsArray['pages'] = $pages;
+    }
 
     public function loadDayInfo()
     {
@@ -128,6 +155,26 @@ class SmartyVars
     public function loadRoadMap()
     {
         $this->varsArray['roadmap'] = $this->cacheOperator->fetch('info_roadmap', null, false);
+    }
+    public function loadHolidays()
+    {
+        $this->varsArray['holidays'] = $this->cacheOperator->fetch('calendar_holidays', null, false);
+    }
+    public function loadAcademics()
+    {
+        $this->varsArray['academics'] = $this->cacheOperator->fetch('calendar_academics', null, false);
+    }
+    public function loadSettings()
+    {
+        if (Session::isLogedIn()){
+            $sessions = array_map(fn($row) => [
+                'userAgent' => $row['user_agent'],
+                'date' => $row['login_datetime']
+            ], $this->cacheOperator->fetch('users_sessions', $_SESSION['userId'], false));
+        }
+        $this->varsArray['settings'] = [
+            'sessions' => $sessions ?? null
+        ];
     }
     public function getVarsArray(){
         return $this->varsArray;

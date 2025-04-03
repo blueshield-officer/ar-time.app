@@ -27,7 +27,7 @@ class Session
                 if (isset($userInfo['email'])){
                     $email = $userInfo['email'];
                 }
-                self::setLogin(true, $name, $email);
+                self::setLogin(true, $name, $email, $user_id, $token);
             }
             else {
                 self::setLogin(false);
@@ -45,26 +45,32 @@ class Session
         if (is_null($_SESSION['date'])){
             $_SESSION['date'] = (new \DateTime('now'))->format('Y-m-d');
         }
+//        var_dump($user_id);
+//        echo '<br>';
+//        var_dump($token);
+//        echo '<br>';
+//        var_dump($_SESSION['loggedIn']);
+//        die();
     }
     private function destroyCookies(){
         setcookie('user_id', '', time(), '/');
         setcookie('token', '', time(), '/');
     }
-    static public function setLogin($bool, $name = null, $email = null)
+    static public function setLogin($bool, $name = null, $email = null, $user_id = null, $token = null)
     {
-        $_SESSION['logged_in'] = $bool;
-        if ($bool === true){
-            $_SESSION['name'] = $name;
-            $_SESSION['email'] = $email;
-        }
+        $_SESSION['loggedIn'] = $bool;
+        $_SESSION['userName'] = $name;
+        $_SESSION['userEmail'] = $email;
+        $_SESSION['userId'] = $user_id;
+        $_SESSION['token'] = $token;
     }
     static public function setAdmin($bool)
     {
         $_SESSION['admin'] = $bool;
     }
     static public function isLogedIn(){
-        if (isset($_SESSION['logged_in'])){
-            if ($_SESSION['logged_in'] == true){
+        if (isset($_SESSION['loggedIn'])){
+            if ($_SESSION['loggedIn'] == true){
                 return true;
             }
             return false;
@@ -105,6 +111,12 @@ class Session
         foreach (Session::$authErrorTypes as $type){
             $_SESSION['auth_error'][$type] = null;
         }
+    }
+    static public function getAccountSessionData(){
+        return [
+            'token' => $_SESSION['token'],
+            'userId' => $_SESSION['userId'],
+        ];
     }
 
     static public function setLocaleDate($date)

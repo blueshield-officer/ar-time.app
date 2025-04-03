@@ -12,6 +12,7 @@ class Absences extends Controller
     {
         $smartyVars = new SmartyVars();
         $smartyVars->loadBase($date);
+        $smartyVars->loadPages();
 
         $this->view('pages/absences.tpl',
             [

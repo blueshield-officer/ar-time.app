@@ -393,6 +393,7 @@ class Loader
                     self::dayOffRecord($dayOffArray, $dayOff, $dataRecorded);
                 }
                 // Check is it QUARTER
+                // TODO переместить с спесиалов ваших в норм табличку "calendar_academic"
                 $quarter = Detectors::isQuarter($str);
                 if ($quarter !== false && !$dataRecorded) {
                     $daySpecial = new DaySpecial($date, $strOriginal, $description, 'yellow', 'quarter');

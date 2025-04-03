@@ -8,6 +8,7 @@ use App\Controllers\Calendar;
 use App\Controllers\Countdowns;
 use App\Controllers\Home;
 use App\Controllers\Legacy;
+use App\Controllers\Notifications;
 use App\Controllers\Roadmap;
 use App\Controllers\Schedules;
 use App\Controllers\server\AbsencesUpdate;
@@ -16,6 +17,7 @@ use App\Controllers\server\RedisUpdate;
 use App\Controllers\server\ScheduleDefault;
 use App\Controllers\server\StaffUpdate;
 use App\Controllers\server\Test;
+use App\Controllers\services\AccountFetch;
 use App\Controllers\services\Auth;
 use App\Controllers\services\ScheduleUploader;
 use App\Controllers\Settings;
@@ -24,51 +26,52 @@ use App\Services\Router;
 
 
 // public
-Router::page('/', [Home::class]);
-Router::page('/{dateMDY}', [Home::class]);
-Router::page('/home', [Home::class]);
-Router::page('/home/{dateMDY}', [Home::class]);
+Router::page('/', [Home::class], 'none');
+Router::page('/{dateMDY}', [Home::class], 'none');
+Router::page('/home', [Home::class], 'none');
+Router::page('/home/{dateMDY}', [Home::class], 'none');
 
-Router::page('/absences', [Absences::class]);
-Router::page('/absences/{dateMDY}', [Absences::class]);
+Router::page('/absences', [Absences::class], 'none');
+Router::page('/absences/{dateMDY}', [Absences::class], 'none');
 
-Router::page('/calendar', [Calendar::class]);
-Router::page('/calendar/{dateMY}', [Calendar::class]);
+Router::page('/calendar', [Calendar::class], 'none');
+Router::page('/calendar/{dateMY}', [Calendar::class], 'none');
 
-Router::page('/schedules', [Schedules::class]);
+Router::page('/schedules', [Schedules::class], 'none');
 
-Router::page('/countdowns', [Countdowns::class]);
+Router::page('/countdowns', [Countdowns::class], 'none');
 
-Router::page('/roadmap', [Roadmap::class]);
+Router::page('/roadmap', [Roadmap::class], 'none');
 
-Router::page('/settings', [Settings::class]);
+Router::page('/notifications', [Notifications::class], 'account');
+
+Router::page('/settings', [Settings::class], 'none');
 
 
 // auth
-Router::page('/login', [Authentication::class, 'login']);
-Router::page('/signup', [Authentication::class, 'signup']);
-Router::page('/login/google', [Authentication::class, 'login_google']);
+Router::page('/login', [Authentication::class, 'login'], 'none');
+Router::page('/signup', [Authentication::class, 'signup'], 'none');
+Router::page('/google-auth', [Authentication::class, 'login_google'], 'none');
 
 
 // admin
-Router::page('/admin', [Admin::class]);
-Router::page('/admin/schedule', [CustomScheduleLoader::class]);
+Router::page('/admin', [Admin::class], 'admin');
+Router::page('/admin/schedule', [CustomScheduleLoader::class], 'admin');
 
 
 // server
-Router::page('/server/redis_update', [RedisUpdate::class]);
-Router::page('/server/calendar_update', [CalendarUpdate::class]);
-Router::page('/server/absences_update', [AbsencesUpdate::class]);
-Router::page('/server/staff_update', [StaffUpdate::class]);
-Router::page('/server/schedule_default_update', [ScheduleDefault::class]);
+Router::page('/server/redis_update', [RedisUpdate::class], 'server');
+Router::page('/server/calendar_update', [CalendarUpdate::class], 'server');
+Router::page('/server/absences_update', [AbsencesUpdate::class], 'server');
+Router::page('/server/staff_update', [StaffUpdate::class], 'server');
+Router::page('/server/schedule_default_update', [ScheduleDefault::class], 'server');
 
 
 // services
-Router::page('/services/upload_schedule', [ScheduleUploader::class]);
+Router::page('/services/upload_schedule', [ScheduleUploader::class], 'server');
 
+Router::page('/services/account-fetch', [AccountFetch::class], 'account');
 
-// maints
-Router::page('/test', [Test::class]);
 
 
 Router::enable();

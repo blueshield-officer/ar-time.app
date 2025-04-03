@@ -7,21 +7,33 @@ use App\Controllers\Error;
 class Router
 {
     private static $list = [];
-    public static function page($uri, $page_class)
+    public static function page($uri, $page_class, $security_level = 'server')
     {
         self::$list[] = [
             'uri' => $uri,
-            'page_class' => $page_class
+            'page_class' => $page_class,
+            'security_level' => $security_level
         ];
     }
 
     public static function enable(){
         new Session();
 
+        // /////////////////////////// cookies ////////////////////////////////
         if (!isset($_COOKIE['sideBar'])){
             $_COOKIE['sideBar'] = 1;
         }
         $_COOKIE['sideBar'] = (int)$_COOKIE['sideBar'];
+
+        if (!isset($_COOKIE['theme'])){
+            $_COOKIE['theme'] = 'light';
+        }
+
+        if (!isset($_COOKIE['tabCounter'])){
+            $_COOKIE['tabCounter'] = false;
+        }
+        ////////////////////////////////////////////////////////////////
+
 
         $query = preg_replace('/\/+/', '/', $_SERVER['REQUEST_URI']);
         if ($query !== '/'){
@@ -102,6 +114,12 @@ class Router
                 self::error_page(404);
                 die();
             }
+            // security levels check
+            if ($route['security_level'] === 'account' && !Session::isLogedIn()){
+                self::error_page(403);
+                die();
+            }
+            //
             $controller = new $controller_name();
             if (isset($action_name)){
                 if (!method_exists($controller_name, $action_name)){

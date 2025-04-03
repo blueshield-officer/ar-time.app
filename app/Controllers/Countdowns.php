@@ -20,9 +20,13 @@ class Countdowns extends Controller
     {
         $smartyVars = new SmartyVars();
         $smartyVars->loadBase();
+        $smartyVars->loadPages();
 
         $smartyVars->loadNextDayOff();
         $smartyVars->loadNextSchedule();
+        $smartyVars->loadHolidays();
+        $smartyVars->loadAcademics();
+
 
         $this->view('pages/countdowns.tpl',
             [

@@ -7,11 +7,13 @@
         display: flex;
         gap: 15px;
         justify-items: center;
+        flex-wrap: wrap;
         .info-card {
             display: flex;
             flex-direction: column;
             flex-grow: 1;
             max-width: 350px;
+            min-width: 200px;
             .card-title {
                 display: flex;
                 font-weight: 800;

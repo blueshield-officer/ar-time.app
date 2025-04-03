@@ -4,6 +4,9 @@ namespace App\Services;
 
 class Utils
 {
+    static function assimilate($str){
+        return trim(strtolower(preg_replace('/\s+/', '', $str)));
+    }
     static function symbols($str){
         return preg_replace('/[^\p{L}\p{N}\s]/u', '', $str);
     }

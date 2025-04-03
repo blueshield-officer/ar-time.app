@@ -15,6 +15,7 @@ class Roadmap extends Controller
     {
         $smartyVars = new SmartyVars();
         $smartyVars->loadBase();
+        $smartyVars->loadPages();
 
         $smartyVars->loadRoadMap();
 

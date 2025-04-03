@@ -10,6 +10,7 @@ use App\Services\Utils;
 use App\Services\RedisOperator;
 use App\Services\Session;
 use App\Services\SmartyVars;
+use Minishlink\WebPush\VAPID;
 use Predis\Client;
 use Redis;
 use Smarty;
@@ -18,6 +19,12 @@ class Home extends Controller
 {
     public function execute($date = null)
     {
+//        echo 'Logged In: ' . var_dump(Session::isLogedIn());
+//        echo '<br>';
+//        echo 'Admin: ' . var_dump(Session::isAdmin());
+//        die();
+
+
 //        $DBC = DBC::getInstance();
 //        $redis = RedisOperator::getInstance();
 //        $test = new CacheOperator($DBC, $redis);
@@ -26,8 +33,14 @@ class Home extends Controller
 //        echo '</pre>';
 //        die();
 
+//        echo '<pre>';
+//        var_dump(VAPID::createVapidKeys());
+//        echo '</pre>';
+//        die();
+
         $smartyVars = new SmartyVars($date);
         $smartyVars->loadBase();
+        $smartyVars->loadPages();
 
         $smartyVars->loadDayInfo();
         $smartyVars->loadEvents();
@@ -44,8 +57,6 @@ class Home extends Controller
 
             ] + $smartyVars->getVarsArray());
 
-//        echo 'Logged In: ' . Session::isLogedIn();
-//        echo '<br>';
-//        echo 'Admin: ' . Session::isAdmin();
+
     }
 }

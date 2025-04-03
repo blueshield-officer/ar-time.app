@@ -15,7 +15,7 @@ class Redirect
         // init configuration
         $clientID = '128345250549-e5fm7bp6mj7vbo18fnnm0vda7pov0nc4.apps.googleusercontent.com';
         $clientSecret = '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';
-        $redirectUri = 'https://ar-time.com/login/google';
+        $redirectUri = 'https://ar-time.org/login/google';
 
         // create Client Request to access Google API
         $client = new Google_Client();

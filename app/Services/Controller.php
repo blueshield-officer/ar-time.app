@@ -15,6 +15,15 @@ class Controller
         $this->view->setCacheDir($_SERVER['DOCUMENT_ROOT'] . '/view/cache/cache/');
 
         // plugins
+        $this->view->registerPlugin('function', 'unsetArrayObject', function ($data){
+            if (!is_array($data['array']) || !isset($data['index'])) {
+                return $data['array']; // Return unchanged if invalid input
+            }
+
+            $array = $data['array'];
+            unset($array[$data['index']]); // Remove key
+            return $array; // Return modified array
+        });
         $this->view->registerPlugin("function", "uniqueId", function () {
             return md5(uniqid(rand(), true));
         });

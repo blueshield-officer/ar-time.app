@@ -7,6 +7,7 @@ use App\Services\Controller;
 use App\Services\DBC;
 use App\Services\RedisOperator;
 use App\Services\SmartyVars;
+use WhichBrowser\Parser;
 
 class Settings extends Controller
 {
@@ -14,7 +15,10 @@ class Settings extends Controller
     {
         $smartyVars = new SmartyVars();
         $smartyVars->loadBase();
+        $smartyVars->loadPages();
         $smartyVars->loadSchedules();
+
+        $smartyVars->loadSettings();
 
         // data
         $this->view('pages/settings.tpl', []

@@ -1,5 +1,7 @@
 @import "vars";
 
+
+
 /* PAGE STUFF */
 .page-description-h1 {
     font-size: 16px;
@@ -15,10 +17,22 @@
 .base-transition {
     transition: $base-transition-time;
 }
+.center-object {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 /* SCREEN */
 .img-stretch {
     height: 100%;
+}
+.margin-16 {
+    margin: 16px 0;
+}
+.margin-32 {
+    margin: 32px 0;
 }
 .padding-32 {
     padding: 32px 0;
@@ -26,7 +40,6 @@
 .padding-16 {
     padding: 16px 0;
 }
-
 
 
 
@@ -118,6 +131,12 @@
 .no-copy {
     user-select: none;
 }
+.time-selector {
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: none;
+}
 /* SHADOWS */
 .light-shadow {
     box-shadow: 0 3px 2px -2px gray;
@@ -147,4 +166,29 @@
 .senior {
     background-color: $senior;
     color: white;
+}
+
+
+
+/* OBJECTS */
+.section-card{
+    display: flex;
+    align-content: end;
+    border: 1px solid;
+    border-radius: 5px;
+
+    .part {
+        padding: 32px;
+
+    }
+    .first-part {
+        border-right: 1px solid;
+        width: 80%;
+    }
+    .second-part {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20%;
+    }
 }

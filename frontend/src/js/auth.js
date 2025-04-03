@@ -8,7 +8,7 @@ function checkInput(input){
 
 
 function checkEmail(email) {
-    const validDomain = "@ryanhs.org";
+    const validDomains = ['@ryanhs.org', '@arhs.org'];
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
     if (email === '') {
@@ -17,8 +17,8 @@ function checkEmail(email) {
     if (!emailRegex.test(email)) {
         return 'Invalid email format.';
     }
-    if (!email.endsWith(validDomain)) {
-        return 'It must be @ryanhs.org email.';
+    if ((validDomains).includes(email)) {
+        return 'It must be @ryanhs.org or @arhs.org email.';
     }
     return true;
 }

@@ -9,6 +9,27 @@ function datesToDayDifference(date1, date2) {
     const millisecondsDifference = date1.getTime() - date2.getTime();
     return Math.ceil(millisecondsDifference / (1000 * 60 * 60 * 24))
 }
+function daysToStatus(daysStart, daysEnd, dateStart, dateEnd) {
+    if (daysStart < 0 && daysEnd < 0) {
+        return 'Ended'
+    }
+    if (daysEnd === 0) {
+        return 'Ends today'
+    }
+    if (daysStart === 1) {
+        return 'Start tomorrow';
+    }
+    if (daysEnd === 1) {
+        return 'Ends tomorrow'
+    }
+    if (daysEnd < 0 && daysStart > 0) {
+        return 'Starts in ' + daysStart + ' days';
+    }
+    if (daysStart < 0 && daysEnd > 0) {
+        return 'End in ' + daysEnd + ' days';
+    }
+    return 'Starts in ' + daysStart + ' days';
+}
 function daysDifferenceToString(days){
     if (days === 0) {
         return 'Today';
@@ -50,4 +71,14 @@ function popOutTextInVisible(id) {
 
 function highLightNumbers (str){
     return str.replace(/\d+/g, '<span class="make-text-more-visible">$&</span>');
+}
+
+
+function getUserTheme (){
+    const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    if (prefersDarkMode) {
+        return "dark";
+    } else {
+        return "light";
+    }
 }

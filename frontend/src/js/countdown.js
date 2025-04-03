@@ -81,10 +81,13 @@ class countdownAnalyzer {
         const intervalFunction = () => {
             if (window.getComputedStyle(document.getElementById('countdown-mask')).visibility === 'visible') {
                 this.updateMask();
-            } else {
+            }
+            else {
                 this.updateTopBarCountdown();
             }
-            this.updateTitle();
+            if (getCookieValue('tabCounter') === 'true'){
+                this.updateTitle();
+            }
         };
         intervalFunction();
         this.countdownUpdate = setInterval(intervalFunction, this.updateInterval);
@@ -156,31 +159,33 @@ class countdownAnalyzer {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    if (currentScheduleTable !== null) {
-        // TODO special schedule or etc
-        const countdownBorderObject = document.getElementById('countdown-border')
-        const countdownDivObject = document.getElementById('countdown-div')
-        if (currentScheduleTable !== 'special') {
-            countdown = new countdownAnalyzer(currentScheduleTable)
-            if (countdown.getCount() === true){
-                countdown.dayEnd()
+    if (typeof currentScheduleTable !== 'undefined') {
+        if (currentScheduleTable !== null){
+            // TODO special schedule or etc
+            const countdownBorderObject = document.getElementById('countdown-border')
+            const countdownDivObject = document.getElementById('countdown-div')
+            if (currentScheduleTable !== 'special') {
+                countdown = new countdownAnalyzer(currentScheduleTable)
+                if (countdown.getCount() === true){
+                    countdown.dayEnd()
+                }
+                else {
+                    countdownDivObject.style.border = '3px solid'
+                    countdownBorderObject.style.border = '1px solid'
+
+                    countdown.runSecondsCountdown()
+                    countdown.runCountdownUpdate()
+                }
             }
             else {
-                countdownDivObject.style.border = '3px solid'
+                countdownBorderObject.removeAttribute("onclick");
                 countdownBorderObject.style.border = '1px solid'
+                countdownBorderObject.style.cursor = 'not-allowed'
+                countdownDivObject.style.cursor = 'not-allowed'
 
-                countdown.runSecondsCountdown()
-                countdown.runCountdownUpdate()
+                const countdownTime = document.getElementById('countdown-time')
+                countdownTime.innerText = 'Special'
             }
-        }
-        else {
-            countdownBorderObject.removeAttribute("onclick");
-            countdownBorderObject.style.border = '1px solid'
-            countdownBorderObject.style.cursor = 'not-allowed'
-            countdownDivObject.style.cursor = 'not-allowed'
-
-            const countdownTime = document.getElementById('countdown-time')
-            countdownTime.innerText = 'Special'
         }
     }
 })
