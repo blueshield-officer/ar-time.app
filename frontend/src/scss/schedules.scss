@@ -1,13 +1,57 @@
-#schedules {
+#schedules-page {
+    .table-title-divider {
+        margin: 0 10px;
+    }
+    .table-description {
+        font-style: italic;
+    }
+    .section-card-v {
+        flex-grow: 1;
+    }
     .table-list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
-        align-content: space-evenly;
+        justify-content: start;
+        align-content: start;
+        gap: 25px;
         .table-object {
+            width: 100%;
+            border-collapse: collapse;
             font-size: 14px;
-            width: 49%;
-            margin-bottom: 25px;
+            margin-bottom: 10px;
+
+            th,
+            td {
+                text-wrap: wrap;
+                text-align: left;
+                vertical-align: middle;
+            }
+            th {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #schedules-page {
+        .table-object {
+            td, th {
+                padding: 10px 16px;
+                text-wrap: wrap;
+                font-size: 16px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    #schedules-page {
+        .table-object {
+            td, th {
+                padding: 5px 3px;
+                text-wrap: wrap;
+                font-size: 13px;
+            }
         }
     }
 }

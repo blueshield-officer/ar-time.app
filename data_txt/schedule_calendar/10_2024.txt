@@ -41,11 +41,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -63,11 +61,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					6:30 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -91,11 +87,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -110,11 +104,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -132,11 +124,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					3 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -154,11 +144,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					7 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -182,11 +170,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -204,11 +190,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					6:30 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -232,11 +216,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -251,11 +233,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -273,11 +253,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					7:30 PM
 			(Philadelphia Quartett Club, 1075 Southampton Rd, Philadelphia, PA 19116, USA)
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -304,11 +282,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					11 AM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -335,11 +311,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					1 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -357,11 +331,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					1:30 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -385,11 +357,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -407,11 +377,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					4 PM
 			(N102)
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -435,11 +403,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -454,11 +420,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -476,11 +440,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					8:30 AM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -498,11 +460,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					3:30 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -526,11 +486,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -548,11 +506,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					3:10 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -576,11 +532,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -598,11 +552,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					4:30 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -626,11 +578,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -645,11 +595,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -667,11 +615,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					10 PM
 			(South Cafeteria)
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -695,11 +641,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -717,11 +661,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					11 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -746,11 +688,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -765,11 +705,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -787,11 +725,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					4 PM
 			(N102)
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -809,11 +745,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					4:30 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -837,11 +771,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -856,11 +788,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -878,11 +808,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					3:30 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -900,11 +828,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					3:30 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -922,11 +848,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					4:30 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -950,11 +874,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -969,11 +891,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -991,11 +911,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					2:15 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1013,11 +931,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					4:30 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1035,11 +951,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					6:30 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1063,11 +977,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1082,11 +994,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1104,11 +1014,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					3:30 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1126,11 +1034,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					4:30 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1154,11 +1060,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1173,11 +1077,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1195,11 +1097,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					4:30 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1225,11 +1125,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1244,11 +1142,9 @@
 
 		<span class="dateloc">
 			(The Union League Golf Club at Torresdale, 3801 Grant Ave, Philadelphia, PA 19114, USA)
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1266,11 +1162,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					4 PM
 			(N102)
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1294,11 +1188,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1313,11 +1205,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1332,11 +1222,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1360,11 +1248,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1379,11 +1265,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1398,11 +1282,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1426,11 +1308,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1445,11 +1325,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1464,11 +1342,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1483,11 +1359,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1511,11 +1385,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1530,11 +1402,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1560,11 +1430,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1579,11 +1447,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1601,11 +1467,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					4 PM
 			(N102)
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1629,11 +1493,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1648,11 +1510,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1676,11 +1536,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1695,11 +1553,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1723,11 +1579,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1742,11 +1596,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>

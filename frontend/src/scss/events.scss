@@ -1,0 +1,46 @@
+.more-important-event {
+    flex-grow: 1.5;
+}
+.event {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    flex-grow: 1;
+
+    text-align: left;
+
+    .grade-name{
+        border-radius: 5px;
+        padding: 0 5px;
+    }
+    .event-title {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 500;
+    }
+    .sport-icon {
+        height: 20px;
+        width: 20px;
+    }
+    .enemy {
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.03);
+        margin-bottom: 5px;
+    }
+    .time-field {
+        display: flex;
+        margin-top: auto;
+        justify-self: end;
+        text-align: right;
+        justify-content: space-between;
+        text-wrap: wrap;
+
+        .now-sign {
+            text-wrap: nowrap;
+            background-color: rgba(256, 0, 0, 0.8);
+            color: white;
+            padding: 0 3px;
+            margin-left: 5px;
+        }
+    }
+}

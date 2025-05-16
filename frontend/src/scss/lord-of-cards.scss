@@ -1,0 +1,68 @@
+@import "vars";
+
+.section-card-s {
+    .part {
+        padding: 16px 8px;
+    }
+}
+.section-card {
+    display: flex;
+    align-content: end;
+    border: 1px solid;
+    border-radius: 5px;
+
+    .part {
+        padding: 32px;
+    }
+    .first-part {
+        border-right: 1px solid;
+        width: 80%;
+    }
+    .second-part {
+        display: flex;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.section-divider {
+    margin: 26px 0;
+    height: 1px;
+    max-height: 1px;
+    min-height: 1px;
+    border-radius: 5px;
+}
+
+.section-card-v {
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid;
+    border-radius: 5px;
+
+    .first-part {
+        border-radius: 5px 5px 0 0;
+        padding: 12px;
+        border-bottom: 1px solid;
+    }
+    .second-part {
+        border-radius: 0 0 5px 5px;
+    }
+}
+
+@media screen and (max-width: $phone-width) {
+    .section-card {
+        .part {
+            padding: 16px;
+        }
+    }
+}
+
+@media screen and (min-width: $phone-width) {
+    .section-card {
+        .part {
+            padding: 32px;
+        }
+    }
+}

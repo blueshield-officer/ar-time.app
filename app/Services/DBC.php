@@ -17,12 +17,9 @@ class DBC
     private function __construct()
     {
         try {
-            $config = json_decode(file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/../DBconfig.json'), true);
-            $type = 'localhost';
-//            $type = 'server';
-            $dsn = 'mysql:dbname=' . $config[$type]['name'] . ';host=' . $config[$type]['host'];
-            $user = $config[$type]['user'];
-            $password = $config[$type]['password'];
+            $dsn = 'mysql:dbname=' . $_ENV['DB_NAME'] . ';host=' . $_ENV['DB_HOST'];
+            $user = $_ENV['DB_USER'];
+            $password = $_ENV['DB_PASSWORD'];
             $this->pdo = new \PDO($dsn, $user, $password, [
                 \PDO::ATTR_DEFAULT_FETCH_MODE => \PDO::FETCH_ASSOC
             ]);
@@ -50,6 +47,9 @@ class DBC
             }, $tableColumns)),
             'placeholders' => $type === 'default' ? join(', ', array_fill(0, count($tableColumns), '?')) : null,
         ];
+    }
+    public function getLastInsertID(){
+        return $this->pdo->lastInsertId();
     }
     public static function getInstance()
     {

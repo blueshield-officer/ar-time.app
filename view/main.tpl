@@ -6,7 +6,8 @@
     <link rel="icon" type="image/x-icon" href="{block name=icon}/frontend/assets/img/website-icons/ar-time-bar-icon.png{/block}">
     {include 'elements/head.tpl'}
 </head>
-<body class="background-theme">
+
+<body class="background-theme page-scroll-bar-auto">
 
 
 {block name=body}{/block}

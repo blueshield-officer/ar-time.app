@@ -3,10 +3,17 @@
 namespace App\Controllers\admin;
 
 use App\Services\Controller;
+use App\Services\SmartyVars;
+
 class CustomScheduleLoader extends Controller
 {
     public function execute()
     {
-        $this->view('pages/admin/schedule.tpl');
+        $smartyVars = new SmartyVars();
+
+        // data
+        $this->view('pages/scheduleUpload.tpl',
+            $smartyVars->getVarsArray()
+        );
     }
 }

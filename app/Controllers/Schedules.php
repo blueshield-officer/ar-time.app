@@ -16,6 +16,7 @@ class Schedules extends Controller
         $smartyVars->loadBase();
         $smartyVars->loadPages();
         $smartyVars->loadSchedules();
+        $smartyVars->loadSchedulesDescriptions();
 
         // data
         $this->view('pages/schedules.tpl', []

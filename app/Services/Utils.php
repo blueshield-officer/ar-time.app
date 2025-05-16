@@ -2,6 +2,8 @@
 
 namespace App\Services;
 
+use DateTime;
+
 class Utils
 {
     static function assimilate($str){
@@ -17,40 +19,7 @@ class Utils
     static function noSpaces($str){
         return preg_replace('/\s+/', '', $str);
     }
-    static function sanitizeAndSaveImage($avatarURL, $shortName)  {
-        $savePath = $_SERVER['DOCUMENT_ROOT'] . '/assets/img/school_staff_pictures/' . self::noSpaces($shortName) . '.png';
-        if (!file_exists($savePath)){
-            $imageContents = file_get_contents($avatarURL);
-            if ($imageContents !== false) {
-                $tempImagePath = tempnam(sys_get_temp_dir(), 'img');
-                file_put_contents($tempImagePath, $imageContents);
-                $imageInfo = getimagesize($tempImagePath);
-                if ($imageInfo !== false) {
-                    if (in_array($imageInfo['mime'], ['image/jpeg', 'image/png'])) {
-                        $imageResource = null;
-                        if ($imageInfo['mime'] == 'image/jpeg') {
-                            $imageResource = imagecreatefromjpeg($tempImagePath);
-                        } elseif ($imageInfo['mime'] == 'image/png') {
-                            $imageResource = imagecreatefrompng($tempImagePath);
-                        }
-                        if ($imageResource !== null) {
 
-                            if ($imageInfo['mime'] == 'image/jpeg') {
-                                imagejpeg($imageResource, $savePath, 90); // Adjust quality if needed
-                            } elseif ($imageInfo['mime'] == 'image/png') {
-                                imagepng($imageResource, $savePath);
-                            }
-                            imagedestroy($imageResource);
-                            unlink($tempImagePath);
-                        }
-                    }
-                }
-                if (file_exists($tempImagePath)) {
-                    unlink($tempImagePath);
-                }
-            }
-        }
-    }
     static function usDateToYmd($date){
         $dateObject = explode('-', $date);
         foreach ($dateObject as $key => $value) {
@@ -92,6 +61,9 @@ class Utils
     static public function secondsToTime($seconds, $type = 'string', $accurate = true)
     {
         // max is hours
+        if ($seconds === 0) {
+            return null;
+        }
         $hours = (int)floor($seconds / 3600);
         $minutes = (int)floor($seconds / 60) % 60;
         $seconds = $seconds % 60;
@@ -110,5 +82,106 @@ class Utils
                 'seconds' => $seconds,
             ];
         }
+    }
+    static public function isTime($str)
+    {
+        preg_match('/(\d{2}):(\d{2})/', $str, $matches);
+        if (isset($matches[1]) && isset($matches[2])){
+            $hours = (int)$matches[1];
+            $minutes = (int)$matches[2];
+
+            if (!(0 <= $hours && $hours < 24)){
+                return false;
+            }
+            if (!(0 <= $minutes && $minutes < 60)){
+                return false;
+            }
+            return true;
+        }
+        return false;
+    }
+    static function sqlFieldsToStr($array)
+    {
+        return join(', ', array_map(fn($element) => '`' . $element . '`', $array));
+    }
+
+    static function getClientIP(){
+        $headers = [
+            'HTTP_CLIENT_IP',
+            'HTTP_X_FORWARDED_FOR',
+            'HTTP_X_FORWARDED',
+            'HTTP_X_CLUSTER_CLIENT_IP',
+            'HTTP_FORWARDED_FOR',
+            'HTTP_FORWARDED',
+            'REMOTE_ADDR'
+        ];
+
+        foreach ($headers as $header) {
+            if (!empty($_SERVER[$header])) {
+                $ips = array_map('trim', explode(',', $_SERVER[$header]));
+
+                // Return the first IP in the list that is valid
+                foreach ($ips as $ip) {
+                    if (filter_var($ip, FILTER_VALIDATE_IP,
+                        FILTER_FLAG_NO_PRIV_RANGE | FILTER_FLAG_NO_RES_RANGE)) {
+                        return $ip;
+                    }
+                }
+            }
+        }
+
+        return $_SERVER['REMOTE_ADDR'] ?? '';
+    }
+
+    static function generateRandomSymbols($length): string
+    {
+        return bin2hex(
+            random_bytes(round($length))
+        );
+    }
+
+    static function validateEmail ($email, $arEmail = true): bool
+    {
+        if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            if ($arEmail === true) {
+                if (str_ends_with($email, '@arhs.org') || str_ends_with($email, '@ryanhs.org')) {
+                    return true;
+                }
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    static function getSecondsFromMidnight(): int
+    {
+        $date = new DateTime('now');
+        $midnightSeconds = (clone $date)->setTime(0, 0, 0)->getTimestamp();;
+        return $date->getTimestamp() - $midnightSeconds;
+    }
+
+    static function isNestedArray($array): bool {
+       if (is_array($array)) {
+           foreach ($array as $value) {
+               if (is_array($value)) {
+                   return true;
+               }
+           }
+       }
+       return false;
+    }
+
+    static function strToAnalyzable($str) : string
+    {
+        return strtolower(preg_replace("/[^a-zA-Z0-9]/", '', $str));
+    }
+
+    static function isYmdTypeDate($str)
+    {
+        $d = DateTime::createFromFormat('Y-m-d', $str);
+        return $d && $d->format('Y-m-d') === $str;
     }
 }

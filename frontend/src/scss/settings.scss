@@ -1,0 +1,189 @@
+@import "vars";
+
+#settings-page {
+    .account-info {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        .account-title {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 5px;
+
+            .account-badge {
+                display: block;
+                padding: 10px 20px;
+                border-radius: 5px;
+                border: 1px solid;
+            }
+
+            .account-badge-mortal {
+                border-color: rgb(0, 189, 255);
+                background-color: rgba(0, 189, 255, 0.1);
+            }
+
+            .account-badge-immortal {
+                border-color: rgb(191, 0, 0);
+                background-color: rgba(191, 0, 0, 0.1);
+            }
+        }
+        .grade {
+            padding: 5px;
+        }
+        .action-button {
+            border: 1px solid;
+            transition: 0.3s;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .change-password-button {
+            border-color: rgb(255, 204, 0);
+            background-color: rgba(255, 204, 0, 0.1);
+        }
+        .log-out-button {
+            border-color: rgb(255, 0, 0);
+            background-color: rgba(255, 0, 0, 0.1);
+            width: 150px;
+        }
+        .log-out-button:hover {
+            background-color: rgba(255, 0, 0, 0.2);
+        }
+    }
+
+
+    .periods-part {
+        gap: 10px;
+        align-items: start;
+    }
+    .periods-column {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .period-teacher {
+            position: relative;
+            transition: 0.3s;
+            .cross-holder {
+                position: absolute;
+                top: 7px;
+                right: 7px;
+                transition: 0.3s;
+                opacity: 0;
+            }
+        }
+        .period-teacher:hover {
+            .cross-holder {
+                opacity: 1;
+            }
+        }
+        .period-teacher:has(.cross-holder:hover) {
+            background-color: rgba(255, 0, 0, 0.1); /* or whatever color you want */
+        }
+        .input-block {
+            display: flex;
+
+            .period-name {
+                border-right: 1px solid;
+            }
+
+            .input-holder {
+                position: relative;
+                .input-teacher-field {
+                    position: initial;
+                    height: 25px;
+                    padding: 5px 10px;
+                    width: 175px;
+
+                    border: none;
+                    border-radius: 0;
+                    background-color: transparent;
+
+                }
+                .input-teacher-list-holder {
+                    z-index: 2;
+                    position: absolute;
+                    top: 25px;
+                    width: 175px;
+                    display: none;
+
+                    border-radius: 0 0 5px 5px;
+                    border-right: 1px solid;
+                    border-left: 1px solid;
+                    border-bottom: 1px solid;
+                    //background-color: #ffffff;
+
+                    .list-holder {
+                        //margin-bottom: 5px;
+                        max-height: 250px;
+                        .input-teacher-list {
+                            margin: 0;
+                            padding: 5px 0;
+                            list-style-type: none;
+                            user-select: none;
+                            .nobody-found {
+                                justify-content: space-between;
+                                display: flex;
+                                padding: 3px 10px;
+                            }
+                            li {
+                                display: flex;
+                                padding: 3px 10px;
+
+                                justify-content: space-between;
+                                align-items: end;
+
+                                .room-number {
+                                    font-size: 12px
+                                }
+                            }
+                            li:hover {
+                                //background-color: #ededed;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $phone-width) {
+    .period-block {
+        padding: 16px;
+    }
+    .input-block {
+        .period-name {
+            width: 115px;
+            border-right: 1px solid;
+        }
+    }
+}
+
+@media screen and (max-width: $phone-width) {
+    .period-block {
+        padding: 8px;
+    }
+    .input-block {
+        .period-name {
+            width: 95px;
+        }
+    }
+
+    #teacher-selection-block {
+        flex-direction: column;
+        .first-part {
+            border: none;
+            width: 100%;
+        }
+        .second-part {
+            width: 100%;
+        }
+
+        .part {
+            width: 100% !important;
+        }
+    }
+}

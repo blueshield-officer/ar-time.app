@@ -41,32 +41,12 @@
 
 		<span class="dateloc">
 				3:45 PM
+				<span class="ndash-range"> &ndash; </span>
+					4:45 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
+							<div class="event-tag event-color-2 checked">
 								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
-		</span>
-
-		<div class="full-description" style="display: none;"></div>
-	</li>
-	<li class="day-event-info">
-		<span class="event-title-wrap">
-			<a class="event-link" href="/apps/events/2025/5/1/19331169/?id=1"
-				aria-label="5/1/2025 - Archbishop Ryan High School SB G JV Home Bonner-Prendergast">
-				Archbishop Ryan High School SB G JV Home Bonner-Prendergast
-			</a>
-		</span>
-
-		<span class="dateloc">
-				3:45 PM
-			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
-								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -81,12 +61,12 @@
 
 		<span class="dateloc">
 				4 PM
+				<span class="ndash-range"> &ndash; </span>
+					5 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
+							<div class="event-tag event-color-2 checked">
 								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -101,12 +81,32 @@
 
 		<span class="dateloc">
 				5 PM
+				<span class="ndash-range"> &ndash; </span>
+					6 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
+							<div class="event-tag event-color-2 checked">
 								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/1/21560701/?id=1"
+				aria-label="5/1/2025 - Archbishop Ryan High School VB B V Home Archbishop Wood High School">
+				Archbishop Ryan High School VB B V Home Archbishop Wood High School
+			</a>
+		</span>
+
+		<span class="dateloc">
+				5 PM
+				<span class="ndash-range"> &ndash; </span>
+					6 PM
+			
+							<div class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -121,12 +121,12 @@
 
 		<span class="dateloc">
 				5:15 PM
+				<span class="ndash-range"> &ndash; </span>
+					6:15 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
+							<div class="event-tag event-color-2 checked">
 								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -141,32 +141,12 @@
 
 		<span class="dateloc">
 				6:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					7:30 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
+							<div class="event-tag event-color-2 checked">
 								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
-		</span>
-
-		<div class="full-description" style="display: none;"></div>
-	</li>
-	<li class="day-event-info">
-		<span class="event-title-wrap">
-			<a class="event-link" href="/apps/events/2025/5/1/21560701/?id=1"
-				aria-label="5/1/2025 - Archbishop Ryan High School VB B V Home Archbishop Wood High School">
-				Archbishop Ryan High School VB B V Home Archbishop Wood High School
-			</a>
-		</span>
-
-		<span class="dateloc">
-				6:30 PM
-			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
-								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -191,12 +171,12 @@
 
 		<span class="dateloc">
 				12 PM
+				<span class="ndash-range"> &ndash; </span>
+					1 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
+							<div class="event-tag event-color-2 checked">
 								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -211,12 +191,12 @@
 
 		<span class="dateloc">
 				12 PM
+				<span class="ndash-range"> &ndash; </span>
+					1 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
+							<div class="event-tag event-color-2 checked">
 								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -241,12 +221,12 @@
 
 		<span class="dateloc">
 				3:45 PM
+				<span class="ndash-range"> &ndash; </span>
+					4:45 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
+							<div class="event-tag event-color-2 checked">
 								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -261,12 +241,12 @@
 
 		<span class="dateloc">
 				3:45 PM
+				<span class="ndash-range"> &ndash; </span>
+					4:45 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
+							<div class="event-tag event-color-2 checked">
 								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -281,12 +261,12 @@
 
 		<span class="dateloc">
 				3:45 PM
-			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
+				<span class="ndash-range"> &ndash; </span>
+					4:45 PM
+			(1000 W Lycoming St Philadelphia, PA 19140)
+							<div class="event-tag event-color-2 checked">
 								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -301,12 +281,32 @@
 
 		<span class="dateloc">
 				4 PM
+				<span class="ndash-range"> &ndash; </span>
+					5 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
+							<div class="event-tag event-color-2 checked">
 								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/5/24387872/?id=1"
+				aria-label="5/5/2025 - Archbishop Ryan High School LAX B V Away St. Joe's Prep">
+				Archbishop Ryan High School LAX B V Away St. Joe's Prep
+			</a>
+		</span>
+
+		<span class="dateloc">
+				4 PM
+				<span class="ndash-range"> &ndash; </span>
+					5 PM
+			
+							<div class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -322,6 +322,26 @@
 					<ul class="day-event-box">
 	<li class="day-event-info">
 		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/6/24217479/?id=1"
+				aria-label="5/6/2025 - Archbishop Ryan High School SB G JV Home Nazareth Academy HS">
+				Archbishop Ryan High School SB G JV Home Nazareth Academy HS
+			</a>
+		</span>
+
+		<span class="dateloc">
+				3:45 PM
+				<span class="ndash-range"> &ndash; </span>
+					4:45 PM
+			
+							<div class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/5/6/21589483/?id=1"
 				aria-label="5/6/2025 - Archbishop Ryan High School SB G V Home Nazareth Academy HS">
 				Archbishop Ryan High School SB G V Home Nazareth Academy HS
@@ -330,12 +350,12 @@
 
 		<span class="dateloc">
 				6:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					7:30 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
+							<div class="event-tag event-color-2 checked">
 								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -359,12 +379,12 @@
 
 		<span class="dateloc">
 				4 PM
+				<span class="ndash-range"> &ndash; </span>
+					5 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
+							<div class="event-tag event-color-2 checked">
 								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -379,12 +399,12 @@
 
 		<span class="dateloc">
 				5:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					6:30 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
+							<div class="event-tag event-color-2 checked">
 								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -408,12 +428,32 @@
 
 		<span class="dateloc">
 				3:45 PM
+				<span class="ndash-range"> &ndash; </span>
+					4:45 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
+							<div class="event-tag event-color-2 checked">
 								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/8/24387871/?id=1"
+				aria-label="5/8/2025 - Archbishop Ryan High School LAX B V Home Archbishop Wood High School">
+				Archbishop Ryan High School LAX B V Home Archbishop Wood High School
+			</a>
+		</span>
+
+		<span class="dateloc">
+				4 PM
+				<span class="ndash-range"> &ndash; </span>
+					5 PM
+			
+							<div class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -428,12 +468,32 @@
 
 		<span class="dateloc">
 				5:15 PM
+				<span class="ndash-range"> &ndash; </span>
+					6:15 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
+							<div class="event-tag event-color-2 checked">
 								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/8/24515569/?id=1"
+				aria-label="5/8/2025 - Archbishop Ryan High School LAX B JV Home Archbishop Wood High School">
+				Archbishop Ryan High School LAX B JV Home Archbishop Wood High School
+			</a>
+		</span>
+
+		<span class="dateloc">
+				5:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					6:30 PM
+			
+							<div class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -448,12 +508,12 @@
 
 		<span class="dateloc">
 				5:45 PM
+				<span class="ndash-range"> &ndash; </span>
+					6:45 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
+							<div class="event-tag event-color-2 checked">
 								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -463,8 +523,36 @@
 				<li class="event-day empty no-border " id="day-9">
 				<li class="event-day empty no-border " id="day-10">
 				<li class="event-day empty no-border " id="day-11">
-				<li class="event-day empty no-border " id="day-12">
-				<li class="event-day empty no-border " id="day-13">
+				<li class="cf event-day  " id="day-12">
+					<div class="day-date-box">
+						<span class="month">May</span>
+						<span class="date">12</span>
+						<span class="day">Mon</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/12/24515570/?id=1"
+				aria-label="5/12/2025 - Archbishop Ryan High School FFB G V Home Lansdale Catholic High School">
+				Archbishop Ryan High School FFB G V Home Lansdale Catholic High School
+			</a>
+		</span>
+
+		<span class="dateloc">
+				4 PM
+				<span class="ndash-range"> &ndash; </span>
+					5 PM
+			
+							<div class="event-tag event-color-2 checked">
+								<span class="">Athletic Calendar</span>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
+				<li class="event-day empty no-border current-day" id="day-13">
 				<li class="event-day empty no-border " id="day-14">
 				<li class="event-day empty no-border " id="day-15">
 				<li class="event-day empty no-border " id="day-16">

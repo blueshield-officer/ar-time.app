@@ -1,24 +1,22 @@
+@import "vars";
+
 #date-bar {
     position: relative;
     height: 30px;
     text-align: center;
     user-select: none;
+    z-index: 5;
+    .chevron {
+        margin: 2px;
+        padding: 3px;
+    }
     .date-bar {
         display: flex;
         height: 100%;
         align-content: center;
         justify-content: center;
-        .chevron {
-            margin: 2px;
-            padding: 3px;
-            border-radius: 10px;
-            transition: background-color 0.3s;
-        }
-        .chevron:hover {
-            background-color: #d5d5d5;
-            cursor: pointer;
-        }
         .date {
+            position: relative;
             display: flex;
             justify-content: space-around;
             width: 350px;
@@ -26,6 +24,8 @@
             font-weight: 400;
             font-size: 16px;
             margin: 0 15px;
+
+            transition: 0.3s;
         }
     }
     .date-away {
@@ -38,5 +38,117 @@
     .today {
         font-weight: 700;
         color: #bf0000;
+    }
+    .calendar-mini {
+        width: 330px;
+        position: absolute;
+        top: 30px;
+        left: 50%;
+        transform: translate(-50%);
+
+        padding: 10px;
+
+        border-radius: 0 0 5px 5px;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
+
+        .calendar-title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 5px;
+            font-weight: 500;
+
+            .chevron {
+                img {
+                    height: 20px;
+                }
+            }
+        }
+        .weekend-line {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+
+            height: calc(100% - 10px * 2);
+            display: flex;
+            flex-grow: 1;
+            width: calc(44px * 2);
+
+            background-color: rgba(238, 75, 43, 0.1);
+
+            z-index: -1;
+        }
+        .column {
+            display: flex;
+            flex-grow: 1;
+            width: 100%;
+
+            padding: 0;
+            margin: 0;
+
+            flex-wrap: wrap;
+            list-style: none;
+
+
+            a {
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .dates-column {
+            li {
+                width: calc(100% / 7);
+            }
+        }
+        .months-column {
+            li {
+                width: calc(100% / 3);
+            }
+        }
+        .months {
+            a {
+                height: 44px;
+                display: flex;
+            }
+        }
+        .weeks {
+            margin-bottom: 5px;
+        }
+        .days {
+            a {
+                height: 44px;
+                display: flex;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $phone-width){
+    #date-local {
+        .date-bar-divider {
+        }
+        .date-bar-difference {
+            box-shadow: none;
+            background-color: transparent;
+        }
+    }
+}
+@media screen and (max-width: $phone-width){
+    #date-local {
+        .date-bar-divider {
+            display: none;
+        }
+        .date-bar-difference {
+            font-size: 16px;
+            position: absolute;
+            top: 22px;
+
+            padding: 0 5px 2px 5px;
+            border-radius: 0 0 5px 5px;
+        }
     }
 }

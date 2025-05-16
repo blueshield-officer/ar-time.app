@@ -2,60 +2,24 @@
 
 namespace App\Services;
 
-class Mailer
-{
-    private $destinationEmail;
-    private $subject;
-    private $message;
-    private $htmlFile;
+use PHPMailer\PHPMailer\PHPMailer;
+use Smarty;
 
-    public function __construct(){
-    }
-    public function to($email){
-        $this->destinationEmail = $email;
-    }
-    public function subject($subject){
-        $this->subject = $subject;
-    }
-    public function message($message){
-        $this->message = $message;
-    }
-    public function htmlFile($htmlFile){
-        $this->htmlFile = $htmlFile;
-    }
-    public function sendMail(){
-        $to      = $this->destinationEmail;
-        $subject = $this->subject;
-        $message = $this->message;
-        $headers = 'From: webmaster@example.com' . "\r\n" .
-            'Reply-To: webmaster@example.com' . "\r\n" .
-            'X-Mailer: PHP/' . phpversion();
+class Mailer {
+    private $template;
 
-        mail($to, $subject, $message, $headers);
+    public function __construct($template)
+    {
+        $this->template = $template;
     }
+    public function sendMail($to, $subject) {
+        $headers = [
+            'MIME-Version: 1.0',
+            'Content-type: text/html; charset=UTF-8',
+            'From: ar-time <no-reply@ar-time.org>',
+            'X-Mailer: PHP/' . phpversion()
+        ];
 
-    public function test(){
-        try {
-            $mail = new PHPMailer(true);
-            $mail->isSMTP();
-            $mail->Host = 'smtp.example.com'; // Replace with your SMTP server
-            $mail->SMTPAuth = true;
-            $mail->Username = 'your-email@example.com';
-            $mail->Password = 'your-email-password';
-            $mail->SMTPSecure = 'tls';
-            $mail->Port = 587;
-
-            $mail->setFrom('your-email@example.com', 'Your Name');
-            $mail->addAddress('recipient@example.com');
-
-            $mail->isHTML(true);
-            $mail->Subject = 'Your HTML Email';
-            $mail->Body = '<h2>Welcome to Our Service</h2><p>This is an <b>HTML email</b> sent using PHPMailer.</p>';
-
-            $mail->send();
-            echo "Email sent successfully!";
-        } catch (Exception $e) {
-            echo "Email sending failed: {$mail->ErrorInfo}";
-        }
+        return mail($to, $subject, $this->template, implode("\r\n", $headers));
     }
 }

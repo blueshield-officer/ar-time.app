@@ -34,10 +34,10 @@ class People
     }
     public function update_locations($DBC){
         foreach($this->peopleObjects as $method => $periods){
-                foreach($periods as $period_index => $period){
-                    foreach($period as $object){
-                        $name = $object['name'];
-                        $this->peopleObjects[$method][$period_index][$name]['location'] = $this->find_location($DBC, $period, $name);
+            foreach($periods as $period_index => $period){
+                foreach($period as $object){
+                    $name = $object['name'];
+                    $this->peopleObjects[$method][$period_index][$name]['location'] = $this->find_location($DBC, $period, $name);
                 }
             }
         }
@@ -48,7 +48,7 @@ class People
             foreach($room_changes[$period] as $direction){
                 // TODO переместить это чтобы было автономно, когда норм дб будет
                 $person_respective = null;
-                $result = $DBC->fetch($DBC->query('SELECT `honorific`, `last_name` FROM `school_staff_list` WHERE `short_name` = ?', [$name]));
+                $result = $DBC->fetch($DBC->query('SELECT `honorific`, `last_name` FROM `school_faculty_list` WHERE `short_name` = ?', [$name]));
                 if ($result !== false) {
                     $person_respective = [$result['honorific'] . '. ' . $result['last_name']];
                 }

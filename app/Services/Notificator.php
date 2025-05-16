@@ -20,36 +20,50 @@ class Notificator
         ];
         $this->webPush = new WebPush($auth);
     }
-    public function schedule_notification($DBC, $timestamp, $title, $body, $icon, $url, $recipientToken)
+    public function scheduleNotification($DBC, $timestamp, $title, $body, $icon, $url, $recipientToken)
     {
         $timestamp = $timestamp->format('Y-m-d H:i:s');
-        $payload = $this->encode_payload($title, $body, $icon, $url);
+        $payload = $this->encodePayload($title, $body, $icon, $url);
         $DBC->query('INSERT INTO `notifications_scheduled` (timestamp, payload, recipient_token) VALUES (?, ?, ?)', [$timestamp, $payload, $recipientToken]);
     }
-    public function send_notification($title, $body, $icon, $url, $recipientToken)
+    public function sendNotification($recipientToken, $title, $body, $icon = null, $url = null)
     {
-        $payload = $this->encode_payload($title, $body, $icon, $url);
+        if (is_null($icon)){
+            $icon = '/frontend/assets/img/website-icons/ar-time-bar-icon.png';
+        }
+        if (is_null($url)){
+            $url = '/';
+        }
+
+        $payload = $this->encodePayload($title, $body, $icon, $url);
         $subscriptionData = json_decode($recipientToken, true);
         if (!$subscriptionData) {
-            echo 'Invalid recipient token provided.';
+//            echo 'Invalid recipient token provided.';
+            return false;
         }
         $subscription = Subscription::create($subscriptionData);
         $report = $this->webPush->sendOneNotification($subscription, $payload);
 
         if (!$report->isSuccess()) {
-            echo "Notification sent successfully to {$report->getEndpoint()}.\n";
+//            echo "Notification sent successfully to {$report->getEndpoint()}.\n";
+            return true;
         }
+        return false;
     }
-    public function send_notifiction_all($title, $body, $icon, $url, $recipientTokens)
+    public function sendNotifictionAll($recipientTokens, $title, $body, $icon, $url)
     {
-        $payload = $this->encode_payload($title, $body, $icon, $url);
+        $payload = $this->encodePayload($title, $body, $icon, $url);
         foreach ($recipientTokens as $recipientToken) {
             $subscriptionData = json_decode($recipientToken, true);
             $subscription = Subscription::create($subscriptionData);
             $this->webPush->queueNotification($subscription, $payload);
         }
     }
-    private function encode_payload($title, $body, $icon, $url)
+    public function testNotification($recipientToken)
+    {
+        $this->sendNotification($recipientToken, 'This Is Test Notification', 'Yours notification are on and fully working. Enjoy them.', null, '/notifications');
+    }
+    private function encodePayload($title, $body, $icon, $url)
     {
         return json_encode([
             'title' => $title,

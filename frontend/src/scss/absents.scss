@@ -1,0 +1,60 @@
+$myTeacher: rgba(100, 255, 0, 0.1);
+
+.absent-holder {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    .alert {
+        padding: 8px;
+        margin: 0;
+        font-size: 14px;
+    }
+    .absent {
+        flex: 1 0 auto;
+        .my-teacher {
+            background-color: $myTeacher;
+        }
+        .teacher {
+            border-radius: 5px;
+            padding: 5px 10px;
+
+            .absent-teacher-name {
+                display: flex;
+                justify-content: space-between;
+                font-weight: 600;
+            }
+
+            .absent-periods-list {
+                font-size: 14px;
+            }
+        }
+        .teacher-with-redirections {
+            border-radius: 5px 5px 0 0;
+            border-bottom: 1px solid;
+        }
+        .redirections {
+            display: grid;
+            gap: 3px;
+            font-size: 12px;
+            padding: 10px;
+
+            .my-teacher-redirection {
+                background-color: $myTeacher;
+                .period {
+                    background-color:$myTeacher;
+                }
+            }
+            .redirection-field {
+                display: flex;
+                .period {
+                    text-align: center;
+                    width: 18px;
+                }
+                .period-divider {
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
+}

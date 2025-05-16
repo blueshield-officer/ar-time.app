@@ -1,31 +1,52 @@
 @import "vars";
 
-#home {
-    .row {
-        margin: 0;
-    }
-    .column-home {
-        border-right: 1px solid;
-        height: calc(100vh - $top-bar-height - $date-bar) !important;
-        .day-info {
-            position: relative;
+.day-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    position: relative;
+    gap: 10px;
+}
+
+.event-holder {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    .main-day-info {
+        display: flex;
+        width: 100%;
+        gap: 10px;
+
+        .main-day-title {
+            font-size: 20px;
         }
     }
-    .column-home:last-child {
-        border-right: 0;
+}
+
+#home-page {
+    .row {
+        //position: relative;
+        //display: -webkit-box;
+        //margin: 0;
+        //height: calc(100% - $date-bar-height);
+        //align-content: stretch;
     }
-
-
+}
 
 
     #bells-block {
+        height: 450px;
+        //min-width: 400px;
+        margin-top: 20px;
         position: relative;
         .timestamp-block {
             display: grid;
             flex-direction: column;
-            gap: 20px;
+            gap: 44px;
 
             .time-line {
+                z-index: 1;
                 display: flex;
                 align-items: center;
                 .time-block {
@@ -48,28 +69,108 @@
                 }
             }
         }
+        .period-info-hidden {
+            .period-info {
+                visibility: hidden;
+            }
+        }
         .period-box {
-            display: flex;
-            flex-grow: 1;
-
-            margin-left: 55px;
-            margin-right: 7px;
-            width: calc(100% - 55px - 7px);
-
-            padding: 0 10px;
-
             position: absolute;
-            background-color: #ececec;
+            text-wrap: nowrap;
+            display: flex;
             align-items: center;
             justify-content: space-between;
+            user-select: none;
 
-            border-radius: 5px;
-            z-index: 1;
+            .period-status-bar {
+                border-radius: 4px;
+                left: 0;
+                top: 0;
+                background-color: rgba(205, 254, 194, 0.5);
+                flex-grow: 1;
+                position: absolute;
+                display: flex;
+                width: 100%;
+            }
+
+            .period-name {
+                height: 100%;
+                display: flex;
+
+                align-items: center;
+            }
+            .period-length {
+                width: 62px;
+                height: 100%;
+                display: flex;
+
+                align-items: center;
+
+                .length {
+                    padding: 0 5px;
+                }
+            }
+            .period-divider {
+                height: 100%;
+                min-width: 1px;
+                width: 1px;
+                max-width: 1px;
+            }
+            .length, .name, .time-length {
+                position: relative;
+                text-align: center; /* Center text within each section */
+            }
+            .name {
+                padding: 0 10px;
+            }
+
+            .period-info {
+                z-index: 2;
+                align-content: center;
+                justify-items: start;
+                font-size: 13px;
+                gap: 10px;
+                text-align: start;
+                .time-length {
+                    .clock-icon {
+                        height: 12px;
+                        filter: invert(10%);
+                    }
+
+
+                }
+            }
+        }
+        .period-box:hover {
+            z-index: 4;
+        }
+        .default-box {
+            z-index: 2;
+            margin-left: 47px;
+            margin-right: 5px;
+            width: calc(100% - 47px - 5px);
+        }
+        .period-info-hidden:hover {
+                .period-info{
+                    visibility: visible;
+                }
+        }
+        .label-box {
+            z-index: 3;
+            background-color: #FFBF00;
+            width: 300px;
+            height: 12px!important;
+            margin-left: 45px;
+            font-size: 12px;
+            .length {
+                display: none;
+            }
         }
         #current-time-runner {
             display: flex;
             align-items: center;
-            width: 100%;
+            z-index: 0;
+            width: calc(100% + 16px);
             #time-runner-circle {
                 height: 5px;
                 width: 5px;
@@ -83,8 +184,20 @@
                 background-color: #ff0000;
             }
             position: absolute;
-            left: -12;
+            left: -16;
             top: 0;
         }
     }
-}
+    .day-done {
+        .period-status-bar {
+            height: 100%;
+        }
+    }
+
+
+    @media screen and (max-width: $phone-width) {
+        #bells-block {
+            margin-left: -10px;
+            zoom: 0.8;
+        }
+    }

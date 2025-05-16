@@ -14,6 +14,12 @@ class Calendar extends Controller
         $smartyVars->loadBase();
         $smartyVars->loadPages();
 
+        $smartyVars->loadDayInfo(true);
+        $smartyVars->loadEvents(true);
+        $smartyVars->loadSports(true);
+        $smartyVars->loadDayOffs(true);
+        $smartyVars->loadRetreats(true);
+
         $this->view('pages/calendar.tpl',
             [
 

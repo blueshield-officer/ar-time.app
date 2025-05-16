@@ -45,12 +45,17 @@ class Home extends Controller
         $smartyVars->loadDayInfo();
         $smartyVars->loadEvents();
         $smartyVars->loadSports();
-        $smartyVars->loadDayOff();
+        $smartyVars->loadDayOffs();
+        $smartyVars->loadRetreats();
 
-        $smartyVars->loadAbsentAdditional();
-        $smartyVars->loadAbsentPeople();
-        $smartyVars->loadRoomChanges();
 
+        if (Session::isLogedIn()){
+            $smartyVars->loadAbsentCombined();
+
+            $smartyVars->loadSchoolFaculty();
+
+            $smartyVars->loadUserSchoolFaculty();
+        }
 
         $this->view('pages/home.tpl',
             [

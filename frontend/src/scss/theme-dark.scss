@@ -1,31 +1,90 @@
 @use 'vars';
 
-body {
-    background: #000 !important;
-    color: white;
-}
-.secondary-text {
-    color: #515151;
-}
-.wrapper-background {
-    background-color: red;
-}
-.wrapper-border {
-    border-color: red!important;
-}
-.wrapper-logo {
-    background-color: #303030;
-}
-.wrapper-divider {
-    background-color: #b653c2;
-}
-.wrapper-page-icon {
-    filter: invert(1);
-}
-#screen .loader {
-    color: #ffffff;
+body, a, input, .action-button {
+    color: #e0e0e0 !important;
 }
 
-.icon {
-    filter: invert(1);
+input {
+    background-color: #1e1f22;
 }
+
+.background-theme {
+    background-color: #1e1f22; // Almost black, similar to Discord sidebar
+}
+
+.background-theme-darker {
+    background-color: #171819; // Deeper black shade for panels
+}
+
+.background-theme-darker-softer {
+    background-color: #1a1b1e; // For less contrast-heavy areas
+}
+
+.selected-theme {
+    background-color: #2c2f33; // Slight highlight but still dark
+}
+
+.secondary-text {
+    color: #888b8f; // Dimmer but still readable
+}
+
+.border-color-theme {
+    border-color: #2e2f33 !important; // Soft but visible border
+}
+
+.border-background-color-theme {
+    background-color: #2a2b2e;
+}
+
+.table-object {
+    tr {
+        &:nth-child(even) {
+            background-color: #1a1b1e;
+        }
+
+        &:nth-child(odd) {
+            background-color: #1e1f22;
+        }
+    }
+
+    th, th {
+        background-color: #2c2f33;
+        color: #f1f1f1;
+    }
+}
+
+
+// fixers
+
+.icon, .page-icon, .clock-icon, .img-stretch, #replacer-account-icon {
+    filter: invert(80%) !important;
+}
+
+.toggle-switch .toggle-label::before {
+    background-color: #2e2f33;
+}
+
+.label-box {
+    background-color: #5e5e25 !important;
+}
+.period-status-bar {
+    background-color: #1c3e1c !important;
+}
+.selectable-no-delay:hover, .selectable:hover {
+    filter: brightness(80%);
+}
+
+#countdown-time {
+    text-shadow:
+            -1px -1px 0 black,
+            1px -1px 0 black,
+            -1px  1px 0 black,
+            1px  1px 0 black;
+}
+
+//#next-calendar, #prev-calendar {
+//    background: white;
+//}
+//#next-calendar:hover, #prev-calendar:hover {
+//    filter: brightness(20%);
+//}

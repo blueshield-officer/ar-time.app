@@ -2,6 +2,7 @@
 
 namespace App\Services;
 
+use App\Services\Accounts\GoogleAuthRedirect;
 use function Brotli\uncompress;
 
 class SmartyVars
@@ -10,6 +11,8 @@ class SmartyVars
     private $redis;
     private $cacheOperator;
     private $localDate;
+    private $localDateGlobal;
+
     private $varsArray;
 
     public function __construct($date = null, $type = 'MDY')
@@ -24,10 +27,16 @@ class SmartyVars
         ];
 
         if (is_null($date)) {
-            $this->localDate = date($dateArray[$type]);
+            $this->localDate = (Session::getLocalDate())->format($dateArray[$type]);
+            $this->localDateGlobal = (Session::getLocalDate())->format('Y-m-d');
         }
         else {
-            $this->localDate = (\DateTime::createFromFormat('m-' . (($type === 'MDY') ? 'd-' : '') . 'Y', $date))->format($dateArray[$type]);
+            $dateObject = \DateTime::createFromFormat('m-' . (($type === 'MDY') ? 'd-' : '') . 'Y', $date);
+            $this->localDate = $dateObject->format($dateArray[$type]);
+            $this->localDateGlobal = $dateObject->format('Y-m-d');
+            if ($type !== 'MY') {
+                Session::setLocalDate($dateObject);
+            }
         }
 
         $this->varsArray = [];
@@ -35,13 +44,53 @@ class SmartyVars
         $this->loadDependencies();
     }
 
-    public function loadDependencies()
+    private function loadDependencies()
     {
         $this->varsArray['userAgent'] = $_SERVER['HTTP_USER_AGENT'];
         $this->varsArray['theme'] = $_COOKIE['theme'];
         $this->varsArray['loggedIn'] = Session::isLogedIn();
-        $this->varsArray['userName'] = $_SESSION['userName'];
-        $this->varsArray['userEmail'] = $_SESSION['userEmail'];
+        if ($this->varsArray['loggedIn']){
+            $this->varsArray['userName'] = $_SESSION['userName'];
+            $this->varsArray['userEmail'] = $_SESSION['userEmail'];
+        }
+    }
+    public function loadSessionParams()
+    {
+        $userData = Session::getAccountSessionData();
+        $result = $this->DBC->fetch(
+            $this->DBC->query(
+                'SELECT `notification`, `notification_absence`, `notification_report`, `notification_report_time`, `notification_guider` FROM `users_sessions` WHERE `token_cookie` = ? AND `user_id` = ?', [$userData['token'], $userData['id']]
+            )
+        );
+        $this->varsArray['sessionParams'] = $result;
+    }
+    // TODO Feels weak
+    public function loadAdditionalAccountInfo(){
+        $userData = Session::getAccountSessionData();
+        $result = $this->DBC->fetch(
+            $this->DBC->query(
+                'SELECT `graduation_year`, `type` FROM `users_accounts` WHERE `user_id` = ?', [$userData['id']]
+            )
+        );
+        $this->varsArray['additionalAccountInfo'] = $result;
+
+        $grade = null;
+        if ($result['graduation_year'] !== null){
+            $date = new \DateTime();
+            $date->setDate($date->format('Y'), 6, 20);
+            if ($date < new \DateTime()) {
+                $date->modify('+1 year');
+            }
+
+            $yearDifference = $result['graduation_year'] - $date->format('Y');
+            $grade = match ($yearDifference){
+                0 => 'senior',
+                1 => 'junior',
+                2 => 'sophomore',
+                3 => 'freshman'
+            };
+        }
+        $this->varsArray['additionalAccountInfo']['grade'] = $grade;
     }
     public function loadBase(){
         $tableObject = null;
@@ -49,17 +98,24 @@ class SmartyVars
         if (!is_null($currentDayInfo)) {
             $schedule = $currentDayInfo['schedule'];
             $tableObject = $this->cacheOperator->fetch('bell_schedules', $schedule, false);
+
             if (!is_null($tableObject)) {
-                $tableObject = json_encode($tableObject[array_key_first($tableObject)][$schedule]);
+                $tableObject = json_encode($tableObject);
             }
             else {
                 $tableObject = 'special';
             }
         }
-        $this->varsArray['currentDate'] =  date('Y-m-d');
+        $this->varsArray['currentDate'] = date('Y-m-d');
+        $this->varsArray['currentDateObject'] = \DateTime::createFromFormat('Y-m-d', $this->varsArray['currentDate']);
         $this->varsArray['localDate'] = $this->localDate;
+        $this->varsArray['localDateGlobal'] = $this->localDateGlobal;
+        $this->varsArray['localDateObject'] = \DateTime::createFromFormat('Y-m-d', $this->localDate);
+        $this->varsArray['localDateJS'] = $this->localDate;
         $this->varsArray['currentTable'] = $tableObject;
     }
+
+
     public function loadPages()
     {
         $pages = [
@@ -68,7 +124,7 @@ class SmartyVars
             'Absences' =>   ['/absences', 'person-fill.svg', 20, true],
             'Schedules' =>  ['/schedules', 'table-solid.svg', 19, false],
             'Countdowns' => ['/countdowns', 'hourglass-start-solid.svg', 15, true],
-            'Roadmap' =>    ['/roadmap', 'tools.svg', 20, true],
+            'Development' =>    ['/development', 'tools.svg', 20, true],
             'Notifications' => ['/notifications', 'bell-fill.svg', 19, false],
             'Settings' =>   ['/settings', 'gear-fill.svg', 20, true]
         ];
@@ -78,44 +134,56 @@ class SmartyVars
         $this->varsArray['pages'] = $pages;
     }
 
-    public function loadDayInfo()
-    {
-        $schedule = $this->cacheOperator->fetch('calendar_schedules', $this->localDate, false);
+    private function formatScheduleObject($schedule){
         if (!is_null($schedule)) {
-            $schedule['description'] = null;
-            // TODO Чёта не фурычит
-            if (!is_null($schedule['schedule'])){
-                $table = $this->cacheOperator->fetch('bell_schedules', $schedule['schedule'], false);
-                if (!is_null($table)) {
-                    $this->varsArray['bells'] = $table[array_key_first($table)][$schedule['schedule']];
-                }
-                if ($schedule['schedule'] === 'special'){
-                    $schedule['description'] = 'Mysterious schedule.';
-                }
-                else {
-                    $schedule['description'] = $this->cacheOperator->fetch('bell_schedules_descriptions', $schedule['schedule'], false);
-                }
+            $table = $this->cacheOperator->fetch('bell_schedules', $schedule['schedule'], false);
+            if (!is_null($table)) {
+                $this->varsArray['bells'] = $table;
+            }
+            if ($schedule['schedule'] === 'special') {
+                $schedule['description'] = 'Mysterious schedule.';
+            } else {
+                $schedule['description'] = $this->cacheOperator->fetch('bell_schedules_descriptions', $schedule['schedule'], false);
+            }
 
-                if ($schedule['schedule'] === 'fid'){
-                    $schedule['schedule'] = strtoupper($schedule['schedule']);
-                }
-                else {
-                    $schedule['schedule'] = ucwords($schedule['schedule']);
-                }
+            if ($schedule['schedule'] === 'fid') {
+                $schedule['schedule'] = strtoupper($schedule['schedule']);
+            } else {
+                $schedule['schedule'] = ucwords($schedule['schedule']);
             }
         }
-        $this->varsArray['schedule'] = $schedule;
+        return $schedule;
     }
-    public function loadEvents()
+
+    public function loadDayInfo($json = false)
     {
-        $this->varsArray['events'] = $this->cacheOperator->fetch('calendar_events', $this->localDate, false);
+        $schedules = $this->cacheOperator->fetch('calendar_schedules', $this->localDate, false);
+        if (count(explode('-', $this->localDate)) === 2) {
+            foreach ($schedules as $index => $schedule){
+                $schedules[$index] = $this->formatScheduleObject($schedule);
+            }
+            if ($json === true)
+            {
+                $schedules = json_encode($schedules);
+            };
+            $this->varsArray['schedules'] = $schedules;
+        }
+        else {
+            $schedule = $this->formatScheduleObject($schedules);
+            if ($json === true) $schedule = json_encode($schedule);
+            $this->varsArray['schedule'] = $schedule;
+        }
     }
-    public function loadSports()
+    public function loadEvents($json = false)
     {
-        $this->varsArray['sports'] = $this->cacheOperator->fetch('calendar_sports', $this->localDate, false);
+        $this->varsArray['events'] = $this->cacheOperator->fetch('calendar_events', $this->localDate, $json);
     }
-    public function loadDayOff(){
-        $this->varsArray['dayOff'] = $this->cacheOperator->fetch('calendar_day_off', $this->localDate, false);
+    public function loadSports($json = false)
+    {
+        $this->varsArray['sports'] = $this->cacheOperator->fetch('calendar_sports', $this->localDate, $json);
+    }
+    public function loadDayOffs($json = false){
+        $this->varsArray['dayOffs'] = $this->cacheOperator->fetch('calendar_day_off', $this->localDate, $json);
     }
     public function loadNextDayOff()
     {
@@ -126,15 +194,56 @@ class SmartyVars
             'seniors' => $this->cacheOperator->fetch('calendar_day_off', 'next:12=1', false),
         ];
     }
-    public function loadNextSchedule()
+    public function loadNextSchedules()
     {
-        $earlyDismissalData = $this->cacheOperator->fetch('early_dismissal_schedules', null, false);
-        $earlyDismissalSchedulesQueryString = array_map(fn($schedule) => 'schedule='.$schedule, array_keys($earlyDismissalData));
-        $this->varsArray['nextSchedule'] = [
-            'nonA' => $this->cacheOperator->fetch('calendar_schedules', 'next:schedule!=a', false),
-            'earlyDismissal' => $this->cacheOperator->fetch('calendar_schedules', 'next:' . join('OR', $earlyDismissalSchedulesQueryString), false),
-        ];
-        $this->varsArray['earlyDismissalData'] = $earlyDismissalData;
+        // load schedules data
+        $earlyDismissalData = $this->cacheOperator->fetch('early_dismissal_schedules_pack', null, false);
+        foreach ($earlyDismissalData as $index => $data){
+            $this->varsArray[$index] = $data;
+        }
+    }
+    public function loadAbsentCombined(){
+        $newArray = [];
+        $absentPeople = $this->cacheOperator->fetch('absent_people', $this->localDate, false);
+        $roomChanges = $this->cacheOperator->fetch('absent_room_changes', $this->localDate, false);
+
+        if (!is_null($roomChanges)) {
+            foreach ($roomChanges as $person => $periods){
+                foreach ($periods as $period => $location) {
+                    $newArray[$person][$period] = $location;
+                }
+            }
+        }
+        arsort($newArray);
+
+        if (!is_null($absentPeople)){
+            foreach ($absentPeople as $person => $periods){
+                foreach ($periods as $period){
+                    if (!isset($newArray[$person][$period])){
+                        $newArray[$person][$period] = null;
+                    }
+                }
+            }
+        }
+//        var_dump($newArray);
+//        die();
+
+        function hasOnlyNullValues($periods) {
+            return count(array_filter($periods, function($value) {
+                    return $value !== null;
+                })) === 0;
+        }
+
+        $nonNullEntries = array_filter($newArray, fn($periods) => !hasOnlyNullValues($periods), ARRAY_FILTER_USE_BOTH);
+        $nullEntries = array_filter($newArray, fn($periods) => hasOnlyNullValues($periods), ARRAY_FILTER_USE_BOTH);
+        $newArray = $nonNullEntries + $nullEntries;
+
+
+        if (empty($newArray)){
+            $newArray = null;
+        }
+
+        $this->varsArray['absentCombined'] = $newArray;
     }
     public function loadAbsentAdditional()
     {
@@ -152,9 +261,17 @@ class SmartyVars
     {
         $this->varsArray['bells'] = $this->cacheOperator->fetch('bell_schedules', null, false);
     }
+    public function loadSchedulesDescriptions()
+    {
+        $this->varsArray['bellsDescriptions'] = $this->cacheOperator->fetch('bell_schedules_descriptions', null, false);
+    }
     public function loadRoadMap()
     {
         $this->varsArray['roadmap'] = $this->cacheOperator->fetch('info_roadmap', null, false);
+    }
+    public function loadChangelog()
+    {
+        $this->varsArray['changelog'] = $this->cacheOperator->fetch('info_changelog', null, false);
     }
     public function loadHolidays()
     {
@@ -169,12 +286,24 @@ class SmartyVars
         if (Session::isLogedIn()){
             $sessions = array_map(fn($row) => [
                 'userAgent' => $row['user_agent'],
-                'date' => $row['login_datetime']
             ], $this->cacheOperator->fetch('users_sessions', $_SESSION['userId'], false));
         }
         $this->varsArray['settings'] = [
             'sessions' => $sessions ?? null
         ];
+    }
+    public function loadSchoolFaculty()
+    {
+        $this->varsArray['faculty'] = $this->cacheOperator->fetch('school_faculty_list', null, false);
+        $this->varsArray['facultyJSON'] = json_encode($this->varsArray['faculty']);
+    }
+    public function loadUserSchoolFaculty()
+    {
+        $this->varsArray['userFaculty'] = $this->cacheOperator->fetch('users_chosen_people', null, false, false);
+    }
+    public function loadRetreats($json = false)
+    {
+        $this->varsArray['retreats'] = $this->cacheOperator->fetch('calendar_retreats', $this->localDate, $json);
     }
     public function getVarsArray(){
         return $this->varsArray;

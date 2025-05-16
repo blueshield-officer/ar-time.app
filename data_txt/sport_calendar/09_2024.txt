@@ -45,11 +45,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					4:45 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
+							<div class="event-tag event-color-2 checked">
 								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -78,11 +76,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					8 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
+							<div class="event-tag event-color-2 checked">
 								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -112,11 +108,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					4:45 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
+							<div class="event-tag event-color-2 checked">
 								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -134,11 +128,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					8 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
+							<div class="event-tag event-color-2 checked">
 								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -156,11 +148,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					8 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
+							<div class="event-tag event-color-2 checked">
 								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -188,11 +178,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					4 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
+							<div class="event-tag event-color-2 checked">
 								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -221,11 +209,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					2 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
+							<div class="event-tag event-color-2 checked">
 								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -243,11 +229,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					2 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
+							<div class="event-tag event-color-2 checked">
 								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -277,11 +261,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					4 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
+							<div class="event-tag event-color-2 checked">
 								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -299,11 +281,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					4:45 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
+							<div class="event-tag event-color-2 checked">
 								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -330,11 +310,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					4:30 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
+							<div class="event-tag event-color-2 checked">
 								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -352,11 +330,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					6:30 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
+							<div class="event-tag event-color-2 checked">
 								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -374,11 +350,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					8 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
+							<div class="event-tag event-color-2 checked">
 								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -406,11 +380,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					7 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
+							<div class="event-tag event-color-2 checked">
 								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -438,11 +410,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					4:45 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
+							<div class="event-tag event-color-2 checked">
 								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -460,11 +430,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					4:45 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
+							<div class="event-tag event-color-2 checked">
 								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -482,11 +450,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					6 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
+							<div class="event-tag event-color-2 checked">
 								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -513,11 +479,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					4:30 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
+							<div class="event-tag event-color-2 checked">
 								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -535,11 +499,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					6:30 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
+							<div class="event-tag event-color-2 checked">
 								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -557,11 +519,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					8 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
+							<div class="event-tag event-color-2 checked">
 								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -589,11 +549,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					4:30 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
+							<div class="event-tag event-color-2 checked">
 								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -611,11 +569,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					6 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
+							<div class="event-tag event-color-2 checked">
 								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -642,11 +598,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					8 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
+							<div class="event-tag event-color-2 checked">
 								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -664,11 +618,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					8 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
+							<div class="event-tag event-color-2 checked">
 								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -695,11 +647,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					3 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-2 checked">
+							<div class="event-tag event-color-2 checked">
 								<span class="">Athletic Calendar</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>

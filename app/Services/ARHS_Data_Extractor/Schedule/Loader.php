@@ -15,6 +15,8 @@ class Loader
         $timestamp = strtotime($str);
         return $timestamp - strtotime('today');
     }
+
+    // TODO AUTO DELETE OF OFFICIAL ONE
     static function load()
     {
         $DBC = DBC::getInstance();
@@ -33,7 +35,7 @@ class Loader
             $table_rows = $div->find('tbody tr');
 
             $table = [];
-            $position = 0;
+            $position = -1;
 
             foreach ($table_rows as $row) {
                 $position++;
@@ -87,11 +89,9 @@ class Loader
 
 
 
-
-
         // SQL
+        $DBC->query('DELETE FROM bell_schedules WHERE `official` = ?', [1]);
         foreach ($scheduleData as $schedule_id => $schedule) {
-//            $DBC->query('INSERT INTO `schedule_default_descriptions` (`schedule`, `description`) VALUES (?, ?)', [$schedule_id, $schedule['description']]);
             foreach ($schedule['table'] as $period) {
                 $DBC->query('INSERT INTO `bell_schedules` (`schedule_id`, `position`, `name`, `start_time`, `end_time`, `length`, `start_unix`, `end_unix`, `official`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)', [
                     $schedule_id,

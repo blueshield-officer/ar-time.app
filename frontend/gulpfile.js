@@ -16,7 +16,6 @@ import { copy } from "./gulp/tasks/copy.js"
 import { reset } from "./gulp/tasks/reset.js"
 import {scss, l_theme_scss, d_theme_scss} from "./gulp/tasks/scss.js"
 import { js } from "./gulp/tasks/js.js"
-import { js_sw } from "./gulp/tasks/js_modules.js"
 import {normalize, bootstrap_js, bootstrap_css, overlayscrollbars_css, overlayscrollbars_js} from "./gulp/tasks/presets.js"
 
 
@@ -27,14 +26,12 @@ function  watcher() {
     gulp.watch(path.watch.l_scss, l_theme_scss)
     gulp.watch(path.watch.d_scss, d_theme_scss)
     gulp.watch(path.watch.js, js)
-    gulp.watch(path.watch.js_modules, js_sw)
 }
 
 const mainTasks = gulp.parallel(
     copy,
     scss,
     js,
-    js_sw,
     bootstrap_js, bootstrap_css,
     overlayscrollbars_js, overlayscrollbars_css,
     normalize,

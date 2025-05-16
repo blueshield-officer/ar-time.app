@@ -1,0 +1,26 @@
+#notifications-page {
+    .notification-setting {
+
+    }
+    .notification-setting-hidden {
+        display: none;
+    }
+        .apple-instructions {
+            display: grid;
+            gap: 20px;
+            .apple-instructions-step {
+                padding-top: 8px;
+                border-top: 1px solid;
+                .step-highlight {
+                    margin-right: 5px;
+                    font-weight: 500;
+                }
+                .instructions-text {
+                    margin-bottom: 10px;
+                }
+                .instructions-image {
+                    width: 200px;
+                }
+        }
+    }
+}

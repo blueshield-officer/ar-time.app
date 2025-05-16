@@ -1,0 +1,1 @@
+<div class="section-divider border-background-color-theme"></div>

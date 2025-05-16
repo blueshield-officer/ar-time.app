@@ -34,6 +34,23 @@
 					<ul class="day-event-box">
 	<li class="day-event-info">
 		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/6/2/24760254/?id=0"
+				aria-label="6/2/2025 - No Classes - Grades 9-10-11">
+				No Classes - Grades 9-10-11
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+							<div class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/6/2/16222320/?id=0"
 				aria-label="6/2/2025 - Class of 2025 Graduation Ceremony">
 				Class of 2025 Graduation Ceremony
@@ -43,13 +60,11 @@
 		<span class="dateloc">
 				11 AM
 				<span class="ndash-range"> &ndash; </span>
-					11:30 AM
+					1 PM
 			(CURE Insurance Arena, 81 Hamilton Ave, Trenton, NJ 08611, USA)
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -65,41 +80,17 @@
 					<ul class="day-event-box">
 	<li class="day-event-info">
 		<span class="event-title-wrap">
-			<a class="event-link" href="/apps/events/2025/6/3/16222327/?id=0"
-				aria-label="6/3/2025 - *A Schedule - Day ">
-				*A Schedule - Day 
+			<a class="event-link" href="/apps/events/2025/6/3/24109688/?id=0"
+				aria-label="6/3/2025 - *A Schedule- Day 2">
+				*A Schedule- Day 2
 			</a>
 		</span>
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
-		</span>
-
-		<div class="full-description" style="display: none;"></div>
-	</li>
-	<li class="day-event-info">
-		<span class="event-title-wrap">
-			<a class="event-link" href="/apps/events/2025/6/3/16322407/?id=0"
-				aria-label="6/3/2025 - RHO Kappa General Membership Meeting">
-				RHO Kappa General Membership Meeting
-			</a>
-		</span>
-
-		<span class="dateloc">
-				2:30 PM
-				<span class="ndash-range"> &ndash; </span>
-					3:30 PM
-			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
-								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -123,11 +114,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -151,11 +140,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -179,11 +166,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -208,13 +193,11 @@
 		<span class="dateloc">
 				7:30 AM
 				<span class="ndash-range"> &ndash; </span>
-					8 AM
+					11 AM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -231,6 +214,23 @@
 					<ul class="day-event-box">
 	<li class="day-event-info">
 		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/6/9/24109690/?id=0"
+				aria-label="6/9/2025 - Clerical Day">
+				Clerical Day
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+							<div class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/6/9/16222328/?id=0"
 				aria-label="6/9/2025 - Make-Up Exams">
 				Make-Up Exams
@@ -242,11 +242,29 @@
 				<span class="ndash-range"> &ndash; </span>
 					8:30 AM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/6/9/24760255/?id=0"
+				aria-label="6/9/2025 - Make-up Exams">
+				Make-up Exams
+			</a>
+		</span>
+
+		<span class="dateloc">
+				8:30 AM
+				<span class="ndash-range"> &ndash; </span>
+					9 AM
+			
+							<div class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -264,11 +282,49 @@
 				<span class="ndash-range"> &ndash; </span>
 					10:30 AM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/6/9/24760257/?id=0"
+				aria-label="6/9/2025 - Grades Due">
+				Grades Due
+			</a>
+		</span>
+
+		<span class="dateloc">
+				10 AM
+				<span class="ndash-range"> &ndash; </span>
+					10:30 AM
+			
+							<div class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/6/9/24760258/?id=0"
+				aria-label="6/9/2025 - Summer School Information Submitted by">
+				Summer School Information Submitted by
+			</a>
+		</span>
+
+		<span class="dateloc">
+				11 AM
+				<span class="ndash-range"> &ndash; </span>
+					11:30 AM
+			
+							<div class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -292,11 +348,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -311,18 +365,44 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
 	</li>
 					</ul>
 				</li>
-				<li class="event-day empty no-border " id="day-11">
+				<li class="cf event-day  " id="day-11">
+					<div class="day-date-box">
+						<span class="month">Jun</span>
+						<span class="date">11</span>
+						<span class="day">Wed</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/6/11/24385097/?id=0"
+				aria-label="6/11/2025 - Golden Grads Mass- Chapel">
+				Golden Grads Mass- Chapel
+			</a>
+		</span>
+
+		<span class="dateloc">
+				11 AM
+				<span class="ndash-range"> &ndash; </span>
+					12 PM
+			
+							<div class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
 				<li class="cf event-day  " id="day-12">
 					<div class="day-date-box">
 						<span class="month">Jun</span>
@@ -340,79 +420,57 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
 	</li>
-					</ul>
-				</li>
-				<li class="cf event-day  " id="day-13">
-					<div class="day-date-box">
-						<span class="month">Jun</span>
-						<span class="date">13</span>
-						<span class="day">Fri</span>
-					</div>
-					<ul class="day-event-box">
 	<li class="day-event-info">
 		<span class="event-title-wrap">
-			<a class="event-link" href="/apps/events/2025/6/13/16222352/?id=0"
-				aria-label="6/13/2025 - Faculty Closing Day">
+			<a class="event-link" href="/apps/events/2025/6/12/16222352/?id=0"
+				aria-label="6/12/2025 - Faculty Closing Day">
 				Faculty Closing Day
 			</a>
 		</span>
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
 	</li>
-					</ul>
-				</li>
-				<li class="event-day empty no-border " id="day-14">
-				<li class="event-day empty no-border " id="day-15">
-				<li class="event-day empty no-border " id="day-16">
-				<li class="cf event-day  " id="day-17">
-					<div class="day-date-box">
-						<span class="month">Jun</span>
-						<span class="date">17</span>
-						<span class="day">Tue</span>
-					</div>
-					<ul class="day-event-box">
 	<li class="day-event-info">
 		<span class="event-title-wrap">
-			<a class="event-link" href="/apps/events/2025/6/17/16322407/?id=0"
-				aria-label="6/17/2025 - RHO Kappa General Membership Meeting">
-				RHO Kappa General Membership Meeting
+			<a class="event-link" href="/apps/events/2025/6/12/24109689/?id=0"
+				aria-label="6/12/2025 - Offices Close">
+				Offices Close
 			</a>
 		</span>
 
 		<span class="dateloc">
-				2:30 PM
+				11 AM
 				<span class="ndash-range"> &ndash; </span>
-					3:30 PM
+					12 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
 	</li>
 					</ul>
 				</li>
+				<li class="event-day empty no-border " id="day-13">
+				<li class="event-day empty no-border " id="day-14">
+				<li class="event-day empty no-border " id="day-15">
+				<li class="event-day empty no-border " id="day-16">
+				<li class="event-day empty no-border " id="day-17">
 				<li class="event-day empty no-border " id="day-18">
 				<li class="cf event-day  " id="day-19">
 					<div class="day-date-box">
@@ -431,11 +489,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -450,11 +506,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -484,11 +538,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					12 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -515,11 +567,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					12 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -546,11 +596,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					12 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -577,11 +625,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					12 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -606,11 +652,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -638,11 +682,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					12 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>

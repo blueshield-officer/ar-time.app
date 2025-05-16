@@ -1,0 +1,203 @@
+@import "vars";
+
+$weekendColor: rgb(165, 0, 0);
+
+
+.calendar-big-block {
+    display: flex;
+    flex-wrap: wrap-reverse;
+
+    .calendar-part {
+        padding: 10px 16px;
+    }
+    .calendar-day-info {
+        flex: 1 1 320px;       /* flex-grow, flex-shrink, flex-basis */
+
+
+        .local-date-str {
+            border-bottom: 1px solid;
+            padding-bottom: 5px;
+        }
+        .day-info-cal {
+            padding-top: 7px;
+        }
+    }
+    .calendar-big-part {
+        flex: 0 1 600px;       /* Takes as much space as it needs up to its content or basis */
+
+        .calendar-big {
+            min-width: 490px;
+
+            border: 1px solid;
+            .weeks {
+                border-bottom: 1px solid;
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+                li {
+                    text-align: center;
+                }
+                .li-weekend{
+                    color: $weekendColor;
+                }
+            }
+            .dates-column {
+                display: grid;
+                grid-template-columns: repeat(7, 1fr);
+                .day {
+                    display: grid;
+                    height: 77px;
+                    padding: 5px;
+                    align-content: space-between;
+                    border-right: 1px solid;
+                    border-bottom: 1px solid;
+                    .day-title {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        .day-number {
+                            font-weight: 500;
+                        }
+                        .academic-info {
+                            .testday {
+                                font-size: 12px;
+                            }
+                            .schedule {
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                    .day-additional {
+                        display: grid;
+                        gap: 5px;
+                        justify-content: space-between;
+                        .day-events {
+                            display: flex;
+                            margin-top: auto;
+                            gap: 5px;
+                            font-size: 12px;
+                            .number-holder {
+                                text-align: center;
+                                align-self: end;
+                            }
+                            .quantity-number-holder {
+                                width: 18px;
+                            }
+                            .events-important {
+                                background-color: rgba(255, 0, 0, 0.6);
+                                color: white;
+                            }
+                            .events {
+                                background-color: rgba(6, 255, 0, 0.1);
+                            }
+                            .sports {
+                                background-color: rgba(0, 0, 255, 0.1);
+                            }
+                        }
+                        .day-offs {
+                            height: 15px;
+                            display: flex;
+                            flex-wrap: wrap;
+                            align-content: end;
+                            gap: 5px;
+                            font-size: 10px;
+                            justify-content: flex-start;
+
+                            .day-off {
+                                padding: 0 5px;
+                                text-align: center;
+                            }
+                        }
+                    }
+
+                    &:nth-child(7n) {
+                        border-right: none;
+                    }
+
+                    *:nth-last-child(-n+7) {
+                        border-bottom: none;
+                    }
+                }
+                .day-day-off {
+                    background-color: rgba(11, 255, 0, 0.05);
+                }
+                .secondary-day-info {
+                    opacity: 50%;
+                }
+                .current-day {
+                    .day-number {
+                        color: white!important;
+                        border-radius: 50%;
+                        margin-left: -3px;
+                        text-align: center;
+                        width: 24px;
+                        background-color: rgba(255, 0, 0, 0.9);
+                    }
+                }
+                .calendar-day {
+                    border-right: 1px solid #ccc;
+                    border-bottom: 1px solid #ccc;
+                    padding: 10px;
+                    text-align: center;
+                }
+                .weekend {
+                    background-color: rgba(165, 0, 0, 0.03);
+                    .day-number {
+                        color: $weekendColor;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: $phone-width) {
+    .calendar-part {
+        padding: 0!important;
+    }
+    .calendar-big {
+        min-width: 200px!important;
+        margin: 10px -12px;
+
+        .weeks {
+            font-size: 12px;
+        }
+        .current-day {
+            .day-number {
+                width: 19px!important;
+            }
+        }
+        .day {
+            height: auto!important;
+            padding: 2px!important;
+            .day-title {
+                .day-number {
+                    font-size: 12px;
+                }
+                .academic-info {
+                    .testday {
+                        font-size: 6px;
+                    }
+                    .schedule {
+                        font-size: 12px;
+                    }
+                }
+            }
+            .day-additional {
+                .day-events {
+                    gap: 2px;
+                    .quantity-number-holder {
+                        font-size: 8px;
+                        width: 12px!important;
+                    }
+                }
+                .day-offs {
+                    gap: 2px;
+                    font-size: 8px!important;
+                }
+            }
+        }
+    }
+}

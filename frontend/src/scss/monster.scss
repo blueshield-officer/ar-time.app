@@ -1,8 +1,9 @@
+@use 'pages';
 @use 'fonts';
 @use 'wrapper';
 @use 'global';
 @use 'theme';
-@use 'roadmap';
+@use 'development';
 @use 'fire';
 @use 'schedules';
 @use 'auth';
@@ -11,7 +12,15 @@
 @use 'countdowns';
 @use 'info-button';
 @use 'settings';
-@use 'alert';
+@use 'alerts';
+@use 'schedule-table-on-hover';
+@use 'notifications';
+@use 'lord-of-cards';
+@use 'flip-card';
+@use 'events';
+@use 'absents';
+@use 'calendar-big';
+@use 'absents-page';
 
 body {
     font-family: Inter, serif;

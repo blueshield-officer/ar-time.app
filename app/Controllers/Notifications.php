@@ -16,8 +16,11 @@ class Notifications extends Controller
         $smartyVars = new SmartyVars();
         $smartyVars->loadBase();
         $smartyVars->loadPages();
+
+        $smartyVars->loadSessionParams();
         $smartyVars->loadSchedules();
 
+        $smartyVars->loadAdditionalAccountInfo();
 
         // data
         $this->view('pages/notifications.tpl', []

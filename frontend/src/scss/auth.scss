@@ -1,16 +1,26 @@
 @import 'vars';
 
-body {
+#authentication {
     display: flex;
     flex-direction: column;
     height: 100%;
 }
-.auth-header-text{
+
+.auth-header {
     margin-top: 32px;
     margin-left: 56px;
-    font-size: 32px;
-    font-weight: 800;
+    align-items: center;
+    display: flex;
+    .website-logo {
+        height: 40px;
+        margin-right: 15px;
+    }
+    .auth-header-text{
+        font-size: 32px;
+        font-weight: 800;
+    }
 }
+
 .auth-main {
     justify-content: center;
     align-content: center;
@@ -74,6 +84,30 @@ body {
     }
     .auth-form {
         display: grid;
+        .auth-description {
+            margin-bottom: 10px;
+        }
+        .code-input {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+            .verificationCodeElement {
+                height: 45px;
+                width: 45px;
+
+                border: 1px solid grey;
+
+                text-align: center;
+                justify-content: center;
+
+                padding: 10px;
+                border-radius: 5px;
+            }
+        }
+        .code-info {
+            display: flex;
+            justify-content: space-between;
+        }
         .auth-error {
             color: #dc3545;
             margin-bottom: 16px;
@@ -101,6 +135,10 @@ body {
         .submit-button:hover {
             filter: $hover-filter;
         }
+    }
+    .forgot-password-line {
+        display: flex;
+        justify-content: space-between;
     }
 }
 .text-join-now {

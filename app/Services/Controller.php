@@ -33,9 +33,24 @@ class Controller
         $this->view->registerPlugin('function', 'format', function ($array){
             return preg_replace('/\s+/', '', $array['str']);
         });
+        $this->view->registerPlugin('function', 'periodToNumber', function ($array){
+            $period = $array['p'];
+            if (str_contains(strtolower($period), 'period')) {
+                preg_match('/\d+/', $period, $matches);
+                return (int)$matches[0];
+            }
+            else {
+                return $period;
+            }
+        });
+        $this->view->registerPlugin('function', 'array_keys', function ($array){
+            $array = $array['array'];
+            return array_keys($array);
+        });
         $this->view->registerPlugin('function', 'findBellTime', function ($array){
             $bells = $array['bells'];
             $type = $array['type'];
+
             if ($type === 'start'){
                 $lastPeriod = $bells[array_key_first($bells)];
                 if (!is_null($lastPeriod['start_unix'])){
@@ -64,7 +79,44 @@ class Controller
             }
             return strtolower(substr($str, 0, -1));
         });
+        $this->view->registerPlugin("function", "gradeIntToClassStr", function ($array) {
+            $grade = $array['grade'];
+            return match ($grade) {
+                9 => 'freshman',
+                10 => 'sophomore',
+                11 => 'junior',
+                12 => 'senior',
+                default => $grade,
+            };
+        });
+        $this->view->registerPlugin("function", "gradeIntToStr", function ($array) {
+            $grade = $array['grade'];
+            $plural = $array['plural'];
+            if ($plural === '1'){
+                return match ($grade) {
+                    9 => 'Freshmen',
+                    10 => 'Sophomores',
+                    11 => 'Juniors',
+                    12 => 'Seniors',
+                    default => $grade,
+                };
+            }
+            else {
+                return match ($grade) {
+                    9 => 'Freshman',
+                    10 => 'Sophomore',
+                    11 => 'Junior',
+                    12 => 'Senior',
+                    default => $grade,
+                };
+            }
+        });
+        $this->view->registerPlugin("function", "dateYtsTojfY", function ($array) {
+            $date = $array['date'];
+            return (\DateTime::createFromFormat('Y-m-d', $date))->format('F j, Y');
+        });
     }
+
     protected function assign($key, $value)
     {
         $this->view->assign($key, $value);
@@ -76,8 +128,23 @@ class Controller
     }
     protected function redirect($url){
         header('Location: ' . $url);
+        exit();
     }
     protected function render($template, $data = [])
+    {
+        $this->view->assign($data);
+        return $this->view->fetch($template);
+    }
 
-    {}
+    static function renderStatic($template, $data = [])
+    {
+        $smarty = new \Smarty();
+        $smarty->setTemplateDir($_SERVER['DOCUMENT_ROOT'] . '/view/');
+        $smarty->setCompileDir($_SERVER['DOCUMENT_ROOT'] . '/view/cache/templates_c/');
+        $smarty->setConfigDir($_SERVER['DOCUMENT_ROOT'] . '/view/cache/configs/');
+        $smarty->setCacheDir($_SERVER['DOCUMENT_ROOT'] . '/view/cache/cache/');
+
+        $smarty->assign($data);
+        return $smarty->fetch($template);
+    }
 }

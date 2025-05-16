@@ -23,7 +23,7 @@ class Countdowns extends Controller
         $smartyVars->loadPages();
 
         $smartyVars->loadNextDayOff();
-        $smartyVars->loadNextSchedule();
+        $smartyVars->loadNextSchedules();
         $smartyVars->loadHolidays();
         $smartyVars->loadAcademics();
 

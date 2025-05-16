@@ -1,0 +1,36 @@
+.flip-card {
+    perspective: 1200px;
+    display: block;
+}
+
+.flip-card-inner {
+    width: 100%;
+    display: grid; // allow front/back to stack in grid
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateX(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    grid-area: 1 / 1;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid rgb(217, 217, 217);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flip-card-front {
+    z-index: 2;
+}
+
+.flip-card-back {
+    transform: rotateX(180deg);
+}

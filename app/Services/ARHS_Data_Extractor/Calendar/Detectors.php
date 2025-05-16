@@ -2,6 +2,8 @@
 
 namespace App\Services\ARHS_Data_Extractor\Calendar;
 
+use App\Services\ARHS_Data_Extractor\FormattingType;
+
 class Detectors
 {
     static function isSchoolClosed($str)
@@ -69,29 +71,38 @@ class Detectors
 
     static function isRetreat($str)
     {
-        if (str_contains($str, 'no classes') && str_contains($str, 'grades')){
-            $str = FormattingType::heavy(str_replace('-', 6, $str));
-            $gradesArray = explode('grades', $str);
-            $grades = (int)$gradesArray[count($gradesArray) - 1];
-            $gradesArray = array_map('intval', explode(6, $grades));
-            if (count($gradesArray) === 3){
-                return $gradesArray;
-            }
-            else {
-                return false;
-            }
-        }
+//        if (str_contains($str, 'no classes') && str_contains($str, 'grades')){
+//            $str = FormattingType::heavy(str_replace('-', 6, $str));
+//            $gradesArray = explode('grades', $str);
+//            $grades = (int)$gradesArray[count($gradesArray) - 1];
+//            $gradesArray = array_map('intval', explode(6, $grades));
+//            echo '<br>';
+//            echo $str;
+//            var_dump($gradesArray);
+//            echo '<br>';
+//            if (count($gradesArray) === 3){
+//                return $gradesArray;
+//            }
+//            else {
+//                return false;
+//            }
+//        }
         if (str_contains($str, 'retreat')){
             $classes = ['freshman', 'sophomore', 'junior', 'senior'];
             foreach ($classes as $element){
                 if (str_contains($str, $element)){
-                    return array_diff([9, 10, 11, 12], [match ($element){
+                    $retreatGrade = match ($element){
                         'freshman' => 9,
                         'sophomore' => 10,
                         'junior' => 11,
                         'senior' => 12,
                         'default' => 'error'
-                    }]);
+                    };
+                    $dayOffGrades = array_diff([9, 10, 11, 12], [$retreatGrade]);
+                    return [
+                        'retreatGrade' => $retreatGrade,
+                        'dayOffGrades' => $dayOffGrades
+                    ];
                 }
             }
         }

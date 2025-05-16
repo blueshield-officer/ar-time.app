@@ -11,8 +11,12 @@ $green: #28b463;
 $yellow: #d4ac0d;
 
 
-$regular-sideBar-width: 210px;
-$shorten-sideBar-width: 75px;
+$regular-sideBar-width: 195px;
+$shorten-sideBar-width: 61px;
+
+$phone-width: 768px;
+
+$date-bar-height: 30px;
 
 
 $secondary-color: rgba(159, 159, 159, 1);
@@ -21,10 +25,12 @@ $border-params: 1px solid;
 $default-border-color: rgb(217, 217, 217);
 $background-color-fill: rgba(238, 238, 238, 1);
 
-$top-bar-height: 71px;
-$top-bar-logo-height: 60px;
+$top-bar-height: 61px;
+$top-bar-logo-height: 50px;
 $date-bar: 30px;
 
 $hover-filter: invert(10%);
 
 $base-transition-time: 0.3s;
+
+$bars-top-distance: calc($top-bar-height + $date-bar-height)

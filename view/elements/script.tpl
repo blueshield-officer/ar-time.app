@@ -5,13 +5,14 @@
         }
         else {
             try {
-                const result = JSON.parse(str);
+                const result = JSON.parse(`str`);
                 return result;
             } catch (e) {
                 return str;
             }
         }
     }
+
     async function getData(url) {
         try {
             const response = await fetch(url);
@@ -25,8 +26,11 @@
             console.error(error.message);
         }
     }
-
     const currentDate = new Date()
+    const localDate = YmdDateToDate('{$localDateJS}')
+    const localDateGlobal = YmdDateToDate('{$localDateGlobal}')
     const date = '{$localDate}';
     const currentScheduleTable = analyzeSQLdata('{$currentTable}')
+    const isLoggedIn = {$loggedIn|@json_encode};
+
 </script>

@@ -17,9 +17,8 @@ function toggleThemes(){
 }
 
 async function toggleSideBar(status) {
-    console.log(status);
-    document.cookie = "sideBar=";
-    document.cookie = "sideBar=" + status;
+    setPermaCookie('sideBar', status)
+    console.log(getCookieValue('sideBar') );
 
     const transition = {
         time: '0.3s',
@@ -50,13 +49,13 @@ async function toggleSideBar(status) {
     const topBarObject = document.getElementById('top-bar');
     const collapse = document.getElementById('collapse-button');
     const collapseIcon = collapse.getElementsByClassName('icon')[0]
+    const websiteLogoSection = document.getElementById('website-logo-section')
 
-    const websiteLogo = document.getElementById('website-logo')
-    const websiteLogoDivider = document.getElementById('website-logo-divider')
-    const websiteLogoDividerLine = document.getElementById('website-logo-divider-line')
-    const websiteTitle = document.getElementById('website-title')
-
-    const content = document.getElementById('content');
+    // const websiteLogoDivider = document.getElementById('website-logo-divider')
+    // const websiteLogoDividerLine = document.getElementById('website-logo-divider-line')
+    // const websiteTitle = document.getElementById('website-title')
+    //
+    // const content = document.getElementById('screen');
 
     // if (animation) {
     //     transitionTo(topBarObject, transition.time)
@@ -79,11 +78,12 @@ async function toggleSideBar(status) {
     changeStatus(topBarObject, 'top-bar', status)
     changeStatus(collapse, 'collapse-button', status)
     changeStatus(collapseIcon, 'icon', status)
-    changeStatus(websiteLogo, 'icon-holder', status)
-    changeStatus(websiteLogoDivider, 'website-divider-holder', status)
-    changeStatus(websiteLogoDividerLine, 'website-divider', status)
-    changeStatus(websiteTitle, 'logoTitle', status)
-    changeStatus(content, 'content', status)
+    changeStatus(websiteLogoSection, 'logo-section', status)
+
+    // changeStatus(websiteLogoDivider, 'website-divider-holder', status)
+    // changeStatus(websiteLogoDividerLine, 'website-divider', status)
+    // changeStatus(websiteTitle, 'logoTitle', status)
+    // changeStatus(content, 'content', status)
 
 
     if (status === 0) {
@@ -105,3 +105,12 @@ async function toggleSideBar(status) {
     // await removeTimeOut(content, transition.milliseconds);
 }
 
+function turnBar(x){
+    x.classList.toggle("turn-bar");
+    if (document.getElementById("side-bar").offsetLeft === -210){
+        document.getElementById("side-bar").style.left = '0px'
+    }
+    else {
+        document.getElementById("side-bar").style.left = '-210px'
+    }
+}

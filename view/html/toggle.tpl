@@ -1,5 +1,5 @@
 <div class="toggle-switch">
-    <input {if isset($onchange)}onchange={$onchange}{/if} type="checkbox" id="toggle-{$id}" class="toggle-input" {if isset($checked) === true && $checked === 'true'}checked='true'{/if}/>
+    <input {if isset($onchange)}onchange={$onchange}{/if} type="checkbox" id="toggle-{$id}" class="toggle-input" {if isset($checked) === true && ($checked === 'true' || $checked === 1)}checked='true'{/if}/>
     <label id="label-{$id}" for="toggle-{$id}" class="toggle-label"></label>
 </div>
 <style>
@@ -41,7 +41,6 @@
         border-radius: 50%;
         top: 2px;
         left: 2px;
-        background-color: #fff;
         box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
         transition: transform 0.3s;
     }

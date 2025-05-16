@@ -22,7 +22,7 @@ class DaySports {
         $this->gender = $gender;
         $this->side = $side;
         $this->varsity = $varsity;
-        $this->opponent = $opponent;
+        $this->opponent = ($opponent === 'OPEN') ? null : $opponent;
         $this->description = $description;;
         $this->location = $location;
         $this->special = $special;
@@ -40,7 +40,13 @@ class DaySports {
             'wrs' => 'Wrestling',
             'sw' => 'Swimming',
             'ih' => 'Ice Hockey',
-            'sb' => 'Soccer',
+            'sb', 'soc' => 'Soccer',
+            'tn' => 'Tennis',
+            'fbl' => 'Football',
+            'xc' => 'Cross Country',
+            'fb', 'fh' => 'Field Hockey',
+            'ffb' => 'Flag Football',
+            'itr' => 'Indoor Track',
             default => ucwords($sport)
         };
     }
@@ -54,10 +60,10 @@ class DaySports {
             return;
         }
         if (count($timeArray) > 0){
-            $this->time_start = (new \DateTime($timeArray[0]))->format('Y-m-d H:i:s');
+            $this->time_start = $this->date . ' ' . (new \DateTime($timeArray[0]))->format('H:i:s');
         }
         if (count($timeArray) === 2){
-            $this->time_end = (new \DateTime($timeArray[1]))->format('Y-m-d H:i:s');
+            $this->time_end = $this->date . ' ' . (new \DateTime($timeArray[1]))->format('H:i:s');
         }
     }
     function getDate()

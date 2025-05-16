@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    if (document.getElementById('countdowns')) {
+    if (document.getElementById('countdowns-page')) {
 
         function processDataTwo(date1, date2, currentDate, index, type){
             function addStylesAndTextToImportantTitle(descriptions, title){
@@ -69,11 +69,11 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
         function setDate(index, dateYmd, type){
-            const string = dateToString(YmdDateToDate(dateYmd))
+            const string = dateToFullString(YmdDateToDate(dateYmd))
             object = document.getElementById('date-' + type + '-' + index)
             if (object){
                 object.innerText = string
-                document.getElementById('link-' + index).href += YmdDateToUS(dateYmd)
+                document.getElementById('link-' + index).href += dateToUS(dateYmd)
             }
         }
         function processData(dataArray, currentDate, index, type){
@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
             processData(gradeCountdowns, currentDate, 'juniors', type)
 
         }
-        if (gradeCountdowns.seniors != null){
+        if (gradeCountdowns.seniors != null) {
             processData(gradeCountdowns, currentDate, 'seniors', type)
         }
 

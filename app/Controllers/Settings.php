@@ -6,8 +6,8 @@ use App\Services\CacheOperator;
 use App\Services\Controller;
 use App\Services\DBC;
 use App\Services\RedisOperator;
+use App\Services\Session;
 use App\Services\SmartyVars;
-use WhichBrowser\Parser;
 
 class Settings extends Controller
 {
@@ -19,6 +19,12 @@ class Settings extends Controller
         $smartyVars->loadSchedules();
 
         $smartyVars->loadSettings();
+
+        if (Session::isLogedIn()){
+            $smartyVars->loadSchoolFaculty();
+            $smartyVars->loadUserSchoolFaculty();
+            $smartyVars->loadAdditionalAccountInfo();
+        }
 
         // data
         $this->view('pages/settings.tpl', []

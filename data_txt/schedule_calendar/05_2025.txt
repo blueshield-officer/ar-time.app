@@ -41,11 +41,60 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/1/24008955/?id=0"
+				aria-label="5/1/2025 - Baseball Senior Night">
+				Baseball Senior Night
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+							<div class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/1/24197482/?id=0"
+				aria-label="5/1/2025 - CSC/CRS Month of Mary Baby Items Collection Drive ">
+				CSC/CRS Month of Mary Baby Items Collection Drive 
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+							<div class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/1/24197483/?id=0"
+				aria-label="5/1/2025 - CSC/CRS Month of Mary Baby Items Collection Drive ">
+				CSC/CRS Month of Mary Baby Items Collection Drive 
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+							<div class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -60,11 +109,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -88,11 +135,43 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/2/24197482/?id=0"
+				aria-label="5/2/2025 - CSC/CRS Month of Mary Baby Items Collection Drive ">
+				CSC/CRS Month of Mary Baby Items Collection Drive 
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+							<div class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/2/24197483/?id=0"
+				aria-label="5/2/2025 - CSC/CRS Month of Mary Baby Items Collection Drive ">
+				CSC/CRS Month of Mary Baby Items Collection Drive 
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+							<div class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -107,33 +186,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
-		</span>
-
-		<div class="full-description" style="display: none;"></div>
-	</li>
-	<li class="day-event-info">
-		<span class="event-title-wrap">
-			<a class="event-link" href="/apps/events/2025/5/2/22826795/?id=0"
-				aria-label="5/2/2025 - Jack and Jill Bingo">
-				Jack and Jill Bingo
-			</a>
-		</span>
-
-		<span class="dateloc">
-				6 PM
-				<span class="ndash-range"> &ndash; </span>
-					10 PM
-			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
-								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -151,11 +206,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					11 PM
 			(Philadelphia Ballroom, 2014 Hornig Rd, Philadelphia, PA 19116, USA)
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -171,25 +224,6 @@
 					<ul class="day-event-box">
 	<li class="day-event-info">
 		<span class="event-title-wrap">
-			<a class="event-link" href="/apps/events/2025/5/3/16222285/?id=0"
-				aria-label="5/3/2025 - Make-up Retreat">
-				Make-up Retreat
-			</a>
-		</span>
-
-		<span class="dateloc">
-			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
-								<span class="">Events</span>
-							</li>
-			</ul>
-		</span>
-
-		<div class="full-description" style="display: none;"></div>
-	</li>
-	<li class="day-event-info">
-		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/5/3/16222350/?id=0"
 				aria-label="5/3/2025 - SAT Digital Test">
 				SAT Digital Test
@@ -199,13 +233,31 @@
 		<span class="dateloc">
 				7:30 AM
 				<span class="ndash-range"> &ndash; </span>
-					8 AM
+					11 AM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/3/16222285/?id=0"
+				aria-label="5/3/2025 - Make-up Retreat">
+				Make-up Retreat
+			</a>
+		</span>
+
+		<span class="dateloc">
+				8 AM
+				<span class="ndash-range"> &ndash; </span>
+					11:30 AM
+			
+							<div class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -230,11 +282,26 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/5/24197482/?id=0"
+				aria-label="5/5/2025 - CSC/CRS Month of Mary Baby Items Collection Drive ">
+				CSC/CRS Month of Mary Baby Items Collection Drive 
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+							<div class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -250,13 +317,31 @@
 		<span class="dateloc">
 				8 AM
 				<span class="ndash-range"> &ndash; </span>
-					9 AM
+					12 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/5/24362867/?id=0"
+				aria-label="5/5/2025 - JV Cheerleaders Visit to Harrisburg">
+				JV Cheerleaders Visit to Harrisburg
+			</a>
+		</span>
+
+		<span class="dateloc">
+				8:45 AM
+				<span class="ndash-range"> &ndash; </span>
+					3:15 PM
+			
+							<div class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -274,11 +359,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					4 PM
 			(N102)
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -302,11 +385,26 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/6/24197482/?id=0"
+				aria-label="5/6/2025 - CSC/CRS Month of Mary Baby Items Collection Drive ">
+				CSC/CRS Month of Mary Baby Items Collection Drive 
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+							<div class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -322,13 +420,11 @@
 		<span class="dateloc">
 				8 AM
 				<span class="ndash-range"> &ndash; </span>
-					9 AM
+					12 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -344,13 +440,11 @@
 		<span class="dateloc">
 				12 PM
 				<span class="ndash-range"> &ndash; </span>
-					1 PM
+					3 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -368,11 +462,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					3:30 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -390,11 +482,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					3:30 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -412,11 +502,29 @@
 				<span class="ndash-range"> &ndash; </span>
 					3:30 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/6/23294655/?id=0"
+				aria-label="5/6/2025 - Class of 2028 Scholarship Dinner">
+				Class of 2028 Scholarship Dinner
+			</a>
+		</span>
+
+		<span class="dateloc">
+				6 PM
+				<span class="ndash-range"> &ndash; </span>
+					8 PM
+			
+							<div class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -440,11 +548,26 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/7/24197482/?id=0"
+				aria-label="5/7/2025 - CSC/CRS Month of Mary Baby Items Collection Drive ">
+				CSC/CRS Month of Mary Baby Items Collection Drive 
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+							<div class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -460,13 +583,11 @@
 		<span class="dateloc">
 				8 AM
 				<span class="ndash-range"> &ndash; </span>
-					9 AM
+					12 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -484,11 +605,29 @@
 				<span class="ndash-range"> &ndash; </span>
 					3 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/7/22668869/?id=0"
+				aria-label="5/7/2025 - Medicare Presentation for AR Alumni">
+				Medicare Presentation for AR Alumni
+			</a>
+		</span>
+
+		<span class="dateloc">
+				6 PM
+				<span class="ndash-range"> &ndash; </span>
+					8 PM
+			
+							<div class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -512,11 +651,26 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/8/24197482/?id=0"
+				aria-label="5/8/2025 - CSC/CRS Month of Mary Baby Items Collection Drive ">
+				CSC/CRS Month of Mary Baby Items Collection Drive 
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+							<div class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -531,11 +685,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -551,13 +703,31 @@
 		<span class="dateloc">
 				8 AM
 				<span class="ndash-range"> &ndash; </span>
-					9 AM
+					12 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/8/23108286/?id=0"
+				aria-label="5/8/2025 - Spring Shopping Night ">
+				Spring Shopping Night 
+			</a>
+		</span>
+
+		<span class="dateloc">
+				5:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					7:30 PM
+			
+							<div class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -575,11 +745,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					7 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -603,11 +771,26 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/9/24197482/?id=0"
+				aria-label="5/9/2025 - CSC/CRS Month of Mary Baby Items Collection Drive ">
+				CSC/CRS Month of Mary Baby Items Collection Drive 
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+							<div class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -622,11 +805,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -642,13 +823,11 @@
 		<span class="dateloc">
 				8 AM
 				<span class="ndash-range"> &ndash; </span>
-					9 AM
+					12 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -668,11 +847,9 @@
 					5/10/2025,
 					12 AM
 			(Adventure Aquarium, 1 Riverside Dr, Camden, NJ 08103, USA)
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -688,25 +865,6 @@
 					<ul class="day-event-box">
 	<li class="day-event-info">
 		<span class="event-title-wrap">
-			<a class="event-link" href="/apps/events/2025/5/10/17429823/?id=0"
-				aria-label="5/10/2025 - Fitzpatrick Dance Recital">
-				Fitzpatrick Dance Recital
-			</a>
-		</span>
-
-		<span class="dateloc">
-			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
-								<span class="">Events</span>
-							</li>
-			</ul>
-		</span>
-
-		<div class="full-description" style="display: none;"></div>
-	</li>
-	<li class="day-event-info">
-		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/5/9/16195186/?id=0"
 				aria-label="5/9/2025 - Senior Prom">
 				Senior Prom
@@ -720,11 +878,9 @@
 					5/10/2025,
 					12 AM
 			(Adventure Aquarium, 1 Riverside Dr, Camden, NJ 08103, USA)
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -749,11 +905,26 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/12/24197482/?id=0"
+				aria-label="5/12/2025 - CSC/CRS Month of Mary Baby Items Collection Drive ">
+				CSC/CRS Month of Mary Baby Items Collection Drive 
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+							<div class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -769,13 +940,11 @@
 		<span class="dateloc">
 				8 AM
 				<span class="ndash-range"> &ndash; </span>
-					9 AM
+					12 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -793,18 +962,16 @@
 				<span class="ndash-range"> &ndash; </span>
 					4 PM
 			(N102)
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
 	</li>
 					</ul>
 				</li>
-				<li class="cf event-day  " id="day-13">
+				<li class="cf event-day  current-day " id="day-13">
 					<div class="day-date-box">
 						<span class="month">May</span>
 						<span class="date">13</span>
@@ -821,11 +988,26 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/13/24197482/?id=0"
+				aria-label="5/13/2025 - CSC/CRS Month of Mary Baby Items Collection Drive ">
+				CSC/CRS Month of Mary Baby Items Collection Drive 
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+							<div class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -840,11 +1022,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -862,11 +1042,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					3:30 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -890,11 +1068,26 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/14/24197482/?id=0"
+				aria-label="5/14/2025 - CSC/CRS Month of Mary Baby Items Collection Drive ">
+				CSC/CRS Month of Mary Baby Items Collection Drive 
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+							<div class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -910,13 +1103,11 @@
 		<span class="dateloc">
 				8 AM
 				<span class="ndash-range"> &ndash; </span>
-					9 AM
+					12 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -934,11 +1125,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					3 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -962,11 +1151,26 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/15/24197482/?id=0"
+				aria-label="5/15/2025 - CSC/CRS Month of Mary Baby Items Collection Drive ">
+				CSC/CRS Month of Mary Baby Items Collection Drive 
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+							<div class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -981,11 +1185,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1000,11 +1202,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1028,30 +1228,26 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
 	</li>
 	<li class="day-event-info">
 		<span class="event-title-wrap">
-			<a class="event-link" href="/apps/events/2025/5/16/22945554/?id=0"
-				aria-label="5/16/2025 - Senior Trip ">
-				Senior Trip 
+			<a class="event-link" href="/apps/events/2025/5/16/24197482/?id=0"
+				aria-label="5/16/2025 - CSC/CRS Month of Mary Baby Items Collection Drive ">
+				CSC/CRS Month of Mary Baby Items Collection Drive 
 			</a>
 		</span>
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1069,18 +1265,44 @@
 				<span class="ndash-range"> &ndash; </span>
 					9 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
 	</li>
 					</ul>
 				</li>
-				<li class="event-day empty no-border " id="day-17">
+				<li class="cf event-day  " id="day-17">
+					<div class="day-date-box">
+						<span class="month">May</span>
+						<span class="date">17</span>
+						<span class="day">Sat</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/17/23295534/?id=0"
+				aria-label="5/17/2025 - Ryan Football Alumni Association Event - Outside ">
+				Ryan Football Alumni Association Event - Outside 
+			</a>
+		</span>
+
+		<span class="dateloc">
+				3 PM
+				<span class="ndash-range"> &ndash; </span>
+					7 PM
+			
+							<div class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
 				<li class="cf event-day  " id="day-18">
 					<div class="day-date-box">
 						<span class="month">May</span>
@@ -1101,11 +1323,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					6 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1121,6 +1341,57 @@
 					<ul class="day-event-box">
 	<li class="day-event-info">
 		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/19/24109637/?id=0"
+				aria-label="5/19/2025 - *A Schedule- Day 2">
+				*A Schedule- Day 2
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+							<div class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/19/24197482/?id=0"
+				aria-label="5/19/2025 - CSC/CRS Month of Mary Baby Items Collection Drive ">
+				CSC/CRS Month of Mary Baby Items Collection Drive 
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+							<div class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/19/24058500/?id=0"
+				aria-label="5/19/2025 - Senior Exams: Theology, Physics, Allied Health, and Forensics">
+				Senior Exams: Theology, Physics, Allied Health, and Forensics
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+							<div class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/5/19/16295736/?id=0"
 				aria-label="5/19/2025 - Varsity Mathletes Practice">
 				Varsity Mathletes Practice
@@ -1132,11 +1403,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					4 PM
 			(N102)
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1152,6 +1421,23 @@
 					<ul class="day-event-box">
 	<li class="day-event-info">
 		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/20/24109661/?id=0"
+				aria-label="5/20/2025 - *A Schedule- Day 3">
+				*A Schedule- Day 3
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+							<div class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/5/20/16222301/?id=0"
 				aria-label="5/20/2025 - Archdiocesan Honors Convocation">
 				Archdiocesan Honors Convocation
@@ -1160,11 +1446,83 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/20/24197482/?id=0"
+				aria-label="5/20/2025 - CSC/CRS Month of Mary Baby Items Collection Drive ">
+				CSC/CRS Month of Mary Baby Items Collection Drive 
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+							<div class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/20/24058502/?id=0"
+				aria-label="5/20/2025 - Senior Exams: Psychology, Comparative Government, and World Language">
+				Senior Exams: Psychology, Comparative Government, and World Language
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+							<div class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/20/23336539/?id=0"
+				aria-label="5/20/2025 - Vision Zero Student Focus Event">
+				Vision Zero Student Focus Event
+			</a>
+		</span>
+
+		<span class="dateloc">
+				9:30 AM
+				<span class="ndash-range"> &ndash; </span>
+					11:30 AM
+			
+							<div class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/20/24327538/?id=0"
+				aria-label="5/20/2025 - Newspaper Meeting in 257 After School">
+				Newspaper Meeting in 257 After School
+			</a>
+		</span>
+
+		<span class="dateloc">
+				2:30 PM
+				<span class="ndash-range"> &ndash; </span>
+					3:30 PM
+			
+							<div class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1182,11 +1540,9 @@
 				<span class="ndash-range"> &ndash; </span>
 					3:30 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1202,19 +1558,51 @@
 					<ul class="day-event-box">
 	<li class="day-event-info">
 		<span class="event-title-wrap">
-			<a class="event-link" href="/apps/events/2025/5/21/22825261/?id=0"
-				aria-label="5/21/2025 - Dedication of Courtyard">
-				Dedication of Courtyard
+			<a class="event-link" href="/apps/events/2025/5/21/24109662/?id=0"
+				aria-label="5/21/2025 - *A Schedule- Day 4">
+				*A Schedule- Day 4
 			</a>
 		</span>
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/21/24197482/?id=0"
+				aria-label="5/21/2025 - CSC/CRS Month of Mary Baby Items Collection Drive ">
+				CSC/CRS Month of Mary Baby Items Collection Drive 
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+							<div class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/21/24058504/?id=0"
+				aria-label="5/21/2025 - Senior Exams: ELA, Trig/PreCalc, and Accounting">
+				Senior Exams: ELA, Trig/PreCalc, and Accounting
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+							<div class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1228,15 +1616,33 @@
 		</span>
 
 		<span class="dateloc">
-				1:40 PM
+				2:40 PM
 				<span class="ndash-range"> &ndash; </span>
-					2:10 PM
+					3:40 PM
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/21/24058821/?id=0"
+				aria-label="5/21/2025 - Military Academy Presentation">
+				Military Academy Presentation
+			</a>
+		</span>
+
+		<span class="dateloc">
+				6 PM
+				<span class="ndash-range"> &ndash; </span>
+					8 PM
+			
+							<div class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1253,18 +1659,33 @@
 	<li class="day-event-info">
 		<span class="event-title-wrap">
 			<a class="event-link" href="/apps/events/2025/5/22/16222307/?id=0"
-				aria-label="5/22/2025 - Field Day">
-				Field Day
+				aria-label="5/22/2025 - *Special E-Day 5 Spring Pep Rally &amp; Memorial Day Tribute">
+				*Special E-Day 5 Spring Pep Rally &amp; Memorial Day Tribute
 			</a>
 		</span>
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/22/24197482/?id=0"
+				aria-label="5/22/2025 - CSC/CRS Month of Mary Baby Items Collection Drive ">
+				CSC/CRS Month of Mary Baby Items Collection Drive 
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+							<div class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1288,11 +1709,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1307,11 +1726,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1337,11 +1754,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1356,18 +1771,75 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
 	</li>
 					</ul>
 				</li>
-				<li class="event-day empty no-border " id="day-27">
+				<li class="cf event-day  " id="day-27">
+					<div class="day-date-box">
+						<span class="month">May</span>
+						<span class="date">27</span>
+						<span class="day">Tue</span>
+					</div>
+					<ul class="day-event-box">
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/27/24109675/?id=0"
+				aria-label="5/27/2025 - *A Schedule- Day 5">
+				*A Schedule- Day 5
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+							<div class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/27/16222340/?id=0"
+				aria-label="5/27/2025 - Senior BBQ">
+				Senior BBQ
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+							<div class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/27/24058505/?id=0"
+				aria-label="5/27/2025 - Senior Make-Up Exams">
+				Senior Make-Up Exams
+			</a>
+		</span>
+
+		<span class="dateloc">
+			
+							<div class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+					</ul>
+				</li>
 				<li class="cf event-day  " id="day-28">
 					<div class="day-date-box">
 						<span class="month">May</span>
@@ -1377,19 +1849,34 @@
 					<ul class="day-event-box">
 	<li class="day-event-info">
 		<span class="event-title-wrap">
-			<a class="event-link" href="/apps/events/2025/5/28/16222340/?id=0"
-				aria-label="5/28/2025 - Senior BBQ">
-				Senior BBQ
+			<a class="event-link" href="/apps/events/2025/5/28/24109687/?id=0"
+				aria-label="5/28/2025 - *A Schedule- Day 6">
+				*A Schedule- Day 6
 			</a>
 		</span>
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
+		</span>
+
+		<div class="full-description" style="display: none;"></div>
+	</li>
+	<li class="day-event-info">
+		<span class="event-title-wrap">
+			<a class="event-link" href="/apps/events/2025/5/28/22945554/?id=0"
+				aria-label="5/28/2025 - Senior Trip ">
+				Senior Trip 
+			</a>
+		</span>
+
+		<span class="dateloc">
+			(Hersheypark, 100 Hersheypark Dr, Hershey, PA 17033, USA)
+							<div class="event-tag event-color-1 checked">
+								<span class="">Events</span>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1413,11 +1900,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1432,11 +1917,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1460,11 +1943,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1479,11 +1960,9 @@
 
 		<span class="dateloc">
 			
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
@@ -1499,13 +1978,11 @@
 		<span class="dateloc">
 				7 PM
 				<span class="ndash-range"> &ndash; </span>
-					8 PM
+					8:30 PM
 			(Cathedral Basilica of Saints Peter and Paul, 1723 Race St, Philadelphia, PA 19103, USA)
-			<ul class="event-tag-list">
-							<li class="event-tag event-color-1 checked">
+							<div class="event-tag event-color-1 checked">
 								<span class="">Events</span>
-							</li>
-			</ul>
+							</div>
 		</span>
 
 		<div class="full-description" style="display: none;"></div>
