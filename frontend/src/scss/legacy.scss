@@ -1,0 +1,87 @@
+@import "vars";
+
+#legacy-page {
+    #website-logo-divider {
+        height: 20px;
+    }
+    #website-title {
+        width: 100px;
+        border-radius: 0 5px 5px 0;
+    }
+    #website-logo {
+        border-radius: 5px 0 0 5px;
+    }
+
+    .day-info-column {
+        display: grid;
+        gap: 10px;
+    }
+
+    .bell-table-column {
+        .bell-table {
+            width: 100%;
+
+            tr {
+                text-align: center;
+                border-bottom: 1px solid;
+
+                td, th {
+                    padding: 7px;
+                }
+            }
+            tr:first-child {
+                td:first-child {
+                    border-top-left-radius: 5px;
+                }
+                td:last-child {
+                    border-top-right-radius: 5px;
+                }
+            }
+            tr:last-child {
+                border-bottom: 0;
+                td:first-child {
+                    border-bottom-left-radius: 5px;
+                }
+                td:last-child {
+                    border-bottom-right-radius: 5px;
+                }
+            }
+        }
+    }
+    #countdown-time {
+        text-align: center;
+        font-size: 56px;
+        font-weight: bold;
+        font-variant-numeric: tabular-nums;
+    }
+    #countdown-label {
+        font-size: 22px;
+    }
+    #countdown-progress-info {
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    #countdown-progress-percentage {
+        font-variant-numeric: tabular-nums;
+    }
+    #countdown-progress-bar, #countdown-progress-bar-filled {
+        height: 10px;
+    }
+    #countdown-progress-bar-filled {
+        display: flex;
+    }
+
+    .absent-holder {
+        margin-top: 24px;
+        margin-bottom: 36px;
+    }
+
+    @media screen and (max-width: $phone-width) {
+        .bell-table-column {
+            padding-top: 24px;
+        }
+    }
+}

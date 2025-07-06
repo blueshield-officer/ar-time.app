@@ -48,6 +48,7 @@ class SmartyVars
     {
         $this->varsArray['userAgent'] = $_SERVER['HTTP_USER_AGENT'];
         $this->varsArray['theme'] = $_COOKIE['theme'];
+        $this->varsArray['design'] = $_COOKIE['design'];
         $this->varsArray['loggedIn'] = Session::isLogedIn();
         if ($this->varsArray['loggedIn']){
             $this->varsArray['userName'] = $_SESSION['userName'];
@@ -115,6 +116,13 @@ class SmartyVars
         $this->varsArray['currentTable'] = $tableObject;
     }
 
+    public function setNextDateToLocalDate()
+    {
+        $this->localDate = $this->cacheOperator->fetch('calendar_schedules', 'next', false, false)['date'];
+
+        $this->varsArray['localDate'] = $this->localDate;
+    }
+
 
     public function loadPages()
     {
@@ -174,6 +182,7 @@ class SmartyVars
             $this->varsArray['schedule'] = $schedule;
         }
     }
+
     public function loadEvents($json = false)
     {
         $this->varsArray['events'] = $this->cacheOperator->fetch('calendar_events', $this->localDate, $json);

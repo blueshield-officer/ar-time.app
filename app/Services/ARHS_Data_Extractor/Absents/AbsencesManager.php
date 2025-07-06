@@ -326,7 +326,7 @@ class AbsencesManager
                 $this->DBC->query('INSERT INTO `absent_additional` (`date`, `text`)  VALUES (?, ?)', [$this->date->format('Y-m-d'), $str]);
             }
 
-            $this->cacheOperator->clearOldAbsentsCache('absent_additional', $this->date->format('Y-m-d'));
+            $this->cacheOperator->deleteCache('absent_additional', $this->date->format('Y-m-d'));
         }
     }
 
@@ -347,10 +347,10 @@ class AbsencesManager
         }
 
         if (!empty($this->roomChanges['changes'][1]) && !$this->facultyCacheDeleted) {
-            $this->cacheOperator->clearOldAbsentsCache('school_faculty_list', $this->date->format('Y-m-d'));
+            $this->cacheOperator->deleteCache('school_faculty_list', $this->date->format('Y-m-d'));
         }
 
-        $this->cacheOperator->clearOldAbsentsCache('absent_room_changes', $this->date->format('Y-m-d'));
+        $this->cacheOperator->deleteCache('absent_room_changes', $this->date->format('Y-m-d'));
     }
 
     public function updateSQLPeople()
@@ -370,10 +370,10 @@ class AbsencesManager
         }
 
         if (!empty($this->absentPeople['changes'][1]) && !$this->facultyCacheDeleted) {
-            $this->cacheOperator->clearOldAbsentsCache('school_faculty_list', $this->date->format('Y-m-d'));
+            $this->cacheOperator->deleteCache('school_faculty_list', $this->date->format('Y-m-d'));
         }
 
-        $this->cacheOperator->clearOldAbsentsCache('absent_people', $this->date->format('Y-m-d'));
+        $this->cacheOperator->deleteCache('absent_people', $this->date->format('Y-m-d'));
 
     }
 
@@ -402,7 +402,7 @@ class AbsencesManager
                                 'SELECT `user_id` FROM `users_chosen_people` WHERE `' . $period . '` = ?', [$teacherID]
                             )
                         );
-                        $minVisitDate = ((new \DateTime('now'))->modify('-7 days'))->format('Y-m-d H:i:s');
+                        $minVisitDate = Notificator::getMinVisitDate();
                         foreach ($result as $userInfo) {
                             $results = $this->DBC->fetchAll(
                                 $this->DBC->query(

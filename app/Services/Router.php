@@ -5,6 +5,7 @@ namespace App\Services;
 use App\Controllers\Error;
 use App\Controllers\Legacy;
 use Dotenv\Dotenv;
+use http\Cookie;
 
 class Router
 {
@@ -53,13 +54,14 @@ class Router
         //  ----------------   cookies   ----------------
         self::setDefaultCookie('sideBar', 1);
         self::setDefaultCookie('theme', 'system');
+        self::setDefaultCookie('design', 'regular');
         self::setDefaultCookie('tabCounter', false);
         self::setDefaultCookie('overlayOnSleep', false);
         self::setDefaultCookie('overlayOnSleepTime', 5);
         //  ---------------------------------------------
         
 
-        //  ------------------   routing   ------------------
+        //  -----------------   uri fix   -----------------
         $query = preg_replace('/\/+/', '/', $_SERVER['REQUEST_URI']);
 
         // TODO fix
@@ -68,6 +70,39 @@ class Router
         if ($query !== '/'){
             $query = rtrim($query, '/');
         }
+        //  ---------------------------------------------
+
+
+        //  -------------   design switch   -------------
+        if ($_COOKIE['design'] === 'legacy'){
+            $whitelist = [
+                '/login',
+                '/register',
+                '/signup',
+                '/google-auth',
+                '/password-change',
+                '/services/',
+                '/legacy'
+            ];
+
+            $redirectToLegacy = true;
+            foreach ($whitelist as $allowedUri) {
+                if (str_starts_with($query, $allowedUri)) {
+                    $redirectToLegacy = false;
+                    break;
+                }
+            }
+            if ($redirectToLegacy){
+                $query = '/legacy';
+            }
+        }
+        if ($_COOKIE['design'] === 'regular' && str_starts_with($query, '/legacy')){
+            $query = '/';
+        }
+        //  ---------------------------------------------
+
+
+        //  ------------------   routing   ------------------
         foreach (self::$list as $route) {
             // =======================
             // Flexible routing (dates)

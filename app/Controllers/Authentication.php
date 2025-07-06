@@ -86,7 +86,7 @@ class Authentication extends Controller
                 }
                 else if ($method === 'sign up'){
                     $mailer = new Mailer($this->render('mail/code.tpl', $authManager->registerAttempt($email, $password)));
-                    $mailer->sendMail($email, 'ar-time Verification Code');
+                    $mailer->sendMail($email, 'Verification Code');
                     $this->redirect('/signup');
                 }
             }
@@ -141,7 +141,8 @@ class Authentication extends Controller
             $this->redirect('/login');
         }
 
-        $authValidationGoogle = new AuthValidationGoogle($userData['email']);
+        $DBC = DBC::getInstance();
+        $authValidationGoogle = new AuthValidationGoogle($DBC, $userData['email']);
         $this->redirectOnNonTrue($authValidationGoogle->process());
 
         $DBC = DBC::getInstance();

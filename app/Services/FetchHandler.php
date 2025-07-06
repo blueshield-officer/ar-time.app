@@ -228,7 +228,7 @@ class FetchHandler
                         'changed' => false,
                         'token' => $token])
                     );
-                    $mailer->sendMail($email, 'Password Reset Link');
+                    $mailer->sendMail($email, 'Reset Password Link');
 
                     $this->returnMessage(true, 'Email with password reset link has been sent to your email.');
                 }

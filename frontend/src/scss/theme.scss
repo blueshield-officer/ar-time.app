@@ -125,7 +125,7 @@ html {
     font-weight: 600;
 }
 .blue-text-link {
-    color: cornflowerblue;
+    color: cornflowerblue!important;
     cursor: pointer;
     &:hover {
         text-decoration: underline;
@@ -242,6 +242,19 @@ html {
 }
 .danger {
     color: #b50000;
+}
+.badge {
+    line-height: normal;
+    font-weight: normal;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+.big-update {
+    padding: 0 3px;
+    border-radius: 5px;
+    color: white;
+    background: #b50000;
 }
 
 

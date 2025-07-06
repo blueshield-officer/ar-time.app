@@ -81,6 +81,9 @@ class CalendarBig {
             if (dayInfo['schedule'] === 'Special'){
                 dayInfo['schedule'] = 'S'
             }
+            if (dayInfo['schedule'].length <= 3){
+                dayInfo['schedule'] = dayInfo['schedule'].toUpperCase()
+            }
             scheduleStr = dayInfo['schedule']
             if (dayInfo['testDay'] !== null){
                 testDayStr += '(' + dayInfo['testDay'] + ')'
@@ -266,12 +269,12 @@ class CalendarBig {
                 let dayOffArray = []
                 for (let i = 9; i <= 12; i++) {
                     if (dayOffs[i]) {
-                        dayOffArray.push(`<span class="${gradeIntToClass(i)} grade-name">${gradeIntToStr(i, 1)}</span>`)
+                        dayOffArray.push(`<span class="${gradeIntToClass(i)} badge">${gradeIntToStr(i, 1)}</span>`)
                     }
                 }
 
                 if (dayOffArray.length === 4){
-                    dayOff_str += ' for <span class="all grade-name">All</span> grades'
+                    dayOff_str += ' for <span class="all badge">All</span> grades'
                 }
                 else {
                     dayOff_str +=  ` for ${dayOffArray.join(' ')}`

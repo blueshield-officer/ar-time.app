@@ -16,7 +16,7 @@
                     <div id="schedule-{$scheduleName}" class="section-card-v border-color-theme">
                         <div class="first-part border-color-theme background-theme-darker-softer">
                             <p>
-                                <span class="table-title"> {capitalize str=$scheduleName}</span>
+                                <span class="table-title">{if strlen($scheduleName) <= 3}{strtoupper($scheduleName)}{else}{capitalize str=$scheduleName}{/if}</span>
                                 {if isset($bellsDescriptions[$scheduleName])}
                                     <span class="table-title-divider"> - </span>
                                     <span class="table-description">{$bellsDescriptions[$scheduleName]}</span>

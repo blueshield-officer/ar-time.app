@@ -13,6 +13,14 @@ class AbsencesUpdate extends Controller
 {
     public function execute()
     {
+//        $result = file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/text.txt', date('Y-m-d H:i:s'));
+//
+//        if ($result !== false) {
+//            echo "Successfully wrote date and time to text.txt:";
+//        } else {
+//            echo "Failed to write to text.txt";
+//        }
+//        die();
         $DBC = DBC::getInstance();
         $redis = RedisOperator::getInstance();
         $cacheOperator = new CacheOperator($DBC, $redis);

@@ -38,7 +38,7 @@
                                     return;
                                 }
 
-                                document.getElementById("code-verify-left-time").innerText = secondsToTimeStr(leftSeconds);
+                                document.getElementById("code-verify-left-time").innerText = secondsToTimeStrMS(leftSeconds);
                                 leftSeconds -= 1
                             }
                             changeLeftTime()

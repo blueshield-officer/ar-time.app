@@ -111,9 +111,19 @@ class Controller
                 };
             }
         });
-        $this->view->registerPlugin("function", "dateYtsTojfY", function ($array) {
+        $this->view->registerPlugin("function", "formatDate", function ($array) {
             $date = $array['date'];
-            return (\DateTime::createFromFormat('Y-m-d', $date))->format('F j, Y');
+            $formatType = $array['format'];
+            return (\DateTime::createFromFormat('Y-m-d', $date))->format($formatType);
+        });
+        $this->view->registerPlugin("function", "formatScheduleName", function ($array) {
+            $name = $array['schedule'];
+            if (strlen($name) <= 6){
+                return strtoupper($name);
+            }
+            else {
+                return ucwords($name);
+            }
         });
     }
 

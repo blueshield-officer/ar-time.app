@@ -32,5 +32,4 @@
     const date = '{$localDate}';
     const currentScheduleTable = analyzeSQLdata('{$currentTable}')
     const isLoggedIn = {$loggedIn|@json_encode};
-
 </script>

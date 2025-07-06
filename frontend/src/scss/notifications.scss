@@ -1,4 +1,8 @@
-#notifications-page {
+#notifications-page, #legacy-page {
+    .notification-info-list {
+        list-style: circle;
+        margin-left: 20px;
+    }
     .notification-setting {
 
     }

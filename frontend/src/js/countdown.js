@@ -280,7 +280,7 @@ class countdownAnalyzer {
         else {
             degree = (120 / 100) * this.getPercentage()
         }
-        return `hsl(${degree} 95% 50%)`;
+        return `hsl(${degree} 70% 50%)`;
     }
 
     getTime() {

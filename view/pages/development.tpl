@@ -27,16 +27,24 @@
             <div class="part">
                 <h3>Changelog</h3>
                 <div class="changelogs golden-5 border-color-theme default-border golden-padding">
-                    {foreach $changelog as $date => $logs}
+                    {foreach $changelog as $date => $objects}
                         <div class="changelog">
-                            <p class="log-date border-color-theme">{dateYtsTojfY date=$date}</p>
-                            <ul>
-                                {foreach $logs as $log}
-                                <li>{if $log['change_level'] === 'b'}🔴{elseif $log['change_level'] === 'm'}🟡{else}🟢{/if}
-                                    {$log['note']}
-                                    {if $log['type'] === 'bugfix'}🐛{elseif $log['type'] === 'added'}✅{/if}</li>
+                            <p class="log-date border-color-theme">{formatDate date=$date format='F j, Y'}</p>
+                            {foreach $objects as $action => $changeLevels}
+                                <p class="action-type">
+                                    {if $action === -1}⛔ Removed:
+                                    {elseif $action === 0}🐛 Fixed:
+                                    {else}✅ Added:
+                                    {/if}
+                                </p>
+                                <ul class="change-list">
+                                {foreach $changeLevels as $changeLevel => $changes}
+                                    {foreach $changes as $change}
+                                        <li class="{$changeLevel}-change">{$change} {if $changeLevel === 'b'}<span class="big-update badge">major</span>{/if}</li>
+                                    {/foreach}
                                 {/foreach}
-                            </ul>
+                                </ul>
+                            {/foreach}
                         </div>
                     {/foreach}
                 </div>

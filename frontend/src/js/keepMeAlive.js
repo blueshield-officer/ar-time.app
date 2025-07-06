@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     if (typeof isLoggedIn !== 'undefined'){
-        if (isLoggedIn === 1) {
+        if (isLoggedIn === true) {
             fetchServer('keepMyNotifAlive', null)
         }
     }

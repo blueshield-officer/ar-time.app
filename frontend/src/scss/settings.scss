@@ -1,67 +1,67 @@
 @import "vars";
 
-#settings-page {
-    .account-info {
-        flex-grow: 1;
+.account-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    .account-title {
         display: flex;
-        flex-direction: column;
-        gap: 15px;
-        .account-title {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-between;
-            gap: 5px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5px;
 
-            .account-badge {
-                display: block;
-                padding: 10px 20px;
-                border-radius: 5px;
-                border: 1px solid;
-            }
-
-            .account-badge-mortal {
-                border-color: rgb(0, 189, 255);
-                background-color: rgba(0, 189, 255, 0.1);
-            }
-
-            .account-badge-immortal {
-                border-color: rgb(191, 0, 0);
-                background-color: rgba(191, 0, 0, 0.1);
-            }
-        }
-        .grade {
-            padding: 5px;
-        }
-        .action-button {
-            border: 1px solid;
-            transition: 0.3s;
+        .account-badge {
+            display: block;
+            padding: 10px 20px;
             border-radius: 5px;
-            padding: 10px;
+            border: 1px solid;
         }
-        .change-password-button {
-            border-color: rgb(255, 204, 0);
-            background-color: rgba(255, 204, 0, 0.1);
+
+        .account-badge-mortal {
+            border-color: rgb(0, 189, 255);
+            background-color: rgba(0, 189, 255, 0.1);
         }
-        .log-out-button {
-            border-color: rgb(255, 0, 0);
-            background-color: rgba(255, 0, 0, 0.1);
-            width: 150px;
-        }
-        .log-out-button:hover {
-            background-color: rgba(255, 0, 0, 0.2);
+
+        .account-badge-immortal {
+            border-color: rgb(191, 0, 0);
+            background-color: rgba(191, 0, 0, 0.1);
         }
     }
-
-
-    .periods-part {
-        gap: 10px;
-        align-items: start;
+    .grade {
+        padding: 5px;
     }
+    .action-button {
+        border: 1px solid;
+        transition: 0.3s;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    .change-password-button {
+        border-color: rgb(255, 204, 0);
+        background-color: rgba(255, 204, 0, 0.1);
+    }
+    .log-out-button {
+        border-color: rgb(255, 0, 0);
+        background-color: rgba(255, 0, 0, 0.1);
+        width: 150px;
+    }
+    .log-out-button:hover {
+        background-color: rgba(255, 0, 0, 0.2);
+    }
+}
+
+.periods-part {
+    gap: 10px;
+    align-items: start;
+
     .periods-column {
         display: flex;
         flex-direction: column;
+        align-self: start;
         gap: 10px;
+
         .period-teacher {
             position: relative;
             transition: 0.3s;
@@ -81,6 +81,7 @@
         .period-teacher:has(.cross-holder:hover) {
             background-color: rgba(255, 0, 0, 0.1); /* or whatever color you want */
         }
+
         .input-block {
             display: flex;
 

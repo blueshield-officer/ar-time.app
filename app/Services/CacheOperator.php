@@ -39,7 +39,7 @@ class CacheOperator
 
         'safeUserData' => ['users_chosen_people'],
 
-        'byFirstIndex' => ['info_changelog']
+        'changelog' => ['info_changelog'],
     ];
 
     public function __construct($DBC, $redis)
@@ -47,7 +47,7 @@ class CacheOperator
         $this->DBC = $DBC;
         $this->redis = $redis;
 
-        $this->isAcademicDayOver = $this->fetch('is_day_over', null, false) ?? false;
+        $this->isAcademicDayOver = $this->fetch('is_day_over', null, false, false) ?? false;
     }
     public function fetch($tableName, $dataIndex = null, $json = true, $cacheable = true)
     {
@@ -97,6 +97,7 @@ class CacheOperator
                     'formatInfoRoadmap' => self::formatInfoRoadmap($dataSQL),
                     'safeUserData' => self::formatSafeUserData($dataSQL),
                     'byFirstIndex' => self::formatByFirstIndex($dataSQL),
+                    'changelog' => self::formatChangelog($dataSQL),
                     default => $dataSQL,
                 };
 
@@ -104,7 +105,7 @@ class CacheOperator
                     $dataSQL = json_encode($dataSQL);
                 }
             }
-            if ($dataSQL)
+
             $cacheData = $dataSQL;
 
             // ================= record redis data =====================
@@ -192,7 +193,7 @@ class CacheOperator
         if ($dataIndex === null) {
             $filters = '';
             $arguments = [];
-            if ($tableName === 'school_faculty_list'){
+            if ($tableName === 'school_faculty_list') {
                 $filters = ' ORDER BY `last_name` ASC';
             }
             $query = [
@@ -418,7 +419,8 @@ class CacheOperator
             if (isset($currentSchedule['schedule'])){
                 $result = $this->DBC->fetch(
                     $this->DBC->query(
-                        'SELECT `start_unix`, `end_unix` FROM `bell_schedules` WHERE `schedule_id` = ? ORDER BY position DESC LIMIT 1;', [$currentSchedule['schedule']]
+                        'SELECT `start_unix`, `end_unix` FROM `bell_schedules` WHERE `schedule_id` = ? ORDER BY position DESC LIMIT 1;',
+                        [$currentSchedule['schedule']]
                     )
                 );
                 if ($result !== false){
@@ -564,6 +566,45 @@ class CacheOperator
         krsort($newArray);
         return $newArray;
     }
+
+    private function formatChangelog($array)
+    {
+        $newArray = [];
+        foreach ($array as $row) {
+            if (!isset($newArray[$row['date']])) {
+                for ($i = 1; $i >= -1; $i--){
+                    $newArray[$row['date']][$i] = [
+                        'b' => [],
+                        'm' => [],
+                        's' => []
+                    ];
+                }
+            }
+            $newArray[$row['date']][$row['type']][$row['change_level']][] = $row['note'];
+        }
+        foreach ($newArray as $date => $logObject) {
+            foreach ($logObject as $type => $changeLevels) {
+                foreach ($changeLevels as $changeLevel => $notes) {
+                    if (empty($notes)) {
+                        unset($newArray[$date][$type][$changeLevel]);
+                    }
+                }
+            }
+        }
+        foreach ($newArray as $date => $logObject) {
+            foreach ($logObject as $type => $changeLevels) {
+                if (empty($changeLevels)) {
+                    unset($newArray[$date][$type]);
+                }
+            }
+        }
+
+        uksort($newArray, function($a, $b) {
+            return strtotime($b) - strtotime($a); // Descending order
+        });
+
+        return $newArray;
+    }
     private function analyzeAcademics(){
         $result = $this->DBC->fetchAll(
             $this->DBC->query(
@@ -600,26 +641,26 @@ class CacheOperator
         return $array;
     }
 
-    public function clearOldAbsentsCache($tableName, $dataIndex)
+    public function deleteCache($tableName, $dataIndex)
     {
-        $this->deleteCache($tableName, $dataIndex);
-    }
-
-    private function deleteCache($tableName, $dataIndex)
-    {
-        return $this->redis->delete('cacheSQL:' . $tableName . ($dataIndex ? (':' . $dataIndex) : ''));
+        return $this->redis->delete('cacheSQL:' . $tableName . ':' . $this->fillIndexIfNULL($dataIndex));
     }
 
     private function getCache($tableName, $dataIndex)
     {
-//        return null;
-        return $this->redis->get('cacheSQL:' . $tableName . ($dataIndex ? (':' . $dataIndex) : ''));
+        return $this->redis->get('cacheSQL:' . $tableName . ':' . $this->fillIndexIfNULL($dataIndex));
     }
 
     private function updateCache($tableName, $dataIndex, $str)
     {
-        // TODO add cache redis and check <-- ????
-        // some stuff here
-        $this->redis->set('cacheSQL:' . $tableName . ':' . $dataIndex, $str, 300);
+        $this->redis->set('cacheSQL:' . $tableName . ':' . $this->fillIndexIfNULL($dataIndex), $str, 300);
     }
+
+    private function fillIndexIfNULL($index){
+        if (is_null($index)) {
+            return 'A_EWE';
+        }
+        return $index;
+    }
+
 }

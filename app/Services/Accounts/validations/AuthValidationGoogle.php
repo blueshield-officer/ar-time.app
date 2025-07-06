@@ -3,17 +3,22 @@
 namespace App\Services\Accounts\validations;
 
 use App\Services\Session;
+use App\Services\Utils;
 
 class AuthValidationGoogle
 {
     private $email;
+    private $DBC;
 
-    public function __construct($email)
+    public function __construct($DBC, $email)
     {
+        $this->DBC = $DBC;
         $this->email = $email;
     }
 
     public function process(){
+        $this->log();
+
         if ($this->validateEmail() !== true){
             return false;
         };
@@ -31,5 +36,11 @@ class AuthValidationGoogle
     {
         Session::setFormViolation('login', 'google', $error);
         return false;
+    }
+
+    private function log(){
+        $this->DBC->query(
+            'INSERT INTO logs_auth (`timestamp`, `ip`, `email`, `type`) VALUES (?, ?, ?, ?)', [date('Y-m-d H:i:s'), Utils::getClientIP(), $this->email, 'google']
+        );
     }
 }

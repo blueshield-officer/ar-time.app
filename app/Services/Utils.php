@@ -184,4 +184,13 @@ class Utils
         $d = DateTime::createFromFormat('Y-m-d', $str);
         return $d && $d->format('Y-m-d') === $str;
     }
+
+    static function formatNotifTokens($array)
+    {
+        $newArray = [];
+        foreach ($array as $object) {
+            $newArray[] = $object['notification_token'];
+        }
+        return $newArray;
+    }
 }

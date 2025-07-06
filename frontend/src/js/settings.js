@@ -34,6 +34,13 @@ function setTheme(theme) {
     }
 }
 
+function setDesign(design){
+    if (getCookieValue('design') !== design){
+        setPermaCookie('design', design)
+        window.location.href = (design === 'regular') ? '/settings' : '/'
+    }
+}
+
 function filterNames(periodID, faculty, clear = false){
     function formatText(str){
         return str.replace(/[\s.]/g, '').toLowerCase()
@@ -114,7 +121,7 @@ function filterNames(periodID, faculty, clear = false){
 }
 
 addEventListener("DOMContentLoaded", () => {
-    if  (document.getElementById('settings-page') !== null){
+    if  (document.getElementById('settings-page') || document.getElementById('legacy-page') ){
         const tabCounterSwitcher = document.getElementById('toggle-tabCounter')
         if (tabCounterSwitcher) {
             tabCounterSwitcher.addEventListener('change', function(event) {
@@ -224,7 +231,9 @@ function logOutButton(element){
     }
     else {
         fetchServer('logOut', null)
-        window.location.href = '/'
+        setTimeout(() => {
+            window.location.href = '/'
+        }, 300)
     }
 }
 

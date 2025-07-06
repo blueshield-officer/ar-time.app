@@ -66,6 +66,7 @@
         {if $method === 'login'}
             <p onclick="sendChangePasswordRequest()" class="forgot-password-button blue-text-link">Forgot password?</p>
             <p id="forgot-password-response"></p>
+            <p style="font-size: 12px" class="secondary-text">If you created your account by Google, the password was set to random, change it if you want to login by password and email.</p>
         {/if}
         <!-- Hidden -->
         <input id="csrf_token_input" type="hidden" name="csrf_token" value="{$smarty.session.csrf_token}">

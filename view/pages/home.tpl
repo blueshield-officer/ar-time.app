@@ -26,7 +26,7 @@
                             {if $schedule !== null}
                                 <div class="main-day-info">
                                     <div class="event important default-border golden-5" {if $schedule['testDay'] !== null}style="max-width:100%;"{/if}>
-                                        <p class="main-day-title"><span class="very-important-text">{$schedule['schedule']}</span> Schedule</p>
+                                        <p class="main-day-title"><span class="very-important-text">{if strlen($schedule['schedule']) <= 3}{strtoupper($schedule['schedule'])}{else}{capitalize str=$schedule['schedule']}{/if}</span> Schedule</p>
                                         <p class="description secondary-text">{$schedule['description']}</p>
                                     </div>
                                     {if $schedule['testDay'] !== null}
@@ -38,10 +38,10 @@
                             {/if}
                             {if $dayOffs !== null}
                                 {$dayOffArray = []}
-                                {if $dayOffs[9] === 1}{$dayOffArray[] = '<span class="freshman grade-name">Freshmen</span>'}{/if}
-                                {if $dayOffs[10] === 1}{$dayOffArray[] = '<span class="sophomore grade-name">Sophomores</span>'}{/if}
-                                {if $dayOffs[11] === 1}{$dayOffArray[] = '<span class="junior grade-name">Juniors</span>'}{/if}
-                                {if $dayOffs[12] === 1}{$dayOffArray[] = '<span class="senior grade-name">Seniors</span>'}{/if}
+                                {if $dayOffs[9] === 1}{$dayOffArray[] = '<span class="freshman badge">Freshmen</span>'}{/if}
+                                {if $dayOffs[10] === 1}{$dayOffArray[] = '<span class="sophomore badge">Sophomores</span>'}{/if}
+                                {if $dayOffs[11] === 1}{$dayOffArray[] = '<span class="junior badge">Juniors</span>'}{/if}
+                                {if $dayOffs[12] === 1}{$dayOffArray[] = '<span class="senior badge">Seniors</span>'}{/if}
 
                                 {if $dayOffs['type'] === 'f'}
                                     {$dayOffStartStr = 'No school'}
@@ -52,18 +52,17 @@
                                 <div class="event default-border border-color-theme golden-5">
                                     <p>
                                         {if count($dayOffArray) === 4}
-                                            {$dayOffStartStr} for <span class="all grade-name">All</span> grades
+                                            {$dayOffStartStr} for <span class="all badge">All</span> grades
                                         {else}
                                             {$dayOffStartStr} for {join(' ', $dayOffArray)}
                                         {/if}
                                     </p>
-
                                 </div>
                             {/if}
                             {if $retreats !== null}
                                 <div class="event default-border border-color-theme golden-5">
                                     <p>
-                                        <span class="{gradeIntToClassStr grade=$retreats} grade-name">{gradeIntToStr grade=$retreats plural='0'}</span>
+                                        <span class="{gradeIntToClassStr grade=$retreats} badge">{gradeIntToStr grade=$retreats plural='0'}</span>
                                         Retreat
                                     </p>
                                 </div>

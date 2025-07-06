@@ -38,7 +38,7 @@ class Notificator
         $payload = $this->encodePayload($title, $body, $icon, $url);
         $subscriptionData = json_decode($recipientToken, true);
         if (!$subscriptionData) {
-//            echo 'Invalid recipient token provided.';
+ //          echo 'Invalid recipient token provided.';
             return false;
         }
         $subscription = Subscription::create($subscriptionData);
@@ -71,6 +71,10 @@ class Notificator
             'icon' => $icon,
             'url' => $url,
         ]);
+    }
+
+    static public function getMinVisitDate(){
+        return ((new \DateTime('now'))->modify('-7 days'))->format('Y-m-d H:i:s');
     }
 }
 //     'publicKey' => 'BFl0KXWYVr8dPCxMz2hNhP-qObaXFlmE-dTk08xgafS3vwQZVJbxzpVlKEw2bIMXM27vQu0adHgx517m3XsUliw',

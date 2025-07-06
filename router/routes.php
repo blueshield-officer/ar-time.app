@@ -1,6 +1,7 @@
 <?php
 
 use App\Controllers\Absences;
+use App\Controllers\admin\Admin;
 use App\Controllers\Authentication;
 use App\Controllers\Calendar;
 use App\Controllers\Countdowns;
@@ -12,6 +13,7 @@ use App\Controllers\Schedules;
 use App\Controllers\server\AbsencesUpdate;
 use App\Controllers\server\CalendarUpdate;
 use App\Controllers\server\RedisUpdate;
+use App\Controllers\server\ReportNotification;
 use App\Controllers\server\ScheduleDefault;
 use App\Controllers\server\StaffUpdate;
 use App\Controllers\services\Auth;
@@ -48,15 +50,15 @@ Router::page('/google-auth', [Authentication::class, 'googleAuth'], 'noAccount')
 Router::page('/password-change', [Authentication::class, 'changePassword'],'none');
 
 // admin
-//Router::page('/admin', [Admin::class], 'admin');
+Router::page('/admin', [Admin::class], 'admin');
 //Router::page('/admin/schedule', [CustomScheduleLoader::class], 'admin');
 
 // server
-Router::page('/server/redis_update', [RedisUpdate::class], 'server');
 Router::page('/server/calendar_update', [CalendarUpdate::class], 'server');
 Router::page('/server/absences_update', [AbsencesUpdate::class], 'server');
 Router::page('/server/staff_update', [StaffUpdate::class], 'server');
 Router::page('/server/schedule_default_update', [ScheduleDefault::class], 'server');
+Router::page('/server/notif_report', [ReportNotification::class], 'server');
 
 
 // services

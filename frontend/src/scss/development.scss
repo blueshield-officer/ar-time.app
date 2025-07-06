@@ -12,9 +12,25 @@
                 display: block;
                 font-weight: 600;
                 border-bottom: 1px solid;
-                margin-left: 27px;
                 margin-bottom: 5px;
                 padding-bottom: 3px;
+            }
+            .action-type {
+                font-weight: 500;
+            }
+            .change-list {
+                margin-left: 37px;
+                list-style: circle;
+
+                .b-change {
+
+                }
+                .m-change {
+                    font-size: 14px;
+                }
+                .s-change {
+                    font-size: 12px;
+                }
             }
         }
     }

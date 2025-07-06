@@ -1,5 +1,6 @@
 function switchNotificationToken(toggleID) {
     const instructionObject = document.getElementById('apple-notification-instruction')
+    const notificationInfo = document.getElementById('notification-info')
     if (document.getElementById('toggle-' + toggleID).checked) {
         const toggle = document.getElementById('toggle-' + toggleID)
         const notifErrorObject = document.getElementById('alert-notificationsPermissionIssue')
@@ -24,6 +25,7 @@ function switchNotificationToken(toggleID) {
                                         element.classList.add('notification-setting')
                                     });
                                     instructionObject.hidden = true
+                                    notificationInfo.hidden = true
                                 }
                             });
                         });
@@ -39,6 +41,7 @@ function switchNotificationToken(toggleID) {
         Array.from(document.getElementsByClassName('notification-setting')).forEach((element) => {
             element.classList.remove('notification-setting')
             element.classList.add('notification-setting-hidden')
+            notificationInfo.hidden = false
         });
         if (isSafari()){
             instructionObject.hidden = false
@@ -63,7 +66,7 @@ async function switchAccountParam(toggleID) {
 
 document.addEventListener('DOMContentLoaded', () => {
     if (document.getElementById('apple-notification-instruction')){
-        if (isSafari()){
+        if (isSafari() && !isPWA()){
             document.getElementById('apple-notification-instruction').hidden = false
         }
     }

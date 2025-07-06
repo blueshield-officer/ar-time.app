@@ -235,10 +235,29 @@ function strBooleanToBoolean(str){
     return str === 'true';
 }
 
-function secondsToTimeStr(seconds){
+function secondsToTimeStrMS(seconds){
     const leftMinutes = Math.floor(seconds / 60);
     const leftSeconds = seconds - (leftMinutes * 60);
     return leftMinutes + ':' + ifLessThan10Add0(leftSeconds);
+}
+
+function secondsToTimeStrHMS(seconds) {
+    const hours = Math.floor(seconds / 3600);
+    const minutes = Math.floor((seconds % 3600) / 60);
+    const leftSeconds = seconds % 60;
+
+    let timeStr = '';
+
+    if (hours > 0) {
+        timeStr += hours + ':';
+        timeStr += (minutes < 10 ? '0' : '') + minutes;
+    } else {
+        timeStr += minutes;
+    }
+
+    timeStr += ':' + (leftSeconds < 10 ? '0' : '') + leftSeconds;
+
+    return timeStr;
 }
 
 function isWeekEnd(year, month, day) {
@@ -337,6 +356,10 @@ function isSafari() {
     return /^((?!chrome|android).)*safari/i.test(ua);
 }
 
+function isPWA() {
+    return window.matchMedia('(display-mode: standalone)').matches ||
+        window.navigator.standalone === true;
+}
 
 function setPermaCookie(name, value) {
     const days = 365 * 20; // 20 years
